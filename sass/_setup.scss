@@ -9,20 +9,6 @@ $tablet:        "all and (min-width: 40em)" !default;
 $desktop:       "all and (min-width: 64em)" !default;
 $desktop-large: "all and (min-width: 96em)" !default;
 
-
-/* Core Extendables
-  =========================================================================== */
-
-%app-content-width { max-width: $global-content-width; }
-
-%clearfix { overflow: auto; }
-
-%remove-list-style {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 /* Core Mixins
   =========================================================================== */
 
@@ -77,6 +63,25 @@ $desktop-large: "all and (min-width: 96em)" !default;
     }
   }
 }
+
+/* Core Extendables
+  =========================================================================== */
+
+%app-content-width { max-width: $global-content-width; }
+
+%clearfix { overflow: auto; }
+
+%remove-list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Shadow Extendables
+
+%shadow-100 { @include box-shadow(0 4px 8px rgba(0,0,0, 0.3)); }
+%shadow-200 { @include box-shadow(0 4px 16px rgba(0,0,0, 0.3)); }
+%shadow-300 { @include box-shadow(0 4px 24px rgba(0,0,0, 0.3)); }
 
 /* Core Utility Classes
   =========================================================================== */
