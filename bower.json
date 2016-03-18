@@ -1,14 +1,14 @@
 {
   "name": "dashing",
-  "version": "v0.0.1-beta",
+  "version": "v0.0.2-beta",
   "main": "sass/application.scss",
 
-  "homepage": "https://github.com/dashframework/dashing",
+  "homepage": "http://developers.samaritanministries.org/",
   "description": "Style framework for Dash",
 
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/dashframework/dashing"
-  },
+  }
 }
