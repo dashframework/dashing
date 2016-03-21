@@ -21,7 +21,7 @@ For increased scannability, we recommend only using regular and semibold weights
 > Tip: Using the &lt;strong&gt; tag
 For small phrases that require extra attention, try using the &lt;strong&gt; tag, which has been formatted to display a heavier weight.
 
-In order to create a better reading experience, having a slightly larger body font size of 18px (1rem) allows users to quickly and easily scan your content. For small areas of text such as captions, copyrights and labels, it is advised to use the `&lt;small&gt;` element or the `$small` Sass variable (14px). When presenting content in paragraphs, the `&lt;p&gt;` element or the `$font-size-normal` Sass variable (18px) should be used.
+In order to create a better reading experience, having a slightly larger body font size of 18px (1rem) allows users to quickly and easily scan your content. For small areas of text such as captions, copyrights and labels, it is advised to use the `<small>` element or the `$small` Sass variable (14px). When presenting content in paragraphs, the `<p>` element or the `$font-size-normal` Sass variable (18px) should be used.
 
 > Caution: Minimum font size
 In an effort to focus on the legibility of your type, font size should never be displayed below 0.8rem, (14px). Always keep your users in mind when deciding on a final font size.
