@@ -1,0 +1,98 @@
+$menu-height-condensed: 4.6rem; //Use this if you do not have navigation within your header
+$menu-height-expanded: 7.05rem; //Use this if you have navigation within your header
+$menu-color: $gray-100 !default; //Override this variable to change the color of your header
+
+@function auto-color($color) {
+  @if (lightness($color) > 60) { @return $gray-900; }
+  @else { @return $white; }
+}
+
+.app-menu {
+  @extend .app-menu.condensed;
+  background-color: rgba($menu-color, 0.97);
+  box-shadow: 0 2px 6px $gray-200;
+  height: auto !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  .app-context {
+    @extend %app-content-width;
+    @extend %clearfix;
+    margin: auto;
+    padding: 1rem;
+
+    .app-title {
+      color: auto-color($menu-color);
+      font-size: $font-size-medium;
+      font-weight: 600;
+
+      a {
+        color: auto-color($menu-color);
+
+        &:hover {
+          color: rgba(auto-color($menu-color), .60);
+        }
+      }
+    }
+  }
+
+  .app-navigation {
+    @extend %remove-list-style;
+    @extend %app-content-width;
+    @extend %clearfix;
+    margin: auto;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 0 1rem;
+    white-space: nowrap;
+
+    li {
+      @extend %action;
+      border-bottom: 5px solid transparent;
+      color: rgba(auto-color($menu-color), .60);
+      display: inline-block;
+      float: none;
+      font-size: 1rem;
+      line-height: 0.9rem;
+      margin: 0;
+      margin-right: 1rem; // TODO review this with Chandler
+      padding: 0.7rem 0;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: auto-color($menu-color);
+      }
+
+      &.active {
+        color: auto-color($menu-color);
+        border-bottom: 5px solid;
+      }
+    }
+  }
+
+  //Add this class to your app-menu if you do not have navigation items
+  &.condensed {
+    height: $menu-height-condensed;
+  }
+
+  //Add this class to your app-menu if you have navigation items
+  &.expanded {
+    height: $menu-height-expanded;
+  }
+
+  &.fixed {
+    position: fixed;
+  }
+}
+
+//This sets padding of your app content relative to the size of your app-menu
+.app-menu ~ .app-content {
+  padding-top: $menu-height-condensed;
+}
+
+.app-menu.expanded ~ .app-content {
+  padding-top: $menu-height-expanded;
+}

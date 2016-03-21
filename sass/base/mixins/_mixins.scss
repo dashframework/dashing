@@ -1,0 +1,54 @@
+/* Core Mixins
+  =========================================================================== */
+
+@mixin animation($attributes) {
+  -webkit-animation: $attributes;
+  -moz-animation: $attributes;
+  -ms-animation: $attributes;
+  -o-animation: $attributes;
+  animation: $attributes;
+}
+
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  -ms-transition: $value;
+  transition: $value;
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  -o-user-select: $value;
+  user-select: $value;
+}
+
+@mixin hide-on($device, $display) {
+  display: none;
+
+  @if $device == 'phone' {
+    @media #{$tablet} {
+      display: $display;
+    }
+  } @else if $device == 'tablet' {
+    @media #{$desktop} {
+      display: $display;
+    }
+  }
+}

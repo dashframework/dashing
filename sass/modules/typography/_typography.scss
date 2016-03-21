@@ -1,0 +1,72 @@
+/* Typography Variables
+  =========================================================================== */
+
+$font-size-xlarge:      1.953rem;
+$font-size-large:       1.563rem;
+$font-size-medium:      1.25rem;
+$font-size-normal:      1rem;
+$font-size-small:       0.8rem;
+
+$font-weight-normal:    400;
+$font-weight-semibold:  600;
+
+$font-family-header:    "Source Sans Pro", sans-serif;
+$font-family-body:      "Source Sans Pro", sans-serif;
+
+/* Typography Utility Classes
+  =========================================================================== */
+
+.text-align-center, .center-align { text-align: center !important; }
+.text-align-left, .left-align { text-align: left !important; }
+.text-align-right, .right-align { text-align: right !important; }
+
+.no-wrap {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.break-word { word-wrap: break-word; }
+
+/* Typography Styles
+  =========================================================================== */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: $gray-100;
+  font-family: $font-family-body;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $gray-900;
+  font-family: $font-family-header;
+  font-weight: $font-weight-semibold;
+  margin: 0;
+}
+
+h1 { font-size: $font-size-xlarge; }
+h2 { font-size: $font-size-large; }
+h3 { font-size: $font-size-medium; }
+h4 { font-size: $font-size-normal; }
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: $blue;
+
+  &:hover, &:focus { color: $blue-400; }
+}
+
+p {
+  color: $gray-900;
+  line-height: 1.25rem;
+}
+
+strong {
+  font-weight: $font-weight-semibold;
+}

@@ -1,0 +1,17 @@
+/* Core Utility Classes
+  =========================================================================== */
+
+.hide, .hidden { display: none !important; }
+.mobile-hide { @include hide-on('phone', $display: 'block'); }
+.mobile-hide-inline { @include hide-on('phone', $display: 'inline'); }
+.tablet-hide { @include hide-on('tablet', $display: 'block'); }
+.tablet-hide-inline { @include hide-on('tablet', $display: 'inline'); }
+.pointer, .selectable { cursor: pointer !important; }
+.remove-margin, .no-margin { margin: 0 !important; }
+.remove-padding { padding: 0 !important; }
+.remove-border { border: none !important; }
+.float-left { float: left !important; }
+.float-right { float: right !important; }
+.float-none { float: none !important; }
+.fixed { position: fixed !important; }
+.relative { position: relative !important; }

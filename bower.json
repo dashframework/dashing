@@ -10,5 +10,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dashframework/dashing"
+  },
+
+  "dependencies": {
+    "normalize-scss": "3.0.3"
   }
 }

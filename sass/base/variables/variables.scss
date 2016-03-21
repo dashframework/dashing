@@ -1,0 +1,10 @@
+/* Core Variables
+  =========================================================================== */
+
+$global-content-width: 1200px !default;
+$global-transition: all 0.2s ease-in-out;
+
+$phone:         "all and (max-width: 40em)" !default;
+$tablet:        "all and (min-width: 40em)" !default;
+$desktop:       "all and (min-width: 64em)" !default;
+$desktop-large: "all and (min-width: 96em)" !default;

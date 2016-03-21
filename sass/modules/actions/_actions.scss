@@ -1,0 +1,85 @@
+/* Actions Variables
+  =========================================================================== */
+
+$buttons: ".button, button, input[type='submit'], input[type='reset']";
+$button-disabled: "&[disabled], &.disabled, &.button-disabled";
+
+/* Actions Extendables
+  =========================================================================== */
+
+%action {
+  @include user-select(none);
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: $font-weight-semibold;
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Actions Mixins
+  =========================================================================== */
+
+@mixin button($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+
+  &:hover, &:focus {
+    background-color: darken($background-color, 10%);
+    color: $color;
+  }
+}
+
+@mixin action($color) {
+  color: $color;
+
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
+}
+
+/* Actions Styles
+  =========================================================================== */
+
+#{$buttons} {
+  @extend %action;
+  @include button($background-color: $blue, $color: $white);
+  @include user-select(none);
+
+  -webkit-font-smoothing: auto;
+  border-radius: 50px;
+  display: block;
+  font-weight: $font-weight-normal;
+  padding: 0.8rem 1rem;
+  text-align: center;
+
+  @media #{$tablet} {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    padding-top: 0.4rem;
+  }
+
+  #{$button-disabled} {
+    cursor: default;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  &.button-block {
+    display: block !important;
+    width: 100%;
+  }
+
+  &.button-large { font-size: $font-size-medium !important; }
+  &.button-primary { @include button($background-color: $blue, $color: $white); }
+  &.button-secondary { @include button($background-color: $gray-200, $color: $gray-900); }
+}
+
+.action {
+  @extend %action;
+  @include action($blue);
+
+  &.action-primary { @include action($blue); }
+  &.action-secondary { @include action($gray); }
+}
