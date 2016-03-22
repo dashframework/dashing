@@ -2,7 +2,7 @@
   =========================================================================== */
 
 $buttons: ".button, button, input[type='submit'], input[type='reset']";
-$button-disabled: "&[disabled], &.disabled, &.button-disabled";
+$button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
 /* Actions Extendables
   =========================================================================== */
@@ -71,15 +71,26 @@ $button-disabled: "&[disabled], &.disabled, &.button-disabled";
     width: 100%;
   }
 
-  &.button-large { font-size: $font-size-medium !important; }
-  &.button-primary { @include button($background-color: $blue, $color: $white); }
-  &.button-secondary { @include button($background-color: $gray-200, $color: $gray-900); }
+  //Button Sizes
+  &.button--large { font-size: $font-size-medium !important; }
+  &.button--small { font-size: $font-size-small !important; }
+
+  //Button Color Options
+  &.button--primary { @include button($background-color: $blue, $color: $white); }
+  &.button--secondary { @include button($background-color: $gray-200, $color: $gray-900); }
+
+  &.button--gray { @include button($background-color: $gray-200, $color: $gray-900); }
+  &.button--blue {@include button($background-color: $blue, $color: $white); }
+  &.button--green { @include button($background-color: $green, $color: $white); }
+  &.button--orange { @include button($background-color: $orange, $color: $white); }
+  &.button--purple { @include button($background-color: $purple, $color: $white); }
+  &.button--red { @include button($background-color: $red, $color: $white); }
 }
 
 .action {
   @extend %action;
   @include action($blue);
 
-  &.action-primary { @include action($blue); }
-  &.action-secondary { @include action($gray); }
+  &.action--primary { @include action($blue); }
+  &.action--secondary { @include action($gray); }
 }
