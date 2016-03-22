@@ -36,8 +36,8 @@ Buttons have a stronger visual hierarchy compared action links, and should be us
 |-------------------------------|--------------------------------------|-------------------------------------------------------------|
 | `.button`                     | Standard button                      | *Required*                                                  |
 | `.disabled`                   | Disabled button                      | You may use the `.disabled` class or `[disabled]` attribute |
-| `.button--primary`            | Applies the primary color effect     | The default primary button color is $blue                   |
-| `.button--secondary`          | Applies the secondary color effect   | The default secondary button color is $gray                 |
+| `.button--primary`            | Applies the primary color effect     | The default primary button color is `$blue`                 |
+| `.button--secondary`          | Applies the secondary color effect   | The default secondary button color is `$gray`               |
 | `.button--green`              | Applies a green color effect         | Review the base color mixins that are included for buttons  |
 
 > Color variables are defined in [`_colors.scss`](../../base/colors)
