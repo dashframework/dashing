@@ -1,0 +1,97 @@
+/* Setup Variables
+  =========================================================================== */
+
+$grid-gutter: 1rem;
+
+/* Setup Utility Classes
+  =========================================================================== */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  @media #{$tablet} { font-size: 105%; }
+  @media #{$desktop} { font-size: 110%; }
+}
+
+/* Grid Styles
+  =========================================================================== */
+
+.row {
+  @extend %clearfix;
+  margin: auto;
+  max-width: $global-content-width;
+  width: 100%;
+}
+
+.column {
+  padding: $grid-gutter;
+
+  &.nested { padding: 0.5rem; }
+
+  &.full,
+  &.two-thirds,
+  &.three-fourths,
+  &.half,
+  &.third,
+  &.fourth,
+  &.sixth,
+  &.eighth {
+    width: 100%;
+  }
+
+  @media #{$tablet} {
+    float: left;
+
+    &.flow-opposite { float: right; }
+
+    &.full {
+      float: none;
+      width: 100%;
+    }
+
+    &.two-thirds { width: 66.666%; }
+    &.three-fourths { width: 75%; }
+    &.half { width: 50%; }
+    &.third { width: 33.333%; }
+    &.fourth { width: 25%; }
+    &.sixth { width: 16.666%; }
+    &.eighth { width: 12.5%; }
+  }
+}
+
+
+/* Flex Mixins
+  =========================================================================== */
+
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  flex-grow: $grow;
+}
+
+@mixin flex($item) {
+  -webkit-flex: $item;
+  -moz-box-flex: $item;
+  flex: $item;
+}
+
+/* Flex Styles
+  =========================================================================== */
+
+.row-flex {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  .column-flex {
+    @include flex(1);
+    margin: $grid-gutter;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../../../dashing.css" rel="stylesheet">
+    <title>Forms</title>
+  </head>
+  <body style="padding: 1rem; background-color: #fff">
+    <fieldset class="column full">
+      <label for="dashing-text">Dashing Text Input</label>
+      <input type="text" id="dashing-text"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-text">Dashing Text Input disabled</label>
+      <input type="text" id="dashing-text" value="This input is disabled" disabled />
+    </fieldset>
+
+    <fieldset class="column full error">
+      <label for="dashing-text-error">Dashing Text Input with error</label>
+      <input type="text" id="dashing-text-error"/>
+
+      <ul class="messages">
+        <li>This is an error.</li>
+        <li>This is a really really really really really really really really long error.</li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="column full warning">
+      <label for="dashing-text-warning">Dashing Text Input with warning</label>
+      <input type="text" id="dashing-text-warning"/>
+
+      <ul class="messages">
+        <li>This is an warning.</li>
+        <li>This is a really really long warning.</li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-menu">Dashing Select Menu</label>
+      <select id="dashing-menu">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-date">Dashing Date</label>
+      <input type="date" id="dashing-date"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-time">Dashing Time</label>
+      <input type="time" id="dashing-time"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-month">Dashing Month</label>
+      <input type="month" id="dashing-month"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-email">Dashing Email</label>
+      <input type="email" id="dashing-email" placeholder="e.g. ryan@fitzinator.com"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-number">Dashing Number</label>
+      <input type="number" id="dashing-number"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-password">Dashing Password</label>
+      <input type="password" id="dashing-password"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-tel">Dashing Tel</label>
+      <input type="tel" id="dashing-tel"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-range">Dashing Range</label>
+      <input type="range" id="dashing-range"/>
+    </fieldset>
+
+    <div class="column full">
+      <fieldset>
+        <label for="dashing-radio1" class="inline">Dashing Radio 1</label>
+        <input type="radio" name="dashing-radio" id="dashing-radio1"/>
+      </fieldset>
+      <fieldset>
+        <label for="dashing-radio2" class="inline">Dashing Radio 2</label>
+        <input type="radio" name="dashing-radio" id="dashing-radio2"/>
+      </fieldset>
+      <fieldset>
+        <label for="dashing-radio3" class="inline">Dashing Radio 3</label>
+        <input type="radio" name="dashing-radio" id="dashing-radio3"/>
+      </fieldset>
+    </div>
+
+    <fieldset class="column full">
+      <label for="dashing-checkbox" class="inline">Dashing Checkbox</label>
+      <input type="checkbox" id="dashing-checkbox"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-file">Dashing File</label>
+      <input type="file" id="dashing-file"/>
+    </fieldset>
+
+    <fieldset class="column full">
+      <label for="dashing-textarea">Dashing Textarea</label>
+      <textarea id="dashing-textarea"></textarea>
+    </fieldset>
+  </body>
+</html>

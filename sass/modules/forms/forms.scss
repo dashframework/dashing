@@ -1,0 +1,113 @@
+$inputs: 'select, textarea,input[type="date"],input[type="time"],input[type="email"],input[type="month"],input[type="number"],input[type="password"],input[type="tel"],input[type="text"]';
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  label {
+    display: block;
+    font-size: $font-size-small;
+    font-weight: $font-weight-semibold;
+    margin-bottom: 0.3rem;
+    text-align: left;
+
+    &.inline {
+      @include user-select(none);
+      font-size: 1rem;
+      display: inline-block;
+      font-weight: normal;
+      cursor: pointer;
+    }
+  }
+
+  //Supports all standard input types
+  #{$inputs} {
+    -webkit-appearance: none;
+    background-color: $white;
+    border: 2px solid $gray-100;
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0.6rem;
+    width: 100%;
+
+    &:focus {
+      border-color: $blue;
+      outline-color: transparent;
+      outline-style: none;
+    }
+
+    //Adds light gray background color to disabled inputs
+    &[disabled] {
+      background-color: $gray-100 !important;
+      cursor: default !important;
+    }
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    float: left;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  select {
+    cursor: pointer;
+  }
+
+  &.error, &.issue {
+    .message {
+      margin: 0;
+      margin-top: 0.7rem;
+      padding: 0;
+      list-style: none;
+      overflow: auto;
+
+      li {
+        float: left;
+        font-size: $font-size-normal;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  //Adds red text to lables and inputs for error states
+  &.error {
+    label, #{$inputs} {
+      color: $red;
+      border-color: $red-200;
+    }
+
+    #{$inputs} {
+      &:focus {
+        border-color: $red;
+      }
+    }
+
+    .message li {
+      color: $red;
+    }
+  }
+
+  &.warning {
+    label, #{$inputs} {
+      color: $orange;
+      border-color: $orange-300;
+    }
+
+    #{$inputs} {
+      &:focus {
+        border-color: $orange;
+      }
+    }
+
+    .message li {
+      color: $orange;
+    }
+  }
+}

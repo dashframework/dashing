@@ -4,15 +4,16 @@ Dashing buttons and action links
 ## Action Links
 An Action Link is made up of text and is given a default color of `$blue` to indicate action.
 
+##### Configurations
 | Action class                  | Effect                  | Notes                                               |
 |-------------------------------|-------------------------|-----------------------------------------------------|
 | `.action`                     | Defines an action       | *Required*                                          |
-| `.action--primary`            | Primary action link     | The default primary action link is $blue            |
-| `.action--secondary`          | Secondary action link   | The default secondary action link is $gray          |
+| `.action--primary`            | Primary action link     | The default primary action link is `$blue`          |
+| `.action--secondary`          | Secondary action link   | The default secondary action link is `$gray`        |
 
 > Color variables are defined in [`_colors.scss`](../../base/colors)
 
-##### Creating a custom action link color
+### Creating a custom action link color
 To create a custom action link color, include this mixin and plug in your desired text color as a *Sass variable* or *hex color code*.
 
 ```scss
@@ -25,10 +26,12 @@ To create a custom action link color, include this mixin and plug in your desire
   }
 ```
 
+-----
+
 ## Buttons
 Buttons have a stronger visual hierarchy compared action links, and should be used to indicate important actions to your user.
 
-
+##### Configurations
 | Button class                  | Effect                               | Notes                                                       |
 |-------------------------------|--------------------------------------|-------------------------------------------------------------|
 | `.button`                     | Standard button                      | *Required*                                                  |
@@ -39,7 +42,7 @@ Buttons have a stronger visual hierarchy compared action links, and should be us
 
 > Color variables are defined in [`_colors.scss`](../../base/colors)
 
-##### Creating a custom button color
+### Creating a custom button color
 To create a custom button color, just include this mixin and plug in your background-color and text color as a *Sass variable* or *hex color code*.
 
 ```scss
