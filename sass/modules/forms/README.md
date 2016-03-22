@@ -21,9 +21,9 @@ Every form element within Dashing is **required** to be placed within a fieldset
 * textarea
 
 ##### Configurations
-| Form attributes               | Effect                                           | Notes                                                     |
-|-------------------------------|--------------------------------------------------|-----------------------------------------------------------|
-| `fieldset`                    | Drives styles for inputs and labels              | *Required* Applied as a container for inputs and labels   |
-| `.inline`                     | Places labels inline with the input type         | Apply `.inline` to label elements                         |
-| `.error`                      | Adds error styles to input, label and message    | Must apply `.error` to fieldset elements                  |
-| `.warning`                    | Adds warning styles to input, label and message  | Must apply `.warning` to fieldset elements                |
+| Form attributes        | Effect                                           | Notes                                                     |
+|------------------------|--------------------------------------------------|-----------------------------------------------------------|
+| `fieldset`             | Drives styles for inputs and labels              | *Required* Applied as a container for inputs and labels   |
+| `.inline`              | Places labels inline with the input type         | Apply `.inline` to label elements                         |
+| `.error`               | Adds error styles to input, label and message    | Apply `.error` to fieldset elements                       |
+| `.warning`             | Adds warning styles to input, label and message  | Apply `.warning` to fieldset elements                     |

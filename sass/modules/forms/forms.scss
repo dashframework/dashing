@@ -60,7 +60,7 @@ fieldset {
     cursor: pointer;
   }
 
-  &.error, &.issue {
+  &.error, &.warning {
     .message {
       margin: 0;
       margin-top: 0.7rem;
@@ -94,6 +94,7 @@ fieldset {
     }
   }
 
+  //Adds orange text to lables and inputs for warning states
   &.warning {
     label, #{$inputs} {
       color: $orange;

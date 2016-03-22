@@ -2,7 +2,8 @@
   =========================================================================== */
 
 $global-content-width: 1200px !default;
-$global-transition: all 0.2s ease-in-out;
+$global-transition: all 0.2s ease-in-out !default;
+$grid-gutter: 1rem !default;
 
 $phone:         "all and (max-width: 40em)" !default;
 $tablet:        "all and (min-width: 40em)" !default;
