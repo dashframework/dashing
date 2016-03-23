@@ -3,8 +3,6 @@
 ## System Typeface
 Source Sans Pro was Adobe's first open source typeface family, created by Paul D. Hunt in 2012. Designed primarily for user interface, it draws from the clarity and legibility of twentieth-century American gothic typefaces (News Gothic and Franklin Gothic). Utilizing this typeface throughout your App is key to a successful interface on any device or screen.
 
-![Typography specimen image](../../../example/img/typography-specimen.png)
-
 ### Type Structure
 Keeping a well structured typographic scale is extremely important for legibility and hierarchy in your type. While following a certain scale will never replace the eye of a designer, it is considered responsible design to showcase rationale behind your design choices. Our typographic structure is loosely based on a [major third scale (1:1.25 ratio)](http://alistapart.com/article/more-meaningful-typography), providing a comfortable range between the `h1` and `small` elements.
 
