@@ -1,5 +1,5 @@
 # Forms
-Dashing forms
+View an [example](http://dashframework.github.io/dashing/sass/modules/forms/example.html) of Dashing Forms in use
 
 ## Fieldset
 Every form element within Dashing is **required** to be placed within a fieldset. This ensures the correct styles will be applied throughout, without having to add extra classes to each element.
