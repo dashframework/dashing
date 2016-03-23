@@ -49,26 +49,32 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
     padding: 0 1rem;
     white-space: nowrap;
 
+    li, a {
+      border-bottom: 4px solid transparent;
+      padding-bottom: 0.2rem;
+    }
+
     li {
-      @extend %action;
-      border-bottom: 5px solid transparent;
-      color: rgba(auto-color($menu-color), .60);
       display: inline-block;
       float: none;
-      font-size: 1rem;
-      line-height: 0.9rem;
-      margin: 0;
-      margin-right: 1rem;
-      padding: 0.7rem 0;
-      transition: color 0.2s ease-in-out;
 
-      &:hover {
-        color: auto-color($menu-color);
-      }
+      a {
+        @extend %action;
+        color: rgba(auto-color($menu-color), .60);
+        font-size: 1rem;
+        line-height: 0.9rem;
+        margin: 0;
+        margin-right: 1rem;
+        transition: color 0.2s ease-in-out;
 
-      &.active {
-        color: auto-color($menu-color);
-        border-bottom: 5px solid;
+        &:hover {
+          color: auto-color($menu-color);
+        }
+
+        &.active {
+          color: auto-color($menu-color);
+          border-bottom: 4px solid;
+        }
       }
     }
   }

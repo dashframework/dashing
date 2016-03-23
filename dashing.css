@@ -604,7 +604,7 @@ fieldset {
   fieldset select, fieldset textarea, fieldset input[type="date"], fieldset input[type="time"], fieldset input[type="email"], fieldset input[type="month"], fieldset input[type="number"], fieldset input[type="password"], fieldset input[type="tel"], fieldset input[type="text"] {
     -webkit-appearance: none;
     background-color: #FFFFFF;
-    border: 2px solid #EDEDED;
+    border: 2px solid #E0E0E0;
     border-radius: 5px;
     font-size: 1rem;
     max-width: 100%;
@@ -616,6 +616,7 @@ fieldset {
       outline-style: none; }
     fieldset select[disabled], fieldset textarea[disabled], fieldset input[type="date"][disabled], fieldset input[type="time"][disabled], fieldset input[type="email"][disabled], fieldset input[type="month"][disabled], fieldset input[type="number"][disabled], fieldset input[type="password"][disabled], fieldset input[type="tel"][disabled], fieldset input[type="text"][disabled] {
       background-color: #EDEDED !important;
+      border-color: #EDEDED !important;
       cursor: default !important; }
   fieldset input[type=checkbox],
   fieldset input[type=radio] {
@@ -655,7 +656,7 @@ fieldset {
   =========================================================================== */
 /* Actions Extendables
   =========================================================================== */
-.button, button, input[type='submit'], input[type='reset'], .action, .app-menu .app-navigation li {
+.button, button, input[type='submit'], input[type='reset'], .action, .app-menu .app-navigation li a {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -810,22 +811,24 @@ fieldset {
     overflow-x: auto;
     padding: 0 1rem;
     white-space: nowrap; }
+    .app-menu .app-navigation li, .app-menu .app-navigation a {
+      border-bottom: 4px solid transparent;
+      padding-bottom: 0.2rem; }
     .app-menu .app-navigation li {
-      border-bottom: 5px solid transparent;
-      color: rgba(34, 34, 34, 0.6);
       display: inline-block;
-      float: none;
-      font-size: 1rem;
-      line-height: 0.9rem;
-      margin: 0;
-      margin-right: 1rem;
-      padding: 0.7rem 0;
-      transition: color 0.2s ease-in-out; }
-      .app-menu .app-navigation li:hover {
-        color: #222222; }
-      .app-menu .app-navigation li.active {
-        color: #222222;
-        border-bottom: 5px solid; }
+      float: none; }
+      .app-menu .app-navigation li a {
+        color: rgba(34, 34, 34, 0.6);
+        font-size: 1rem;
+        line-height: 0.9rem;
+        margin: 0;
+        margin-right: 1rem;
+        transition: color 0.2s ease-in-out; }
+        .app-menu .app-navigation li a:hover {
+          color: #222222; }
+        .app-menu .app-navigation li a.active {
+          color: #222222;
+          border-bottom: 4px solid; }
   .app-menu.condensed, .app-menu {
     height: 4.6rem; }
   .app-menu.expanded {
