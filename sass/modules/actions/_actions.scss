@@ -16,6 +16,9 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   outline: none;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 50ms ease-in-out;
+  &:first-of-type { margin-left: 0; } //Clears left margin of first %action element
+  &:last-of-type { margin-right: 0; } //Clears right margin of last %action element
 }
 
 /* Actions Mixins
@@ -28,6 +31,10 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   &:hover, &:focus {
     background-color: darken($background-color, 10%);
     color: $color;
+  }
+
+  &:active {
+    background-color: darken($background-color, 15%);
   }
 }
 
@@ -51,13 +58,14 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   border-radius: 50px;
   display: block;
   font-weight: $font-weight-normal;
-  padding: 0.8rem 1rem;
+  margin: 0 0.25rem;
+  padding: 0.75rem 1rem;
   text-align: center;
 
   @media #{$tablet} {
     display: inline-block;
     padding: 0.5rem 1rem;
-    padding-top: 0.4rem;
+    padding-top: 0.45rem;
   }
 
   #{$button-disabled} {
@@ -73,7 +81,10 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   //Button Sizes
   &.button--large { font-size: $font-size-medium !important; }
-  &.button--small { font-size: $font-size-small !important; }
+  &.button--small {
+    font-size: $font-size-small !important;
+    padding: 0.4rem 0.75rem;
+  }
 
   //Button Color Options
   &.button--primary { @include button($background-color: $blue, $color: $white); }
@@ -90,6 +101,8 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 .action {
   @extend %action;
   @include action($blue);
+  display: inline-block;
+  margin: 0 0.5rem;
 
   &.action--primary { @include action($blue); }
   &.action--secondary { @include action($gray); }

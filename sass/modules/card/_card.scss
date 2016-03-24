@@ -6,11 +6,11 @@
   border: 2px solid $gray-200;
   border-radius: 10px;
   margin: 1.5rem auto;
-  padding: $grid-gutter;
+  padding: $grid-gutter; //Found in "_variables.scss"
 
   //Spans the hr full width within a card
   hr.card--hr-full {
-    margin: ($grid-gutter) (-$grid-gutter);
+    margin: ($grid-gutter) (-$grid-gutter); //Found in "_variables.scss"
   }
 
   //Removes padding from card elements

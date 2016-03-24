@@ -64,7 +64,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
         font-size: 1rem;
         line-height: 0.9rem;
         margin: 0;
-        margin-right: 1rem;
+        margin-right: 1rem !important; //Ignores first-of-type and last-of-type margin default to %actions
         transition: color 0.2s ease-in-out;
 
         &:hover {

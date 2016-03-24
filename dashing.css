@@ -668,7 +668,12 @@ fieldset {
   font-weight: 600;
   outline: none;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 50ms ease-in-out; }
+  .button:first-of-type, button:first-of-type, input[type='submit']:first-of-type, input[type='reset']:first-of-type, .action:first-of-type, .app-menu .app-navigation li a:first-of-type {
+    margin-left: 0; }
+  .button:last-of-type, button:last-of-type, input[type='submit']:last-of-type, input[type='reset']:last-of-type, .action:last-of-type, .app-menu .app-navigation li a:last-of-type {
+    margin-right: 0; }
 
 /* Actions Mixins
   =========================================================================== */
@@ -686,16 +691,19 @@ fieldset {
   border-radius: 50px;
   display: block;
   font-weight: 400;
-  padding: 0.8rem 1rem;
+  margin: 0 0.25rem;
+  padding: 0.75rem 1rem;
   text-align: center; }
   .button:hover, .button:focus, button:hover, button:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
     background-color: #436fc7;
     color: #FFFFFF; }
+  .button:active, button:active, input[type='submit']:active, input[type='reset']:active {
+    background-color: #3762ba; }
   @media all and (min-width: 40em) {
     .button, button, input[type='submit'], input[type='reset'] {
       display: inline-block;
       padding: 0.5rem 1rem;
-      padding-top: 0.4rem; } }
+      padding-top: 0.45rem; } }
   .button[disabled], .button.disabled, .button.button--disabled, button[disabled], button.disabled, button.button--disabled, input[type='submit'][disabled], input[type='submit'].disabled, input[type='submit'].button--disabled, input[type='reset'][disabled], input[type='reset'].disabled, input[type='reset'].button--disabled {
     cursor: default;
     opacity: 0.4;
@@ -706,58 +714,77 @@ fieldset {
   .button.button--large, button.button--large, input[type='submit'].button--large, input[type='reset'].button--large {
     font-size: 1.25rem !important; }
   .button.button--small, button.button--small, input[type='submit'].button--small, input[type='reset'].button--small {
-    font-size: 0.8rem !important; }
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.75rem; }
   .button.button--primary, button.button--primary, input[type='submit'].button--primary, input[type='reset'].button--primary {
     background-color: #6A8DD3;
     color: #FFFFFF; }
     .button.button--primary:hover, .button.button--primary:focus, button.button--primary:hover, button.button--primary:focus, input[type='submit'].button--primary:hover, input[type='submit'].button--primary:focus, input[type='reset'].button--primary:hover, input[type='reset'].button--primary:focus {
       background-color: #436fc7;
       color: #FFFFFF; }
+    .button.button--primary:active, button.button--primary:active, input[type='submit'].button--primary:active, input[type='reset'].button--primary:active {
+      background-color: #3762ba; }
   .button.button--secondary, button.button--secondary, input[type='submit'].button--secondary, input[type='reset'].button--secondary {
     background-color: #D4D4D4;
     color: #222222; }
     .button.button--secondary:hover, .button.button--secondary:focus, button.button--secondary:hover, button.button--secondary:focus, input[type='submit'].button--secondary:hover, input[type='submit'].button--secondary:focus, input[type='reset'].button--secondary:hover, input[type='reset'].button--secondary:focus {
       background-color: #bbbbbb;
       color: #222222; }
+    .button.button--secondary:active, button.button--secondary:active, input[type='submit'].button--secondary:active, input[type='reset'].button--secondary:active {
+      background-color: #aeaeae; }
   .button.button--gray, button.button--gray, input[type='submit'].button--gray, input[type='reset'].button--gray {
     background-color: #D4D4D4;
     color: #222222; }
     .button.button--gray:hover, .button.button--gray:focus, button.button--gray:hover, button.button--gray:focus, input[type='submit'].button--gray:hover, input[type='submit'].button--gray:focus, input[type='reset'].button--gray:hover, input[type='reset'].button--gray:focus {
       background-color: #bbbbbb;
       color: #222222; }
+    .button.button--gray:active, button.button--gray:active, input[type='submit'].button--gray:active, input[type='reset'].button--gray:active {
+      background-color: #aeaeae; }
   .button.button--blue, button.button--blue, input[type='submit'].button--blue, input[type='reset'].button--blue {
     background-color: #6A8DD3;
     color: #FFFFFF; }
     .button.button--blue:hover, .button.button--blue:focus, button.button--blue:hover, button.button--blue:focus, input[type='submit'].button--blue:hover, input[type='submit'].button--blue:focus, input[type='reset'].button--blue:hover, input[type='reset'].button--blue:focus {
       background-color: #436fc7;
       color: #FFFFFF; }
+    .button.button--blue:active, button.button--blue:active, input[type='submit'].button--blue:active, input[type='reset'].button--blue:active {
+      background-color: #3762ba; }
   .button.button--green, button.button--green, input[type='submit'].button--green, input[type='reset'].button--green {
     background-color: #2DB16C;
     color: #FFFFFF; }
     .button.button--green:hover, .button.button--green:focus, button.button--green:hover, button.button--green:focus, input[type='submit'].button--green:hover, input[type='submit'].button--green:focus, input[type='reset'].button--green:hover, input[type='reset'].button--green:focus {
       background-color: #238853;
       color: #FFFFFF; }
+    .button.button--green:active, button.button--green:active, input[type='submit'].button--green:active, input[type='reset'].button--green:active {
+      background-color: #1d7447; }
   .button.button--orange, button.button--orange, input[type='submit'].button--orange, input[type='reset'].button--orange {
     background-color: #DD9331;
     color: #FFFFFF; }
     .button.button--orange:hover, .button.button--orange:focus, button.button--orange:hover, button.button--orange:focus, input[type='submit'].button--orange:hover, input[type='submit'].button--orange:focus, input[type='reset'].button--orange:hover, input[type='reset'].button--orange:focus {
       background-color: #bc781f;
       color: #FFFFFF; }
+    .button.button--orange:active, button.button--orange:active, input[type='submit'].button--orange:active, input[type='reset'].button--orange:active {
+      background-color: #a66a1b; }
   .button.button--purple, button.button--purple, input[type='submit'].button--purple, input[type='reset'].button--purple {
     background-color: #754C82;
     color: #FFFFFF; }
     .button.button--purple:hover, .button.button--purple:focus, button.button--purple:hover, button.button--purple:focus, input[type='submit'].button--purple:hover, input[type='submit'].button--purple:focus, input[type='reset'].button--purple:hover, input[type='reset'].button--purple:focus {
       background-color: #583962;
       color: #FFFFFF; }
+    .button.button--purple:active, button.button--purple:active, input[type='submit'].button--purple:active, input[type='reset'].button--purple:active {
+      background-color: #4a3052; }
   .button.button--red, button.button--red, input[type='submit'].button--red, input[type='reset'].button--red {
     background-color: #DD4B39;
     color: #FFFFFF; }
     .button.button--red:hover, .button.button--red:focus, button.button--red:hover, button.button--red:focus, input[type='submit'].button--red:hover, input[type='submit'].button--red:focus, input[type='reset'].button--red:hover, input[type='reset'].button--red:focus {
       background-color: #c23321;
       color: #FFFFFF; }
+    .button.button--red:active, button.button--red:active, input[type='submit'].button--red:active, input[type='reset'].button--red:active {
+      background-color: #ac2d1e; }
 
 .action {
-  color: #6A8DD3; }
+  color: #6A8DD3;
+  display: inline-block;
+  margin: 0 0.5rem; }
   .action:hover, .action:focus {
     opacity: 0.6; }
   .action.action--primary {
@@ -822,7 +849,7 @@ fieldset {
         font-size: 1rem;
         line-height: 0.9rem;
         margin: 0;
-        margin-right: 1rem;
+        margin-right: 1rem !important;
         transition: color 0.2s ease-in-out; }
         .app-menu .app-navigation li a:hover {
           color: #222222; }
