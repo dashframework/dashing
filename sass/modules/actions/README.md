@@ -19,14 +19,14 @@ Buttons have a strong visual hierarchy and should be used to indicate important 
 
 ### How to include a Dashing button
 1. Create a new `<button>` element
-```html
-  <button>Save</button>
-```
+  ```html
+    <button>Save</button>
+  ```
 
 2. Add the appropriate `class` names to style your button
-```html
-  <button class="button button--blue">Save</button>
-```
+  ```html
+    <button class="button button--blue">Save</button>
+  ```
 
 3. That's it! You're ready to use a Dashing button
 
