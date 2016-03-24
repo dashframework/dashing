@@ -57,6 +57,19 @@ An Action Link is made up of text and is given a default color of `$blue` to ind
 
 Note: Color variables are defined in [`_colors.scss`](../../base/colors)
 
+### How to include a Dashing Action Link
+1. Create a new `<div>` element
+  ```html
+    <div>Edit</div>
+  ```
+
+2. Add the appropriate `class` names to style your action link
+  ```html
+    <div class="action action--primary">Edit</div>
+  ```
+
+3. That's it! You're ready to use a Dashing Action Link
+
 ### Creating a custom action link color with Sass
 To create a custom action link color, include this mixin and plug in your desired text color as a *Sass variable* or *hex color code*.
 
