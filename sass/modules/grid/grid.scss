@@ -18,6 +18,7 @@ html {
 /* Grid Styles
   =========================================================================== */
 
+//Every column should be placed within a ".row".
 .row {
   @extend %clearfix;
   margin: auto;
@@ -28,16 +29,16 @@ html {
 .column {
   padding: $grid-gutter;
 
-  &.nested { padding: 0.5rem; }
+  &--nested { padding: 0.5rem; }
 
-  &.full,
-  &.two-thirds,
-  &.three-fourths,
-  &.half,
-  &.third,
-  &.fourth,
-  &.sixth,
-  &.eighth {
+  &--full,
+  &--two-thirds,
+  &--three-fourths,
+  &--half,
+  &--third,
+  &--fourth,
+  &--sixth,
+  &--eighth {
     width: 100%;
   }
 
@@ -46,18 +47,18 @@ html {
 
     &.flow-opposite { float: right; }
 
-    &.full {
+    &--full {
       float: none;
       width: 100%;
     }
 
-    &.two-thirds { width: 66.666%; }
-    &.three-fourths { width: 75%; }
-    &.half { width: 50%; }
-    &.third { width: 33.333%; }
-    &.fourth { width: 25%; }
-    &.sixth { width: 16.666%; }
-    &.eighth { width: 12.5%; }
+    &--two-thirds { width: 66.666%; }
+    &--three-fourths { width: 75%; }
+    &--half { width: 50%; }
+    &--third { width: 33.333%; }
+    &--fourth { width: 25%; }
+    &--sixth { width: 16.666%; }
+    &--eighth { width: 12.5%; }
   }
 }
 
