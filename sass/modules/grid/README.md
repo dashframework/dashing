@@ -11,7 +11,7 @@ Being able to seamlessly translate your App between multiple devices is a must. 
 |------------------------------------|--------------------------------------|-------------------------------------------|
 | `.row`                             | Places                               | *Required*                                |
 | `.column`                          | Places                               | *Required*. Columns by default have 100% width      |
-| `.column--nested`                  | Applies half the padding of `$grid-gutter` | When nesting columns within other containers, use the ".nested" class to remove some unnecessary padding |
+| `.column--nested`                  | Applies half the padding of `$grid-gutter` | Use `.column--nested` to reduce the default padding in nested elements |
 | `.column--full`                    | Applies 100% width to a column       |                                           |
 | `.column--two-thirds`              | Applies 75% width to a column        |                                           |
 | `.column--three-fourths`           | Applies 66.666% width to a column    |                                           |
