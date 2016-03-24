@@ -18,7 +18,6 @@ html {
 /* Grid Styles
   =========================================================================== */
 
-//Every column should be placed within a ".row".
 .row {
   @extend %clearfix;
   margin: auto;
@@ -26,14 +25,17 @@ html {
   width: 100%;
 }
 
+//Every column should be placed within a ".row".
 .column {
   padding: $grid-gutter;
 
-  &--nested { padding: 0.5rem; }
+  &--nested { //When nesting columns within other containers (cards, containers, modals, etc.) use the ".nested" class to remove some unnecessary padding
+    padding: calc((#{$grid-gutter}) / 2);
+  }
 
   &--full,
-  &--two-thirds,
   &--three-fourths,
+  &--two-thirds,
   &--half,
   &--third,
   &--fourth,
@@ -52,8 +54,8 @@ html {
       width: 100%;
     }
 
-    &--two-thirds { width: 66.666%; }
     &--three-fourths { width: 75%; }
+    &--two-thirds { width: 66.666%; }
     &--half { width: 50%; }
     &--third { width: 33.333%; }
     &--fourth { width: 25%; }
