@@ -4,12 +4,9 @@ View an [example](http://dashframework.github.io/dashing/sass/modules/forms/exam
 ## Fieldset
 Every form element within Dashing is **required** to be placed within a fieldset. This ensures the correct styles will be applied throughout, without having to add extra classes to each element.
 
-### Supported input types
+### Included Input Types
 * text
 * select
-* date
-* time
-* month
 * email
 * number
 * password
@@ -19,6 +16,11 @@ Every form element within Dashing is **required** to be placed within a fieldset
 * checkbox
 * file
 * textarea
+* *date*
+* *time*
+* *month*
+
+> **Note:** The date, time, and month input types are currently not supported in IE, Firefox, and Safari
 
 ##### Configurations
 | Form attributes        | Effect                                           | Notes                                                     |
