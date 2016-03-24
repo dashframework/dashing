@@ -6,7 +6,7 @@ Buttons have a strong visual hierarchy and should be used to indicate important 
 
 > **Tip:** When placing text within a button, keep it between one and two words. Anything longer can become too overpowering and hard to read at a glance.
 
-#### Configurations
+### Configurations
 | Button class                  | Effect                               | Notes                                                       |
 |-------------------------------|--------------------------------------|-------------------------------------------------------------|
 | `.button`                     | Standard button                      | *Required*                                                  |
