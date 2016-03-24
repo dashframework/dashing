@@ -1,4 +1,6 @@
 # Dashing Navigation
+View an [example](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html) of Dashing Navigation in use
+
 As users interact within your App, it is important to provide them with a navigation experience that is consistent with the rest of the Dash platform. By using our standard navigation elements, you will ensure users do not get lost or confused while using your App.
 
 ## Auto-color
