@@ -1,10 +1,10 @@
 # Dashing Actions
-View an example](http://dashframework.github.io/dashing/sass/modules/actions/example.html) of Dashing buttons and action links
+View an [example](http://dashframework.github.io/dashing/sass/modules/actions/example.html) of Dashing buttons and action links
 
 ## Buttons
 Buttons have a strong visual hierarchy and should be used to indicate important actions to your user.
 
-> **Tip** When placing text within a button, keep it between one and two words. Anything longer can become too overpowering and hard to read at a glance.
+> **Tip:** When placing text within a button, keep it between one and two words. Anything longer can become too overpowering and hard to read at a glance.
 
 ##### Configurations
 | Button class                  | Effect                               | Notes                                                       |
