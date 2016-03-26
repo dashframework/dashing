@@ -1,38 +1,54 @@
 @import '../../dashing.scss';
 
-  .example-flex {
-    overflow: auto;
+.example-flex {
+  overflow: auto;
 
-    .column-flex {
-      color: $white;
-      font-weight: 600;
-      text-align: center;
-      padding: 2rem 0;
-      margin: 0;
-    }
+  .column-flex {
+    color: $white;
+    font-weight: 600;
+    text-align: center;
+    padding: 3rem 0;
+    margin: 0;
+    line-height: 0;
 
-    .row-flex.row-column {
-      flex-direction: column;
-      width: 100%;
-      float: left;
-      @media #{$tablet} {
-        width: 16.6%;
+    &.half-height {
+      @media all and (min-width: 840px) {
+        padding: 1.5rem 0;
       }
     }
 
-    .column-flex:hover {
-      box-shadow: inset 0px 0px 0px 4px #000;
+    input {
+      background-color: transparent;
+      border: none;
+      text-align: center;
       text-transform: uppercase;
-    }
-
-    .default {
-      margin: 2rem 0 !important;
+      width: 100%;
+      margin: -1rem;
+      outline: none;
     }
   }
 
+  .row-flex.row-column {
+    flex-direction: column;
+    width: 100%;
+    float: left;
+
+    @media all and (min-width: 840px) {
+      width: 12.5%;
+    }
+  }
+
+  .column-flex:hover {
+    box-shadow: inset 0px 0px 0px 4px #000;
+    text-transform: uppercase;
+  }
+
+  .default {
+    margin: 2rem 0 !important;
+  }
+}
 
 .example-flex .column-flex {
-
   &.gray-50  { background-color: $gray-50;  color: $gray-900; }
   &.gray-100 { background-color: $gray-100; color: $gray-900; }
   &.gray-150 { background-color: $gray-150; color: $gray-900; }

@@ -9,33 +9,31 @@
 
     <script>
       $(document).ready(function() {
-        var color;
-        var text;
-        $('.example-flex .column-flex').hover(
-          function() {
-            var x = $(this).css('backgroundColor');
-            hexc(x);
-            text = $(this).text();
-            $(this).text(color);
-          },
-          function() {
-            $(this).text(text);
+        var colorSwatchText;
+
+        $('.example-flex .column-flex').hover( function() { showColor(this); }, function() { $(this).text(colorSwatchText); });
+
+        function showColor(colorSwatch) {
+          var colorSwatchHex = getHexColorOf($(colorSwatch).css('backgroundColor'));
+          colorSwatchText = $(colorSwatch).text();
+          $(colorSwatch).html("<input type='text' value='" + colorSwatchHex + "' readonly />");
+          $(colorSwatch).children("input").select();
+        }
+
+        function getHexColorOf(colorval) {
+          var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+          delete(parts[0]);
+          for (var i = 1; i <= 3; ++i) {
+            parts[i] = parseInt(parts[i]).toString(16);
+            if (parts[i].length == 1) parts[i] = '0' + parts[i];
           }
-        );
-        function hexc(colorval) {
-            var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-            delete(parts[0]);
-            for (var i = 1; i <= 3; ++i) {
-                parts[i] = parseInt(parts[i]).toString(16);
-                if (parts[i].length == 1) parts[i] = '0' + parts[i];
-            }
-            color = '#' + parts.join('');
+          return '#' + parts.join('');
         }
       });
     </script>
   </head>
-  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
-    <h1 style="text-align: center; padding: 3rem;">Dashing Colors</h1>
+  <body style="padding-top: 1rem; margin: auto; background-color: #fff;">
+    <h1 style="text-align: center; padding: 3rem; padding-top: 2.01rem;">Dashing Colors</h1>
 
     <section class="example-flex">
       <div class="row-flex row-column row-flex--example ">
@@ -123,14 +121,12 @@
         <div class="column-flex red-900">$red-900</div>
         <div class="column-flex default red">$red</div>
       </div>
-    </section>
 
-    <section class="example-flex">
       <div class="row-flex row-column">
-        <div class="column-flex gray-50">$gray-50</div>
-        <div class="column-flex gray-100">$gray-100</div>
-        <div class="column-flex gray-150">$gray-150</div>
-        <div class="column-flex gray-200">$gray-200</div>
+        <div class="column-flex gray-50 half-height">$gray-50</div>
+        <div class="column-flex gray-100 half-height">$gray-100</div>
+        <div class="column-flex gray-150 half-height">$gray-150</div>
+        <div class="column-flex gray-200 half-height">$gray-200</div>
         <div class="column-flex gray-250">$gray-250</div>
         <div class="column-flex gray-300">$gray-300</div>
         <div class="column-flex gray-400">$gray-400</div>
@@ -143,10 +139,10 @@
       </div>
 
       <div class="row-flex row-column">
-        <div class="column-flex gray-50">$gray-50c</div>
-        <div class="column-flex gray-100c">$gray-100c</div>
-        <div class="column-flex gray-150c">$gray-150c</div>
-        <div class="column-flex gray-200c">$gray-200c</div>
+        <div class="column-flex gray-50 half-height">$gray-50c</div>
+        <div class="column-flex gray-100c half-height">$gray-100c</div>
+        <div class="column-flex gray-150c half-height">$gray-150c</div>
+        <div class="column-flex gray-200c half-height">$gray-200c</div>
         <div class="column-flex gray-250c">$gray-250c</div>
         <div class="column-flex gray-300c">$gray-300c</div>
         <div class="column-flex gray-400c">$gray-400c</div>
