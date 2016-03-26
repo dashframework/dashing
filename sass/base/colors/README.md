@@ -1,5 +1,5 @@
 # Colors
-View an [example](http://dashframework.github.io/dashing/sass/base/colors/example.html) of the Dashing Color Scale
+View an [example](http://dashframework.github.io/dashing/sass/base/colors/example/example.html) of the Dashing Color Scale
 
 ##### Color Scale
 | Color Variables  | Hex Color Code  |
