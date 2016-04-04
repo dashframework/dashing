@@ -1,6 +1,13 @@
 # Dashing
 Stylish framework for web apps
 
+## Browser Support
+
+| Chrome | Edge | Firefox | Opera | IE | Safari |
+|--------|------|---------|-------|----|--------|
+| Latest | Latest | Latest | Latest | IE 11+ | Safari 8+ |
+
+
 ## Getting Started
 
 ### Download
