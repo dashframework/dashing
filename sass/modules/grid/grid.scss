@@ -22,16 +22,26 @@ html {
   @extend %clearfix;
   margin: auto;
   max-width: $global-content-width;
+  padding-left: $grid-gutter;
   width: 100%;
 }
 
 //Every column should be placed within a ".row".
 .column {
   padding: $grid-gutter;
+  padding-left: 0 !important;
 
   &--nested { //When nesting columns within other containers (cards, containers, modals, etc.) use the ".nested" class to remove some unnecessary padding
     padding: calc((#{$grid-gutter}) / 2);
+    padding: $grid-gutter;
   }
+
+  // &--nested { //When nesting columns within other containers (cards, containers, modals, etc.) use the ".nested" class to remove some unnecessary padding
+  //   padding: $grid-gutter 0;
+  //   @media #{$tablet} {
+  //     padding: 0 $grid-gutter;
+  //   }
+  // }
 
   &--full,
   &--three-fourths,
@@ -45,6 +55,7 @@ html {
   }
 
   @media #{$tablet} {
+    padding: $grid-gutter;
     float: left;
 
     &.flow-opposite { float: right; }

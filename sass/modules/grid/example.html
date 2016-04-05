@@ -6,9 +6,13 @@
     <title>Grid</title>
 
     <style>
-      .column--example {
+      .row--example {
         background-color: rgba(157, 192, 255, 0.5);
-        margin: 1rem 0;
+        margin: 2rem auto;
+      }
+
+      .column--example {
+        font-size: 16px;
         text-align: center;
       }
 
@@ -23,22 +27,26 @@
         background-color: #2DB16C;
       }
 
-      .column--nested.column--example {
+      .row--example.row--nested {
         background-color: rgba(45, 177, 108, 0.4);
         margin: 0;
       }
-    </style>
 
+      .column--nested.column--example {
+        margin: 0;
+      }
+    </style>
   </head>
+
   <body style="padding: 1rem 0; margin: auto; background-color: #fff;">
     <h1 style="text-align: center; padding: 3rem;">Dashing Grid</h1>
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--full column--example">
         <div class="grid--example">.column--full</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--half column--example">
         <div class="grid--example">.column--half</div>
       </div>
@@ -47,7 +55,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--third column--example">
         <div class="grid--example">.column--third</div>
       </div>
@@ -59,7 +67,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--third column--example">
         <div class="grid--example">.column--third</div>
       </div>
@@ -68,7 +76,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--fourth column--example">
         <div class="grid--example">.column--fourth</div>
       </div>
@@ -83,7 +91,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--fourth column--example">
         <div class="grid--example">.column--fourth</div>
       </div>
@@ -92,7 +100,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--sixth column--example">
         <div class="grid--example">.column--sixth</div>
       </div>
@@ -113,7 +121,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--eighth column--example">
         <div class="grid--example">.column--eighth</div>
       </div>
@@ -140,14 +148,49 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row--example">
       <div class="column column--full column--example">
-        <div class="row">
+        <div class="row row--example row--nested">
           <div class="column column--half column--nested column--example">
             <div class="grid--example">.column--half .column--nested</div>
           </div>
           <div class="column column--half column--nested column--example">
             <div class="grid--example">.column--half .column--nested</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--example">
+      <div class="column column--full column--example">
+        <div class="row row--example row--nested">
+          <div class="column column--third column--nested column--example">
+            <div class="grid--example">.column--third .column--nested</div>
+          </div>
+          <div class="column column--third column--nested column--example">
+            <div class="grid--example">.column--third .column--nested</div>
+          </div>
+          <div class="column column--third column--nested column--example">
+            <div class="grid--example">.column--third .column--nested</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--example">
+      <div class="column column--full column--example">
+        <div class="row row--example row--nested">
+          <div class="column column--fourth column--nested column--example">
+            <div class="grid--example">.column--fourth .column--nested</div>
+          </div>
+          <div class="column column--fourth column--nested column--example">
+            <div class="grid--example">.column--fourth .column--nested</div>
+          </div>
+          <div class="column column--fourth column--nested column--example">
+            <div class="grid--example">.column--fourth .column--nested</div>
+          </div>
+          <div class="column column--fourth column--nested column--example">
+            <div class="grid--example">.column--fourth .column--nested</div>
           </div>
         </div>
       </div>
