@@ -1,15 +1,3 @@
 @import "sass/vendor/normalize";
-
-@import "sass/base/mixins/mixins";
-@import "sass/base/variables/variables";
-@import "sass/base/utilities/utilities";
-@import "sass/base/extendables/extendables";
-@import "sass/base/colors/colors";
 @import "sass/base/base";
-
-@import "sass/modules/typography/typography";
-@import "sass/modules/grid/grid";
-@import "sass/modules/forms/forms";
-@import "sass/modules/actions/actions";
-@import "sass/modules/card/card";
-@import "sass/modules/navigation/navigation";
+@import "sass/modules/modules";
