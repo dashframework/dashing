@@ -1,5 +1,16 @@
+/* Imported base components
+  ================================================== */
+
 @import "mixins/mixins";
 @import "variables/variables";
 @import "utilities/utilities";
 @import "extendables/extendables";
 @import "colors/colors";
+
+/* Default base element styles
+  ================================================== */
+
+hr {
+  border: 0;
+  border-top: 2px solid #D4D4D4;
+}

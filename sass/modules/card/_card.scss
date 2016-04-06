@@ -8,18 +8,37 @@
   margin: 1.5rem auto;
   padding: $grid-gutter; //Found in "_variables.scss"
 
+  &--header {
+
+  }
+
+  //card--content is most useful when placing a form within a card
+  &--content {
+    form & {
+      padding-top: calc((#{$grid-gutter}) / 2);
+      padding-bottom: calc((#{$grid-gutter}) / 2);
+    }
+  }
+
+  &--footer {
+
+  }
+
   //Spans the hr full width within a card
   hr.card--hr-full {
     margin: ($grid-gutter) (-$grid-gutter); //Found in "_variables.scss"
   }
 
   //Removes padding from card elements
-  &.card--without-padding {
+  &--without-padding {
     padding: 0;
+    hr.card--hr-full { margin: 0; }
   }
 
   //Use "is-selectable" to indicate a clickable card
   &.is-selectable {
+    @include user-select(none);
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
     &:hover {
       @extend %shadow-100; //Found in "_setup.scss"
       border-color: $blue;

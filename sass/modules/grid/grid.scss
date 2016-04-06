@@ -32,16 +32,9 @@ html {
   padding-left: 0 !important;
 
   &--nested { //When nesting columns within other containers (cards, containers, modals, etc.) use the ".nested" class to remove some unnecessary padding
-    padding: calc((#{$grid-gutter}) / 2);
-    padding: $grid-gutter;
+    padding-top: calc((#{$grid-gutter}) / 2);
+    padding-bottom: calc((#{$grid-gutter}) / 2);
   }
-
-  // &--nested { //When nesting columns within other containers (cards, containers, modals, etc.) use the ".nested" class to remove some unnecessary padding
-  //   padding: $grid-gutter 0;
-  //   @media #{$tablet} {
-  //     padding: 0 $grid-gutter;
-  //   }
-  // }
 
   &--full,
   &--three-fourths,
@@ -55,7 +48,6 @@ html {
   }
 
   @media #{$tablet} {
-    padding: $grid-gutter;
     float: left;
 
     &.flow-opposite { float: right; }

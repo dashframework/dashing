@@ -56,7 +56,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   -webkit-font-smoothing: auto;
   border-radius: 50px;
-  display: block;
+  // display: block;
   font-weight: $font-weight-normal;
   margin: 0 0.25rem;
   padding: 0.75rem 1rem;
@@ -106,4 +106,9 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   &.action--primary { @include action($blue); }
   &.action--secondary { @include action($gray); }
+}
+
+//Provides margin when a button and action are paired together
+.button ~ .action {
+  margin-left: 0.5rem;
 }
