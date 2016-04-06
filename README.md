@@ -3,39 +3,41 @@ Stylish framework for web apps
 
 ## Getting Started
 
-### Working with the SASS
+### Working with SASS
 
 #### 1. Include Normalize
 
-In your main application sass file first include normalize. We include a version of normalize that we keep up to date with or you can include Normalize directly.
+Include normalize first in your main application Sass file. We provide a version of normalize that we keep updated, or you may include normalize directly.
 
 ```scss
 @import "/bower_components/dashing/sass/vendor/normalize";
 ```
 
-You could optionally use the normalize project directly
+> Note: You could optionally use the normalize project directly
 
 #### 2. Include Base
+
+Base files include variables, mixins, extendables, utilities and the dashing color scale.
 
 ```scss
 @import "/bower_components/dashing/sass/base/base";
 ```
 
-#### 3. Optionally include an overrides file to customize the default variables
+#### 3. Optional – Include an overrides file to customize the default variables
 
 ```scss
 @import "overrides";
 ```
-This is a custom file you create and include from your styles directory.
+> Note: This is a custom file that you will need to create and include from your styles directory.
 
-#### Include Modules
+#### 4. Include Modules
 
 ```scss
 @import "/bower_components/dashing/sass/modules/modules";
 ```
 
 
-### Working with the CSS
+### Working with CSS
 
 ```html
 <link rel="stylesheet" href="/bower_components/dashing/dashing.css">
@@ -47,6 +49,30 @@ This is a custom file you create and include from your styles directory.
 | Chrome | Edge | Firefox | Opera | IE | Safari |
 |--------|------|---------|-------|----|--------|
 | Latest | Latest | Latest | Latest | IE 11+ | Safari 8+ |
+
+
+### What's Included
+
+##### [Vendor](https://github.com/dashframework/dashing/tree/develop/sass/vendor)
+
+* [Normalize](https://github.com/dashframework/dashing/tree/develop/sass/vendor)
+
+##### [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base)
+
+* [Colors](https://github.com/dashframework/dashing/tree/develop/sass/base/colors)
+* [Extendables](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables)
+* [Mixins](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins)
+* [Utilities](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities)
+* [Variables](https://github.com/dashframework/dashing/tree/develop/sass/base/variables)
+
+##### [Modules](https://github.com/dashframework/dashing/tree/develop/sass/modules)
+
+* [Actions](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions)
+* [Card](https://github.com/dashframework/dashing/tree/develop/sass/modules/card)
+* [Forms](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms)
+* [Grid](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid)
+* [Navigation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation)
+* [Typography](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography)
 
 ### Examples
 
