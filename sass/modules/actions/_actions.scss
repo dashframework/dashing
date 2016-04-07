@@ -111,6 +111,13 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
     &.button--primary, .button--primary:hover, .button--primary:focus { @include button($background-color: transparent, $color: $blue); }
     &.button--secondary, .button--secondary:hover, .button--secondary:focus  { @include button($background-color: transparent, $color: $gray-600); }
+    &.button--blue, .button--blue:hover, .button--blue:focus { @include button($background-color: transparent, $color: $blue); }
+    &.button--gray, .button--gray:hover, .button--gray:focus,
+    &.button--grey, .button--grey:hover, .button--grey:focus { @include button($background-color: transparent, $color: $gray-600); }
+    &.button--green, .button--green:hover, .button--green:focus { @include button($background-color: transparent, $color: $green); }
+    &.button--orange, .button--orange:hover, .button--orange:focus { @include button($background-color: transparent, $color: $orange); }
+    &.button--purple, .button--purple:hover, .button--purple:focus { @include button($background-color: transparent, $color: $purple); }
+    &.button--red, .button--red:hover, .button--red:focus { @include button($background-color: transparent, $color: $red); }
 
     &:active {
       opacity: .9;

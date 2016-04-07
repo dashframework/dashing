@@ -1,8 +1,5 @@
 # Dashing Actions
-View an [example](http://dashframework.github.io/dashing/sass/modules/actions/example.html) of Dashing buttons
-
-## Buttons
-Buttons have a strong visual hierarchy and should be used to indicate important actions to your user.
+View an [example](http://dashframework.github.io/dashing/sass/modules/actions/example.html) of Dashing buttons.
 
 > **Tip:** When placing text within a button, strive to keep it between one and two words. Anything longer can become too overpowering and hard to read at a quick glance.
 
@@ -13,7 +10,7 @@ Buttons have a strong visual hierarchy and should be used to indicate important 
 | `.button--small` | Small button | Adds styles for a small button |
 | `.button--large` | Large button | Adds styles for a large button |
 | `.button--border` | Displays transparent background color with colored border | |
-| `.button--transparent` | Displays transparent background color | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#using-a-transparent-button) for correct syntax |
+| `.button--transparent` | Displays transparent background color | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#transparent-button) for correct syntax |
 | `.button--icon` | Style for actionable icons | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#adding-an-icon-to-your-button) for correct syntax |
 | `disabled` | Disabled button | Use the disabled attribute to prevent tabbing to disabled buttons |
 | `.flow-opposite` | Reverses margin for  ||
@@ -32,13 +29,25 @@ Buttons have a strong visual hierarchy and should be used to indicate important 
 
 > Note: Color variables are defined in [`_colors.scss`](../../base/colors)
 
-### Using a default button
+## Usage
+
+### Default button
 
 ```html
 <button class="button button--blue">Save</button>
 ```
 
-### Using a transparent button
+### Transparent button
+
+Use a transparent button when you don't want an action to be as prominent.
+
+```html
+<button class="button button--primary button--transparent">
+  Save
+</button>
+```
+
+### Border button
 
 ```html
 <button class="button button--primary button--transparent">
@@ -77,7 +86,7 @@ Button icons are used to add action to a single ui icon. Just add the `.button--
 
 #### Transparent button icon
 
-Add the `.button--transparent` class to your `.button--icon` to remove the background color.
+Adding the `.button--transparent` class to your `.button--icon` removes the background color.
 
 ```html
 <button class="button button--transparent button--icon button--icon--small">
