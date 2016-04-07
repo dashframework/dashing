@@ -1,34 +1,97 @@
 # Dashing Actions
-View an [example](http://dashframework.github.io/dashing/sass/modules/actions/example.html) of Dashing buttons and action links
+View an [example](http://dashframework.github.io/dashing/sass/modules/actions/example.html) of Dashing buttons
 
 ## Buttons
 Buttons have a strong visual hierarchy and should be used to indicate important actions to your user.
 
-> **Tip:** When placing text within a button, keep it between one and two words. Anything longer can become too overpowering and hard to read at a glance.
+> **Tip:** When placing text within a button, strive to keep it between one and two words. Anything longer can become too overpowering and hard to read at a quick glance.
 
-### Configurations
-| Button class                  | Effect                               | Notes                                                       |
-|-------------------------------|--------------------------------------|-------------------------------------------------------------|
-| `.button`                     | Standard button                      | *Required*                                                  |
-| `.disabled`                   | Disabled button                      | You may use the `.disabled` class or `[disabled]` attribute |
-| `.button--primary`            | Applies the primary color effect     | The default primary button color is `$blue`                 |
-| `.button--secondary`          | Applies the secondary color effect   | The default secondary button color is `$gray`               |
-| `.button--green`              | Applies a green color effect         | Review the base color mixins that are included for buttons  |
+### Button Configurations
+| Button class               | Effect               | Notes               |
+|----------------------------|----------------------|---------------------|
+| `.button` | Standard button | *Required* |
+| `.button--small` | Small button | Adds styles for a small button |
+| `.button--large` | Large button | Adds styles for a large button |
+| `.button--border` | Displays transparent background color with colored border | |
+| `.button--transparent` | Displays transparent background color | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#using-a-transparent-button) for correct syntax |
+| `.button--icon` | Style for actionable icons | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#adding-an-icon-to-your-button) for correct syntax |
+| `disabled` | Disabled button | Use the disabled attribute to prevent tabbing to disabled buttons |
+| `.flow-opposite` | Reverses margin for  ||
 
-Note: Color variables are defined in [`_colors.scss`](../../base/colors)
+### Color Configuration
+| Button class               | Effect               | Notes               |
+|----------------------------|----------------------|---------------------|
+| `.button--primary` | Applies the primary color effect | The default primary button color is `$blue` |
+| `.button--secondary` | Applies the secondary color effect | The default secondary button color is `$gray` |
+| `.button--blue` | Applies a green color effect | |
+| `.button--gray` or `.button--grey`| Applies a gray color effect | |
+| `.button--green` | Applies a green color effect | |
+| `.button--orange` | Applies a orange color effect | |
+| `.button--purple` | Applies a purple color effect | |
+| `.button--red` | Applies a red color effect | |
 
-### How to include a Dashing button
-1. Create a new `<button>` element
-  ```html
-    <button>Save</button>
-  ```
+> Note: Color variables are defined in [`_colors.scss`](../../base/colors)
 
-2. Add the appropriate `class` names to style your button
-  ```html
-    <button class="button button--blue">Save</button>
-  ```
+### Using a default button
 
-3. That's it! You're ready to use a Dashing button
+```html
+<button class="button button--blue">Save</button>
+```
+
+### Using a transparent button
+
+```html
+<button class="button button--primary button--transparent">
+  Save
+</button>
+```
+
+### Adding an icon to your button
+
+```html
+<button class="button button--primary">
+  <i class="icon icon--search icon--blue"></i>
+  Search
+</button>
+```
+
+### Button icons
+
+Button icons are used to add action to a single ui icon. Just add the `.button--icon` class to your button to get started.
+
+#### Default button icon
+
+```html
+<button class="button button--icon button--primary">
+  <i class="icon icon--add icon--white"></i>
+</button>
+```
+
+#### Small button icon
+
+```html
+<button class="button button--icon button--red">
+  <i class="icon icon--add icon--white"></i>
+</button>
+```
+
+#### Transparent button icon
+
+Add the `.button--transparent` class to your `.button--icon` to remove the background color.
+
+```html
+<button class="button button--transparent button--icon button--icon--small">
+  <i class="icon icon--question-filled icon--gray"></i>
+</button>
+```
+
+#### Main button icon
+
+```html
+<button class="button button--icon button--icon--main button--blue">
+  <i class="icon icon--add icon--white"></i>
+</button>
+```
 
 ### Creating a custom button color with Sass
 To create a custom button color, just include the button `mixin` and plug in your background-color and text color as a *Sass variable* or *hex color code*.
@@ -40,45 +103,5 @@ To create a custom button color, just include the button `mixin` and plug in you
 
   .button--warning {
     @include button($background-color: #DD9331, $color: #FFFFFF);
-  }
-```
-
------
-
-## Action Links
-An Action Link is made up of text and is given a default color of `$blue` to indicate action.
-
-### Configurations
-| Action class                  | Effect                  | Notes                                               |
-|-------------------------------|-------------------------|-----------------------------------------------------|
-| `.action`                     | Defines an action       | *Required*                                          |
-| `.action--primary`            | Primary action link     | The default primary action link is `$blue`          |
-| `.action--secondary`          | Secondary action link   | The default secondary action link is `$gray`        |
-
-Note: Color variables are defined in [`_colors.scss`](../../base/colors)
-
-### How to include a Dashing Action Link
-1. Create a new `<div>` element
-  ```html
-    <div>Edit</div>
-  ```
-
-2. Add the appropriate `class` names to style your action link
-  ```html
-    <div class="action action--primary">Edit</div>
-  ```
-
-3. That's it! You're ready to use a Dashing Action Link
-
-### Creating a custom action link color with Sass
-To create a custom action link color, include this mixin and plug in your desired text color as a *Sass variable* or *hex color code*.
-
-```scss
-  .action--blue {
-    @include action($blue);
-  }
-
-  .action--red {
-    @include action(#DD4B39);
   }
 ```
