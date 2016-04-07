@@ -3,7 +3,7 @@ View an [example](http://dashframework.github.io/dashing/sass/modules/actions/ex
 
 > **Tip:** When placing text within a button, strive to keep it between one and two words. Anything longer can become too overpowering and hard to read at a quick glance.
 
-### Button Configurations
+## Button Configurations
 | Button class               | Effect               | Notes               |
 |----------------------------|----------------------|---------------------|
 | `.button` | Standard button | *Required* |
@@ -15,7 +15,7 @@ View an [example](http://dashframework.github.io/dashing/sass/modules/actions/ex
 | `disabled` | Disabled button | Use the disabled attribute to prevent tabbing to disabled buttons |
 | `.flow-opposite` | Reverses margin for  ||
 
-### Color Configuration
+## Color Configuration
 | Button class               | Effect               | Notes               |
 |----------------------------|----------------------|---------------------|
 | `.button--primary` | Applies the primary color effect | The default primary button color is `$blue` |

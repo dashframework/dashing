@@ -47,9 +47,8 @@
   }
 
   //Spans the hr full width within a card
-  hr.card--hr-full {
+  hr {
     margin: ($grid-gutter) 0; //Found in "_variables.scss"
-    // margin: ($grid-gutter) (-$grid-gutter); //Found in "_variables.scss"
   }
 
   //Use "is-selectable" to indicate a clickable card
