@@ -19,75 +19,169 @@
     <h1 style="text-align: center; padding: 3rem;">Dashing Cards</h1>
 
     <div class="card">
-      <h3>This is a card</h3>
-      <p>Dashing Cards are used to contain and display any type of content.</p>
-      <p>This is an example of a simple card. It is convenient because it requires very little markup to use.</p>
+      <div class="card--header">
+        <div class="row">
+          <div class="column column--full">
+            <h3>This is a simple card</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card--footer">
+        <div class="row">
+          <div class="column column--full">
+            <p>Dashing Cards are used to contain and display any type of content.</p>
+            <p>This is an example of a simple card. It is convenient because it requires very little markup to use.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="card">
-      <h3>This is a card with an &lt;hr&gt;</h3>
-      <hr class="card--hr-full">
-      <p>Use an <code>&lt;hr&gt;</code> to provide greater visual separation between your card header and content. Use the class <code>.card--hr-full</code> to span your <code>&lt;hr&gt;</code> edge to edge.</p>
-      <hr>
-      <p>Using an <code>&lt;hr&gt;</code> without the <code>.card--hr-full</code> class name will allow you to separate content within your card, while still respecting your <code>$grid-gutter</code>.</p>
-    </div>
-
-    <div class="card is-selectable">
-      <h3>This is a selectable card</h3>
-    </div>
-
-    <div class="card card--without-padding">
-      <div class="row card-header">
-        <div class="column column--half">
-          <h3>This is a card with a form</h3>
+      <div class="card--header">
+        <div class="row">
+          <div class="column column--full">
+            <h3>This is a simple card with an &lt;hr&gt;</h3>
+          </div>
         </div>
       </div>
 
       <hr class="card--hr-full">
 
+      <div class="card--content">
+        <div class="row">
+          <div class="column column--full">
+            <p>Use an <code>&lt;hr&gt;</code> to provide greater visual separation between your card header and content. Use the class <code>.card--hr-full</code> to span your <code>&lt;hr&gt;</code> edge to edge.</p>
+            <hr>
+            <p>Using an <code>&lt;hr&gt;</code> without the <code>.card--hr-full</code> class name will allow you to separate content within your card, while still respecting your <code>$grid-gutter</code>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card is-selectable">
+      <div class="card--header">
+        <div class="row">
+          <div class="column column--full">
+            <h3>This is a selectable card</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card--footer">
+        <div class="row">
+          <div class="column column--full">
+            <div class="action">Cancel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card--header">
+        <div class="row">
+          <div class="column column--full">
+            <h3>This is a card with a form</h3>
+          </div>
+        </div>
+      </div>
+
       <form>
         <div class="card--content">
-          <div class="row">
-            <div class="column column--full column--nested">
-              <p>Cards are also great for containing form elements. When placing a form within a card, be sure to give the card a class of <code>.card--no-padding</code> and give the columns a class of <code>.column--nested</code>. This will allow you to retain a consistent grid-gutter when including <code>.row</code> and <code>.column</code> elements.</p>
-            </div>
-          </div>
 
           <fieldset class="row">
-            <div class="column column--full column--nested">
+            <div class="column column--full">
               <label>Label</label>
               <input type="text">
             </div>
           </fieldset>
 
           <fieldset class="row">
-            <div class="column column--half column--nested">
+            <div class="column column--half">
               <label>Label</label>
               <input type="text">
             </div>
-            <div class="column column--half column--nested">
+            <div class="column column--half">
               <label>Label</label>
               <input type="text">
             </div>
           </fieldset>
           <fieldset class="row">
-            <div class="column column--half column--nested">
+            <div class="column column--half">
               <label>Label</label>
               <input type="text">
             </div>
-            <div class="column column--half column--nested">
+            <div class="column column--half">
               <label>Label</label>
               <input type="text">
             </div>
           </fieldset>
         </div>
 
-        <hr class="card--hr-full">
+        <div class="card--footer">
+          <div class="row">
+            <div class="column column--full">
+              <button class="button button--green">Submit</button>
+              <div class="action action--secondary">Cancel</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
 
-        <div class="row card--footer">
+    <div class="card card--without-padding">
+
+      <div class="card--header">
+        <div class="row">
           <div class="column column--full">
-            <button class="button button--green">Submit</button>
-            <div class="action action--secondary">Cancel</div>
+            <h3>This is a card with a form and separation</h3>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="card--content">
+          <div class="row">
+            <div class="column column--full">
+              <p>Cards are also great for containing form elements. When placing a form within a card, be sure to give the card a class of <code>.card--no-padding</code> and give the columns a class of <code>.column--nested</code>. This will allow you to retain a consistent grid-gutter when including <code>.row</code> and <code>.column</code> elements.</p>
+            </div>
+          </div>
+
+          <fieldset class="row">
+            <div class="column column--full">
+              <label>Label</label>
+              <input type="text">
+            </div>
+          </fieldset>
+
+          <fieldset class="row">
+            <div class="column column--half">
+              <label>Label</label>
+              <input type="text">
+            </div>
+            <div class="column column--half">
+              <label>Label</label>
+              <input type="text">
+            </div>
+          </fieldset>
+          <fieldset class="row">
+            <div class="column column--half">
+              <label>Label</label>
+              <input type="text">
+            </div>
+            <div class="column column--half">
+              <label>Label</label>
+              <input type="text">
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="card--footer">
+          <div class="row">
+            <div class="column column--full">
+              <button class="button button--green">Submit</button>
+              <div class="action action--secondary">Cancel</div>
+            </div>
           </div>
         </div>
       </form>

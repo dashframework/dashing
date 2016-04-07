@@ -19,6 +19,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   transition: all 50ms ease-in-out;
   &:first-of-type { margin-left: 0; } //Clears left margin of first %action element
   &:last-of-type { margin-right: 0; } //Clears right margin of last %action element
+  &:hover { transition: all .1s ease-in-out; }
 }
 
 /* Actions Mixins
@@ -58,7 +59,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   border-radius: 50px;
   // display: block;
   font-weight: $font-weight-normal;
-  margin: 0 0.25rem;
+  margin: 0.05rem 0.25rem;
   padding: 0.75rem 1rem;
   text-align: center;
 
@@ -80,7 +81,10 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   }
 
   //Button Sizes
-  &.button--large { font-size: $font-size-medium !important; }
+  &.button--large {
+    font-size: $font-size-medium !important;
+    padding: 0.6rem 1.2rem;
+  }
   &.button--small {
     font-size: $font-size-small !important;
     padding: 0.4rem 0.75rem;
@@ -96,16 +100,105 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   &.button--orange { @include button($background-color: $orange, $color: $white); }
   &.button--purple { @include button($background-color: $purple, $color: $white); }
   &.button--red { @include button($background-color: $red, $color: $white); }
+
+  //Used to display actions and icons with a transparent background
+  &.button--transparent {
+    @include button($background-color: transparent, $color: $blue);
+    &:hover, &:focus {
+      @include button($background-color: transparent, $color: $blue);
+      opacity: .6;
+    }
+
+    &.button--primary, .button--primary:hover, .button--primary:focus { @include button($background-color: transparent, $color: $blue); }
+    &.button--secondary, .button--secondary:hover, .button--secondary:focus  { @include button($background-color: transparent, $color: $gray-600); }
+
+    &:active {
+      opacity: .9;
+    }
+  }
+
+  &.button--border {
+    @include button($background-color: transparent, $color: $gray-600);
+    border: 2px solid $gray-400;
+
+    @media #{$tablet} {
+      padding-top: calc(0.45rem - 2px);
+      padding-bottom: calc(0.5rem - 2px);
+      padding-left: calc(1rem - 2px);
+      padding-right: calc(1rem - 2px);
+    }
+
+    &.button--primary {
+      @include button($background-color: transparent, $color: $blue-700);
+      border-color: $blue;
+      &:hover, &:focus { @include button($background-color: $blue, $color: $white); }
+    }
+
+    &.button--secondary {
+      @include button($background-color: transparent, $color: $gray-600); border-color: $gray-500;
+      &:hover, &:focus { @include button($background-color: $gray-200, $color: $gray-900); }
+    }
+
+    &.button--blue {
+      @include button($background-color: transparent, $color: $blue-700); border-color: $blue;
+      &:hover, &:focus { @include button($background-color: $blue, $color: $white); }
+    }
+
+    &.button--gray {
+      @include button($background-color: transparent, $color: $gray-600); border-color: $gray-500;
+      &:hover, &:focus { @include button($background-color: $gray-200, $color: $gray-900); }
+    }
+
+    &.button--green {
+      @include button($background-color: transparent, $color: $green-600); border-color: $green;
+      &:hover, &:focus { @include button($background-color: $green, $color: $white); }
+    }
+
+    &.button--orange {
+      @include button($background-color: transparent, $color: $orange-600); border-color: $orange;
+      &:hover, &:focus { @include button($background-color: $orange, $color: $white); }
+    }
+
+    &.button--purple {
+      @include button($background-color: transparent, $color: $purple-600); border-color: $purple;
+      &:hover, &:focus { @include button($background-color: $purple, $color: $white); }
+    }
+
+    &.button--red {
+      @include button($background-color: transparent, $color: $red-600); border-color: $red;
+      &:hover, &:focus { @include button($background-color: $red, $color: $white); }
+    }
+
+    &:hover, &:focus { border-color: transparent; }
+
+  }
 }
 
-.action {
-  @extend %action;
-  @include action($blue);
-  display: inline-block;
-  margin: 0 0.5rem;
+//Used for creating clickable dashing icons
+.button--icon {
+  padding-top: calc(1rem - 2px);
+  padding-bottom: calc(1rem - 2px);
+  padding-right: 1rem;
+  padding-left: 1rem;
 
-  &.action--primary { @include action($blue); }
-  &.action--secondary { @include action($gray); }
+  &.button--icon--small {
+    padding-top: calc(0.6rem - 2px);
+    padding-bottom: calc(0.6rem - 2px);
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+  }
+
+  &.button--icon--main {
+    @extend %shadow-100;
+    &:active {
+      @extend %shadow-50;
+    }
+  }
+
+  //Used to display actions and icons with a transparent background
+  &.button--transparent {
+    &:hover, &:focus { @include button($background-color: $gray-50c, $color: transparent); opacity: 1;}
+  }
 }
 
 //Provides margin when a button and action are paired together

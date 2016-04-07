@@ -79,6 +79,7 @@ Base files include variables, mixins, extendables, utilities and the dashing col
 Every module contains an example file that allows you to preview the look and feel of each feature.
 
 * [Actions](http://dashframework.github.io/dashing/sass/modules/actions/example.html)
+* [Card](http://dashframework.github.io/dashing/sass/modules/card/example.html)
 * [Colors](http://dashframework.github.io/dashing/sass/base/colors/example/example.html)
 * [Forms](http://dashframework.github.io/dashing/sass/modules/forms/example.html)
 * [Grid](http://dashframework.github.io/dashing/sass/modules/grid/example.html)
@@ -87,10 +88,50 @@ Every module contains an example file that allows you to preview the look and fe
 
 ## Development
 
-Clone the repository with git:
+### Clone the repository with git
 
 ```bash
 git clone https://github.com/dashframework/dashing.git
+```
+
+### Releasing a new version
+
+1. Build the Sass and compress the CSS
+
+```bash
+sass --watch dashing.scss:dashing.css --style compressed
+```
+
+2. Check the previously tagged versions
+
+```bash
+git tag
+```
+
+3. Update the version number in the `bower.json` file (See [here](http://keepachangelog.com/) for versioning conventions)
+
+4. Commit the changes made in the previous steps
+
+```bash
+git commit -m "[message]"
+```
+
+5. Tag the commit with the appropriate version number
+
+```bash
+git tag vX.Y.Z
+```
+
+6. Push your committed changes
+
+```bash
+git push
+```
+
+7. Push your new tag
+
+```bash
+git push --tags
 ```
 
 TODO: Add more

@@ -5,19 +5,41 @@
     <link href="../../../dashing.css" rel="stylesheet">
     <title>Actions</title>
   </head>
-  <body style="padding: 1rem 0; margin: auto; background-color: #fff;">
+  <body style="padding: 1rem 0; margin: auto; background-color: #fff; max-width: 1200px;">
     <h1 style="text-align: center; padding: 3rem;">Dashing Actions</h1>
+      <div class="row">
+        <div class="column column--full center-align">
+          <button class="button button--primary">Primary Button</button>
+          <button class="button button--secondary">Secondary Button</button>
+        </div>
+      </div>
+
     <div class="row">
       <div class="column column--full center-align">
-        <button class="button button--primary">Primary Button</button>
-        <button class="button button--secondary">Secondary Button</button>
+        <button class="button button--blue">Blue Button</button>
+        <button class="button button--gray">Gray Button</button>
+        <button class="button button--green">Green Button</button>
+        <button class="button button--orange">Orange Button</button>
+        <button class="button button--purple">Purple Button</button>
+        <button class="button button--red">Red Button</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column column--full center-align">
+        <button class="button button--blue button--border">Border Button</button>
+        <button class="button button--gray button--border">Border Button</button>
+        <button class="button button--green button--border">Border Button</button>
+        <button class="button button--orange button--border">Border Button</button>
+        <button class="button button--purple button--border">Border Button</button>
+        <button class="button button--red button--border">Border Button</button>
       </div>
     </div>
 
     <div class="row">
       <div class="column column--full center-align">
         <button class="button button--primary" disabled>Disabled Button</button>
-        <button class="button button--secondary disabled">Disabled Button</button>
+        <button class="button button--secondary" disabled>Disabled Button</button>
       </div>
     </div>
 
@@ -37,9 +59,70 @@
 
     <div class="row">
       <div class="column column--full center-align">
-        <div class="action action--primary">Primary Action Link</div>
-        <div class="action action--secondary">Secondary Action Link</div>
+        <button class="button button--primary">
+          <i class="icon icon--add icon--white"></i>
+          With Icon
+        </button>
+        <button class="button button--secondary">
+          <i class="icon icon--trash"></i>
+          With Icon
+        </button>
       </div>
     </div>
+
+    <div class="row">
+      <div class="column column--full center-align">
+        <button class="button button--primary button--transparent">Transparent Button</button>
+        <button class="button button--secondary button--transparent">Transparent Button</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column column--full center-align">
+        <button class="button button--primary button--transparent">
+          <i class="icon icon--search icon--blue"></i>
+          With Icon
+        </button>
+        <button class="button button--secondary button--transparent">
+          With Icon
+          <i class="icon icon--new-tab flow-opposite"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column column--full center-align">
+        <button class="button button--icon button--primary">
+          <i class="icon icon--add icon--white"></i>
+        </button>
+        <button class="button button--icon button--red">
+          <i class="icon icon--trash icon--white"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column column--full center-align">
+        <button class="button button--primary button--icon button--icon--small">
+          <i class="icon icon--add icon--white"></i>
+        </button>
+        <button class="button button--red button--icon button--icon--small">
+          <i class="icon icon--trash icon--white"></i>
+        </button>
+        <button class="button button--transparent button--icon button--icon--small">
+          <i class="icon icon--question-filled icon--gray"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column column--full center-align">
+        <button class="button button--icon button--icon--main button--primary">
+          <i class="icon icon--add icon--white"></i>
+        </button>
+      </div>
+    </div>
+
+
   </body>
 </html>

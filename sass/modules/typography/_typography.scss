@@ -55,15 +55,17 @@ h3 { font-size: $font-size-medium; }
 h4 { font-size: $font-size-normal; }
 
 a {
+  color: $blue;
+  cursor: pointer;
   outline: none;
   text-decoration: none;
-  color: $blue;
 
   &:hover, &:focus { color: $blue-400; }
 }
 
 p {
   color: $gray-900;
+  font-size: $font-size-normal;
   line-height: 1.25rem;
 }
 
