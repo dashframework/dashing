@@ -11,7 +11,7 @@ View an [example](http://dashframework.github.io/dashing/sass/modules/actions/ex
 | `.button--large` | Large button | Adds styles for a large button |
 | `.button--border` | Displays transparent background color with colored border | |
 | `.button--transparent` | Displays transparent background color | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#transparent-button) for correct syntax |
-| `.button--icon` | Style for actionable icons | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#adding-an-icon-to-your-button) for correct syntax |
+| `.button--icon` | Style for actionable icons | Review [documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions#button-icons) for correct syntax |
 | `disabled` | Disabled button | Use the disabled attribute to prevent tabbing to disabled buttons |
 | `.flow-opposite` | Reverses margin for  ||
 
