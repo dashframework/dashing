@@ -98,40 +98,40 @@ git clone https://github.com/dashframework/dashing.git
 
 1. Build the Sass and compress the CSS
 
-```bash
-sass --watch dashing.scss:dashing.css --style compressed
-```
+  ```bash
+  sass --watch dashing.scss:dashing.css --style compressed
+  ```
 
 2. Check the previously tagged versions
 
-```bash
-git tag
-```
+  ```bash
+  git tag
+  ```
 
 3. Update the version number in the `bower.json` file (See [here](http://keepachangelog.com/) for versioning conventions)
 
 4. Commit the changes made in the previous steps
 
-```bash
-git commit -m "[message]"
-```
+  ```bash
+  git commit -m "[message]"
+  ```
 
 5. Tag the commit with the appropriate version number
 
-```bash
-git tag vX.Y.Z
-```
+  ```bash
+  git tag vX.Y.Z
+  ```
 
 6. Push your committed changes
 
-```bash
-git push
-```
+  ```bash
+  git push
+  ```
 
 7. Push your new tag
 
-```bash
-git push --tags
-```
+  ```bash
+  git push --tags
+  ```
 
 TODO: Add more
