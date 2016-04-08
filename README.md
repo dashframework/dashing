@@ -1,16 +1,14 @@
-# Dashing
+# Dashing 
 Stylish framework for web apps
 
-## Getting Started
-
-### Browser Support
+## Browser Support
 
 | Chrome | Edge | Firefox | Opera | IE | Safari |
 |--------|------|---------|-------|----|--------|
 | Latest | Latest | Latest | Latest | IE 11+ | Safari 8+ |
 
 
-### What's Included
+## What's Included
 
 ##### [Vendor](https://github.com/dashframework/dashing/tree/develop/sass/vendor)
 
@@ -34,7 +32,7 @@ Stylish framework for web apps
 * [Navigation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation)
 * [Typography](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography)
 
-### Examples
+#### Examples
 
 Every module contains an example file that allows you to preview the look and feel of each feature.
 
@@ -47,41 +45,55 @@ Every module contains an example file that allows you to preview the look and fe
 * [Navigation](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html)
 * [Typography](http://dashframework.github.io/dashing/sass/modules/typography/example.html)
 
+
+## Getting Started
+
+### Install the Component
+
+The Dashing Framework is delivered as a [bower](bower.io) component.
+
+1. Install bower
+  ```grunt
+  npm install -g bower
+  ```
+
+  >Note: Bower requires node, npm and git.
+
+2. Install the dashing bower component
+  ```grunt
+  bower install dashing --save
+  ```
+
 ### Working with SASS
 
-#### 1. Include Normalize
+1. Include Normalize
+  Include normalize first in your main application Sass file. We provide a version of normalize that we keep updated, or you may include normalize directly.
+  ```scss
+  @import "/bower_components/dashing/sass/vendor/normalize";
+  ```
+  > Note: You could optionally use the normalize project directly
 
-Include normalize first in your main application Sass file. We provide a version of normalize that we keep updated, or you may include normalize directly.
+2. Include Base
+  Base files include variables, mixins, extendables, utilities and the dashing color scale.
+  ```scss
+  @import "/bower_components/dashing/sass/base/base";
+  ```
 
-```scss
-@import "/bower_components/dashing/sass/vendor/normalize";
-```
+3. Optional – Include an overrides file to customize the default variables
+  ```scss
+  @import "overrides";
+  ```
+  > Note: This is a custom file that you will need to create and include from your styles directory.
 
-> Note: You could optionally use the normalize project directly
-
-#### 2. Include Base
-
-Base files include variables, mixins, extendables, utilities and the dashing color scale.
-
-```scss
-@import "/bower_components/dashing/sass/base/base";
-```
-
-#### 3. Optional – Include an overrides file to customize the default variables
-
-```scss
-@import "overrides";
-```
-> Note: This is a custom file that you will need to create and include from your styles directory.
-
-#### 4. Include Modules
-
-```scss
-@import "/bower_components/dashing/sass/modules/modules";
-```
+4. Include Modules
+  ```scss
+  @import "/bower_components/dashing/sass/modules/modules";
+  ```
 
 
 ### Working with CSS
+
+Include a link to the dashing.css stylesheet in your `index.html` file
 
 ```html
 <link rel="stylesheet" href="/bower_components/dashing/dashing.css">
