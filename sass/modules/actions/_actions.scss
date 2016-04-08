@@ -197,9 +197,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   &.button--icon--main {
     @extend %shadow-100;
-    &:active {
-      @extend %shadow-50;
-    }
+    &:active { @extend %shadow-50; }
   }
 
   //Used to display actions and icons with a transparent background

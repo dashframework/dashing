@@ -24,6 +24,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
     margin: auto;
     padding: 1rem;
 
+    //Every App should include an App Title
     .app-title {
       color: auto-color($menu-color);
       font-size: $font-size-medium;
@@ -35,6 +36,22 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
         &:hover {
           color: rgba(auto-color($menu-color), .60);
         }
+
+        //Use to apply a clickable style to your App Title
+        &.app-title--has-breadcrumb {
+          color: rgba(auto-color($menu-color), .50);
+          cursor: pointer;
+          transition: $global-transition;
+          &:hover { color: rgba(auto-color($menu-color), 1); }
+        }
+      }
+
+      .icon--arrow-right {
+        font-size: 12px;
+        margin: 0 0.2rem;
+        position: relative;
+        top: -2px;
+        &:before { font-size: 12px; }
       }
     }
   }
@@ -91,6 +108,13 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
   &.fixed {
     position: fixed;
+  }
+
+  //Positioning for main button icon element
+  .button--icon--main {
+    position: absolute;
+    right:calc(50% - (#{$global-content-width}/2) - 0.7rem);
+    bottom: -1.5rem;
   }
 }
 

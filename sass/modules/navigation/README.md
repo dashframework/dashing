@@ -19,8 +19,64 @@ Use the `.app-navigation` class to form interactive list items for easy tabbed n
 ### App Content
 Once your have your app-menu defined, be sure to wrap the main content of your App into a class called `.app-content`. This will ensure the proper padding gets placed on the element to perfectly snap underneath your `app-menu`.
 
-##### Configurations
-| Elements             | Effect                  | Notes                                               |
-|----------------------|-------------------------|-----------------------------------------------------|
-| `li`                 | Defines an action       | *Required*                                          |
-| `a`                  | Clickable Nav Link      | *Required* Dashing will auto-color the text based on the background color  |
+## Navigation Configurations
+| Elements               | Effect               | Notes               |
+|------------------------|----------------------|---------------------|
+| `.app-menu` | Container for your menu and nav elements | *Required* |
+| `.app-context` | Top portion of your app menu | *Required*. Includes App Title and breadcrumbing |
+| `.app-title` | Title of your App | *Required*. All Apps should display the name of their App. Place this within `.app-context`  |
+| `.app-title--has-breadcrumb`| Display a clickable App Title | Use this class when introducing breadcrumb navigation into your App |
+| `.app-navigation` | Contains navigation elements | This element should be placed within a `ul` |
+| `li` | Defines an action | *Required* |
+| `a` | Clickable Nav Link | *Required* Dashing will auto-color the text based on the background color |
+| `.app-content` | Applies top padding to the content of your App | *Required*. All content of your app (below your navigation) should be placed with this element |
+| `.expanded` | Applies expanded style to `.app-menu` | Apply this class to `.app-menu` to define the size of your app-content |
+| `.fixed` | Applies fixed style to `.app-menu` | Use `.fixed` to persist your header to the top of the page |
+
+
+## Usage
+
+### Condensed App Menu without Navigation
+
+```html
+<nav class="app-menu fixed">
+  <div class="app-context">
+    <div class="app-title">App Title</div>
+  </div>
+</nav>
+
+<div class="app-content"></div>
+```
+
+### Expanded App Menu with Navigation
+
+```html
+<nav class="app-menu expanded fixed">
+  <div class="app-context">
+    <div class="app-title">App Title</div>
+  </div>
+  <ul class="app-navigation expanded">
+    <li><a class="active">Link 1</a></li>
+    <li><a>Link 2</a></li>
+    <li><a>Link 3</a></li>
+  </ul>
+</nav>
+
+<div class="app-content"></div>
+```
+
+> Note: By default, your `.app-navigation` will scroll horizontally when your browser width gets too small.
+
+### Adding Breadcrumbing
+
+```html
+<nav class="app-menu">
+  <div class="app-context">
+    <div class="app-title">
+      <a class="app-title--has-breadcrumb">App Title</a>
+      <i class="icon icon--arrow-right"></i>
+      <span>Level 2</span>
+    </div>
+  </div>
+</nav>
+```
