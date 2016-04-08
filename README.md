@@ -107,7 +107,7 @@ git clone https://github.com/dashframework/dashing.git
   git tag
   ```
 
-3. Update the version number in the `bower.json` file (See [here](http://keepachangelog.com/) for versioning conventions)
+3. Update the version number in the `bower.json` file (See [here](http://semver.org/) for versioning conventions)
 
 4. Commit the changes made in the previous steps
   ```bash
