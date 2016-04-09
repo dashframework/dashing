@@ -9,3 +9,13 @@ $phone:         "all and (max-width: 40em)" !default;
 $tablet:        "all and (min-width: 40em)" !default;
 $desktop:       "all and (min-width: 64em)" !default;
 $desktop-large: "all and (min-width: 96em)" !default;
+
+/* Form Variables
+  =========================================================================== */
+
+//Custom checkbox color theme
+$checkbox--active: $blue; //Color of checkbox when checked
+$checkbox--icon: $white; //Color of checkmark icon when checked
+$checkbox--focus: $blue-300; //Color of border around checkbox when focused
+$checkbox--disabled: $gray-500; //Color of checkbox when checked and disabled
+$checkbox--icon-disabled: $gray-100; //Color of checkmark icon when checked and disabled
