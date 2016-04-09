@@ -61,6 +61,22 @@ fieldset {
     cursor: pointer;
   }
 
+  //Add class to containing fieldset or div to display a down arrow icon in the menu
+  &.select--with-icon,
+  .select--with-icon {
+    position: relative;
+    &:after {
+      content: '\e800';
+      color: $gray-400;
+      font-family: 'dashing-icons';
+      font-size: 12px;
+      font-weight: 600;
+      pointer-events: none;
+      position: absolute;
+      right: 2rem; bottom: 1.9rem;
+    }
+  }
+
   &.error, &.warning {
     .message {
       margin: 0;
