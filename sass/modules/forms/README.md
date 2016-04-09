@@ -1,10 +1,10 @@
 # Forms
 View an [example](http://dashframework.github.io/dashing/sass/modules/forms/example.html) of Dashing Forms in use
 
-## Fieldset
+### Fieldset
 Every form element within Dashing is **required** to be placed within a fieldset. This ensures the correct styles will be applied throughout, without having to add extra classes to each element.
 
-### Included Input Types
+## Included Input Types
 * text
 * select
 * email
@@ -37,7 +37,7 @@ Custom checkboxes have a default color of `$blue` when active. If you would like
 
 | Checkbox variables     | Effect                                           | Notes                                                     |
 |------------------------|--------------------------------------------------|-----------------------------------------------------------|
-| `.checkbox--custom` | Utilizes a custom theme for checkboxes | *Required* to use custom checkboxes. Apply `.checkbox--custom` to fieldset elements and place the `label` *after* your `input`|
+| `.checkbox--custom` | Utilizes a custom theme for checkboxes | *Required*. Apply this class to parent and place the `label` *after* your `input`|
 | `$checkbox--active` | Color of checkbox when checked | Default color is `$blue` |
 | `$checkbox--icon` | Color of checkmark icon when checked | Default color is `$white` |
 | `$checkbox--focus` | Color of border around checkbox when focused | Default color is `$blue-300` |
