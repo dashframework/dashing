@@ -24,6 +24,7 @@ fieldset {
   //Supports all standard input types
   #{$inputs} {
     -webkit-appearance: none;
+    -moz-appearance: none;
     background-color: $white;
     border: 2px solid $gray-150;
     border-radius: 5px;

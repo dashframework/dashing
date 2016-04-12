@@ -102,22 +102,23 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   &.button--red { @include button($background-color: $red, $color: $white); }
 
   //Used to display actions and icons with a transparent background
+  //transparentize(white, 1) used instead of transparent because "darken" requires an rgb color value
   &.button--transparent {
-    @include button($background-color: transparent, $color: $blue);
+    @include button($background-color: transparentize(white, 1), $color: $blue);
     &:hover, &:focus {
-      @include button($background-color: transparent, $color: $blue);
+      @include button($background-color: transparentize(white, 1), $color: $blue);
       opacity: .6;
     }
 
-    &.button--primary, .button--primary:hover, .button--primary:focus { @include button($background-color: transparent, $color: $blue); }
-    &.button--secondary, .button--secondary:hover, .button--secondary:focus  { @include button($background-color: transparent, $color: $gray-600); }
-    &.button--blue, .button--blue:hover, .button--blue:focus { @include button($background-color: transparent, $color: $blue); }
+    &.button--primary, .button--primary:hover, .button--primary:focus { @include button($background-color: transparentize(white, 1), $color: $blue); }
+    &.button--secondary, .button--secondary:hover, .button--secondary:focus  { @include button($background-color: transparentize(white, 1), $color: $gray-600); }
+    &.button--blue, .button--blue:hover, .button--blue:focus { @include button($background-color: transparentize(white, 1), $color: $blue); }
     &.button--gray, .button--gray:hover, .button--gray:focus,
-    &.button--grey, .button--grey:hover, .button--grey:focus { @include button($background-color: transparent, $color: $gray-600); }
-    &.button--green, .button--green:hover, .button--green:focus { @include button($background-color: transparent, $color: $green); }
-    &.button--orange, .button--orange:hover, .button--orange:focus { @include button($background-color: transparent, $color: $orange); }
-    &.button--purple, .button--purple:hover, .button--purple:focus { @include button($background-color: transparent, $color: $purple); }
-    &.button--red, .button--red:hover, .button--red:focus { @include button($background-color: transparent, $color: $red); }
+    &.button--grey, .button--grey:hover, .button--grey:focus { @include button($background-color: transparentize(white, 1), $color: $gray-600); }
+    &.button--green, .button--green:hover, .button--green:focus { @include button($background-color: transparentize(white, 1), $color: $green); }
+    &.button--orange, .button--orange:hover, .button--orange:focus { @include button($background-color: transparentize(white, 1), $color: $orange); }
+    &.button--purple, .button--purple:hover, .button--purple:focus { @include button($background-color: transparentize(white, 1), $color: $purple); }
+    &.button--red, .button--red:hover, .button--red:focus { @include button($background-color: transparentize(white, 1), $color: $red); }
 
     &:active {
       opacity: .9;
@@ -125,7 +126,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   }
 
   &.button--border {
-    @include button($background-color: transparent, $color: $gray-600);
+    @include button($background-color: transparentize(white, 1), $color: $gray-600);
     border: 2px solid $gray-400;
 
     @media #{$tablet} {
@@ -136,43 +137,43 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
     }
 
     &.button--primary {
-      @include button($background-color: transparent, $color: $blue-700);
+      @include button($background-color: transparentize(white, 1), $color: $blue-700);
       border-color: $blue;
       &:hover, &:focus { @include button($background-color: $blue, $color: $white); }
     }
 
     &.button--secondary {
-      @include button($background-color: transparent, $color: $gray-600); border-color: $gray-500;
+      @include button($background-color: transparentize(white, 1), $color: $gray-600); border-color: $gray-500;
       &:hover, &:focus { @include button($background-color: $gray-200, $color: $gray-900); }
     }
 
     &.button--blue {
-      @include button($background-color: transparent, $color: $blue-700); border-color: $blue;
+      @include button($background-color: transparentize(white, 1), $color: $blue-700); border-color: $blue;
       &:hover, &:focus { @include button($background-color: $blue, $color: $white); }
     }
 
     &.button--gray {
-      @include button($background-color: transparent, $color: $gray-600); border-color: $gray-500;
+      @include button($background-color: transparentize(white, 1), $color: $gray-700); border-color: $gray-500;
       &:hover, &:focus { @include button($background-color: $gray-200, $color: $gray-900); }
     }
 
     &.button--green {
-      @include button($background-color: transparent, $color: $green-600); border-color: $green;
+      @include button($background-color: transparentize(white, 1), $color: $green-600); border-color: $green;
       &:hover, &:focus { @include button($background-color: $green, $color: $white); }
     }
 
     &.button--orange {
-      @include button($background-color: transparent, $color: $orange-600); border-color: $orange;
+      @include button($background-color: transparentize(white, 1), $color: $orange-600); border-color: $orange;
       &:hover, &:focus { @include button($background-color: $orange, $color: $white); }
     }
 
     &.button--purple {
-      @include button($background-color: transparent, $color: $purple-600); border-color: $purple;
+      @include button($background-color: transparentize(white, 1), $color: $purple-600); border-color: $purple;
       &:hover, &:focus { @include button($background-color: $purple, $color: $white); }
     }
 
     &.button--red {
-      @include button($background-color: transparent, $color: $red-600); border-color: $red;
+      @include button($background-color: transparentize(white, 1), $color: $red-600); border-color: $red;
       &:hover, &:focus { @include button($background-color: $red, $color: $white); }
     }
 
@@ -202,7 +203,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   //Used to display actions and icons with a transparent background
   &.button--transparent {
-    &:hover, &:focus { @include button($background-color: $gray-50c, $color: transparent); opacity: 1;}
+    &:hover, &:focus { @include button($background-color: $gray-50c, $color: transparentize(white, 1)); opacity: 1;}
   }
 }
 
