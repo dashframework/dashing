@@ -74,7 +74,7 @@ fieldset {
       font-weight: 600;
       pointer-events: none;
       position: absolute;
-      right: 2rem; bottom: 1.9rem;
+      right: 2rem; bottom: calc(50% - 6px); //Centers the arrow by a percentage
     }
   }
 
