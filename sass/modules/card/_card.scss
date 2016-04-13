@@ -7,48 +7,36 @@
   border-radius: 10px;
   margin: 1.5rem auto;
 
-  //Use a card--header, card--content, and card--footer when placing complex content like forms within a card
   &--header, &--content, &--footer {
-    text-align: left;
-    padding: $grid-gutter 0;
+    hr { margin: ($grid-gutter) 0; }
   }
 
-  &--header, &--footer {
-    .column {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
+  //Spans the hr full width within a card. card--header, card--content, card--footer will use padding for spacing.
+  hr { margin: 0; }
 
   &--header {
+    padding: $grid-gutter $grid-gutter 0 $grid-gutter;
     padding-bottom: 0;
-    &--with-border {
-      border-bottom: 2px solid $gray-150;
+    &.has-border {
+      border-bottom: 2px solid $gray-200;
+      padding-bottom: $grid-gutter;
     }
   }
 
   &--content {
-    .column {
-      padding-top: calc((#{$grid-gutter}) / 2);
-      padding-bottom: calc((#{$grid-gutter}) / 2);
-    }
+    padding: $grid-gutter;
   }
 
   &--footer {
-    padding-top: 0;
-    &--with-border {
-      border-top: 2px solid $gray-150;
+    padding: 0 $grid-gutter $grid-gutter $grid-gutter;
+    &.has-border {
+      border-top: 2px solid $gray-200;
+      padding-top: $grid-gutter;
     }
   }
 
-  //Applies top padding to the .card--footer if missing .card--content
   &--header + &--footer {
     padding-top: $grid-gutter;
-  }
-
-  //Spans the hr full width within a card
-  hr {
-    margin: ($grid-gutter) 0; //Found in "_variables.scss"
   }
 
   //Use "is-selectable" to indicate a clickable card

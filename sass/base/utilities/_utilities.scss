@@ -7,7 +7,13 @@
 .tablet-hide { @include hide-on('tablet', $display: 'block'); }
 .tablet-hide-inline { @include hide-on('tablet', $display: 'inline'); }
 .pointer, .selectable { cursor: pointer !important; }
+
 .remove-margin, .no-margin { margin: 0 !important; }
+.remove-margin--top, .no-margin--top { margin-top: 0 !important; }
+.remove-margin--right, .no-margin--right { margin-right: 0 !important; }
+.remove-margin--bottom, .no-margin--bottom { margin-bottom: 0 !important; }
+.remove-margin--left, .no-margin--left { margin-left: 0 !important; }
+
 .remove-padding { padding: 0 !important; }
 .remove-border { border: none !important; }
 .float-left { float: left !important; }

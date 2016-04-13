@@ -9,7 +9,8 @@ A card can be used to contain information such as text, buttons, links, and form
 | `.card--content` | Content container |  |
 | `.card--footer` | Footer container |  |
 | `.is-selectable` | Adds hover styles | Use when the whole card is selectable |
-| `hr` | Create line separation | An &lt;hr&gt; within a card spans the card edge to edge |
+| `.has-border` | Applies border separator to header or footer | Add the class to `.card--header` or `.card--footer` |
+| `hr` | Create line separation | An &lt;hr&gt; within `.card--header`, `.card--content` or `.card--footer` respects the `$grid-gutter`. An &lt;hr&gt; outside of `.card--header`, `.card--content` or `.card--footer` spans edge to edge.|
 
 
 ## Usage
