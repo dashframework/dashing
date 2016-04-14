@@ -6,18 +6,34 @@ View an [example](http://dashframework.github.io/dashing/sass/modules/icons/exam
 
 ## Importing Icons
 
-To use the Dashing font icon set, you'll need to be sure to link to the font file in your main application Sass file.
+To use the Dashing font icon set, you'll need to be sure to deploy the dashing framework with the application and link to the font file in your main application Sass file.
 
-> Note: The link displayed here may be different than what is in your project. You may need to alter the source url location.
+### Deploy the Dashing Framework Font File
+
+In order to link to the Dashing Icon font file, you'll need to deploy it with your App. To do so, include a link to the dashing folder in every `NuSpec` file in your project.
+
+```html
+<package>
+  <files>
+    <file src="app\bower_components\dashing\**\*.*" target="dashing" />
+  </files>
+</package>
+```
+
+### Link to the Font File in Sass
+
+Include a link to the deployed font. The link displayed here may be different than what is in your project. You may need to alter the source url location.
 
 ```scss
 @font-face {
   font-family: 'dashing-icons';
-  src: url('../../bower_components/dashing/font/dashing-icons.woff') format('woff');
+  src: url('../dashing/font/dashing-icons.woff') format('woff');
 }
 ```
 
-### Icon Configurations
+> Note: In order for your icons to build locally, may also need to include a specific link to to the bower component file, then comment it out before pushing.
+
+## Icon Configurations
 
 A default icon is 16px &times; 16px and has a color of `$gray-700`.
 

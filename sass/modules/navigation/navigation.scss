@@ -46,12 +46,13 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
         }
       }
 
-      .icon--arrow-right {
-        font-size: 12px;
-        margin: 0 0.2rem;
-        position: relative;
-        top: -2px;
-        &:before { font-size: 12px; }
+      .dashing-icon--arrow-right {
+        &:before {
+          color: rgba(auto-color($menu-color), .50);
+          font-size: 12px;
+          position: relative;
+          top: -2px;
+        }
       }
     }
   }
@@ -91,6 +92,16 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
         &.active {
           color: auto-color($menu-color);
           border-bottom: 4px solid;
+        }
+
+        .dashing-icon:before {
+          color: rgba(auto-color($menu-color), .60); //Auto-colors the dashing-icon font to match text
+          margin-left: -2px;
+          transition: $global-transition;
+        }
+
+        &:hover .dashing-icon:before {
+          color: rgba(auto-color($menu-color), 1);
         }
       }
     }
