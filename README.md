@@ -123,24 +123,24 @@ git clone https://github.com/dashframework/dashing.git
 
 3. Update the version number in the `bower.json` file (See [here](http://semver.org/) for versioning conventions)
 
-4. Commit the changes made in the previous steps
+4. Update the Dashing Version number found on line 4 of the README.md
+
+5. Commit the changes made in the previous steps
   ```bash
   git commit -m "[message]"
   ```
 
-5. Tag the commit with the appropriate version number
+6. Tag the commit with the appropriate version number
   ```bash
   git tag vX.Y.Z
   ```
 
-6. Push your committed changes
+7. Push your committed changes
   ```bash
   git push
   ```
 
-7. Push your new tag
+8. Push your new tag
   ```bash
   git push --tags
   ```
-
-TODO: Add more
