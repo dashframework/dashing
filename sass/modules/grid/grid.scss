@@ -25,7 +25,7 @@ html {
   padding-left: $grid-gutter;
   width: 100%;
 
-  &--nested {
+  &.row--nested {
     padding-left: 0;
   }
 }
@@ -35,20 +35,20 @@ html {
   padding: $grid-gutter;
   padding-left: 0 !important;
 
-  &--nested { //When nesting columns within other containers (cards, containers, modals, etc.) use the ".nested" class to remove some unnecessary padding
+  &.column--nested { //When nesting columns within other containers (cards, containers, modals, etc.) use the ".nested" class to remove some unnecessary padding
     padding-top: calc((#{$grid-gutter}) / 2);
     padding-bottom: calc((#{$grid-gutter}) / 2);
     &:last-of-type { padding-right: 0; }
   }
 
-  &--full,
-  &--three-fourths,
-  &--two-thirds,
-  &--half,
-  &--third,
-  &--fourth,
-  &--sixth,
-  &--eighth {
+  &.column--full,
+  &.column--three-fourths,
+  &.column--two-thirds,
+  &.column--half,
+  &.column--third,
+  &.column--fourth,
+  &.column--sixth,
+  &.column--eighth {
     width: 100%;
   }
 
@@ -57,18 +57,18 @@ html {
 
     &.flow-opposite { float: right; }
 
-    &--full {
+    &.column--full {
       float: none;
       width: 100%;
     }
 
-    &--three-fourths { width: 75%; }
-    &--two-thirds { width: 66.666%; }
-    &--half { width: 50%; }
-    &--third { width: 33.333%; }
-    &--fourth { width: 25%; }
-    &--sixth { width: 16.666%; }
-    &--eighth { width: 12.5%; }
+    &.column--three-fourths { width: 75%; }
+    &.column--two-thirds { width: 66.666%; }
+    &.column--half { width: 50%; }
+    &.column--third { width: 33.333%; }
+    &.column--fourth { width: 25%; }
+    &.column--sixth { width: 16.666%; }
+    &.column--eighth { width: 12.5%; }
   }
 }
 
