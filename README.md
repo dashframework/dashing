@@ -1,7 +1,7 @@
 # Dashing
 Stylish framework for web apps
 
-[![GitHub tag](https://img.shields.io/github/tag/strongloop/express.svg?maxAge=2592000)]()
+[![Dashing Version](https://img.shields.io/badge/Version-0.1.3--beta-green.svg)]()
 
 ## Browser Support
 
