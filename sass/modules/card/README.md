@@ -21,16 +21,20 @@ Cards are based on the structure of having a header, content, and footer.
 <div class="card">
 
   <div class="card--header">
-    <div class="row">
-      <div class="column column--full">
-        <h3>Header</h3>
-      </div>
-    </div>
+    <h3>Header</h3>
   </div>
 
   <div class="card--content">
-    <fieldset class="row">
-      <div class="column column--full">
+    <fieldset class="row row--nested">
+      <div class="column column--third column--nested">
+        <label>Label</label>
+        <input type="text">
+      </div>
+      <div class="column column--third column--nested">
+        <label>Label</label>
+        <input type="text">
+      </div>
+      <div class="column column--third column--nested">
         <label>Label</label>
         <input type="text">
       </div>
@@ -38,14 +42,13 @@ Cards are based on the structure of having a header, content, and footer.
   </div>
 
   <div class="card--footer">
-    <div class="row">
-      <div class="column column--full">
-        <button class="button button--green">Submit</button>
-      </div>
-    </div>
+    <button class="button button--green">Submit</button>
+    <button class="button button--gray button--transparent">Cancel</button>
   </div>
 </div>
 ```
+
+> Note: Use the `.row--nested` and `.column--nested` class when placing `.row` and `.column` elements inside `.card--content`.
 
 If you only require two sections of a card, simply use the `.card--header` and `.card--footer`, and omit the `.card--content`
 
@@ -53,19 +56,11 @@ If you only require two sections of a card, simply use the `.card--header` and `
 <div class="card">
 
   <div class="card--header">
-    <div class="row">
-      <div class="column column--full">
-        <h3>Header</h3>
-      </div>
-    </div>
+    <h3>Header</h3>
   </div>
 
   <div class="card--footer">
-    <div class="row">
-      <div class="column column--full">
-        <button class="button button--green">Save</button>
-      </div>
-    </div>
+    <button class="button button--green">Save</button>
   </div>
 </div>
 ```
