@@ -148,7 +148,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
     }
 
     &.button--blue {
-      @include button($background-color: transparentize(white, 1), $color: $blue-700); border-color: $blue;
+      @include button($background-color: transparentize(white, 1), $color: $blue-600); border-color: $blue;
       &:hover, &:focus { @include button($background-color: $blue, $color: $white); }
     }
 
@@ -177,7 +177,17 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
       &:hover, &:focus { @include button($background-color: $red, $color: $white); }
     }
 
-    &:hover, &:focus { border-color: transparent; }
+    &:hover, &:focus {
+      border-color: transparent;
+      .dashing-icon:before {
+        color: $white;
+        transition: all 50ms ease-in-out;
+      }
+
+      &.button--gray .dashing-icon:before {
+        color: $gray-800;
+      }
+    }
 
   }
 }
