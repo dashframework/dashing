@@ -31,7 +31,15 @@ Include a link to the deployed font. The link displayed here may be different th
 }
 ```
 
-> Note: In order for your icons to build locally, may also need to include a specific link to to the bower component file, then comment it out before pushing.
+Note: In order for your icons to build locally, may also need to include another link to the local font file, placed above your production version.
+
+```scss
+@font-face {
+  font-family: 'dashing-icons';
+  src:  url('../../bower_components/dashing/font/dashing-icons.woff') format('woff'),
+        url('../dashing/font/dashing-icons.woff') format('woff');
+}
+```
 
 ## Icon Configurations
 
