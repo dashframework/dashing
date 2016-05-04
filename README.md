@@ -61,12 +61,19 @@ The Dashing Framework is delivered as a [bower](bower.io) component.
 
   >Note: Bower requires node, npm and git.
 
-2. Install the dashing bower component
+2. Create a `bower.json` file
+  ```grunt
+  bower init
+  ```
+
+3. Install the dashing bower component and save it to your `bower.json` file
   ```grunt
   bower install dashing --save
   ```
 
-### Working with SASS
+### Setting up your project with SASS
+
+#### Including Dashing Styles
 
 1. Include Normalize
   Include normalize first in your main application Sass file. We provide a version of normalize that we keep updated, or you may include normalize directly.
@@ -81,16 +88,39 @@ The Dashing Framework is delivered as a [bower](bower.io) component.
   @import "/bower_components/dashing/sass/base/base";
   ```
 
-3. Optional – Include an overrides file to customize the default variables
+3. Optional – Include a theme file to customize the default variables
   ```scss
-  @import "overrides";
+  @import "theme";
   ```
-  > Note: This is a custom file that you will need to create and include from your styles directory.
+  > Note: This is a custom stylesheet that *you will need to create* and include from your styles directory.
 
 4. Include Modules
   ```scss
   @import "/bower_components/dashing/sass/modules/modules";
   ```
+  > Note: If you have included a theme file, your modules will now look to that for color theming, rather than base.
+
+#### Including Custom Styles
+
+While the Dashing Style Framework does provide a lot of core modules for you to utilize, it most likely won't have everything you need. Follow the [SMACSS](https://smacss.com/) syntax in order to add a clean, organized structure to your custom stylesheets.
+
+1. Create five individual folders, named `base`, `layout`, `modules`, `state` and `theme`.
+
+2. Within each folder, create a stylesheet to match. (ex. You would create a `_base.scss` file within your `base` folder).
+
+3. Import everything to your main application folder. When you're all finished, it should look something like this:
+
+```scss
+@import "/bower_components/dashing/sass/vendor/normalize";
+@import "/bower_components/dashing/sass/base/base";
+@import "theme/theme";
+@import "/bower_components/dashing/sass/modules/modules";
+
+@import "base/base";
+@import "layout/layout";
+@import "modules/modules";
+@import "state/state";
+```
 
 
 ### Working with CSS
@@ -100,6 +130,8 @@ Include a link to the dashing.css stylesheet in your `index.html` file
 ```html
 <link rel="stylesheet" href="/bower_components/dashing/dashing.css">
 ```
+
+*****
 
 ## Development
 
