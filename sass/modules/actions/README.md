@@ -102,15 +102,50 @@ Adding the `.button--transparent` class to your `.button--icon` removes the back
 </button>
 ```
 
-### Creating a custom button color with Sass
+### Toggle button
+
+```html
+<ul class="button-group button-group--blue">
+  <li class="button--radio">
+    <input type="radio" name="options-blue" id="blue1" checked>
+    <label for="blue1" class="button">Left</label>
+  </li>
+  <li class="button--radio">
+    <input type="radio" name="options-blue" id="blue2">
+    <label for="blue2" class="button">Middle</label>
+  </li>
+  <li class="button--radio">
+    <input type="radio" name="options-blue" id="blue3">
+    <label for="gray3" class="button">Right</label>
+  </li>
+</ul>
+```
+
+## Customization
+
+### Custom Button color
 To create a custom button color, just include the button `mixin` and plug in your background-color and text color as a *Sass variable* or *hex color code*.
 
 ```scss
   .button--success {
     @include button($background-color: $green, $color: $white);
   }
+```
 
-  .button--warning {
-    @include button($background-color: #DD9331, $color: #FFFFFF);
+### Custom Transparent Button
+
+```scss
+  button--transparent.button--custom {
+    @include button($background-color: transparentize(white, 1), $color: $gray-600c);
+  }
+```
+
+### Custom Toggle Button
+To create a custom toggle button, copy the below block of code and replace your desired background-color, text color and checked (active) color.
+
+```scss
+  .button-group.button-group--custom {
+    .button { @include button($background-color: $gray-200, $color: $gray-900); }
+    .button--radio input:checked ~ label { background-color: $gray-500; color: $white; }
   }
 ```

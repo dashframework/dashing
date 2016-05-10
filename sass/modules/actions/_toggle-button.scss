@@ -1,0 +1,47 @@
+// Toggle Button Styles
+.button-group {
+  margin: 0;
+  padding: 0;
+  .button--radio:first-of-type label { border-radius: 50px 0 0 50px; }
+  .button--radio:last-of-type label { border-radius: 0 50px 50px 0; }
+
+  .button--radio {
+    display: inline-block;
+    list-style: none;
+    input { display: none; }
+    label {
+      border-radius: 0;
+      margin-left: -4px;
+    }
+  }
+
+  &.button-group--gray {
+    .button { @include button($background-color: $gray-200, $color: $gray-900); }
+    .button--radio input:checked ~ label { background-color: $gray-500; color: $white; }
+  }
+
+  &.button-group--blue {
+    .button { @include button($background-color: $blue, $color: $white); }
+    .button--radio input:checked ~ label { background-color: $blue-700; }
+  }
+
+  &.button-group--green {
+    .button { @include button($background-color: $green, $color: $white); }
+    .button--radio input:checked ~ label { background-color: $green-700; }
+  }
+
+  &.button-group--orange {
+    .button { @include button($background-color: $orange, $color: $white); }
+    .button--radio input:checked ~ label { background-color: $orange-700; }
+  }
+
+  &.button-group--purple {
+    .button { @include button($background-color: $purple, $color: $white); }
+    .button--radio input:checked ~ label { background-color: $purple-800; }
+  }
+
+  &.button-group--red {
+    .button { @include button($background-color: $red, $color: $white); }
+    .button--radio input:checked ~ label { background-color: $red-800; }
+  }
+}
