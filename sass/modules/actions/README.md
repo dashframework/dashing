@@ -20,7 +20,7 @@ View an [example](http://dashframework.github.io/dashing/sass/modules/actions/ex
 |----------------------------|----------------------|---------------------|
 | `.button--primary` | Applies the primary color effect | The default primary button color is `$blue` |
 | `.button--secondary` | Applies the secondary color effect | The default secondary button color is `$gray` |
-| `.button--blue` | Applies a green color effect | |
+| `.button--blue` | Applies a blue color effect | |
 | `.button--gray` or `.button--grey`| Applies a gray color effect | |
 | `.button--green` | Applies a green color effect | |
 | `.button--orange` | Applies a orange color effect | |
@@ -107,16 +107,16 @@ Adding the `.button--transparent` class to your `.button--icon` removes the back
 ```html
 <ul class="button-group button-group--blue">
   <li class="button--radio">
-    <input type="radio" name="options-blue" id="blue1" checked>
+    <input type="radio" name="options" id="blue1" checked>
     <label for="blue1" class="button">Left</label>
   </li>
   <li class="button--radio">
-    <input type="radio" name="options-blue" id="blue2">
+    <input type="radio" name="options" id="blue2">
     <label for="blue2" class="button">Middle</label>
   </li>
   <li class="button--radio">
-    <input type="radio" name="options-blue" id="blue3">
-    <label for="gray3" class="button">Right</label>
+    <input type="radio" name="options" id="blue3">
+    <label for="blue3" class="button">Right</label>
   </li>
 </ul>
 ```
@@ -154,12 +154,12 @@ To set a custom border radius for your buttons, include either one of the pre-de
 ```
 
 ### Custom Toggle Button
-To create a custom toggle button, copy the below block of code and replace your desired background-color, text color and checked (active) color.
+To create a custom toggle button, copy the below block of code and replace your desired background-color, text color and checked (active) color. Replace the `.button-group--custom` class with your own.
 
 ```scss
   .button-group.button-group--custom {
     .button { @include button($background-color: $gray-200, $color: $gray-900); }
-    .button--radio input:checked ~ label { background-color: $gray-500; color: $white; }
+    .button--radio input:checked ~ label { background-color: $green; color: $white; }
   }
 ```
 

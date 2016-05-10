@@ -4,10 +4,6 @@
 $buttons: ".button, button, input[type='submit'], input[type='reset']";
 $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
-%button--rounded,
-%button--round { border-radius: 50px; }
-%button--smooth { border-radius: 5px; }
-
 /* Actions Extendables
   =========================================================================== */
 
@@ -24,23 +20,6 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   &:first-of-type { margin-left: 0; } //Clears left margin of first %action element
   &:last-of-type { margin-right: 0; } //Clears right margin of last %action element
   &:hover { transition: all .1s ease-in-out; }
-}
-
-/* Actions Mixins
-  =========================================================================== */
-
-@mixin button($background-color, $color) {
-  background-color: $background-color;
-  color: $color;
-
-  &:hover, &:focus {
-    background-color: darken($background-color, 10%);
-    color: $color;
-  }
-
-  &:active {
-    background-color: darken($background-color, 15%);
-  }
 }
 
 /* Actions Styles

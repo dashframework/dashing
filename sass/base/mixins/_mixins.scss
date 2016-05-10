@@ -52,3 +52,20 @@
     }
   }
 }
+
+/* Actions Mixins
+  =========================================================================== */
+
+@mixin button($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+
+  &:hover, &:focus {
+    background-color: darken($background-color, 10%);
+    color: $color;
+  }
+
+  &:active {
+    background-color: darken($background-color, 15%);
+  }
+}
