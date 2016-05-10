@@ -4,6 +4,10 @@
 $buttons: ".button, button, input[type='submit'], input[type='reset']";
 $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
+%button--rounded,
+%button--round { border-radius: 50px; }
+%button--smooth { border-radius: 5px; }
+
 /* Actions Extendables
   =========================================================================== */
 
@@ -44,11 +48,11 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
 #{$buttons} {
   @extend %action;
+  @extend %button--rounded;
   @include button($background-color: $blue, $color: $white);
   @include user-select(none);
 
   -webkit-font-smoothing: auto;
-  border-radius: 50px;
   // display: block;
   font-weight: $font-weight-normal;
   margin: 0.05rem 0.25rem;
@@ -180,6 +184,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
 //Used for creating clickable dashing icons
 .button--icon {
+  border-radius: 50px !important;
   padding-top: calc(1rem - 2px);
   padding-bottom: calc(1rem - 2px);
   padding-right: 1rem;
@@ -199,7 +204,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   //Used to display actions and icons with a transparent background
   &.button--transparent {
-    &:hover, &:focus { @include button($background-color: $gray-50c, $color: transparentize(white, 1)); opacity: 1;}
+    &:hover, &:focus { @include button($background-color: rgba($gray, .2), $color: transparentize(white, 1)); opacity: 1;}
   }
 }
 

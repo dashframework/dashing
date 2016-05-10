@@ -135,9 +135,22 @@ To create a custom button color, just include the button `mixin` and plug in you
 ### Custom Transparent Button
 
 ```scss
-  button--transparent.button--custom {
+  .button--transparent.button--custom {
     @include button($background-color: transparentize(white, 1), $color: $gray-600c);
   }
+```
+
+### Custom Border Radius
+To set a custom border radius for your buttons, include either one of the pre-defined sass variables, or create a custom radius in your themes file. By default, buttons have the `%button--rounded` styles extended to it.
+
+##### Use one of the pre-defined sass variable
+```scss
+  #{$buttons} { @extend %button--smooth; }
+```
+
+##### Create a custom border radius
+```scss
+  #{$buttons} { border-radius: 8px; }
 ```
 
 ### Custom Toggle Button
@@ -148,4 +161,12 @@ To create a custom toggle button, copy the below block of code and replace your 
     .button { @include button($background-color: $gray-200, $color: $gray-900); }
     .button--radio input:checked ~ label { background-color: $gray-500; color: $white; }
   }
+```
+
+### Custom Border Radius for Toggle Button
+To set a custom border radius for your toggle buttons, create a custom radius in your themes file. Be sure to overwrite both the `first-of-type` and `last-of-type`.
+
+```scss
+  .button-group.button--radio:first-of-type label { border-radius: 50px 0 0 50px; }
+  .button-group.button--radio:last-of-type label { border-radius: 0 50px 50px 0; }
 ```
