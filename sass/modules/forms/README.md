@@ -23,13 +23,13 @@ Every form element within Dashing is **required** to be placed within a fieldset
 > **Note:** The date, time, and month input types are currently not supported in IE, Firefox, and Safari
 
 ## Form Configurations
-| Form classes           | Effect                                           | Notes                                                     |
-|------------------------|--------------------------------------------------|-----------------------------------------------------------|
-| `fieldset`             | Drives styles for inputs and labels              | *Required* Applied as a container for inputs and labels   |
-| `.inline`              | Places labels inline with the input type         | Apply `.inline` to label elements                         |
-| `.error`               | Adds error styles to input, label and message    | Apply `.error` to fieldset elements                       |
-| `.warning`             | Adds warning styles to input, label and message  | Apply `.warning` to fieldset elements                     |
-| `.select--with-icon`   | Adds down arrow icon to select inputs            | Apply `.select--with-icon` to `fieldset` elements         |
+| Form classes | Effect | Notes |
+|--------------|--------|-------|
+| `fieldset` | Drives styles for inputs and labels | *Required* Applied as a container for inputs and labels |
+| `.inline` | Places labels inline with the input type | Apply `.inline` to label elements |
+| `.error` | Adds error styles to input, label and message | Apply `.error` to fieldset elements |
+| `.warning` | Adds warning styles to input, label and message | Apply `.warning` to fieldset elements |
+| `.select--with-icon` | Adds down arrow icon to select inputs | Apply `.select--with-icon` to `fieldset` elements |
 
 ## Custom Checkbox Configurations
 
@@ -107,6 +107,28 @@ By default, select menus will not include a dropdown icon. To include this, add 
   </select>
 </fieldset>
 ```
+
+### Inline Error Messages
+
+```html
+<form>
+  <fieldset class="row">
+    <div class="column column--full">
+      <label>Label</label>
+      <input type="text">
+      <ul class="message">
+        <li>There is an error here!</li>
+      </ul>
+    </div>
+  </fieldset>
+</form>
+```
+
+>**Note**: When filling out a form, users will often be focused on the particular input they're focused on. For this reason, error messages should be inline with the current form. This will ensure the error will be clearly displayed to the user.
+
+### Placing labels within inputs
+
+Don't do it.
 
 ### Custom Checkboxes
 

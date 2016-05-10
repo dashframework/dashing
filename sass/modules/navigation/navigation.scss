@@ -93,16 +93,14 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
         &:hover {
           color: auto-color($menu-color);
+          .dashing-icon {
+            opacity: 1;
+          }
         }
 
-        .dashing-icon:before {
-          color: rgba(auto-color($menu-color), .90); //Auto-colors the dashing-icon font to match text
-          margin-left: -2px;
+        .dashing-icon { //TODO add support to dashing
+          opacity: .6;
           transition: $global-transition;
-        }
-
-        &:hover .dashing-icon:before {
-          color: rgba(auto-color($menu-color), 1);
         }
       }
     }
