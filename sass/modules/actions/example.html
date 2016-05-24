@@ -5,19 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../dashing.css" rel="stylesheet">
     <link href="../../../example/css/icons.css" rel="stylesheet">
+    <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Actions</title>
   </head>
-  <body style="padding: 1rem 0; margin: auto; background-color: #fff; max-width: 1200px;">
-    <h1 style="text-align: center; padding: 3rem;">Dashing Actions</h1>
-      <div class="row">
-        <div class="column column--full center-align">
-          <button class="button button--primary">Primary Button</button>
-          <button class="button button--secondary">Secondary Button</button>
-        </div>
-      </div>
+  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
 
-    <div class="row">
-      <div class="column column--full center-align">
+    <script src="../../../example/vendor/prismjs/prism.js"></script>
+
+    <h1 style="text-align: center; padding: 3rem;">Dashing Actions</h1>
+    <h2>Default Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--primary">Primary Button</button>
+        <button class="button button--secondary">Secondary Button</button>
+      </div>
+    </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="button button--secondary"&gt;Secondary Button&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Disabled Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--primary" disabled>Disabled Button</button>
+        <button class="button button--secondary" disabled>Disabled Button</button>
+      </div>
+    </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--primary" disabled&gt;Disabled Button&lt;/button&gt;
+&lt;button class="button button--secondary" disabled&gt;Disabled Button&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Small Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--primary button--small">Small Button</button>
+        <button class="button button--secondary button--small">Small Button</button>
+      </div>
+    </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--primary button--small"&gt;Small Button&lt;/button&gt;
+&lt;button class="button button--secondary button--small"&gt;Small Button&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Large Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--primary button--large">Large Button</button>
+        <button class="button button--secondary button--large">Large Button</button>
+      </div>
+    </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--primary button--large"&gt;Large Button&lt;/button&gt;
+&lt;button class="button button--secondary button--large"&gt;Large Button&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Border Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--primary button--border">Border Button</button>
+        <button class="button button--secondary button--border">Border Button</button>
+      </div>
+    </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--primary button--border"&gt;Border Button&lt;/button&gt;
+&lt;button class="button button--secondary button--border"&gt;Border Button&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Transparent Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--primary button--transparent">Transparent Button</button>
+        <button class="button button--secondary button--transparent">Transparent Button</button>
+      </div>
+    </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--primary button--transparent"&gt;Transparent Button&lt;/button&gt;
+&lt;button class="button button--secondary button--transparent"&gt;Transparent Button&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Button Color Options</h2>
+    <div class="row example-container">
+      <div class="column column--full">
         <button class="button button--blue">Blue Button</button>
         <button class="button button--gray">Gray Button</button>
         <button class="button button--green">Green Button</button>
@@ -26,87 +108,129 @@
         <button class="button button--red">Red Button</button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--blue"&gt;Blue Button&lt;/button&gt;
+&lt;button class="button button--gray"&gt;Gray Button&lt;/button&gt;
+&lt;button class="button button--green"&gt;Green Button&lt;/button&gt;
+&lt;button class="button button--orange"&gt;Orange Button&lt;/button&gt;
+&lt;button class="button button--purple"&gt;Purple Button&lt;/button&gt;
+&lt;button class="button button--red"&gt;Red Button&lt;/button&gt;
+</code>
+</pre>
 
-    <div class="row">
-      <div class="column column--full center-align">
-        <button class="button button--blue button--border">Border Button</button>
-        <button class="button button--gray button--border">Border Button</button>
-        <button class="button button--green button--border">Border Button</button>
-        <button class="button button--orange button--border">Border Button</button>
-        <button class="button button--purple button--border">Border Button</button>
-        <button class="button button--red button--border">Border Button</button>
+    <h2>Border Button Color Options</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--blue button--border">Blue Button</button>
+        <button class="button button--gray button--border">Gray Button</button>
+        <button class="button button--green button--border">Green Button</button>
+        <button class="button button--orange button--border">Orange Button</button>
+        <button class="button button--purple button--border">Purple Button</button>
+        <button class="button button--red button--border">Red Button</button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;button class="button button--blue button--border"&gt;Blue Button&lt;/button&gt;
+&lt;button class="button button--gray button--border"&gt;Gray Button&lt;/button&gt;
+&lt;button class="button button--green button--border"&gt;Green Button&lt;/button&gt;
+&lt;button class="button button--orange button--border"&gt;Orange Button&lt;/button&gt;
+&lt;button class="button button--purple button--border"&gt;Purple Button&lt;/button&gt;
+&lt;button class="button button--red button--border"&gt;Red Button&lt;/button&gt;
+</code>
+</pre>
 
-    <div class="row">
-      <div class="column column--full center-align">
-        <button class="button button--blue button--border">
-          <i class="dashing-icon dashing-icon--add dashing-icon--blue"></i>
-          Border Button
-        </button>
-        <button class="button button--gray button--border">
-          <i class="dashing-icon dashing-icon--add dashing-icon--gray"></i>
-          Border Button
-        </button>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
-        <button class="button button--primary" disabled>Disabled Button</button>
-        <button class="button button--secondary" disabled>Disabled Button</button>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
-        <button class="button button--primary button--small">Small Button</button>
-        <button class="button button--secondary button--small">Small Button</button>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
-        <button class="button button--primary button--large">Large Button</button>
-        <button class="button button--secondary button--large">Large Button</button>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
+    <h2>Button with Icon</h2>
+    <div class="row example-container">
+      <div class="column column--full">
         <button class="button button--primary">
-          <i class="dashing-icon dashing-icon--add dashing-icon--white"></i>
-          With Icon
+          <i class="dashing-icon dashing-icon--add"></i>
+          Button
         </button>
         <button class="button button--secondary">
-          <i class="dashing-icon dashing-icon--trash"></i>
-          With Icon
+          <i class="dashing-icon dashing-icon--close"></i>
+          Button
         </button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;!-- Blue Button with Add Icon --&gt;
+&lt;button class="button button--primary"&gt;
+  &lt;i class="dashing-icon dashing-icon--add"&gt;&lt;/i&gt;
+  Button
+&lt;/button&gt;
 
-    <div class="row">
-      <div class="column column--full center-align">
-        <button class="button button--primary button--transparent">Transparent Button</button>
-        <button class="button button--secondary button--transparent">Transparent Button</button>
+&lt;!-- Gray Button with Close Icon --&gt;
+&lt;button class="button button--secondary"&gt;
+  &lt;i class="dashing-icon dashing-icon--close"&gt;&lt;/i&gt;
+  Button
+&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Border Button with Icon</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button class="button button--blue button--border">
+          <i class="dashing-icon dashing-icon--pencil dashing-icon--blue"></i>
+          Button
+        </button>
+        <button class="button button--gray button--border">
+          <i class="dashing-icon dashing-icon--question-filled dashing-icon--gray"></i>
+          Button
+        </button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;!-- Blue Border Button with Edit Icon --&gt;
+&lt;button class="button button--blue button--border"&gt;
+  &lt;i class="dashing-icon dashing-icon--pencil dashing-icon--blue"&gt;&lt;/i&gt;
+  Button
+&lt;/button&gt;
 
-    <div class="row">
-      <div class="column column--full center-align">
+&lt;!-- Gray Border Button with Help Icon --&gt;
+&lt;button class="button button--gray button--border"&gt;
+  &lt;i class="dashing-icon dashing-icon--question-filled dashing-icon--gray"&gt;&lt;/i&gt;
+  Button
+&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Transparent Button with Icon</h2>
+    <div class="row example-container">
+      <div class="column column--full">
         <button class="button button--primary button--transparent">
           <i class="dashing-icon dashing-icon--search dashing-icon--blue"></i>
-          With Icon
+          Button
         </button>
         <button class="button button--secondary button--transparent">
-          With Icon
+          Button
           <i class="dashing-icon dashing-icon--new-tab flow-opposite"></i>
         </button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;!-- Blue Transparent Button with Search Icon --&gt;
+&lt;button class="button button--primary button--transparent"&gt;
+  &lt;i class="dashing-icon dashing-icon--search dashing-icon--blue"&gt;&lt;/i&gt;
+  Button
+&lt;/button&gt;
 
-    <div class="row">
-      <div class="column column--full center-align">
+&lt;!-- Gray Transparent Button with New-Tab Icon --&gt;
+&lt;button class="button button--secondary button--transparent"&gt;
+  Button
+  &lt;i class="dashing-icon dashing-icon--new-tab flow-opposite"&gt;&lt;/i&gt;
+&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Icon Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
         <button class="button button--icon button--primary">
           <i class="dashing-icon dashing-icon--add dashing-icon--white"></i>
         </button>
@@ -115,9 +239,23 @@
         </button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;!-- Blue Icon Button with Add Icon --&gt;
+&lt;button class="button button--icon button--primary"&gt;
+  &lt;i class="dashing-icon dashing-icon--add dashing-icon--white"&gt;&lt;/i&gt;
+&lt;/button&gt;
 
-    <div class="row">
-      <div class="column column--full center-align">
+&lt;!-- Red Icon Button with Trash Icon --&gt;
+&lt;button class="button button--icon button--red"&gt;
+  &lt;i class="dashing-icon dashing-icon--trash dashing-icon--white"&gt;&lt;/i&gt;
+&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Small Icon Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
         <button class="button button--primary button--icon button--icon--small">
           <i class="dashing-icon dashing-icon--add dashing-icon--white"></i>
         </button>
@@ -129,17 +267,45 @@
         </button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;!-- Small Blue Icon Button with Add Icon --&gt;
+&lt;button class="button button--primary button--icon button--icon--small"&gt;
+  &lt;i class="dashing-icon dashing-icon--add dashing-icon--white"&gt;&lt;/i&gt;
+&lt;/button&gt;
 
-    <div class="row">
-      <div class="column column--full center-align">
+&lt;!-- Small Red Icon Button with Trash Icon --&gt;
+&lt;button class="button button--red button--icon button--icon--small"&gt;
+  &lt;i class="dashing-icon dashing-icon--trash dashing-icon--white"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Small Transparent Icon Button with Help Icon --&gt;
+&lt;button class="button button--transparent button--icon button--icon--small"&gt;
+  &lt;i class="dashing-icon dashing-icon--question-filled dashing-icon--gray"&gt;&lt;/i&gt;
+&lt;/button&gt;
+</code>
+</pre>
+
+    <h2>Main Icon Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
         <button class="button button--icon button--icon--main button--primary">
           <i class="dashing-icon dashing-icon--add dashing-icon--white"></i>
         </button>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;!-- Blue Main Icon Button with Add Icon --&gt;
+&lt;button class="button button--icon button--icon--main button--primary"&gt;
+  &lt;i class="dashing-icon dashing-icon--add dashing-icon--white"&gt;&lt;/i&gt;
+&lt;/button&gt;
+</code>
+</pre>
 
-    <div class="row">
-      <div class="column column--full center-align">
+    <h2>Toggle Button</h2>
+    <div class="row example-container">
+      <div class="column column--full">
           <ul class="button-group button-group--blue">
             <li class="button--radio">
               <input type="radio" name="options-blue" id="blue1" checked>
@@ -156,96 +322,24 @@
           </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="column column--full center-align">
-          <ul class="button-group button-group--green">
-            <li class="button--radio">
-              <input type="radio" name="options-green" id="green1" checked>
-              <label for="green1" class="button">Left</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-green" id="green2">
-              <label for="green2" class="button">Middle</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-green" id="green3">
-              <label for="green3" class="button">Right</label>
-            </li>
-          </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column column--full center-align">
-          <ul class="button-group button-group--orange">
-            <li class="button--radio">
-              <input type="radio" name="options-orange" id="orange1" checked>
-              <label for="orange1" class="button">Left</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-orange" id="orange2">
-              <label for="orange2" class="button">Middle</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-orange" id="orange3">
-              <label for="orange3" class="button">Right</label>
-            </li>
-          </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column column--full center-align">
-          <ul class="button-group button-group--red">
-            <li class="button--radio">
-              <input type="radio" name="options-red" id="red1" checked>
-              <label for="red1" class="button">Left</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-red" id="red2">
-              <label for="red2" class="button">Middle</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-red" id="red3">
-              <label for="red3" class="button">Right</label>
-            </li>
-          </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column column--full center-align">
-          <ul class="button-group button-group--purple">
-            <li class="button--radio">
-              <input type="radio" name="options-purple" id="purple1" checked>
-              <label for="purple1" class="button">Left</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-purple" id="purple2">
-              <label for="purple2" class="button">Middle</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-purple" id="purple3">
-              <label for="purple3" class="button">Right</label>
-            </li>
-          </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column column--full center-align">
-          <ul class="button-group button-group--gray">
-            <li class="button--radio">
-              <input type="radio" name="options-gray" id="gray1" checked>
-              <label for="gray1" class="button">Left</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-gray" id="gray2">
-              <label for="gray2" class="button">Middle</label>
-            </li>
-            <li class="button--radio">
-              <input type="radio" name="options-gray" id="gray3">
-              <label for="gray3" class="button">Right</label>
-            </li>
-          </ul>
-      </div>
-    </div>
-
+<pre>
+<code class="language-html">
+&lt;!-- Blue Toggle Button --&gt;
+&lt;ul class="button-group button-group--blue"&gt;
+  &lt;li class="button--radio"&gt;
+    &lt;input type="radio" name="options-blue" id="blue1" checked&gt;
+    &lt;label for="blue1" class="button"&gt;Left&lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li class="button--radio"&gt;
+    &lt;input type="radio" name="options-blue" id="blue2"&gt;
+    &lt;label for="blue2" class="button"&gt;Middle&lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li class="button--radio"&gt;
+    &lt;input type="radio" name="options-blue" id="blue3"&gt;
+    &lt;label for="blue3" class="button"&gt;Right&lt;/label&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+</pre>
   </body>
 </html>

@@ -67,15 +67,26 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   //Button Color Options
   &.button--primary { @include button($background-color: $blue, $color: $white); }
-  &.button--secondary { @include button($background-color: $gray-200, $color: $gray-900); }
+  &.button--secondary {
+    @include button($background-color: $gray-200, $color: $gray-900);
+    .dashing-icon:before { color: $gray-700; }
+  }
 
   &.button--gray,
-  &.button--grey { @include button($background-color: $gray-200, $color: $gray-900); }
+  &.button--grey {
+    @include button($background-color: $gray-200, $color: $gray-900);
+    .dashing-icon:before { color: $gray-700; }
+  }
   &.button--blue {@include button($background-color: $blue, $color: $white); }
   &.button--green { @include button($background-color: $green, $color: $white); }
   &.button--orange { @include button($background-color: $orange, $color: $white); }
   &.button--purple { @include button($background-color: $purple, $color: $white); }
   &.button--red { @include button($background-color: $red, $color: $white); }
+
+  .dashing-icon:before {
+    color: $white;
+    transition: all 50ms ease-in-out;
+  }
 
   //Used to display actions and icons with a transparent background
   //transparentize(white, 1) used instead of transparent because "darken" requires an rgb color value
