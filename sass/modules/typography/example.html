@@ -4,51 +4,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../dashing.css" rel="stylesheet">
+    <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Typography</title>
   </head>
-  <body style="padding: 1rem 0; margin: auto; background-color: #fff;">
+  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
+
+    <script src="../../../example/vendor/prismjs/prism.js"></script>
+
     <h1 style="text-align: center; padding: 3rem;">Dashing Typography</h1>
 
-    <div class="row">
-      <div class="column column--full center-align">
-        <h1>Header 1 <code>&lt;h1&gt;</code></h1>
+    <h2 class="example-header">Headers</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <h1>h1. Header 1</h1>
+        <h2>h2. Header 2</h2>
+        <h3>h3. Header 3</h3>
+        <h4>h4. Header 4</h4>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;h1&gt;h1. Header 1&lt;/h1&gt;
+&lt;h2&gt;h2. Header 2&lt;/h2&gt;
+&lt;h3&gt;h3. Header 3&lt;/h3&gt;
+&lt;h4&gt;h4. Header 4&lt;/h4&gt;
+</code>
+</pre>
 
-    <div class="row">
-      <div class="column column--full center-align">
-        <h2>Header 2 <code>&lt;h2&gt;</code></h2>
+    <h2 class="example-header">Body Text</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <p>Nunc hendrerit lectus velit, vel fringilla sem molestie at. Etiam orci ipsum, iaculis eu magna vel, commodo efficitur metus. Praesent elementum justo eros, eu efficitur metus interdum ut. Morbi finibus eros in dolor condimentum bibendum.</p>
+        <p>Aliquam luctus malesuada erat, a efficitur dolor consequat ac. Suspendisse sodales aliquet velit in elementum. Proin malesuada auctor libero, ut accumsan dolor tincidunt in.</p>
+        <p><strong>Duis fermentum nisi nec ornare volutpat. Donec ultricies ante at nunc consectetur viverra. Pellentesque ac augue lorem. Nulla facilisi.</strong></p>
       </div>
     </div>
+<pre>
+<code class="language-html">
+&lt;p&gt;Nunc hendrerit lectus velit, vel fringilla sem molestie at. Etiam orci ipsum, iaculis eu magna vel, commodo efficitur metus. Praesent elementum justo eros, eu efficitur metus interdum ut. Morbi finibus eros in dolor condimentum bibendum.&lt;/p&gt;
+&lt;p&gt;Aliquam luctus malesuada erat, a efficitur dolor consequat ac. Suspendisse sodales aliquet velit in elementum. Proin malesuada auctor libero, ut accumsan dolor tincidunt in.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Duis fermentum nisi nec ornare volutpat. Donec ultricies ante at nunc consectetur viverra. Pellentesque ac augue lorem. Nulla facilisi.&lt;/strong&gt;&lt;/p&gt;
+</code>
+</pre>
 
-    <div class="row">
-      <div class="column column--full center-align">
-        <h3>Header 3 <code>&lt;h3&gt;</code></h3>
+    <h2 class="example-header">Hyperlinks</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <a>Click Here</a>
+        <p>Phasellus vel luctus libero. <a>Maecenas sit</a> amet leo vestibulum, vehicula arcu id, tempus dolor.</p>
       </div>
     </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
-        <h4>Header 4 <code>&lt;h4&gt;</code></h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
-        <p>Paragraph <code>&lt;p&gt;</code></p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
-        <p><strong>Strong Paragraph</strong> <code>&lt;strong&gt;</code></p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column column--full center-align">
-        <a>Link <code>&lt;a&gt;</code></a>
-      </div>
-    </div>
+<pre>
+<code class="language-html">
+&lt;a&gt;Click Here&lt;/a&gt;
+&lt;p&gt;Phasellus vel luctus libero. &lt;a&gt;Maecenas sit&lt;/a&gt; amet leo vestibulum, vehicula arcu id, tempus dolor.&lt;/p&gt;
+</code>
+</pre>
   </body>
 </html>
