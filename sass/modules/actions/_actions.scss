@@ -92,6 +92,8 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   //transparentize(white, 1) used instead of transparent because "darken" requires an rgb color value
   &.button--transparent {
     @include button($background-color: transparentize(white, 1), $color: $blue);
+    padding-left: 0;
+    padding-right: 0;
     &:hover, &:focus { opacity: .6; }
     &:active { opacity: .9; }
 
