@@ -12,6 +12,14 @@
 	border-radius: 8px 8px 0 0;
 }
 
+.example-text {
+	background-color: $gray-100;
+	border-radius: 5px;
+	color: $gray-900;
+	font-size: 0.9rem;
+	padding: 0.2rem 0.5rem;
+}
+
 h2.example-header {
 	margin: 3rem auto 1rem;
 }
@@ -22,12 +30,12 @@ pre[class*="language-"] {
 	background: none;
 	display: block;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 0.9rem;
-	line-height: 1.5rem;
+	font-size: 13px;
+	line-height: 1.1rem;
 	margin: -0.5rem 0;
 	text-align: left;
 	white-space: pre;
-	word-spacing: normal;
+	word-spacing: 0;
 	word-break: normal;
 	word-wrap: normal;
 

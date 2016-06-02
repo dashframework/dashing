@@ -27,9 +27,9 @@ Every form element within Dashing is **required** to be placed within a fieldset
 |--------------|--------|-------|
 | `fieldset` | Drives styles for inputs and labels | *Required* Applied as a container for inputs and labels |
 | `.inline` | Places labels inline with the input type | Apply `.inline` to label elements |
-| `.error` | Adds error styles to input, label and message | Apply `.error` to fieldset elements |
-| `.warning` | Adds warning styles to input, label and message | Apply `.warning` to fieldset elements |
-| `.select--with-icon` | Adds down arrow icon to select inputs | Apply `.select--with-icon` to `fieldset` elements |
+| `.has-error` | Adds error styles to input, label and message | Apply `.has-error` to fieldset elements |
+| `.has-warning` | Adds warning styles to input, label and message | Apply `.has-warning` to fieldset elements |
+| `.select--has-icon` | Adds down arrow icon to select inputs | Apply `.select--has-icon` to `fieldset` elements |
 
 ## Custom Checkbox Configurations
 
@@ -44,7 +44,7 @@ Custom checkboxes have a default color of `$blue` when active. If you would like
 | `$checkbox--disabled` | Color of checkbox when checked and disabled | Default color is `$gray-150` |
 | `$checkbox--icon-disabled` | Color of checkmark icon when checked and disabled | Default color is `$gray-500` |
 
-> **Note**: To alter the checkbox variable colors in your App, be sure to place the variable references in your [override file](https://github.com/dashframework/dashing#working-with-sass).
+> **Note**: To alter the checkbox variable colors in your App, be sure to place the variable references in your [theme file](https://github.com/dashframework/dashing#working-with-sass).
 
 ## Custom Radio Button Configurations
 
@@ -59,7 +59,7 @@ Custom checkboxes have a default color of `$blue` when active. If you would like
 | `$radio--disabled` | Color of radio button when checked and disabled | Default color is `$gray-150` |
 | `$radio--icon-disabled` | Color of radio button icon when checked and disabled | Default color is `$gray-500` |
 
-> **Note**: To alter the radio variable colors in your App, be sure to place the variable references in your [override file](https://github.com/dashframework/dashing#working-with-sass).
+> **Note**: To alter the radio variable colors in your App, be sure to place the variable references in your [theme file](https://github.com/dashframework/dashing#working-with-sass).
 
 ## Usage
 
@@ -95,10 +95,10 @@ Review how to use the grid [here](https://github.com/dashframework/dashing/tree/
 
 ### Adding a dropdown icon to a select menu
 
-By default, select menus will not include a dropdown icon. To include this, add the class `.select--with-icon` to the parent `fieldset` container.
+By default, select menus will not include a dropdown icon. To include this, add the class `.select--has-icon` to the parent `fieldset` container.
 
 ```html
-<fieldset class="column column--full select--with-icon">
+<fieldset class="column column--full select--has-icon">
   <label for="dashing-menu">Dashing Select Menu</label>
   <select>
     <option>Option 1</option>
@@ -113,7 +113,7 @@ By default, select menus will not include a dropdown icon. To include this, add 
 ```html
 <form>
   <fieldset class="row">
-    <div class="column column--full">
+    <div class="column column--full has-error">
       <label>Label</label>
       <input type="text">
       <ul class="message">
@@ -124,11 +124,7 @@ By default, select menus will not include a dropdown icon. To include this, add 
 </form>
 ```
 
->**Note**: When filling out a form, users will often be focused on the particular input they're focused on. For this reason, error messages should be inline with the current form. This will ensure the error will be clearly displayed to the user.
-
-### Placing labels within inputs
-
-Don't do it.
+>**Note**: When filling out a form, users will often be focused on the particular input they're working on. For this reason, error messages should be inline with the current form. This will ensure the error will be clearly displayed to the user.
 
 ### Custom Checkboxes
 
@@ -157,5 +153,18 @@ Add a custom theme to your radio buttons by including the `.radio--custom` class
     <input type="radio" id="dashing-radio"/>
     <label class="inline" for="dashing-radio">Radio Label</label>
   </fieldset>  
+</div>
+```
+
+### Custom Range Slider
+
+Add a custom theme to your radio buttons by including the `.range--custom` class to your `fieldset`.
+
+```html
+<div class="row">
+  <fieldset class="column column--full range--custom">
+    <label for="dashing-range">Dashing Range</label>
+    <input type="range" id="dashing-range"/>
+  </fieldset>
 </div>
 ```

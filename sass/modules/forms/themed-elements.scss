@@ -1,0 +1,231 @@
+/* Custom Checkboxes
+  ================================================== */
+
+.checkbox--custom,
+.radio--custom {
+  input { // Places the input behind the label so it doesn't overlay text
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+
+.checkbox--custom {
+
+  //Label Styles
+  label:before {
+    @include user-select(none);
+    content: '\e835';
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-color: $white;
+    border: 2px solid $gray-200;
+    border-radius: 5px;
+    color: transparent;
+    display: block;
+    float: left;
+    font-family: 'dashing-icons';
+    font-size: 12px;
+    font-weight: 600;
+    height: 20px; width: 20px;
+    margin-top: 1px;
+    margin-right: 0.5rem;
+    padding: 2px;
+  }
+
+  //Checkbox Hover
+  input:hover ~ label { //Text Hover
+    color: rgba($black, .6);
+    &:before { //Checkbox Hover
+      color: $gray-200;
+    }
+  }
+
+  //Checkbox Active
+  input:checked ~ label:before, input:active ~ label:before {
+    color: $checkbox--icon;
+    background-color: $checkbox--active;
+    border: 2px solid $checkbox--active;
+  }
+
+  //Checkbox Focus
+  input:focus ~ label:before { box-shadow: 0 0 0 2px $checkbox--focus; }
+
+  //Disabled Checkbox
+  input[disabled] ~ label,
+  input[disabled]:active ~ label,
+  input[disabled]:checked ~ label {
+    cursor: default;
+    pointer-events: none;
+    &:before {
+      border-color: $checkbox--disabled;
+      background-color: $checkbox--disabled;
+    }
+  }
+
+  //Disabled Checkbox Icon
+  input[disabled]:active ~ label,
+  input[disabled]:checked ~ label {
+    &:before { color: $checkbox--icon-disabled; }
+  }
+}
+
+/* Custom Radio Buttons
+  ================================================== */
+//Wrapper for Custom Radio Buttons
+.radio--custom  {
+	font-weight: normal;
+
+  //Label Styles
+  input:empty ~ label { //Position Styles
+    @include user-select(none);
+    cursor: pointer;
+  	float: left;
+    line-height: 1rem;
+    margin-top: 0.3rem;
+    position: relative;
+    text-indent: 2rem;
+    &:before { //Radio Button Styles
+      border: 2px solid $gray-200;
+      border-radius: 50px;
+      content: '';
+      display: block;
+      font-size: 1.7rem;
+      line-height: 0.7rem;
+    	position: absolute;
+    	top: 0;	bottom: 0; left: 0;
+      height: 20px; width: 20px;
+      @media #{$desktop} { font-size: 1.5rem; }
+    }
+  }
+
+  @-moz-document url-prefix() { //Target Firefox radio button
+    input:empty ~ label:before {
+      font-size: 1.6rem;
+      @media #{$desktop} { font-size: 1.5rem; }
+    }
+  }
+
+  //Radio Hover
+  input:hover:not(:checked) ~ label { //Text Hover
+    color: rgba($black, .6);
+    &:before { //Button Hover Hover
+      color: $gray-200;
+    	content:'•';
+    	text-indent: 4px;
+    }
+  }
+
+  //Radio Active
+  input:checked ~ label:before {
+    background-color: $radio--active;
+    border-color: $radio--active;
+    color: $radio--icon;
+  	content:'•';
+  	text-indent: 4px;
+  }
+
+  //Radio Focus
+  input:focus ~ label:before { box-shadow: 0 0 0 2px $radio--focus; }
+
+  //Disabled Radio Button
+  input[disabled] ~ label,
+  input[disabled]:active ~ label,
+  input[disabled]:checked ~ label {
+    cursor: default;
+    pointer-events: none;
+    &:before {
+      border-color: $radio--disabled;
+      background-color: $radio--disabled;
+    }
+  }
+
+  //Disabled Radio Icon
+  input[disabled]:active ~ label,
+  input[disabled]:checked ~ label {
+    &:before { color: $radio--icon-disabled; }
+  }
+}
+
+/* Custom Range Slider
+  ================================================== */
+.range--custom {
+  width: 10rem;
+  margin: 0 auto;
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background-color: $gray-200;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 0.5rem;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    &:active {
+      background-color: $gray-250;
+    }
+  }
+
+  input[type="range"]::-moz-range-track {
+    border: inherit;
+    background: transparent;
+  }
+
+  input[type=range]::-moz-focus-outer { border: 0; }
+
+  input[type="range"]::-ms-track {
+    border: inherit;
+    color: transparent; /* don't drawn vertical reference line */
+    background: transparent;
+  }
+
+  input[type="range"]::-ms-fill-lower,
+  input[type="range"]::-ms-fill-upper {
+    background: transparent;
+  }
+
+  input[type="range"]::-ms-tooltip {
+    display: none;
+  }
+
+  //THUMB
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: $white;
+    border: 2px solid $gray-200;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    background-color: $white;
+    border: 2px solid $gray-200;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+  }
+
+  input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    background-color: $white;
+    border: 2px solid $gray-200;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Custom File Upload
+  ================================================== */
+.file--custom {
+  @extend .button;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  & ~ input[type="file"] { display: none; }
+}
