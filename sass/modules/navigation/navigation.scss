@@ -19,7 +19,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
   z-index: 10;
 
   .app-context {
-    @extend %app-content-width;
+    max-width: $global-content-width;
     @extend %clearfix;
     margin: auto;
     padding: 1rem;
@@ -59,8 +59,8 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
   .app-navigation {
     @extend %remove-list-style;
-    @extend %app-content-width;
     @extend %clearfix;
+    max-width: $global-content-width;
     margin: auto;
     overflow: hidden;
     overflow-x: auto;
@@ -69,7 +69,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
     li, a {
       border-bottom: 4px solid transparent;
-      padding-bottom: 0.2rem;
+      padding-bottom: 0.5rem;
     }
 
     li {
