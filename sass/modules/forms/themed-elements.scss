@@ -178,7 +178,10 @@
 
   input[type="range"]::-moz-range-track {
     border: inherit;
-    background: transparent;
+    background-color: $gray-200;
+    border-radius: 30px;
+    height: 0.5rem;
+    &:active { background-color: $gray-250; }
   }
 
   input[type=range]::-moz-focus-outer { border: 0; }
