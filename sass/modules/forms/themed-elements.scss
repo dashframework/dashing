@@ -158,17 +158,22 @@
   input[type="range"] {
     -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    background-color: $gray-200;
+    background: none;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    height: 0.5rem;
     width: 100%;
     margin: 0;
+    min-height: 2.5rem;
     outline: none;
-    &:active {
-      background-color: $gray-250;
-    }
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background-color: $gray-200;
+    border-radius: 30px;
+    height: 0.5rem;
+    &:active { background-color: $gray-250; }
   }
 
   input[type="range"]::-moz-range-track {
@@ -201,6 +206,7 @@
     width: 20px;
     height: 20px;
     border-radius: 30px;
+    margin-top: -5px;
   }
 
   input[type="range"]::-moz-range-thumb {
