@@ -1,6 +1,6 @@
 {
   "name": "dashing",
-  "version": "v0.3.3-beta",
+  "version": "v0.3.4-beta",
   "main": "sass/application.scss",
 
   "homepage": "http://developers.samaritanministries.org/",

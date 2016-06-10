@@ -341,5 +341,47 @@
 &lt;/ul&gt;
 </code>
 </pre>
+
+<h2 class="example-header">Theme Options</h2>
+<div class="row example-container">
+  <div class="column column--full">
+    <button class="button button--round">Round Button</button>
+    <button class="button button--smooth">Smooth Button</button>
+    <button class="button button--square">Square Button</button>
+  </div>
+</div>
+<pre>
+<code class="language-html">
+  &lt;!-- Round Button --&gt;
+  &lt;button class="button button--round"&gt;Round Button&lt;/button&gt;
+
+  &lt;!-- Smooth Button --&gt;
+  &lt;button class="button button--smooth"&gt;Smooth Button&lt;/button&gt;
+
+  &lt;!-- Square Button --&gt;
+  &lt;button class="button button--square"&gt;Square Button&lt;/button&gt;
+</code>
+</pre>
+<h2 class="example-header">Global Button Themes</h2>
+<p>Apply one of the following extendables to apply a button theme your entire project.</p>
+<div class="row example-container">
+  <div class="column column--full">
+    <button class="button button--round">Round Button</button>
+    <button class="button button--smooth">Smooth Button</button>
+    <button class="button button--square">Square Button</button>
+  </div>
+</div>
+<pre>
+<code class="language-scss">
+  // Round Button Theme (Default)
+  button { @extend %button--round; }
+
+  // Smooth Button Theme
+  button { @extend %button--smooth; }
+
+  // Square Button Theme
+  button { @extend %button--square; }
+</code>
+</pre>
   </body>
 </html>

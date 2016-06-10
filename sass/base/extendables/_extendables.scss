@@ -18,9 +18,9 @@
 
 /* Action Extendables
   =========================================================================== */
-%button--rounded,
-%button--round { border-radius: 50px; }
+%button--round  { border-radius: 50px; }
 %button--smooth { border-radius: 5px; }
+%button--square { border-radius: 0; }
 
 /* Custom Scrollbar Extendables
   =========================================================================== */
