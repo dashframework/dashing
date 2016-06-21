@@ -36,20 +36,20 @@ When you have an input that can be visually labeled, simply use the label tag to
 
 ```html 
 <label for="idOfElement"></label>
-<input id="idOfElement"></input>
+<input id="idOfElement">
 ```
 In some cases  `hidden` labels may be necessary, such as when a button descrbes a form and two labels are not required.
 
 ```html
 <label for="idOfElement" class="hidden"></label>
-<input id="idOfElement"></input>
+<input id="idOfElement">
 ```
 
 You can also use `aria-labelledby=""` to notify a screen reader which element is acting as a label for the form.
 
 ```html
 <div id="idOfElement">Label</div>
-<input aria-labelledby="idOfElement"></input>
+<input aria-labelledby="idOfElement">
 ```
 
 `aria-labelledby` also allows one to describe multiple fields or forms with one label. One may use this function on something such as a table header that defines all rows or columns of a table. You can also use `aria-labelledby` to denote multiple fields that might label a form such as the row and column of a table.
@@ -57,14 +57,14 @@ You can also use `aria-labelledby=""` to notify a screen reader which element is
 ```html
 <th id="idOfElement1">Label</th>
 <th id="idOfElement2">Label</th>
-<input aria-labelledby="idOfElement1 idOfElement2"></input>
+<input aria-labelledby="idOfElement1 idOfElement2">
 ```
-> Note: When it is possible, it is preffered to use the <label> element. However, should you put both <label> and aria-labelledby, aria-labelledby will be used exclusivley by a screen-reader.
+> Note: When it is possible, it is preffered to use the `<label>` element. However, should you put both `<label>` and aria-labelledby, aria-labelledby will be used exclusivley by a screen-reader.
 
 Using `aria-describedby=""` one can allow a form description to be noted. This is not for a label, but rather text that is important to know that may otherwise go with the label. 
 
 ```html
-<input name="description" id="description" aria-describedby="idOfElement"></input>
+<input name="description" id="description" aria-describedby="idOfElement">
  <div id="idOfElement">Please limit your characters to 255 and include no line breaks.</div>
 ```
 
@@ -73,5 +73,5 @@ You should also use `aria-describedby` to reference tooltips.
 Using  `aria-label=""` will directly apply the label text to an element.
 
 ```html
-<input aria-label="This is a description of this input."></input>
+<input aria-label="This is a description of this input.">
 ```
