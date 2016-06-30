@@ -76,6 +76,11 @@ fieldset {
       position: absolute;
       right: 2rem; bottom: calc(#{$grid-gutter} * 2);
     }
+
+    //Removes default select icon in IE
+    select::-ms-expand {
+      display: none;
+    }
   }
 }
 
