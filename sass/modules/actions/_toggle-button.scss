@@ -6,6 +6,16 @@
   .button--radio:first-of-type label { border-radius: 50px 0 0 50px; }
   .button--radio:last-of-type label { border-radius: 0 50px 50px 0; }
 
+  &.button--smooth {
+    .button--radio:first-of-type label { border-radius: 5px 0 0 5px; }
+    .button--radio:last-of-type label { border-radius: 0 5px 5px 0; }
+  }
+
+  &.button--square {
+    .button--radio:first-of-type label { border-radius: 0; }
+    .button--radio:last-of-type label { border-radius: 0; }
+  }
+
   .button--radio {
     display: inline-block;
     list-style: none;
@@ -44,5 +54,47 @@
   &.button-group--red {
     .button { @include button($background-color: $red, $color: $white); }
     .button--radio input:checked ~ label { background-color: $red-800; }
+  }
+
+  &.button-group--border {
+    .button--radio {
+      &:first-of-type {
+        .button { border-left: 2px solid $gray-300; }
+        input:checked ~ label { border-color: $green; }
+      }
+      &:last-of-type {
+        .button { border-right: 2px solid $gray-300; }
+        input:checked ~ label { border-color: $green; }
+      }
+    }
+
+    .button {
+      border: 1px solid $gray-300;
+      border-width: 2px 1px;
+      padding: 0.4rem 0.9rem;
+      padding-top: 0.35rem;
+    }
+
+    @mixin button-group($color) {
+      input:checked ~ label {
+        background-color: $color;
+        border-color: $color;
+        color: $white;
+        &:hover { color: $white; }
+      }
+
+      .button {
+        background-color: transparent;
+        color: $gray-600;
+        &:hover { color: $color; }
+      }
+    }
+
+    &.button-group--gray { .button--radio { @include button-group($gray); } }
+    &.button-group--blue { .button--radio { @include button-group($blue); } }
+    &.button-group--green { .button--radio { @include button-group($green); } }
+    &.button-group--orange { .button--radio { @include button-group($orange); } }
+    &.button-group--purple { .button--radio { @include button-group($purple); } }
+    &.button-group--red { .button--radio { @include button-group($red); } }
   }
 }
