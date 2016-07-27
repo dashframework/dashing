@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../dashing.css" rel="stylesheet">
+    <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Grid</title>
 
     <style>
@@ -36,10 +37,18 @@
       .column--nested.column--example {
         margin: 0;
       }
+
+      .card--example {
+        margin: 0;
+        padding: 2rem 1rem;
+      }
     </style>
   </head>
 
-  <body style="padding: 1rem 0; margin: auto; background-color: #fff;">
+  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
+
+    <script src="../../../example/vendor/prismjs/prism.js"></script>
+
     <h1 style="text-align: center; padding: 3rem;">Dashing Grid</h1>
     <div class="row row--example">
       <div class="column column--full column--example">
@@ -196,6 +205,52 @@
         </div>
       </div>
     </div>
+
+<h2 class="example-header">Nested Grid Example</h2>
+<div class="row example-container">
+  <div class="column column--full">
+    <div class="row row--nested">
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+    </div>
+    <div class="row row--nested">
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card card--example">box</div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre>
+<code class="language-html">
+  &lt;!-- Round Button --&gt;
+  &lt;button class="button button--round"&gt;Round Button&lt;/button&gt;
+
+  &lt;!-- Smooth Button --&gt;
+  &lt;button class="button button--smooth"&gt;Smooth Button&lt;/button&gt;
+
+  &lt;!-- Square Button --&gt;
+  &lt;button class="button button--square"&gt;Square Button&lt;/button&gt;
+</code>
+</pre>
 
   </body>
 </html>
