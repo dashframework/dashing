@@ -37,11 +37,6 @@
       .column--nested.column--example {
         margin: 0;
       }
-
-      .card--example {
-        margin: 0;
-        padding: 2rem 1rem;
-      }
     </style>
   </head>
 
@@ -206,49 +201,130 @@
       </div>
     </div>
 
-<h2 class="example-header">Nested Grid Example</h2>
+<h2 class="example-header"> Grid Example</h2>
 <div class="row example-container">
   <div class="column column--full">
-    <div class="row row--nested">
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
+    <fieldset class="row">
+      <div class="column column--full column--example">
+        <label>Example</label>
+        <input type="text">
       </div>
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
+    </fieldset>
+    <fieldset class="row">
+      <div class="column column--third column--example">
+        <label>Example</label>
+        <input type="text">
       </div>
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
+      <div class="column column--third column--example">
+        <label>Example</label>
+        <input type="text">
       </div>
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
-      </div>
-    </div>
-    <div class="row row--nested">
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
-      </div>
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
-      </div>
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
-      </div>
-      <div class="column column--fourth column--nested column--example">
-        <div class="card card--example">box</div>
+      <div class="column column--third column--example">
+        <label>Example</label>
+        <input type="text">
       </div>
     </div>
   </div>
 </div>
 <pre>
 <code class="language-html">
-  &lt;!-- Round Button --&gt;
-  &lt;button class="button button--round"&gt;Round Button&lt;/button&gt;
+&lt;!-- Grid with inputs --&gt;
+&lt;div class="row example-container"&gt;
+  &lt;div class="column column--full"&gt;
+    &lt;fieldset class="row"&gt;
+      &lt;div class="column column--full column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset class="row"&gt;
+      &lt;div class="column column--third column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--third column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--third column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
 
-  &lt;!-- Smooth Button --&gt;
-  &lt;button class="button button--smooth"&gt;Smooth Button&lt;/button&gt;
-
-  &lt;!-- Square Button --&gt;
-  &lt;button class="button button--square"&gt;Square Button&lt;/button&gt;
+<h2 class="example-header">Nested Grid Example</h2>
+<p>Use the nested grid when stacking cards, which will give you a consistent gutter all around.</p>
+<div class="row example-container">
+  <div class="column column--full">
+    <div class="row row--nested">
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+    </div>
+    <div class="row row--nested">
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre>
+<code class="language-html">
+&lt;!-- Nested Grid with cards --&gt;
+&lt;div class="row example-container"&gt;
+  &lt;div class="column column--full"&gt;
+    &lt;div class="row row--nested"&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row row--nested"&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </code>
 </pre>
 
