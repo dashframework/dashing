@@ -32,7 +32,6 @@ Every form element within Dashing is **required** to be placed within a fieldset
 | `.select--has-icon` | Adds down arrow icon to select inputs | Apply `.select--has-icon` to `fieldset` elements |
 
 ## Custom Checkbox Configurations
-
 Custom checkboxes have a default color of `$blue` when active. If you would like to change the color theme of custom checkboxes to better integrate with your App, replace these variables in your overwrite file.
 
 | Checkbox variables | Effect | Notes |
@@ -47,7 +46,6 @@ Custom checkboxes have a default color of `$blue` when active. If you would like
 > **Note**: To alter the checkbox variable colors in your App, be sure to place the variable references in your [theme file](https://github.com/dashframework/dashing#working-with-sass).
 
 ## Custom Radio Button Configurations
-
 Custom checkboxes have a default color of `$blue` when active. If you would like to change the color theme of custom checkboxes to better integrate with your App, replace these variables in your overwrite file.
 
 | Radio variables | Effect | Notes |
@@ -62,9 +60,7 @@ Custom checkboxes have a default color of `$blue` when active. If you would like
 > **Note**: To alter the radio variable colors in your App, be sure to place the variable references in your [theme file](https://github.com/dashframework/dashing#working-with-sass).
 
 ## Usage
-
 ### Using an input
-
 ```html
 <fieldset class="row">
   <div class="column column--full">
@@ -75,7 +71,6 @@ Custom checkboxes have a default color of `$blue` when active. If you would like
 ```
 
 ### Creating a form
-
 Review how to use the grid [here](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid)
 
 ```html
@@ -94,7 +89,6 @@ Review how to use the grid [here](https://github.com/dashframework/dashing/tree/
 ```
 
 ### Adding a dropdown icon to a select menu
-
 By default, select menus will not include a dropdown icon. To include this, add the class `.select--has-icon` to the parent `fieldset` container.
 
 ```html
@@ -109,7 +103,6 @@ By default, select menus will not include a dropdown icon. To include this, add 
 ```
 
 ### Inline Error Messages
-
 ```html
 <form>
   <fieldset class="row">
@@ -127,7 +120,6 @@ By default, select menus will not include a dropdown icon. To include this, add 
 >**Note**: When filling out a form, users will often be focused on the particular input they're working on. For this reason, error messages should be inline with the current form. This will ensure the error will be clearly displayed to the user.
 
 ### Custom Checkboxes
-
 Add a custom theme to your checkboxes by including the `.checkbox--custom` class to your `fieldset`.
 
 >Note: These styles will only work if you include the input first, followed by a label.
@@ -142,7 +134,6 @@ Add a custom theme to your checkboxes by including the `.checkbox--custom` class
 ```
 
 ### Custom Radio Button
-
 Add a custom theme to your radio buttons by including the `.radio--custom` class to your `fieldset`.
 
 >Note: These styles will only work if you include the input first, followed by a label.
@@ -157,7 +148,6 @@ Add a custom theme to your radio buttons by including the `.radio--custom` class
 ```
 
 ### Custom Range Slider
-
 Add a custom theme to your radio buttons by including the `.range--custom` class to your `fieldset`.
 
 ```html

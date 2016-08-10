@@ -29,7 +29,6 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   @extend %action;
   @extend %button--round;
   @include button($background-color: $blue, $color: $white);
-  @include user-select(none);
 
   -webkit-font-smoothing: auto;
   font-weight: $font-weight-normal;
@@ -178,17 +177,8 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 //Used for creating clickable dashing icons
 .button--icon {
   border-radius: 50px !important;
-  padding-top: calc(1rem - 2px);
-  padding-bottom: calc(1rem - 2px);
-  padding-right: 1rem;
-  padding-left: 1rem;
-
-  &.button--icon--small {
-    padding-top: calc(0.6rem - 2px);
-    padding-bottom: calc(0.6rem - 2px);
-    padding-right: 0.6rem;
-    padding-left: 0.6rem;
-  }
+  padding: 1rem;
+  &.button--icon--small { padding: 0.6rem; }
 
   &.button--icon--main {
     @extend %shadow-100;
