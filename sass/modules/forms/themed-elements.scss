@@ -15,7 +15,6 @@ $radio--icon-disabled: $gray-500 !default; //Color of radio icon when checked an
 
 $switch--on: $blue !default; //Color of checkbox when checked
 $switch--off: $gray-250 !default; //Color of radio when checked and disabled
-$switch--width: 5rem;
 
 /* Custom Checkboxes
   ================================================== */
@@ -294,61 +293,59 @@ $switch--width: 5rem;
       padding-right: 0.5rem;
     }
   }
-}
 
-//Toggle transition
-.switch--inner {
-  @include transition(all 0.05s ease-in 0s);
-  display: block;
-  width: 200%;
-  margin-left: -100%;
-}
+  //Toggle transition
+  .switch--inner {
+    @include transition(all 0.05s ease-in 0s);
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    &:before, &:after {
+      color: $white;
+      display: block;
+      float: left;
+      height: 2rem;
+      padding: 0;
+      line-height: 26px;
+      font-size: .8rem;
+      text-transform: uppercase;
+      width: 50%;
+    }
 
-.switch--inner:before,
-.switch--inner:after {
-  color: white;
-  display: block;
-  float: left;
-  height: 2rem;
-  padding: 0;
-  line-height: 26px;
-  font-size: .8rem;
-  text-transform: uppercase;
-  width: 50%;
-}
+    //Active
+    &:before {
+      background-color: $switch--on;
+      content: "";
+    }
 
-//Active
-.switch--inner:before {
-  background-color: $switch--on;
-  content: "";
-}
+    &:after {
+      background-color: $switch--off;
+      content: "";
+    }
+  }
 
-.switch--inner:after {
-  background-color: $switch--off;
-  content: "";
-}
+  //Inactive circle position
+  .switch--handle {
+    @include transition(all 0.05s ease-in 0s);
+    background-color: $white;
+    border-radius: 50%;
+    display: block;
+    margin: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    width: 19px;
+  }
 
-//Inactive circle position
-.switch--switch {
-  @include transition(all 0.05s ease-in 0s);
-  background-color: $white;
-  border-radius: 50%;
-  display: block;
-  margin: 3px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 25px;
-  width: 19px;
-}
+  .switch--checkbox:checked +
+  .switch--label .switch--inner {
+    margin-left: 0;
+  }
 
-.switch--checkbox:checked +
-.switch--label .switch--inner {
-  margin-left: 0;
-}
-
-//Active circle position
-.switch--checkbox:checked +
-.switch--label .switch--switch {
-  right: 0;
+  //Active circle position
+  .switch--checkbox:checked +
+  .switch--label .switch--handle {
+    right: 0;
+  }
 }
