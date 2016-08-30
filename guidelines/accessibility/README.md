@@ -38,7 +38,7 @@ When you have an input that can be visually labeled, simply use the label tag to
 <label for="idOfElement"></label>
 <input id="idOfElement">
 ```
-In some cases  `hidden` labels may be necessary, such as when a button descrbes a form and two labels are not required.
+In some cases  `hidden` labels may be necessary, such as when a button describes a form and two labels are not required.
 
 ```html
 <label for="idOfElement" class="hidden"></label>
