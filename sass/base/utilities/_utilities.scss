@@ -28,3 +28,13 @@
 .float-none { float: none !important; }
 .fixed { position: fixed !important; }
 .relative { position: relative !important; }
+
+.text-color--white { color: $white; }
+.text-color--black { color: $black; }
+.text-color--gray, .text-color--grey { color: $gray; }
+.text-color--blue { color: $blue; }
+.text-color--green { color: $green; }
+.text-color--orange { color: $orange; }
+.text-color--purple { color: $purple; }
+.text-color--red { color: $red; }
+.text-color--yellow { color: $yellow; }

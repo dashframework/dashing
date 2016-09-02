@@ -1,6 +1,23 @@
+/* Form Variables
+  =========================================================================== */
+//Custom checkbox color theme
+$checkbox--active: $blue !default; //Color of checkbox when checked
+$checkbox--icon: $white !default; //Color of check icon when checked
+$checkbox--focus: $blue-300 !default; //Color of border around checkbox when focused
+$checkbox--disabled: $gray-150 !default; //Color of checkbox when checked and disabled
+$checkbox--icon-disabled: $gray-500 !default; //Color of check icon when checked and disabled
+
+$radio--active: $blue !default; //Color of checkbox when checked
+$radio--icon: $white !default; //Color of radio icon when checked
+$radio--focus: $blue-300 !default; //Color of border around radio when focused
+$radio--disabled: $gray-150 !default; //Color of radio when checked and disabled
+$radio--icon-disabled: $gray-500 !default; //Color of radio icon when checked and disabled
+
+$switch--on: $blue !default; //Color of checkbox when checked
+$switch--off: $gray-250 !default; //Color of radio when checked and disabled
+
 /* Custom Checkboxes
   ================================================== */
-
 .checkbox--custom,
 .radio--custom {
   input { // Places the input behind the label so it doesn't overlay text
@@ -9,7 +26,6 @@
     z-index: -1;
   }
 }
-
 
 .checkbox--custom {
 
@@ -237,4 +253,99 @@
   padding: 6px 12px;
   cursor: pointer;
   & ~ input[type="file"] { display: none; }
+}
+
+/* Custom Toggle Switch
+================================================== */
+
+.switch {
+  @include user-select(none);
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  .switch--checkbox { display: none; }
+
+  //Inactive state
+  .switch--label {
+    border-radius: 50px;
+    background-color: $switch--off;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  label + & {
+    top: 6px;
+    margin-left: 0.2rem;
+  }
+
+  &.switch--has-text {
+    .onoffswitch-inner:before {
+      content: "on";
+      padding-left: 0.5rem;
+    }
+
+    .onoffswitch-inner:after {
+      content: "inactive";
+      float: right;
+      padding-right: 0.5rem;
+    }
+  }
+
+  //Toggle transition
+  .switch--inner {
+    @include transition(all 0.05s ease-in 0s);
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    &:before, &:after {
+      color: $white;
+      display: block;
+      float: left;
+      height: 2rem;
+      padding: 0;
+      line-height: 26px;
+      font-size: .8rem;
+      text-transform: uppercase;
+      width: 50%;
+    }
+
+    //Active
+    &:before {
+      background-color: $switch--on;
+      content: "";
+    }
+
+    &:after {
+      background-color: $switch--off;
+      content: "";
+    }
+  }
+
+  //Inactive circle position
+  .switch--handle {
+    @include transition(all 0.05s ease-in 0s);
+    background-color: $white;
+    border-radius: 50%;
+    display: block;
+    margin: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    width: 19px;
+  }
+
+  .switch--checkbox:checked +
+  .switch--label .switch--inner {
+    margin-left: 0;
+  }
+
+  //Active circle position
+  .switch--checkbox:checked +
+  .switch--label .switch--handle {
+    right: 0;
+  }
 }

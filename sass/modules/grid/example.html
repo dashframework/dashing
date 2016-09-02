@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../dashing.css" rel="stylesheet">
+    <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Grid</title>
 
     <style>
@@ -39,7 +40,10 @@
     </style>
   </head>
 
-  <body style="padding: 1rem 0; margin: auto; background-color: #fff;">
+  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
+
+    <script src="../../../example/vendor/prismjs/prism.js"></script>
+
     <h1 style="text-align: center; padding: 3rem;">Dashing Grid</h1>
     <div class="row row--example">
       <div class="column column--full column--example">
@@ -196,6 +200,133 @@
         </div>
       </div>
     </div>
+
+<h2 class="example-header"> Grid Example</h2>
+<div class="row example-container">
+  <div class="column column--full">
+    <fieldset class="row">
+      <div class="column column--full column--example">
+        <label>Example</label>
+        <input type="text">
+      </div>
+    </fieldset>
+    <fieldset class="row">
+      <div class="column column--third column--example">
+        <label>Example</label>
+        <input type="text">
+      </div>
+      <div class="column column--third column--example">
+        <label>Example</label>
+        <input type="text">
+      </div>
+      <div class="column column--third column--example">
+        <label>Example</label>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+</div>
+<pre>
+<code class="language-html">
+&lt;!-- Grid with inputs --&gt;
+&lt;div class="row example-container"&gt;
+  &lt;div class="column column--full"&gt;
+    &lt;fieldset class="row"&gt;
+      &lt;div class="column column--full column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset class="row"&gt;
+      &lt;div class="column column--third column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--third column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--third column--example"&gt;
+        &lt;label&gt;Example&lt;/label&gt;
+        &lt;input type="text"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+<h2 class="example-header">Nested Grid Example</h2>
+<p>Use the nested grid when stacking cards, which will give you a consistent gutter all around.</p>
+<div class="row example-container">
+  <div class="column column--full">
+    <div class="row row--nested">
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+    </div>
+    <div class="row row--nested">
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+      <div class="column column--fourth column--nested column--example">
+        <div class="card remove-margin" style="padding: 1rem;">box</div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre>
+<code class="language-html">
+&lt;!-- Nested Grid with cards --&gt;
+&lt;div class="row example-container"&gt;
+  &lt;div class="column column--full"&gt;
+    &lt;div class="row row--nested"&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row row--nested"&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="column column--fourth column--nested"&gt;
+        &lt;div class="card remove-margin"&gt;box&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
 
   </body>
 </html>

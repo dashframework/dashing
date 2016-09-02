@@ -1,7 +1,7 @@
 # Dashing
 Stylish framework for web apps
 
-[![Dashing Version](https://img.shields.io/badge/Version-0.3.7--beta-green.svg)]()
+[![Dashing Version](https://img.shields.io/badge/Version-0.3.9--beta-green.svg)]()
 
 ## Browser Support
 
@@ -48,41 +48,41 @@ Every module contains an example file that allows you to preview the look and fe
 * [Typography](http://dashframework.github.io/dashing/sass/modules/typography/example.html)
 
 
-## Getting Started
+# Getting Started
 
-### Install the Component
+## Install the Component
 
-The Dashing Framework is delivered as a [bower](bower.io) component.
+The Dashing Framework is delivered as a [bower](bower.io) component. Note that Bower requires [node](https://nodejs.org/en/download/), [npm](https://docs.npmjs.com/cli/install) and [git](https://git-scm.com/downloads). If you don't yet have these installed, do this first.
 
 1. Install bower
   ```grunt
   npm install -g bower
   ```
 
-  >Note: Bower requires node, npm and git.
-
 2. Create a `bower.json` file
   ```grunt
   bower init
   ```
 
-3. Install the dashing bower component and save it to your `bower.json` file
+3. Install the dashing bower component. This will install the Dashing files in your project's `bower_components` folder.
   ```grunt
   bower install dashing --save
   ```
 
-### Setting up your project with SASS
+## Setting up your project with SASS
 
-#### Including Dashing Styles
+Sass is a great way to keep your project clean, organized and easy-to-manage. If you are unfamiliar with the workings of Sass, learn more [here](http://sass-lang.com/guide).
 
-1. Include Normalize
+### Including Dashing Styles
+
+1. Include Normalize –
   Include normalize first in your main application Sass file. We provide a version of normalize that we keep updated, or you may include normalize directly.
   ```scss
   @import "/bower_components/dashing/sass/vendor/normalize";
   ```
   > Note: You could optionally use the normalize project directly
 
-2. Include Base
+2. Include Base –
   Base files include variables, mixins, extendables, utilities and the dashing color scale.
   ```scss
   @import "/bower_components/dashing/sass/base/base";
@@ -100,13 +100,13 @@ The Dashing Framework is delivered as a [bower](bower.io) component.
   ```
   > Note: If you have included a theme file, your modules will now look to that for color theming, rather than base.
 
-#### Including Custom Styles
+### Including Custom Styles
 
 While the Dashing Style Framework does provide a lot of core modules for you to utilize, it most likely won't have everything you need. Follow the [SMACSS](https://smacss.com/) syntax in order to add a clean, organized structure to your custom stylesheets.
 
 1. Create five individual folders, named `base`, `layout`, `modules`, `state` and `theme`.
 
-2. Within each folder, create a stylesheet to match. (ex. You would create a `_base.scss` file within your `base` folder).
+2. Within each folder, create a stylesheet to match. (ex. You would create a `base.scss` file within your `base` folder).
 
 3. Import everything to your main application folder. When you're all finished, it should look something like this:
 
@@ -122,18 +122,34 @@ While the Dashing Style Framework does provide a lot of core modules for you to 
 @import "state/state";
 ```
 
+## Working with CSS
 
-### Working with CSS
-
-Include a link to the dashing.css stylesheet in your `index.html` file
+If you choose to work with the css alone, just include a link to the `dashing.css` stylesheet in your `index.html` file.
 
 ```html
 <link rel="stylesheet" href="/bower_components/dashing/dashing.css">
 ```
 
+## Setting up your HTML file and importing styles
+
+In order to render your styles correctly on mobile devices, include this meta viewport tag in your `index.html` file. This will allow your content to respond correct to the device width.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Now that you have your stylesheets in place, go ahead and import your main application stylesheet into your `index.html` file.
+
+```html
+<link rel="stylesheet" href="styles/application.css">
+```
+
+> Note: The file you're importing will be a custom file you've created. The path and name my be different for you.
+
+*****
 *****
 
-## Development
+# Development
 
 ### Clone the repository with git
 

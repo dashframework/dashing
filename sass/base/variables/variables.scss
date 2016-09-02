@@ -1,6 +1,5 @@
 /* Core Variables
   =========================================================================== */
-
 $global-content-width: 1200px !default;
 $global-transition: all 0.2s ease-in-out !default;
 $grid-gutter: 1rem !default;
@@ -9,19 +8,3 @@ $phone:         "all and (max-width: 40em)" !default;
 $tablet:        "all and (min-width: 40em)" !default;
 $desktop:       "all and (min-width: 64em)" !default;
 $desktop-large: "all and (min-width: 96em)" !default;
-
-/* Form Variables
-  =========================================================================== */
-
-//Custom checkbox color theme
-$checkbox--active: $blue; //Color of checkbox when checked
-$checkbox--icon: $white; //Color of check icon when checked
-$checkbox--focus: $blue-300; //Color of border around checkbox when focused
-$checkbox--disabled: $gray-150; //Color of checkbox when checked and disabled
-$checkbox--icon-disabled: $gray-500; //Color of check icon when checked and disabled
-
-$radio--active: $blue; //Color of checkbox when checked
-$radio--icon: $white; //Color of radio icon when checked
-$radio--focus: $blue-300; //Color of border around radio when focused
-$radio--disabled: $gray-150; //Color of radio when checked and disabled
-$radio--icon-disabled: $gray-500; //Color of radio icon when checked and disabled
