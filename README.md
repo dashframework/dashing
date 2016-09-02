@@ -71,6 +71,8 @@ The Dashing Framework is delivered as a [bower](bower.io) component. Note that B
 
 ## Setting up your project with SASS
 
+Sass is a great way to keep your project clean, organized and easy-to-manage. If you are unfamiliar with the workings of Sass, learn more [here](http://sass-lang.com/guide).
+
 ### Including Dashing Styles
 
 1. Include Normalize –
@@ -144,6 +146,7 @@ Now that you have your stylesheets in place, go ahead and import your main appli
 
 > Note: The file you're importing will be a custom file you've created. The path and name my be different for you.
 
+*****
 *****
 
 # Development

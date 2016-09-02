@@ -1,0 +1,49 @@
+.table--container {
+  .table {
+    background-color: $white;
+    font-size: 0.9rem;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+
+    th, td {
+      padding: $grid-gutter;
+      text-align: left;
+    }
+
+    th {
+      border-bottom: 2px solid $gray-200;
+    }
+  }
+}
+
+/* Table States
+  =========================================================================== */
+//Add border to container
+.table--container.has-border {
+  @media #{$tablet} {
+    border: 2px solid $gray-200;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+//Add dividing lines to table rows
+.table.has-border {
+  td { border-bottom: 2px solid $gray-100; }
+  tr:last-of-type { td { border-bottom: none;} }
+}
+
+//Add hover table rows
+.table.has-hover {
+  td { @include transition(all 0.15s ease-in-out); }
+  tr:hover { td { background-color: $gray-100; } }
+  tr.disabled {
+    &:hover {
+      td {
+        background-color: transparent;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
