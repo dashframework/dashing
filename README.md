@@ -75,30 +75,15 @@ Sass is a great way to keep your project clean, organized and easy-to-manage. If
 
 ### Including Dashing Styles
 
-1. Include Normalize –
-  Include normalize first in your main application Sass file. We provide a version of normalize that we keep updated, or you may include normalize directly.
-  ```scss
-  @import "/bower_components/dashing/sass/vendor/normalize";
-  ```
-  > Note: You could optionally use the normalize project directly
+Copy and paste the following code snippet into your project. This will pull in normalize, along with Dashing base and module styles.
 
-2. Include Base –
-  Base files include variables, mixins, extendables, utilities and the dashing color scale.
-  ```scss
-  @import "/bower_components/dashing/sass/base/base";
-  ```
+> Note: If you wish to overwrite Dashing styles to add customization your project, skip through this step and head to the [next section](https://github.com/dashframework/dashing/#including-custom-styles).
 
-3. Optional – Include a theme file to customize the default variables
-  ```scss
-  @import "theme";
-  ```
-  > Note: This is a custom stylesheet that *you will need to create* and include from your styles directory.
-
-4. Include Modules
-  ```scss
-  @import "/bower_components/dashing/sass/modules/modules";
-  ```
-  > Note: If you have included a theme file, your modules will now look to that for color theming, rather than base.
+```scss
+@import "/bower_components/dashing/sass/vendor/normalize";
+@import "/bower_components/dashing/sass/base/base";
+@import "/bower_components/dashing/sass/modules/modules";
+```
 
 ### Including Custom Styles
 
@@ -109,18 +94,19 @@ While the Dashing Style Framework does provide a lot of core modules for you to 
 2. Within each folder, create a stylesheet to match. (ex. You would create a `base.scss` file within your `base` folder).
 
 3. Import everything to your main application folder. When you're all finished, it should look something like this:
+  ```scss
+  @import "/bower_components/dashing/sass/vendor/normalize";
+  @import "/bower_components/dashing/sass/base/base";
+  @import "theme/theme";
+  @import "/bower_components/dashing/sass/modules/modules";
 
-```scss
-@import "/bower_components/dashing/sass/vendor/normalize";
-@import "/bower_components/dashing/sass/base/base";
-@import "theme/theme";
-@import "/bower_components/dashing/sass/modules/modules";
+  @import "base/base";
+  @import "layout/layout";
+  @import "modules/modules";
+  @import "state/state";
+  ```
 
-@import "base/base";
-@import "layout/layout";
-@import "modules/modules";
-@import "state/state";
-```
+  > Note: By including a theme file, your modules will now look to that for color theming, rather than base.
 
 ## Working with CSS
 
