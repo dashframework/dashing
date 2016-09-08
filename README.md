@@ -1,7 +1,7 @@
 # Dashing
 Stylish framework for web apps
 
-[![Dashing Version](https://img.shields.io/badge/Version-0.3.9--beta-green.svg)]()
+[![Dashing Version](https://img.shields.io/badge/Version-0.3.10--beta-green.svg)]()
 
 ## Browser Support
 
@@ -91,7 +91,7 @@ While the Dashing Style Framework does provide a lot of core modules for you to 
 
 1. Create five individual folders, named `base`, `layout`, `modules`, `state` and `theme`.
 
-2. Within each folder, create a stylesheet to match. (ex. You would create a `base.scss` file within your `base` folder).
+2. Within each folder, create a stylesheet to match. (e.g. You would create a `base.scss` file within your `base` folder).
 
 3. Import everything to your main application folder. When you're all finished, it should look something like this:
   ```scss
