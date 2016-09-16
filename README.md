@@ -10,44 +10,6 @@ Stylish framework for web apps
 | Latest | Latest | Latest | Latest | IE 11+ | Safari 8+ |
 
 
-## What's Included
-
-##### [Vendor](https://github.com/dashframework/dashing/tree/develop/sass/vendor)
-
-* [Normalize](https://github.com/dashframework/dashing/tree/develop/sass/vendor)
-
-##### [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base)
-
-* [Colors](https://github.com/dashframework/dashing/tree/develop/sass/base/colors)
-* [Extendables](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables)
-* [Mixins](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins)
-* [Utilities](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities)
-* [Variables](https://github.com/dashframework/dashing/tree/develop/sass/base/variables)
-
-##### [Modules](https://github.com/dashframework/dashing/tree/develop/sass/modules)
-
-* [Actions](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions)
-* [Card](https://github.com/dashframework/dashing/tree/develop/sass/modules/card)
-* [Forms](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms)
-* [Grid](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid)
-* [Icons](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons)
-* [Navigation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation)
-* [Typography](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography)
-
-#### Examples
-
-Every module contains an example file that allows you to preview the look and feel of each feature.
-
-* [Actions](http://dashframework.github.io/dashing/sass/modules/actions/example.html)
-* [Card](http://dashframework.github.io/dashing/sass/modules/card/example.html)
-* [Colors](http://dashframework.github.io/dashing/sass/base/colors/example/example.html)
-* [Forms](http://dashframework.github.io/dashing/sass/modules/forms/example.html)
-* [Grid](http://dashframework.github.io/dashing/sass/modules/grid/example.html)
-* [Icons](http://dashframework.github.io/dashing/sass/modules/icons/example.html)
-* [Navigation](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html)
-* [Typography](http://dashframework.github.io/dashing/sass/modules/typography/example.html)
-
-
 # Getting Started
 
 ## Install the Component
@@ -61,8 +23,9 @@ The Dashing Framework is delivered as a [bower](bower.io) component. Note that B
 
 2. Create a `bower.json` file
   ```grunt
-  bower init
+    bower init
   ```
+  > Note: You will be asked to create a title, description, and other other information about the file. You can simply just hit `enter` to skip through a lot of these, or fill them out if you wish. The last three questions will be yes/no, just respond `y` to all of them.
 
 3. Install the dashing bower component. This will install the Dashing files in your project's `bower_components` folder.
   ```grunt
@@ -108,29 +71,49 @@ While the Dashing Style Framework does provide a lot of core modules for you to 
 
   > Note: By including a theme file, your modules will now look to that for color theming, rather than base.
 
-## Working with CSS
-
-If you choose to work with the css alone, just include a link to the `dashing.css` stylesheet in your `index.html` file.
-
-```html
-<link rel="stylesheet" href="/bower_components/dashing/dashing.css">
-```
 
 ## Setting up your HTML file and importing styles
 
-In order to render your styles correctly on mobile devices, include this meta viewport tag in your `index.html` file. This will allow your content to respond correct to the device width.
+We've provided a starter HTML file to help you get running. Paste this code into your `index.html` file.
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- These previous two meta tags *must* come first in the head -->
+    <title>Dashing Template</title>
+
+    <!-- Working with CSS – Use this link if prefer to use the vanilla css, without any customization -->
+    <link rel="stylesheet" href="/bower_components/dashing/dashing.css">
+
+    <!-- Working with SCSS – Use this if you'd like to add any customization to the dashing modules. Note: The path and file name may differ for your project. -->
+    <link rel="stylesheet" href="styles/application.css">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+  </body>
+</html>
 ```
 
-Now that you have your stylesheets in place, go ahead and import your main application stylesheet into your `index.html` file.
+## What's Included
 
-```html
-<link rel="stylesheet" href="styles/application.css">
-```
-
-> Note: The file you're importing will be a custom file you've created. The path and name my be different for you.
+| Folder          | File               | Example             |
+|-----------------|--------------------|---------------------|
+| [Vendor](https://github.com/dashframework/dashing/tree/develop/sass/vendor) | [Normalize](https://github.com/dashframework/dashing/tree/develop/sass/vendor) |  |
+| [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base) | [Colors](https://github.com/dashframework/dashing/tree/develop/sass/base/colors) | [Colors](http://dashframework.github.io/dashing/sass/base/colors/example/example.html) |
+| | [Extendables](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables) |
+| | [Mixins](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins) |
+| | [Utilities](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities) |
+| | [Variables](https://github.com/dashframework/dashing/tree/develop/sass/base/variables) |
+| [Modules](https://github.com/dashframework/dashing/tree/develop/sass/modules) | [Actions](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions) | [Actions](http://dashframework.github.io/dashing/sass/modules/actions/example.html) |
+| | [Card](https://github.com/dashframework/dashing/tree/develop/sass/modules/card) | [Card](http://dashframework.github.io/dashing/sass/modules/card/example.html) |
+| | [Forms](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms) | [Forms](http://dashframework.github.io/dashing/sass/modules/forms/example.html) |
+| | [Grid](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) | [Grid](http://dashframework.github.io/dashing/sass/modules/grid/example.html) |
+| | [Icons](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) | [Icons](http://dashframework.github.io/dashing/sass/modules/icons/example.html) |
+| | [Navigation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) | [Navigation](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html) |
+| | [Typography](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) | [Typography](http://dashframework.github.io/dashing/sass/modules/typography/example.html) |
 
 *****
 *****
@@ -178,7 +161,7 @@ git clone https://github.com/dashframework/dashing.git
   ```bash
   git push --tags
   ```
-  
+
 ## Found a Bug?
 
 [Submit an issue](https://github.com/dashframework/dashing/issues) if you need help, or [submit a pull request](https://github.com/dashframework/dashing/pulls) with your own fixes or changes.
