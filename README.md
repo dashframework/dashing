@@ -76,7 +76,7 @@ While the Dashing Style Framework does provide a lot of core modules for you to 
 
 We've provided a starter HTML file to help you get running. Paste this code into your `index.html` file.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -98,22 +98,25 @@ We've provided a starter HTML file to help you get running. Paste this code into
 ```
 
 ## What's Included
+Every module contains an example file that allows you to preview the look and feel of each feature.
 
-| Folder          | File               | Example             |
-|-----------------|--------------------|---------------------|
-| [Vendor](https://github.com/dashframework/dashing/tree/develop/sass/vendor) | [Normalize](https://github.com/dashframework/dashing/tree/develop/sass/vendor) |  |
-| [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base) | [Colors](https://github.com/dashframework/dashing/tree/develop/sass/base/colors) | [Colors](http://dashframework.github.io/dashing/sass/base/colors/example/example.html) |
-| | [Extendables](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables) |
-| | [Mixins](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins) |
-| | [Utilities](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities) |
-| | [Variables](https://github.com/dashframework/dashing/tree/develop/sass/base/variables) |
-| [Modules](https://github.com/dashframework/dashing/tree/develop/sass/modules) | [Actions](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions) | [Actions](http://dashframework.github.io/dashing/sass/modules/actions/example.html) |
-| | [Card](https://github.com/dashframework/dashing/tree/develop/sass/modules/card) | [Card](http://dashframework.github.io/dashing/sass/modules/card/example.html) |
-| | [Forms](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms) | [Forms](http://dashframework.github.io/dashing/sass/modules/forms/example.html) |
-| | [Grid](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) | [Grid](http://dashframework.github.io/dashing/sass/modules/grid/example.html) |
-| | [Icons](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) | [Icons](http://dashframework.github.io/dashing/sass/modules/icons/example.html) |
-| | [Navigation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) | [Navigation](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html) |
-| | [Typography](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) | [Typography](http://dashframework.github.io/dashing/sass/modules/typography/example.html) |
+##### [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base)
+
+* Color · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/colors)] · [Example](http://dashframework.github.io/dashing/sass/base/colors/example/example.html)
+* Extendables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables)
+* Mixins · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins)
+* Utilities · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities)
+* Variables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/variables)
+
+##### [Modules](https://github.com/dashframework/dashing/tree/develop/sass/modules)
+
+* Actions · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions) · [Example](http://dashframework.github.io/dashing/sass/modules/actions/example.html)
+* Card · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/card) · [Example](http://dashframework.github.io/dashing/sass/modules/card/example.html)
+* Forms · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms) · [Example](http://dashframework.github.io/dashing/sass/modules/forms/example.html)
+* Grid · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) · [Example](http://dashframework.github.io/dashing/sass/modules/grid/example.html)
+* Icons · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) · [Example](http://dashframework.github.io/dashing/sass/modules/icons/example.html)
+* Navigation · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) · [Example](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html)
+* Typography · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) · [Example](http://dashframework.github.io/dashing/sass/modules/typography/example.html)
 
 *****
 *****
