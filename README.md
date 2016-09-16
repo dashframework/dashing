@@ -102,7 +102,7 @@ Every module contains an example file that allows you to preview the look and fe
 
 ##### [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base)
 
-* Color · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/colors)] · [Example](http://dashframework.github.io/dashing/sass/base/colors/example/example.html)
+* Color · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/colors) · [Example](http://dashframework.github.io/dashing/sass/base/colors/example/example.html)
 * Extendables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables)
 * Mixins · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins)
 * Utilities · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities)
