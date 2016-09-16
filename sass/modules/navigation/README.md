@@ -6,7 +6,7 @@ As users interact within your App, it is important to provide them with a naviga
 ## Auto-color
 App menus within Dashing come with an auto-color feature that allow you to simply define a background color for your menu and forget about the rest. Based on your menu color, Dashing will auto-magically determine which text color will be most readable and apply it to your app-context and app-navigation elements.
 
-> To change the background color for your App Menu, just alter the `$menu-color` variable in your app stylesheet.
+> To change the background color for your App Menu, just alter the `$menu-color` variable in your theme file.
 
 ## App Menu Structure
 
@@ -74,7 +74,7 @@ Once your have your app-menu defined, be sure to wrap the main content of your A
   <div class="app-context">
     <div class="app-title">
       <a class="app-title--has-breadcrumb">App Title</a>
-      <i class="icon icon--arrow-right"></i>
+      <i class="dashing-icon dashing-icon--arrow-right"></i>
       <span>Level 2</span>
     </div>
   </div>
