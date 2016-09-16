@@ -135,7 +135,7 @@ Now that you have your stylesheets in place, go ahead and import your main appli
 *****
 *****
 
-# Development
+## Development
 
 ### Clone the repository with git
 
@@ -178,3 +178,17 @@ git clone https://github.com/dashframework/dashing.git
   ```bash
   git push --tags
   ```
+  
+## Found a Bug?
+
+[Submit an issue](https://github.com/dashframework/dashing/issues) if you need help, or [submit a pull request](https://github.com/dashframework/dashing/pulls) with your own fixes or changes.
+
+## Contributors
+
+Dashing is a product of Samaritan Ministries International.
+
+Thanks to the following people who have contributed to this project:
+
+- [@jrauh](https://github.com/jrauh)
+- [@chandlerroth](https://github.com/chandlerroth)
+- [@nevren](https://github.com/Nevren)
