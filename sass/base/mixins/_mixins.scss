@@ -55,17 +55,41 @@
 
 /* Actions Mixins
   =========================================================================== */
-
+//Default Button
 @mixin button($background-color, $color) {
   background-color: $background-color;
   color: $color;
-
   &:hover, &:focus {
     background-color: darken($background-color, 10%);
     color: $color;
   }
+  &:active { background-color: darken($background-color, 15%); }
+  .dashing-icon:before { color: $white; }
+}
 
-  &:active {
-    background-color: darken($background-color, 15%);
+//Border Button
+@mixin border--button($color) {
+  background-color: transparentize(white, 1);
+  border-color: $color;
+  color: $color;
+  &:hover, &:focus {
+    background-color: darken($color, 10%);
+    border-color: transparentize(white, 1);
+    color: $white;
+    .dashing-icon:before {
+      color: $white;
+      transition: all 50ms ease-in-out;
+    }
   }
+  &:active { background-color: darken($color, 15%); }
+  .dashing-icon:before { color: $color; }
+}
+
+//Transparent Button
+@mixin transparent--button($color) {
+  background-color: transparentize(white, 1);
+  color: $color;
+  &:hover, &:focus { opacity: .6; }
+  &:active { opacity: .9; }
+  .dashing-icon:before { color: $color; }
 }

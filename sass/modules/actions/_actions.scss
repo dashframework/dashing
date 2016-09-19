@@ -65,13 +65,10 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
   //Button Color Options
   &.button--primary { @include button($background-color: $blue, $color: $white); }
-  &.button--secondary {
-    @include button($background-color: $gray-200, $color: $gray-900);
-    .dashing-icon:before { color: $gray-700; }
-  }
 
   &.button--gray,
-  &.button--grey {
+  &.button--grey,
+  &.button--secondary {
     @include button($background-color: $gray-200, $color: $gray-900);
     .dashing-icon:before { color: $gray-700; }
   }
@@ -80,11 +77,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   &.button--orange { @include button($background-color: $orange, $color: $white); }
   &.button--purple { @include button($background-color: $purple, $color: $white); }
   &.button--red { @include button($background-color: $red, $color: $white); }
-
-  .dashing-icon:before {
-    color: $white;
-    transition: all 50ms ease-in-out;
-  }
+  &.button--white { @include button($background-color: $white, $color: $gray-800); }
 
   //Used to display actions and icons with a transparent background
   //transparentize(white, 1) used instead of transparent because "darken" requires an rgb color value
@@ -94,23 +87,22 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
       padding-left: 0;
       padding-right: 0;
     }
-    &:hover, &:focus { opacity: .6; }
-    &:active { opacity: .9; }
 
-    &.button--primary { @include button($background-color: transparentize(white, 1), $color: $blue); }
-    &.button--secondary { @include button($background-color: transparentize(white, 1), $color: $gray-600); }
-    &.button--blue { @include button($background-color: transparentize(white, 1), $color: $blue); }
+    &.button--primary { @include transparent--button($color: $blue); }
+    &.button--secondary { @include transparent--button($color: $gray-600); }
+    &.button--blue { @include transparent--button($color: $blue); }
     &.button--gray,
-    &.button--grey { @include button($background-color: transparentize(white, 1), $color: $gray-600); }
-    &.button--green { @include button($background-color: transparentize(white, 1), $color: $green); }
-    &.button--orange { @include button($background-color: transparentize(white, 1), $color: $orange); }
-    &.button--purple { @include button($background-color: transparentize(white, 1), $color: $purple); }
-    &.button--red { @include button($background-color: transparentize(white, 1), $color: $red); }
+    &.button--grey { @include transparent--button($color: $gray-600); }
+    &.button--green { @include transparent--button($color: $green); }
+    &.button--orange { @include transparent--button($color: $orange); }
+    &.button--purple { @include transparent--button($color: $purple); }
+    &.button--red { @include transparent--button($color: $red); }
+    &.button--white { @include transparent--button($color: $white); }
   }
 
   &.button--border {
-    @include button($background-color: transparentize(white, 1), $color: $gray-600);
-    border: 2px solid $gray-400;
+    @include border--button($blue);
+    border: 2px solid;
 
     @media #{$tablet} {
       padding-top: calc(0.45rem - 2px);
@@ -119,56 +111,31 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
       padding-right: calc(1rem - 2px);
     }
 
-    &.button--primary {
-      @include button($background-color: transparentize(white, 1), $color: $blue-700);
-      border-color: $blue;
-      &:hover, &:focus { @include button($background-color: $blue, $color: $white); }
-    }
+    &.button--primary { @include border--button($blue); }
+    &.button--blue { @include border--button($blue); }
+    &.button--green { @include border--button($green); }
+    &.button--orange { @include border--button($orange); }
+    &.button--purple { @include border--button($purple); }
+    &.button--red { @include border--button($red); }
 
+    &.button--gray,
     &.button--secondary {
-      @include button($background-color: transparentize(white, 1), $color: $gray-600); border-color: $gray-500;
-      &:hover, &:focus { @include button($background-color: $gray-200, $color: $gray-900); }
-    }
-
-    &.button--blue {
-      @include button($background-color: transparentize(white, 1), $color: $blue-600); border-color: $blue;
-      &:hover, &:focus { @include button($background-color: $blue, $color: $white); }
-    }
-
-    &.button--gray {
       @include button($background-color: transparentize(white, 1), $color: $gray-700); border-color: $gray-500;
-      &:hover, &:focus { @include button($background-color: $gray-200, $color: $gray-900); }
-    }
-
-    &.button--green {
-      @include button($background-color: transparentize(white, 1), $color: $green-600); border-color: $green;
-      &:hover, &:focus { @include button($background-color: $green, $color: $white); }
-    }
-
-    &.button--orange {
-      @include button($background-color: transparentize(white, 1), $color: $orange-600); border-color: $orange;
-      &:hover, &:focus { @include button($background-color: $orange, $color: $white); }
-    }
-
-    &.button--purple {
-      @include button($background-color: transparentize(white, 1), $color: $purple-600); border-color: $purple;
-      &:hover, &:focus { @include button($background-color: $purple, $color: $white); }
-    }
-
-    &.button--red {
-      @include button($background-color: transparentize(white, 1), $color: $red-600); border-color: $red;
-      &:hover, &:focus { @include button($background-color: $red, $color: $white); }
-    }
-
-    &:hover, &:focus {
-      border-color: transparent;
+      &:hover, &:focus { @include button($background-color: $gray-200, $color: $gray-900); border-color: transparentize(white, 1);}
       .dashing-icon:before {
-        color: $white;
+        color: $gray-800 !important;
         transition: all 50ms ease-in-out;
       }
+    }
 
-      &.button--gray .dashing-icon:before {
-        color: $gray-800;
+    &.button--white {
+      @include border--button($white);
+      &:hover, &:focus {
+        color: $gray-800 !important;
+        .dashing-icon:before {
+          color: $gray-800 !important;
+          transition: all 50ms ease-in-out;
+        }
       }
     }
   }
