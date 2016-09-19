@@ -25,7 +25,7 @@ The Dashing Framework is delivered as a [bower](bower.io) component. Note that B
   ```grunt
     bower init
   ```
-  > Note: You will be asked to create a title, description, and other other information about the file. You can simply just hit `enter` to skip through a lot of these, or fill them out if you wish. The last three questions will be yes/no, just respond `y` to all of them.
+  > Note: You will be asked to create a title, description, and other information about the file. You can simply just hit `enter` to skip through a lot of these, or fill them out if you wish. The last three questions will be yes/no, just respond `y` to all of them.
 
 3. Install the dashing bower component. This will install the Dashing files in your project's `bower_components` folder.
   ```grunt
