@@ -83,6 +83,10 @@ fieldset {
       }
     }
 
+    &.column--nested:last-of-type {
+      &:after { right: 0.5rem; }
+    }
+
     //Removes default select icon in IE
     select::-ms-expand {
       display: none;
