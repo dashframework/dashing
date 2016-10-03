@@ -1,0 +1,30 @@
+{
+  "name": "dashing-framework",
+  "version": "1.0.0",
+  "description": "Style framework for Dash",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashframework/dashing.git"
+  },
+  "keywords": [
+    "dashing",
+    "dash",
+    "dashing-framework"
+  ],
+  "author": "Jared Rauh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dashframework/dashing/issues"
+  },
+  "homepage": "https://github.com/dashframework/dashing#readme",
+  "dependencies": {
+    "normalize-scss": "3.0.3"
+  }
+}
