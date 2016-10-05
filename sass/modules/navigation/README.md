@@ -80,3 +80,18 @@ Once your have your app-menu defined, be sure to wrap the main content of your A
   </div>
 </nav>
 ```
+
+### Adding Main Action Button
+
+```html
+<nav class="app-menu">
+  <div class="app-context">
+    <div class="app-title">
+      <a class="app-title--has-breadcrumb">App Title</a>
+    </div>
+  </div>
+  <button class="button button--blue button--icon button--icon--main">
+    <i class="dashing-icon dashing-icon--add"></i>
+  </button>
+</nav>
+```
