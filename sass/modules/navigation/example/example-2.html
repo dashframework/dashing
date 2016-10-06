@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../../dashing.css" rel="stylesheet">
     <link href="../../../../example/css/icons.css" rel="stylesheet">
+    <link href="../../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Navigation</title>
   </head>
   <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
+
+    <script src="../../../../example/vendor/prismjs/prism.js"></script>
+
     <nav class="app-menu expanded fixed">
       <div class="app-context">
         <div class="app-title">
@@ -15,6 +19,10 @@
           <i class="dashing-icon dashing-icon--arrow-right"></i>
           <span>With Subnav</span>
         </div>
+        <ul class="header-description">
+          <li class="header-description--label">Example Label</li>
+          <li class="header-description--content">#48151</li>
+        </ul>
       </div>
       <ul class="app-navigation">
         <li><a href="example-1.html">Link 1</a></li>
@@ -27,7 +35,29 @@
     </nav>
 
     <div class="app-content">
-      <h1 style="text-align: center; padding: 3rem;">Dashing Navigation</h1>
+      <h1 style="text-align: center; padding: 1rem 0 3rem;">Dashing Navigation</h1>
+<pre><code class="language-html">&lt;nav class="app-menu expanded fixed"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;a href="example.html" class="app-title--has-breadcrumb"&gt;App Title&lt;/a&gt;
+      &lt;i class="dashing-icon dashing-icon--arrow-right"&gt;&lt;/i&gt;
+      &lt;span&gt;With Subnav&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul class="header-description"&gt;
+      &lt;li class="header-description--label"&gt;Example Label&lt;/li&gt;
+      &lt;li class="header-description--content"&gt;#48151&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;ul class="app-navigation"&gt;
+    &lt;li&gt;&lt;a href="example-1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="example-2.html" class="active"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="example.html" target="blank"&gt;
+      Link 3
+      &lt;i class="dashing-icon dashing-icon--new-tab flow-opposite"&gt;&lt;/i&gt;
+    &lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
     </div>
   </body>
 </html>

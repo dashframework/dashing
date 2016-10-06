@@ -1,7 +1,7 @@
 # Dashing
 Stylish framework for web apps
 
-[![Dashing Version](https://img.shields.io/badge/Version-0.3.11--beta-green.svg)]()
+[![Dashing Version](https://img.shields.io/badge/Version-1.0.0-green.svg)]()
 
 ## Browser Support
 

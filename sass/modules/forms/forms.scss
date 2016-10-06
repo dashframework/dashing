@@ -77,6 +77,16 @@ fieldset {
       right: 2rem; bottom: calc(#{$grid-gutter} * 2);
     }
 
+    &.column--nested {
+      &:after {
+        right: 1.5rem; bottom: 1.5rem;
+      }
+    }
+
+    &.column--nested:last-of-type {
+      &:after { right: 0.5rem; }
+    }
+
     //Removes default select icon in IE
     select::-ms-expand {
       display: none;

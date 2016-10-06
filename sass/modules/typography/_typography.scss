@@ -16,9 +16,9 @@ $font-family-body:      "Source Sans Pro", sans-serif;
 /* Typography Utility Classes
   =========================================================================== */
 
-.text-align-center, .center-align { text-align: center !important; }
-.text-align-left, .left-align { text-align: left !important; }
-.text-align-right, .right-align { text-align: right !important; }
+.text-align-center, .center-align, .align-center { text-align: center !important; }
+.text-align-left, .left-align, .align-left { text-align: left !important; }
+.text-align-right, .right-align, .align-right { text-align: right !important; }
 
 .no-wrap {
   text-overflow: ellipsis;

@@ -24,6 +24,7 @@
   }
 
   .card--content {
+    overflow: auto;
     padding: $grid-gutter;
   }
 

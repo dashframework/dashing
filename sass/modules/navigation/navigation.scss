@@ -20,7 +20,6 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
   .app-context {
     max-width: $global-content-width;
-    @extend %clearfix;
     margin: auto;
     padding: 1rem;
 
@@ -32,10 +31,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
       a {
         color: auto-color($menu-color);
-
-        &:hover {
-          color: rgba(auto-color($menu-color), .60);
-        }
+        &:hover { color: rgba(auto-color($menu-color), .60); }
 
         //Use to apply a clickable style to your App Title
         &.app-title--has-breadcrumb {
@@ -45,14 +41,25 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
           &:hover { color: rgba(auto-color($menu-color), 1); }
         }
       }
+    }
 
-      .dashing-icon--arrow-right {
-        &:before {
-          color: rgba(auto-color($menu-color), .50);
-          font-size: 12px;
-          position: relative;
-          top: -2px;
-        }
+    ul.header-description {
+      color: auto-color($menu-color);
+      float: right;
+      position: relative;
+      top: -1.4rem;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: block;
+        font-weight: 600;
+        text-align: right;
+
+        &.header-description--label { font-size: $font-size-small; }
+        &.header-description--content { font-size: $font-size-medium; }
       }
     }
   }
@@ -104,6 +111,17 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
         }
       }
     }
+  }
+
+  .dashing-icon--new-tab:before {
+    color: rgba(auto-color($menu-color), .90);
+  }
+
+  .dashing-icon--arrow-right:before {
+    color: rgba(auto-color($menu-color), .50);
+    font-size: 12px;
+    position: relative;
+    top: -2px;
   }
 
   //Add this class to your app-menu if you do not have navigation items
