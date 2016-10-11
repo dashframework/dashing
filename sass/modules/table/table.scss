@@ -1,3 +1,9 @@
+$table--header-row: $white !default;
+$table--odd-row: $gray-50 !default;
+$table--even-row: $white !default;
+$table--dividers: $gray-100 !default;
+$table--border: $gray-200 !default;
+
 .table--container {
   .table {
     background-color: $white;
@@ -11,6 +17,10 @@
       text-align: left;
     }
 
+    td {
+      vertical-align: middle;
+    }
+
     th {
       border-bottom: 2px solid $gray-200;
     }
@@ -22,16 +32,26 @@
 //Add border to container
 .table--container.has-border {
   @media #{$tablet} {
-    border: 2px solid $gray-200;
+    border: 2px solid $table--border;
     border-radius: 10px;
     overflow: hidden;
   }
 }
 
 //Add dividing lines to table rows
-.table.has-border {
-  td { border-bottom: 2px solid $gray-100; }
+.table.has-dividers,
+.table.has-divider {
+  td { border-bottom: 2px solid $table--dividers; }
   tr:last-of-type { td { border-bottom: none;} }
+}
+
+//Add alternating row colors to table rows
+.table.has-row-color {
+  tr {
+    &:nth-child(odd) { background-color: $table--odd-row; }
+    &:nth-child(even) { background-color: $table--even-row; }
+  }
+  thead tr:nth-child(odd) { background-color: $table--header-row; }
 }
 
 //Add hover table rows

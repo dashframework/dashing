@@ -3,22 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../../dashing.css" rel="stylesheet">
-    <link href="../../../example/css/icons.css" rel="stylesheet">
-    <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
+    <link href="../../../../dashing.css" rel="stylesheet">
+    <link href="../../../../example/css/icons.css" rel="stylesheet">
+    <link href="../../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Tables</title>
   </head>
   <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
 
-    <script src="../../../example/vendor/prismjs/prism.js"></script>
+    <script src="../../../../example/vendor/prismjs/prism.js"></script>
 
-    <h1 style="text-align: center; padding: 3rem;">Dashing Tables</h1>
+    <nav class="app-menu expanded">
+      <div class="app-context">
+        <div class="app-title">Dashing Table Options</div>
+      </div>
+      <ul class="app-navigation">
+        <li><a href="default.html">Default</a></li>
+        <li><a href="has-dividers.html">Dividers</a></li>
+        <li><a href="has-hover.html" class="active">Hover</a></li>
+        <li><a href="has-row-color.html">Colored</a></li>
+        <li><a href="has-border.html">Border</a></li>
+        <li><a href="example.html">Example</a></li>
+      </ul>
+    </nav>
 
-    <h2 class="example-header">Default Table</h2>
+    <h1 style="text-align: center; padding-top: 7rem;">Dashing Tables</h1>
+
+    <h2 class="example-header">Table with Hover</h2>
     <div class="row example-container">
       <div class="column column--full">
-        <div class="table--container has-border">
-          <table class="table has-border has-hover">
+        <div class="table--container">
+          <table class="table has-hover">
             <thead>
               <tr>
                 <th>ID</th>
@@ -69,13 +83,12 @@
         </div>
       </div>
     </div>
-<pre>
-<code class="language-html">
-&lt;!-- Add 'has-border' to add a rounded border to the container --&gt;
-&lt;div class="table--container has-border"&gt;
-  &lt;!-- Add 'has-border' to add line dividers to each table row --&gt;
+<pre><code class="language-html">&lt;!-- Add 'has-border' to add a rounded border to the container --&gt;
+&lt;div class="table--container"&gt;
+  &lt;!-- Add 'has-dividers' to add line dividers to each table row --&gt;
   &lt;!-- Add 'has-hover' to add a hover state to each row --&gt;
-  &lt;table class="table has-border has-hover"&gt;
+  &lt;!-- Add 'has-row-color' to add alternating colored rows --&gt;
+  &lt;table class="table has-hover"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
         &lt;th&gt;ID&lt;/th&gt;
@@ -123,8 +136,7 @@
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/div&gt;
-</code>
+&lt;/div&gt;</code>
 </pre>
 
   </body>

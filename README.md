@@ -1,7 +1,7 @@
 # Dashing
 Stylish framework for web apps
 
-[![Dashing Version](https://img.shields.io/badge/Version-1.0.0-green.svg)]()
+[![Dashing Version](https://img.shields.io/badge/Version-1.0.1-green.svg)]()
 
 ## Browser Support
 
@@ -116,6 +116,7 @@ Every module contains an example file that allows you to preview the look and fe
 * Grid · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) · [Example](http://dashframework.github.io/dashing/sass/modules/grid/example.html)
 * Icons · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) · [Example](http://dashframework.github.io/dashing/sass/modules/icons/example.html)
 * Navigation · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) · [Example](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html)
+* Tables · [Example](http://dashframework.github.io/dashing/sass/modules/table/example/default.html)
 * Typography · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) · [Example](http://dashframework.github.io/dashing/sass/modules/typography/example.html)
 
 *****
@@ -141,7 +142,7 @@ git clone https://github.com/dashframework/dashing.git
   git tag
   ```
 
-3. Update the version number in the `bower.json` file (See [here](http://semver.org/) for versioning conventions)
+3. Update the version number in the `bower.json` and `package.json` files (See [here](http://semver.org/) for versioning conventions)
 
 4. Update the Dashing Version number found on line 4 of the README.md
 
