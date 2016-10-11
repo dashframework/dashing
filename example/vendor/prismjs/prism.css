@@ -1167,6 +1167,8 @@ fieldset .has-warning .message li {
     .button-group .button--radio label {
       border-radius: 0;
       margin-left: -4px; }
+      .button-group .button--radio label a {
+        color: inherit; }
   .button-group.button-group--gray .button, .button-group.button-group--gray .file--custom {
     background-color: #D4D4D4;
     color: #222222; }
@@ -1362,6 +1364,8 @@ fieldset .has-warning .message li {
   .table--container .table th, .table--container .table td {
     padding: 1rem;
     text-align: left; }
+  .table--container .table td {
+    vertical-align: middle; }
   .table--container .table th {
     border-bottom: 2px solid #D4D4D4; }
 
@@ -1373,10 +1377,19 @@ fieldset .has-warning .message li {
     border-radius: 10px;
     overflow: hidden; } }
 
-.table.has-border td {
+.table.has-dividers td,
+.table.has-divider td {
   border-bottom: 2px solid #EDEDED; }
-.table.has-border tr:last-of-type td {
+.table.has-dividers tr:last-of-type td,
+.table.has-divider tr:last-of-type td {
   border-bottom: none; }
+
+.table.has-row-color tr:nth-child(odd) {
+  background-color: #F2F2F2; }
+.table.has-row-color tr:nth-child(even) {
+  background-color: #FFFFFF; }
+.table.has-row-color thead tr:nth-child(odd) {
+  background-color: #FFFFFF; }
 
 .table.has-hover td {
   -webkit-transition: all 0.15s ease-in-out;
@@ -1392,7 +1405,6 @@ fieldset .has-warning .message li {
 
 .app-menu {
   background-color: rgba(237, 237, 237, 0.97);
-  box-shadow: 0 2px 6px #D4D4D4;
   height: auto !important;
   position: absolute;
   top: 0;
@@ -1477,6 +1489,7 @@ fieldset .has-warning .message li {
   .app-menu.expanded {
     height: 7.05rem; }
   .app-menu.fixed {
+    box-shadow: 0 2px 6px #D4D4D4;
     position: fixed; }
   .app-menu .button--icon--main {
     position: absolute;
