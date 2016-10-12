@@ -770,7 +770,7 @@ fieldset .has-warning .message li {
     color: #FFFFFF; }
   .button:active, .file--custom:active, button:active, input[type='submit']:active, input[type='reset']:active {
     background-color: #3762ba; }
-  .button .dashing-icon:before, .file--custom .dashing-icon:before, button .dashing-icon:before, input[type='submit'] .dashing-icon:before, input[type='reset'] .dashing-icon:before {
+  .button:not(.button--icon) .dashing-icon:before, .file--custom:not(.button--icon) .dashing-icon:before, button:not(.button--icon) .dashing-icon:before, input[type='submit']:not(.button--icon) .dashing-icon:before, input[type='reset']:not(.button--icon) .dashing-icon:before {
     color: #FFFFFF; }
   @media all and (min-width: 40em) {
     .button, .file--custom, button, input[type='submit'], input[type='reset'] {
@@ -798,7 +798,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button.button--primary:active, .button--primary.file--custom:active, button.button--primary:active, input[type='submit'].button--primary:active, input[type='reset'].button--primary:active {
       background-color: #3762ba; }
-    .button.button--primary .dashing-icon:before, .button--primary.file--custom .dashing-icon:before, button.button--primary .dashing-icon:before, input[type='submit'].button--primary .dashing-icon:before, input[type='reset'].button--primary .dashing-icon:before {
+    .button.button--primary:not(.button--icon) .dashing-icon:before, .button--primary.file--custom:not(.button--icon) .dashing-icon:before, button.button--primary:not(.button--icon) .dashing-icon:before, input[type='submit'].button--primary:not(.button--icon) .dashing-icon:before, input[type='reset'].button--primary:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button.button--gray, .button--gray.file--custom, .button.button--grey, .button--grey.file--custom, .button.button--secondary, .button--secondary.file--custom, button.button--gray, button.button--grey, button.button--secondary, input[type='submit'].button--gray, input[type='submit'].button--grey, input[type='submit'].button--secondary, input[type='reset'].button--gray, input[type='reset'].button--grey, input[type='reset'].button--secondary {
     background-color: #D4D4D4;
@@ -808,7 +808,7 @@ fieldset .has-warning .message li {
       color: #222222; }
     .button.button--gray:active, .button--gray.file--custom:active, .button.button--grey:active, .button--grey.file--custom:active, .button.button--secondary:active, .button--secondary.file--custom:active, button.button--gray:active, button.button--grey:active, button.button--secondary:active, input[type='submit'].button--gray:active, input[type='submit'].button--grey:active, input[type='submit'].button--secondary:active, input[type='reset'].button--gray:active, input[type='reset'].button--grey:active, input[type='reset'].button--secondary:active {
       background-color: #aeaeae; }
-    .button.button--gray .dashing-icon:before, .button--gray.file--custom .dashing-icon:before, .button.button--grey .dashing-icon:before, .button--grey.file--custom .dashing-icon:before, .button.button--secondary .dashing-icon:before, .button--secondary.file--custom .dashing-icon:before, button.button--gray .dashing-icon:before, button.button--grey .dashing-icon:before, button.button--secondary .dashing-icon:before, input[type='submit'].button--gray .dashing-icon:before, input[type='submit'].button--grey .dashing-icon:before, input[type='submit'].button--secondary .dashing-icon:before, input[type='reset'].button--gray .dashing-icon:before, input[type='reset'].button--grey .dashing-icon:before, input[type='reset'].button--secondary .dashing-icon:before {
+    .button.button--gray:not(.button--icon) .dashing-icon:before, .button--gray.file--custom:not(.button--icon) .dashing-icon:before, .button.button--grey:not(.button--icon) .dashing-icon:before, .button--grey.file--custom:not(.button--icon) .dashing-icon:before, .button.button--secondary:not(.button--icon) .dashing-icon:before, .button--secondary.file--custom:not(.button--icon) .dashing-icon:before, button.button--gray:not(.button--icon) .dashing-icon:before, button.button--grey:not(.button--icon) .dashing-icon:before, button.button--secondary:not(.button--icon) .dashing-icon:before, input[type='submit'].button--gray:not(.button--icon) .dashing-icon:before, input[type='submit'].button--grey:not(.button--icon) .dashing-icon:before, input[type='submit'].button--secondary:not(.button--icon) .dashing-icon:before, input[type='reset'].button--gray:not(.button--icon) .dashing-icon:before, input[type='reset'].button--grey:not(.button--icon) .dashing-icon:before, input[type='reset'].button--secondary:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
     .button.button--gray .dashing-icon:before, .button--gray.file--custom .dashing-icon:before, .button.button--grey .dashing-icon:before, .button--grey.file--custom .dashing-icon:before, .button.button--secondary .dashing-icon:before, .button--secondary.file--custom .dashing-icon:before, button.button--gray .dashing-icon:before, button.button--grey .dashing-icon:before, button.button--secondary .dashing-icon:before, input[type='submit'].button--gray .dashing-icon:before, input[type='submit'].button--grey .dashing-icon:before, input[type='submit'].button--secondary .dashing-icon:before, input[type='reset'].button--gray .dashing-icon:before, input[type='reset'].button--grey .dashing-icon:before, input[type='reset'].button--secondary .dashing-icon:before {
       color: #555555; }
@@ -820,7 +820,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button.button--blue:active, .button--blue.file--custom:active, button.button--blue:active, input[type='submit'].button--blue:active, input[type='reset'].button--blue:active {
       background-color: #3762ba; }
-    .button.button--blue .dashing-icon:before, .button--blue.file--custom .dashing-icon:before, button.button--blue .dashing-icon:before, input[type='submit'].button--blue .dashing-icon:before, input[type='reset'].button--blue .dashing-icon:before {
+    .button.button--blue:not(.button--icon) .dashing-icon:before, .button--blue.file--custom:not(.button--icon) .dashing-icon:before, button.button--blue:not(.button--icon) .dashing-icon:before, input[type='submit'].button--blue:not(.button--icon) .dashing-icon:before, input[type='reset'].button--blue:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button.button--green, .button--green.file--custom, button.button--green, input[type='submit'].button--green, input[type='reset'].button--green {
     background-color: #2DB16C;
@@ -830,7 +830,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button.button--green:active, .button--green.file--custom:active, button.button--green:active, input[type='submit'].button--green:active, input[type='reset'].button--green:active {
       background-color: #1d7447; }
-    .button.button--green .dashing-icon:before, .button--green.file--custom .dashing-icon:before, button.button--green .dashing-icon:before, input[type='submit'].button--green .dashing-icon:before, input[type='reset'].button--green .dashing-icon:before {
+    .button.button--green:not(.button--icon) .dashing-icon:before, .button--green.file--custom:not(.button--icon) .dashing-icon:before, button.button--green:not(.button--icon) .dashing-icon:before, input[type='submit'].button--green:not(.button--icon) .dashing-icon:before, input[type='reset'].button--green:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button.button--orange, .button--orange.file--custom, button.button--orange, input[type='submit'].button--orange, input[type='reset'].button--orange {
     background-color: #DD9331;
@@ -840,7 +840,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button.button--orange:active, .button--orange.file--custom:active, button.button--orange:active, input[type='submit'].button--orange:active, input[type='reset'].button--orange:active {
       background-color: #a66a1b; }
-    .button.button--orange .dashing-icon:before, .button--orange.file--custom .dashing-icon:before, button.button--orange .dashing-icon:before, input[type='submit'].button--orange .dashing-icon:before, input[type='reset'].button--orange .dashing-icon:before {
+    .button.button--orange:not(.button--icon) .dashing-icon:before, .button--orange.file--custom:not(.button--icon) .dashing-icon:before, button.button--orange:not(.button--icon) .dashing-icon:before, input[type='submit'].button--orange:not(.button--icon) .dashing-icon:before, input[type='reset'].button--orange:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button.button--purple, .button--purple.file--custom, button.button--purple, input[type='submit'].button--purple, input[type='reset'].button--purple {
     background-color: #754C82;
@@ -850,7 +850,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button.button--purple:active, .button--purple.file--custom:active, button.button--purple:active, input[type='submit'].button--purple:active, input[type='reset'].button--purple:active {
       background-color: #4a3052; }
-    .button.button--purple .dashing-icon:before, .button--purple.file--custom .dashing-icon:before, button.button--purple .dashing-icon:before, input[type='submit'].button--purple .dashing-icon:before, input[type='reset'].button--purple .dashing-icon:before {
+    .button.button--purple:not(.button--icon) .dashing-icon:before, .button--purple.file--custom:not(.button--icon) .dashing-icon:before, button.button--purple:not(.button--icon) .dashing-icon:before, input[type='submit'].button--purple:not(.button--icon) .dashing-icon:before, input[type='reset'].button--purple:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button.button--red, .button--red.file--custom, button.button--red, input[type='submit'].button--red, input[type='reset'].button--red {
     background-color: #DD4B39;
@@ -860,7 +860,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button.button--red:active, .button--red.file--custom:active, button.button--red:active, input[type='submit'].button--red:active, input[type='reset'].button--red:active {
       background-color: #ac2d1e; }
-    .button.button--red .dashing-icon:before, .button--red.file--custom .dashing-icon:before, button.button--red .dashing-icon:before, input[type='submit'].button--red .dashing-icon:before, input[type='reset'].button--red .dashing-icon:before {
+    .button.button--red:not(.button--icon) .dashing-icon:before, .button--red.file--custom:not(.button--icon) .dashing-icon:before, button.button--red:not(.button--icon) .dashing-icon:before, input[type='submit'].button--red:not(.button--icon) .dashing-icon:before, input[type='reset'].button--red:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button.button--white, .button--white.file--custom, button.button--white, input[type='submit'].button--white, input[type='reset'].button--white {
     background-color: #FFFFFF;
@@ -870,7 +870,7 @@ fieldset .has-warning .message li {
       color: #3B3B3B; }
     .button.button--white:active, .button--white.file--custom:active, button.button--white:active, input[type='submit'].button--white:active, input[type='reset'].button--white:active {
       background-color: #d9d9d9; }
-    .button.button--white .dashing-icon:before, .button--white.file--custom .dashing-icon:before, button.button--white .dashing-icon:before, input[type='submit'].button--white .dashing-icon:before, input[type='reset'].button--white .dashing-icon:before {
+    .button.button--white:not(.button--icon) .dashing-icon:before, .button--white.file--custom:not(.button--icon) .dashing-icon:before, button.button--white:not(.button--icon) .dashing-icon:before, input[type='submit'].button--white:not(.button--icon) .dashing-icon:before, input[type='reset'].button--white:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button.button--transparent, .button--transparent.file--custom, button.button--transparent, input[type='submit'].button--transparent, input[type='reset'].button--transparent {
     background-color: rgba(255, 255, 255, 0);
@@ -880,7 +880,7 @@ fieldset .has-warning .message li {
       color: #6A8DD3; }
     .button.button--transparent:active, .button--transparent.file--custom:active, button.button--transparent:active, input[type='submit'].button--transparent:active, input[type='reset'].button--transparent:active {
       background-color: rgba(217, 217, 217, 0); }
-    .button.button--transparent .dashing-icon:before, .button--transparent.file--custom .dashing-icon:before, button.button--transparent .dashing-icon:before, input[type='submit'].button--transparent .dashing-icon:before, input[type='reset'].button--transparent .dashing-icon:before {
+    .button.button--transparent:not(.button--icon) .dashing-icon:before, .button--transparent.file--custom:not(.button--icon) .dashing-icon:before, button.button--transparent:not(.button--icon) .dashing-icon:before, input[type='submit'].button--transparent:not(.button--icon) .dashing-icon:before, input[type='reset'].button--transparent:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
     .button.button--transparent:not(.button--icon), .button--transparent.file--custom:not(.button--icon), button.button--transparent:not(.button--icon), input[type='submit'].button--transparent:not(.button--icon), input[type='reset'].button--transparent:not(.button--icon) {
       padding-left: 0;
@@ -892,8 +892,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--primary:active, .button--transparent.button--primary.file--custom:active, button.button--transparent.button--primary:active, input[type='submit'].button--transparent.button--primary:active, input[type='reset'].button--transparent.button--primary:active {
         opacity: .9; }
-      .button.button--transparent.button--primary .dashing-icon:before, .button--transparent.button--primary.file--custom .dashing-icon:before, button.button--transparent.button--primary .dashing-icon:before, input[type='submit'].button--transparent.button--primary .dashing-icon:before, input[type='reset'].button--transparent.button--primary .dashing-icon:before {
-        color: #6A8DD3; }
     .button.button--transparent.button--secondary, .button--transparent.button--secondary.file--custom, button.button--transparent.button--secondary, input[type='submit'].button--transparent.button--secondary, input[type='reset'].button--transparent.button--secondary {
       background-color: rgba(255, 255, 255, 0);
       color: #6E6E6E; }
@@ -901,8 +899,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--secondary:active, .button--transparent.button--secondary.file--custom:active, button.button--transparent.button--secondary:active, input[type='submit'].button--transparent.button--secondary:active, input[type='reset'].button--transparent.button--secondary:active {
         opacity: .9; }
-      .button.button--transparent.button--secondary .dashing-icon:before, .button--transparent.button--secondary.file--custom .dashing-icon:before, button.button--transparent.button--secondary .dashing-icon:before, input[type='submit'].button--transparent.button--secondary .dashing-icon:before, input[type='reset'].button--transparent.button--secondary .dashing-icon:before {
-        color: #6E6E6E; }
     .button.button--transparent.button--blue, .button--transparent.button--blue.file--custom, button.button--transparent.button--blue, input[type='submit'].button--transparent.button--blue, input[type='reset'].button--transparent.button--blue {
       background-color: rgba(255, 255, 255, 0);
       color: #6A8DD3; }
@@ -910,8 +906,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--blue:active, .button--transparent.button--blue.file--custom:active, button.button--transparent.button--blue:active, input[type='submit'].button--transparent.button--blue:active, input[type='reset'].button--transparent.button--blue:active {
         opacity: .9; }
-      .button.button--transparent.button--blue .dashing-icon:before, .button--transparent.button--blue.file--custom .dashing-icon:before, button.button--transparent.button--blue .dashing-icon:before, input[type='submit'].button--transparent.button--blue .dashing-icon:before, input[type='reset'].button--transparent.button--blue .dashing-icon:before {
-        color: #6A8DD3; }
     .button.button--transparent.button--gray, .button--transparent.button--gray.file--custom, .button.button--transparent.button--grey, .button--transparent.button--grey.file--custom, button.button--transparent.button--gray, button.button--transparent.button--grey, input[type='submit'].button--transparent.button--gray, input[type='submit'].button--transparent.button--grey, input[type='reset'].button--transparent.button--gray, input[type='reset'].button--transparent.button--grey {
       background-color: rgba(255, 255, 255, 0);
       color: #6E6E6E; }
@@ -919,8 +913,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--gray:active, .button--transparent.button--gray.file--custom:active, .button.button--transparent.button--grey:active, .button--transparent.button--grey.file--custom:active, button.button--transparent.button--gray:active, button.button--transparent.button--grey:active, input[type='submit'].button--transparent.button--gray:active, input[type='submit'].button--transparent.button--grey:active, input[type='reset'].button--transparent.button--gray:active, input[type='reset'].button--transparent.button--grey:active {
         opacity: .9; }
-      .button.button--transparent.button--gray .dashing-icon:before, .button--transparent.button--gray.file--custom .dashing-icon:before, .button.button--transparent.button--grey .dashing-icon:before, .button--transparent.button--grey.file--custom .dashing-icon:before, button.button--transparent.button--gray .dashing-icon:before, button.button--transparent.button--grey .dashing-icon:before, input[type='submit'].button--transparent.button--gray .dashing-icon:before, input[type='submit'].button--transparent.button--grey .dashing-icon:before, input[type='reset'].button--transparent.button--gray .dashing-icon:before, input[type='reset'].button--transparent.button--grey .dashing-icon:before {
-        color: #6E6E6E; }
     .button.button--transparent.button--green, .button--transparent.button--green.file--custom, button.button--transparent.button--green, input[type='submit'].button--transparent.button--green, input[type='reset'].button--transparent.button--green {
       background-color: rgba(255, 255, 255, 0);
       color: #2DB16C; }
@@ -928,8 +920,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--green:active, .button--transparent.button--green.file--custom:active, button.button--transparent.button--green:active, input[type='submit'].button--transparent.button--green:active, input[type='reset'].button--transparent.button--green:active {
         opacity: .9; }
-      .button.button--transparent.button--green .dashing-icon:before, .button--transparent.button--green.file--custom .dashing-icon:before, button.button--transparent.button--green .dashing-icon:before, input[type='submit'].button--transparent.button--green .dashing-icon:before, input[type='reset'].button--transparent.button--green .dashing-icon:before {
-        color: #2DB16C; }
     .button.button--transparent.button--orange, .button--transparent.button--orange.file--custom, button.button--transparent.button--orange, input[type='submit'].button--transparent.button--orange, input[type='reset'].button--transparent.button--orange {
       background-color: rgba(255, 255, 255, 0);
       color: #DD9331; }
@@ -937,8 +927,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--orange:active, .button--transparent.button--orange.file--custom:active, button.button--transparent.button--orange:active, input[type='submit'].button--transparent.button--orange:active, input[type='reset'].button--transparent.button--orange:active {
         opacity: .9; }
-      .button.button--transparent.button--orange .dashing-icon:before, .button--transparent.button--orange.file--custom .dashing-icon:before, button.button--transparent.button--orange .dashing-icon:before, input[type='submit'].button--transparent.button--orange .dashing-icon:before, input[type='reset'].button--transparent.button--orange .dashing-icon:before {
-        color: #DD9331; }
     .button.button--transparent.button--purple, .button--transparent.button--purple.file--custom, button.button--transparent.button--purple, input[type='submit'].button--transparent.button--purple, input[type='reset'].button--transparent.button--purple {
       background-color: rgba(255, 255, 255, 0);
       color: #754C82; }
@@ -946,8 +934,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--purple:active, .button--transparent.button--purple.file--custom:active, button.button--transparent.button--purple:active, input[type='submit'].button--transparent.button--purple:active, input[type='reset'].button--transparent.button--purple:active {
         opacity: .9; }
-      .button.button--transparent.button--purple .dashing-icon:before, .button--transparent.button--purple.file--custom .dashing-icon:before, button.button--transparent.button--purple .dashing-icon:before, input[type='submit'].button--transparent.button--purple .dashing-icon:before, input[type='reset'].button--transparent.button--purple .dashing-icon:before {
-        color: #754C82; }
     .button.button--transparent.button--red, .button--transparent.button--red.file--custom, button.button--transparent.button--red, input[type='submit'].button--transparent.button--red, input[type='reset'].button--transparent.button--red {
       background-color: rgba(255, 255, 255, 0);
       color: #DD4B39; }
@@ -955,8 +941,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--red:active, .button--transparent.button--red.file--custom:active, button.button--transparent.button--red:active, input[type='submit'].button--transparent.button--red:active, input[type='reset'].button--transparent.button--red:active {
         opacity: .9; }
-      .button.button--transparent.button--red .dashing-icon:before, .button--transparent.button--red.file--custom .dashing-icon:before, button.button--transparent.button--red .dashing-icon:before, input[type='submit'].button--transparent.button--red .dashing-icon:before, input[type='reset'].button--transparent.button--red .dashing-icon:before {
-        color: #DD4B39; }
     .button.button--transparent.button--white, .button--transparent.button--white.file--custom, button.button--transparent.button--white, input[type='submit'].button--transparent.button--white, input[type='reset'].button--transparent.button--white {
       background-color: rgba(255, 255, 255, 0);
       color: #FFFFFF; }
@@ -964,8 +948,6 @@ fieldset .has-warning .message li {
         opacity: .6; }
       .button.button--transparent.button--white:active, .button--transparent.button--white.file--custom:active, button.button--transparent.button--white:active, input[type='submit'].button--transparent.button--white:active, input[type='reset'].button--transparent.button--white:active {
         opacity: .9; }
-      .button.button--transparent.button--white .dashing-icon:before, .button--transparent.button--white.file--custom .dashing-icon:before, button.button--transparent.button--white .dashing-icon:before, input[type='submit'].button--transparent.button--white .dashing-icon:before, input[type='reset'].button--transparent.button--white .dashing-icon:before {
-        color: #FFFFFF; }
   .button.button--border, .button--border.file--custom, button.button--border, input[type='submit'].button--border, input[type='reset'].button--border {
     background-color: rgba(255, 255, 255, 0);
     border-color: #6A8DD3;
@@ -980,8 +962,6 @@ fieldset .has-warning .message li {
         transition: all 50ms ease-in-out; }
     .button.button--border:active, .button--border.file--custom:active, button.button--border:active, input[type='submit'].button--border:active, input[type='reset'].button--border:active {
       background-color: #3762ba; }
-    .button.button--border .dashing-icon:before, .button--border.file--custom .dashing-icon:before, button.button--border .dashing-icon:before, input[type='submit'].button--border .dashing-icon:before, input[type='reset'].button--border .dashing-icon:before {
-      color: #6A8DD3; }
     @media all and (min-width: 40em) {
       .button.button--border, .button--border.file--custom, button.button--border, input[type='submit'].button--border, input[type='reset'].button--border {
         padding-top: calc(0.45rem - 2px);
@@ -1001,8 +981,6 @@ fieldset .has-warning .message li {
           transition: all 50ms ease-in-out; }
       .button.button--border.button--primary:active, .button--border.button--primary.file--custom:active, button.button--border.button--primary:active, input[type='submit'].button--border.button--primary:active, input[type='reset'].button--border.button--primary:active {
         background-color: #3762ba; }
-      .button.button--border.button--primary .dashing-icon:before, .button--border.button--primary.file--custom .dashing-icon:before, button.button--border.button--primary .dashing-icon:before, input[type='submit'].button--border.button--primary .dashing-icon:before, input[type='reset'].button--border.button--primary .dashing-icon:before {
-        color: #6A8DD3; }
     .button.button--border.button--blue, .button--border.button--blue.file--custom, button.button--border.button--blue, input[type='submit'].button--border.button--blue, input[type='reset'].button--border.button--blue {
       background-color: rgba(255, 255, 255, 0);
       border-color: #6A8DD3;
@@ -1016,8 +994,6 @@ fieldset .has-warning .message li {
           transition: all 50ms ease-in-out; }
       .button.button--border.button--blue:active, .button--border.button--blue.file--custom:active, button.button--border.button--blue:active, input[type='submit'].button--border.button--blue:active, input[type='reset'].button--border.button--blue:active {
         background-color: #3762ba; }
-      .button.button--border.button--blue .dashing-icon:before, .button--border.button--blue.file--custom .dashing-icon:before, button.button--border.button--blue .dashing-icon:before, input[type='submit'].button--border.button--blue .dashing-icon:before, input[type='reset'].button--border.button--blue .dashing-icon:before {
-        color: #6A8DD3; }
     .button.button--border.button--green, .button--border.button--green.file--custom, button.button--border.button--green, input[type='submit'].button--border.button--green, input[type='reset'].button--border.button--green {
       background-color: rgba(255, 255, 255, 0);
       border-color: #2DB16C;
@@ -1031,8 +1007,6 @@ fieldset .has-warning .message li {
           transition: all 50ms ease-in-out; }
       .button.button--border.button--green:active, .button--border.button--green.file--custom:active, button.button--border.button--green:active, input[type='submit'].button--border.button--green:active, input[type='reset'].button--border.button--green:active {
         background-color: #1d7447; }
-      .button.button--border.button--green .dashing-icon:before, .button--border.button--green.file--custom .dashing-icon:before, button.button--border.button--green .dashing-icon:before, input[type='submit'].button--border.button--green .dashing-icon:before, input[type='reset'].button--border.button--green .dashing-icon:before {
-        color: #2DB16C; }
     .button.button--border.button--orange, .button--border.button--orange.file--custom, button.button--border.button--orange, input[type='submit'].button--border.button--orange, input[type='reset'].button--border.button--orange {
       background-color: rgba(255, 255, 255, 0);
       border-color: #DD9331;
@@ -1046,8 +1020,6 @@ fieldset .has-warning .message li {
           transition: all 50ms ease-in-out; }
       .button.button--border.button--orange:active, .button--border.button--orange.file--custom:active, button.button--border.button--orange:active, input[type='submit'].button--border.button--orange:active, input[type='reset'].button--border.button--orange:active {
         background-color: #a66a1b; }
-      .button.button--border.button--orange .dashing-icon:before, .button--border.button--orange.file--custom .dashing-icon:before, button.button--border.button--orange .dashing-icon:before, input[type='submit'].button--border.button--orange .dashing-icon:before, input[type='reset'].button--border.button--orange .dashing-icon:before {
-        color: #DD9331; }
     .button.button--border.button--purple, .button--border.button--purple.file--custom, button.button--border.button--purple, input[type='submit'].button--border.button--purple, input[type='reset'].button--border.button--purple {
       background-color: rgba(255, 255, 255, 0);
       border-color: #754C82;
@@ -1061,8 +1033,6 @@ fieldset .has-warning .message li {
           transition: all 50ms ease-in-out; }
       .button.button--border.button--purple:active, .button--border.button--purple.file--custom:active, button.button--border.button--purple:active, input[type='submit'].button--border.button--purple:active, input[type='reset'].button--border.button--purple:active {
         background-color: #4a3052; }
-      .button.button--border.button--purple .dashing-icon:before, .button--border.button--purple.file--custom .dashing-icon:before, button.button--border.button--purple .dashing-icon:before, input[type='submit'].button--border.button--purple .dashing-icon:before, input[type='reset'].button--border.button--purple .dashing-icon:before {
-        color: #754C82; }
     .button.button--border.button--red, .button--border.button--red.file--custom, button.button--border.button--red, input[type='submit'].button--border.button--red, input[type='reset'].button--border.button--red {
       background-color: rgba(255, 255, 255, 0);
       border-color: #DD4B39;
@@ -1076,8 +1046,6 @@ fieldset .has-warning .message li {
           transition: all 50ms ease-in-out; }
       .button.button--border.button--red:active, .button--border.button--red.file--custom:active, button.button--border.button--red:active, input[type='submit'].button--border.button--red:active, input[type='reset'].button--border.button--red:active {
         background-color: #ac2d1e; }
-      .button.button--border.button--red .dashing-icon:before, .button--border.button--red.file--custom .dashing-icon:before, button.button--border.button--red .dashing-icon:before, input[type='submit'].button--border.button--red .dashing-icon:before, input[type='reset'].button--border.button--red .dashing-icon:before {
-        color: #DD4B39; }
     .button.button--border.button--gray, .button--border.button--gray.file--custom, .button.button--border.button--secondary, .button--border.button--secondary.file--custom, button.button--border.button--gray, button.button--border.button--secondary, input[type='submit'].button--border.button--gray, input[type='submit'].button--border.button--secondary, input[type='reset'].button--border.button--gray, input[type='reset'].button--border.button--secondary {
       background-color: rgba(255, 255, 255, 0);
       color: #555555;
@@ -1087,7 +1055,7 @@ fieldset .has-warning .message li {
         color: #555555; }
       .button.button--border.button--gray:active, .button--border.button--gray.file--custom:active, .button.button--border.button--secondary:active, .button--border.button--secondary.file--custom:active, button.button--border.button--gray:active, button.button--border.button--secondary:active, input[type='submit'].button--border.button--gray:active, input[type='submit'].button--border.button--secondary:active, input[type='reset'].button--border.button--gray:active, input[type='reset'].button--border.button--secondary:active {
         background-color: rgba(217, 217, 217, 0); }
-      .button.button--border.button--gray .dashing-icon:before, .button--border.button--gray.file--custom .dashing-icon:before, .button.button--border.button--secondary .dashing-icon:before, .button--border.button--secondary.file--custom .dashing-icon:before, button.button--border.button--gray .dashing-icon:before, button.button--border.button--secondary .dashing-icon:before, input[type='submit'].button--border.button--gray .dashing-icon:before, input[type='submit'].button--border.button--secondary .dashing-icon:before, input[type='reset'].button--border.button--gray .dashing-icon:before, input[type='reset'].button--border.button--secondary .dashing-icon:before {
+      .button.button--border.button--gray:not(.button--icon) .dashing-icon:before, .button--border.button--gray.file--custom:not(.button--icon) .dashing-icon:before, .button.button--border.button--secondary:not(.button--icon) .dashing-icon:before, .button--border.button--secondary.file--custom:not(.button--icon) .dashing-icon:before, button.button--border.button--gray:not(.button--icon) .dashing-icon:before, button.button--border.button--secondary:not(.button--icon) .dashing-icon:before, input[type='submit'].button--border.button--gray:not(.button--icon) .dashing-icon:before, input[type='submit'].button--border.button--secondary:not(.button--icon) .dashing-icon:before, input[type='reset'].button--border.button--gray:not(.button--icon) .dashing-icon:before, input[type='reset'].button--border.button--secondary:not(.button--icon) .dashing-icon:before {
         color: #FFFFFF; }
       .button.button--border.button--gray:hover, .button--border.button--gray.file--custom:hover, .button.button--border.button--gray:focus, .button--border.button--gray.file--custom:focus, .button.button--border.button--secondary:hover, .button--border.button--secondary.file--custom:hover, .button.button--border.button--secondary:focus, .button--border.button--secondary.file--custom:focus, button.button--border.button--gray:hover, button.button--border.button--gray:focus, button.button--border.button--secondary:hover, button.button--border.button--secondary:focus, input[type='submit'].button--border.button--gray:hover, input[type='submit'].button--border.button--gray:focus, input[type='submit'].button--border.button--secondary:hover, input[type='submit'].button--border.button--secondary:focus, input[type='reset'].button--border.button--gray:hover, input[type='reset'].button--border.button--gray:focus, input[type='reset'].button--border.button--secondary:hover, input[type='reset'].button--border.button--secondary:focus {
         background-color: #D4D4D4;
@@ -1098,7 +1066,7 @@ fieldset .has-warning .message li {
           color: #222222; }
         .button.button--border.button--gray:hover:active, .button--border.button--gray.file--custom:hover:active, .button.button--border.button--gray:focus:active, .button--border.button--gray.file--custom:focus:active, .button.button--border.button--secondary:hover:active, .button--border.button--secondary.file--custom:hover:active, .button.button--border.button--secondary:focus:active, .button--border.button--secondary.file--custom:focus:active, button.button--border.button--gray:hover:active, button.button--border.button--gray:focus:active, button.button--border.button--secondary:hover:active, button.button--border.button--secondary:focus:active, input[type='submit'].button--border.button--gray:hover:active, input[type='submit'].button--border.button--gray:focus:active, input[type='submit'].button--border.button--secondary:hover:active, input[type='submit'].button--border.button--secondary:focus:active, input[type='reset'].button--border.button--gray:hover:active, input[type='reset'].button--border.button--gray:focus:active, input[type='reset'].button--border.button--secondary:hover:active, input[type='reset'].button--border.button--secondary:focus:active {
           background-color: #aeaeae; }
-        .button.button--border.button--gray:hover .dashing-icon:before, .button--border.button--gray.file--custom:hover .dashing-icon:before, .button.button--border.button--gray:focus .dashing-icon:before, .button--border.button--gray.file--custom:focus .dashing-icon:before, .button.button--border.button--secondary:hover .dashing-icon:before, .button--border.button--secondary.file--custom:hover .dashing-icon:before, .button.button--border.button--secondary:focus .dashing-icon:before, .button--border.button--secondary.file--custom:focus .dashing-icon:before, button.button--border.button--gray:hover .dashing-icon:before, button.button--border.button--gray:focus .dashing-icon:before, button.button--border.button--secondary:hover .dashing-icon:before, button.button--border.button--secondary:focus .dashing-icon:before, input[type='submit'].button--border.button--gray:hover .dashing-icon:before, input[type='submit'].button--border.button--gray:focus .dashing-icon:before, input[type='submit'].button--border.button--secondary:hover .dashing-icon:before, input[type='submit'].button--border.button--secondary:focus .dashing-icon:before, input[type='reset'].button--border.button--gray:hover .dashing-icon:before, input[type='reset'].button--border.button--gray:focus .dashing-icon:before, input[type='reset'].button--border.button--secondary:hover .dashing-icon:before, input[type='reset'].button--border.button--secondary:focus .dashing-icon:before {
+        .button.button--border.button--gray:hover:not(.button--icon) .dashing-icon:before, .button--border.button--gray.file--custom:hover:not(.button--icon) .dashing-icon:before, .button.button--border.button--gray:focus:not(.button--icon) .dashing-icon:before, .button--border.button--gray.file--custom:focus:not(.button--icon) .dashing-icon:before, .button.button--border.button--secondary:hover:not(.button--icon) .dashing-icon:before, .button--border.button--secondary.file--custom:hover:not(.button--icon) .dashing-icon:before, .button.button--border.button--secondary:focus:not(.button--icon) .dashing-icon:before, .button--border.button--secondary.file--custom:focus:not(.button--icon) .dashing-icon:before, button.button--border.button--gray:hover:not(.button--icon) .dashing-icon:before, button.button--border.button--gray:focus:not(.button--icon) .dashing-icon:before, button.button--border.button--secondary:hover:not(.button--icon) .dashing-icon:before, button.button--border.button--secondary:focus:not(.button--icon) .dashing-icon:before, input[type='submit'].button--border.button--gray:hover:not(.button--icon) .dashing-icon:before, input[type='submit'].button--border.button--gray:focus:not(.button--icon) .dashing-icon:before, input[type='submit'].button--border.button--secondary:hover:not(.button--icon) .dashing-icon:before, input[type='submit'].button--border.button--secondary:focus:not(.button--icon) .dashing-icon:before, input[type='reset'].button--border.button--gray:hover:not(.button--icon) .dashing-icon:before, input[type='reset'].button--border.button--gray:focus:not(.button--icon) .dashing-icon:before, input[type='reset'].button--border.button--secondary:hover:not(.button--icon) .dashing-icon:before, input[type='reset'].button--border.button--secondary:focus:not(.button--icon) .dashing-icon:before {
           color: #FFFFFF; }
       .button.button--border.button--gray .dashing-icon:before, .button--border.button--gray.file--custom .dashing-icon:before, .button.button--border.button--secondary .dashing-icon:before, .button--border.button--secondary.file--custom .dashing-icon:before, button.button--border.button--gray .dashing-icon:before, button.button--border.button--secondary .dashing-icon:before, input[type='submit'].button--border.button--gray .dashing-icon:before, input[type='submit'].button--border.button--secondary .dashing-icon:before, input[type='reset'].button--border.button--gray .dashing-icon:before, input[type='reset'].button--border.button--secondary .dashing-icon:before {
         color: #3B3B3B !important;
@@ -1116,8 +1084,6 @@ fieldset .has-warning .message li {
           transition: all 50ms ease-in-out; }
       .button.button--border.button--white:active, .button--border.button--white.file--custom:active, button.button--border.button--white:active, input[type='submit'].button--border.button--white:active, input[type='reset'].button--border.button--white:active {
         background-color: #d9d9d9; }
-      .button.button--border.button--white .dashing-icon:before, .button--border.button--white.file--custom .dashing-icon:before, button.button--border.button--white .dashing-icon:before, input[type='submit'].button--border.button--white .dashing-icon:before, input[type='reset'].button--border.button--white .dashing-icon:before {
-        color: #FFFFFF; }
       .button.button--border.button--white:hover, .button--border.button--white.file--custom:hover, .button.button--border.button--white:focus, .button--border.button--white.file--custom:focus, button.button--border.button--white:hover, button.button--border.button--white:focus, input[type='submit'].button--border.button--white:hover, input[type='submit'].button--border.button--white:focus, input[type='reset'].button--border.button--white:hover, input[type='reset'].button--border.button--white:focus {
         color: #3B3B3B !important; }
         .button.button--border.button--white:hover .dashing-icon:before, .button--border.button--white.file--custom:hover .dashing-icon:before, .button.button--border.button--white:focus .dashing-icon:before, .button--border.button--white.file--custom:focus .dashing-icon:before, button.button--border.button--white:hover .dashing-icon:before, button.button--border.button--white:focus .dashing-icon:before, input[type='submit'].button--border.button--white:hover .dashing-icon:before, input[type='submit'].button--border.button--white:focus .dashing-icon:before, input[type='reset'].button--border.button--white:hover .dashing-icon:before, input[type='reset'].button--border.button--white:focus .dashing-icon:before {
@@ -1127,7 +1093,7 @@ fieldset .has-warning .message li {
 .button--icon {
   border-radius: 50px !important;
   padding: 1rem; }
-  .button--icon.button--icon--small {
+  .button--icon.button--icon--small, .button--icon.button--small {
     padding: 0.6rem; }
   .button--icon.button--transparent:hover, .button--icon.button--transparent:focus {
     background-color: rgba(110, 110, 110, 0.2);
@@ -1138,7 +1104,7 @@ fieldset .has-warning .message li {
       color: rgba(255, 255, 255, 0); }
     .button--icon.button--transparent:hover:active, .button--icon.button--transparent:focus:active {
       background-color: rgba(72, 72, 72, 0.2); }
-    .button--icon.button--transparent:hover .dashing-icon:before, .button--icon.button--transparent:focus .dashing-icon:before {
+    .button--icon.button--transparent:hover:not(.button--icon) .dashing-icon:before, .button--icon.button--transparent:focus:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
 
 .button ~ .action, .file--custom ~ .action {
@@ -1167,8 +1133,6 @@ fieldset .has-warning .message li {
     .button-group .button--radio label {
       border-radius: 0;
       margin-left: -4px; }
-      .button-group .button--radio label a {
-        color: inherit; }
   .button-group.button-group--gray .button, .button-group.button-group--gray .file--custom {
     background-color: #D4D4D4;
     color: #222222; }
@@ -1177,7 +1141,7 @@ fieldset .has-warning .message li {
       color: #222222; }
     .button-group.button-group--gray .button:active, .button-group.button-group--gray .file--custom:active {
       background-color: #aeaeae; }
-    .button-group.button-group--gray .button .dashing-icon:before, .button-group.button-group--gray .file--custom .dashing-icon:before {
+    .button-group.button-group--gray .button:not(.button--icon) .dashing-icon:before, .button-group.button-group--gray .file--custom:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button-group.button-group--gray .button--radio input:checked ~ label {
     background-color: #878787;
@@ -1190,7 +1154,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button-group.button-group--blue .button:active, .button-group.button-group--blue .file--custom:active {
       background-color: #3762ba; }
-    .button-group.button-group--blue .button .dashing-icon:before, .button-group.button-group--blue .file--custom .dashing-icon:before {
+    .button-group.button-group--blue .button:not(.button--icon) .dashing-icon:before, .button-group.button-group--blue .file--custom:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button-group.button-group--blue .button--radio input:checked ~ label {
     background-color: #375AA0; }
@@ -1202,7 +1166,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button-group.button-group--green .button:active, .button-group.button-group--green .file--custom:active {
       background-color: #1d7447; }
-    .button-group.button-group--green .button .dashing-icon:before, .button-group.button-group--green .file--custom .dashing-icon:before {
+    .button-group.button-group--green .button:not(.button--icon) .dashing-icon:before, .button-group.button-group--green .file--custom:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button-group.button-group--green .button--radio input:checked ~ label {
     background-color: #007E39; }
@@ -1214,7 +1178,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button-group.button-group--orange .button:active, .button-group.button-group--orange .file--custom:active {
       background-color: #a66a1b; }
-    .button-group.button-group--orange .button .dashing-icon:before, .button-group.button-group--orange .file--custom .dashing-icon:before {
+    .button-group.button-group--orange .button:not(.button--icon) .dashing-icon:before, .button-group.button-group--orange .file--custom:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button-group.button-group--orange .button--radio input:checked ~ label {
     background-color: #AA6000; }
@@ -1226,7 +1190,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button-group.button-group--purple .button:active, .button-group.button-group--purple .file--custom:active {
       background-color: #4a3052; }
-    .button-group.button-group--purple .button .dashing-icon:before, .button-group.button-group--purple .file--custom .dashing-icon:before {
+    .button-group.button-group--purple .button:not(.button--icon) .dashing-icon:before, .button-group.button-group--purple .file--custom:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button-group.button-group--purple .button--radio input:checked ~ label {
     background-color: #290036; }
@@ -1238,7 +1202,7 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
     .button-group.button-group--red .button:active, .button-group.button-group--red .file--custom:active {
       background-color: #ac2d1e; }
-    .button-group.button-group--red .button .dashing-icon:before, .button-group.button-group--red .file--custom .dashing-icon:before {
+    .button-group.button-group--red .button:not(.button--icon) .dashing-icon:before, .button-group.button-group--red .file--custom:not(.button--icon) .dashing-icon:before {
       color: #FFFFFF; }
   .button-group.button-group--red .button--radio input:checked ~ label {
     background-color: #910000; }

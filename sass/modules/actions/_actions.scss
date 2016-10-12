@@ -145,7 +145,8 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 .button--icon {
   border-radius: 50px !important;
   padding: 1rem;
-  &.button--icon--small { padding: 0.6rem; }
+  &.button--icon--small,
+  &.button--small { padding: 0.6rem; }
 
   &.button--icon--main {
     @extend %shadow-100;
