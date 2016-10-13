@@ -70,7 +70,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   &.button--grey,
   &.button--secondary {
     @include button($background-color: $gray-200, $color: $gray-900);
-    .dashing-icon:before { color: $gray-700; }
+    .dashing-icon:before { color: $gray-700 !important; }
   }
   &.button--blue {@include button($background-color: $blue, $color: $white); }
   &.button--green { @include button($background-color: $green, $color: $white); }

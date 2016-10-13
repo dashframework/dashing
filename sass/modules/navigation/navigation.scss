@@ -28,7 +28,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
       font-size: $font-size-medium;
       font-weight: 600;
 
-      a {
+      a:not(.button) {
         color: auto-color($menu-color);
         &:hover { color: rgba(auto-color($menu-color), .60); }
 
@@ -39,6 +39,24 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
           transition: $global-transition;
           &:hover { color: rgba(auto-color($menu-color), 1); }
         }
+      }
+
+      //Auto-colors the button and dashing-icon
+      .button--navigation {
+        @extend .button--small;
+        @extend .button--smooth;
+        @extend .dashing-icon;
+        @include button(darken($menu-color, 8%), auto-color($menu-color));
+        padding: 0.4rem 0.55rem !important;
+        position: relative;
+        top: -3px;
+        margin-right: 0.5rem;
+        &:before {
+          content: '\e82a';
+          color: auto-color($menu-color) !important;
+          margin-right: 0.35rem;
+        }
+        &:after { content: 'Back'; }
       }
     }
 

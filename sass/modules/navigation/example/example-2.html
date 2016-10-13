@@ -17,7 +17,7 @@
         <div class="app-title">
           <a href="example.html" class="app-title--has-breadcrumb">App Title</a>
           <i class="dashing-icon dashing-icon--arrow-right"></i>
-          <span>With Subnav</span>
+          <span>With Breadcrumb</span>
         </div>
         <ul class="header-description">
           <li class="header-description--label">Example Label</li>
@@ -25,10 +25,10 @@
         </ul>
       </div>
       <ul class="app-navigation">
-        <li><a href="example-1.html">Link 1</a></li>
-        <li><a href="example-2.html" class="active">Link 2</a></li>
+        <li><a href="example-1.html">Back Link</a></li>
+        <li><a href="example-2.html" class="active">Breadcrumb</a></li>
         <li><a href="example.html" target="blank">
-          Link 3
+          New Tab
           <i class="dashing-icon dashing-icon--new-tab flow-opposite"></i>
         </a></li>
       </ul>
@@ -36,12 +36,15 @@
 
     <div class="app-content">
       <h1 style="text-align: center; padding: 1rem 0 3rem;">Dashing Navigation</h1>
+<pre><code class="language-scss">//Include this variable in your theme file to change the color of your header
+$menu-color: $gray-100 !default;</code>
+</pre>
 <pre><code class="language-html">&lt;nav class="app-menu expanded fixed"&gt;
   &lt;div class="app-context"&gt;
     &lt;div class="app-title"&gt;
       &lt;a href="example.html" class="app-title--has-breadcrumb"&gt;App Title&lt;/a&gt;
       &lt;i class="dashing-icon dashing-icon--arrow-right"&gt;&lt;/i&gt;
-      &lt;span&gt;With Subnav&lt;/span&gt;
+      &lt;span&gt;With Breadcrumb&lt;/span&gt;
     &lt;/div&gt;
     &lt;ul class="header-description"&gt;
       &lt;li class="header-description--label"&gt;Example Label&lt;/li&gt;
@@ -49,10 +52,10 @@
     &lt;/ul&gt;
   &lt;/div&gt;
   &lt;ul class="app-navigation"&gt;
-    &lt;li&gt;&lt;a href="example-1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="example-2.html" class="active"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="example-1.html"&gt;Back Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="example-2.html" class="active"&gt;Breadcrumb&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="example.html" target="blank"&gt;
-      Link 3
+      New Tab
       &lt;i class="dashing-icon dashing-icon--new-tab flow-opposite"&gt;&lt;/i&gt;
     &lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
