@@ -1,7 +1,7 @@
 # Dashing
 Stylish framework for web apps
 
-[![Dashing Version](https://img.shields.io/badge/Version-1.0.1-green.svg)]()
+[![Dashing Version](https://img.shields.io/badge/Version-1.0.3-green.svg)]()
 
 ## Browser Support
 
@@ -116,7 +116,7 @@ Every module contains an example file that allows you to preview the look and fe
 * Grid · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) · [Example](http://dashframework.github.io/dashing/sass/modules/grid/example.html)
 * Icons · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) · [Example](http://dashframework.github.io/dashing/sass/modules/icons/example.html)
 * Navigation · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) · [Example](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html)
-* Tables · [Example](http://dashframework.github.io/dashing/sass/modules/table/example/default.html)
+* Tables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/table) · [Example](http://dashframework.github.io/dashing/sass/modules/table/example/default.html)
 * Typography · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) · [Example](http://dashframework.github.io/dashing/sass/modules/typography/example.html)
 
 *****

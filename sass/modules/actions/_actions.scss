@@ -139,13 +139,18 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
       }
     }
   }
+
+  &.button--round { @extend %button--round; }
+  &.button--smooth { @extend %button--smooth; }
+  &.button--square { @extend %button--square; }
 }
 
 //Used for creating clickable dashing icons
 .button--icon {
   border-radius: 50px !important;
   padding: 1rem;
-  &.button--icon--small { padding: 0.6rem; }
+  &.button--icon--small,
+  &.button--small { padding: 0.6rem; }
 
   &.button--icon--main {
     @extend %shadow-100;
@@ -162,7 +167,3 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 .button ~ .action {
   margin-left: 0.5rem;
 }
-
-.button--round { @extend %button--round; }
-.button--smooth { @extend %button--smooth; }
-.button--square { @extend %button--square; }

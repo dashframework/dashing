@@ -64,7 +64,9 @@
     color: $color;
   }
   &:active { background-color: darken($background-color, 15%); }
-  .dashing-icon:before { color: $white; }
+  &:not(.button--icon) {
+    .dashing-icon:before { color: $white; }
+  }
 }
 
 //Border Button
@@ -82,7 +84,6 @@
     }
   }
   &:active { background-color: darken($color, 15%); }
-  .dashing-icon:before { color: $color; }
 }
 
 //Transparent Button
@@ -91,5 +92,4 @@
   color: $color;
   &:hover, &:focus { opacity: .6; }
   &:active { opacity: .9; }
-  .dashing-icon:before { color: $color; }
 }
