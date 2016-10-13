@@ -64,7 +64,7 @@
     color: $color;
   }
   &:active { background-color: darken($background-color, 15%); }
-  &:not(.button--icon) {
+  &:not(.button--transparent) {
     .dashing-icon:before { color: $white; }
   }
 }
@@ -74,6 +74,7 @@
   background-color: transparentize(white, 1);
   border-color: $color;
   color: $color;
+  .dashing-icon:before { color: $color; }
   &:hover, &:focus {
     background-color: darken($color, 10%);
     border-color: transparentize(white, 1);
@@ -92,4 +93,5 @@
   color: $color;
   &:hover, &:focus { opacity: .6; }
   &:active { opacity: .9; }
+  .dashing-icon:before { color: $color; }
 }
