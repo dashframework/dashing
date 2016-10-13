@@ -139,6 +139,10 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
       }
     }
   }
+
+  &.button--round { @extend %button--round; }
+  &.button--smooth { @extend %button--smooth; }
+  &.button--square { @extend %button--square; }
 }
 
 //Used for creating clickable dashing icons
@@ -163,7 +167,3 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 .button ~ .action {
   margin-left: 0.5rem;
 }
-
-.button--round { @extend %button--round; }
-.button--smooth { @extend %button--smooth; }
-.button--square { @extend %button--square; }
