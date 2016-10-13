@@ -12,18 +12,15 @@ $table--border: $gray-200 !default;
     max-width: 100%;
     width: 100%;
 
+    thead tr { background-color: $table--header-row; }
+
     th, td {
       padding: $grid-gutter;
       text-align: left;
     }
 
-    td {
-      vertical-align: middle;
-    }
-
-    th {
-      border-bottom: 2px solid $gray-200;
-    }
+    td { vertical-align: middle; }
+    th { border-bottom: 2px solid $gray-200; }
   }
 }
 
@@ -52,6 +49,12 @@ $table--border: $gray-200 !default;
     &:nth-child(even) { background-color: $table--even-row; }
   }
   thead tr:nth-child(odd) { background-color: $table--header-row; }
+
+  //Adds specific hover styles for colored rows
+  &.has-hover {
+    tr:nth-child(odd):hover { td { background-color: darken($table--odd-row, 7%); }}
+    tr:nth-child(even):hover { td { background-color: darken($table--even-row, 7%); }}
+  }
 }
 
 //Add hover table rows

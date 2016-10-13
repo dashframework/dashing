@@ -1325,6 +1325,8 @@ fieldset .has-warning .message li {
   margin: 0;
   max-width: 100%;
   width: 100%; }
+  .table--container .table thead tr {
+    background-color: #FFFFFF; }
   .table--container .table th, .table--container .table td {
     padding: 1rem;
     text-align: left; }
@@ -1354,6 +1356,10 @@ fieldset .has-warning .message li {
   background-color: #FFFFFF; }
 .table.has-row-color thead tr:nth-child(odd) {
   background-color: #FFFFFF; }
+.table.has-row-color.has-hover tr:nth-child(odd):hover td {
+  background-color: #e0e0e0; }
+.table.has-row-color.has-hover tr:nth-child(even):hover td {
+  background-color: #ededed; }
 
 .table.has-hover td {
   -webkit-transition: all 0.15s ease-in-out;
