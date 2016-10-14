@@ -32,32 +32,62 @@ Every form element within Dashing is **required** to be placed within a fieldset
 | `.select--has-icon` | Adds down arrow icon to select inputs | Apply `.select--has-icon` to `fieldset` elements |
 
 ## Custom Checkbox Configurations
-Custom checkboxes have a default color of `$blue` when active. If you would like to change the color theme of custom checkboxes to better integrate with your App, replace these variables in your overwrite file.
+Custom checkboxes have a default color of `$blue` when active. If you would like to change the color theme of custom checkboxes to better integrate with your App, replace these variables in your `theme.scss` file.
 
-| Checkbox variables | Effect | Notes |
-|--------------------|--------|-------|
-| `.checkbox--custom` | Utilizes a custom theme for checkboxes | *Required*. Apply this class to parent and place the `label` *after* your `input`|
-| `$checkbox--active` | Color of checkbox when checked | Default color is `$blue` |
-| `$checkbox--icon` | Color of checkmark icon when checked | Default color is `$white` |
-| `$checkbox--focus` | Color of border around checkbox when focused | Default color is `$blue-300` |
-| `$checkbox--disabled` | Color of checkbox when checked and disabled | Default color is `$gray-150` |
-| `$checkbox--icon-disabled` | Color of checkmark icon when checked and disabled | Default color is `$gray-500` |
+**`.checkbox--custom`**
+* This class is **required** for custom checkboxes.
+* Apply this class to the parent element and place the label *after* your `input`.
 
-> **Note**: To alter the checkbox variable colors in your App, be sure to place the variable references in your [theme file](https://github.com/dashframework/dashing#working-with-sass).
+**`.checkbox--active`**
+* Color of checkbox when checked
+* Default color is `$blue`
+
+**`.checkbox--icon`**
+* Color of checkmark icon when checked
+* Default color is `$white`
+
+**`.checkbox--focus`**
+* Color of border around checkbox when focused
+* Default color is `$blue-300`
+
+**`.checkbox--disabled`**
+* Color of checkbox when checked and disabled
+* Default color is `$gray-150`
+
+**`.checkbox--icon-disabled`**
+* Color of checkmark icon when checked and disabled
+* Default color is `$gray-500`
+
+> **Note**: To alter the checkbox variable colors in your App, be sure to place the variable references in your [theme.scss file](https://github.com/dashframework/dashing#working-with-sass).
 
 ## Custom Radio Button Configurations
-Custom checkboxes have a default color of `$blue` when active. If you would like to change the color theme of custom checkboxes to better integrate with your App, replace these variables in your overwrite file.
+Custom checkboxes have a default color of `$blue` when active. If you would like to change the color theme of custom checkboxes to better integrate with your App, replace these variables in your `theme.scss` file.
 
-| Radio variables | Effect | Notes |
-|-----------------|--------|-------|
-| `.radio--custom` | Utilizes a custom theme for radio button | *Required*. Apply this class to parent and place the `label` *after* your `input`|
-| `$radio--active` | Color of radio button when checked | Default color is `$blue` |
-| `$radio--icon` | Color of radio button icon when checked | Default color is `$white` |
-| `$radio--focus` | Color of border around radio button when focused | Default color is `$blue-300` |
-| `$radio--disabled` | Color of radio button when checked and disabled | Default color is `$gray-150` |
-| `$radio--icon-disabled` | Color of radio button icon when checked and disabled | Default color is `$gray-500` |
+**`.radio--custom`**
+* This class is **required** for custom radio buttons.
+* Apply this class to the parent element and place the label *after* your `input`.
 
-> **Note**: To alter the radio variable colors in your App, be sure to place the variable references in your [theme file](https://github.com/dashframework/dashing#working-with-sass).
+**`.radio--active`**
+* Color of radio button when checked
+* Default color is `$blue`
+
+**`.radio--icon`**
+* Color of radio button icon when checked
+* Default color is `$white`
+
+**`.radio--focus`**
+* Color of border around radio button when focused
+* Default color is `$blue-300`
+
+**`.radio--disabled`**
+* Color of radio button when checked and disabled
+* Default color is `$gray-150`
+
+**`.radio--icon-disabled`**
+* Color of radio button icon when checked and disabled
+* Default color is `$gray-500`
+
+> **Note**: To alter the radio variable colors in your App, be sure to place the variable references in your [theme.scss file](https://github.com/dashframework/dashing#working-with-sass).
 
 ## Usage
 ### Using an input
