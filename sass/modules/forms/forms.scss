@@ -62,6 +62,33 @@ fieldset {
     cursor: pointer;
   }
 
+  //Add class to containing fieldset or div to display a button
+  .input--add-on {
+    display: flex;
+
+    .add-on--field {
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+      flex-grow: 1;
+      width: auto;
+    }
+
+    .add-on--button {
+      border-radius: 0 5px 5px 0 !important;
+      padding-top: calc(0.6rem + 3px);
+      padding-bottom: calc(0.6rem + 3px);
+      margin: 0;
+
+      &.button--border {
+        @include border--button($gray-150);
+        color: $gray-500;
+        .dashing-icon:before {
+          color: $gray-500;
+        }
+      }
+    }
+  }
+
   //Add class to containing fieldset or div to display a down arrow icon in the menu
   &.select--has-icon,
   .select--has-icon {

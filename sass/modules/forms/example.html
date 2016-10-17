@@ -72,10 +72,92 @@
 &lt;/fieldset&gt;</code>
 </pre>
 
+    <h2 class="example-header">Input Add-on</h2>
+    <p>NOTE: There is a Chrome bug that prevents this from working when applied to <code class="example-text">fieldset</code>. Ensure your <code class="example-text">.input--add-on</code> class is applied to a <code class="example-text">div</code>.</p>
+    <p><strong>This is not supported on Internet Explorer</strong></p>
+    <div class="row example-container">
+      <fieldset class="column column--half">
+        <label for="dashing-input-action1">Add-on button</label>
+        <div class="input--add-on">
+          <input type="text" class="add-on--field" id="dashing-input-action1"/>
+          <input type="submit" class="button button--green add-on--button" value="Submit">
+        </div>
+      </fieldset>
+      <fieldset class="column column--half">
+        <label for="dashing-input-action2">Add-on icon</label>
+        <div class="input--add-on">
+          <input type="text" class="add-on--field" id="dashing-input-action2"/>
+          <button class="button--icon add-on--button">
+            <i class="dashing-icon dashing-icon--calendar"></i>
+          </button>
+        </div>
+      </fieldset>
+      <fieldset class="column column--half">
+        <label for="dashing-input-action3">Add-on button</label>
+        <div class="input--add-on">
+          <input type="text" class="add-on--field" id="dashing-input-action3"/>
+          <button class="button--icon button--gray add-on--button">
+            Search
+          </button>
+        </div>
+      </fieldset>
+      <fieldset class="column column--half">
+        <label for="dashing-input-action4">Add-on border icon</label>
+        <div class="input--add-on">
+          <input type="text" class="add-on--field" id="dashing-input-action4"/>
+          <button class="button--icon button--border add-on--button">
+            <i class="dashing-icon dashing-icon--search"></i>
+          </button>
+        </div>
+      </fieldset>
+    </div>
+<pre><code class="language-html">&lt;!-- This is an example of an add-on --&gt;
+&lt;fieldset class="column column--half"&gt;
+  &lt;label for="dashing-input-action"&gt;Add-on button&lt;/label&gt;
+  &lt;div class="input--add-on"&gt;
+    &lt;input type="text" class="add-on--field" id="dashing-input-action"/&gt;
+    &lt;input type="submit" class="button button--green add-on--button" value="Submit"&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+
+&lt;!-- This is an example of an add-on with an icon --&gt;
+&lt;fieldset class="column column--half"&gt;
+  &lt;label for="dashing-input-action"&gt;Add-on icon&lt;/label&gt;
+  &lt;div class="input--add-on"&gt;
+    &lt;input type="text" class="add-on--field" id="dashing-input-action"/&gt;
+    &lt;button class="button--icon add-on--button"&gt;
+      &lt;i class="dashing-icon dashing-icon--calendar"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+
+&lt;!-- This is an example of an add-on --&gt;
+&lt;fieldset class="column column--half"&gt;
+  &lt;label for="dashing-input-action"&gt;Add-on icon&lt;/label&gt;
+  &lt;div class="input--add-on"&gt;
+    &lt;input type="text" class="add-on--field" id="dashing-input-action"/&gt;
+    &lt;button class="button--icon button--gray add-on--button"&gt;
+      Search
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+
+&lt;!-- This is an example of a bordered add-on with an icon --&gt;
+&lt;fieldset class="column column--half"&gt;
+  &lt;label for="dashing-input-action"&gt;Add-on border icon&lt;/label&gt;
+  &lt;div class="input--add-on"&gt;
+    &lt;input type="text" class="add-on--field" id="dashing-input-action"/&gt;
+    &lt;button class="button--icon button--border add-on--button"&gt;
+      &lt;i class="dashing-icon dashing-icon--search"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+
     <h2 class="example-header">Input Message States</h2>
     <div class="row example-container">
       <fieldset class="column column--full">
-        <label for="dashing-text-error">Dashing Text Input with message</label>
+        <label for="dashing-text-message">Dashing Text Input with message</label>
         <input type="text" id="dashing-text-message"/>
         <ul class="message">
           <li>This is a message.</li>
@@ -84,7 +166,7 @@
       </fieldset>
 
       <fieldset class="column column--full has-error">
-        <label for="dashing-text-message">Dashing Text Input with error</label>
+        <label for="dashing-text-error">Dashing Text Input with error</label>
         <input type="text" id="dashing-text-error"/>
         <ul class="message">
           <li>This is an error.</li>
