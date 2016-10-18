@@ -34,6 +34,8 @@ This changelog was started using [these conventions](http://keepachangelog.com/)
 **Updated**
 * Updated table styles
 * Updated table example page
+
+*****
   
 ### 1.0.0 · October 6, 2016
 **Updated**
