@@ -1,7 +1,7 @@
 # Dashing
 Stylish framework for web apps
 
-[![Dashing Version](https://img.shields.io/badge/Version-1.0.5-green.svg)]()
+[![Dashing Version](https://img.shields.io/badge/Version-1.0.6-green.svg)]()
 
 ## Browser Support
 
@@ -164,6 +164,11 @@ git clone https://github.com/dashframework/dashing.git
 8. Push your new tag
   ```bash
   git push --tags
+  ```
+
+9. Push your new npm package
+  ```bash
+  npm publish
   ```
 
 ## Found a Bug?

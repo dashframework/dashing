@@ -14,7 +14,6 @@ $gray-700c:     #575D64;
 $gray-900c:     #24292C;
 $yellow-500:    #F2E670;
 
-
 .example-container {
 	border: 2px solid $gray-150;
 	border-radius: 8px 8px 0 0;
@@ -98,12 +97,6 @@ pre.language-css:before {
 pre[class*="language-"] {
 	background-color: rgba($gray-900c, .9);
 }
-
-// code > span {
-// 	width: calc(100% - 2rem);
-// 	display: inline-block;
-// 	::selection { background-color: $gray-200c; }
-// }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
@@ -228,31 +221,3 @@ pre.line-numbers > code {
 	padding-right: 0.8em;
 	text-align: right;
 }
-
-// div.prism-show-language {
-// 	position: relative;
-// }
-//
-// div.prism-show-language > div.prism-show-language-label {
-// 	color: $black;
-// 	background-color: #CFCFCF;
-// 	display: inline-block;
-// 	position: absolute;
-// 	bottom: auto;
-// 	left: auto;
-// 	top: 0;
-// 	right: 0;
-// 	width: auto;
-// 	height: auto;
-// 	font-size: 0.9em;
-// 	border-radius: 0 0 0 5px;
-// 	padding: 0 0.5em;
-// 	text-shadow: none;
-// 	z-index: 1;
-// 	box-shadow: none;
-// 	-webkit-transform: none;
-// 	-moz-transform: none;
-// 	-ms-transform: none;
-// 	-o-transform: none;
-// 	transform: none;
-// }

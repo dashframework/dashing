@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.6 · October 18, 2016
+**Fixed**
+* Fixed broken example page styles
+
+*****
+
 ### 1.0.5 · October 17, 2016
 **Added**
 * Added input add-on buttons to the forms module
@@ -14,7 +20,7 @@ This changelog was started using [these conventions](http://keepachangelog.com/)
 * Added back link to navigation  
 
 **Fixed**
-* Fixed broken button--icon color styles 
+* Fixed broken button--icon color styles
 
 *****
 
@@ -23,11 +29,11 @@ This changelog was started using [these conventions](http://keepachangelog.com/)
 * Added table documentation
 
 *****
-  
+
 ### 1.0.2 · October 12, 2016
 **Fixed**
 * Fixed a dashing-icon color bug when using transparent buttons
-  
+
 *****
 
 ### 1.0.1 · October 11, 2016
@@ -36,7 +42,7 @@ This changelog was started using [these conventions](http://keepachangelog.com/)
 * Updated table example page
 
 *****
-  
+
 ### 1.0.0 · October 6, 2016
 **Updated**
 * First push out of beta!
