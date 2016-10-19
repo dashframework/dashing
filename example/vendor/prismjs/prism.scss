@@ -18,6 +18,10 @@ $yellow-500:    #F2E670;
 	border: 2px solid $gray-150;
 	border-radius: 8px 8px 0 0;
 	border-bottom: none;
+	&.has-code {
+		border-radius: 8px;
+		border-bottom: 2px solid $gray-150;
+	}
 }
 
 .example-text {
@@ -44,6 +48,7 @@ pre[class*="language-"] {
   top: 0;
   position: relative;
   margin: 0.5rem 0 4rem 0;
+	width: 100% !important;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -53,6 +58,14 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+
+	&.code-toggle {
+		transition: all 50ms ease-in-out;
+	}
+
+	&.code-toggle--hidden {
+		display: none;
+	}
 }
 
 /* Code blocks */
