@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../dashing.css" rel="stylesheet">
+    <link href="../../../example/css/sidebar.css" rel="stylesheet">
     <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Grid</title>
 
@@ -40,11 +41,29 @@
     </style>
   </head>
 
-  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
+  <body class="example-body">
+    <div class="example-sidebar">
+      <ul>
+        <li><a href="../actions/example.html">Actions</a></li>
+        <li><a href="../card/example.html">Card</a></li>
+        <li><a href="../forms/example.html">Forms</a></li>
+        <li class="active"><a href="#">Grid</a></li>
+        <li><a href="../icons/example.html">Icons</a></li>
+        <li><a href="../navigation/example/example.html">Navigation</a></li>
+        <li><a href="../table/example/default.html">Tables</a></li>
+        <li><a href="../typography/example.html">Typography</a></li>
+      </ul>
+    </div>
 
     <script src="../../../example/vendor/prismjs/prism.js"></script>
 
-    <h1 style="text-align: center; padding: 3rem;">Dashing Grid</h1>
+    <nav class="app-menu fixed example-menu--grid">
+      <div class="app-context">
+        <div class="app-title">Dashing Grid</div>
+      </div>
+    </nav>
+
+    <div class="app-content">
     <div class="row row--example">
       <div class="column column--full column--example">
         <div class="grid--example">.column--full</div>
@@ -321,6 +340,6 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
-
+    </div>
   </body>
 </html>

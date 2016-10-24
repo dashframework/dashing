@@ -15,7 +15,7 @@
   "ignore": [
     "README.md",
     "example",
-    "guildines"
+    "guidelines"
   ],
 
   "dependencies": {

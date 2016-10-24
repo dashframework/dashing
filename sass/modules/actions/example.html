@@ -5,16 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../dashing.css" rel="stylesheet">
     <link href="../../../example/css/icons.css" rel="stylesheet">
+    <link href="../../../example/css/sidebar.css" rel="stylesheet">
     <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Actions</title>
   </head>
-  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
+  <body class="example-body">
 
     <script src="../../../example/vendor/prismjs/prism.js"></script>
     <script src="../../../example/scripts/scripts.js"></script>
 
-    <h1 style="text-align: center; padding: 3rem;">Dashing Actions</h1>
-    <fieldset class="example-header">
+    <div class="example-sidebar">
+      <ul>
+        <li class="active"><a href="#">Actions</a></li>
+        <li><a href="../card/example.html">Card</a></li>
+        <li><a href="../forms/example.html">Forms</a></li>
+        <li><a href="../grid/example.html">Grid</a></li>
+        <li><a href="../icons/example.html">Icons</a></li>
+        <li><a href="../navigation/example/example.html">Navigation</a></li>
+        <li><a href="../table/example/default.html">Tables</a></li>
+        <li><a href="../typography/example.html">Typography</a></li>
+      </ul>
+    </div>
+
+    <nav class="app-menu fixed example-menu--actions">
+      <div class="app-context">
+        <div class="app-title">Dashing Actions</div>
+      </div>
+    </nav>
+
+    <div class="app-content">
+    <fieldset class="example-header no-margin--top">
       <h2 class="float-left">Default Button</h2>
     </fieldset>
     <div class="row example-container">
@@ -375,5 +395,6 @@ button { @extend %button--smooth; }
 // Square Button Theme
 button { @extend %button--square; }</code>
 </pre>
+    </div>
   </body>
 </html>

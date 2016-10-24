@@ -4,16 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../../dashing.css" rel="stylesheet">
+    <link href="../../../example/css/sidebar.css" rel="stylesheet">
     <link href="../../../example/vendor/prismjs/prism.css" rel="stylesheet" />
     <title>Typography</title>
   </head>
-  <body style="padding: 1rem; margin: auto; background-color: #fff; max-width: 1200px;">
-
+  <body class="example-body">
+    <div class="example-sidebar">
+      <ul>
+        <li><a href="../actions/example.html">Actions</a></li>
+        <li><a href="../card/example.html">Card</a></li>
+        <li><a href="../forms/example.html">Forms</a></li>
+        <li><a href="../grid/example.html">Grid</a></li>
+        <li><a href="../icons/example.html">Icons</a></li>
+        <li><a href="../navigation/example/example.html">Navigation</a></li>
+        <li><a href="../table/example/default.html">Tables</a></li>
+        <li class="active"><a href="#">Typography</a></li>
+      </ul>
+    </div>
     <script src="../../../example/vendor/prismjs/prism.js"></script>
 
-    <h1 style="text-align: center; padding: 3rem;">Dashing Typography</h1>
+    <nav class="app-menu fixed example-menu--typography">
+      <div class="app-context">
+        <div class="app-title">Dashing Typography</div>
+      </div>
+    </nav>
 
-    <h2 class="example-header">Headers</h2>
+    <div class="app-content">
+
+    <h2 class="example-header no-margin--top">Headers</h2>
     <div class="row example-container">
       <div class="column column--full">
         <h1>h1. Header 1</h1>
@@ -51,5 +69,6 @@
 <pre><code class="language-html">&lt;a&gt;Click Here&lt;/a&gt;
 &lt;p&gt;Phasellus vel luctus libero. &lt;a&gt;Maecenas sit&lt;/a&gt; amet leo vestibulum, vehicula arcu id, tempus dolor.&lt;/p&gt;</code>
 </pre>
+    </div>
   </body>
 </html>

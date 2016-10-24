@@ -6,6 +6,7 @@
  */
 
 $white:					#FFFFFF;
+$gray-50:     	#F2F2F2;
 $gray-100:      #EDEDED;
 $gray-150:      #E0E0E0;
 $gray-900:      #222222;
@@ -14,14 +15,28 @@ $gray-700c:     #575D64;
 $gray-900c:     #24292C;
 $yellow-500:    #F2E670;
 
+$tablet:        "all and (min-width: 40em)" !default;
+
+.example-body {
+	background-color: #F2F2F2;
+	padding: 1rem;
+	margin: auto;
+	max-width: 1200px;
+
+	@media #{$tablet} {
+		padding-left: 11rem;
+	}
+}
+
 .example-container {
+	background-color: $white;
 	border: 2px solid $gray-150;
 	border-radius: 8px 8px 0 0;
 	border-bottom: none;
 }
 
 .example-text {
-	background-color: $gray-100;
+	background-color: $gray-150;
 	border-radius: 5px;
 	color: $gray-900;
 	font-size: 0.9rem;
@@ -30,6 +45,19 @@ $yellow-500:    #F2E670;
 
 .example-header {
 	margin: 3rem auto 1rem;
+}
+
+.example-tip {
+	background-color: $gray-50;
+	border-radius: 5px;
+	border: 2px solid $gray-150;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+
+	p {
+		line-height: 1.5rem;
+		margin: 0;
+	}
 }
 
 code[class*="language-"],
