@@ -1,7 +1,9 @@
 # Dashing
 Stylish framework for web apps
 
-[![Dashing Version](https://img.shields.io/badge/Version-1.0.6-green.svg)]()
+[![GitHub version](https://badge.fury.io/gh/dashframework%2Fdashing.svg)](https://badge.fury.io/gh/dashframework%2Fdashing)
+[![Bower version](https://badge.fury.io/bo/dashing.svg)](https://badge.fury.io/bo/dashing)
+[![npm version](https://badge.fury.io/js/dashing-framework.svg)](https://badge.fury.io/js/dashing-framework)
 
 ## Browser Support
 
@@ -183,4 +185,6 @@ Thanks to the following people who have contributed to this project:
 
 - [@jrauh](https://github.com/jrauh)
 - [@chandlerroth](https://github.com/chandlerroth)
+- [@bjrobertson](https://github.com/bjrobertson)
+- [@coryclubb](https://github.com/coryclubb)
 - [@nevren](https://github.com/Nevren)
