@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.7 · October 26, 2016
+**Added**
+* Added input groups for combining inputs and select menus
+
+*****
+
 ### 1.0.6 · October 18, 2016
 **Fixed**
 * Fixed broken example page styles

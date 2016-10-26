@@ -66,11 +66,27 @@ fieldset {
   .input--add-on {
     display: flex;
 
-    .add-on--field {
+    .add-on--field,
+    .add-on--before,
+    .add-on--after {
+      width: auto;
+      flex-grow: 1;
+    }
+
+    .add-on--field,
+    .add-on--before {
       border-radius: 5px 0 0 5px;
       border-right: none;
-      flex-grow: 1;
-      width: auto;
+    }
+
+    .add-on--after {
+      border-radius: 0 5px 5px 0;
+    }
+
+    select.add-on--after,
+    select.add-on--before {
+      padding-right: 2rem;
+      flex: none;
     }
 
     .add-on--button {

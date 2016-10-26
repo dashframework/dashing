@@ -247,11 +247,15 @@ $switch--off: $gray-250 !default; //Color of radio when checked and disabled
 
 /* Custom File Upload
   ================================================== */
-.file--custom {
-  @extend .button;
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
+.file-custom {
+  float: left;
+  .file-custom--button {
+    @extend .button;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+
   & ~ input[type="file"] { display: none; }
 }
 
