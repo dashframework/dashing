@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/example/css/example.css" rel="stylesheet">
+    <title>Navigation</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/example/scripts/scripts.js"></script>
+    <script src="/example/scripts/prism.js"></script>
+  </head>
+
+  <body class="example-body">
+    <div id="sidebarNavigation" class="example-sidebar"></div>
+    <nav class="app-menu expanded fixed">
+      <div class="app-context">
+        <div class="app-title">
+          <a href="example.html" class="button button--navigation"></a>
+          <span>With Back Link</span>
+        </div>
+      </div>
+      <ul class="app-navigation">
+        <li><a href="example-1.html" class="active">Back Link</a></li>
+        <li><a href="example-2.html">Breadcrumb</a></li>
+        <li><a href="example.html" target="blank">
+          New Tab
+          <i class="dashing-icon dashing-icon--new-tab flow-opposite"></i>
+        </a></li>
+      </ul>
+      <button class="button button--primary button--icon button--icon--main">
+        <i class="dashing-icon dashing-icon--add"></i>
+      </button>
+    </nav>
+
+    <div class="app-content">
+      <fieldset class="example-header no-margin--top">
+        <h2 class="float-left">Navigation with Back Button</h2>
+      </fieldset>
+<pre><code class="language-scss">//Include this variable in your theme file to change the color of your header
+$menu-color: $gray-100 !default;</code>
+</pre>
+<pre><code class="language-html">&lt;nav class="app-menu expanded fixed"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;a href="example.html" class="button button--navigation"&gt;&lt;/a&gt;
+      &lt;span&gt;With Back Link&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class="app-navigation"&gt;
+    &lt;li&gt;&lt;a href="example-1.html" class="active"&gt;Back Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="example-2.html"&gt;Breadcrumb&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="example.html" target="blank"&gt;
+      New Tab
+      &lt;i class="dashing-icon dashing-icon--new-tab flow-opposite"&gt;&lt;/i&gt;
+    &lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;button class="button button--primary button--icon button--icon--main"&gt;
+    &lt;i class="dashing-icon dashing-icon--add"&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/nav&gt;</code>
+</pre>
+    </div>
+  </body>
+</html>

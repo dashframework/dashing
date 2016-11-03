@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/example/css/example.css" rel="stylesheet">
+    <title>Footer</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/example/scripts/scripts.js"></script>
+    <script src="/example/scripts/prism.js"></script>
+  </head>
+
+  <body class="example-body">
+    <div id="sidebarNavigation" class="example-sidebar"></div>
+    <nav class="app-menu expanded example-menu--footer fixed">
+      <div class="app-context">
+        <div class="app-title">Dashing Footer</div>
+      </div>
+      <ul class="app-navigation">
+        <li><a href="#" class="active">Fixed Footer</a></li>
+        <li><a href="static-footer.html">Static Footer</a></li>
+      </ul>
+    </nav>
+
+    <div class="app-content">
+      <fieldset class="example-header no-margin--top">
+        <h2 class="float-left">Fixed Footer</h2>
+      </fieldset>
+<pre><code class="language-html">&lt;!-- Apply the fixed class to the app-footer element --&gt;
+&lt;footer class="app-footer fixed"&gt;
+  &lt;div class="row no-padding"&gt;
+    &lt;button class="float-left"&gt;Save&lt;/button&gt;
+    &lt;button class="button--green float-right"&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;</code>
+</pre>
+    </div>
+
+    <footer class="app-footer fixed example--footer">
+      <div class="row no-padding">
+        <button class="float-left">Save</button>
+        <button class="button--green float-right">Submit</button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.app-footer {
+  float: left;
+  background-color: rgba($white, .95);
+  border-top: 2px solid $gray-200;
+  box-shadow: 0 -2px 30px 0 rgba($gray-900c, .15);
+  max-width: 100%;
+  padding: 1rem;
+
+  &.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

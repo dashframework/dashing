@@ -1,0 +1,188 @@
+$example-menu-color:    #FAFAFA;
+
+@mixin button($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+  &:hover, &:focus {
+    background-color: darken($background-color, 10%);
+    color: $color;
+  }
+  &:active { background-color: darken($background-color, 15%); }
+  &:not(.button--transparent) {
+    .dashing-icon:before { color: #FFF; }
+  }
+}
+
+.example-sidebar {
+  background-color: #FEFEFE;
+  border-bottom: 2px solid #E0E0E0;
+  position: absolute;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  white-space: nowrap;
+  z-index: 100;
+
+  @media #{$tablet} {
+    border-right: 2px solid #E0E0E0;
+    height: 100%;
+    width: 10rem;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: inherit;
+    bottom: 0;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @media #{$tablet} { padding: 0.6rem 0; }
+
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+
+      @media #{$tablet} {
+        border-left: 4px solid transparent;
+        cursor: pointer;
+        display: block;
+      }
+
+      &:hover { background-color: rgba(#C4C8CD, .3); }
+      &.active {
+        border-color: #6A8DD3;
+        color: #6A8DD3;
+        font-weight: 600;
+      }
+
+      &.bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+
+      a {
+        color: inherit;
+        display: inline-block;
+        padding: 0.4rem;
+
+        @media #{$tablet} {
+          border-left: 4px solid transparent;
+          cursor: pointer;
+          display: block;
+          padding: 0.6rem 0.8rem;
+        }
+      }
+    }
+  }
+
+  & ~ .app-menu {
+    top: 2rem;
+    @media #{$tablet} {
+      top: 0;
+      left: 10rem;
+      width: calc(100% - 10rem);
+    }
+
+    //Adjusts main button icon to compensate for sidebar
+    .button--icon--main {
+      position: absolute;
+      right: 1rem;
+      bottom: -1.5rem;
+      @media screen and (min-width: 1300px) {
+        right:calc(50% - (1200px/2) - 0.4rem);
+      }
+    }
+  }
+}
+
+@function auto-color($color) {
+  @if (lightness($color) > 60) { @return #222; }
+  @else { @return #FFF; }
+}
+
+@mixin example-menu($example-menu-color) {
+  background-color: rgba($example-menu-color, 0.97);
+  .app-context {
+    .app-title {
+      color: auto-color($example-menu-color);
+      a:not(.button) {
+        color: auto-color($example-menu-color);
+        &:hover { color: rgba($example-menu-color, .60); }
+        //Use to apply a clickable style to your App Title
+        &.app-title--has-breadcrumb {
+          color: rgba(auto-color($example-menu-color), .50);
+          &:hover { color: rgba(auto-color($example-menu-color), 1); }
+        }
+      }
+      //Auto-colors the button and dashing-icon
+      .button--navigation {
+        @include button(darken($example-menu-color, 8%), auto-color($example-menu-color));
+        &:before { color: auto-color($example-menu-color) !important; }
+      }
+    }
+    ul.header-description { color: auto-color($example-menu-color); }
+  }
+
+  .app-navigation {
+    li {
+      &.active a,
+      a.active { color: auto-color($example-menu-color) !important; }
+      a {
+        color: rgba(auto-color($example-menu-color), .60);
+        &:hover { color: auto-color($example-menu-color); }
+      }
+    }
+  }
+  .dashing-icon--new-tab:before { color: rgba(auto-color($example-menu-color), .90); }
+  .dashing-icon--arrow-right:before { color: rgba(auto-color($example-menu-color), .50); }
+}
+
+.example-menu { @include example-menu(#EDEDED); }
+.example-menu--table { @include example-menu(#6C747D); }
+.example-menu--actions { @include example-menu(#375AA0); }
+.example-menu--card { @include example-menu(#754C82); }
+.example-menu--forms { @include example-menu(#2DB16C); }
+.example-menu--footer { @include example-menu(#2DB16C); }
+.example-menu--grid { @include example-menu(#5174BA); }
+.example-menu--icons { @include example-menu(#DD9331); }
+.example-menu--typography { @include example-menu(#41464B); }
+.example-menu--color { @include example-menu(#149853); }
+
+//Footer
+.example--footer {
+  &.fixed {
+    padding-left: 1rem;
+    left: 0;
+    @media #{$tablet} { left: 10rem; }
+  }
+}
+
+//INTRO PAGE
+.intro {
+  .hero {
+    padding: 2rem;
+    margin: 5rem 0 -1rem;
+  }
+
+  .note {
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    color: #555;
+    padding: 1rem;
+  }
+
+  .underline {
+    border-bottom: 2px solid #6E6E6E;
+    padding-bottom: 0.1rem;
+  }
+}
