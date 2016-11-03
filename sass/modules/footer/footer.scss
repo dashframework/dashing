@@ -5,6 +5,9 @@
   box-shadow: 0 -2px 30px 0 rgba($gray-900c, .15);
   max-width: 100%;
   padding: 1rem;
+  position: absolute;
+  left: 0;
+  width: 100%;
 
   &.fixed {
     position: fixed;

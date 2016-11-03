@@ -160,10 +160,19 @@ $example-menu-color:    #FAFAFA;
 
 //Footer
 .example--footer {
+  @media #{$tablet} {
+    position: absolute;
+    left: 10rem;
+    width: calc(100% - 10rem);
+  }
+  
   &.fixed {
     padding-left: 1rem;
     left: 0;
-    @media #{$tablet} { left: 10rem; }
+    @media #{$tablet} {
+      left: 10rem;
+      width: calc(100% - 10rem);
+    }
   }
 }
 

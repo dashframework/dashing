@@ -21,7 +21,7 @@ $tablet:        "all and (min-width: 40em)" !default;
 	background-color: #F2F2F2;
 	padding: 1rem;
 	margin: auto;
-	max-width: 1200px;
+	max-width: calc(1200px + 10rem);
 
 	@media #{$tablet} {
 		padding-left: 11rem;

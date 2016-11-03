@@ -1942,7 +1942,8 @@ fieldset .has-warning .message li {
   border-top: 2px solid #D4D4D4;
   box-shadow: 0 -2px 30px 0 rgba(36, 41, 44, 0.15);
   max-width: 100%;
-  padding: 1rem; }
+  padding: 1rem;
+  width: 100%; }
   .app-footer.fixed {
     position: fixed;
     bottom: 0;
@@ -2873,12 +2874,18 @@ fieldset .has-warning .message li {
   .example-menu--color .dashing-icon--arrow-right:before {
     color: rgba(255, 255, 255, 0.5); }
 
+@media all and (min-width: 40em) {
+  .example--footer {
+    position: absolute;
+    left: 10rem;
+    width: calc(100% - 10rem); } }
 .example--footer.fixed {
   padding-left: 1rem;
   left: 0; }
   @media all and (min-width: 40em) {
     .example--footer.fixed {
-      left: 10rem; } }
+      left: 10rem;
+      width: calc(100% - 10rem); } }
 
 .intro .hero {
   padding: 2rem;
@@ -2902,7 +2909,7 @@ fieldset .has-warning .message li {
   background-color: #F2F2F2;
   padding: 1rem;
   margin: auto;
-  max-width: 1200px; }
+  max-width: calc(1200px + 10rem); }
   @media all and (min-width: 40em) {
     .example-body {
       padding-left: 11rem; } }
