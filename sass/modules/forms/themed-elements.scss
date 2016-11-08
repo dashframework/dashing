@@ -98,7 +98,8 @@ $switch--off: $gray-250 !default; //Color of switch when off
     &:before { color: $checkbox--icon-disabled; }
   }
 
-  &.has-error {
+  &.has-error,
+  .has-error & {
     label:before { border: 2px solid $red-400; }
     input:hover ~ label {
       color: rgba($red, .6); //Text Hover
@@ -116,7 +117,8 @@ $switch--off: $gray-250 !default; //Color of switch when off
     input:focus ~ label:before { box-shadow: 0 0 0 2px $red-200; }
   }
 
-  &.has-warning {
+  &.has-warning,
+  .has-warning & {
     label:before { border: 2px solid $orange-400; }
     input:hover ~ label {
       color: rgba($orange, .6); //Text Hover
@@ -213,7 +215,8 @@ $switch--off: $gray-250 !default; //Color of switch when off
     &:before { color: $radio--icon-disabled; }
   }
 
-  &.has-error {
+  &.has-error,
+  .has-error & {
     label:before { border: 2px solid $red-400; }
     input:hover:not(:checked) ~ label {
       color: rgba($red, .6); //Text Hover
@@ -227,7 +230,8 @@ $switch--off: $gray-250 !default; //Color of switch when off
     input:focus ~ label:before { box-shadow: 0 0 0 2px $red-200; }
   }
 
-  &.has-warning {
+  &.has-warning,
+  .has-warning & {
     label:before { border: 2px solid $orange-400; }
     input:hover:not(:checked) ~ label {
       color: rgba($orange, .6); //Text Hover

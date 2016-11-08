@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.9 · November 8, 2016
+**Updated**
+* Updated error and warning styles of custom control elements
+
+*****
+
 ### 1.0.8 · November 8, 2016
 **Changed**
 * Changed location of example page template files
@@ -16,6 +22,8 @@ This changelog was started using [these conventions](http://keepachangelog.com/)
 **Updated**
 * Updated card example page
 * Updated styles of custom radio buttons & checkboxes
+
+*****
 
 ### 1.0.7 · October 26, 2016
 **Added**

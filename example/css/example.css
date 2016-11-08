@@ -932,29 +932,29 @@ fieldset .has-warning .message li {
 .checkbox--custom input[disabled]:active ~ label:before,
 .checkbox--custom input[disabled]:checked ~ label:before {
   color: #878787; }
-.checkbox--custom.has-error label:before {
+.checkbox--custom.has-error label:before, .has-error .checkbox--custom label:before {
   border: 2px solid #F76553; }
-.checkbox--custom.has-error input:hover ~ label {
+.checkbox--custom.has-error input:hover ~ label, .has-error .checkbox--custom input:hover ~ label {
   color: rgba(221, 75, 57, 0.6); }
-  .checkbox--custom.has-error input:hover ~ label:before {
+  .checkbox--custom.has-error input:hover ~ label:before, .has-error .checkbox--custom input:hover ~ label:before {
     color: #FF9886; }
-.checkbox--custom.has-error input:checked ~ label:before, .checkbox--custom.has-error input:active ~ label:before {
+.checkbox--custom.has-error input:checked ~ label:before, .checkbox--custom.has-error input:active ~ label:before, .has-error .checkbox--custom input:checked ~ label:before, .has-error .checkbox--custom input:active ~ label:before {
   color: #FFFFFF;
   background-color: #DD4B39;
   border: 2px solid #DD4B39; }
-.checkbox--custom.has-error input:focus ~ label:before {
+.checkbox--custom.has-error input:focus ~ label:before, .has-error .checkbox--custom input:focus ~ label:before {
   box-shadow: 0 0 0 2px #FF9886; }
-.checkbox--custom.has-warning label:before {
+.checkbox--custom.has-warning label:before, .has-warning .checkbox--custom label:before {
   border: 2px solid #F7AD4B; }
-.checkbox--custom.has-warning input:hover ~ label {
+.checkbox--custom.has-warning input:hover ~ label, .has-warning .checkbox--custom input:hover ~ label {
   color: rgba(221, 147, 49, 0.6); }
-  .checkbox--custom.has-warning input:hover ~ label:before {
+  .checkbox--custom.has-warning input:hover ~ label:before, .has-warning .checkbox--custom input:hover ~ label:before {
     color: #FFC664; }
-.checkbox--custom.has-warning input:checked ~ label:before, .checkbox--custom.has-warning input:active ~ label:before {
+.checkbox--custom.has-warning input:checked ~ label:before, .checkbox--custom.has-warning input:active ~ label:before, .has-warning .checkbox--custom input:checked ~ label:before, .has-warning .checkbox--custom input:active ~ label:before {
   color: #FFFFFF;
   background-color: #F7AD4B;
   border: 2px solid #F7AD4B; }
-.checkbox--custom.has-warning input:focus ~ label:before {
+.checkbox--custom.has-warning input:focus ~ label:before, .has-warning .checkbox--custom input:focus ~ label:before {
   box-shadow: 0 0 0 2px #FFE07E; }
 
 /* Custom Radio Buttons
@@ -1024,29 +1024,29 @@ fieldset .has-warning .message li {
   .radio--custom input[disabled]:active ~ label:before,
   .radio--custom input[disabled]:checked ~ label:before {
     color: #878787; }
-  .radio--custom.has-error label:before {
+  .radio--custom.has-error label:before, .has-error .radio--custom label:before {
     border: 2px solid #F76553; }
-  .radio--custom.has-error input:hover:not(:checked) ~ label {
+  .radio--custom.has-error input:hover:not(:checked) ~ label, .has-error .radio--custom input:hover:not(:checked) ~ label {
     color: rgba(221, 75, 57, 0.6); }
-    .radio--custom.has-error input:hover:not(:checked) ~ label:before {
+    .radio--custom.has-error input:hover:not(:checked) ~ label:before, .has-error .radio--custom input:hover:not(:checked) ~ label:before {
       color: #FF9886; }
-  .radio--custom.has-error input:checked ~ label:before {
+  .radio--custom.has-error input:checked ~ label:before, .has-error .radio--custom input:checked ~ label:before {
     background-color: #DD4B39;
     border-color: #DD4B39;
     color: #FFFFFF; }
-  .radio--custom.has-error input:focus ~ label:before {
+  .radio--custom.has-error input:focus ~ label:before, .has-error .radio--custom input:focus ~ label:before {
     box-shadow: 0 0 0 2px #FF9886; }
-  .radio--custom.has-warning label:before {
+  .radio--custom.has-warning label:before, .has-warning .radio--custom label:before {
     border: 2px solid #F7AD4B; }
-  .radio--custom.has-warning input:hover:not(:checked) ~ label {
+  .radio--custom.has-warning input:hover:not(:checked) ~ label, .has-warning .radio--custom input:hover:not(:checked) ~ label {
     color: rgba(221, 147, 49, 0.6); }
-    .radio--custom.has-warning input:hover:not(:checked) ~ label:before {
+    .radio--custom.has-warning input:hover:not(:checked) ~ label:before, .has-warning .radio--custom input:hover:not(:checked) ~ label:before {
       color: #FFC664; }
-  .radio--custom.has-warning input:checked ~ label:before {
+  .radio--custom.has-warning input:checked ~ label:before, .has-warning .radio--custom input:checked ~ label:before {
     background-color: #F7AD4B;
     border-color: #F7AD4B;
     color: #FFFFFF; }
-  .radio--custom.has-warning input:focus ~ label:before {
+  .radio--custom.has-warning input:focus ~ label:before, .has-warning .radio--custom input:focus ~ label:before {
     box-shadow: 0 0 0 2px #FFE07E; }
 
 /* Custom Range Slider
