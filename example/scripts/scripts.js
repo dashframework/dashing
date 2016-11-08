@@ -12,7 +12,7 @@
 // });
 
 $(function() {
-  $("#sidebarNavigation").load("../templates/sidebar.html", function() {
+  $("#sidebarNavigation").load("../sidebar.html", function() {
     var url = window.location.href;
     var findNameRegex = /(\w+)(\/\w+)[\w-]+\./;
     var urlString = findNameRegex.exec(url)[0];
