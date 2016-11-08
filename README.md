@@ -104,7 +104,7 @@ Every module contains an example file that allows you to preview the look and fe
 
 ##### [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base)
 
-* Color · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/colors) · [Example](http://dashframework.github.io/dashing/sass/base/colors/example/example.html)
+* Color · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/colors) · [Example](http://dashframework.github.io/dashing/example/templates/color/example.html)
 * Extendables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables)
 * Mixins · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins)
 * Utilities · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities)
@@ -112,14 +112,15 @@ Every module contains an example file that allows you to preview the look and fe
 
 ##### [Modules](https://github.com/dashframework/dashing/tree/develop/sass/modules)
 
-* Actions · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions) · [Example](http://dashframework.github.io/dashing/sass/modules/actions/example.html)
-* Card · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/card) · [Example](http://dashframework.github.io/dashing/sass/modules/card/example.html)
-* Forms · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms) · [Example](http://dashframework.github.io/dashing/sass/modules/forms/example.html)
-* Grid · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) · [Example](http://dashframework.github.io/dashing/sass/modules/grid/example.html)
-* Icons · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) · [Example](http://dashframework.github.io/dashing/sass/modules/icons/example.html)
-* Navigation · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) · [Example](http://dashframework.github.io/dashing/sass/modules/navigation/example/example-1.html)
-* Tables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/table) · [Example](http://dashframework.github.io/dashing/sass/modules/table/example/default.html)
-* Typography · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) · [Example](http://dashframework.github.io/dashing/sass/modules/typography/example.html)
+* Actions · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions) · [Example](http://dashframework.github.io/dashing/example/templates/actions/example.html)
+* Card · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/card) · [Example](http://dashframework.github.io/dashing/example/templates/card/example.html)
+* Forms · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms) · [Example](http://dashframework.github.io/dashing/example/templates/forms/example.html)
+* Grid · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) · [Example](http://dashframework.github.io/dashing/example/templates/grid/example.html)
+* Icons · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) · [Example](http://dashframework.github.io/dashing/example/templates/icons/example.html)
+* Navigation · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) · [Example](http://dashframework.github.io/dashing/example/templates/navigation/example.html)
+* Footer · [Example](http://dashframework.github.io/dashing/example/templates/footer/fixed-footer.html)
+* Tables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/table) · [Example](http://dashframework.github.io/dashing/example/templates/table/default.html)
+* Typography · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) · [Example](http://dashframework.github.io/dashing/example/templates/typography/example.html)
 
 *****
 *****
@@ -146,29 +147,27 @@ git clone https://github.com/dashframework/dashing.git
 
 3. Update the version number in the `bower.json` and `package.json` files (See [here](http://semver.org/) for versioning conventions)
 
-4. Update the Dashing Version number found on line 4 of the README.md
-
-5. Commit the changes made in the previous steps
+4. Commit the changes made in the previous steps
   ```bash
   git commit -m "[message]"
   ```
 
-6. Tag the commit with the appropriate version number
+5. Tag the commit with the appropriate version number
   ```bash
   git tag vX.Y.Z
   ```
 
-7. Push your committed changes
+6. Push your committed changes
   ```bash
   git push
   ```
 
-8. Push your new tag
+7. Push your new tag
   ```bash
   git push --tags
   ```
 
-9. Push your new npm package
+8. Push your new npm package
   ```bash
   npm publish
   ```

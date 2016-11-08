@@ -491,7 +491,8 @@ th {
 
 /* Core Extendables
   =========================================================================== */
-.row, .app-menu .app-navigation {
+.row, .checkbox--custom,
+.radio--custom, .app-menu .app-navigation {
   overflow: auto; }
 
 .app-menu .app-navigation {
@@ -777,13 +778,19 @@ fieldset {
       position: absolute;
       right: 2rem;
       bottom: calc(1rem * 2); }
+    fieldset.select--has-icon.has-error:after,
+    fieldset .select--has-icon.has-error:after {
+      color: #F76553; }
+    fieldset.select--has-icon.has-warning:after,
+    fieldset .select--has-icon.has-warning:after {
+      color: #F7AD4B; }
+    fieldset.select--has-icon.column--nested:last-of-type:after,
+    fieldset .select--has-icon.column--nested:last-of-type:after {
+      right: 0.5rem; }
     fieldset.select--has-icon.column--nested:after,
     fieldset .select--has-icon.column--nested:after {
       right: 1.5rem;
       bottom: 1.5rem; }
-    fieldset.select--has-icon.column--nested:last-of-type:after,
-    fieldset .select--has-icon.column--nested:last-of-type:after {
-      right: 0.5rem; }
     fieldset.select--has-icon select::-ms-expand,
     fieldset .select--has-icon select::-ms-expand {
       display: none; }
@@ -869,31 +876,39 @@ fieldset .has-warning .message li {
   opacity: 0;
   position: absolute;
   z-index: -1; }
+.checkbox--custom.inline,
+.radio--custom.inline {
+  display: inline-block;
+  margin-right: 1rem; }
 
-.checkbox--custom label:before {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  content: '\e835';
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 50% 50%;
-  background-color: #FFFFFF;
-  border: 2px solid #D4D4D4;
-  border-radius: 5px;
-  color: transparent;
-  display: block;
-  float: left;
-  font-family: 'dashing-icons';
-  font-size: 12px;
-  font-weight: 600;
-  height: 20px;
-  width: 20px;
-  margin-top: 1px;
-  margin-right: 0.5rem;
-  padding: 2px; }
+.checkbox--custom label {
+  margin: 0.3rem 0 0.3rem 2px; }
+  .checkbox--custom label:before {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    content: '\e835';
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #D4D4D4;
+    border-radius: 5px;
+    color: transparent;
+    display: block;
+    float: left;
+    font-family: 'dashing-icons';
+    font-size: 12px;
+    font-weight: 600;
+    height: 20px;
+    width: 20px;
+    margin-top: 2px;
+    margin-right: 0.61rem;
+    padding: 2px; }
+.checkbox--custom.inline label:before {
+  margin-right: 0.3rem; }
 .checkbox--custom input:hover ~ label {
   color: rgba(0, 0, 0, 0.6); }
   .checkbox--custom input:hover ~ label:before {
@@ -917,12 +932,36 @@ fieldset .has-warning .message li {
 .checkbox--custom input[disabled]:active ~ label:before,
 .checkbox--custom input[disabled]:checked ~ label:before {
   color: #878787; }
+.checkbox--custom.has-error label:before {
+  border: 2px solid #F76553; }
+.checkbox--custom.has-error input:hover ~ label {
+  color: rgba(221, 75, 57, 0.6); }
+  .checkbox--custom.has-error input:hover ~ label:before {
+    color: #FF9886; }
+.checkbox--custom.has-error input:checked ~ label:before, .checkbox--custom.has-error input:active ~ label:before {
+  color: #FFFFFF;
+  background-color: #DD4B39;
+  border: 2px solid #DD4B39; }
+.checkbox--custom.has-error input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #FF9886; }
+.checkbox--custom.has-warning label:before {
+  border: 2px solid #F7AD4B; }
+.checkbox--custom.has-warning input:hover ~ label {
+  color: rgba(221, 147, 49, 0.6); }
+  .checkbox--custom.has-warning input:hover ~ label:before {
+    color: #FFC664; }
+.checkbox--custom.has-warning input:checked ~ label:before, .checkbox--custom.has-warning input:active ~ label:before {
+  color: #FFFFFF;
+  background-color: #F7AD4B;
+  border: 2px solid #F7AD4B; }
+.checkbox--custom.has-warning input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #FFE07E; }
 
 /* Custom Radio Buttons
   ================================================== */
 .radio--custom {
   font-weight: normal; }
-  .radio--custom input:empty ~ label {
+  .radio--custom label {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -930,11 +969,11 @@ fieldset .has-warning .message li {
     user-select: none;
     cursor: pointer;
     float: left;
-    line-height: 12px;
-    margin-top: 0.3rem;
+    line-height: 1.3rem;
+    margin: 0.3rem 0 0.3rem 2px;
     position: relative;
-    text-indent: 2rem; }
-    .radio--custom input:empty ~ label:before {
+    text-indent: 1.8rem; }
+    .radio--custom label:before {
       border: 2px solid #D4D4D4;
       border-radius: 50px;
       content: '';
@@ -942,14 +981,16 @@ fieldset .has-warning .message li {
       font-size: 1.7rem;
       line-height: 12px;
       position: absolute;
-      top: 0;
+      top: 2px;
       bottom: 0;
       left: 0;
       height: 20px;
       width: 20px; }
       @media all and (min-width: 64em) {
-        .radio--custom input:empty ~ label:before {
+        .radio--custom label:before {
           font-size: 1.5rem; } }
+  .radio--custom.inline label {
+    text-indent: 1.5rem; }
 @-moz-document url-prefix() {
   .radio--custom input:empty ~ label:before {
     font-size: 1.6rem; }
@@ -983,6 +1024,30 @@ fieldset .has-warning .message li {
   .radio--custom input[disabled]:active ~ label:before,
   .radio--custom input[disabled]:checked ~ label:before {
     color: #878787; }
+  .radio--custom.has-error label:before {
+    border: 2px solid #F76553; }
+  .radio--custom.has-error input:hover:not(:checked) ~ label {
+    color: rgba(221, 75, 57, 0.6); }
+    .radio--custom.has-error input:hover:not(:checked) ~ label:before {
+      color: #FF9886; }
+  .radio--custom.has-error input:checked ~ label:before {
+    background-color: #DD4B39;
+    border-color: #DD4B39;
+    color: #FFFFFF; }
+  .radio--custom.has-error input:focus ~ label:before {
+    box-shadow: 0 0 0 2px #FF9886; }
+  .radio--custom.has-warning label:before {
+    border: 2px solid #F7AD4B; }
+  .radio--custom.has-warning input:hover:not(:checked) ~ label {
+    color: rgba(221, 147, 49, 0.6); }
+    .radio--custom.has-warning input:hover:not(:checked) ~ label:before {
+      color: #FFC664; }
+  .radio--custom.has-warning input:checked ~ label:before {
+    background-color: #F7AD4B;
+    border-color: #F7AD4B;
+    color: #FFFFFF; }
+  .radio--custom.has-warning input:focus ~ label:before {
+    box-shadow: 0 0 0 2px #FFE07E; }
 
 /* Custom Range Slider
   ================================================== */
@@ -1943,6 +2008,8 @@ fieldset .has-warning .message li {
   box-shadow: 0 -2px 30px 0 rgba(36, 41, 44, 0.15);
   max-width: 100%;
   padding: 1rem;
+  position: absolute;
+  left: 0;
   width: 100%; }
   .app-footer.fixed {
     position: fixed;
@@ -2925,7 +2992,7 @@ fieldset .has-warning .message li {
   border-radius: 5px;
   color: #222222;
   font-size: 0.9rem;
-  padding: 0.2rem 0.5rem; }
+  padding: 0.1rem 0.3rem; }
 
 .example-header {
   margin: 3rem auto 1rem; }

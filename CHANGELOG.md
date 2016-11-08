@@ -2,6 +2,21 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.8 · November 8, 2016
+**Changed**
+* Changed location of example page template files
+
+**Added**
+* Added inline styles to custom control elements
+* Added error and warning styles to custom control elements
+* Added footer styles and example page
+* Added inputs and controls pages to the forms example
+* Added error and warning styles to select menu icon
+
+**Updated**
+* Updated card example page
+* Updated styles of custom radio buttons & checkboxes
+
 ### 1.0.7 · October 26, 2016
 **Added**
 * Added input groups for combining inputs and select menus
