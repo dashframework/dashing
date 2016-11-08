@@ -115,7 +115,7 @@ $example-menu-color:    #FAFAFA;
   .app-context {
     .app-title {
       color: auto-color($example-menu-color);
-      a:not(.button) {
+      a {
         color: auto-color($example-menu-color);
         &:hover { color: rgba($example-menu-color, .60); }
         //Use to apply a clickable style to your App Title
@@ -165,7 +165,7 @@ $example-menu-color:    #FAFAFA;
     left: 10rem;
     width: calc(100% - 10rem);
   }
-  
+
   &.fixed {
     padding-left: 1rem;
     left: 0;

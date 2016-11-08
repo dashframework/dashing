@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.10 · November 8, 2016
+**Removed**
+* Removed breaking :not() selector from navigation breadcrumbing
+
+*****
+
 ### 1.0.9 · November 8, 2016
 **Updated**
 * Updated error and warning styles of custom control elements

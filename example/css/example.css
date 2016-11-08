@@ -1895,15 +1895,15 @@ fieldset .has-warning .message li {
       color: #222222;
       font-size: 1.25rem;
       font-weight: 600; }
-      .app-menu .app-context .app-title a:not(.button) {
+      .app-menu .app-context .app-title a {
         color: #222222; }
-        .app-menu .app-context .app-title a:not(.button):hover {
+        .app-menu .app-context .app-title a:hover {
           color: rgba(34, 34, 34, 0.6); }
-        .app-menu .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+        .app-menu .app-context .app-title a.app-title--has-breadcrumb {
           color: rgba(34, 34, 34, 0.5);
           cursor: pointer;
           transition: all 0.2s ease-in-out; }
-          .app-menu .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+          .app-menu .app-context .app-title a.app-title--has-breadcrumb:hover {
             color: #222222; }
       .app-menu .app-context .app-title .button--navigation {
         background-color: #d9d9d9;
@@ -2565,13 +2565,13 @@ fieldset .has-warning .message li {
   background-color: rgba(237, 237, 237, 0.97); }
   .example-menu .app-context .app-title {
     color: #222; }
-    .example-menu .app-context .app-title a:not(.button) {
+    .example-menu .app-context .app-title a {
       color: #222; }
-      .example-menu .app-context .app-title a:not(.button):hover {
+      .example-menu .app-context .app-title a:hover {
         color: rgba(237, 237, 237, 0.6); }
-      .example-menu .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(34, 34, 34, 0.5); }
-        .example-menu .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: #222222; }
     .example-menu .app-context .app-title .button--navigation {
       background-color: #d9d9d9;
@@ -2603,13 +2603,13 @@ fieldset .has-warning .message li {
   background-color: rgba(108, 116, 125, 0.97); }
   .example-menu--table .app-context .app-title {
     color: #FFF; }
-    .example-menu--table .app-context .app-title a:not(.button) {
+    .example-menu--table .app-context .app-title a {
       color: #FFF; }
-      .example-menu--table .app-context .app-title a:not(.button):hover {
+      .example-menu--table .app-context .app-title a:hover {
         color: rgba(108, 116, 125, 0.6); }
-      .example-menu--table .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--table .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--table .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--table .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--table .app-context .app-title .button--navigation {
       background-color: #596067;
@@ -2641,13 +2641,13 @@ fieldset .has-warning .message li {
   background-color: rgba(55, 90, 160, 0.97); }
   .example-menu--actions .app-context .app-title {
     color: #FFF; }
-    .example-menu--actions .app-context .app-title a:not(.button) {
+    .example-menu--actions .app-context .app-title a {
       color: #FFF; }
-      .example-menu--actions .app-context .app-title a:not(.button):hover {
+      .example-menu--actions .app-context .app-title a:hover {
         color: rgba(55, 90, 160, 0.6); }
-      .example-menu--actions .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--actions .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--actions .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--actions .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--actions .app-context .app-title .button--navigation {
       background-color: #2d4982;
@@ -2679,13 +2679,13 @@ fieldset .has-warning .message li {
   background-color: rgba(117, 76, 130, 0.97); }
   .example-menu--card .app-context .app-title {
     color: #FFF; }
-    .example-menu--card .app-context .app-title a:not(.button) {
+    .example-menu--card .app-context .app-title a {
       color: #FFF; }
-      .example-menu--card .app-context .app-title a:not(.button):hover {
+      .example-menu--card .app-context .app-title a:hover {
         color: rgba(117, 76, 130, 0.6); }
-      .example-menu--card .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--card .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--card .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--card .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--card .app-context .app-title .button--navigation {
       background-color: #5e3d68;
@@ -2717,13 +2717,13 @@ fieldset .has-warning .message li {
   background-color: rgba(45, 177, 108, 0.97); }
   .example-menu--forms .app-context .app-title {
     color: #FFF; }
-    .example-menu--forms .app-context .app-title a:not(.button) {
+    .example-menu--forms .app-context .app-title a {
       color: #FFF; }
-      .example-menu--forms .app-context .app-title a:not(.button):hover {
+      .example-menu--forms .app-context .app-title a:hover {
         color: rgba(45, 177, 108, 0.6); }
-      .example-menu--forms .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--forms .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--forms .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--forms .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--forms .app-context .app-title .button--navigation {
       background-color: #259058;
@@ -2755,13 +2755,13 @@ fieldset .has-warning .message li {
   background-color: rgba(45, 177, 108, 0.97); }
   .example-menu--footer .app-context .app-title {
     color: #FFF; }
-    .example-menu--footer .app-context .app-title a:not(.button) {
+    .example-menu--footer .app-context .app-title a {
       color: #FFF; }
-      .example-menu--footer .app-context .app-title a:not(.button):hover {
+      .example-menu--footer .app-context .app-title a:hover {
         color: rgba(45, 177, 108, 0.6); }
-      .example-menu--footer .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--footer .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--footer .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--footer .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--footer .app-context .app-title .button--navigation {
       background-color: #259058;
@@ -2793,13 +2793,13 @@ fieldset .has-warning .message li {
   background-color: rgba(81, 116, 186, 0.97); }
   .example-menu--grid .app-context .app-title {
     color: #FFF; }
-    .example-menu--grid .app-context .app-title a:not(.button) {
+    .example-menu--grid .app-context .app-title a {
       color: #FFF; }
-      .example-menu--grid .app-context .app-title a:not(.button):hover {
+      .example-menu--grid .app-context .app-title a:hover {
         color: rgba(81, 116, 186, 0.6); }
-      .example-menu--grid .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--grid .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--grid .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--grid .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--grid .app-context .app-title .button--navigation {
       background-color: #4061a2;
@@ -2831,13 +2831,13 @@ fieldset .has-warning .message li {
   background-color: rgba(221, 147, 49, 0.97); }
   .example-menu--icons .app-context .app-title {
     color: #FFF; }
-    .example-menu--icons .app-context .app-title a:not(.button) {
+    .example-menu--icons .app-context .app-title a {
       color: #FFF; }
-      .example-menu--icons .app-context .app-title a:not(.button):hover {
+      .example-menu--icons .app-context .app-title a:hover {
         color: rgba(221, 147, 49, 0.6); }
-      .example-menu--icons .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--icons .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--icons .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--icons .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--icons .app-context .app-title .button--navigation {
       background-color: #c57e20;
@@ -2869,13 +2869,13 @@ fieldset .has-warning .message li {
   background-color: rgba(65, 70, 75, 0.97); }
   .example-menu--typography .app-context .app-title {
     color: #FFF; }
-    .example-menu--typography .app-context .app-title a:not(.button) {
+    .example-menu--typography .app-context .app-title a {
       color: #FFF; }
-      .example-menu--typography .app-context .app-title a:not(.button):hover {
+      .example-menu--typography .app-context .app-title a:hover {
         color: rgba(65, 70, 75, 0.6); }
-      .example-menu--typography .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--typography .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--typography .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--typography .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--typography .app-context .app-title .button--navigation {
       background-color: #2e3235;
@@ -2907,13 +2907,13 @@ fieldset .has-warning .message li {
   background-color: rgba(20, 152, 83, 0.97); }
   .example-menu--color .app-context .app-title {
     color: #FFF; }
-    .example-menu--color .app-context .app-title a:not(.button) {
+    .example-menu--color .app-context .app-title a {
       color: #FFF; }
-      .example-menu--color .app-context .app-title a:not(.button):hover {
+      .example-menu--color .app-context .app-title a:hover {
         color: rgba(20, 152, 83, 0.6); }
-      .example-menu--color .app-context .app-title a:not(.button).app-title--has-breadcrumb {
+      .example-menu--color .app-context .app-title a.app-title--has-breadcrumb {
         color: rgba(255, 255, 255, 0.5); }
-        .example-menu--color .app-context .app-title a:not(.button).app-title--has-breadcrumb:hover {
+        .example-menu--color .app-context .app-title a.app-title--has-breadcrumb:hover {
           color: white; }
     .example-menu--color .app-context .app-title .button--navigation {
       background-color: #0f743f;

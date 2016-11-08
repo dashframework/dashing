@@ -29,7 +29,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
       font-size: $font-size-medium;
       font-weight: 600;
 
-      a:not(.button) {
+      a {
         color: auto-color($menu-color);
         &:hover { color: rgba(auto-color($menu-color), .60); }
 
