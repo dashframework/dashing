@@ -2002,10 +2002,10 @@ fieldset .has-warning .message li {
   padding-top: 7.05rem; }
 
 .app-footer {
-  float: left;
   background-color: rgba(255, 255, 255, 0.95);
   border-top: 2px solid #D4D4D4;
   box-shadow: 0 -2px 30px 0 rgba(36, 41, 44, 0.15);
+  float: left;
   max-width: 100%;
   padding: 1rem;
   position: absolute;
@@ -2016,6 +2016,8 @@ fieldset .has-warning .message li {
     bottom: 0;
     left: 0;
     right: 0; }
+  .app-footer .row.no-padding {
+    max-width: calc(1200px - 2rem); }
 
 @font-face {
   font-family: 'dashing-icons';
@@ -2224,6 +2226,69 @@ fieldset .has-warning .message li {
   .dashing-icon.dashing-icon--add-person:before, .app-menu .app-context .app-title .dashing-icon--add-person.button--navigation:before {
     content: '\e839'; }
 
+.dash-spinner {
+  animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -webkit-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid rgba(0, 0, 0, 0.15);
+  border-top: 6px solid black;
+  float: left;
+  height: 90px;
+  width: 90px;
+  top: calc(50% - (90px/2));
+  left: calc(50% - (90px/2)); }
+  .dash-spinner.small {
+    border-width: 3px;
+    height: 32px;
+    width: 32px;
+    top: calc(50% - (32px/2));
+    left: calc(50% - (32px/2)); }
+
+.button.has-spinner, .file-custom .has-spinner.file-custom--button {
+  pointer-events: none;
+  color: transparent;
+  position: relative; }
+  .button.has-spinner:hover, .file-custom .has-spinner.file-custom--button:hover, .button.has-spinner:active, .file-custom .has-spinner.file-custom--button:active, .button.has-spinner:focus, .file-custom .has-spinner.file-custom--button:focus {
+    color: transparent; }
+  .button.has-spinner:after, .file-custom .has-spinner.file-custom--button:after {
+    content: "";
+    animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -webkit-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    border-top: 3px solid white;
+    border-radius: 100%;
+    float: left;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: calc(50% - (24px/2));
+    left: calc(50% - (24px/2)); }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(359deg); } }
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg); }
+  to {
+    -o-transform: rotate(359deg); } }
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
 .example-flex {
   overflow: auto; }
   .example-flex .column-flex {

@@ -22,3 +22,10 @@ $(function() {
     $(className).addClass('active');
   });
 });
+
+
+$(document).ready(function(){
+    $("#hasSpinner").click(function(){
+        $(".button").addClass("has-spinner");
+    });
+});
