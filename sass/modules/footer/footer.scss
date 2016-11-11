@@ -1,8 +1,11 @@
+$footer-color: $white !default; //Override this variable to change the color of your footer
+$footer-border-color: $gray-200 !default; //Override this variable to change the color of the top border of your footer
+
 .app-footer {
-  float: left;
-  background-color: rgba($white, .95);
-  border-top: 2px solid $gray-200;
+  background-color: rgba($footer-color, .95);
+  border-top: 2px solid $footer-border-color;
   box-shadow: 0 -2px 30px 0 rgba($gray-900c, .15);
+  float: left;
   max-width: 100%;
   padding: 1rem;
   position: absolute;
@@ -14,5 +17,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+  }
+
+  .row.no-padding {
+    max-width: calc(1200px - 2rem);
   }
 }

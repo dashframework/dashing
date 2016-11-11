@@ -2,6 +2,22 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.12 · November 11, 2016
+**Updated**
+* Updated z-index of fixed footer
+
+**Added**
+* Added variable for footer color
+* Added spinner styles and example page
+
+*****
+
+### 1.0.11 · November 10, 2016
+**Changed**
+* Changed checkbox--custom class to only add margin to an inline label
+
+*****
+
 ### 1.0.10 · November 8, 2016
 **Removed**
 * Removed breaking :not() selector from navigation breadcrumbing

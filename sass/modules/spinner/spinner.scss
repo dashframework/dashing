@@ -1,0 +1,77 @@
+$spinner-color: #000 !default;
+
+$spinner-default: 90px; //5rem
+$spinner-small: 32px; //2rem
+$spinner-button: 24px; //1.2rem;
+
+.dash-spinner {
+  animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -webkit-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid rgba($spinner-color, .15);
+  border-top: 6px solid rgba($spinner-color, 1);
+  float: left;
+  height: $spinner-default;
+  width: $spinner-default;
+  top: calc(50% - (#{$spinner-default}/2));
+  left: calc(50% - (#{$spinner-default}/2));
+
+  &.small {
+    border-width: 3px;
+    height: $spinner-small;
+    width: $spinner-small;
+    top: calc(50% - (#{$spinner-small}/2));
+    left: calc(50% - (#{$spinner-small}/2));
+  }
+}
+
+.button.has-spinner {
+  pointer-events: none;
+  color: transparent;
+  position: relative;
+  &:hover,
+  &:active,
+  &:focus { color: transparent; }
+
+  &:after {
+    content: "";
+    animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -webkit-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+
+    border: 3px solid rgba($white, .15);
+    border-top: 3px solid rgba($white, 1);
+    border-radius: 100%;
+    float: left;
+    position: absolute;
+    height: $spinner-button;
+    width: $spinner-button;
+    top: calc(50% - (#{$spinner-button}/2));
+    left: calc(50% - (#{$spinner-button}/2));
+  }
+}
+
+@-webkit-keyframes rotation {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(359deg); }
+}
+
+@-moz-keyframes rotation {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(359deg); }
+}
+
+@-o-keyframes rotation {
+  from { -o-transform: rotate(0deg); }
+  to { -o-transform: rotate(359deg); }
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
