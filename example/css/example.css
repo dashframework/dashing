@@ -2226,6 +2226,14 @@ fieldset .has-warning .message li {
   .dashing-icon.dashing-icon--add-person:before, .app-menu .app-context .app-title .dashing-icon--add-person.button--navigation:before {
     content: '\e839'; }
 
+.overlay--spinner {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 10rem;
+  right: 0;
+  background-color: #f2f2f2; }
+
 .dash-spinner {
   animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
   -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
@@ -2246,6 +2254,8 @@ fieldset .has-warning .message li {
     width: 32px;
     top: calc(50% - (32px/2));
     left: calc(50% - (32px/2)); }
+  .overlay--spinner .dash-spinner {
+    position: absolute; }
 
 .button.has-spinner, .file-custom .has-spinner.file-custom--button {
   pointer-events: none;
@@ -3232,5 +3242,8 @@ pre.line-numbers > code {
   display: block;
   padding-right: 0.8em;
   text-align: right; }
+
+.prevent-scrolling {
+  overflow: hidden; }
 
 /*# sourceMappingURL=example.css.map */

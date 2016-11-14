@@ -4,6 +4,15 @@ $spinner-default: 90px; //5rem
 $spinner-small: 32px; //2rem
 $spinner-button: 24px; //1.2rem;
 
+.overlay--spinner {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 10rem;
+  right: 0;
+  background-color: rgb(242, 242, 242);
+}
+
 .dash-spinner {
   animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
   -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
@@ -27,6 +36,8 @@ $spinner-button: 24px; //1.2rem;
     top: calc(50% - (#{$spinner-small}/2));
     left: calc(50% - (#{$spinner-small}/2));
   }
+
+  .overlay--spinner & { position: absolute; }
 }
 
 .button.has-spinner {

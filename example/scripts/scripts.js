@@ -1,4 +1,4 @@
-// $(function() {
+ // $(function() {
 //   $("#sidebarNavigation").load("/example/templates/sidebar.html", function() {
 //     var url = window.location.href;
 //     var findNameRegex = /[\w-]+\./;
@@ -26,6 +26,20 @@ $(function() {
 
 $(document).ready(function(){
     $("#hasSpinner").click(function(){
-        $(".button").addClass("has-spinner");
+        $("#hasSpinner").addClass("has-spinner");
+    });
+});
+
+$(document).ready(function(){
+    $("#fullSpinner").click(function(){
+        $("body").addClass("prevent-scrolling");
+        var overlay = document.createElement("div");
+        var dashSpinner = document.createElement("div");
+        overlay.id = 'overlay'
+        dashSpinner.id = 'dashSpinner'
+        $(overlay).addClass("overlay--spinner");
+        $(dashSpinner).addClass("dash-spinner");
+        document.getElementById("body").appendChild(overlay);
+        document.getElementById("overlay").appendChild(dashSpinner);
     });
 });
