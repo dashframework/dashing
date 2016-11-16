@@ -2230,7 +2230,7 @@ fieldset .has-warning .message li {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 10rem;
+  left: 0;
   right: 0;
   background-color: #f2f2f2; }
 
@@ -3245,5 +3245,8 @@ pre.line-numbers > code {
 
 .prevent-scrolling {
   overflow: hidden; }
+
+.overlay--spinner {
+  left: 10rem; }
 
 /*# sourceMappingURL=example.css.map */

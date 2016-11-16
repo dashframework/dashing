@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.13 · November 16, 2016
+**Updated**
+* Updated overlay--spinner class
+
+*****
+
 ### 1.0.12 · November 11, 2016
 **Updated**
 * Updated z-index of fixed footer
