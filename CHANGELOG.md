@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.0.14 · November 21, 2016
+**Updated**
+* Updated overlay--spinner z-index
+
+*****
+
 ### 1.0.13 · November 16, 2016
 **Updated**
 * Updated overlay--spinner class

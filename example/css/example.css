@@ -2226,19 +2226,12 @@ fieldset .has-warning .message li {
   .dashing-icon.dashing-icon--add-person:before, .app-menu .app-context .app-title .dashing-icon--add-person.button--navigation:before {
     content: '\e839'; }
 
-.overlay--spinner {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f2f2f2; }
-
-.dash-spinner {
-  animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
-  -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
-  -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+.dash-spinner, .button.has-spinner:after, .file-custom .has-spinner.file-custom--button:after, .overlay.has-spinner:after {
   -webkit-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -ms-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+  animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
   position: relative;
   border-radius: 100%;
   border: 6px solid rgba(0, 0, 0, 0.15);
@@ -2248,14 +2241,12 @@ fieldset .has-warning .message li {
   width: 90px;
   top: calc(50% - (90px/2));
   left: calc(50% - (90px/2)); }
-  .dash-spinner.small {
+  .dash-spinner.small, .small.button.has-spinner:after, .file-custom .small.has-spinner.file-custom--button:after, .small.overlay.has-spinner:after {
     border-width: 3px;
     height: 32px;
     width: 32px;
     top: calc(50% - (32px/2));
     left: calc(50% - (32px/2)); }
-  .overlay--spinner .dash-spinner {
-    position: absolute; }
 
 .button.has-spinner, .file-custom .has-spinner.file-custom--button {
   pointer-events: none;
@@ -2265,19 +2256,36 @@ fieldset .has-warning .message li {
     color: transparent; }
   .button.has-spinner:after, .file-custom .has-spinner.file-custom--button:after {
     content: "";
-    animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
-    -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
-    -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
     -webkit-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
-    border: 3px solid rgba(255, 255, 255, 0.15);
-    border-top: 3px solid white;
-    border-radius: 100%;
-    float: left;
+    -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -ms-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-top-color: white;
     position: absolute;
     height: 24px;
     width: 24px;
     top: calc(50% - (24px/2));
     left: calc(50% - (24px/2)); }
+
+.overlay.has-spinner {
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
+  .overlay.has-spinner:after {
+    content: "";
+    -webkit-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -moz-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -ms-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    -o-animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    animation: rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82);
+    position: absolute; }
 
 @-webkit-keyframes rotation {
   from {
