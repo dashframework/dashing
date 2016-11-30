@@ -140,6 +140,10 @@ git clone https://github.com/dashframework/dashing.git
   sass --watch dashing.scss:dashing.css --style compressed
   ```
 
+  ```bash
+  sass -w example/sass/example.scss:example/css/example.css
+  ```
+
 2. Update the version number in the `bower.json` and `package.json` files (See [here](http://semver.org/) for versioning conventions)
 
 3. Stage the changes to be committed

@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.1 · November 30, 2016
+**Updated**
+* Navigation example page to account for header-description changes
+
+*****
+
 ### 1.1.0 · November 30, 2016
 **Changed**
 * Changed the styles for .header-description

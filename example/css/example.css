@@ -1936,12 +1936,15 @@ fieldset .has-warning .message li {
       padding: 0;
       list-style: none; }
       .app-menu .app-context ul.header-description li {
-        display: block;
+        text-align: right;
+        display: inline-block;
         font-weight: 600;
-        text-align: right; }
-        .app-menu .app-context ul.header-description li.header-description--label {
+        margin-right: 1rem; }
+        .app-menu .app-context ul.header-description li:last-of-type {
+          margin-right: 0; }
+        .app-menu .app-context ul.header-description li .header-description--label {
           font-size: 0.8rem; }
-        .app-menu .app-context ul.header-description li.header-description--content {
+        .app-menu .app-context ul.header-description li .header-description--content {
           font-size: 1.25rem; }
   .app-menu .app-navigation {
     max-width: 1200px;
