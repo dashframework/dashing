@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.0 · November 30, 2016
+**Changed**
+* Changed the styles for .header-description
+
+*****
+
 ### 1.0.14 · November 21, 2016
 **Updated**
 * Updated overlay--spinner z-index
