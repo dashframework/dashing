@@ -140,12 +140,12 @@ git clone https://github.com/dashframework/dashing.git
   sass --watch dashing.scss:dashing.css --style compressed
   ```
 
-2. Check the previously tagged versions
-  ```bash
-  git tag
-  ```
+2. Update the version number in the `bower.json` and `package.json` files (See [here](http://semver.org/) for versioning conventions)
 
-3. Update the version number in the `bower.json` and `package.json` files (See [here](http://semver.org/) for versioning conventions)
+3. Stage the changes to be committed
+  ```bash
+  git add .
+  ```
 
 4. Commit the changes made in the previous steps
   ```bash
@@ -183,7 +183,6 @@ Dashing is a product of Samaritan Ministries International.
 Thanks to the following people who have contributed to this project:
 
 - [@jrauh](https://github.com/jrauh)
-- [@chandlerroth](https://github.com/chandlerroth)
 - [@bjrobertson](https://github.com/bjrobertson)
 - [@coryclubb](https://github.com/coryclubb)
 - [@nevren](https://github.com/Nevren)
