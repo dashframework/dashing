@@ -25,30 +25,7 @@ $spinner-button: 24px; //1.2rem;
   }
 }
 
-.button.has-spinner {
-  pointer-events: none;
-  color: transparent;
-  position: relative;
-  &:hover,
-  &:active,
-  &:focus { color: transparent; }
-
-  &:after {
-    content: "";
-    @include animation(rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82));
-    @extend .dash-spinner;
-    border-width: 3px;
-    border-color: rgba($white, .15);
-    border-top-color: rgba($white, 1);
-    position: absolute;
-    height: $spinner-button;
-    width: $spinner-button;
-    top: calc(50% - (#{$spinner-button}/2));
-    left: calc(50% - (#{$spinner-button}/2));
-  }
-}
-
-.overlay.has-spinner {
+.has-spinner {
   background-color: rgb(242, 242, 242);
   position: fixed;
   top: 0;
@@ -59,9 +36,30 @@ $spinner-button: 24px; //1.2rem;
 
   &:after {
     content: "";
-    @include animation(rotation 1250ms infinite cubic-bezier(0.75, 0.28, 0.44, 0.82));
     @extend .dash-spinner;
     position: absolute;
+  }
+}
+
+.button.has-spinner {
+  pointer-events: none;
+  color: transparent;
+  position: relative;
+  &:hover,
+  &:active,
+  &:focus { color: transparent; }
+
+  &:after {
+    content: "";
+    @extend .dash-spinner;
+    border-width: 3px;
+    border-color: rgba($white, .15);
+    border-top-color: rgba($white, 1);
+    position: absolute;
+    height: $spinner-button;
+    width: $spinner-button;
+    top: calc(50% - (#{$spinner-button}/2));
+    left: calc(50% - (#{$spinner-button}/2));
   }
 }
 

@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.2 · December 5, 2016
+**Updated**
+* Updated header-description to be display block
+
+*****
+
 ### 1.1.1 · November 30, 2016
 **Updated**
 * Navigation example page to account for header-description changes

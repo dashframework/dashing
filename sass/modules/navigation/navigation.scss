@@ -80,6 +80,8 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
         &:last-of-type { margin-right: 0; }
 
+        .header-description--label,
+        .header-description--content { display: block; }
         .header-description--label { font-size: $font-size-small; }
         .header-description--content { font-size: $font-size-medium; }
       }
