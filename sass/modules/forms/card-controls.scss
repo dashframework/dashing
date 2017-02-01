@@ -1,0 +1,52 @@
+$card-checkbox--active: $blue !default; //Color of checkbox and card when checked
+$card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbox when focused
+
+.checkbox--custom,
+.radio--custom {
+  display: inline;
+  margin-right: 0.5rem;
+
+  .card {
+    @extend .inline;
+    float: none;
+    margin: 0;
+    padding: 1rem;
+
+    //disabled card
+    &.disabled {
+      background-color: $gray-200;
+      border-color: $gray-200;
+      pointer-events: none;
+      opacity: 0.4;
+      color: $gray-700;
+    }
+  }
+
+  input:focus ~ label:before { box-shadow: none; }
+  input:focus ~ label { box-shadow: 0 0 0 2px $card-checkbox--focus; }
+  input:checked ~ label, input:active ~ label {
+    color: $card-checkbox--active;
+    border: 2px solid $card-checkbox--active;
+  }
+
+  //disabled radio button
+  input[disabled] ~ label,
+  input[disabled]:active ~ label,
+  input[disabled]:checked ~ label {
+    cursor: default;
+    pointer-events: none;
+    &:before {
+      border-color: $gray-400 !important;
+      background-color: $gray-200 !important;
+    }
+  }
+}
+
+.radio--custom {
+  .card {
+    &:before {
+      top: 1.05rem;
+      left: 1rem;
+    }
+  }
+}
