@@ -491,8 +491,9 @@ th {
 
 /* Core Extendables
   =========================================================================== */
-.row, .checkbox--custom,
-.radio--custom, .app-menu .app-navigation {
+.row, .checkbox--custom, .checkbox-card,
+.radio--custom,
+.radio-card, .app-menu .app-navigation {
   overflow: auto; }
 
 .app-menu .app-navigation {
@@ -687,9 +688,9 @@ fieldset {
     font-weight: 600;
     margin-bottom: 0.3rem;
     text-align: left; }
-    fieldset label.inline, fieldset .checkbox--custom label.card, .checkbox--custom fieldset label.card,
-    fieldset .radio--custom label.card,
-    .radio--custom fieldset label.card {
+    fieldset label.inline, fieldset .checkbox-card label.card, .checkbox-card fieldset label.card,
+    fieldset .radio-card label.card,
+    .radio-card fieldset label.card {
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -873,20 +874,25 @@ fieldset .has-warning .message li {
   =========================================================================== */
 /* Custom Checkboxes
   ================================================== */
-.checkbox--custom input,
-.radio--custom input {
+.checkbox--custom input, .checkbox-card input,
+.radio--custom input,
+.radio-card input {
   opacity: 0;
   position: absolute;
   z-index: -1; }
-.checkbox--custom.inline, .checkbox--custom .checkbox--custom.card,
-.radio--custom .checkbox--custom.card,
+.checkbox--custom.inline, .inline.checkbox-card, .checkbox-card .checkbox-card.card,
+.radio-card .checkbox-card.card, .checkbox-card .checkbox--custom.card,
+.radio-card .checkbox--custom.card,
 .radio--custom.inline,
-.checkbox--custom .radio--custom.card,
-.radio--custom .radio--custom.card {
+.inline.radio-card,
+.checkbox-card .radio-card.card,
+.radio-card .radio-card.card,
+.checkbox-card .radio--custom.card,
+.radio-card .radio--custom.card {
   display: inline-block;
   margin-right: 1rem; }
 
-.checkbox--custom label:before {
+.checkbox--custom label:before, .checkbox-card label:before {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -910,64 +916,72 @@ fieldset .has-warning .message li {
   margin-top: 2px;
   margin-right: 0.61rem;
   padding: 2px; }
-.checkbox--custom label.inline, .checkbox--custom label.card {
+.checkbox--custom label.inline, .checkbox-card label.inline, .checkbox-card label.card,
+.checkbox--custom .radio-card label.card,
+.radio-card .checkbox--custom label.card {
   margin: 0.3rem 0 0.3rem 2px; }
-.checkbox--custom.inline label:before, .checkbox--custom .checkbox--custom.card label:before,
-.radio--custom .checkbox--custom.card label:before {
+.checkbox--custom.inline label:before, .inline.checkbox-card label:before, .checkbox-card .checkbox-card.card label:before,
+.radio-card .checkbox-card.card label:before, .checkbox-card .checkbox--custom.card label:before,
+.radio-card .checkbox--custom.card label:before {
   margin-right: 0.3rem; }
-.checkbox--custom input:hover ~ label {
+.checkbox--custom input:hover ~ label, .checkbox-card input:hover ~ label {
   color: rgba(0, 0, 0, 0.6); }
-  .checkbox--custom input:hover ~ label:before {
+  .checkbox--custom input:hover ~ label:before, .checkbox-card input:hover ~ label:before {
     color: #D4D4D4; }
-.checkbox--custom input:checked ~ label:before, .checkbox--custom input:active ~ label:before {
+.checkbox--custom input:checked ~ label:before, .checkbox-card input:checked ~ label:before, .checkbox--custom input:active ~ label:before, .checkbox-card input:active ~ label:before {
   color: #FFFFFF;
   background-color: #6A8DD3;
   border: 2px solid #6A8DD3; }
-.checkbox--custom input:focus ~ label:before {
+.checkbox--custom input:focus ~ label:before, .checkbox-card input:focus ~ label:before {
   box-shadow: 0 0 0 2px #9DC0FF; }
-.checkbox--custom input[disabled] ~ label,
+.checkbox--custom input[disabled] ~ label, .checkbox-card input[disabled] ~ label,
 .checkbox--custom input[disabled]:active ~ label,
-.checkbox--custom input[disabled]:checked ~ label {
+.checkbox-card input[disabled]:active ~ label,
+.checkbox--custom input[disabled]:checked ~ label,
+.checkbox-card input[disabled]:checked ~ label {
   cursor: default;
   pointer-events: none; }
-  .checkbox--custom input[disabled] ~ label:before,
+  .checkbox--custom input[disabled] ~ label:before, .checkbox-card input[disabled] ~ label:before,
   .checkbox--custom input[disabled]:active ~ label:before,
-  .checkbox--custom input[disabled]:checked ~ label:before {
+  .checkbox-card input[disabled]:active ~ label:before,
+  .checkbox--custom input[disabled]:checked ~ label:before,
+  .checkbox-card input[disabled]:checked ~ label:before {
     border-color: #E0E0E0;
     background-color: #E0E0E0; }
-.checkbox--custom input[disabled]:active ~ label:before,
-.checkbox--custom input[disabled]:checked ~ label:before {
+.checkbox--custom input[disabled]:active ~ label:before, .checkbox-card input[disabled]:active ~ label:before,
+.checkbox--custom input[disabled]:checked ~ label:before,
+.checkbox-card input[disabled]:checked ~ label:before {
   color: #878787; }
-.checkbox--custom.has-error label:before, .has-error .checkbox--custom label:before {
+.checkbox--custom.has-error label:before, .has-error.checkbox-card label:before, .has-error .checkbox--custom label:before, .has-error .checkbox-card label:before {
   border: 2px solid #F76553; }
-.checkbox--custom.has-error input:hover ~ label, .has-error .checkbox--custom input:hover ~ label {
+.checkbox--custom.has-error input:hover ~ label, .has-error.checkbox-card input:hover ~ label, .has-error .checkbox--custom input:hover ~ label, .has-error .checkbox-card input:hover ~ label {
   color: rgba(221, 75, 57, 0.6); }
-  .checkbox--custom.has-error input:hover ~ label:before, .has-error .checkbox--custom input:hover ~ label:before {
+  .checkbox--custom.has-error input:hover ~ label:before, .has-error.checkbox-card input:hover ~ label:before, .has-error .checkbox--custom input:hover ~ label:before, .has-error .checkbox-card input:hover ~ label:before {
     color: #FF9886; }
-.checkbox--custom.has-error input:checked ~ label:before, .checkbox--custom.has-error input:active ~ label:before, .has-error .checkbox--custom input:checked ~ label:before, .has-error .checkbox--custom input:active ~ label:before {
+.checkbox--custom.has-error input:checked ~ label:before, .has-error.checkbox-card input:checked ~ label:before, .checkbox--custom.has-error input:active ~ label:before, .has-error.checkbox-card input:active ~ label:before, .has-error .checkbox--custom input:checked ~ label:before, .has-error .checkbox-card input:checked ~ label:before, .has-error .checkbox--custom input:active ~ label:before, .has-error .checkbox-card input:active ~ label:before {
   color: #FFFFFF;
   background-color: #DD4B39;
   border: 2px solid #DD4B39; }
-.checkbox--custom.has-error input:focus ~ label:before, .has-error .checkbox--custom input:focus ~ label:before {
+.checkbox--custom.has-error input:focus ~ label:before, .has-error.checkbox-card input:focus ~ label:before, .has-error .checkbox--custom input:focus ~ label:before, .has-error .checkbox-card input:focus ~ label:before {
   box-shadow: 0 0 0 2px #FF9886; }
-.checkbox--custom.has-warning label:before, .has-warning .checkbox--custom label:before {
+.checkbox--custom.has-warning label:before, .has-warning.checkbox-card label:before, .has-warning .checkbox--custom label:before, .has-warning .checkbox-card label:before {
   border: 2px solid #F7AD4B; }
-.checkbox--custom.has-warning input:hover ~ label, .has-warning .checkbox--custom input:hover ~ label {
+.checkbox--custom.has-warning input:hover ~ label, .has-warning.checkbox-card input:hover ~ label, .has-warning .checkbox--custom input:hover ~ label, .has-warning .checkbox-card input:hover ~ label {
   color: rgba(221, 147, 49, 0.6); }
-  .checkbox--custom.has-warning input:hover ~ label:before, .has-warning .checkbox--custom input:hover ~ label:before {
+  .checkbox--custom.has-warning input:hover ~ label:before, .has-warning.checkbox-card input:hover ~ label:before, .has-warning .checkbox--custom input:hover ~ label:before, .has-warning .checkbox-card input:hover ~ label:before {
     color: #FFC664; }
-.checkbox--custom.has-warning input:checked ~ label:before, .checkbox--custom.has-warning input:active ~ label:before, .has-warning .checkbox--custom input:checked ~ label:before, .has-warning .checkbox--custom input:active ~ label:before {
+.checkbox--custom.has-warning input:checked ~ label:before, .has-warning.checkbox-card input:checked ~ label:before, .checkbox--custom.has-warning input:active ~ label:before, .has-warning.checkbox-card input:active ~ label:before, .has-warning .checkbox--custom input:checked ~ label:before, .has-warning .checkbox-card input:checked ~ label:before, .has-warning .checkbox--custom input:active ~ label:before, .has-warning .checkbox-card input:active ~ label:before {
   color: #FFFFFF;
   background-color: #F7AD4B;
   border: 2px solid #F7AD4B; }
-.checkbox--custom.has-warning input:focus ~ label:before, .has-warning .checkbox--custom input:focus ~ label:before {
+.checkbox--custom.has-warning input:focus ~ label:before, .has-warning.checkbox-card input:focus ~ label:before, .has-warning .checkbox--custom input:focus ~ label:before, .has-warning .checkbox-card input:focus ~ label:before {
   box-shadow: 0 0 0 2px #FFE07E; }
 
 /* Custom Radio Buttons
   ================================================== */
-.radio--custom {
+.radio--custom, .radio-card {
   font-weight: normal; }
-  .radio--custom label {
+  .radio--custom label, .radio-card label {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -979,7 +993,7 @@ fieldset .has-warning .message li {
     margin: 0.3rem 0 0.3rem 2px;
     position: relative;
     text-indent: 1.8rem; }
-    .radio--custom label:before {
+    .radio--custom label:before, .radio-card label:before {
       border: 2px solid #D4D4D4;
       border-radius: 50px;
       content: '';
@@ -993,67 +1007,73 @@ fieldset .has-warning .message li {
       height: 20px;
       width: 20px; }
       @media all and (min-width: 64em) {
-        .radio--custom label:before {
+        .radio--custom label:before, .radio-card label:before {
           font-size: 1.5rem; } }
-  .radio--custom.inline label, .checkbox--custom .radio--custom.card label,
-  .radio--custom .radio--custom.card label {
+  .radio--custom.inline label, .inline.radio-card label, .checkbox-card .radio-card.card label,
+  .radio-card .radio-card.card label, .checkbox-card .radio--custom.card label,
+  .radio-card .radio--custom.card label {
     text-indent: 1.5rem; }
 @-moz-document url-prefix() {
-  .radio--custom input:empty ~ label:before {
+  .radio--custom input:empty ~ label:before, .radio-card input:empty ~ label:before {
     font-size: 1.6rem; }
     @media all and (min-width: 64em) {
-      .radio--custom input:empty ~ label:before {
+      .radio--custom input:empty ~ label:before, .radio-card input:empty ~ label:before {
         font-size: 1.5rem; } } }
-  .radio--custom input:hover:not(:checked) ~ label {
+  .radio--custom input:hover:not(:checked) ~ label, .radio-card input:hover:not(:checked) ~ label {
     color: rgba(0, 0, 0, 0.6); }
-    .radio--custom input:hover:not(:checked) ~ label:before {
+    .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before {
       color: #D4D4D4;
       content: '•';
       text-indent: 4px; }
-  .radio--custom input:checked ~ label:before {
+  .radio--custom input:checked ~ label:before, .radio-card input:checked ~ label:before {
     background-color: #6A8DD3;
     border-color: #6A8DD3;
     color: #FFFFFF;
     content: '•';
     text-indent: 4px; }
-  .radio--custom input:focus ~ label:before {
+  .radio--custom input:focus ~ label:before, .radio-card input:focus ~ label:before {
     box-shadow: 0 0 0 2px #9DC0FF; }
-  .radio--custom input[disabled] ~ label,
+  .radio--custom input[disabled] ~ label, .radio-card input[disabled] ~ label,
   .radio--custom input[disabled]:active ~ label,
-  .radio--custom input[disabled]:checked ~ label {
+  .radio-card input[disabled]:active ~ label,
+  .radio--custom input[disabled]:checked ~ label,
+  .radio-card input[disabled]:checked ~ label {
     cursor: default;
     pointer-events: none; }
-    .radio--custom input[disabled] ~ label:before,
+    .radio--custom input[disabled] ~ label:before, .radio-card input[disabled] ~ label:before,
     .radio--custom input[disabled]:active ~ label:before,
-    .radio--custom input[disabled]:checked ~ label:before {
+    .radio-card input[disabled]:active ~ label:before,
+    .radio--custom input[disabled]:checked ~ label:before,
+    .radio-card input[disabled]:checked ~ label:before {
       border-color: #E0E0E0;
       background-color: #E0E0E0; }
-  .radio--custom input[disabled]:active ~ label:before,
-  .radio--custom input[disabled]:checked ~ label:before {
+  .radio--custom input[disabled]:active ~ label:before, .radio-card input[disabled]:active ~ label:before,
+  .radio--custom input[disabled]:checked ~ label:before,
+  .radio-card input[disabled]:checked ~ label:before {
     color: #878787; }
-  .radio--custom.has-error label:before, .has-error .radio--custom label:before {
+  .radio--custom.has-error label:before, .has-error.radio-card label:before, .has-error .radio--custom label:before, .has-error .radio-card label:before {
     border: 2px solid #F76553; }
-  .radio--custom.has-error input:hover:not(:checked) ~ label, .has-error .radio--custom input:hover:not(:checked) ~ label {
+  .radio--custom.has-error input:hover:not(:checked) ~ label, .has-error.radio-card input:hover:not(:checked) ~ label, .has-error .radio--custom input:hover:not(:checked) ~ label, .has-error .radio-card input:hover:not(:checked) ~ label {
     color: rgba(221, 75, 57, 0.6); }
-    .radio--custom.has-error input:hover:not(:checked) ~ label:before, .has-error .radio--custom input:hover:not(:checked) ~ label:before {
+    .radio--custom.has-error input:hover:not(:checked) ~ label:before, .has-error.radio-card input:hover:not(:checked) ~ label:before, .has-error .radio--custom input:hover:not(:checked) ~ label:before, .has-error .radio-card input:hover:not(:checked) ~ label:before {
       color: #FF9886; }
-  .radio--custom.has-error input:checked ~ label:before, .has-error .radio--custom input:checked ~ label:before {
+  .radio--custom.has-error input:checked ~ label:before, .has-error.radio-card input:checked ~ label:before, .has-error .radio--custom input:checked ~ label:before, .has-error .radio-card input:checked ~ label:before {
     background-color: #DD4B39;
     border-color: #DD4B39;
     color: #FFFFFF; }
-  .radio--custom.has-error input:focus ~ label:before, .has-error .radio--custom input:focus ~ label:before {
+  .radio--custom.has-error input:focus ~ label:before, .has-error.radio-card input:focus ~ label:before, .has-error .radio--custom input:focus ~ label:before, .has-error .radio-card input:focus ~ label:before {
     box-shadow: 0 0 0 2px #FF9886; }
-  .radio--custom.has-warning label:before, .has-warning .radio--custom label:before {
+  .radio--custom.has-warning label:before, .has-warning.radio-card label:before, .has-warning .radio--custom label:before, .has-warning .radio-card label:before {
     border: 2px solid #F7AD4B; }
-  .radio--custom.has-warning input:hover:not(:checked) ~ label, .has-warning .radio--custom input:hover:not(:checked) ~ label {
+  .radio--custom.has-warning input:hover:not(:checked) ~ label, .has-warning.radio-card input:hover:not(:checked) ~ label, .has-warning .radio--custom input:hover:not(:checked) ~ label, .has-warning .radio-card input:hover:not(:checked) ~ label {
     color: rgba(221, 147, 49, 0.6); }
-    .radio--custom.has-warning input:hover:not(:checked) ~ label:before, .has-warning .radio--custom input:hover:not(:checked) ~ label:before {
+    .radio--custom.has-warning input:hover:not(:checked) ~ label:before, .has-warning.radio-card input:hover:not(:checked) ~ label:before, .has-warning .radio--custom input:hover:not(:checked) ~ label:before, .has-warning .radio-card input:hover:not(:checked) ~ label:before {
       color: #FFC664; }
-  .radio--custom.has-warning input:checked ~ label:before, .has-warning .radio--custom input:checked ~ label:before {
+  .radio--custom.has-warning input:checked ~ label:before, .has-warning.radio-card input:checked ~ label:before, .has-warning .radio--custom input:checked ~ label:before, .has-warning .radio-card input:checked ~ label:before {
     background-color: #F7AD4B;
     border-color: #F7AD4B;
     color: #FFFFFF; }
-  .radio--custom.has-warning input:focus ~ label:before, .has-warning .radio--custom input:focus ~ label:before {
+  .radio--custom.has-warning input:focus ~ label:before, .has-warning.radio-card input:focus ~ label:before, .has-warning .radio--custom input:focus ~ label:before, .has-warning .radio-card input:focus ~ label:before {
     box-shadow: 0 0 0 2px #FFE07E; }
 
 /* Custom Range Slider
@@ -1208,51 +1228,51 @@ fieldset .has-warning .message li {
   .switch--label .switch--handle {
     right: 0; }
 
-.checkbox--custom,
-.radio--custom {
+.checkbox-card,
+.radio-card {
   display: inline;
   margin-right: 0.5rem; }
-  .checkbox--custom .card,
-  .radio--custom .card {
+  .checkbox-card .card,
+  .radio-card .card {
     float: none;
     margin: 0;
     padding: 1rem; }
-    .checkbox--custom .card.disabled,
-    .radio--custom .card.disabled {
+    .checkbox-card .card.disabled,
+    .radio-card .card.disabled {
       background-color: #D4D4D4;
       border-color: #D4D4D4;
       pointer-events: none;
       opacity: 0.4;
       color: #555555; }
-  .checkbox--custom input:focus ~ label:before,
-  .radio--custom input:focus ~ label:before {
+  .checkbox-card input:focus ~ label:before,
+  .radio-card input:focus ~ label:before {
     box-shadow: none; }
-  .checkbox--custom input:focus ~ label,
-  .radio--custom input:focus ~ label {
+  .checkbox-card input:focus ~ label,
+  .radio-card input:focus ~ label {
     box-shadow: 0 0 0 2px #9DC0FF; }
-  .checkbox--custom input:checked ~ label, .checkbox--custom input:active ~ label,
-  .radio--custom input:checked ~ label,
-  .radio--custom input:active ~ label {
+  .checkbox-card input:checked ~ label, .checkbox-card input:active ~ label,
+  .radio-card input:checked ~ label,
+  .radio-card input:active ~ label {
     color: #6A8DD3;
     border: 2px solid #6A8DD3; }
-  .checkbox--custom input[disabled] ~ label,
-  .checkbox--custom input[disabled]:active ~ label,
-  .checkbox--custom input[disabled]:checked ~ label,
-  .radio--custom input[disabled] ~ label,
-  .radio--custom input[disabled]:active ~ label,
-  .radio--custom input[disabled]:checked ~ label {
+  .checkbox-card input[disabled] ~ label,
+  .checkbox-card input[disabled]:active ~ label,
+  .checkbox-card input[disabled]:checked ~ label,
+  .radio-card input[disabled] ~ label,
+  .radio-card input[disabled]:active ~ label,
+  .radio-card input[disabled]:checked ~ label {
     cursor: default;
     pointer-events: none; }
-    .checkbox--custom input[disabled] ~ label:before,
-    .checkbox--custom input[disabled]:active ~ label:before,
-    .checkbox--custom input[disabled]:checked ~ label:before,
-    .radio--custom input[disabled] ~ label:before,
-    .radio--custom input[disabled]:active ~ label:before,
-    .radio--custom input[disabled]:checked ~ label:before {
+    .checkbox-card input[disabled] ~ label:before,
+    .checkbox-card input[disabled]:active ~ label:before,
+    .checkbox-card input[disabled]:checked ~ label:before,
+    .radio-card input[disabled] ~ label:before,
+    .radio-card input[disabled]:active ~ label:before,
+    .radio-card input[disabled]:checked ~ label:before {
       border-color: #A1A1A1 !important;
       background-color: #D4D4D4 !important; }
 
-.radio--custom .card:before {
+.radio--custom .card:before, .radio-card .card:before {
   top: 1.05rem;
   left: 1rem; }
 

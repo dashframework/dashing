@@ -1,8 +1,11 @@
 $card-checkbox--active: $blue !default; //Color of checkbox and card when checked
 $card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbox when focused
 
-.checkbox--custom,
-.radio--custom {
+.checkbox-card { @extend .checkbox--custom; }
+.radio-card { @extend .radio--custom; }
+
+.checkbox-card,
+.radio-card {
   display: inline;
   margin-right: 0.5rem;
 
