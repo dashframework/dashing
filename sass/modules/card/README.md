@@ -1,5 +1,5 @@
 # Dashing Cards
-A card can be used to contain information such as text, buttons, links, and forms. View an [example](http://dashframework.github.io/dashing/sass/modules/card/example.html) of Dashing cards.
+A card can be used to contain information such as text, buttons, links, and forms. View an [example](http://dashframework.github.io/dashing//example/templates/card/example.html) of Dashing cards.
 
 ## Card Configurations
 | Card class               | Effect               | Notes               |

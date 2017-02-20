@@ -83,6 +83,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   //transparentize(white, 1) used instead of transparent because "darken" requires an rgb color value
   &.button--transparent {
     @include button($background-color: transparentize(white, 1), $color: $blue);
+    @include transparent--button($color: $blue);
     &:not(.button--icon) { //Retains button--icon padding
       padding-left: 0;
       padding-right: 0;

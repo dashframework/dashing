@@ -1,6 +1,6 @@
 # Dashing Icons
 
-View an [example](http://dashframework.github.io/dashing/sass/modules/icons/example.html) of Dashing Icons in use.
+View an [example](http://dashframework.github.io/dashing//example/templates/icons/example.html) of Dashing Icons in use.
 
 > Note: This is by all means not a complete icon set. We will continue to add to it as needed. If you have an idea for an icon that isn't included, create an issue and we'll review it.
 

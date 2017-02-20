@@ -1,5 +1,5 @@
 # Grid
-View an [example](http://dashframework.github.io/dashing/sass/modules/grid/example.html) of Dashing Grid.
+View an [example](http://dashframework.github.io/dashing//example/templates/grid/example.html) of Dashing Grid.
 
 > **Tip:** We apply border-box to every element so the border and padding of an element is included in the width of the columns.
 

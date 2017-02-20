@@ -2,6 +2,18 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.3 · February 20, 2017
+**Added**
+* Added card checkboxes and radio buttons
+
+**Updated**
+* Updated example url links in documentation pages
+
+**Fixed**
+* Fixed default button--transparent hover color
+
+*****
+
 ### 1.1.2 · December 5, 2016
 **Updated**
 * Updated header-description to be display block

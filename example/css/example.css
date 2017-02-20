@@ -1244,6 +1244,11 @@ fieldset .has-warning .message li {
       pointer-events: none;
       opacity: 0.4;
       color: #555555; }
+    .checkbox-card .card.center-align, .checkbox-card .card.align-center,
+    .radio-card .card.center-align,
+    .radio-card .card.align-center {
+      display: inline-block;
+      float: none; }
   .checkbox-card input:focus ~ label:before,
   .radio-card input:focus ~ label:before {
     box-shadow: none; }
@@ -1420,6 +1425,8 @@ fieldset .has-warning .message li {
       color: #FFFFFF; }
   .button.button--transparent, .file-custom .button--transparent.file-custom--button, button.button--transparent, input[type='submit'].button--transparent, input[type='reset'].button--transparent {
     background-color: rgba(255, 255, 255, 0);
+    color: #6A8DD3;
+    background-color: rgba(255, 255, 255, 0);
     color: #6A8DD3; }
     .button.button--transparent:hover, .file-custom .button--transparent.file-custom--button:hover, .button.button--transparent:focus, .file-custom .button--transparent.file-custom--button:focus, button.button--transparent:hover, button.button--transparent:focus, input[type='submit'].button--transparent:hover, input[type='submit'].button--transparent:focus, input[type='reset'].button--transparent:hover, input[type='reset'].button--transparent:focus {
       background-color: rgba(230, 230, 230, 0);
@@ -1428,6 +1435,12 @@ fieldset .has-warning .message li {
       background-color: rgba(217, 217, 217, 0); }
     .button.button--transparent:not(.button--transparent) .dashing-icon:before, .file-custom .button--transparent.file-custom--button:not(.button--transparent) .dashing-icon:before, .button.button--transparent:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent:not(.button--transparent) .button--navigation:before, .file-custom .button--transparent.file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.file-custom--button:not(.button--transparent) .button--navigation:before, button.button--transparent:not(.button--transparent) .dashing-icon:before, button.button--transparent:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title button.button--transparent:not(.button--transparent) .button--navigation:before, input[type='submit'].button--transparent:not(.button--transparent) .dashing-icon:before, input[type='submit'].button--transparent:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title input[type='submit'].button--transparent:not(.button--transparent) .button--navigation:before, input[type='reset'].button--transparent:not(.button--transparent) .dashing-icon:before, input[type='reset'].button--transparent:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title input[type='reset'].button--transparent:not(.button--transparent) .button--navigation:before {
       color: #FFFFFF; }
+    .button.button--transparent:hover, .file-custom .button--transparent.file-custom--button:hover, .button.button--transparent:focus, .file-custom .button--transparent.file-custom--button:focus, button.button--transparent:hover, button.button--transparent:focus, input[type='submit'].button--transparent:hover, input[type='submit'].button--transparent:focus, input[type='reset'].button--transparent:hover, input[type='reset'].button--transparent:focus {
+      opacity: .6; }
+    .button.button--transparent:active, .file-custom .button--transparent.file-custom--button:active, button.button--transparent:active, input[type='submit'].button--transparent:active, input[type='reset'].button--transparent:active {
+      opacity: .9; }
+    .button.button--transparent .dashing-icon:before, .file-custom .button--transparent.file-custom--button .dashing-icon:before, .button.button--transparent .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent .button--navigation:before, .file-custom .button--transparent.file-custom--button .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.file-custom--button .button--navigation:before, button.button--transparent .dashing-icon:before, button.button--transparent .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title button.button--transparent .button--navigation:before, input[type='submit'].button--transparent .dashing-icon:before, input[type='submit'].button--transparent .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title input[type='submit'].button--transparent .button--navigation:before, input[type='reset'].button--transparent .dashing-icon:before, input[type='reset'].button--transparent .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title input[type='reset'].button--transparent .button--navigation:before {
+      color: #6A8DD3; }
     .button.button--transparent:not(.button--icon), .file-custom .button--transparent.file-custom--button:not(.button--icon), button.button--transparent:not(.button--icon), input[type='submit'].button--transparent:not(.button--icon), input[type='reset'].button--transparent:not(.button--icon) {
       padding-left: 0;
       padding-right: 0; }

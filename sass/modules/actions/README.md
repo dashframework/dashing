@@ -1,5 +1,5 @@
 # Dashing Actions
-View an [example](http://dashframework.github.io/dashing/sass/modules/actions/example.html) of Dashing buttons.
+View an [example](http://dashframework.github.io/dashing//example/templates/actions/example.html) of Dashing buttons.
 
 > **Tip:** When placing text within a button, strive to keep it between one and two words. Anything longer can become too overpowering and hard to read at a quick glance.
 

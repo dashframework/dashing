@@ -1,5 +1,5 @@
 # Typography
-View an [example](http://dashframework.github.io/dashing/sass/modules/typography/example.html) of Dashing Typography.
+View an [example](http://dashframework.github.io/dashing//example/templates/typography/example.html) of Dashing Typography.
 
 ## System Typeface
 Source Sans Pro was Adobe's first open source typeface family, created by Paul D. Hunt in 2012. Designed primarily for user interface, it draws from the clarity and legibility of twentieth-century American gothic typefaces (News Gothic and Franklin Gothic). Utilizing this typeface throughout your App is key to a successful interface on any device or screen.

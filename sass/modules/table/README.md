@@ -1,5 +1,5 @@
 # Dashing Tables
-View an [example](http://dashframework.github.io/dashing/sass/modules/table/example/default.html) of Dashing Tables in use.
+View an [example](http://dashframework.github.io/dashing//example/templates/table/example.html) of Dashing Tables in use.
 
 ## Table Container Configurations
 

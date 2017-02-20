@@ -23,6 +23,13 @@ $card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbo
       opacity: 0.4;
       color: $gray-700;
     }
+
+    //centers checkbox and radio button to card
+    &.center-align,
+    &.align-center {
+      display: inline-block;
+      float: none;
+    }
   }
 
   input:focus ~ label:before { box-shadow: none; }
