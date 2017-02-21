@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.4 · February 21, 2017
+**Added**
+* Added dashing-app class for iOS iframe fix
+
+*****
+
 ### 1.1.3 · February 20, 2017
 **Added**
 * Added card checkboxes and radio buttons

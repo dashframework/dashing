@@ -532,6 +532,13 @@ hr {
   border: 0;
   border-top: 2px solid #D4D4D4; }
 
+.dashing-app {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
 /* Typography Variables
   =========================================================================== */
 /* Typography Utility Classes
