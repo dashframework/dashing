@@ -144,6 +144,9 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   &.button--round { @extend %button--round; }
   &.button--smooth { @extend %button--smooth; }
   &.button--square { @extend %button--square; }
+
+  //Fixes Firefox alignment
+  .dashing-icon.flow-opposite { display: inline-block; }
 }
 
 //Used for creating clickable dashing icons

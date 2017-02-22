@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.5 · February 22, 2017
+**Fixed**
+* Fixed `.flow-opposite` dashing-icon alignment within buttons for Firefox
+
+*****
+
 ### 1.1.4 · February 21, 2017
 **Added**
 * Added dashing-app class for iOS iframe fix
