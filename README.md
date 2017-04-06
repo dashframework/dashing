@@ -190,3 +190,7 @@ Thanks to the following people who have contributed to this project:
 - [@bjrobertson](https://github.com/bjrobertson)
 - [@coryclubb](https://github.com/coryclubb)
 - [@nevren](https://github.com/Nevren)
+
+## License
+
+[MIT License](LICENSE.md)
