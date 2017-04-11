@@ -121,6 +121,7 @@ Every module contains an example file that allows you to preview the look and fe
 * Footer · [Example](http://dashframework.github.io/dashing/example/templates/footer/fixed-footer.html)
 * Tables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/table) · [Example](http://dashframework.github.io/dashing/example/templates/table/default.html)
 * Typography · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) · [Example](http://dashframework.github.io/dashing/example/templates/typography/example.html)
+* Spinner · [Example](http://dashframework.github.io/dashing/example/templates/spinner/example.html)
 
 *****
 *****
