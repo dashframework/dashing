@@ -108,7 +108,9 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
       float: none;
 
       &.active a,
-      a.active {
+      a.active,
+      &.is-active a,
+      a.is-active {
         color: auto-color($menu-color) !important;
         border-bottom: 4px solid !important;
       }

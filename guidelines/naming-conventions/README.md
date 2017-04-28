@@ -3,7 +3,7 @@ Naming Conventions used throughout the Dashing Framework.
 
 ## Base Class
 
-A base class describes a base element, such as a button, card or container.
+A base class describes a primary element, such as a button, card, container, etc.
 
 ```scss
 .button {  }
@@ -11,7 +11,7 @@ A base class describes a base element, such as a button, card or container.
 
 ## Modifiers
 
-Use modifiers to alter the color, size and shape of the base element. Modifiers should always reference the base class.
+Use modifiers to alter the color, size and shape of the element. Modifiers should always reference the base class and use `--` to separate the modification name from the base class.
 
 ```scss
 //Color Modifier
@@ -30,6 +30,28 @@ Here is an example of how to use a base class with modifiers.
 <button class="button button--blue button--small button--rounded"></button>
 ```
 
+## Parent-Child Relationships
+
+To avoid errors in similarly named objects, follow this pattern when referencing child elements. Use `-` to separate child elements from their parent.
+
+```scss
+//Parent card class
+.card {  }
+
+//Child header class within a card
+.card-header {  }
+```
+
+Here is an example of good parent-child nesting.
+
+```html
+<div class="card">
+  <div class="card-header">
+    <h3>Title</h3>
+  </div>
+</div>
+```
+
 ## State
 
 A state is typically something that is made to override default layout or module styles. Because of this, the use of `!important` is allowed, if needed.
@@ -45,7 +67,8 @@ A state is typically something that is made to override default layout or module
 Use the state naming structure when adding override styles to an element.
 
 ```html
-<div class="card is-selectable"></div>
+<li class="is-active"></li>
 <div class="card is-collapsed"></div>
 <div class="button is-hidden"></div>
+<div class="card-header has-border"></div>
 ```

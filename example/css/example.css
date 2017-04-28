@@ -1895,25 +1895,31 @@ fieldset .has-warning .message li {
   border: 2px solid #D4D4D4;
   border-radius: 10px;
   margin: 1.5rem auto; }
-  .card .card--header hr, .card.card--content hr, .card.card--footer hr {
+  .card .card--header hr, .card.card--content hr, .card.card--footer hr,
+  .card .card-header hr, .card.card-content hr, .card.card-footer hr {
     margin: 1rem 0; }
   .card hr {
     margin: 0; }
-  .card .card--header {
+  .card .card--header,
+  .card .card-header {
     padding: 1rem 1rem 0 1rem;
     padding-bottom: 0; }
-    .card .card--header.has-border {
+    .card .card--header.has-border,
+    .card .card-header.has-border {
       border-bottom: 2px solid #D4D4D4;
       padding-bottom: 1rem; }
-  .card .card--content {
+  .card .card--content,
+  .card .card-content {
     overflow: auto;
     padding: 1rem; }
-  .card .card--footer {
+  .card .card--footer,
+  .card .card-footer {
     padding: 0 1rem 1rem 1rem; }
-    .card .card--footer.has-border {
+    .card .card--footer.has-border,
+    .card .card-footer.has-border {
       border-top: 2px solid #D4D4D4;
       padding-top: 1rem; }
-  .card--header + .card.card--footer {
+  .card--header + .card.card--footer, .card-header + .card.card-footer {
     padding-top: 1rem; }
   .card.is-selectable {
     transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out; }
@@ -2060,7 +2066,8 @@ fieldset .has-warning .message li {
       display: inline-block;
       float: none; }
       .app-menu .app-navigation li.active a,
-      .app-menu .app-navigation li a.active {
+      .app-menu .app-navigation li a.active, .app-menu .app-navigation li.is-active a,
+      .app-menu .app-navigation li a.is-active {
         color: #222222 !important;
         border-bottom: 4px solid !important; }
       .app-menu .app-navigation li a {
