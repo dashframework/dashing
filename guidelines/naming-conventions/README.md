@@ -6,14 +6,22 @@ Naming Conventions used throughout the Dashing Framework.
 A base class describes a primary element, such as a button, card, container, etc.
 
 ```scss
+//Example
+.noun {  }
+
+//Sample
 .button {  }
 ```
 
-## Modifiers
+## Subclasses
 
-Use modifiers to alter the color, size and shape of the element. Modifiers should always reference the base class and use `--` to separate the modification name from the base class.
+Use subclasses to alter the color, size and shape of the element. Subclasses should always reference the base class and use `--` to separate the subclass name from the base class.
 
 ```scss
+//Example
+.noun--adjective {  }
+
+//Samples
 //Color Modifier
 .button--blue {  }
 
@@ -35,6 +43,11 @@ Here is an example of how to use a base class with modifiers.
 To avoid errors in similarly named objects, follow this pattern when referencing child elements. Use `-` to separate child elements from their parent.
 
 ```scss
+//Example
+.noun {  }
+.noun-noun {  }
+
+//Samples
 //Parent card class
 .card {  }
 
@@ -57,6 +70,11 @@ Here is an example of good parent-child nesting.
 A state is typically something that is made to override default layout or module styles. Because of this, the use of `!important` is allowed, if needed.
 
 ```scss
+//Example
+.is-state {  }
+.has-noun {  }
+
+//Samples
 .is-active {  }
 .is-hidden {  }
 .is-collapsed {  }
