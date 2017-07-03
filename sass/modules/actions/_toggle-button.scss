@@ -3,30 +3,33 @@
   margin: 0;
   padding: 0;
 
-  .button--radio:first-of-type label { border-radius: 50px 0 0 50px; }
-  .button--radio:last-of-type label { border-radius: 0 50px 50px 0; }
+  .button--radio:first-of-type label {
+    border-radius: 10px 10px 0 0;
+    @media #{$tablet} { border-radius: 50px 0 0 50px; }
+  }
+  .button--radio:last-of-type label {
+    border-radius: 0 0 10px 10px;
+    @media #{$tablet} { border-radius: 0 50px 50px 0; }
+  }
 
   &.button--smooth {
-    .button--radio:first-of-type label { border-radius: 5px 0 0 5px; }
-    .button--radio:last-of-type label { border-radius: 0 5px 5px 0; }
-  }
-
-  &.button--square {
-    .button--radio:first-of-type label { border-radius: 0; }
-    .button--radio:last-of-type label { border-radius: 0; }
-  }
-
-  .button--radio {
-    display: inline-block;
-    list-style: none;
-    input { display: none; }
-    label {
-      border-radius: 0;
-      margin-left: -4px;
+    .button--radio:first-of-type label {
+      border-radius: 5px 5px 0 0;
+      @media #{$tablet} { border-radius: 5px 0 0 5px; }
+    }
+    .button--radio:last-of-type label {
+      border-radius: 0 0 5px 5px;
+      @media #{$tablet} { border-radius: 0 5px 5px 0; }
     }
   }
 
-  &.button-group--gray {
+  &.button--square {
+    .button--radio:first-of-type label,
+    .button--radio:last-of-type label { border-radius: 0; }
+  }
+
+  &.button-group--gray,
+  &.button-group--grey {
     .button { @include button($background-color: $gray-200, $color: $gray-900); }
     .button--radio input:checked ~ label { background-color: $gray-500; color: $white; }
   }
@@ -56,6 +59,7 @@
     .button--radio input:checked ~ label { background-color: $red-800; }
   }
 
+  //Border Button Groups
   &.button-group--border {
     .button--radio {
       &:first-of-type {
@@ -69,10 +73,14 @@
     }
 
     .button {
-      border: 1px solid $gray-300;
-      border-width: 2px 1px;
+      border: 2px solid $gray-300;
+      display: block;
       padding: 0.4rem 0.9rem;
       padding-top: 0.35rem;
+      @media #{$tablet} {
+        border-width: 2px 1px;
+        display: inline-block;
+      }
     }
 
     @mixin button-group($color) {
@@ -90,11 +98,51 @@
       }
     }
 
-    &.button-group--gray { .button--radio { @include button-group($gray); } }
-    &.button-group--blue { .button--radio { @include button-group($blue); } }
-    &.button-group--green { .button--radio { @include button-group($green); } }
-    &.button-group--orange { .button--radio { @include button-group($orange); } }
-    &.button-group--purple { .button--radio { @include button-group($purple); } }
-    &.button-group--red { .button--radio { @include button-group($red); } }
+    &.button-group--gray,
+    &.button-group--grey    { .button--radio { @include button-group($gray); } }
+    &.button-group--blue    { .button--radio { @include button-group($blue); } }
+    &.button-group--green   { .button--radio { @include button-group($green); } }
+    &.button-group--orange  { .button--radio { @include button-group($orange); } }
+    &.button-group--purple  { .button--radio { @include button-group($purple); } }
+    &.button-group--red     { .button--radio { @include button-group($red); } }
+  }
+
+  .button--radio {
+    list-style: none;
+    @media #{$tablet} { display: inline-block; }
+    input { display: none; }
+    label {
+      border-radius: 0;
+      margin: -2px auto;
+      display: block;
+      @media #{$tablet} {
+        display: inline-block;
+        margin: 0 0 0 -4px;
+      }
+    }
+  }
+
+  &.button-group--vertical {
+    display: inline-flex;
+    flex-direction: column;
+    .button--radio {
+      display: block;
+      label {
+        display: block !important;
+        border-width: 2px;
+        margin: -1px auto;
+      }
+
+      &:first-of-type label { border-radius: 10px 10px 0 0; }
+      &:last-of-type label { border-radius: 0 0 10px 10px; }
+
+      &.button--smooth .button--radio {
+        &:first-of-type label { border-radius: 5px 5px 0 0; }
+        &:last-of-type label { border-radius: 0 0 5px 5px; }
+      }
+
+      &.button--square .button--radio:first-of-type label,
+      &.button--square .button--radio:last-of-type label { border-radius: 0; }
+    }
   }
 }
