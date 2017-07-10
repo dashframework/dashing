@@ -1714,38 +1714,19 @@ fieldset .has-warning .message li {
 
 .button-group {
   margin: 0;
-  padding: 0; }
-  .button-group .button--radio:first-of-type label {
-    border-radius: 50px 0 0 50px; }
-  .button-group .button--radio:last-of-type label {
-    border-radius: 0 50px 50px 0; }
-  .button-group.button--smooth .button--radio:first-of-type label, .app-menu .app-context .app-title .button-group.button--navigation .button--radio:first-of-type label {
-    border-radius: 5px 0 0 5px; }
-  .button-group.button--smooth .button--radio:last-of-type label, .app-menu .app-context .app-title .button-group.button--navigation .button--radio:last-of-type label {
-    border-radius: 0 5px 5px 0; }
-  .button-group.button--square .button--radio:first-of-type label {
-    border-radius: 0; }
-  .button-group.button--square .button--radio:last-of-type label {
-    border-radius: 0; }
-  .button-group .button--radio {
-    display: inline-block;
-    list-style: none; }
-    .button-group .button--radio input {
-      display: none; }
-    .button-group .button--radio label {
-      border-radius: 0;
-      margin-left: -4px; }
-  .button-group.button-group--gray .button, .button-group.button-group--gray .file-custom .file-custom--button, .file-custom .button-group.button-group--gray .file-custom--button {
+  padding: 0;
+  overflow: auto; }
+  .button-group.button-group--gray .button, .button-group.button-group--gray .file-custom .file-custom--button, .file-custom .button-group.button-group--gray .file-custom--button, .button-group.button-group--grey .button, .button-group.button-group--grey .file-custom .file-custom--button, .file-custom .button-group.button-group--grey .file-custom--button {
     background-color: #D4D4D4;
     color: #222222; }
-    .button-group.button-group--gray .button:hover, .button-group.button-group--gray .file-custom .file-custom--button:hover, .file-custom .button-group.button-group--gray .file-custom--button:hover, .button-group.button-group--gray .button:focus, .button-group.button-group--gray .file-custom .file-custom--button:focus, .file-custom .button-group.button-group--gray .file-custom--button:focus {
+    .button-group.button-group--gray .button:hover, .button-group.button-group--gray .file-custom .file-custom--button:hover, .file-custom .button-group.button-group--gray .file-custom--button:hover, .button-group.button-group--gray .button:focus, .button-group.button-group--gray .file-custom .file-custom--button:focus, .file-custom .button-group.button-group--gray .file-custom--button:focus, .button-group.button-group--grey .button:hover, .button-group.button-group--grey .file-custom .file-custom--button:hover, .file-custom .button-group.button-group--grey .file-custom--button:hover, .button-group.button-group--grey .button:focus, .button-group.button-group--grey .file-custom .file-custom--button:focus, .file-custom .button-group.button-group--grey .file-custom--button:focus {
       background-color: #bbbbbb;
       color: #222222; }
-    .button-group.button-group--gray .button:active, .button-group.button-group--gray .file-custom .file-custom--button:active, .file-custom .button-group.button-group--gray .file-custom--button:active {
+    .button-group.button-group--gray .button:active, .button-group.button-group--gray .file-custom .file-custom--button:active, .file-custom .button-group.button-group--gray .file-custom--button:active, .button-group.button-group--grey .button:active, .button-group.button-group--grey .file-custom .file-custom--button:active, .file-custom .button-group.button-group--grey .file-custom--button:active {
       background-color: #aeaeae; }
-    .button-group.button-group--gray .button:not(.button--transparent) .dashing-icon:before, .button-group.button-group--gray .file-custom .file-custom--button:not(.button--transparent) .dashing-icon:before, .file-custom .button-group.button-group--gray .file-custom--button:not(.button--transparent) .dashing-icon:before, .button-group.button-group--gray .button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button-group.button-group--gray .button:not(.button--transparent) .button--navigation:before, .button-group.button-group--gray .file-custom .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button-group.button-group--gray .file-custom .file-custom--button:not(.button--transparent) .button--navigation:before, .file-custom .button-group.button-group--gray .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button-group.button-group--gray .file-custom--button:not(.button--transparent) .button--navigation:before {
+    .button-group.button-group--gray .button:not(.button--transparent) .dashing-icon:before, .button-group.button-group--gray .file-custom .file-custom--button:not(.button--transparent) .dashing-icon:before, .file-custom .button-group.button-group--gray .file-custom--button:not(.button--transparent) .dashing-icon:before, .button-group.button-group--gray .button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button-group.button-group--gray .button:not(.button--transparent) .button--navigation:before, .button-group.button-group--gray .file-custom .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button-group.button-group--gray .file-custom .file-custom--button:not(.button--transparent) .button--navigation:before, .file-custom .button-group.button-group--gray .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button-group.button-group--gray .file-custom--button:not(.button--transparent) .button--navigation:before, .button-group.button-group--grey .button:not(.button--transparent) .dashing-icon:before, .button-group.button-group--grey .file-custom .file-custom--button:not(.button--transparent) .dashing-icon:before, .file-custom .button-group.button-group--grey .file-custom--button:not(.button--transparent) .dashing-icon:before, .button-group.button-group--grey .button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button-group.button-group--grey .button:not(.button--transparent) .button--navigation:before, .button-group.button-group--grey .file-custom .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button-group.button-group--grey .file-custom .file-custom--button:not(.button--transparent) .button--navigation:before, .file-custom .button-group.button-group--grey .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button-group.button-group--grey .file-custom--button:not(.button--transparent) .button--navigation:before {
       color: #FFFFFF; }
-  .button-group.button-group--gray .button--radio input:checked ~ label {
+  .button-group.button-group--gray .button--radio input:checked ~ label, .button-group.button-group--grey .button--radio input:checked ~ label {
     background-color: #878787;
     color: #FFFFFF; }
   .button-group.button-group--blue .button, .button-group.button-group--blue .file-custom .file-custom--button, .file-custom .button-group.button-group--blue .file-custom--button {
@@ -1817,20 +1798,20 @@ fieldset .has-warning .message li {
   .button-group.button-group--border .button--radio:last-of-type input:checked ~ label {
     border-color: #2DB16C; }
   .button-group.button-group--border .button, .button-group.button-group--border .file-custom .file-custom--button, .file-custom .button-group.button-group--border .file-custom--button {
-    border: 1px solid #BABABA;
-    border-width: 2px 1px;
+    border: 2px solid #BABABA;
+    display: inline-block;
     padding: 0.4rem 0.9rem;
     padding-top: 0.35rem; }
-  .button-group.button-group--border.button-group--gray .button--radio input:checked ~ label {
+  .button-group.button-group--border.button-group--gray .button--radio input:checked ~ label, .button-group.button-group--border.button-group--grey .button--radio input:checked ~ label {
     background-color: #6E6E6E;
     border-color: #6E6E6E;
     color: #FFFFFF; }
-    .button-group.button-group--border.button-group--gray .button--radio input:checked ~ label:hover {
+    .button-group.button-group--border.button-group--gray .button--radio input:checked ~ label:hover, .button-group.button-group--border.button-group--grey .button--radio input:checked ~ label:hover {
       color: #FFFFFF; }
-  .button-group.button-group--border.button-group--gray .button--radio .button, .button-group.button-group--border.button-group--gray .button--radio .file-custom .file-custom--button, .file-custom .button-group.button-group--border.button-group--gray .button--radio .file-custom--button {
+  .button-group.button-group--border.button-group--gray .button--radio .button, .button-group.button-group--border.button-group--gray .button--radio .file-custom .file-custom--button, .file-custom .button-group.button-group--border.button-group--gray .button--radio .file-custom--button, .button-group.button-group--border.button-group--grey .button--radio .button, .button-group.button-group--border.button-group--grey .button--radio .file-custom .file-custom--button, .file-custom .button-group.button-group--border.button-group--grey .button--radio .file-custom--button {
     background-color: transparent;
     color: #6E6E6E; }
-    .button-group.button-group--border.button-group--gray .button--radio .button:hover, .button-group.button-group--border.button-group--gray .button--radio .file-custom .file-custom--button:hover, .file-custom .button-group.button-group--border.button-group--gray .button--radio .file-custom--button:hover {
+    .button-group.button-group--border.button-group--gray .button--radio .button:hover, .button-group.button-group--border.button-group--gray .button--radio .file-custom .file-custom--button:hover, .file-custom .button-group.button-group--border.button-group--gray .button--radio .file-custom--button:hover, .button-group.button-group--border.button-group--grey .button--radio .button:hover, .button-group.button-group--border.button-group--grey .button--radio .file-custom .file-custom--button:hover, .file-custom .button-group.button-group--border.button-group--grey .button--radio .file-custom--button:hover {
       color: #6E6E6E; }
   .button-group.button-group--border.button-group--blue .button--radio input:checked ~ label {
     background-color: #6A8DD3;
@@ -1887,6 +1868,142 @@ fieldset .has-warning .message li {
     color: #6E6E6E; }
     .button-group.button-group--border.button-group--red .button--radio .button:hover, .button-group.button-group--border.button-group--red .button--radio .file-custom .file-custom--button:hover, .file-custom .button-group.button-group--border.button-group--red .button--radio .file-custom--button:hover {
       color: #DD4B39; }
+  .button-group .button--radio {
+    display: inline-block;
+    float: left; }
+    .button-group .button--radio:first-of-type label {
+      margin-left: 0; }
+    .button-group .button--radio input {
+      display: none; }
+    .button-group .button--radio label {
+      border-radius: 0;
+      display: inline-block;
+      margin: 0 0 0 -2px; }
+      @media all and (max-width: 40em) {
+        .button-group .button--radio label {
+          border-left: 1px; } }
+
+/* Vertical Button Styles
+  =========================================================================== */
+.button-group.button-group--vertical {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .button-group.button-group--vertical .button--radio {
+    display: block; }
+    .button-group.button-group--vertical .button--radio:first-of-type label {
+      margin-top: 2px; }
+    .button-group.button-group--vertical .button--radio:last-of-type label {
+      margin-bottom: 2px; }
+    .button-group.button-group--vertical .button--radio label {
+      display: block !important;
+      border-width: 2px;
+      margin: -1px auto; }
+
+@media all and (max-width: 40em) {
+  .button-group.button-group--vertical_phone {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    .button-group.button-group--vertical_phone .button--radio {
+      display: block; }
+      .button-group.button-group--vertical_phone .button--radio:first-of-type label {
+        margin-top: 2px; }
+      .button-group.button-group--vertical_phone .button--radio:last-of-type label {
+        margin-bottom: 2px; }
+      .button-group.button-group--vertical_phone .button--radio label {
+        display: block !important;
+        border-width: 2px;
+        margin: -1px auto; } }
+
+@media all and (min-width: 40em) {
+  .button-group.button-group--vertical_tablet {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    .button-group.button-group--vertical_tablet .button--radio {
+      display: block; }
+      .button-group.button-group--vertical_tablet .button--radio:first-of-type label {
+        margin-top: 2px; }
+      .button-group.button-group--vertical_tablet .button--radio:last-of-type label {
+        margin-bottom: 2px; }
+      .button-group.button-group--vertical_tablet .button--radio label {
+        display: block !important;
+        border-width: 2px;
+        margin: -1px auto; } }
+
+/* Border Radius Options
+  =========================================================================== */
+.button-group .button--radio:first-of-type label {
+  border-radius: 50px 0 0 50px; }
+.button-group .button--radio:last-of-type label {
+  border-radius: 0 50px 50px 0; }
+.button-group.button--smooth .button--radio:first-of-type label, .app-menu .app-context .app-title .button-group.button--navigation .button--radio:first-of-type label {
+  border-radius: 5px 0 0 5px; }
+.button-group.button--smooth .button--radio:last-of-type label, .app-menu .app-context .app-title .button-group.button--navigation .button--radio:last-of-type label {
+  border-radius: 0 5px 5px 0; }
+.button-group.button--square .button--radio:first-of-type label,
+.button-group.button--square .button--radio:last-of-type label {
+  border-radius: 0; }
+.button-group.button-group--vertical .button--radio:first-of-type label {
+  border-radius: 10px 10px 0 0; }
+.button-group.button-group--vertical .button--radio:last-of-type label {
+  border-radius: 0 0 10px 10px; }
+.button-group.button-group--vertical.button--smooth .button--radio:first-of-type label, .app-menu .app-context .app-title .button-group.button-group--vertical.button--navigation .button--radio:first-of-type label {
+  border-radius: 5px 5px 0 0; }
+.button-group.button-group--vertical.button--smooth .button--radio:last-of-type label, .app-menu .app-context .app-title .button-group.button-group--vertical.button--navigation .button--radio:last-of-type label {
+  border-radius: 0 0 5px 5px; }
+.button-group.button-group--vertical.button--square .button--radio:first-of-type label, .button-group.button-group--vertical.button--square .button--radio:last-of-type label {
+  border-radius: 0; }
+@media all and (max-width: 40em) {
+  .button-group.button-group--vertical_phone .button--radio:first-of-type label {
+    border-radius: 10px 10px 0 0; }
+  .button-group.button-group--vertical_phone .button--radio:last-of-type label {
+    border-radius: 0 0 10px 10px; }
+  .button-group.button-group--vertical_phone.button--smooth .button--radio:first-of-type label, .app-menu .app-context .app-title .button-group.button-group--vertical_phone.button--navigation .button--radio:first-of-type label {
+    border-radius: 5px 5px 0 0; }
+  .button-group.button-group--vertical_phone.button--smooth .button--radio:last-of-type label, .app-menu .app-context .app-title .button-group.button-group--vertical_phone.button--navigation .button--radio:last-of-type label {
+    border-radius: 0 0 5px 5px; }
+  .button-group.button-group--vertical_phone.button--square .button--radio:first-of-type label, .button-group.button-group--vertical_phone.button--square .button--radio:last-of-type label {
+    border-radius: 0; } }
+@media all and (min-width: 40em) {
+  .button-group.button-group--vertical_tablet .button--radio:first-of-type label {
+    border-radius: 10px 10px 0 0; }
+  .button-group.button-group--vertical_tablet .button--radio:last-of-type label {
+    border-radius: 0 0 10px 10px; }
+  .button-group.button-group--vertical_tablet.button--smooth .button--radio:first-of-type label, .app-menu .app-context .app-title .button-group.button-group--vertical_tablet.button--navigation .button--radio:first-of-type label {
+    border-radius: 5px 5px 0 0; }
+  .button-group.button-group--vertical_tablet.button--smooth .button--radio:last-of-type label, .app-menu .app-context .app-title .button-group.button-group--vertical_tablet.button--navigation .button--radio:last-of-type label {
+    border-radius: 0 0 5px 5px; }
+  .button-group.button-group--vertical_tablet.button--square .button--radio:first-of-type label, .button-group.button-group--vertical_tablet.button--square .button--radio:last-of-type label {
+    border-radius: 0; } }
 
 /* Card Styles
   =========================================================================== */
@@ -1895,25 +2012,31 @@ fieldset .has-warning .message li {
   border: 2px solid #D4D4D4;
   border-radius: 10px;
   margin: 1.5rem auto; }
-  .card .card--header hr, .card.card--content hr, .card.card--footer hr {
+  .card .card--header hr, .card.card--content hr, .card.card--footer hr,
+  .card .card-header hr, .card.card-content hr, .card.card-footer hr {
     margin: 1rem 0; }
   .card hr {
     margin: 0; }
-  .card .card--header {
+  .card .card--header,
+  .card .card-header {
     padding: 1rem 1rem 0 1rem;
     padding-bottom: 0; }
-    .card .card--header.has-border {
+    .card .card--header.has-border,
+    .card .card-header.has-border {
       border-bottom: 2px solid #D4D4D4;
       padding-bottom: 1rem; }
-  .card .card--content {
+  .card .card--content,
+  .card .card-content {
     overflow: auto;
     padding: 1rem; }
-  .card .card--footer {
+  .card .card--footer,
+  .card .card-footer {
     padding: 0 1rem 1rem 1rem; }
-    .card .card--footer.has-border {
+    .card .card--footer.has-border,
+    .card .card-footer.has-border {
       border-top: 2px solid #D4D4D4;
       padding-top: 1rem; }
-  .card--header + .card.card--footer {
+  .card--header + .card.card--footer, .card-header + .card.card-footer {
     padding-top: 1rem; }
   .card.is-selectable {
     transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out; }
@@ -2060,7 +2183,8 @@ fieldset .has-warning .message li {
       display: inline-block;
       float: none; }
       .app-menu .app-navigation li.active a,
-      .app-menu .app-navigation li a.active {
+      .app-menu .app-navigation li a.active, .app-menu .app-navigation li.is-active a,
+      .app-menu .app-navigation li a.is-active {
         color: #222222 !important;
         border-bottom: 4px solid !important; }
       .app-menu .app-navigation li a {
