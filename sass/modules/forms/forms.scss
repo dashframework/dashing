@@ -124,8 +124,10 @@ fieldset {
     &.has-warning:after { color: $orange-400; }
 
     &.column--nested {
-      &:last-of-type:after { right: 0.5rem; }
       &:after { right: 1.5rem; bottom: 1.5rem; }
+      @media #{$tablet} {
+        &:last-of-type:after { right: 0.5rem; }
+        }
     }
 
     //Removes default select icon in IE
