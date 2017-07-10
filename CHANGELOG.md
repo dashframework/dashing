@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.7 · July 10, 2017
+**Fixed**
+* Fixed forms last of type to prevent breaking on mobile
+
+*****
+
 ### 1.1.6 · July 10, 2017
 **Added**
 * Added `.button-group--vertical` and `.button-group--vertical_phone` options
