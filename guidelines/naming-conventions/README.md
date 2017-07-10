@@ -90,3 +90,27 @@ Use the state naming structure when adding override styles to an element.
 <div class="button is-hidden"></div>
 <div class="card-header has-border"></div>
 ```
+
+## Targeted Media Classes
+
+An underscore is used to
+
+```scss
+//Example
+.is-state {  }
+.has-noun {  }
+
+//Samples
+.is-active {  }
+.is-hidden {  }
+.is-collapsed {  }
+.is-selectable {  }
+.has-border {  }
+```
+
+An underscore is used to apply a class to that media size. Use `_phone` to apply a class to the phone media query and below, `_tablet` to apply a class to tablet and above, and `_desktop` to apply the class to desktop size and above.
+
+```html
+<div class="button-group--vertical_phone"></div>
+<div class="hidden_tablet"></div>
+```
