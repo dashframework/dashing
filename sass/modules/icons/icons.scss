@@ -31,12 +31,14 @@
   }
 
   %action & {
+    display: inline-block;
     margin-right: 0.2rem;
     margin-left: -0.2rem;
   }
 
   &.flow-opposite {
     %action & {
+      display: inline-block;
       margin-left: 0.2rem;
       margin-right: -0.2rem;
     }
