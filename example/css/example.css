@@ -384,32 +384,36 @@ th {
   =========================================================================== */
 /* Core Utility Classes
   =========================================================================== */
-.hide, .hidden {
+.hide, .hidden, .is-hidden {
   display: none !important; }
 
-.mobile-hide {
+.mobile-hide, .is-hidden_phone {
   display: none; }
   @media all and (min-width: 40em) {
-    .mobile-hide {
+    .mobile-hide, .is-hidden_phone {
       display: "block"; } }
 
-.mobile-hide-inline {
+.mobile-hide-inline, .is-hidden--inline_phone {
   display: none; }
   @media all and (min-width: 40em) {
-    .mobile-hide-inline {
+    .mobile-hide-inline, .is-hidden--inline_phone {
       display: "inline"; } }
 
-.tablet-hide {
+.tablet-hide, .is-hidden_tablet {
   display: none; }
   @media all and (min-width: 64em) {
-    .tablet-hide {
+    .tablet-hide, .is-hidden_tablet {
       display: "block"; } }
 
-.tablet-hide-inline {
+.tablet-hide-inline, .is-hidden--inline_tablet {
   display: none; }
   @media all and (min-width: 64em) {
-    .tablet-hide-inline {
+    .tablet-hide-inline, .is-hidden--inline_tablet {
       display: "inline"; } }
+
+@media all and (min-width: 64em) {
+  .desktop-hide, .is-hidden_desktop {
+    display: none; } }
 
 .pointer, .selectable {
   cursor: pointer !important; }
@@ -794,13 +798,14 @@ fieldset {
     fieldset.select--has-icon.has-warning:after,
     fieldset .select--has-icon.has-warning:after {
       color: #F7AD4B; }
-    fieldset.select--has-icon.column--nested:last-of-type:after,
-    fieldset .select--has-icon.column--nested:last-of-type:after {
-      right: 0.5rem; }
     fieldset.select--has-icon.column--nested:after,
     fieldset .select--has-icon.column--nested:after {
       right: 1.5rem;
       bottom: 1.5rem; }
+    @media all and (min-width: 40em) {
+      fieldset.select--has-icon.column--nested:last-of-type:after,
+      fieldset .select--has-icon.column--nested:last-of-type:after {
+        right: 0.5rem; } }
     fieldset.select--has-icon select::-ms-expand,
     fieldset .select--has-icon select::-ms-expand {
       display: none; }
@@ -2322,6 +2327,7 @@ fieldset .has-warning .message li {
     font-variant: normal;
     text-transform: none; }
   .button .dashing-icon, .file-custom .file-custom--button .dashing-icon, button .dashing-icon, input[type='submit'] .dashing-icon, input[type='reset'] .dashing-icon, .app-menu .app-navigation li a .dashing-icon, .button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .button .button--navigation, .file-custom .file-custom--button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button .button--navigation, button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title button .button--navigation, input[type='submit'] .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title input[type='submit'] .button--navigation, input[type='reset'] .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title input[type='reset'] .button--navigation, .app-menu .app-navigation li a .app-context .app-title .button--navigation, .app-menu .app-context .app-title .app-navigation li a .button--navigation {
+    display: inline-block;
     margin-right: 0.2rem;
     margin-left: -0.2rem; }
   .button .dashing-icon.flow-opposite, .file-custom .file-custom--button .dashing-icon.flow-opposite, button .dashing-icon.flow-opposite, input[type='submit'] .dashing-icon.flow-opposite, input[type='reset'] .dashing-icon.flow-opposite, .app-menu .app-navigation li a .dashing-icon.flow-opposite, .button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .button .flow-opposite.button--navigation, .file-custom .file-custom--button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button .flow-opposite.button--navigation, button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title button .flow-opposite.button--navigation, input[type='submit'] .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title input[type='submit'] .flow-opposite.button--navigation, input[type='reset'] .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title input[type='reset'] .flow-opposite.button--navigation, .app-menu .app-navigation li a .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .app-navigation li a .flow-opposite.button--navigation {

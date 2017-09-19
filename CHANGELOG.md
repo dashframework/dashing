@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.8 · September 19, 2017
+**Fixed**
+* - fix icons going to new line in firefox desktop
+
+*****
+
 ### 1.1.7 · July 10, 2017
 **Fixed**
 * Fixed forms last of type to prevent breaking on mobile
