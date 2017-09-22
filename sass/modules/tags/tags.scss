@@ -1,0 +1,70 @@
+.tag {
+	border: 2px solid $gray-150;//gray normal default
+	background-color: $gray-150;//gray background default
+	font-size: $font-size-small;//14px
+	padding: 0.1rem 0.25rem;//padding for content
+	border-radius: 3px;//
+	text-transform: uppercase;//Text is uppercased
+	cursor: pointer;
+	color: $blue-500;//text color
+	min-width: 3rem;
+	min-height: 1.5rem;
+	
+	display: inline-block;
+	
+	margin-bottom: 0.25rem;//add to own class
+
+	//don't let the text be highlighted
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select  : none; /* Safari */
+     -khtml-user-select  : none; /* Konqueror HTML */
+       -moz-user-select  : none; /* Firefox */
+        -ms-user-select  : none; /* Internet Explorer/Edge */
+            user-select  : none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+	&:not(.no-link):hover, 
+	&:not(.no-link):focus {
+		border: 2px solid $blue-500;
+		color: $blue-400;//text color
+	}
+
+	&.no-link  { opacity: 1; cursor: initial; }
+
+	&.tag--primary, 
+	&.tag--blue       { background-color: $white; border-color: $white; &:not(.no-link):hover, &:not(.no-link):focus { background-color: green; border-color: green; }}
+	&.tag--secondary, 
+	&.tag--grey, 
+	&.tag--gray       { background-color: $gray-200; border-color: $gray-200; color: $gray-900; &:not(.no-link):hover, &:not(.no-link):focus { background-color: $gray-200; border-color: $gray-500; color: $gray-800; }}
+	&.tag--green      { background-color: $green-400; border-color: $green-400; color: $white; &:not(.no-link):hover, &:not(.no-link):focus { background-color: $green-400; border-color: $green-500; color: $gray-50; }}
+	&.tag--orange     { background-color: $orange-400; border-color: $orange-400; color: $white; &:not(.no-link):hover, &:not(.no-link):focus { background-color: $orange-400; border-color: $orange-500; color: $gray-50; }}
+	&.tag--purple     { background-color: $purple-400; border-color: $purple-400; color: $white; &:not(.no-link):hover, &:not(.no-link):focus { background-color: $purple-400; border-color: $purple-500; color: $gray-50; }}
+	&.tag--red        { background-color: $red-400; border-color: $red-400; color: $white; &:not(.no-link):hover, &:not(.no-link):focus { background-color: $red-400; border-color: $red-500; color: $gray-50; }}
+	&.tag--white      { background-color: $white; border-color: $white; color: $gray-900; &:not(.no-link):hover, &:not(.no-link):focus { background-color: $white; border-color: $gray-150; color: $gray-800; }}
+
+	&.tag--action--green { 
+		color: $green-500;
+		&:not(.no-link):hover, 
+		&:not(.no-link):focus {
+			border: 2px solid $green-500;
+			color: $green-400;//text color
+		}
+	}
+}
+
+//Custom Level Colors - A tag color will define border, text color, and background color. 
+.plan-11 {//Classic
+	&.tag {
+		border-color: #FAA443;
+		background-color: #FAA443;
+		color: $black;
+		font-weight: 600;
+	}
+}
+
+.plan-1 {//Basic
+	&.tag {
+		border-color: #8560A8;
+		background-color: #8560A8;
+		color: $white;
+	}
+}
