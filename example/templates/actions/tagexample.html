@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="../../css/example.css" rel="stylesheet">
+	    <title>Actions</title>
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="../../scripts/scripts.js"></script>
+	    <script src="../../scripts/prism.js"></script>
+  	</head>
+	<body class="example-body">
+		<div id="sidebarNavigation" class="example-sidebar"></div>
+	    <nav class="app-menu expanded fixed">
+	      <div class="app-context">
+	        <div class="app-title">
+	          <a href="example.html" class="button button--navigation"></a>
+	          <span>Dashing Actions</span>
+	        </div>
+	      </div>
+	      </div>
+	      <ul class="app-navigation">
+	        <li><a href="example.html">Buttons</a></li>
+	        <li><a href="tagexample.html" class="active">Tags</a></li>
+	      </ul>
+	    </nav>
+
+		<div class="app-content">
+			<h2>(Example Page In Progress)</h2>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Solid Tag</h2>
+				</div>
+				<div class="card--content">
+					Applied to these tags are three classes ".tag", ".tag--[color]", and ".tag--solid". They will operate as links and have an appearance similar to buttons.
+				</div>
+				<div class="card--footer">
+					<a class="tag">Default Tag</a>
+					<a class="tag tag--white tag--solid">White Tag</a>
+					<a class="tag tag--gray tag--solid">Gray Tag</a>
+					<a class="tag tag--blue tag--solid">Blue Tag</a>
+					<a class="tag tag--green tag--solid">Green Tag</a>
+					<a class="tag tag--orange tag--solid">Orange Tag</a>
+					<a class="tag tag--purple tag--solid">Purple Tag</a>
+					<a class="tag tag--red tag--solid">Red Tag</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Solid Tag (Large)</h2>
+				</div>
+				<div class="card--content">
+					Add ".tag--large" to make tags aa larger size.
+				</div>
+				<div class="card--footer">
+					<a class="tag tag--large">Default Tag</a>
+					<a class="tag tag--white tag--solid tag--large">White Tag</a>
+					<a class="tag tag--gray tag--solid tag--large">Gray Tag</a>
+					<a class="tag tag--blue tag--solid tag--large">Blue Tag</a>
+					<a class="tag tag--green tag--solid tag--large">Green Tag</a>
+					<a class="tag tag--orange tag--solid tag--large">Orange Tag</a>
+					<a class="tag tag--purple tag--solid tag--large">Purple Tag</a>
+					<a class="tag tag--red tag--solid tag--large">Red Tag</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Solid Tag - With Counters</h2>
+				</div>
+				<div class="card--content">
+					These tags are contained within ".tag--counter". By placing 2 tags together in this container, one can achieve a tag with a counter that could be useful for keeping track of how many times the tag occurs.
+				</div>
+				<div class="card--footer">
+					<div class="tag--counter"><!--
+						--><a class="tag tag--solid">Default Tag</a><!--
+						--><a class="tag tag--solid">1</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--white tag--solid">White Tag</a><!--
+						--><a class="tag tag--white tag--solid">2</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--gray tag--solid">Gray Tag</a><!--
+						--><a class="tag tag--gray tag--solid">3</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--blue tag--solid">Blue Tag</a><!--
+						--><a class="tag tag--blue tag--solid">404</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--green tag--solid">Green Tag</a><!--
+						--><a class="tag tag--green tag--solid">56</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--orange tag--solid">Orange Tag</a><!--
+						--><a class="tag tag--orange tag--solid">762</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--purple tag--solid">Purple Tag</a><!--
+						--><a class="tag tag--purple tag--solid">7</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--red tag--solid">Red Tag</a><!--
+						--><a class="tag tag--red tag--solid">8</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" style="background-color: #222222; color: #ffffff">
+				<div class="card--header">
+					<h2 style="color: #ffffff">Solid Tag - With Counters (Dark Preview)</h2>
+				</div>
+				<div class="card--content">
+					These tags are contained within ".tag--counter". By placing 2 tags together in this container, one can achieve a tag with a counter that could be useful for keeping track of how many times the tag occurs.
+				</div>
+				<div class="card--footer">
+					<div class="tag--counter"><!--
+						--><a class="tag tag--solid">Default Tag</a><!--
+						--><a class="tag tag--solid">1</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--white tag--solid">White Tag</a><!--
+						--><a class="tag tag--white tag--solid">2</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--gray tag--solid">Gray Tag</a><!--
+						--><a class="tag tag--gray tag--solid">3</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--blue tag--solid">Blue Tag</a><!--
+						--><a class="tag tag--blue tag--solid">404</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--green tag--solid">Green Tag</a><!--
+						--><a class="tag tag--green tag--solid">56</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--orange tag--solid">Orange Tag</a><!--
+						--><a class="tag tag--orange tag--solid">762</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--purple tag--solid">Purple Tag</a><!--
+						--><a class="tag tag--purple tag--solid">7</a>
+					</div>
+					<div class="tag--counter"><!--
+						--><a class="tag tag--red tag--solid">Red Tag</a><!--
+						--><a class="tag tag--red tag--solid">8</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Solid Tag - No Link</h2>
+				</div>
+				<div class="card--content">
+					Applied to these tags are four classes ".tag", ".tag--[color]", ".tag--solid", and ".tag--no-link". They will not operate as links but have an appearance similar to buttons. Note the lack of hover effects. (You can apply ".tag--no-link" to any tag.)
+				</div>
+				<div class="card--footer">
+					<div class="tag tag--no-link">Default Tag</div>
+					<div class="tag tag--white tag--no-link tag--solid">White Tag</div>
+					<div class="tag tag--gray tag--no-link tag--solid">Gray Tag</div>
+					<div class="tag tag--blue tag--no-link tag--solid">Blue Tag</div>
+					<div class="tag tag--green tag--no-link tag--solid">Green Tag</div>
+					<div class="tag tag--orange tag--no-link tag--solid">Orange Tag</div>
+					<div class="tag tag--purple tag--no-link tag--solid">Purple Tag</div>
+					<div class="tag tag--red tag--no-link tag--solid">Red Tag</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Default Tag</h2>
+				</div>
+				<div class="card--content">
+					Applied to these tags are two classes ".tag" and ".tag--[color]".
+					These tags are based on the default tags and stem from the style present in community app. They are meant to convey that the tag is linked. (In community app, this means you can click it to view what else is tagged with the same tag.)
+				</div>
+				<div class="card--footer">
+					<a class="tag">Default Tag</a>
+					<a class="tag tag--white">White Tag</a>
+					<a class="tag tag--gray">Gray Tag</a>
+					<a class="tag tag--blue">Blue Tag</a>
+					<a class="tag tag--green">Green Tag</a>
+					<a class="tag tag--orange">Orange Tag</a>
+					<a class="tag tag--purple">Purple Tag</a>
+					<a class="tag tag--red">Red Tag</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Default Tag - No Link</h2>
+				</div>
+				<div class="card--content">
+					Applied to these tags are three classes ".tag", ".tag--[color]", and ".tag--no-link".
+					(You can apply ".tag--no-link" to any tag.)
+				</div>
+				<div class="card--footer">
+					<div class="tag tag--no-link">Default Tag</div>
+					<div class="tag tag--white tag--no-link">White Tag</div>
+					<div class="tag tag--gray tag--no-link">Gray Tag</div>
+					<div class="tag tag--blue tag--no-link">Blue Tag</div>
+					<div class="tag tag--green tag--no-link">Green Tag</div>
+					<div class="tag tag--orange tag--no-link">Orange Tag</div>
+					<div class="tag tag--purple tag--no-link">Purple Tag</div>
+					<div class="tag tag--red tag--no-link">Red Tag</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Default Tag - With Counters</h2>
+				</div>
+				<div class="card--content">
+					These tags are contained within ".tag--counter". By placing 2 tags together in this container, one can achieve a tag with a counter that could be useful for keeping tracking of how many times the tag occurs. 
+				</div>
+				<div class="card--footer">
+					<div class="tag--counter"><!--
+						--><div class="tag">Default Tag</div><!--
+						--><div class="tag">1</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--white">White Tag</div><!--
+						--><div class="tag tag--white">2</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--gray">Gray Tag</div><!--
+						--><div class="tag tag--gray">3</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--blue">Blue Tag</div><!--
+						--><div class="tag tag--blue">404</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--green">Green Tag</div><!--
+						--><div class="tag tag--green">56</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--orange">Orange Tag</div><!--
+						--><div class="tag tag--orange">762</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--purple">Purple Tag</div><!--
+						--><div class="tag tag--purple">7</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--red">Red Tag</div><!--
+						--><div class="tag tag--red">8</div><!--
+					--></div>
+				</div>
+			</div>
+
+			<div class="card" style="background-color: #222222; color: #ffffff;">
+				<div class="card--header">
+					<h2 style="color: #ffffff;">Default Tag - With Counters (Dark Preview)</h2>
+				</div>
+				<div class="card--content">
+					These tags are contained within ".tag--counter". By placing 2 tags together in this container, one can achieve a tag with a counter that could be useful for keeping tracking of how many times the tag occurs. 
+				</div>
+				<div class="card--footer">
+					<div class="tag--counter"><!--
+						--><div class="tag">Default Tag</div><!--
+						--><div class="tag">1</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--white">White Tag</div><!--
+						--><div class="tag tag--white">2</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--gray">Gray Tag</div><!--
+						--><div class="tag tag--gray">3</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--blue">Blue Tag</div><!--
+						--><div class="tag tag--blue">404</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--green">Green Tag</div><!--
+						--><div class="tag tag--green">56</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--orange">Orange Tag</div><!--
+						--><div class="tag tag--orange">762</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--purple">Purple Tag</div><!--
+						--><div class="tag tag--purple">7</div><!--
+					--></div><!--
+					--><div class="tag--counter"><!--
+						--><div class="tag tag--red">Red Tag</div><!--
+						--><div class="tag tag--red">8</div><!--
+					--></div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card--header">
+					<h2>Custom Tags</h2>
+				</div>
+				<div class="card--content">
+					You can make custom tags.
+
+					<br>
+
+<pre><code class="sass">
+//Example: Custom Tags
+.tag {//Basic
+	&.plan-11 {
+		@include tag($background-color: #FAA443, $color: $black, $border-color: #FAA443, $hover-color: $black, $hover-border-color: #FAA443)
+	}
+}
+
+.tag--counter {
+	#{$tag-hover-rules} {
+		&.plan-11 {
+			border-color: red;
+		}
+	}
+}
+</pre></code>
+				</div>
+				<div class="card--footer">
+					<div class="tag plan-1 tag--large tag--no-link">Classic</div>
+					<div class="tag plan-1 tag--no-link">C</div>
+					<div class="tag plan-11 tag--no-link">Basic</div>
+					<div class="tag plan-11 tag--no-link">B</div>
+					<div class="tag plan-0 tag--no-link">Nuthin'</div>
+					<div class="tag plan-0 tag--no-link">3</div>
+					<div class="tag--counter"><!--
+						--><div class="tag plan-11">11</div><!--
+						--><div class="tag plan-11">8</div>
+					</div>
+					<div class="tag--counter"><!--
+						--><div class="tag plan-1">1</div><!--
+						--><div class="tag plan-1">24</div>
+					</div>
+					<div class="tag--counter"><!--
+						--><div class="tag tag--large plan-0">my.tag</div><!--
+						--><div class="tag tag--large plan-0">on</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
