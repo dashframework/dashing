@@ -34,7 +34,7 @@ read -p "What would you like to add to the changelog for this version? " changel
 read -p "What would you like say in the commit for this version? " commitmessage
 echo -e '\n'
 
-echo -e "${textgreen}You are going to update dashing to: $version${textnormal}"
+echo -e "${textgreen}You are going to update dashing to v:$version${textnormal}"
 echo -e "${textgreen}Type of changelog (Fix, Addition, Revert, etc): $changelogtype${textnormal}"
 echo -e "${textgreen}Your addition to the changelog reads: $changelog${textnormal}"
 echo -e "${textgreen}Your commit message reads: $commitmessage${textnormal}"
