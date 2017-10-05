@@ -2,6 +2,24 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.9 - October 03, 2017
+**Added**
+* added tags, tweaked updater
+  
+*****
+  
+### 1.1.8 - September 22, 2017
+**Added**
+* Added updater script
+  
+*****
+  
+### 1.1.8 · September 19, 2017
+**Fixed**
+* fix icons going to new line in firefox desktop
+
+*****
+
 ### 1.1.7 · July 10, 2017
 **Fixed**
 * Fixed forms last of type to prevent breaking on mobile

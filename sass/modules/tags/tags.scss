@@ -1,0 +1,153 @@
+/* Tag Variables
+  =========================================================================== */
+
+$tags: ".tag";
+$tag-hover-rules: "&:not(.tag--no-link):hover .tag, &:not(.tag--no-link):focus .tag";
+
+/* Tag Extendables
+  =========================================================================== */
+
+%tag {
+	background-color: $gray-150;
+	border-radius: 3px;
+	border: 2px solid $gray-150;
+	color: #3F70C9;//(was $blue-500)
+	cursor: pointer;
+	display: inline-block;
+	font-size: $font-size-small;
+	font-weight: 600;
+	min-width: 1rem;
+	padding: 0.1rem 0.25rem;
+	text-transform: uppercase;
+	margin: 0.25rem;
+
+	@include user-select(none);
+
+	&:not(.tag--no-link):hover, 
+	&:not(.tag--no-link):focus {
+		border: 2px solid $blue-500;
+		color: $blue-400;
+		transition: border-color .1s ease-in-out;
+	}
+}
+
+/* Tag Styles
+  =========================================================================== */
+
+#{$tags} {
+	@extend %tag;
+
+	&.tag--no-link  { opacity: 1; cursor: initial; }
+	&.tag--large { font-size: 1rem; }
+
+	&.tag--primary,
+	&.tag--blue   	  { @include tag--action($color: #3F70C9, $border-color: #3F70C9) }
+	&.tag--secondary,
+	&.tag--gray,
+	&.tag--grey   	  { @include tag--action($color: $gray-800,   $border-color: $gray-500) }
+	&.tag--green  	  { @include tag--action($color: $green-700,  $border-color: $green-700) }
+	&.tag--orange 	  { @include tag--action($color: $orange-700, $border-color: $orange-700) }
+	&.tag--purple 	  { @include tag--action($color: $purple-500, $border-color: $purple-500) }
+	&.tag--red    	  { @include tag--action($color: $red-700,    $border-color: $red-700) }
+	&.tag--white  	  { @include tag--action($color: $white,      $border-color: $white) }
+}
+
+.tag--solid {
+	&.tag--primary, 
+	&.tag--blue       { @include tag($background-color: $blue-400,   $color: $white,    $border-color: $blue-400,   $hover-color: $gray-50,  $hover-border-color: $blue-500) }
+	&.tag--secondary, 
+	&.tag--grey, 
+	&.tag--gray       { @include tag($background-color: $gray-200,   $color: $gray-900, $border-color: $gray-200,   $hover-color: $gray-800, $hover-border-color: $gray-500) }
+	&.tag--green      { @include tag($background-color: $green-400,  $color: $white,    $border-color: $green-400,  $hover-color: $gray-50,  $hover-border-color: $green-500) }
+	&.tag--orange     { @include tag($background-color: $orange-400, $color: $white,    $border-color: $orange-400, $hover-color: $gray-50,  $hover-border-color: $orange-500) }
+	&.tag--purple     { @include tag($background-color: $purple-400, $color: $white,    $border-color: $purple-400, $hover-color: $gray-50,  $hover-border-color: $purple-500) }
+	&.tag--red        { @include tag($background-color: $red-400,    $color: $white,    $border-color: $red-400,    $hover-color: $gray-50,  $hover-border-color: $red-500) }
+	&.tag--white      { @include tag($background-color: $white,      $color: $gray-900, $border-color: $white,      $hover-color: $gray-800, $hover-border-color: $gray-150) }
+}
+
+//Split the tag to hold values on the right
+.tag--counter {
+	display: inline-block;
+	background-color: transparent;
+
+	&.tag--no-link  { opacity: 1; cursor: initial; }
+	
+	#{$tag-hover-rules} {
+		//Default hover effects
+		border-color: $blue-500;
+		transition: border-color .1s ease-in-out;
+
+  		&.tag--primary,
+		&.tag--blue       { border-color: #3F70C9; }
+		&.tag--secondary,
+		&.tag--grey,
+		&.tag--gray       { border-color: $gray-500 }
+		&.tag--green  	  { border-color: $green-500 }
+		&.tag--orange     { border-color: $orange-500 }
+		&.tag--purple     { border-color: $purple-500 }
+		&.tag--red        { border-color: $red-500 }	
+		&.tag--white      { border-color: $white }
+	}
+
+	.tag:first-child {
+		border-radius: 3px 0 0 3px;
+		border-right: transparent;
+		margin-right: 0;	
+	}
+
+	.tag:last-child {
+		border-radius: 0 3px 3px 0;
+		background-color: white;
+		color: $gray-800;
+		border-left: transparent;
+		margin-left: 0;
+
+		&:not(.tag--no-link):hover, 
+		&:not(.tag--no-link):focus {
+			color: $gray-800;
+		}
+	}
+}
+
+//Example: Custom Tags
+.tag {//Basic
+	&.plan-11 {
+		@include tag($background-color: #FAA443, $color: $black, $border-color: #FAA443, $hover-color: $black, $hover-border-color: #FAA443)
+	}
+}
+
+.tag--counter {
+	#{$tag-hover-rules} {
+		&.plan-11 {
+			border-color: orange;
+		}
+	}
+}
+
+.plan-1 {//Classic
+	&.tag {
+		@include tag($background-color: #8560A8, $color: $white, $border-color: #8560A8, $hover-color: $white, $hover-border-color: #8560A8)
+	}
+}
+
+.tag--counter {
+	#{$tag-hover-rules} {
+		&.plan-1 {
+			border-color: purple;
+		}
+	}
+}
+
+.plan-0 {//Some other one!
+	&.tag {
+		@include tag($background-color: $green-500, $color: $white, $border-color: $green-500, $hover-color: $white, $hover-border-color: $green-500) 
+	}
+}
+
+.tag--counter {
+	#{$tag-hover-rules} {
+		&.plan-0 {
+			border-color: green;
+		}
+	}
+}
