@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.10 - October 06, 2017
+**Updated**
+* Updated base colors to new ui colors
+  
+*****
+  
 ### 1.1.9 - October 03, 2017
 **Added**
 * added tags, tweaked updater

@@ -57,6 +57,16 @@
   &.dashing-icon--red:before { color: $red; }
   &.dashing-icon--purple:before { color: $purple; }
 
+  //ui-colors
+  &.dashing-icon--ui-black:before { color: $ui-black; }
+  &.dashing-icon--ui-blue:before { color: $ui-blue; }
+  &.dashing-icon--ui-green:before { color: $ui-green; }
+  &.dashing-icon--ui-red:before { color: $ui-red; }
+  &.dashing-icon--ui-orange:before { color: $ui-orange; }
+
+  //brand-colors
+  &.dashing-icon--brand-purple:before { color: $ui-purple; }
+
   &.dashing-icon--arrow-down:before { content: '\e800'; } /* '' */
   &.dashing-icon--calendar:before { content: '\e801'; } /* '' */
   &.dashing-icon--checkmark-filled:before { content: '\e802'; } /* '' */

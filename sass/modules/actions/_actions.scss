@@ -74,10 +74,11 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   }
   &.button--blue {@include button($background-color: $blue, $color: $white); }
   &.button--green { @include button($background-color: $green, $color: $white); }
-  &.button--orange { @include button($background-color: $orange, $color: $white); }
+  &.button--orange { @include button($background-color: $orange, $color: $black); }
   &.button--purple { @include button($background-color: $purple, $color: $white); }
   &.button--red { @include button($background-color: $red, $color: $white); }
   &.button--white { @include button($background-color: $white, $color: $gray-800); }
+  &.button--black { @include button($background-color: $black, $color: $white); }
 
   //Used to display actions and icons with a transparent background
   //transparentize(white, 1) used instead of transparent because "darken" requires an rgb color value
@@ -95,9 +96,9 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
     &.button--gray,
     &.button--grey { @include transparent--button($color: $gray-600); }
     &.button--green { @include transparent--button($color: $green); }
+    &.button--red { @include transparent--button($color: $red); }
     &.button--orange { @include transparent--button($color: $orange); }
     &.button--purple { @include transparent--button($color: $purple); }
-    &.button--red { @include transparent--button($color: $red); }
     &.button--white { @include transparent--button($color: $white); }
   }
 
@@ -115,9 +116,9 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
     &.button--primary { @include border--button($blue); }
     &.button--blue { @include border--button($blue); }
     &.button--green { @include border--button($green); }
+    &.button--red { @include border--button($red); }
     &.button--orange { @include border--button($orange); }
     &.button--purple { @include border--button($purple); }
-    &.button--red { @include border--button($red); }
 
     &.button--gray,
     &.button--secondary {

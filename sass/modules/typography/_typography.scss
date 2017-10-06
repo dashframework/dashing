@@ -57,6 +57,7 @@ h4 { font-size: $font-size-normal; }
 a {
   color: $blue;
   cursor: pointer;
+  font-weight: $font-weight-semibold;
   outline: none;
   text-decoration: none;
 
@@ -65,6 +66,7 @@ a {
 
 p {
   color: $gray-900;
+  color: $brand-black;
   font-size: $font-size-normal;
   line-height: 1.25rem;
 }

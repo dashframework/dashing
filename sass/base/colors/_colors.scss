@@ -4,6 +4,33 @@
 $white:         #FFFFFF;
 $black:         #000000;
 
+//brand colors
+$ui-purple: #9F65AE;
+$brand-light-gray: #EDEDED;
+$brand-gray: #D4D4D4;
+$brand-grey: #D4D4D4;
+$brand-black: #24292C;
+
+//marketing colors
+$samaritan-purple: #AF93C5;
+$guidelines-purple_alt: #622E68;
+$guidelines-purple: #54377C;
+$paper: #FFFFFF;
+$barbi-world-pink: #EF557B;
+$receiver-orange: #F68B20;
+$executive-blue: #434E5B;
+$medical-blue: #6BC9D1;
+$sharing-blue: #71B9E0;
+$medical-green: #2EB9AB;
+
+//ui-colors
+$ui-blue: #3F70C9;
+$ui-green: #09AA66;
+$ui-red: #DA3D30;
+$ui-orange: #FFA11F;
+$ui-white: #FFFFFF;
+$ui-black: #40464C;
+
 //Flat gray color scale
 $gray-50:       #F2F2F2;
 $gray-100:      #EDEDED;
@@ -44,7 +71,7 @@ $blue-600:      #5174BA;
 $blue-700:      #375AA0;
 $blue-800:      #1E4187;
 $blue-900:      #04276D;
-$blue:          $blue-500;
+$blue:          $ui-blue;
 
 $green-50:      #ACFFEB;
 $green-100:     #93FFD2;
@@ -56,7 +83,7 @@ $green-600:     #149853;
 $green-700:     #007E39;
 $green-800:     #006520;
 $green-900:     #004B06;
-$green:         $green-500;
+$green:         $ui-green;
 
 $orange-50:     #FFFFB0;
 $orange-100:    #FFF997;
@@ -68,7 +95,7 @@ $orange-600:    #C47A18;
 $orange-700:    #AA6000;
 $orange-800:    #914700;
 $orange-900:    #772D00;
-$orange:        $orange-500;
+$orange:        $ui-orange;
 
 $purple-50:     #F4CBFF;
 $purple-100:    #DBB2E8;
@@ -80,7 +107,7 @@ $purple-600:    #5C3369;
 $purple-700:    #42194F;
 $purple-800:    #290036;
 $purple-900:    #0F001C;
-$purple:        $purple-500;
+$purple:        $ui-purple;
 
 $red-50:        #FFCAB8;
 $red-100:       #FFB19F;
@@ -92,7 +119,7 @@ $red-600:       #C43220;
 $red-700:       #AA1806;
 $red-800:       #910000;
 $red-900:       #770000;
-$red:           $red-500;
+$red:           $ui-red;
 
 $yellow-50:     #FFFFEF;
 $yellow-100:    #FFFFD6;
