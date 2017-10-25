@@ -1,11 +1,12 @@
 /* Typography Variables
   =========================================================================== */
 
-$font-size-xlarge:      1.953rem;
-$font-size-large:       1.563rem;
-$font-size-medium:      1.25rem;
-$font-size-normal:      1rem;
-$font-size-small:       0.8rem;
+$font-size-xlarge:      1.953rem; //35px
+$font-size-large:       1.563rem; //28px
+$font-size-medium:      1.25rem;  //23px
+$font-size-normal:      1rem;     //18px
+$font-size-small:       0.9rem;   //16px
+$font-size-xsmall:      0.8rem;   //14px
 
 $font-weight-normal:    400;
 $font-weight-semibold:  600;
@@ -39,7 +40,7 @@ $font-family-body:      "Source Sans Pro", sans-serif;
 body {
   background-color: $gray-100;
   font-family: $font-family-body;
-  font-size: 18px;
+  font-size: $font-size-normal;
 }
 
 h1, h2, h3, h4, h5, h6 {

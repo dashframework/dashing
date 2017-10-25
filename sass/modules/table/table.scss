@@ -7,7 +7,7 @@ $table--border: $gray-200 !default;
 .table--container {
   .table {
     background-color: $white;
-    font-size: 0.9rem;
+    font-size: $font-size-small;
     margin: 0;
     max-width: 100%;
     width: 100%;

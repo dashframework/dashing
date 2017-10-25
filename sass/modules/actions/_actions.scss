@@ -11,7 +11,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   @include user-select(none);
   border: none;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: $font-size-small;
   font-weight: $font-weight-semibold;
   outline: none;
   text-transform: uppercase;
@@ -59,7 +59,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
     padding: 0.6rem 1.2rem;
   }
   &.button--small {
-    font-size: $font-size-small !important;
+    font-size: $font-size-xsmall !important;
     padding: 0.4rem 0.75rem;
   }
 

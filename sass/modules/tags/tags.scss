@@ -15,7 +15,7 @@ $tag-hover-rules: "&:not(.tag--no-link):hover .tag, &:not(.tag--no-link):focus .
 	color: $blue;
 	cursor: pointer;
 	display: inline-block;
-	font-size: $font-size-small;
+	font-size: $font-size-xsmall;
 	font-weight: 600;
 	min-width: 1rem;
 	padding: 0.1rem 0.25rem;
@@ -36,7 +36,7 @@ $tag-hover-rules: "&:not(.tag--no-link):hover .tag, &:not(.tag--no-link):focus .
 	@extend %tag;
 
 	&.tag--no-link  { opacity: 1; cursor: initial; }
-	&.tag--large { font-size: 1rem; }
+	&.tag--large { font-size: $font-size-normal; }
 
 	&.tag--primary,
 	&.tag--blue   	  { @include tag--action($color: $blue) }
