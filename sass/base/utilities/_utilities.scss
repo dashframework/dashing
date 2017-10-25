@@ -4,12 +4,12 @@
 .hide, .hidden, .is-hidden { display: none !important; }
 
 //Hide on mobile
-.mobile-hide, .is-hidden_phone { @include hide-on('phone', $display: 'block'); }
-.mobile-hide-inline, .is-hidden--inline_phone { @include hide-on('phone', $display: 'inline'); }
+.mobile-hide, .is-hidden_phone { @include hide-on('phone', $display: block); }
+.mobile-hide-inline, .is-hidden--inline_phone { @include hide-on('phone', $display: inline); }
 
 //Hide on tablet
-.tablet-hide, .is-hidden_tablet { @include hide-on('tablet', $display: 'block'); }
-.tablet-hide-inline, .is-hidden--inline_tablet { @include hide-on('tablet', $display: 'inline'); }
+.tablet-hide, .is-hidden_tablet { @include hide-on('tablet', $display: block); }
+.tablet-hide-inline, .is-hidden--inline_tablet { @include hide-on('tablet', $display: inline); }
 
 //Hide on desktop
 .desktop-hide, .is-hidden_desktop { @media #{$desktop} { display: none; } }
