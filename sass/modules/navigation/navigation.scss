@@ -82,7 +82,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 
         .header-description--label,
         .header-description--content { display: block; }
-        .header-description--label { font-size: $font-size-small; }
+        .header-description--label { font-size: $font-size-xsmall; }
         .header-description--content { font-size: $font-size-medium; }
       }
     }
@@ -118,7 +118,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
       a {
         @extend %action;
         color: rgba(auto-color($menu-color), .60);
-        font-size: 1rem;
+        font-size: $font-size-normal;
         line-height: 0.9rem;
         margin: 0;
         margin-right: 1.2rem !important; //Ignores first-of-type and last-of-type margin default to %actions

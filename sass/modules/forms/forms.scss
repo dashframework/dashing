@@ -7,14 +7,14 @@ fieldset {
 
   label {
     display: block;
-    font-size: $font-size-small;
+    font-size: $font-size-xsmall;
     font-weight: $font-weight-semibold;
     margin-bottom: 0.3rem;
     text-align: left;
 
     &.inline {
       @include user-select(none);
-      font-size: 1rem;
+      font-size: $font-size-normal;
       display: inline-block;
       font-weight: normal;
       cursor: pointer;
@@ -28,7 +28,7 @@ fieldset {
     background-color: $white;
     border: 2px solid $gray-150;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: $font-size-normal;
     max-width: 100%;
     padding: 0.6rem;
     width: 100%;

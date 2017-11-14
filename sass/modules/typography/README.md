@@ -13,7 +13,8 @@ Keeping a well structured typographic scale is extremely important for legibilit
 | `$font-size-large`   | `<h2>`     | 28px   | 1.563rem  |
 | `$font-size-medium`  | `<h3>`     | 23px   | 1.2rem    |
 | `$font-size-normal`  | `<p>`      | 18px   | 1rem      |
-| `$font-size-small`   | `<small>`  | 14px   | 0.8rem    |
+| `$font-size-small`   | `<small>`  | 16px   | 0.9rem    |
+| `$font-size-xsmall`  | `<xsmall>` | 14px   | 0.8rem    |
 
 For increased scannability, we recommend only using regular and semibold weights (400 & 600 respectively); adding additional weights can clutter your content. Keep in mind that achieving visual hierarchy should not be limited by font weight alone. Rather, it is recommended that you use a combination of weight, size and color variations in order to create proper hierarchy.
 
