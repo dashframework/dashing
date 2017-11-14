@@ -99,22 +99,23 @@
 /* Tag Mixins
   =========================================================================== */
 //Tag
-@mixin tag($background-color, $border-color, $color, $hover-color, $hover-border-color) {
-  background-color: $background-color;
-  border-color: $border-color;
+@mixin tag($tag-color, $color) {
+  background-color: $tag-color;
+  border-color: $tag-color;
   color: $color;
-  &:not(.tag--no-link):hover, &:not(.tag--no-link):focus { 
-    border-color: $hover-border-color; 
-    color: $hover-color;
+  &:not(.tag--no-link):hover, &:not(.tag--no-link):focus {
+    border-color: darken($tag-color, 20%);
+    color: lighten($color, 10%);
   }
 }
 
 //Action Tag
-@mixin tag--action($color, $border-color) { 
+@mixin tag--action($color) {
   background-color: $gray-150;
-  border-color: $gray-150; 
+  border-color: $gray-150;
   color: $color;
   &:not(.tag--no-link):hover, &:not(.tag--no-link):focus {
-    border-color: $border-color; 
-    color: lighten($color, 10%); }
+    border-color: $color;
+    color: lighten($color, 10%);
+  }
 }

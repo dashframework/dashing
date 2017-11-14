@@ -2,6 +2,24 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.12 - November 14, 2017
+**Fixed**
+* Updated line height to fix scrolling on zoomed displays
+  
+*****
+  
+### 1.1.11 - October 26, 2017
+**Updated**
+* Updated modules to use $font-size Sass variables
+  
+*****
+  
+### 1.1.10 - October 06, 2017
+**Updated**
+* Updated base colors to new ui colors
+  
+*****
+  
 ### 1.1.9 - October 03, 2017
 **Added**
 * added tags, tweaked updater
