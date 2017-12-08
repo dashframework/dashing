@@ -19,7 +19,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
   z-index: 10;
 
   .app-context {
-    max-width: $global-content-width;
+    max-width: $dash-app-content-width;
     margin: auto;
     padding: 1rem;
 
@@ -91,7 +91,7 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
   .app-navigation {
     @extend %remove-list-style;
     @extend %clearfix;
-    max-width: $global-content-width;
+    max-width: $dash-app-content-width;
     margin: auto;
     overflow: hidden;
     overflow-x: auto;
@@ -169,8 +169,8 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
     position: absolute;
     right: 1rem;
     bottom: -1.5rem;
-    @media screen and (min-width: #{$global-content-width}) {
-      right:calc(50% - (#{$global-content-width}/2) - 0.4rem);
+    @media screen and (min-width: #{$dash-app-content-width}) {
+      right:calc(50% - (#{$dash-app-content-width}/2) - 0.4rem);
     }
   }
 }

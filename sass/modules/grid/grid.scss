@@ -21,7 +21,7 @@ html {
 .row {
   @extend %clearfix;
   margin: auto;
-  max-width: $global-content-width;
+  max-width: $dash-app-content-width;
   padding-left: $grid-gutter;
   width: 100%;
 

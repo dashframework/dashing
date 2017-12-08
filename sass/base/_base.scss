@@ -26,3 +26,10 @@ hr {
   width: 100%;
   height: 100%;
 }
+
+.page-wrap {
+  width: 100%;
+  padding: $grid-gutter;
+  max-width: $page-wrap-content-width;
+  margin: 0 auto;//center this
+}

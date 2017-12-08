@@ -1,6 +1,7 @@
 /* Core Variables
   =========================================================================== */
-$global-content-width: 1200px !default;
+$dash-app-content-width: 1200px !default;
+$page-wrap-content-width: 700px !default;//used for single page apps or centered, single-page cards
 $global-transition: all 0.2s ease-in-out !default;
 $grid-gutter: 1rem !default;
 
