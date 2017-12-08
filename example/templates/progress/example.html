@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+    <title>Progress-Stepper</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+  </head>
+
+  <body id="body" class="example-body">
+    <div id="sidebarNavigation" class="example-sidebar"></div>
+    <nav class="app-menu example-menu--typography">
+      <div class="app-context">
+        <div class="app-title">Progress Stepper</div>
+      </div>
+    </nav>
+
+    <div class="app-content">
+
+<h2 class="example-header no-margin--top">Two Step Example</h2>
+<p>NOTE: The width on the progress bar is determined by an inline style. ie. <code class="example-text">style="width: 25%;"</code></p>
+<div class="row example-container">
+  <div class="column column--full">
+    <div class="progress-bar-container">
+      <div class="progress-bar with-progress-steps">
+        <div class="progress" data-id="progress-bar" style="width: 25%;"></div>
+      </div>
+      <div class="progress-bar-step current-step column column--half">Step 1</div>
+      <div class="progress-bar-step column column--half">Step 2</div>
+    </div>  
+  </div>
+
+  <div class="column column--full">
+    <div class="progress-bar-container">
+      <div class="progress-bar with-progress-steps">
+        <div class="progress" data-id="progress-bar" style="width: 75%;"></div>
+      </div>
+      <div class="progress-bar-step step-completed column column--half">Step 1</div>
+      <div class="progress-bar-step current-step column column--half">Step 2</div>
+    </div>
+  </div>
+
+  <div class="column column--full">
+    <div class="progress-bar-container">
+      <div class="progress-bar with-progress-steps">
+        <div class="progress" data-id="progress-bar" style="width: 100%;"></div>
+      </div>
+      <div class="progress-bar-step step-completed column column--half">Step 1</div>
+      <div class="progress-bar-step step-completed column column--half">Step 2</div>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html">&lt;!-- First Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress-bar-container"&gt;
+    &lt;div class="progress-bar with-progress-steps"&gt;
+      &lt;div class="progress" data-id="progress-bar" style="width: 25%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 2&lt;/div&gt;
+  &lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;!-- Second Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress-bar-container"&gt;
+    &lt;div class="progress-bar with-progress-steps"&gt;
+      &lt;div class="progress" data-id="progress-bar" style="width: 75%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Completed --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress-bar-container"&gt;
+    &lt;div class="progress-bar with-progress-steps"&gt;
+      &lt;div class="progress" data-id="progress-bar" style="width: 100%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+
+<h2 class="example-header no-margin--top">Three Step Example</h2>
+<p>NOTE: The width on the progress bar is determined by an inline style. ie. <code class="example-text">style="width: 16.666%;"</code></p>
+<div class="row example-container">
+  <div class="column column--full">
+    <div class="progress-bar-container">
+      <div class="progress-bar with-progress-steps">
+        <div class="progress" data-id="progress-bar" style="width: 16.666%;"></div>
+      </div>
+      <div class="progress-bar-step current-step column column--third">Step 1</div>
+      <div class="progress-bar-step column column--third">Step 2</div>
+      <div class="progress-bar-step column column--third">Step 3</div>   
+    </div>  
+  </div>
+
+  <div class="column column--full">
+    <div class="progress-bar-container">
+      <div class="progress-bar with-progress-steps">
+        <div class="progress" data-id="progress-bar" style="width: 50%;"></div>
+      </div>
+      <div class="progress-bar-step step-completed column column--third">Step 1</div>
+      <div class="progress-bar-step current-step column column--third">Step 2</div>
+      <div class="progress-bar-step column column--third">Step 3</div>   
+    </div>
+  </div>
+
+  <div class="column column--full">
+    <div class="progress-bar-container">
+      <div class="progress-bar with-progress-steps">
+        <div class="progress" data-id="progress-bar" style="width: 83.333%;"></div>
+      </div>
+      <div class="progress-bar-step step-completed column column--third">Step 1</div>
+      <div class="progress-bar-step step-completed column column--third">Step 2</div>
+      <div class="progress-bar-step current-step column column--third">Step 3</div>   
+    </div>
+  </div>
+
+  <div class="column column--full">
+    <div class="progress-bar-container">
+      <div class="progress-bar with-progress-steps">
+        <div class="progress" data-id="progress-bar" style="width: 100%;"></div>
+      </div>
+      <div class="progress-bar-step step-completed column column--third">Step 1</div>
+      <div class="progress-bar-step step-completed column column--third">Step 2</div>
+      <div class="progress-bar-step step-completed column column--third">Step 3</div>   
+    </div>
+  </div>
+
+</div>
+<pre><code class="language-html">&lt;!-- First Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress-bar-container"&gt;
+    &lt;div class="progress-bar with-progress-steps"&gt;
+      &lt;div class="progress" data-id="progress-bar" style="width: 16.666%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 2&lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;!-- Second Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress-bar-container"&gt;
+    &lt;div class="progress-bar with-progress-steps"&gt;
+      &lt;div class="progress" data-id="progress-bar" style="width: 50%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 2&lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Third Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress-bar-container"&gt;
+    &lt;div class="progress-bar with-progress-steps"&gt;
+      &lt;div class="progress" data-id="progress-bar" style="width: 83.333%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 2&lt;/div&gt;
+    &lt;div class="progress-bar-step column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Completed --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress-bar-container"&gt;
+    &lt;div class="progress-bar with-progress-steps"&gt;
+      &lt;div class="progress" data-id="progress-bar" style="width: 100%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 2&lt;/div&gt;
+    &lt;div class="progress-bar-step step-completed column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+
+
+    </div>
+  </body>
+</html>
