@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.13 - December 08, 2017
+**Added**
+* Added Progress Stepper
+  
+*****
+  
 ### 1.1.12 - November 14, 2017
 **Fixed**
 * Updated line height to fix scrolling on zoomed displays

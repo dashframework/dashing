@@ -1,0 +1,50 @@
+.progress-bar-container {
+  max-width: 750px;
+  margin: auto;
+  overflow: auto;
+  padding: 2rem 1rem;
+
+  .progress-bar-step {
+    padding: 0;
+    padding-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $gray-600;
+    text-align: center;
+    display: none;
+
+    @media #{$tablet} {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    &.step-completed,
+    &.step-completed a {
+      color: $green;
+    }
+
+    &.current-step {
+      display: block;
+    }
+  }
+}
+
+.progress-bar {
+  background-color: $gray-200;
+  border-radius: 5px;
+  height: 16px;
+  width: 100%;
+  overflow: hidden;
+
+  &.with-progress-steps {
+    border-radius: 15px;
+    height: 15px;
+    background-color: $gray-150;
+
+    .progress {
+      height: 100%;
+      background-color: $green;
+      border-radius: 15px;
+    }
+  }
+}
