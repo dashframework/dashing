@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.14 - December 19, 2017
+**Fixed**
+* Change class names that were in conflict with other components (ie .progress-bar-container)
+  
+*****
+  
 ### 1.1.13 - December 08, 2017
 **Added**
 * Added Progress Stepper
