@@ -1,10 +1,10 @@
-.progress-bar-container {
+.progress-stepper-container {
   max-width: 750px;
   margin: auto;
   overflow: auto;
   padding: 2rem 1rem;
 
-  .progress-bar-step {
+  .progress-stepper-step {
     padding: 0;
     padding-top: 0.5rem;
     font-weight: 600;
@@ -29,7 +29,7 @@
   }
 }
 
-.progress-bar {
+.progress-stepper {
   background-color: $gray-200;
   border-radius: 5px;
   height: 16px;
