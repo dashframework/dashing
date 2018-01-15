@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.1.15 - January 15, 2018
+**Added**
+* Added new icons to font icons: inbox, faces, mobile-phone, notification-off, star-stroke, star-filled, menu, categories, mail, chat-filled, popular, paper-check, paper-check-2
+  
+*****
+  
 ### 1.1.14 - December 19, 2017
 **Fixed**
 * Change class names that were in conflict with other components (ie .progress-bar-container)
