@@ -2,7 +2,7 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
-### 1.1.15 - January 15, 2018
+### 1.2.0 - January 15, 2018
 **Added**
 * Added new icons to font icons: inbox, faces, mobile-phone, notification-off, star-stroke, star-filled, menu, categories, mail, chat-filled, popular, paper-check, paper-check-2
   
