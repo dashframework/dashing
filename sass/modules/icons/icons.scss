@@ -131,14 +131,15 @@
   //Below Added on Jan 15, 2018
   &.dashing-icon--inbox:before            { content: '\e83d'; } /* '' */
   &.dashing-icon--face-amazing:before     { content: '\e83e'; } /* '' */
-  &.dashing-icon--face-awful:before      { content: '\e83f'; } /* '' */
+  &.dashing-icon--face-awful:before       { content: '\e83f'; } /* '' */
   &.dashing-icon--face-ok:before          { content: '\e840'; } /* '' */
   &.dashing-icon--face-good:before        { content: '\e841'; } /* '' */
   &.dashing-icon--face-bad:before         { content: '\e842'; } /* '' */
   &.dashing-icon--mobile-phone:before     { content: '\e844'; } /* '' */
   &.dashing-icon--notification-off:before { content: '\e845'; } /* '' */
   &.dashing-icon--star-stroke:before      { content: '\e847'; } /* '' */
-  &.dashing-icon--star-filled:before      { content: '\e831'; } /* '' */
+  &.dashing-icon--star-filled:before,
+  &.dashing-icon--star:before             { content: '\e831'; } /* '' */
   &.dashing-icon--menu:before             { content: '\e849'; } /* '' */
   &.dashing-icon--categories:before       { content: '\e84a'; } /* '' */
   &.dashing-icon--mail:before             { content: '\e81a'; } /* '' */
