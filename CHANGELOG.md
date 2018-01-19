@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.2.2 - January 19, 2018
+**Fixed**
+* Fixed styles for hidden breakpoints
+  
+*****
+  
 ### 1.2.1 - January 16, 2018
 **Fixed**
 * Fixed scrollbars in custom radio buttons and checkboxes
