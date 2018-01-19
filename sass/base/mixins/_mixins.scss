@@ -40,16 +40,16 @@
 }
 
 @mixin hide-on($device, $display) {
-  display: none;
+  display: $display;
 
   @if $device == 'phone' {
-    @media #{$tablet} {
-      display: $display;
-    }
-  } @else if $device == 'tablet' {
-    @media #{$desktop} {
-      display: $display;
-    }
+    display: none;
+    @media #{$tablet} { display: $display; }
+  }
+
+  @else if $device == 'tablet' {
+    @media #{$tablet} { display: none; }
+    @media #{$desktop} { display: $display; }
   }
 }
 
