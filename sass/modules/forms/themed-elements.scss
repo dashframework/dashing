@@ -22,7 +22,6 @@ $switch--off: $gray-250 !default; //Color of switch when off
   ================================================== */
 .checkbox--custom,
 .radio--custom {
-  @extend %clearfix;
   input { // Places the input behind the label so it doesn't overlay text
     opacity: 0;
     position: absolute;
@@ -149,15 +148,14 @@ $switch--off: $gray-250 !default; //Color of switch when off
   label { //Position Styles
     @include user-select(none);
     cursor: pointer;
-  	float: left;
     line-height: 1.4rem;
     margin: 0.3rem 0 0.3rem 2px;
     position: relative;
     text-indent: 1.8rem;
     &:before { //Radio Button Styles
+      content: '';
       border: 2px solid $gray-200;
       border-radius: 50px;
-      content: '';
       display: block;
       font-size: 1.7rem;
       line-height: 12px;
