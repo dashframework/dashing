@@ -24,7 +24,6 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
 
 /* Actions Styles
   =========================================================================== */
-
 #{$buttons} {
   @extend %action;
   @extend %button--round;

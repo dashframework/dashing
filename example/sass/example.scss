@@ -11,3 +11,15 @@
 .overlay--spinner {
   left: 10rem;
 }
+
+.main {
+  @media #{$tablet} {
+    left: $sidebar-width;
+    position: relative;
+    width: calc(100% - #{$sidebar-width});
+  }
+}
+
+.row {
+  max-width: 800px;
+}
