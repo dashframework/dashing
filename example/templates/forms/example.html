@@ -12,26 +12,23 @@
   </head>
 
   <body class="example-body">
-    <div id="sidebarNavigation" class="example-sidebar"></div>
-    <nav class="app-menu expanded example-menu--forms">
-      <div class="app-context">
-        <div class="app-title">Dashing Forms</div>
-      </div>
-      <ul class="app-navigation">
-        <li><a href="#" class="active">Inputs</a></li>
-        <li><a href="controls.html">Controls</a></li>
-        <li><a href="cards.html">Cards</a></li>
-      </ul>
-    </nav>
+    <div class="main-content">
+      <div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="sidebar--overlay is-hidden"></div>
+      <div class="main">
+        <div class="page-header">
+          <button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+          <h1>Forms</h1>
+        </div>
 
-    <div class="app-content">
-
-    <h2 class="example-header no-margin--top">Default Inputs</h2>
-    <div class="row example-container">
-      <fieldset class="column column--full">
-        <label for="dashing-text">Dashing Text Input</label>
-        <input type="text" id="dashing-text"/>
-      </fieldset>
+        <div class="app-content">
+          <div class="row">
+            <div class="column column--full">
+              <h2 class="example-header no-margin--top">Forms</h2>
+              <fieldset>
+                <label for="dashing-text">Dashing Text Input</label>
+                <input type="text" id="dashing-text"/>
+              </fieldset>
 
       <fieldset class="column column--full">
         <label for="dashing-text-disabled">Dashing Text Input disabled</label>
@@ -60,7 +57,11 @@
   &lt;textarea id="dashing-textarea"&gt;&lt;/textarea&gt;
 &lt;/fieldset&gt;</code>
 </pre>
+</div>
+</div>
 
+<div class="row">
+  <div class="column column--full">
 <h2 class="example-header">Select Menu</h2>
 <p>To add the drop-down icon, add the <code class="example-text">.select--has-icon</code> class to the parent container. Ensure you also have the dashing-icon font library properly installed.</p>
 <div class="row example-container">
@@ -83,7 +84,11 @@
   &lt;/select&gt;
 &lt;/fieldset&gt;</code>
 </pre>
+</div>
+</div>
 
+<div class="row">
+  <div class="column column--full">
 <h2 class="example-header">Input Group</h2>
 <p>NOTE: Due to the way the <code class="example-text">.select--has-icon</code> class works, a select menu can only be placed on the right side of the <code class="example-text">input</code>.</p>
 <div class="row example-container">
@@ -112,7 +117,11 @@
   &lt;/div&gt;
 &lt;/fieldset&gt;</code>
 </pre>
+</div>
+</div>
 
+<div class="row">
+  <div class="column column--full">
     <h2 class="example-header">Input Add-on</h2>
     <p>NOTE: There is a Chrome bug that prevents this from working when applied to <code class="example-text">fieldset</code>. Ensure your <code class="example-text">.input--add-on</code> class is applied to a <code class="example-text">div</code>.</p>
     <p><strong>This is not supported on Internet Explorer</strong></p>
@@ -194,7 +203,11 @@
   &lt;/div&gt;
 &lt;/fieldset&gt;</code>
 </pre>
+</div>
+</div>
 
+<div class="row">
+  <div class="column column--full">
     <h2 class="example-header">Input Message States</h2>
     <div class="row example-container">
       <fieldset class="column column--full">
@@ -254,6 +267,8 @@
   &lt;/ul&gt;
 &lt;/fieldset&gt;</code>
 </pre>
+</div>
+</div>
 
 <!-- <h2 class="example-header">Custom File Upload</h2>
 <div class="row example-container">
@@ -281,6 +296,8 @@
 </code>
 </pre> -->
 
+<div class="row">
+  <div class="column column--full">
 <h2 class="example-header">Other Supported Input Types</h2>
 <div class="row example-container">
   <fieldset class="column column--full">
@@ -363,6 +380,26 @@
   &lt;input type="file" id="dashing-file"/&gt;
 &lt;/fieldset&gt;</code>
 </pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+<h2 class="example-header">Custom Range Slider</h2>
+<div class="row example-container">
+  <fieldset class="column column--full range--custom">
+    <label for="dashing-range">Dashing Range</label>
+    <input type="range" id="dashing-range"/>
+  </fieldset>
+</div>
+<pre><code class="language-html">&lt;!-- Custom Range Slider --&gt;
+&lt;fieldset class="column column--full range--custom"&gt;
+  &lt;label for="dashing-range"&gt;Dashing Range&lt;/label&gt;
+  &lt;input type="range" id="dashing-range"/&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+</div>
+</div>
     </div>
   </body>
 </html>

@@ -12,32 +12,174 @@
   </head>
 
   <body class="example-body">
-    <div id="sidebarNavigation" class="example-sidebar"></div>
-    <nav class="app-menu">
-      <div class="app-context">
-        <div class="app-title">Dashing Navigation</div>
-      </div>
-    </nav>
+		<div class="main-content">
+			<div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="sidebar--overlay is-hidden"></div>
+			<div class="main">
+				<div class="page-header">
+					<button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+					<h1>Navigation</h1>
+					<a href="http://design.samaritanministries.org/product/components/navigation/" target="_blank" class="button button--small button--smooth float-right">
+						View Guidelines
+					</a>
+				</div>
 
-    <div class="app-content">
-      <fieldset class="example-header no-margin--top">
-        <h2 class="float-left">Default Navigation</h2>
-      </fieldset>
-<pre><code class="language-scss">//Include this variable in your theme file to change the color of your header
-$menu-color: $gray-100 !default;</code>
-</pre>
+        <div class="app-content">
+          <div class="row">
+            <div class="column column--full">
+            <h2 class="example-header no-margin--top">Default Navigation</h2>
+            <div class="row example-container">
+              <div class="column column--full">
+                <nav class="app-menu" style="position: relative;">
+                  <div class="app-context">
+                    <div class="app-title">App Title</div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
 <pre><code class="language-html">&lt;nav class="app-menu"&gt;
   &lt;div class="app-context"&gt;
     &lt;div class="app-title"&gt;App Title&lt;/div&gt;
   &lt;/div&gt;
 &lt;/nav&gt;</code>
 </pre>
-      <div class="row center-align">
-        <div class="column column--full">
-          <a class="button button--primary" href="example-1.html">Show Subnav</a>
-        </div>
+<pre><code class="language-scss">//Include this variable in your theme file to change the color of your header
+$menu-color: $gray-100 !default;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Navigation with Back Link</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <nav class="app-menu expanded" style="position: relative;">
+          <div class="app-context">
+            <div class="app-title">
+              <a href="example.html" class="button button--navigation"></a>
+              <span>App Title</span>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
+<pre><code class="language-html">&lt;nav class="app-menu expanded"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;a href="example.html" class="button button--navigation"&gt;&lt;/a&gt;
+      &lt;span&gt;App Title&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Navigation with Breadcrumb</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <nav class="app-menu expanded" style="position: relative;">
+          <div class="app-context">
+            <div class="app-title">
+              <a href="example.html" class="app-title--has-breadcrumb">App Title</a>
+              <i class="dashing-icon dashing-icon--arrow-right"></i>
+              <span>With Breadcrumb</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+<pre><code class="language-html">&lt;nav class="app-menu expanded"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;a href="example.html" class="app-title--has-breadcrumb"&gt;App Title&lt;/a&gt;
+      &lt;i class="dashing-icon dashing-icon--arrow-right"&gt;&lt;/i&gt;
+      &lt;span&gt;With Breadcrumb&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code>
+</pre>
+<pre><code class="language-scss">//Include this variable in your theme file to change the color of your header
+$menu-color: $gray-100 !default;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Navigation with Tabs</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <nav class="app-menu expanded" style="position: relative;">
+          <div class="app-context">
+            <div class="app-title">
+              <span>App Title</span>
+            </div>
+          </div>
+          <ul class="app-navigation">
+            <li><a href="#" class="active">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#" target="blank">
+              Link 3
+              <i class="dashing-icon dashing-icon--new-tab flow-opposite"></i>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+<pre><code class="language-html">&lt;nav class="app-menu expanded"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;span&gt;App Title&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class="app-navigation"&gt;
+    &lt;li&gt;&lt;a href="#" class="active"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" target="blank"&gt;
+      Link 3
+      &lt;i class="dashing-icon dashing-icon--new-tab flow-opposite"&gt;&lt;/i&gt;
+    &lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Navigation with Main Action Button</h2>
+    <div class="row example-container">
+      <div class="column column--full" style="height: 7rem; overflow: hidden;">
+        <nav class="app-menu expanded" style="position: relative;">
+          <div class="app-context">
+            <div class="app-title">
+              <span>App Title</span>
+            </div>
+          </div>
+          <button class="button button--primary button--icon button--icon--main" style="right: 1rem;">
+            <i class="dashing-icon dashing-icon--add"></i>
+          </button>
+        </nav>
+      </div>
+    </div>
+<pre><code class="language-html">&lt;nav class="app-menu expanded"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;span&gt;App Title&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="button button--primary button--icon button--icon--main" style="right: 1rem;"&gt;
+    &lt;i class="dashing-icon dashing-icon--add"&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/nav&gt;</code>
+</pre>
+</div>
+</div>
 
   </body>
 </html>

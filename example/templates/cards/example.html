@@ -12,29 +12,33 @@
   </head>
 
   <body class="example-body">
-    <div id="sidebarNavigation" class="example-sidebar"></div>
-
-    <nav class="app-menu example-menu--card">
-      <div class="app-context">
-        <div class="app-title">Dashing Cards</div>
-      </div>
-    </nav>
-
-    <div class="app-content" style="max-width: 700px; margin: 0 auto;">
-
-      <fieldset class="example-header no-margin--top">
-        <h2 class="float-left">Default Card</h2>
-      </fieldset>
-      <div class="card">
-        <div class="card--header">
-          <h3>This is a simple card</h3>
+    <div class="main-content">
+      <div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="sidebar--overlay is-hidden"></div>
+      <div class="main">
+        <div class="page-header">
+          <button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+          <h1>Cards</h1>
+          <a href="http://design.samaritanministries.org/product/components/cards/" target="_blank" class="button button--small button--smooth float-right">
+            View Guidelines
+          </a>
         </div>
 
-        <div class="card--content">
-          <p class="remove-margin--top">Dashing Cards are used to contain and display any type of content.</p>
-          <p class="remove-margin--bottom">This is an example of a simple card. Its little markup makes it very convenient to use.</p>
-        </div>
-      </div>
+
+        <div class="app-content">
+          <div class="row">
+            <div class="column column--full">
+            <h2 class="example-header no-margin--top" style="margin-bottom: -1.5rem;">Default Card</h2>
+            <div class="card">
+              <div class="card--header">
+                <h3>This is a simple card</h3>
+              </div>
+
+              <div class="card--content">
+                <p class="remove-margin--top">Dashing Cards are used to contain and display any type of content.</p>
+                <p class="remove-margin--bottom">This is an example of a simple card. Its little markup makes it very convenient to use.</p>
+              </div>
+            </div>
 <pre><code class="language-html">&lt;div class="card"&gt;
   &lt;div class="card--header"&gt;
     &lt;h3&gt;This is a simple card&lt;/h3&gt;
@@ -46,23 +50,25 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
+</div>
+</div>
 
-      <fieldset class="example-header">
-        <h2 class="float-left">Centered content in a card</h2>
-      </fieldset>
-      <div class="card center-align">
-        <div class="card--header">
-          <h3>This is a simple card</h3>
-        </div>
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header" style="margin-bottom: -1.5rem;">Centered content in a card</h2>
+  <div class="card center-align">
+    <div class="card--header">
+      <h3>This is a simple card</h3>
+    </div>
 
-        <div class="card--content">
-          <p>To center content within a card, apply the <a href="https://github.com/dashframework/dashing/blob/2b4f977910aa2cd9c54309d08aae915af283fda0/sass/modules/typography/_typography.scss#L19-L21">alignment utility class</a> <code class="example-text">.center-align</code> to a <code class="example-text">.card</code> element. If you want more control, apply the utility class to the <code class="example-text">.card--header</code>, <code class="example-text">.card--content</code>, or <code class="example-text">.card--footer</code> elements.</p>
-        </div>
+    <div class="card--content">
+      <p>To center content within a card, apply the <a href="https://github.com/dashframework/dashing/blob/2b4f977910aa2cd9c54309d08aae915af283fda0/sass/modules/typography/_typography.scss#L19-L21">alignment utility class</a> <code class="example-text">.center-align</code> to a <code class="example-text">.card</code> element. If you want more control, apply the utility class to the <code class="example-text">.card--header</code>, <code class="example-text">.card--content</code>, or <code class="example-text">.card--footer</code> elements.</p>
+    </div>
 
-        <div class="card--footer">
-          <button class="button button--blue">Centered Button</button>
-        </div>
-      </div>
+    <div class="card--footer">
+      <button class="button button--blue">Centered Button</button>
+    </div>
+  </div>
 <pre><code class="language-html">&lt;div class="card center-align"&gt;
   &lt;div class="card--header"&gt;
     &lt;h3&gt;This is a simple card&lt;/h3&gt;
@@ -77,34 +83,35 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
+</div>
+</div>
 
-      <fieldset class="example-header">
-        <h2 class="float-left">Separation within cards</h2>
-      </fieldset>
-
-      <div class="card">
-        <div class="card--header has-border">
-          <h3>Creating line separation with an <code class="example-text">&lt;hr&gt;</code> and <code class="example-text">.has-border</code></h3>
-        </div>
-
-        <div class="card--content">
-          <p class="remove-margin--top">Use the <code class="example-text">.has-border</code> class on your <code class="example-text">.card--header</code> or <code class="example-text">.card--footer</code> element to create a line separation between content </p>
-          <hr>
-          <p>Placing an <code class="example-text">&lt;hr&gt;</code> within <code class="example-text">.card--header</code>, <code class="example-text">card--content</code>, or <code class="example-text">card--footer</code> will allow you to separate content within your card, while still respecting your <code class="example-text">$grid-gutter</code>.</p>
-          <hr>
-          <p class="remove-margin--bottom">Use the <a href="https://github.com/dashframework/dashing/blob/v1.0.7/sass/base/utilities/_utilities.scss#L12-L16">remove-margin</a> utility classes to remove unnecessary margin in your paragraphs.</p>
-        </div>
-
-        <hr>
-
-        <div class="card--content">
-          <p class="remove-margin">Use an <code class="example-text">&lt;hr&gt;</code> outside of <code class="example-text">.card--header</code>, <code class="example-text">card--content</code>, or <code class="example-text">card--footer</code> to span your <code class="example-text">&lt;hr&gt;</code> edge to edge.</p>
-        </div>
-
-        <div class="card--footer has-border">
-          <button class="button button--primary">Button</button>
-        </div>
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header" style="margin-bottom: -1.5rem;">Separation within cards</h2>
+    <div class="card">
+      <div class="card--header has-border">
+        <h3>Creating line separation with an <code class="example-text">&lt;hr&gt;</code> and <code class="example-text">.has-border</code></h3>
       </div>
+
+      <div class="card--content">
+        <p class="remove-margin--top">Use the <code class="example-text">.has-border</code> class on your <code class="example-text">.card--header</code> or <code class="example-text">.card--footer</code> element to create a line separation between content </p>
+        <hr>
+        <p>Placing an <code class="example-text">&lt;hr&gt;</code> within <code class="example-text">.card--header</code>, <code class="example-text">card--content</code>, or <code class="example-text">card--footer</code> will allow you to separate content within your card, while still respecting your <code class="example-text">$grid-gutter</code>.</p>
+        <hr>
+        <p class="remove-margin--bottom">Use the <a href="https://github.com/dashframework/dashing/blob/v1.0.7/sass/base/utilities/_utilities.scss#L12-L16">remove-margin</a> utility classes to remove unnecessary margin in your paragraphs.</p>
+      </div>
+
+      <hr>
+
+      <div class="card--content">
+        <p class="remove-margin">Use an <code class="example-text">&lt;hr&gt;</code> outside of <code class="example-text">.card--header</code>, <code class="example-text">card--content</code>, or <code class="example-text">card--footer</code> to span your <code class="example-text">&lt;hr&gt;</code> edge to edge.</p>
+      </div>
+
+      <div class="card--footer has-border">
+        <button class="button button--primary">Button</button>
+      </div>
+    </div>
 
 <pre><code class="language-html">&lt;div class="card"&gt;
   &lt;div class="card--header has-border"&gt;
@@ -130,20 +137,21 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
+</div>
+</div>
 
-      <fieldset class="example-header">
-        <h2 class="float-left">Selectable Card</h2>
-      </fieldset>
-
-      <div class="card is-selectable">
-        <div class="card--header">
-          <h3>This is a selectable card</h3>
-        </div>
-
-        <div class="card--footer">
-          <button class="button button--primary button--transparent">Click me</button>
-        </div>
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header" style="margin-bottom: -1.5rem;">Selectable Card</h2>
+    <div class="card is-selectable">
+      <div class="card--header">
+        <h3>This is a selectable card</h3>
       </div>
+
+      <div class="card--footer">
+        <button class="button button--primary button--transparent">Click me</button>
+      </div>
+    </div>
 
 <pre><code class="language-html">&lt;!-- Add the .is-selectable class to make the card appear clickable --&gt;
 &lt;div class="card is-selectable"&gt;
@@ -156,53 +164,56 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
+</div>
+</div>
 
-      <fieldset class="example-header">
-        <h2 class="float-left">Form Elements in a Card</h2>
-      </fieldset>
-      <div class="card">
-        <div class="card--header">
-          <h3>This is a card with a form</h3>
-        </div>
 
-        <form>
-          <fieldset class="card--content">
-
-            <div class="row row--nested">
-              <div class="column column--full column--nested">
-                <label>Label</label>
-                <input type="text">
-              </div>
-            </div>
-
-            <div class="row row--nested">
-              <div class="column column--half column--nested">
-                <label>Label</label>
-                <input type="text">
-              </div>
-              <div class="column column--half column--nested">
-                <label>Label</label>
-                <input type="text">
-              </div>
-            </div>
-            <div class="row row--nested">
-              <div class="column column--half column--nested">
-                <label>Label</label>
-                <input type="text">
-              </div>
-              <div class="column column--half column--nested">
-                <label>Label</label>
-                <input type="text">
-              </div>
-            </div>
-          </fieldset>
-
-          <div class="card--footer">
-            <button class="button button--green">Submit</button>
-            <button class="button button--secondary button--transparent">Cancel</button>
-          </div>
-        </form>
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header" style="margin-bottom: -1.5rem;">Form Elements in a Card</h2>
+    <div class="card">
+      <div class="card--header">
+        <h3>This is a card with a form</h3>
       </div>
+
+      <form>
+        <fieldset class="card--content">
+
+          <div class="row row--nested">
+            <div class="column column--full column--nested">
+              <label>Label</label>
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="row row--nested">
+            <div class="column column--half column--nested">
+              <label>Label</label>
+              <input type="text">
+            </div>
+            <div class="column column--half column--nested">
+              <label>Label</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="row row--nested">
+            <div class="column column--half column--nested">
+              <label>Label</label>
+              <input type="text">
+            </div>
+            <div class="column column--half column--nested">
+              <label>Label</label>
+              <input type="text">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="card--footer">
+          <button class="button button--green">Submit</button>
+          <button class="button button--secondary button--transparent">Cancel</button>
+        </div>
+      </form>
+    </div>
 
 <pre><code class="language-html">&lt;div class="card"&gt;
   &lt;div class="card--header"&gt;
@@ -248,6 +259,9 @@
   &lt;/form&gt;
 &lt;/div&gt;</code>
 </pre>
+</div>
+</div>
+
     </div>
   </body>
 </html>
