@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+    <title>Forms</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+  </head>
+
+  <body class="example-body">
+    <div id="sidebarNavigation" class="example-sidebar"></div>
+    <nav class="app-menu expanded example-menu--forms">
+      <div class="app-context">
+        <div class="app-title">Dashing Forms</div>
+      </div>
+      <ul class="app-navigation">
+        <li><a href="example.html">Inputs</a></li>
+        <li><a href="#"  class="active">Controls</a></li>
+        <li><a href="cards.html">Cards</a></li>
+      </ul>
+    </nav>
+
+    <div class="app-content">
+
+    <h2 class="example-header no-margin--top">Default Radio Buttons</h2>
+    <p>Use radio buttons when displaying two or more answers in which the user must select exactly one choice.</p>
+    <div class="row example-container">
+      <fieldset class="column column--full">
+        <label>Radio Buttons</label>
+        <div>
+          <label for="dashing-radio1" class="inline">Option 1</label>
+          <input type="radio" name="dashing-radio" id="dashing-radio1" checked/>
+        </div>
+        <div>
+          <label for="dashing-radio2" class="inline">Option 2</label>
+          <input type="radio" name="dashing-radio" id="dashing-radio2"/>
+        </div>
+        <div>
+          <label for="dashing-radio3" class="inline">Option 3</label>
+          <input type="radio" name="dashing-radio" id="dashing-radio3"/>
+        </div>
+      </fieldset>
+    </div>
+<pre><code class="language-html">&lt;!-- Default Radio Button --&gt;
+&lt;fieldset class="column column--full"&gt;
+  &lt;label&gt;Radio Buttons&lt;/label&gt;
+  &lt;div&gt;
+    &lt;label for="dashing-radio1" class="inline"&gt;Option 1&lt;/label&gt;
+    &lt;input type="radio" name="dashing-radio" id="dashing-radio1" checked/&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for="dashing-radio2" class="inline"&gt;Option 2&lt;/label&gt;
+    &lt;input type="radio" name="dashing-radio" id="dashing-radio2"/&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for="dashing-radio3" class="inline"&gt;Option 3&lt;/label&gt;
+    &lt;input type="radio" name="dashing-radio" id="dashing-radio3"/&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+
+<h2 class="example-header">Default Checkboxes</h2>
+<p>Use checkboxes when displaying a list of options in which the user may select any number of choices.</p>
+<div class="row example-container">
+  <fieldset class="column column--full">
+    <label>Checkboxes</label>
+    <div>
+      <label for="dashing-checkbox1" class="inline">Option 1</label>
+      <input type="checkbox" id="dashing-checkbox1"/>
+    </div>
+    <div>
+      <label for="dashing-checkbox2" class="inline">Option 2</label>
+      <input type="checkbox" id="dashing-checkbox2" checked/>
+    </div>
+    <div>
+      <label for="dashing-checkbox3" class="inline">Option 3</label>
+      <input type="checkbox" id="dashing-checkbox3"/>
+    </div>
+  </fieldset>
+</div>
+<pre><code class="language-html">&lt;!-- Default Checkboxes --&gt;
+&lt;fieldset class="column column--full"&gt;
+  &lt;label&gt;Checkboxes&lt;/label&gt;
+  &lt;div&gt;
+    &lt;label for="dashing-checkbox1" class="inline"&gt;Option 1&lt;/label&gt;
+    &lt;input type="checkbox" id="dashing-checkbox1"/&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for="dashing-checkbox2" class="inline"&gt;Option 2&lt;/label&gt;
+    &lt;input type="checkbox" id="dashing-checkbox2" checked/&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for="dashing-checkbox3" class="inline"&gt;Option 3&lt;/label&gt;
+    &lt;input type="checkbox" id="dashing-checkbox3"/&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+
+<h2 class="example-header">Custom Range Slider</h2>
+<div class="row example-container">
+  <fieldset class="column column--full range--custom">
+    <label for="dashing-range">Dashing Range</label>
+    <input type="range" id="dashing-range"/>
+  </fieldset>
+</div>
+<pre><code class="language-html">&lt;!-- Custom Range Slider --&gt;
+&lt;fieldset class="column column--full range--custom"&gt;
+  &lt;label for="dashing-range"&gt;Dashing Range&lt;/label&gt;
+  &lt;input type="range" id="dashing-range"/&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+  </body>
+</html>
