@@ -36,15 +36,18 @@
   </head>
 
   <body class="example-body">
-    <div id="sidebarNavigation" class="example-sidebar"></div>
 
-    <script src="../../../example/vendor/prismjs/prism.js"></script>
-
-    <nav class="app-menu example-menu--grid">
-      <div class="app-context">
-        <div class="app-title">Dashing Grid</div>
-      </div>
-    </nav>
+    <div class="main-content">
+      <div id="sidebarNavigation" class="example-sidebar"></div>
+      <script src="../../../example/vendor/prismjs/prism.js"></script>
+      <div class="main">
+        <div class="page-header">
+          <button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+          <h1>Grid</h1>
+          <a href="http://design.samaritanministries.org/product/components/grid/" target="_blank" class="button button--small button--smooth float-right">
+            View Guidelines
+          </a>
+        </div>
 
     <div class="app-content">
     <div class="row row--example">
@@ -203,31 +206,33 @@
       </div>
     </div>
 
-<h2 class="example-header"> Grid Example</h2>
-<div class="row example-container">
-  <div class="column column--full">
-    <fieldset class="row">
-      <div class="column column--full column--example">
-        <label>Example</label>
-        <input type="text">
-      </div>
-    </fieldset>
-    <fieldset class="row">
-      <div class="column column--third column--example">
-        <label>Example</label>
-        <input type="text">
-      </div>
-      <div class="column column--third column--example">
-        <label>Example</label>
-        <input type="text">
-      </div>
-      <div class="column column--third column--example">
-        <label>Example</label>
-        <input type="text">
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="row">
+      <div class="column column--full">
+        <h2 class="example-header"> Grid Example</h2>
+        <div class="row example-container">
+          <div class="column column--full">
+            <fieldset class="row">
+              <div class="column column--full column--example">
+                <label>Example</label>
+                <input type="text">
+              </div>
+            </fieldset>
+            <fieldset class="row">
+              <div class="column column--third column--example">
+                <label>Example</label>
+                <input type="text">
+              </div>
+              <div class="column column--third column--example">
+                <label>Example</label>
+                <input type="text">
+              </div>
+              <div class="column column--third column--example">
+                <label>Example</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
 <pre><code class="language-html">&lt;!-- Grid with inputs --&gt;
 &lt;div class="row example-container"&gt;
   &lt;div class="column column--full"&gt;
@@ -254,7 +259,11 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
+</div>
+</div>
 
+<div class="row">
+<div class="column column--full">
 <h2 class="example-header">Nested Grid Example</h2>
 <p>Use the nested grid when stacking cards, which will give you a consistent gutter all around.</p>
 <div class="row example-container">
@@ -323,6 +332,9 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
+</div>
+</div>
+
     </div>
   </body>
 </html>

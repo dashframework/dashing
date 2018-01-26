@@ -11,17 +11,24 @@
     <script src="../../scripts/prism.js"></script>
   </head>
 
-  <body id="body" class="example-body">
-    <div id="sidebarNavigation" class="example-sidebar"></div>
-    <nav class="app-menu example-menu--typography">
-      <div class="app-context">
-        <div class="app-title">Progress Stepper</div>
-      </div>
-    </nav>
+  <body class="example-body">
+    <div class="main-content">
+      <div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="main">
+        <div class="page-header">
+          <button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+          <h1>Progress Stepper</h1>
+          <a href="http://design.samaritanministries.org/product/components/progress-stepper/" target="_blank" class="button button--small button--smooth float-right">
+            View Guidelines
+          </a>
+        </div>
 
-    <div class="app-content">
 
-<h2 class="example-header no-margin--top">Two Step Example</h2>
+        <div class="app-content">
+          <div class="row">
+            <div class="column column--full">
+
+<h2 class="example-header">Two Step Example</h2>
 <p>NOTE: The width on the progress stepper is determined by an inline style. ie. <code class="example-text">style="width: 25%;"</code></p>
 <div class="row example-container">
   <div class="column column--full">
@@ -31,7 +38,7 @@
       </div>
       <div class="progress-stepper-step current-step column column--half">Step 1</div>
       <div class="progress-stepper-step column column--half">Step 2</div>
-    </div>  
+    </div>
   </div>
 
   <div class="column column--full">
@@ -62,7 +69,7 @@
     &lt;/div&gt;
     &lt;div class="progress-stepper-step column column--half"&gt;Step 1&lt;/div&gt;
     &lt;div class="progress-stepper-step column column--half"&gt;Step 2&lt;/div&gt;
-  &lt;/div&gt;  
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Second Step --&gt;
@@ -87,55 +94,59 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
-
-<h2 class="example-header no-margin--top">Three Step Example</h2>
-<p>NOTE: The width on the progress stepper is determined by an inline style. ie. <code class="example-text">style="width: 16.666%;"</code></p>
-<div class="row example-container">
-  <div class="column column--full">
-    <div class="progress-stepper-container">
-      <div class="progress-stepper with-progress-steps">
-        <div class="progress" data-id="progress-stepper" style="width: 16.666%;"></div>
-      </div>
-      <div class="progress-stepper-step current-step column column--third">Step 1</div>
-      <div class="progress-stepper-step column column--third">Step 2</div>
-      <div class="progress-stepper-step column column--third">Step 3</div>   
-    </div>  
-  </div>
-
-  <div class="column column--full">
-    <div class="progress-stepper-container">
-      <div class="progress-stepper with-progress-steps">
-        <div class="progress" data-id="progress-stepper" style="width: 50%;"></div>
-      </div>
-      <div class="progress-stepper-step step-completed column column--third">Step 1</div>
-      <div class="progress-stepper-step current-step column column--third">Step 2</div>
-      <div class="progress-stepper-step column column--third">Step 3</div>   
-    </div>
-  </div>
-
-  <div class="column column--full">
-    <div class="progress-stepper-container">
-      <div class="progress-stepper with-progress-steps">
-        <div class="progress" data-id="progress-stepper" style="width: 83.333%;"></div>
-      </div>
-      <div class="progress-stepper-step step-completed column column--third">Step 1</div>
-      <div class="progress-stepper-step step-completed column column--third">Step 2</div>
-      <div class="progress-stepper-step current-step column column--third">Step 3</div>   
-    </div>
-  </div>
-
-  <div class="column column--full">
-    <div class="progress-stepper-container">
-      <div class="progress-stepper with-progress-steps">
-        <div class="progress" data-id="progress-stepper" style="width: 100%;"></div>
-      </div>
-      <div class="progress-stepper-step step-completed column column--third">Step 1</div>
-      <div class="progress-stepper-step step-completed column column--third">Step 2</div>
-      <div class="progress-stepper-step step-completed column column--third">Step 3</div>   
-    </div>
-  </div>
-
 </div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header no-margin--top">Three Step Example</h2>
+    <p>NOTE: The width on the progress stepper is determined by an inline style. ie. <code class="example-text">style="width: 16.666%;"</code></p>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="progress-stepper-container">
+          <div class="progress-stepper with-progress-steps">
+            <div class="progress" data-id="progress-stepper" style="width: 16.666%;"></div>
+          </div>
+          <div class="progress-stepper-step current-step column column--third">Step 1</div>
+          <div class="progress-stepper-step column column--third">Step 2</div>
+          <div class="progress-stepper-step column column--third">Step 3</div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress-stepper-container">
+          <div class="progress-stepper with-progress-steps">
+            <div class="progress" data-id="progress-stepper" style="width: 50%;"></div>
+          </div>
+          <div class="progress-stepper-step step-completed column column--third">Step 1</div>
+          <div class="progress-stepper-step current-step column column--third">Step 2</div>
+          <div class="progress-stepper-step column column--third">Step 3</div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress-stepper-container">
+          <div class="progress-stepper with-progress-steps">
+            <div class="progress" data-id="progress-stepper" style="width: 83.333%;"></div>
+          </div>
+          <div class="progress-stepper-step step-completed column column--third">Step 1</div>
+          <div class="progress-stepper-step step-completed column column--third">Step 2</div>
+          <div class="progress-stepper-step current-step column column--third">Step 3</div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress-stepper-container">
+          <div class="progress-stepper with-progress-steps">
+            <div class="progress" data-id="progress-stepper" style="width: 100%;"></div>
+          </div>
+          <div class="progress-stepper-step step-completed column column--third">Step 1</div>
+          <div class="progress-stepper-step step-completed column column--third">Step 2</div>
+          <div class="progress-stepper-step step-completed column column--third">Step 3</div>
+        </div>
+      </div>
+
+    </div>
 <pre><code class="language-html">&lt;!-- First Step --&gt;
 &lt;div class="column column--full"&gt;
   &lt;div class="progress-stepper-container"&gt;
@@ -145,7 +156,7 @@
     &lt;div class="progress-stepper-step column column--half"&gt;Step 1&lt;/div&gt;
     &lt;div class="progress-stepper-step column column--half"&gt;Step 2&lt;/div&gt;
     &lt;div class="progress-stepper-step column column--half"&gt;Step 3&lt;/div&gt;
-  &lt;/div&gt;  
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Second Step --&gt;
@@ -184,7 +195,8 @@
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
-
+</div>
+</div>
 
     </div>
   </body>

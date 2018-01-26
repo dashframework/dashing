@@ -11,53 +11,69 @@
     <script src="../../scripts/prism.js"></script>
   </head>
 
-  <body id="body" class="example-body">
-    <div id="sidebarNavigation" class="example-sidebar"></div>
-    <nav class="app-menu example-menu--typography">
-      <div class="app-context">
-        <div class="app-title">Dash Spinner</div>
+  <body class="example-body">
+    <div class="main-content">
+      <div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="main">
+        <div class="page-header">
+          <button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+          <h1>Cards</h1>
+          <a href="http://design.samaritanministries.org/product/components/cards/" target="_blank" class="button button--small button--smooth float-right">
+            View Guidelines
+          </a>
+        </div>
+
+
+<div class="app-content">
+  <div class="row">
+    <div class="column column--full">
+      <h2 class="example-header">Default Spinner</h2>
+      <div class="row example-container">
+        <div class="column column--full">
+          <div class="relative" style="height: 8rem;">
+            <div class="dash-spinner"></div>
+          </div>
+        </div>
       </div>
-    </nav>
-
-    <div class="app-content">
-
-<h2 class="example-header no-margin--top">Default Spinner</h2>
-<div class="row example-container">
-  <div class="column column--full">
-    <div class="relative" style="height: 8rem;">
-      <div class="dash-spinner"></div>
-    </div>
-  </div>
-</div>
 <pre><code class="language-html">&lt;div class="dash-spinner"&gt;&lt;/div&gt;</code>
 </pre>
 <pre><code class="language-scss">//Include this variable in your theme file to change the color of your spinner
 $spinner-color: #000;</div></code>
 </pre>
-
-<h2 class="example-header">Small Spinner</h2>
-<div class="row example-container">
-  <div class="column column--full">
-    <div class="relative" style="height: 5rem;">
-      <div class="dash-spinner small"></div>
-    </div>
-  </div>
 </div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Small Spinner</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="relative" style="height: 5rem;">
+          <div class="dash-spinner small"></div>
+        </div>
+      </div>
+    </div>
 <pre><code class="language-html">&lt;div class="dash-spinner small"&gt;&lt;/div&gt;</code>
 </pre>
-
-<h2 class="example-header">Button Spinner</h2>
-<div class="row example-container">
-  <div class="column column--full">
-    <button id="hasSpinner" class="button button--blue">
-      Click me
-    </button>
-  </div>
 </div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Button Spinner</h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <button id="hasSpinner" class="button button--blue">
+          Click me
+        </button>
+      </div>
+    </div>
 <pre><code class="language-html">&lt;button class="button button--blue has-spinner"&gt;
   Click Me
 &lt;/button&gt;</code>
 </pre>
+</div>
+</div>
     </div>
   </body>
 </html>
