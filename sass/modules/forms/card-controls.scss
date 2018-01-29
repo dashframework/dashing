@@ -1,5 +1,6 @@
 $card-checkbox--active: $blue !default; //Color of checkbox and card when checked
 $card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbox when focused
+$card-checkbox--padding: 1rem !default; //Padding of checkbox
 
 .checkbox-card { @extend .checkbox--custom; }
 .radio-card { @extend .radio--custom; }
@@ -13,7 +14,7 @@ $card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbo
     @extend .inline;
     float: none;
     margin: 0;
-    padding: 1rem;
+    padding: $card-checkbox--padding;
 
     //disabled card
     &.disabled {
@@ -50,13 +51,27 @@ $card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbo
       background-color: $gray-200 !important;
     }
   }
+  &.checkbox-card--small {
+    .card { padding: calc(#{$card-checkbox--padding} / 2); }
+  }
+  &.radio-card--small {
+    .card { padding: calc(#{$card-checkbox--padding} / 2); }
+  }
 }
 
-.radio--custom {
+.radio-card {
   .card {
     &:before {
-      top: 1.05rem;
-      left: 1rem;
+      top: calc(#{$card-checkbox--padding} + 2px);
+      left: $card-checkbox--padding;
+    }
+  }
+  &.radio-card--small {
+    .card {
+      &:before {
+        top: calc((#{$card-checkbox--padding} / 2) + 2px);
+        left: calc((#{$card-checkbox--padding} / 2) + 3px);
+      }
     }
   }
 }

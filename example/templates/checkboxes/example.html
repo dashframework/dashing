@@ -201,6 +201,7 @@ $checkbox--icon-disabled: $gray-500 !default; //Color of check icon when checked
   <div class="column column--full">
 		<h2 class="example-header no-margin--top">Checkbox Cards</h2>
 		<p>To use custom checkboxes, be sure to include your input <strong>before</strong> your label. Failing to do so will break styles.</p>
+		<p class="no-margin--top">To use smaller checkbox cards apply the <code class="example-text">.checkbox-card--small</code> class to the parent <code class="example-text">div</code>.</p>
 		<div class="row example-container">
 			<fieldset class="column column--full">
 				<label>Checkbox Card</label>
@@ -215,6 +216,21 @@ $checkbox--icon-disabled: $gray-500 !default; //Color of check icon when checked
 				<div class="checkbox-card">
 					<input type="checkbox" name="checkbox-test" id="checkbox-test3" disabled />
 					<label for="checkbox-test3" class="card disabled">Disabled</label>
+				</div>
+			</fieldset>
+			<fieldset class="column column--full">
+				<label>Small Checkbox Card</label>
+				<div class="checkbox-card checkbox-card--small">
+					<input type="checkbox" name="checkbox-test2" id="checkbox-test4" checked/>
+					<label for="checkbox-test4" class="card">Option 1</label>
+				</div>
+				<div class="checkbox-card checkbox-card--small">
+					<input type="checkbox" name="checkbox-test2" id="checkbox-test5" />
+					<label for="checkbox-test5" class="card">Option 2</label>
+				</div>
+				<div class="checkbox-card checkbox-card--small">
+					<input type="checkbox" name="checkbox-test2" id="checkbox-test6" disabled />
+					<label for="checkbox-test6" class="card disabled">Disabled</label>
 				</div>
 			</fieldset>
 		</div>
@@ -234,11 +250,29 @@ $checkbox--icon-disabled: $gray-500 !default; //Color of check icon when checked
 		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test3" disabled /&gt;
 		&lt;label for="checkbox-test3" class="card disabled"&gt;Disabled&lt;/label&gt;
 	&lt;/div&gt;
+&lt;/fieldset&gt;
+
+&lt;!-- Small Checkbox Cards --&gt;
+&lt;fieldset class="column column--full"&gt;
+	&lt;label&gt;Small Checkbox Card&lt;/label&gt;
+	&lt;div class="checkbox-card checkbox-card--small"&gt;
+		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test1" checked/&gt;
+		&lt;label for="checkbox-test1" class="card"&gt;Option 1&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="checkbox-card checkbox-card--small"&gt;
+		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test2" /&gt;
+		&lt;label for="checkbox-test2" class="card"&gt;Option 2&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="checkbox-card checkbox-card--small"&gt;
+		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test3" disabled /&gt;
+		&lt;label for="checkbox-test3" class="card disabled"&gt;Disabled&lt;/label&gt;
+	&lt;/div&gt;
 &lt;/fieldset&gt;</code>
 </pre>
-<pre><code class="language-scss">//Include these variables in your theme file to change the color of your checkbox
+<pre><code class="language-scss">//Include these variables in your theme file to change the color or padding of your checkbox
 $card-checkbox--active: $blue !default; //Color of checkbox and card when checked
-$card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbox when focused</code>
+$card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbox when focused
+$card-checkbox--padding: 1rem !default; //Padding of checkbox</code>
 </pre>
 </div>
 </div>
