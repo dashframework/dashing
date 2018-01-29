@@ -3702,7 +3702,7 @@ fieldset .has-warning .message li {
 
 .example-header {
   display: inline-block;
-  margin: 3rem auto 1rem; }
+  margin: 2rem auto 1rem; }
 
 .example-tip {
   background-color: #F2F2F2;
@@ -3765,7 +3765,7 @@ pre[class*="language-"] {
     top: 0.5rem;
     right: 0.5rem; }
 
-.example-container + pre[class*="language-"] {
+.example-container ~ pre[class*="language-"]:first-of-type {
   border-radius: 0 0 0.3rem 0.3rem; }
 
 pre.language-html:before {
@@ -3925,5 +3925,48 @@ pre.line-numbers > code {
   .button--sidebar-icon.sidebar-open {
     position: fixed;
     left: 80%; }
+
+.code-toggle {
+  background-color: #E0E0E0;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  transition: all .2s ease-in-out; }
+  .code-toggle .icon--code {
+    background-image: url(../images/icon--code_light.svg);
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 0.1rem -0.1rem 0; }
+  .code-toggle:hover {
+    background-color: #313538; }
+    .code-toggle:hover:after {
+      color: #FFFFFF; }
+    .code-toggle:hover .icon--code {
+      background-image: url(../images/icon--code.svg); }
+  .code-toggle:after {
+    content: "Show Code";
+    color: #222222; }
+  .code-toggle.is-open {
+    background-color: #313538;
+    border-radius: 0; }
+    .code-toggle.is-open .icon--code {
+      background-image: url(../images/icon--code.svg); }
+    .code-toggle.is-open:after {
+      color: #FFFFFF;
+      content: "Hide Code"; }
+  .code-toggle ~ pre {
+    display: none; }
+
+.code {
+  display: none;
+  overflow: hidden; }
+  .code.show {
+    display: block; }
 
 /*# sourceMappingURL=example.css.map */

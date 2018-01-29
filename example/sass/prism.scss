@@ -40,7 +40,7 @@ $tablet:        "all and (min-width: 40em)" !default;
 
 .example-header {
 	display: inline-block;
-	margin: 3rem auto 1rem;
+	margin: 2rem auto 1rem;
 }
 
 .example-tip {
@@ -116,7 +116,7 @@ pre[class*="language-"] {
 	}
 }
 
-.example-container + pre[class*="language-"] {
+.example-container ~ pre[class*="language-"]:first-of-type {
 	border-radius: 0 0 0.3rem 0.3rem;
 }
 

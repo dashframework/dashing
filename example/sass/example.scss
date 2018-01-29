@@ -46,3 +46,59 @@
   @media #{$tablet} { display: none; }
   &.sidebar-open { position: fixed; left: 80%; }
 }
+
+.code-toggle {
+  background-color: $gray-150;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  transition: all .2s ease-in-out;
+
+  .icon--code {
+    background-image: url(../images/icon--code_light.svg);
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 0.1rem -0.1rem 0;
+  }
+
+  &:hover {
+    background-color: #313538;
+    &:after { color: $white; }
+    .icon--code {
+      background-image: url(../images/icon--code.svg);
+    }
+  }
+
+  &:after {
+    content: "Show Code";
+    color: $gray-900;
+  }
+
+  &.is-open {
+    background-color: #313538;
+    border-radius: 0;
+    .icon--code { background-image: url(../images/icon--code.svg); }
+    &:after {
+      color: $white;
+      content: "Hide Code";
+    }
+  }
+
+  & ~ pre {
+    display: none;
+  }
+}
+
+.code {
+  display: none;
+  overflow: hidden;
+   &.show {
+     display: block;
+   }
+}
