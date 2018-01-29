@@ -7,7 +7,7 @@ $checkbox--focus: $blue-300 !default; //Color of border around checkbox when foc
 $checkbox--disabled: $gray-150 !default; //Color of checkbox when checked and disabled
 $checkbox--icon-disabled: $gray-500 !default; //Color of check icon when checked and disabled
 
-//Custom radion button color theme
+//Custom radio button color theme
 $radio--active: $blue !default; //Color of radio button when checked
 $radio--icon: $white !default; //Color of radio icon when checked
 $radio--focus: $blue-300 !default; //Color of border around radio when focused
@@ -158,9 +158,9 @@ $switch--off: $gray-250 !default; //Color of switch when off
       border-radius: 50px;
       display: block;
       font-size: 1.7rem;
-      line-height: 12px;
+      line-height: 11px;
     	position: absolute;
-    	top: 2px;	bottom: 0; left: 0;
+    	top: 2px; bottom: 0; left: 0;
       height: 20px; width: 20px;
       @media #{$desktop} { font-size: 1.5rem; }
     }
