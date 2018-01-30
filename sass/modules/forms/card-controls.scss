@@ -51,7 +51,10 @@ $card-checkbox--padding: 1rem !default; //Padding of checkbox
       background-color: $gray-200 !important;
     }
   }
-  &.small {
+  &.checkbox-card--small {
+    .card { padding: calc(#{$card-checkbox--padding} / 2); }
+  }
+  &.radio-card--small {
     .card { padding: calc(#{$card-checkbox--padding} / 2); }
   }
 }
@@ -63,7 +66,7 @@ $card-checkbox--padding: 1rem !default; //Padding of checkbox
       left: $card-checkbox--padding;
     }
   }
-  &.small {
+  &.radio-card--small {
     .card {
       &:before {
         top: calc((#{$card-checkbox--padding} / 2) + 2px);

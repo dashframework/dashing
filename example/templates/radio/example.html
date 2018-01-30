@@ -200,7 +200,7 @@ $radio--icon-disabled: $gray-500 !default; //Color of radio icon when checked an
   <div class="column column--full">
 		<h2 class="example-header">Radio Card</h2>
 		<p>To use custom checkboxes, be sure to include your input <strong>before</strong> your label. Failing to do so will break styles.</p>
-		<p class="no-margin--top">To use smaller radio cards apply the <code class="example-text">.small</code> class to the parent <code class="example-text">div</code>.</p>
+		<p class="no-margin--top">To use smaller radio cards apply the <code class="example-text">.radio-card--small</code> class to the parent <code class="example-text">div</code>.</p>
 		<div class="row example-container">
 		  <fieldset class="column column--full">
 		    <label>Radio Card</label>
@@ -219,15 +219,15 @@ $radio--icon-disabled: $gray-500 !default; //Color of radio icon when checked an
 		  </fieldset>
 			<fieldset class="column column--full">
 				<label>Small Radio Card</label>
-				<div class="radio-card small">
+				<div class="radio-card radio-card--small">
 					<input type="radio" name="radio-test2" id="radio-test4" checked/>
 					<label for="radio-test4" class="card">Option 1</label>
 				</div>
-				<div class="radio-card small">
+				<div class="radio-card radio-card--small">
 					<input type="radio" name="radio-test2" id="radio-test5" />
 					<label for="radio-test5" class="card">Option 2</label>
 				</div>
-				<div class="radio-card small">
+				<div class="radio-card radio-card--small">
 					<input type="radio" name="radio-test2" id="radio-test6" disabled />
 					<label for="radio-test6" class="card disabled">Disabled</label>
 				</div>
@@ -254,15 +254,15 @@ $radio--icon-disabled: $gray-500 !default; //Color of radio icon when checked an
 &lt;!-- Small Radio Button Cards --&gt;
 &lt;fieldset class="column column--full"&gt;
   &lt;label&gt;Small Radio Card&lt;/label&gt;
-  &lt;div class="radio-card small"&gt;
+  &lt;div class="radio-card radio-card--small"&gt;
     &lt;input type="radio" name="radio-test" id="radio-test1" checked/&gt;
     &lt;label for="radio-test1" class="card"&gt;Option 1&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="radio-card small"&gt;
+  &lt;div class="radio-card radio-card--small"&gt;
     &lt;input type="radio" name="radio-test" id="radio-test2" /&gt;
     &lt;label for="radio-test2" class="card"&gt;Option 2&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="radio-card small"&gt;
+  &lt;div class="radio-card radio-card--small"&gt;
     &lt;input type="radio" name="radio-test" id="radio-test3" disabled /&gt;
     &lt;label for="radio-test3" class="card disabled"&gt;Disabled&lt;/label&gt;
   &lt;/div&gt;
