@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.2.3 - January 30, 2018
+**Added**
+* Added --small class to radio-cards and checkbox-cards
+  
+*****
+  
 ### 1.2.2 - January 19, 2018
 **Fixed**
 * Fixed styles for hidden breakpoints
