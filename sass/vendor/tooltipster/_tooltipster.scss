@@ -23,7 +23,7 @@ $tooltip-color: #555;
 
 .tooltipster-box {
 	background-color: $tooltip-color;
-	border-radius: 5px !important;
+	border-radius: 10px !important;
   box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
   border: none !important;
   max-width: 250px;
@@ -46,4 +46,14 @@ $tooltip-color: #555;
 .tooltipster-bottom {
 	.tooltipster-arrow-border,
 	.tooltipster-arrow-background {	border-bottom-color: $tooltip-color !important; }
+}
+
+.tooltipster-left {
+	.tooltipster-arrow-border,
+	.tooltipster-arrow-background {	border-left-color: $tooltip-color !important; }
+}
+
+.tooltipster-right {
+	.tooltipster-arrow-border,
+	.tooltipster-arrow-background {	border-right-color: $tooltip-color !important; }
 }
