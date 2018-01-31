@@ -1,0 +1,53 @@
+@import "../../../sass/vendor/tooltipster/css/tooltipster.bundle.css";
+@import "../../../sass/vendor/tooltipster/css/tooltipster.main.css";
+
+$tooltip-color: #555;
+
+/* CSS transition for when contenting is changing in a tooltip that is still open. The only properties that will NOT transition are: width, height, top, and left */
+.tooltipster-content-changing {
+	opacity: 0.5;
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+}
+
+.tooltipster-box {
+	background-color: $tooltip-color;
+	border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+  border: none !important;
+  max-width: 250px;
+  padding: 0.75rem;
+  border-radius: 10px;
+
+  .tooltipster-content {
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.1rem !important;
+		padding: 0;
+  }
+}
+
+.tooltipster-top {
+	.tooltipster-arrow-border,
+	.tooltipster-arrow-background {	border-top-color: $tooltip-color !important; }
+}
+
+.tooltipster-bottom {
+	.tooltipster-arrow-border,
+	.tooltipster-arrow-background {	border-bottom-color: $tooltip-color !important; }
+}
+
+.tooltipster-left {
+	.tooltipster-arrow-border,
+	.tooltipster-arrow-background {	border-left-color: $tooltip-color !important; }
+}
+
+.tooltipster-right {
+	.tooltipster-arrow-border,
+	.tooltipster-arrow-background {	border-right-color: $tooltip-color !important; }
+}
+
+span.dashing-tooltip { display: inline-block; }
