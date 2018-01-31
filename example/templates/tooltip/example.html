@@ -39,14 +39,37 @@
 		  <div class="column column--full">
 				<p>Tooltip <i class="dashing-icon dashing-icon--question-filled dashing-icon--gray tooltip" title="This is a tooltip"></i></p>
 		  </div>
+			<div class="column column--full">
+				<button class="tooltip button button--icon button--blue" title="Edit">
+					<i class="dashing-icon dashing-icon--pencil"></i>
+				</button>
+			</div>
 		</div>
 
 <div class="code-toggle"><i class="icon--code"></i></div>
-<pre><code class="language-html">&lt;!-- Add the `tooltip` class and a title to any element to make it tooltipped --&gt;
+<pre><code class="language-html">&lt;head&gt;
+	...
+	&lt;!-- Link jQuery and Tooltipster's JavaScript library in your &lt;head&gt; tag --&gt;
+	&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="../../../bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"&gt;&lt;/script&gt;
+
+	&lt;!-- Add this script right before your closing &lt;head&gt; tag to activate Tooltipster --&gt;
+	&lt;script&gt;
+		$(document).ready(function() {
+			$('.tooltip').tooltipster();
+		});
+	&lt;/script&gt;
+&lt;/head&gt;
+...
+&lt;!-- Add the `tooltip` class and a title to any element to make it tooltipped --&gt;
 &lt;p&gt;
 	Tooltip
 	&lt;i class="tooltip dashing-icon dashing-icon--question-filled dashing-icon--gray" title="This is a tooltip"&gt;&lt;/i&gt;
-&lt;/p&gt;</code>
+&lt;/p&gt;
+
+&lt;button class="tooltip button button--icon button--blue" title="Edit"&gt;
+	&lt;i class="dashing-icon dashing-icon--pencil"&gt;&lt;/i&gt;
+&lt;/button&gt;</code>
 </pre>
 </div>
 </div>
