@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+
+    <title>Tooltip</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+	  <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+
+		<script>
+			 $(document).ready(function() {
+					 $('.tooltip').tooltipster();
+			 });
+	 </script>
+	</head>
+
+	<body class="example-body">
+		<div class="main-content">
+			<div id="sidebarNavigation" class="example-sidebar"></div>
+			<div class="sidebar--overlay is-hidden"></div>
+			<div class="main">
+				<div class="page-header">
+					<button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+					<h1>Tooltip</h1>
+					<a href="http://design.samaritanministries.org/product/components/toggle/" target="_blank" class="button button--small button--smooth float-right">
+						View Guidelines
+					</a>
+				</div>
+
+<div class="row">
+  <div class="column column--full">
+		<h2 class="example-header no-margin--top">Tooltip</h2>
+		<div class="row example-container">
+		  <div class="column column--full">
+				<p>Tooltip <i class="dashing-icon dashing-icon--question-filled dashing-icon--gray tooltip" title="This is a tooltip"></i></p>
+		  </div>
+		</div>
+
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Add the `tooltip` class and a title to any element to make it tooltipped --&gt;
+&lt;p&gt;
+	Tooltip
+	&lt;i class="tooltip dashing-icon dashing-icon--question-filled dashing-icon--gray" title="This is a tooltip"&gt;&lt;/i&gt;
+&lt;/p&gt;</code>
+</pre>
+</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
