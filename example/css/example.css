@@ -411,6 +411,9 @@ th {
 .tooltipster-right .tooltipster-arrow-background {
   border-right-color: #555 !important; }
 
+span.dashing-tooltip {
+  display: inline-block; }
+
 /* Imported font family
   ================================================== */
 /* Imported base components
