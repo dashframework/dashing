@@ -49,3 +49,5 @@ $tooltip-color: #555;
 	.tooltipster-arrow-border,
 	.tooltipster-arrow-background {	border-right-color: $tooltip-color !important; }
 }
+
+span.dashing-tooltip { display: inline-block; }
