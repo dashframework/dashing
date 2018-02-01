@@ -1070,7 +1070,7 @@ fieldset .has-warning .message li {
       border-radius: 50px;
       display: block;
       font-size: 1.7rem;
-      line-height: 12px;
+      line-height: 11px;
       position: absolute;
       top: 2px;
       bottom: 0;
@@ -1347,10 +1347,19 @@ fieldset .has-warning .message li {
     .radio-card input[disabled]:checked ~ label:before {
       border-color: #A1A1A1 !important;
       background-color: #D4D4D4 !important; }
+  .checkbox-card.checkbox-card--small .card,
+  .radio-card.checkbox-card--small .card {
+    padding: calc(1rem / 2); }
+  .checkbox-card.radio-card--small .card,
+  .radio-card.radio-card--small .card {
+    padding: calc(1rem / 2); }
 
-.radio--custom .card:before, .radio-card .card:before {
-  top: 1.05rem;
+.radio-card .card:before {
+  top: calc(1rem + 2px);
   left: 1rem; }
+.radio-card.radio-card--small .card:before {
+  top: calc((1rem / 2) + 2px);
+  left: calc((1rem / 2) + 3px); }
 
 /* Actions Variables
   =========================================================================== */
@@ -3658,9 +3667,10 @@ fieldset .has-warning .message li {
 
 .side-navigation h3,
 .example-sidebar h3 {
+  border-radius: 5px;
+  margin-bottom: .5rem;
   font-size: 1rem;
-  padding: 0.3rem 0.5rem;
-  border-radius: 5px; }
+  padding: 0.3rem 0.5rem; }
   .side-navigation h3.current,
   .example-sidebar h3.current {
     background-color: #E0E0E0; }
@@ -3747,6 +3757,8 @@ fieldset .has-warning .message li {
 .example-header {
   display: inline-block;
   margin: 2rem auto 1rem; }
+  .example-header + p:first-of-type {
+    margin-top: 0; }
 
 .example-tip {
   background-color: #F2F2F2;
