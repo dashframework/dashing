@@ -93,7 +93,7 @@
   color: $color;
   &:hover, &:focus { opacity: .6; }
   &:active { opacity: .9; }
-  .dashing-icon:before { color: $color; }
+  &:not(.button--icon) .dashing-icon:before { color: $color; }
 }
 
 /* Tag Mixins
