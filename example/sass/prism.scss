@@ -41,6 +41,10 @@ $tablet:        "all and (min-width: 40em)" !default;
 .example-header {
 	display: inline-block;
 	margin: 2rem auto 1rem;
+
+	& + p:first-of-type {
+		margin-top: 0;
+	}
 }
 
 .example-tip {
