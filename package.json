@@ -1,6 +1,6 @@
 {
   "name": "dashing-framework",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Style framework for Dash",
   "main": "index.js",
   "directories": {

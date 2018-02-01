@@ -2,72 +2,78 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
-### 1.2.3 - January 30, 2018
-**Added**
-* Added --small clclass to checkbox-card and radio-card
+### 1.2.4 - February 01, 2018
+**Fixed**
+* Fixed auto color being applied to button--icon elements
   
 *****
   
+### 1.2.3 - January 30, 2018
+**Added**
+* Added --small class to checkbox-card and radio-card
+
+*****
+
 ### 1.2.2 - January 19, 2018
 **Fixed**
 * Fixed styles for hidden breakpoints
-  
+
 *****
-  
+
 ### 1.2.1 - January 16, 2018
 **Fixed**
 * Fixed scrollbars in custom radio buttons and checkboxes
-  
+
 *****
-  
+
 ### 1.2.0 - January 15, 2018
 **Added**
 * Added new icons to font icons: inbox, faces, mobile-phone, notification-off, star-stroke, star-filled, menu, categories, mail, chat-filled, popular, paper-check, paper-check-2
-  
+
 *****
-  
+
 ### 1.1.14 - December 19, 2017
 **Fixed**
 * Change class names that were in conflict with other components (ie .progress-bar-container)
-  
+
 *****
-  
+
 ### 1.1.13 - December 08, 2017
 **Added**
 * Added Progress Stepper
-  
+
 *****
-  
+
 ### 1.1.12 - November 14, 2017
 **Fixed**
 * Updated line height to fix scrolling on zoomed displays
-  
+
 *****
-  
+
 ### 1.1.11 - October 26, 2017
 **Updated**
 * Updated modules to use $font-size Sass variables
-  
+
 *****
-  
+
 ### 1.1.10 - October 06, 2017
 **Updated**
 * Updated base colors to new ui colors
-  
+
 *****
-  
+
 ### 1.1.9 - October 03, 2017
 **Added**
 * added tags, tweaked updater
-  
+
 *****
-  
+
 ### 1.1.8 - September 22, 2017
 **Added**
 * Added updater script
-  
+
 *****
-  
+
 ### 1.1.8 · September 19, 2017
 **Fixed**
 * fix icons going to new line in firefox desktop
