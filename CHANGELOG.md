@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.3.0 - February 02, 2018
+**Added**
+* Added tooltips
+  
+*****
+  
 ### 1.2.4 - February 01, 2018
 **Fixed**
 * Fixed auto color being applied to button--icon elements
