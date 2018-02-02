@@ -98,8 +98,10 @@ fi
 #run git here
 echo -e '\n'
 echo -e "${textnormal}[GIT COMMIT]${textnormal}"
-echo -e "${textyellow}Warning: git changes will be applied to your current branch!${textnormal}"
-read -p "Use automated git? (y = Continue, any other = Skip) " permissiongit
+echo -e "${textyellow}Test this change to script for rebase.${textnormal}"
+git fetch
+git rebase develop
+# read -p "Use automated git? (y = Continue, any other = Skip) " permissiongit
 if [ $permissiongit == 'y' ]
 then
 	git add .
