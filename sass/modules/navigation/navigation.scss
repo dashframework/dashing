@@ -8,7 +8,6 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
 }
 
 .app-menu {
-  @extend .app-menu.condensed;
   background-color: rgba($menu-color, 0.97);
   box-shadow: 0 2px 6px $gray-200;
   height: auto !important;
