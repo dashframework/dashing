@@ -1,7 +1,8 @@
 @import "../../../sass/vendor/tooltipster/css/tooltipster.bundle.css";
 @import "../../../sass/vendor/tooltipster/css/tooltipster.main.css";
 
-$tooltip-color: #555;
+$tooltip-color: #555; //$gray-700
+$clippy-color: #A1A1A1; //$gray-400
 
 /* CSS transition for when contenting is changing in a tooltip that is still open. The only properties that will NOT transition are: width, height, top, and left */
 .tooltipster-content-changing {
@@ -15,9 +16,9 @@ $tooltip-color: #555;
 
 .tooltipster-box {
 	background-color: $tooltip-color;
-	border-radius: 10px !important;
+	border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
-  border: none !important;
+  border: none;
   max-width: 250px;
   padding: 0.75rem;
   border-radius: 10px;
@@ -25,29 +26,78 @@ $tooltip-color: #555;
   .tooltipster-content {
     font-weight: 600;
     font-size: 0.9rem;
-    line-height: 1.1rem !important;
+    line-height: 1.1rem;
 		padding: 0;
   }
 }
 
 .tooltipster-top {
 	.tooltipster-arrow-border,
-	.tooltipster-arrow-background {	border-top-color: $tooltip-color !important; }
+	.tooltipster-arrow-background {	border-top-color: $tooltip-color; }
 }
 
 .tooltipster-bottom {
 	.tooltipster-arrow-border,
-	.tooltipster-arrow-background {	border-bottom-color: $tooltip-color !important; }
+	.tooltipster-arrow-background {	border-bottom-color: $tooltip-color; }
 }
 
 .tooltipster-left {
 	.tooltipster-arrow-border,
-	.tooltipster-arrow-background {	border-left-color: $tooltip-color !important; }
+	.tooltipster-arrow-background {	border-left-color: $tooltip-color; }
 }
 
 .tooltipster-right {
 	.tooltipster-arrow-border,
-	.tooltipster-arrow-background {	border-right-color: $tooltip-color !important; }
+	.tooltipster-arrow-background {	border-right-color: $tooltip-color; }
 }
 
 span.dashing-tooltip { display: inline-block; }
+
+//Clippy
+
+//Hides template section until clippy activates it
+.tooltip-templates { display: none; }
+
+.clippy-theme {
+	.tooltipster-box {
+		background-color: #FFF;
+		border-radius: 5px !important;
+	  box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+	  border: 2px solid #D4D4D4;
+	  max-width: 350px;
+	  padding: 1rem;
+	  border-radius: 10px;
+
+	  .tooltipster-content {
+	    font-weight: 400;
+	    font-size: 0.9rem;
+	    line-height: 1.2rem;
+			padding: 0;
+
+			h4, p { font-size: 0.9rem; }
+			h4 { font-weight: 600;}
+			p { margin-bottom: 0; }
+			.button { margin-top: 0.5rem; }
+	  }
+	}
+
+	&.tooltipster-top {
+		.tooltipster-arrow-border,
+		.tooltipster-arrow-background {	border-top-color: $clippy-color; }
+	}
+
+	&.tooltipster-bottom {
+		.tooltipster-arrow-border,
+		.tooltipster-arrow-background {	border-bottom-color: $clippy-color; }
+	}
+
+	&.tooltipster-left {
+		.tooltipster-arrow-border,
+		.tooltipster-arrow-background {	border-left-color: $clippy-color; }
+	}
+
+	&.tooltipster-right {
+		.tooltipster-arrow-border,
+		.tooltipster-arrow-background {	border-right-color: $clippy-color; }
+	}
+}
