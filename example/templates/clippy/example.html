@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+
+    <title>Tooltip</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+		<script type="text/javascript" src="../../../scripts/dashing.js"></script>
+		<script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+	</head>
+
+	<body class="example-body">
+		<div class="main-content">
+			<div id="sidebarNavigation" class="example-sidebar"></div>
+			<div class="sidebar--overlay is-hidden"></div>
+			<div class="main">
+				<div class="page-header">
+					<button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+					<h1>Clippy</h1>
+					<a href="http://design.samaritanministries.org/product/components/tooltip/" target="_blank" class="button button--small button--smooth float-right">
+						View Guidelines
+					</a>
+				</div>
+
+<div class="row">
+  <div class="column column--full">
+		<h2 class="example-header no-margin--top">Default Clippy</h2>
+		<p>NOTE: Dashing uses the <a href="http://iamceege.github.io/tooltipster/" target="_blank">Tooltipster</a> component to deliver interactive clippies. To use this in your project, you must import the scripts below into your <code class="example-text">&lt;head&gt;</code>. (Note that your <code class="example-text">tooltipster.bundle.min.js</code> file path may differ from the example).</code></p>
+		<div class="row example-container">
+		  <div class="column column--full">
+				<i data-tooltip-content="#clippy_content" class="dashing-clippy dashing-icon dashing-icon--question-filled dashing-icon--gray"></i>
+				<div class="tooltip-templates">
+			    <span id="clippy_content">
+			      <h4>Learn More</h4>
+						<p>This is a dashing clippy element. Use it to show detailed information in a paragraph!</p>
+			    </span>
+				</div>
+			</div>
+		</div>
+
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;head&gt;
+	...
+	&lt;!-- Link jQuery and Tooltipster's JavaScript library in your &lt;head&gt; tag --&gt;
+	&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="/bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"&gt;&lt;/script&gt;
+
+	&lt;!-- Link the Dashing JavaScript library in your &lt;head&gt; tag --&gt;
+	&lt;script type="text/javascript" src="/bower_components/dashing/scripts/dashing.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+...
+
+&lt;!-- Add the `dashing-clippy` class to any element --&gt;
+&lt;!-- Add the `data-tooltip-content` attribute to the same element and reference it in your span below --&gt;
+&lt;i data-tooltip-content="#clippy_content" class="dashing-clippy dashing-icon dashing-icon--question-filled dashing-icon--gray">&lt;/i&gt;
+
+&lt;!-- Add your clippy template directly below. Edit the unique span `id` and any content within the span --&gt;
+&lt;div class="tooltip-templates"&gt;
+	&lt;span id="clippy_content"&gt;
+		&lt;h4&gt;Learn More&lt;/h4&gt;
+		&lt;p&gt;This is a dashing clippy element. Use it to show detailed information in a paragraph!&lt;/p&gt;
+	&lt;/span&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+		<h2 class="example-header">Interactive Clippy</h2>
+		<p>Use interactive clippies to add clickable links with more information</p>
+		<div class="row example-container">
+		  <fieldset class="column column--full">
+				<label for="interactiveClippy">Membership Number
+					<i data-tooltip-content="#interactiveClippyDetails" class="dashing-clippy dashing-icon dashing-icon--question-filled dashing-icon--gray"></i>
+					<div class="tooltip-templates">
+				    <span id="interactiveClippyDetails">
+				      <h4>What is my Membership Number?</h4>
+							<p>You can find your membership number by signing in to your Samaritan Dashboard and accessing the membership app</p>
+							<a class="button button--transparent">Sign In</a>
+						</span>
+					</div>
+				</label>
+				<input type="text" id="interactiveClippy" style="max-width: 15rem;"/>
+			</fieldset>
+		</div>
+
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;head&gt;
+	...
+	&lt;!-- Link jQuery and Tooltipster's JavaScript library in your &lt;head&gt; tag --&gt;
+	&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="/bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"&gt;&lt;/script&gt;
+
+	&lt;!-- Link the Dashing JavaScript library in your &lt;head&gt; tag --&gt;
+	&lt;script type="text/javascript" src="/bower_components/dashing/scripts/dashing.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+...
+
+&lt;!-- Add the `dashing-clippy` class and `data-tooltip-content` to any element --&gt;
+&lt;fieldset class="column column--full"&gt;
+	&lt;label for="interactiveClippy"&gt;Membership Number
+		&lt;i data-tooltip-content="#interactiveClippyDetails" class="dashing-clippy dashing-icon dashing-icon--question-filled dashing-icon--gray"&gt;&lt;/i&gt;
+		&lt;div class="tooltip-templates"&gt;
+			&lt;span id="interactiveClippyDetails"&gt;
+				&lt;h4&gt;What is my Membership Number?&lt;/h4&gt;
+				&lt;p&gt;You can find your membership number by signing in to your Samaritan Dashboard and accessing the membership app&lt;/p&gt;
+				&lt;a class="button button--transparent"&gt;Sign In&lt;/a&gt;
+			&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/label&gt;
+	&lt;input type="text" id="interactiveClippy" /&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
