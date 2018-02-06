@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.4.0 - February 06, 2018
+**Added**
+* Added new "clippy" element for displaying dialog messages through tooltipster
+  
+*****
+  
 ### 1.3.0 - February 02, 2018
 **Added**
 * Added tooltips
