@@ -47,13 +47,24 @@
     padding-top: $grid-gutter;
   }
 
-  //Use "is-selectable" to indicate a clickable card
+  //Use "is-selectable" to indicate a clickable card, add disabled or is-disabled to fade back the card
   &.is-selectable {
     transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
     &:hover {
       @extend %shadow-100; //Found in "_setup.scss"
       border-color: $blue;
       cursor: pointer;
     }
   }
+
+  &.disabled, 
+  &.is-disabled,
+  &.is-selectable.is-disabled,
+  &.is-selectable.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+      background-color: $gray-200;
+      border-color: $gray-400;
+    }
 }
