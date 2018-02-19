@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.4.2 - February 19, 2018
+**Updated**
+* Updated font to include pause icon
+  
+*****
+  
 ### 1.4.1 - February 16, 2018
 **Added**
 * Added disabled cards. Use .disabled or .is-disabled on a card to fade it out.
