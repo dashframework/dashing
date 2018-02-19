@@ -1,8 +1,8 @@
-var rootFolder = "";//leave as "/" for live version
+var rootFolder = "/";//leave as "/" for live version, add /dashing/ to edit locally
 
 //Active Function
 $(function() {
-  $("#sidebarNavigation").load(rootFolder +"/example/templates/sidebar.html", function() {
+  $("#sidebarNavigation").load(rootFolder +"example/templates/sidebar.html", function() {
     //get the url of the current page
     var url = window.location.href;
     //get the default active page (index)
