@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+    <title>Actions</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+	</head>
+
+	<body class="example-body">
+		<div class="main-content">
+			<div id="sidebarNavigation" class="example-sidebar"></div>
+			<div class="sidebar--overlay is-hidden"></div>
+			<div class="main">
+				<div class="page-header">
+					<button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+					<h1>Toggle</h1>
+					<a href="http://design.samaritanministries.org/product/components/toggle/" target="_blank" class="button button--small button--smooth float-right">
+						View Guidelines
+					</a>
+				</div>
+
+<div class="row">
+  <div class="column column--full">
+		<h2 class="example-header no-margin--top">Custom Toggle Switch</h2>
+		<div class="row example-container">
+		  <fieldset class="column column--full">
+		    <label class="inline" for="switch1">Switch</label>
+		    <div class="switch">
+		      <input name="switch" type="checkbox" class="switch--checkbox" id="switch1" />
+		      <label class="switch--label" for="switch1">
+		        <span class="switch--inner"></span>
+		        <span class="switch--handle"></span>
+		      </label>
+		    </div>
+		  </fieldset>
+		</div>
+
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-scss">//Include these variables in your theme file to change the color of your switch
+$switch--on: $blue !default; //Color of switch when on
+$switch--off: $gray-250 !default; //Color of switch when off</code>
+</pre>
+<pre><code class="language-html">&lt;!-- Custom Toggle Switch --&gt;
+&lt;fieldset class="column column--full"&gt;
+  &lt;label class="inline" for="switch1"&gt;Switch&lt;/label&gt;
+  &lt;div class="switch"&gt;
+    &lt;input name="switch" type="checkbox" class="switch--checkbox" id="switch1" /&gt;
+    &lt;label class="switch--label" for="switch1"&gt;
+      &lt;span class="switch--inner"&gt;&lt;/span&gt;
+      &lt;span class="switch--handle"&gt;&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

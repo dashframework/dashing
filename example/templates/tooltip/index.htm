@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+
+    <title>Tooltip</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+		<script type="text/javascript" src="../../../scripts/dashing.js"></script>
+		<script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+	</head>
+
+	<body class="example-body">
+		<div class="main-content">
+			<div id="sidebarNavigation" class="example-sidebar"></div>
+			<div class="sidebar--overlay is-hidden"></div>
+			<div class="main">
+				<div class="page-header">
+					<button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+					<h1>Tooltip</h1>
+					<a href="http://design.samaritanministries.org/product/components/tooltip/" target="_blank" class="button button--small button--smooth float-right">
+						View Guidelines
+					</a>
+				</div>
+
+<div class="row">
+  <div class="column column--full">
+		<h2 class="example-header no-margin--top">Tooltip</h2>
+		<p>NOTE: Dashing uses the <a href="http://iamceege.github.io/tooltipster/" target="_blank">Tooltipster</a> component to deliver stylish tooltips. To use this in your project, you must import the scripts below into your <code class="example-text">&lt;head&gt;</code>. (Note that your <code class="example-text">tooltipster.bundle.min.js</code> file path may differ from the example).</code></p>
+		<div class="row example-container">
+		  <div class="column column--full">
+				<p>Tooltip <i class="dashing-tooltip dashing-icon dashing-icon--question-filled dashing-icon--gray" title="This is a tooltip"></i></p>
+		  </div>
+			<div class="column column--full">
+				<button class="dashing-tooltip button button--icon button--blue" title="Edit">
+					<i class="dashing-icon dashing-icon--pencil"></i>
+				</button>
+			</div>
+			<div class="column column--full">
+				<span class="dashing-tooltip" title="Wrap a span around a disabled button to show a tooltip">
+					<button class="button button--smooth button--gray disabled">
+						Disabled Button
+					</button>
+				</span>
+			</div>
+		</div>
+
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;head&gt;
+	...
+	&lt;!-- Link jQuery and Tooltipster's JavaScript library in your &lt;head&gt; tag --&gt;
+	&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="/bower_components/tooltipster/dist/js/tooltipster.bundle.min.js"&gt;&lt;/script&gt;
+
+	&lt;!-- Link the Dashing JavaScript library in your &lt;head&gt; tag --&gt;
+	&lt;script type="text/javascript" src="/bower_components/dashing/scripts/dashing.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+...
+
+&lt;!-- Add the `tooltip` class and a title to any element to make it tooltipped --&gt;
+&lt;p&gt;
+	Tooltip
+	&lt;i class="dashing-tooltip dashing-icon dashing-icon--question-filled dashing-icon--gray" title="This is a tooltip"&gt;&lt;/i&gt;
+&lt;/p&gt;
+
+&lt;button class="dashing-tooltip button button--icon button--blue" title="Edit"&gt;
+	&lt;i class="dashing-icon dashing-icon--pencil"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;span class="dashing-tooltip" title="Wrap a span around a disabled button to show a tooltip"&gt;
+	&lt;button class="button button--smooth button--gray disabled"&gt;
+		Disabled Button
+	&lt;/button&gt;
+&lt;/span&gt;</code>
+</pre>
+</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
