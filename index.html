@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="example/css/example.css" rel="stylesheet">
+    <title>Intro</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="example/scripts/scripts.js"></script>
+    <script src="example/scripts/prism.js"></script>
+  </head>
+
+  <body class="example-body">
+    <div class="main-content">
+      <div id="sidebarMainNavigation" class="example-sidebar"></div>
+      <div class="sidebar--overlay is-hidden"></div>
+      <div class="main">
+        <div class="page-header">
+          <button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+          <h1>Intro</h1>
+          <a href="http://design.samaritanministries.org/product/principles/" target="_blank" class="button button--small button--smooth float-right">
+            View Guidelines
+          </a>
+        </div>
+        <div class="app-content">
+          <div class="row">
+            <div class="column column--full">
+              <section class="hero" style="margin-top: 0;">
+                <h1 class="center-align">Installing the Dashing Component</h1>
+              </section>
+
+              <fieldset class="example-header">
+                <h2>Install bower package</h2>
+                <p>If you use <a href="https://bower.io/">Bower</a>, the dashing package can be installed with the following command:</p>
+              </fieldset>
+<pre class="language-bash"><code class="language-bash">bower install dashing --save</code></pre>
+</div>
+</div>
+          <div class="row">
+            <div class="column column--full">
+              <fieldset class="example-header">
+                <h2>Install npm package</h2>
+                <p>If you use <a href="https://www.npmjs.com/">npm</a>, the dashing package can be installed with the following command:</p>
+              </fieldset>
+<pre class="language-bash"><code class="language-bash">npm install dashing-framework --save</code></pre>
+</div>
+</div>
+
+  <div class="row">
+    <div class="column column--full">
+      <section class="hero">
+        <h1 class="center-align" style="margin-top: 2rem;">Setting up your styles</h1>
+      </section>
+      <fieldset class="example-header">
+        <h2>Import Dashing and custom styles</h2>
+        <p>Copy &amp; paste this code into your main scss file. Note that the relative path may differ.</p>
+        <p class="note"><strong>Note:</strong> You will need to create a folder and file for each custom style file (<span class="underline">theme</span>, <span class="underline">base</span>, <span class="underline">layout</span>, <span class="underline">module</span> and <span class="underline">state</span>).</p>
+      </fieldset>
+
+<pre><code class="language-scss">// Import dashing components
+@import "/bower_components/dashing/sass/vendor/normalize";
+@import "/bower_components/dashing/sass/base/base";
+
+// Import custom theme file
+@import "theme/theme";
+
+// Import dashing components
+@import "/bower_components/dashing/sass/modules/modules";
+
+// Import custom style files
+@import "base/base";
+@import "layout/layout";
+@import "modules/modules";
+@import "state/state";</code>
+</pre>
+</div>
+</div>
+    </div>
+  </body>
+</html>

@@ -10,6 +10,18 @@ $(function() {
   });
 });
 
+$(function() {
+  $("#sidebarMainNavigation").load("example/templates/sidebarmain.html", function() {
+    var url = window.location.href;
+    var findNameRegex = /(\w+)(\/\w+)[\w-]+\./;
+    var urlString = findNameRegex.exec(url)[0];
+    var cutoff = urlString.indexOf('/');
+    var fileName = urlString.substring(0, cutoff);
+    var className = '#sidebarNavigation #'+fileName;
+    $(className).addClass('current');
+  });
+});
+
 $(document).ready(function(){
     $("#hasSpinner").click(function(){
         $("#hasSpinner").addClass("has-spinner");
