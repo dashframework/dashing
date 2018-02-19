@@ -6,7 +6,7 @@ $(function() {
     //get the url of the current page
     var url = window.location.href;
     //get the default active page (index)
-    var indexObject = document.getElementById("index");
+    var indexObject = document.getElementById('index');
 
       $('#nav li').each(function(){
         //get each provided navigation link
@@ -15,8 +15,8 @@ $(function() {
         var id = this.id;
 
         //check if the id provided is in the url
-        if(url.indexOf(id) > -1) {
-            //if there is a match, add the class of current
+        if(url.indexOf(id) > 0) {//was -1, but index for home page will return 0
+            //if there is a match, add the class of current to the matching link
             $(this).addClass('current');
             //if there is a match, remove the class of current from the home page
             $(indexObject).removeClass('current');
