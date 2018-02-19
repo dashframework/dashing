@@ -1,24 +1,27 @@
-$(function() {
-  $("#sidebarNavigation").load("../sidebar.html", function() {
-    var url = window.location.href;
-    var findNameRegex = /(\w+)(\/\w+)[\w-]+\./;
-    var urlString = findNameRegex.exec(url)[0];
-    var cutoff = urlString.indexOf('/');
-    var fileName = urlString.substring(0, cutoff);
-    var className = '#sidebarNavigation #'+fileName;
-    $(className).addClass('current');
-  });
-});
+var rootFolder = "";//leave as "/" for live version
 
+//Active Function
 $(function() {
-  $("#sidebarMainNavigation").load("example/templates/sidebarmain.html", function() {
+  $("#sidebarNavigation").load(rootFolder +"/example/templates/sidebar.html", function() {
+    //get the url of the current page
     var url = window.location.href;
-    var findNameRegex = /(\w+)(\/\w+)[\w-]+\./;
-    var urlString = findNameRegex.exec(url)[0];
-    var cutoff = urlString.indexOf('/');
-    var fileName = urlString.substring(0, cutoff);
-    var className = '#sidebarNavigation #'+fileName;
-    $(className).addClass('current');
+    //get the default active page (index)
+    var indexObject = document.getElementById("index");
+
+      $('#nav li').each(function(){
+        //get each provided navigation link
+        var $this = $(this);
+        //get the id from each provided navigation link
+        var id = this.id;
+
+        //check if the id provided is in the url
+        if(url.indexOf(id) > -1) {
+            //if there is a match, add the class of current
+            $(this).addClass('current');
+            //if there is a match, remove the class of current from the home page
+            $(indexObject).removeClass('current');
+        }
+      });
   });
 });
 
