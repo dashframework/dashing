@@ -58,13 +58,17 @@
     }
   }
 
-  &.disabled, 
+  &.disabled,
   &.is-disabled,
   &.is-selectable.is-disabled,
   &.is-selectable.disabled {
-      opacity: 0.4;
-      pointer-events: none;
-      background-color: $gray-200;
-      border-color: $gray-400;
-    }
+    opacity: 0.4;
+    pointer-events: none;
+    background-color: $gray-200;
+    border-color: $gray-400;
+  }
+
+  .card--narrow{
+    max-width: 750px;
+  }
 }
