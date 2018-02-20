@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+    <title>Banner</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+  </head>
+
+  <body class="example-body">
+    <div class="main-content">
+      <div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="sidebar--overlay is-hidden"></div>
+      <div class="main">
+        <div class="page-header">
+          <button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+          <h1>Banner</h1>
+        </div>
+
+
+        <div class="app-content">
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header no-margin--top" id="cardBanner">Default Card Banner</h2>
+      <div class="row example-container">
+        <div class="column column--full">
+          <div class="card no-margin">
+            <div class="card-header">
+              <h3>Default Banner</h3>
+            </div>
+            <div class="card-content">
+              <div class="card-banner">
+                <p>This is a card banner</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Use a banner within a card to display additional context</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="card no-margin"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;h3&gt;Default Banner&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card-content"&gt;
+    &lt;div class="card-banner"&gt;
+      &lt;p&gt;This is a card banner&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer"&gt;
+    &lt;p&gt;Use a banner within a card to display additional context&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header" id="cardBannerSuccess">Card Banner with success</h2>
+      <div class="row example-container">
+        <div class="column column--full">
+          <div class="card no-margin">
+            <div class="card-header">
+              <h3>Success Banner</h3>
+            </div>
+            <div class="card-content">
+              <div class="card-banner has-success">
+                <i class="dashing-icon dashing-icon--checkmark-filled"></i>
+                <p>Your file is ready to upload</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Use success banners to notify users of a successful action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="card no-margin"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;h3&gt;Success Banner&lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card-content"&gt;
+    &lt;div class="card-banner has-success"&gt;
+      &lt;i class="dashing-icon dashing-icon--checkmark-filled"&gt;&lt;/i&gt;
+      &lt;p&gt;Your file is ready to upload&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card-footer"&gt;
+    &lt;p&gt;Use success banners to notify users of a successful action.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header" id="cardBannerWarning">Card Banner with warning</h2>
+      <div class="row example-container">
+        <div class="column column--full">
+          <div class="card no-margin">
+            <div class="card-header">
+              <h3>Warning Banner</h3>
+            </div>
+            <div class="card-content">
+              <div class="card-banner has-warning">
+                <i class="dashing-icon dashing-icon--info-filled"></i>
+                <p>You may only submit bill information and upload images for one statement at a time. If you have multiple statements to submit, please enter them separately.</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Use warning banners to inform your user of potential errors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="card no-margin"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;h3&gt;Warning Banner&lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card-content"&gt;
+    &lt;div class="card-banner has-warning"&gt;
+      &lt;i class="dashing-icon dashing-icon--info-filled"&gt;&lt;/i&gt;
+      &lt;p&gt;You may only submit bill information and upload images for one statement at a time. If you have multiple statements to submit, please enter them separately.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card-footer"&gt;
+    &lt;p&gt;Use warning banners to inform your user of potential errors.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header" id="cardBannerError">Card Banner with error</h2>
+      <div class="row example-container">
+        <div class="column column--full">
+          <div class="card no-margin">
+            <div class="card-header">
+              <h3>Error Banner</h3>
+            </div>
+            <div class="card-content">
+              <div class="card-banner has-error">
+                <i class="dashing-icon dashing-icon--alert-filled"></i>
+                <p>You must complete all fields below before continuing</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Use error banners to display critical and important information to your user after they have performed an action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="card no-margin"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;h3&gt;Error Banner&lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card-content"&gt;
+    &lt;div class="card-banner has-error"&gt;
+      &lt;i class="dashing-icon dashing-icon--alert-filled"&gt;&lt;/i&gt;
+      &lt;p&gt;You must complete all fields below before continuing&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card-footer"&gt;
+    &lt;p&gt;Use error banners to display crucial information to your user.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+    </div>
+  </body>
+</html>
