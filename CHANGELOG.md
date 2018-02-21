@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.5.0 - February 20, 2018
+**Added**
+* Added card-banner
+  
+*****
+  
 ### 1.4.2 - February 19, 2018
 **Updated**
 * Updated font to include pause icon
