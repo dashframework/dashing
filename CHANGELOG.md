@@ -2,48 +2,48 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
-### 1.6.1 - February 23, 2018
+### 1.6.0 - February 23, 2018
 **Added**
 * Added page banner styles
-  
+
 *****
-  
+
 ### 1.5.0 - February 20, 2018
 **Added**
 * Added card-banner
-  
+
 *****
-  
+
 ### 1.4.2 - February 19, 2018
 **Updated**
 * Updated font to include pause icon
-  
+
 *****
-  
+
 ### 1.4.1 - February 16, 2018
 **Added**
 * Added disabled cards. Use .disabled or .is-disabled on a card to fade it out.
-  
+
 *****
-  
+
 ### 1.4.0 - February 06, 2018
 **Added**
 * Added new "clippy" element for displaying dialog messages through tooltipster
-  
+
 *****
-  
+
 ### 1.3.0 - February 02, 2018
 **Added**
 * Added tooltips
-  
+
 *****
-  
+
 ### 1.2.4 - February 01, 2018
 **Fixed**
 * Fixed auto color being applied to button--icon elements
-  
+
 *****
-  
+
 ### 1.2.3 - January 30, 2018
 **Added**
 * Added --small class to checkbox-card and radio-card
