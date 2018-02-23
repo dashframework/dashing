@@ -1,6 +1,6 @@
 {
   "name": "dashing-framework",
-  "version": "1.6.1",
+  "version": "1.6.0",
   "description": "Style framework for Dash",
   "main": "index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashframework/dashing.git"
+    "url": "git+https://github.com/samaritanministries/dashing.git"
   },
   "keywords": [
     "dashing",
@@ -21,9 +21,9 @@
   "author": "Jared Rauh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashframework/dashing/issues"
+    "url": "https://github.com/samaritanministries/dashing/issues"
   },
-  "homepage": "https://github.com/dashframework/dashing#readme",
+  "homepage": "https://github.com/samaritanministries/dashing#readme",
   "dependencies": {
     "normalize-scss": "3.0.3"
   }

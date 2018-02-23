@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jrauh/_Workspaces/dashing',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jrauh/.npm/dashing-framework/1.5.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/jrauh/.npm correctMkdir not in flight; initializing
+10 info lifecycle dashing-framework@1.5.0~prepublish: dashing-framework@1.5.0
+11 silly lifecycle dashing-framework@1.5.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/jrauh/.npm/dashing-framework/1.5.0/package.tgz',
+12 verbose tar pack   '/Users/jrauh/_Workspaces/dashing' ]
+13 verbose tarball /Users/jrauh/.npm/dashing-framework/1.5.0/package.tgz
+14 verbose folder /Users/jrauh/_Workspaces/dashing
+15 verbose addLocalTarball adding from inside cache /Users/jrauh/.npm/dashing-framework/1.5.0/package.tgz
+16 verbose correctMkdir /Users/jrauh/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd dashing-framework@1.5.0
+18 verbose afterAdd /Users/jrauh/.npm/dashing-framework/1.5.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/jrauh/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/jrauh/.npm/dashing-framework/1.5.0/package/package.json written
+21 silly publish { name: 'dashing-framework',
+21 silly publish   version: '1.5.0',
+21 silly publish   description: 'Style framework for Dash',
+21 silly publish   main: 'index.js',
+21 silly publish   directories: { example: 'example' },
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/dashframework/dashing.git' },
+21 silly publish   keywords: [ 'dashing', 'dash', 'dashing-framework' ],
+21 silly publish   author: { name: 'Jared Rauh' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/dashframework/dashing/issues' },
+21 silly publish   homepage: 'https://github.com/dashframework/dashing#readme',
+21 silly publish   dependencies: { 'normalize-scss': '3.0.3' },
+21 silly publish   readme: '# Dashing\nStylish framework for web apps\n\n[![GitHub version](https://badge.fury.io/gh/dashframework%2Fdashing.svg)](https://badge.fury.io/gh/dashframework%2Fdashing)\n[![Bower version](https://badge.fury.io/bo/dashing.svg)](https://badge.fury.io/bo/dashing)\n[![npm version](https://badge.fury.io/js/dashing-framework.svg)](https://badge.fury.io/js/dashing-framework)\n\n## Browser Support\n\n| Chrome | Edge | Firefox | Opera | IE | Safari |\n|--------|------|---------|-------|----|--------|\n| Latest | Latest | Latest | Latest | IE 11+ | Safari 8+ |\n\n\n# Getting Started\n\n## Install the Component\n\nThe Dashing Framework is delivered as a [bower](bower.io) component. Note that Bower requires [node](https://nodejs.org/en/download/), [npm](https://docs.npmjs.com/cli/install) and [git](https://git-scm.com/downloads). If you don\'t yet have these installed, do this first.\n\n1. Install bower\n  ```grunt\n  npm install -g bower\n  ```\n\n2. Create a `bower.json` file\n  ```grunt\n    bower init\n  ```\n  > Note: You will be asked to create a title, description, and other information about the file. You can simply just hit `enter` to skip through a lot of these, or fill them out if you wish. The last three questions will be yes/no, just respond `y` to all of them.\n\n3. Install the dashing bower component. This will install the Dashing files in your project\'s `bower_components` folder.\n  ```grunt\n  bower install dashing --save\n  ```\n\n## Setting up your project with SASS\n\nSass is a great way to keep your project clean, organized and easy-to-manage. If you are unfamiliar with the workings of Sass, learn more [here](http://sass-lang.com/guide).\n\n### Including Dashing Styles\n\nCopy and paste the following code snippet into your project. This will pull in normalize, along with Dashing base and module styles.\n\n> Note: If you wish to overwrite Dashing styles to add customization your project, skip through this step and head to the [next section](https://github.com/dashframework/dashing/#including-custom-styles).\n\n```scss\n@import "/bower_components/dashing/sass/vendor/normalize";\n@import "/bower_components/dashing/sass/base/base";\n@import "/bower_components/dashing/sass/modules/modules";\n```\n\n### Including Custom Styles\n\nWhile the Dashing Style Framework does provide a lot of core modules for you to utilize, it most likely won\'t have everything you need. Follow the [SMACSS](https://smacss.com/) syntax in order to add a clean, organized structure to your custom stylesheets.\n\n1. Create five individual folders, named `base`, `layout`, `modules`, `state` and `theme`.\n\n2. Within each folder, create a stylesheet to match. (e.g. You would create a `base.scss` file within your `base` folder).\n\n3. Import everything to your main application folder. When you\'re all finished, it should look something like this:\n  ```scss\n  @import "/bower_components/dashing/sass/vendor/normalize";\n  @import "/bower_components/dashing/sass/base/base";\n  @import "theme/theme";\n  @import "/bower_components/dashing/sass/modules/modules";\n\n  @import "base/base";\n  @import "layout/layout";\n  @import "modules/modules";\n  @import "state/state";\n  ```\n\n  > Note: By including a theme file, your modules will now look to that for color theming, rather than base.\n\n\n## Setting up your HTML file and importing styles\n\nWe\'ve provided a starter HTML file to help you get running. Paste this code into your `index.html` file.\n\n```html\n<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1">\n    <!-- These previous two meta tags *must* come first in the head -->\n    <title>Dashing Template</title>\n\n    <!-- Working with CSS – Use this link if prefer to use the vanilla css, without any customization -->\n    <link rel="stylesheet" href="/bower_components/dashing/dashing.css">\n\n    <!-- Working with SCSS – Use this if you\'d like to add any customization to the dashing modules. Note: The path and file name may differ for your project. -->\n    <link rel="stylesheet" href="styles/application.css">\n  </head>\n  <body>\n    <h1>Hello, world!</h1>\n  </body>\n</html>\n```\n\n## What\'s Included\nEvery module contains an example file that allows you to preview the look and feel of each feature.\n\n##### [Base Styles](https://github.com/dashframework/dashing/tree/develop/sass/base)\n\n* Color · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/colors) · [Example](http://dashframework.github.io/dashing/example/templates/color/example.html)\n* Extendables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/extendables)\n* Mixins · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/mixins)\n* Utilities · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/utilities)\n* Variables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/base/variables)\n\n##### [Modules](https://github.com/dashframework/dashing/tree/develop/sass/modules)\n\n* Actions · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/actions) · [Example](http://dashframework.github.io/dashing/example/templates/actions/example.html)\n* Card · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/card) · [Example](http://dashframework.github.io/dashing/example/templates/card/example.html)\n* Forms · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/forms) · [Example](http://dashframework.github.io/dashing/example/templates/forms/example.html)\n* Grid · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/grid) · [Example](http://dashframework.github.io/dashing/example/templates/grid/example.html)\n* Icons · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/icons) · [Example](http://dashframework.github.io/dashing/example/templates/icons/example.html)\n* Navigation · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/navigation) · [Example](http://dashframework.github.io/dashing/example/templates/navigation/example.html)\n* Footer · [Example](http://dashframework.github.io/dashing/example/templates/footer/fixed-footer.html)\n* Tables · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/table) · [Example](http://dashframework.github.io/dashing/example/templates/table/default.html)\n* Typography · [Documentation](https://github.com/dashframework/dashing/tree/develop/sass/modules/typography) · [Example](http://dashframework.github.io/dashing/example/templates/typography/example.html)\n* Spinner · [Example](http://dashframework.github.io/dashing/example/templates/spinner/example.html)\n\n*****\n*****\n\n## Development\n\n### Clone the repository with git\n\n```bash\ngit clone https://github.com/dashframework/dashing.git\n```\n\n### Releasing a new version\n\n1. Build the Sass and compress the CSS\n  ```bash\n  sass --watch dashing.scss:dashing.css --style compressed\n  ```\n\n  ```bash\n  sass -w example/sass/example.scss:example/css/example.css\n  ```\n\n2. Update the version number in the `bower.json` and `package.json` files (See [here](http://semver.org/) for versioning conventions)\n\n3. Stage the changes to be committed\n  ```bash\n  git add .\n  ```\n\n4. Commit the changes made in the previous steps\n  ```bash\n  git commit -m "[message]"\n  ```\n\n5. Tag the commit with the appropriate version number\n  ```bash\n  git tag vX.Y.Z\n  ```\n\n6. Push your committed changes\n  ```bash\n  git push\n  ```\n\n7. Push your new tag\n  ```bash\n  git push --tags\n  ```\n\n8. Push your new npm package\n  ```bash\n  npm publish\n  ```\n\n## Found a Bug?\n\n[Submit an issue](https://github.com/dashframework/dashing/issues) if you need help, or [submit a pull request](https://github.com/dashframework/dashing/pulls) with your own fixes or changes.\n\n## Contributors\n\nDashing is a product of Samaritan Ministries International.\n\nThanks to the following people who have contributed to this project:\n\n- [@jrauh](https://github.com/jrauh)\n- [@bjrobertson](https://github.com/bjrobertson)\n- [@coryclubb](https://github.com/coryclubb)\n- [@nevren](https://github.com/Nevren)\n\n## License\n\n[MIT License](LICENSE.md)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '67d299d1b8cb08c1f279b096b9e78dce12da9dff',
+21 silly publish   _id: 'dashing-framework@1.5.0',
+21 silly publish   _shasum: '8fc03545c5e804ab8e418e58a78cd97d03bf8c54',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name dashing-framework
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'dashing-framework',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'dashing-framework',
+26 silly mapToRegistry   name: 'dashing-framework',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/dashing-framework
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/jrauh/.npm/dashing-framework/1.5.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/dashing-framework
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 8:35:51 AM
+33 verbose request using bearer token for auth
+34 verbose request id e383f7800ff7f702
+35 http request PUT https://registry.npmjs.org/dashing-framework
+36 http 403 https://registry.npmjs.org/dashing-framework
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '93',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 23 Feb 2018 14:36:10 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-ord1742-ORD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1519396551.323523,VS0,VE19484',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/jrauh/.npm/registry.npmjs.org/dashing-framework on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published versions: 1.5.0. : dashing-framework
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid dashing-framework
+43 verbose cwd /Users/jrauh/_Workspaces/dashing
+44 error Darwin 16.7.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.11.2
+47 error npm  v3.10.10
+48 error code E403
+49 error You cannot publish over the previously published versions: 1.5.0. : dashing-framework
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
