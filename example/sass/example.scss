@@ -102,3 +102,41 @@
      display: block;
    }
 }
+
+h2 {
+  .button--copy-link {
+    &:after {
+      content: "Copy Link";
+    }
+      width: 100px;
+      pointer-events: initial;
+      transition: all 0.25s;
+      opacity: 1;
+      text-align: left;
+
+    @media #{$tablet} {
+      width: 0px;
+      overflow: hidden;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+
+  &:hover, 
+  &:active {
+      .button--copy-link {
+        &:active, 
+        &:focus {
+          &:after {
+            content: "Copied";
+          }
+          color: $green-500;
+        }
+      width: 100px;
+      pointer-events: initial;
+      // transition: all 0.5s;
+      opacity: 1;
+    }
+  }
+}
