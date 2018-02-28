@@ -42,9 +42,9 @@
   }
 
   .default {
-    margin: 2rem 0 !important;
+    margin: 0 0 2rem 0 !important;
     @media all and (min-width: 840px) {
-      margin: 1rem 0 0 !important;
+      margin: 0 0 1rem 0 !important;
     }
   }
 }

@@ -138,6 +138,47 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
+$(document).ready(function(){
+  $("[data-id=copyurl]").click(function(){
+    // var txt = window.location.href;
+    var txt = window.location.href.split('#')[0]
+    if(!txt || txt == ''){
+      return;
+    }
+    copyUrlToClipboard(txt+"#"+this.id);
+  });
+});
+
+function copyUrlToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+  textArea.style.width = '0';
+  textArea.style.height = '0';
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.select();
+
+  //Set this for android to copy
+  textArea.addEventListener("copy", function(event) {
+    event.preventDefault();
+    if (event.clipboardData) {
+      event.clipboardData.setData("text/plain", text);
+      console.log(event.clipboardData.getData("text"))
+    }
+  });
+  
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log(text);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+  document.body.removeChild(textArea);
+}
+
 // $('.code-toggle').click(function(e) {
 //
 //     var $this = $(this);
