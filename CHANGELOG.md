@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.6.1 - March 01, 2018
+**Updated**
+* Updated card-banner styles
+  
+*****
+  
 ### 1.6.1 - February 23, 2018
 **Added**
 * Added page banner styles
