@@ -402,6 +402,7 @@ $clippy-color: #A1A1A1; //$gray-400
 	transform: scale(1.1, 1.1);
 }
 
+.tooltipster-sidetip .tooltipster-box,
 .tooltipster-box {
 	background-color: $tooltip-color;
 	border-radius: 10px;
@@ -419,21 +420,25 @@ $clippy-color: #A1A1A1; //$gray-400
   }
 }
 
+.tooltipster-sidetip.tooltipster-top,
 .tooltipster-top {
 	.tooltipster-arrow-border,
 	.tooltipster-arrow-background {	border-top-color: $tooltip-color; }
 }
 
+.tooltipster-sidetip.tooltipster-bottom,
 .tooltipster-bottom {
 	.tooltipster-arrow-border,
 	.tooltipster-arrow-background {	border-bottom-color: $tooltip-color; }
 }
 
+.tooltipster-sidetip.tooltipster-left,
 .tooltipster-left {
 	.tooltipster-arrow-border,
 	.tooltipster-arrow-background {	border-left-color: $tooltip-color; }
 }
 
+.tooltipster-sidetip.tooltipster-right,
 .tooltipster-right {
 	.tooltipster-arrow-border,
 	.tooltipster-arrow-background {	border-right-color: $tooltip-color; }
