@@ -30,6 +30,10 @@
   padding: $grid-gutter;
   margin: 0 -#{$grid-gutter};
 
+  &.has-button {
+    padding: $grid-gutter/2 $grid-gutter;
+  }
+
   &.has-success,
   &.has-error {
     p { color: $white; }
