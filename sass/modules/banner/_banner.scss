@@ -23,46 +23,37 @@
   }
 }
 
-.card {
-  .card-banner {
-    background-color: #D4D4D4;
-    padding: $grid-gutter;
-    margin: 0 -#{$grid-gutter};
-    width: calc(100% + ((#{$grid-gutter}) * 2));
+.card-banner {
+  align-items: baseline;
+  background-color: #D4D4D4;
+  display: flex;
+  padding: $grid-gutter;
+  margin: 0 -#{$grid-gutter};
 
-    &.has-success,
-    &.has-error {
-      p { color: $white; }
-      .dashing-icon:before { color: $white;}
-    }
+  &.has-button {
+    padding: $grid-gutter/2 $grid-gutter;
+  }
 
-    &.has-warning {
-      p { color: $black; }
-      .dashing-icon:before { color: $black;}
-    }
+  &.has-success,
+  &.has-error {
+    p { color: $white; }
+    .dashing-icon:before { color: $white;}
+  }
 
-    &.has-success { background-color: $green; }
-    &.has-warning { background-color: $orange; }
-    &.has-error   { background-color: $red; }
+  &.has-warning {
+    p { color: $black; }
+    .dashing-icon:before { color: $black;}
+  }
 
-    p {
-      display: inline-block;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin: 0;
-    }
+  &.has-success { background-color: $green; }
+  &.has-warning { background-color: $orange; }
+  &.has-error   { background-color: $red; }
 
-    .dashing-icon {
-      display: inline-block;
-      float: left;
-      margin-top: 0.25rem;
+  .dashing-icon { margin-right: 0.5rem; }
 
-      & + p {
-        position: relative;
-        left: calc(#{$grid-gutter} + (#{$grid-gutter} / 2));
-        margin-left: -#{$grid-gutter};
-        width: calc(100% - (#{$grid-gutter} * 2));
-      }
-    }
+  p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
   }
 }

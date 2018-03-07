@@ -2,6 +2,24 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.7.0 - March 07, 2018
+**Added**
+* Added .has-button class to .card-banner styles
+
+*****
+  
+### 1.6.2 - March 01, 2018
+**Fixed**
+* Fixed tooltip styles
+
+*****
+
+### 1.6.1 - March 01, 2018
+**Updated**
+* Updated card-banner styles
+
+*****
+
 ### 1.6.0 - February 23, 2018
 **Added**
 * Added page banner styles
