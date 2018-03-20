@@ -233,14 +233,6 @@ $switch--off: $gray-250 !default; //Color of switch when off
     color: rgba($black, .6);
     &:before { //Button Hover
       color: $gray-200;
-    }
-  }
-
-  //Radio Active
-  input:checked ~ label:before {
-    background-color: $radio--active;
-    border-color: $radio--active;
-    color: $radio--icon;
   }
 
   input:hover:not(:checked) ~ label,
