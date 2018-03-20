@@ -32,7 +32,7 @@ This changelog was started using [these conventions](http://keepachangelog.com/)
 
 *****
 
-### 1.6.1 - February 23, 2018
+### 1.6.0 - February 23, 2018
 **Added**
 * Added page banner styles
 
