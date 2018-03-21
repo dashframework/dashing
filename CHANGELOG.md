@@ -3,7 +3,7 @@
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
 ### 1.8.0 - March 21, 2018
-**Added card--dashed**
+**Added**
 * Added card--dashed
   
 *****
