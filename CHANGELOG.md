@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.8.0 - March 21, 2018
+**Added card--dashed**
+* Added card--dashed
+  
+*****
+  
 ### 1.7.0 - March 07, 2018
 **Added**
 * Added .has-button class to .card-banner styles
