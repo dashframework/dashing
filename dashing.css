@@ -1480,29 +1480,32 @@ fieldset .has-warning .message li {
       .radio-card .radio--custom.card label {
         text-indent: 2.3rem; } }
 @-moz-document url-prefix() {
-  .radio--custom input:empty ~ label:before, .radio-card input:empty ~ label:before {
+  .radio--custom label:before, .radio-card label:before {
     font-size: 1.6rem; }
-    @media all and (min-width: 64em) {
-      .radio--custom input:empty ~ label:before, .radio-card input:empty ~ label:before {
-        font-size: 1.5rem; } } }
+  @media all and (max-width: 40em) {
+    .radio--custom label:not(.card):before, .radio-card label:not(.card):before {
+      line-height: 20px;
+      font-size: 3rem;
+      height: 32px;
+      width: 32px; } } }
   .radio--custom input:hover:not(:checked) ~ label, .radio-card input:hover:not(:checked) ~ label {
     color: rgba(0, 0, 0, 0.6); }
     .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before {
-      color: #D4D4D4;
-      content: '•';
-      text-indent: 4px; }
-      @media all and (max-width: 40em) {
-        .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before {
-          text-indent: 7px; } }
+      color: #D4D4D4; }
   .radio--custom input:checked ~ label:before, .radio-card input:checked ~ label:before {
     background-color: #3F70C9;
     border-color: #3F70C9;
-    color: #FFFFFF;
+    color: #FFFFFF; }
+  .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before,
+  .radio--custom input:checked ~ label:before,
+  .radio-card input:checked ~ label:before {
     content: '•';
     text-indent: 4px; }
-    @media all and (max-width: 40em) {
-      .radio--custom input:checked ~ label:before, .radio-card input:checked ~ label:before {
-        text-indent: 7px; } }
+  @media all and (max-width: 40em) {
+    .radio--custom input:hover:not(:checked) ~ label:not(.card):before, .radio-card input:hover:not(:checked) ~ label:not(.card):before,
+    .radio--custom input:checked ~ label:not(.card):before,
+    .radio-card input:checked ~ label:not(.card):before {
+      text-indent: 7px; } }
   .radio--custom input:focus ~ label:before, .radio-card input:focus ~ label:before {
     box-shadow: 0 0 0 2px #9DC0FF; }
   .radio--custom input[disabled] ~ label, .radio-card input[disabled] ~ label,
