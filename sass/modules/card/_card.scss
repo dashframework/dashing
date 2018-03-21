@@ -68,6 +68,10 @@
     border-color: $gray-400;
   }
 
+  &.card--dashed {
+    border-style: dashed;
+  }
+
   .card--narrow{
     max-width: 750px;
   }
