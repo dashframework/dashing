@@ -213,9 +213,18 @@ $switch--off: $gray-250 !default; //Color of switch when off
   }
 
   @-moz-document url-prefix() { //Target Firefox radio button
-    input:empty ~ label:before {
+    label:before {
       font-size: 1.6rem;
-      @media #{$desktop} { font-size: 1.5rem; }
+    }
+
+    @media #{$phone} {
+      label:not(.card) { //mobile-optimized large checkboxes if not inside a card-checkbox
+        &:before {
+          line-height: 20px;
+          font-size: 3rem;
+          height: 32px; width: 32px;
+        }
+      }
     }
   }
 
@@ -224,9 +233,6 @@ $switch--off: $gray-250 !default; //Color of switch when off
     color: rgba($black, .6);
     &:before { //Button Hover
       color: $gray-200;
-    	content:'•';
-    	text-indent: 4px;
-      @media #{$phone} { text-indent: 7px; }
     }
   }
 
@@ -235,9 +241,18 @@ $switch--off: $gray-250 !default; //Color of switch when off
     background-color: $radio--active;
     border-color: $radio--active;
     color: $radio--icon;
-  	content:'•';
-  	text-indent: 4px;
-    @media #{$phone} { text-indent: 7px; }
+  }
+
+  input:hover:not(:checked) ~ label,
+  input:checked ~ label {
+    &:before {
+      content:'•';
+    	text-indent: 4px;
+    }
+
+    &:not(.card):before {
+      @media #{$phone} { text-indent: 7px; }
+    }
   }
 
   //Radio Focus
