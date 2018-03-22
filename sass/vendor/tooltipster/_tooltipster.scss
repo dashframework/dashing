@@ -411,12 +411,14 @@ $clippy-color: #A1A1A1; //$gray-400
   max-width: 250px;
   padding: 0.75rem;
   border-radius: 10px;
+	overflow: hidden;
 
   .tooltipster-content {
     font-weight: 600;
     font-size: 0.9rem;
     line-height: 1.1rem;
 		padding: 0;
+		overflow: hidden;
   }
 }
 
