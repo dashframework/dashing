@@ -700,13 +700,15 @@ corresponds to the arrow we want to display */
   border: none;
   max-width: 250px;
   padding: 0.75rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  overflow: hidden; }
   .tooltipster-sidetip .tooltipster-box .tooltipster-content,
   .tooltipster-box .tooltipster-content {
     font-weight: 600;
     font-size: 0.9rem;
     line-height: 1.1rem;
-    padding: 0; }
+    padding: 0;
+    overflow: hidden; }
 
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border,
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background,
@@ -1492,10 +1494,6 @@ fieldset .has-warning .message li {
     color: rgba(0, 0, 0, 0.6); }
     .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before {
       color: #D4D4D4; }
-  .radio--custom input:checked ~ label:before, .radio-card input:checked ~ label:before {
-    background-color: #3F70C9;
-    border-color: #3F70C9;
-    color: #FFFFFF; }
   .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before,
   .radio--custom input:checked ~ label:before,
   .radio-card input:checked ~ label:before {
@@ -1506,6 +1504,10 @@ fieldset .has-warning .message li {
     .radio--custom input:checked ~ label:not(.card):before,
     .radio-card input:checked ~ label:not(.card):before {
       text-indent: 7px; } }
+  .radio--custom input:checked ~ label:before, .radio-card input:checked ~ label:before {
+    background-color: #3F70C9;
+    border-color: #3F70C9;
+    color: #FFFFFF; }
   .radio--custom input:focus ~ label:before, .radio-card input:focus ~ label:before {
     box-shadow: 0 0 0 2px #9DC0FF; }
   .radio--custom input[disabled] ~ label, .radio-card input[disabled] ~ label,
@@ -2535,6 +2537,8 @@ fieldset .has-warning .message li {
     pointer-events: none;
     background-color: #D4D4D4;
     border-color: #A1A1A1; }
+  .card.card--dashed {
+    border-style: dashed; }
   .card .card--narrow {
     max-width: 750px; }
 
