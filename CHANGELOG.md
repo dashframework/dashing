@@ -2,18 +2,30 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
-### 1.8.0 - March 21, 2018
-**Added card--dashed**
-* Added card--dashed
+### 1.8.2 - March 22, 2018
+**Updated**
+* Updated mobile styles for checkboxes and radio buttons
   
 *****
   
+### 1.8.1 - March 22, 2018
+**Fixed**
+* Fixed scrollbars showing up in tooltips on Firefox and Edge
+
+*****
+
+### 1.8.0 - March 21, 2018
+**Added**
+* Added card--dashed
+
+*****
+
 ### 1.7.0 - March 07, 2018
 **Added**
 * Added .has-button class to .card-banner styles
 
 *****
-  
+
 ### 1.6.2 - March 01, 2018
 **Fixed**
 * Fixed tooltip styles
