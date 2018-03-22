@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.8.2 - March 22, 2018
+**Updated**
+* Updated mobile styles for checkboxes and radio buttons
+  
+*****
+  
 ### 1.8.1 - March 22, 2018
 **Fixed**
 * Fixed scrollbars showing up in tooltips on Firefox and Edge
