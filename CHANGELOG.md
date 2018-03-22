@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.8.1 - March 22, 2018
+**Fixed**
+* Fixed scrollbars showing up in tooltips on Firefox and Edge
+  
+*****
+  
 ### 1.7.0 - March 07, 2018
 **Added**
 * Added .has-button class to .card-banner styles
