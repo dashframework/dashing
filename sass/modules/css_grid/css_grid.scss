@@ -1,51 +1,56 @@
+$fake-grid-gap: 1rem;
+
 .css-grid-auto,
 .css-grid-halves,
-.css-grid-thirds {
-	display: block;
-	grid-gap: 1rem;
+.css-grid-thirds {//Mixed IE11, Safari, and Others
+	display: block;//For IE mobile
+	grid-gap: $fake-grid-gap;
 
 	@media #{$tablet} { display: -ms-grid; }//IE11
 
 	@supports(display: grid) { display: grid; }
 
 	> div {//IE11
-		margin: 1rem;
-		@media #{$tablet} { margin: 0.5rem; }
+		margin: $fake-grid-gap;
+		@media #{$tablet} { margin: calc(#{$fake-grid-gap} / 2); }
 	}
 
 	@supports(display: grid) { > div { margin: 0; } }
 }
 
-.css-grid-auto {
-	grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
-	-ms-grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));//IE11 - NOT CERTAIN IF THIS WORKS
-	padding: 0.5rem;
-}
+// .css-grid-auto {
+// 	grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+// 	padding: 0.5rem;
+// }
 
 .css-grid-halves {
-	grid-template-columns: repeat(8, 1fr);
-	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;//IE11
-	-ms-grid-rows: 1fr 1fr;//IE11
+	grid-template-columns: repeat(4, 1fr);
 	padding: 1rem;
+}
+
+.css-grid-halves { //For IE
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;//IE11
 }
 
 .css-grid-thirds {
-	-ms-grid-template-columns: repeat(6, 1fr);//IE11
-	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;//IE11
-	-ms-grid-rows: 1fr 1fr;//IE11
+	grid-template-columns: repeat(6, 1fr);
 	padding: 1rem;
 }
 
-//For Example Page 1
-.css-grid-item   { background-color: #333333; }
-.css-grid-item-2 { background-color: #6A8DD3; }
-.css-grid-item-3 { background-color: #2DB16C; }
-
-.css-grid-background {
-	background-color: rgba(157, 192, 255, 0.5);
-	border: 2px solid #6A8DD3;
-	border-radius: 5px;
+.css-grid-thirds {//For IE
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;//IE11
 }
+
+//For Example Page 1
+// .css-grid-item   { background-color: #333333; }
+// .css-grid-item-2 { background-color: #6A8DD3; }
+// .css-grid-item-3 { background-color: #2DB16C; }
+
+// .css-grid-background {
+// 	background-color: rgba(157, 192, 255, 0.5);
+// 	border: 2px solid #6A8DD3;
+// 	border-radius: 5px;
+// }
 
 //For Example NMA app:
 .css-grid-highlight {
@@ -135,37 +140,147 @@
 .css-grid-span-4 { grid-column: 1 / -1; @media #{$tablet} { grid-column: span 4; } }
 .css-grid-span-5 { grid-column: 1 / -1; @media #{$tablet} { grid-column: span 5; } }
 .css-grid-span-6 { grid-column: 1 / -1; @media #{$tablet} { grid-column: span 6; } }
-.css-grid-span-7 { grid-column: 1 / -1; @media #{$tablet} { grid-column: span 7; } }
-.css-grid-span-8 { grid-column: 1 / -1; @media #{$tablet} { grid-column: span 8; } }
+// .css-grid-span-7 { grid-column: 1 / -1; @media #{$tablet} { grid-column: span 7; } }
+// .css-grid-span-8 { grid-column: 1 / -1; @media #{$tablet} { grid-column: span 8; } }
 
-//For IE
-.css-grid-span-1 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 1; } }
-.css-grid-span-2 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 2; } }
-.css-grid-span-3 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 3; } }
-.css-grid-span-4 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 4; } }
-.css-grid-span-5 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 5; } }
-.css-grid-span-6 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 6; } }
-.css-grid-span-7 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 7; } }
-.css-grid-span-8 { -ms-grid-column-span: 8; -ms-grid-column: 1; @media #{$tablet} { -ms-grid-column-span: 8; } }
+//For Safari 9
+.css-grid-halves {
+	.css-grid-span-1 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(25% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-2 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(50% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-3 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(75% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-4 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(100% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	// .css-grid-span-5 { 
+	// 	@media #{$tablet} { 
+	// 		@supports not (display: grid) { width: calc(62.5% - #{$fake-grid-gap}); float: left;}//SAFARI
+	// 	} 
+	// }
+	// .css-grid-span-6 { 
+	// 	@media #{$tablet} { 
+	// 		@supports not (display: grid) { width: calc(75% - #{$fake-grid-gap}); float: left;}//SAFARI
+	// 	} 
+	// }
+	// .css-grid-span-7 { 
+	// 	@media #{$tablet} { 
+	// 		@supports not (display: grid) { width: calc(87.5% - #{$fake-grid-gap}); float: left;}//SAFARI   
+	// 	} 
+	// }
+	// .css-grid-span-8 { 
+	// 	@media #{$tablet} { 
+	// 		@supports not (display: grid) { width: calc(100% - #{$fake-grid-gap}); float: left;}//SAFARI
+	// 	} 
+	// }
+}
 
-.ms-grid-row-1 { -ms-grid-row: 1; }
-.ms-grid-row-2 { -ms-grid-row: 2; }
-.ms-grid-row-3 { -ms-grid-row: 3; }
-.ms-grid-row-4 { -ms-grid-row: 4; }
-.ms-grid-row-5 { -ms-grid-row: 5; }
-.ms-grid-row-6 { -ms-grid-row: 6; }
-.ms-grid-row-7 { -ms-grid-row: 7; }
-.ms-grid-row-8 { -ms-grid-row: 8; }
+.css-grid-thirds {
+	.css-grid-span-1 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(16.6666% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-2 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(33.3333% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-3 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(50% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-4 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(66.6666% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-5 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(83.3333% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+	.css-grid-span-6 { 
+		@media #{$tablet} { 
+			@supports not (display: grid) { width: calc(100% - #{$fake-grid-gap}); float: left;}//SAFARI
+		} 
+	}
+}
+//End Safari 9
 
-.ms-grid-column-1 { -ms-grid-column: 1; }
-.ms-grid-column-2 { -ms-grid-column: 2; }
-.ms-grid-column-3 { -ms-grid-column: 3; }
-.ms-grid-column-4 { -ms-grid-column: 4; }
-.ms-grid-column-5 { -ms-grid-column: 5; }
-.ms-grid-column-6 { -ms-grid-column: 6; }
-.ms-grid-column-7 { -ms-grid-column: 7; }
-.ms-grid-column-8 { -ms-grid-column: 8; }
-//End for IE
+//For IE11 
+.css-grid-span-1 { 
+	-ms-grid-column-span: 8;//IE11 
+	@media #{$tablet} { 
+		-ms-grid-column-span: 1;//IE11  
+	} 
+}
+.css-grid-span-2 { 
+	-ms-grid-column-span: 8;//IE11 
+	@media #{$tablet} { 
+		-ms-grid-column-span: 2;//IE11  
+	} 
+}
+.css-grid-span-3 { 
+	-ms-grid-column-span: 8;//IE11  
+	@media #{$tablet} { 
+		-ms-grid-column-span: 3;//IE11  
+	} 
+}
+.css-grid-span-4 { 
+	-ms-grid-column-span: 8;//IE11  
+	@media #{$tablet} { 
+		-ms-grid-column-span: 4;//IE11  
+	} 
+}
+.css-grid-span-5 { 
+	-ms-grid-column-span: 8;//IE11 
+	@media #{$tablet} { 
+		-ms-grid-column-span: 5;//IE11  
+	} 
+}
+.css-grid-span-6 { 
+	-ms-grid-column-span: 8;//IE11 
+	@media #{$tablet} { 
+		-ms-grid-column-span: 6;//IE11  
+	} 
+}
+.css-grid-span-7 { 
+	-ms-grid-column-span: 8;//IE11 
+	@media #{$tablet} { 
+		-ms-grid-column-span: 7;//IE11
+	} 
+}
+.css-grid-span-8 { 
+	-ms-grid-column-span: 8;//IE11  
+	@media #{$tablet} { 
+		-ms-grid-column-span: 8;//IE11 
+	} 
+}
+
+.ms-grid-row-1 { -ms-grid-row: 1; } .ms-grid-column-1 { -ms-grid-column: 1; }
+.ms-grid-row-2 { -ms-grid-row: 2; } .ms-grid-column-2 { -ms-grid-column: 2; }
+.ms-grid-row-3 { -ms-grid-row: 3; } .ms-grid-column-3 { -ms-grid-column: 3; }
+.ms-grid-row-4 { -ms-grid-row: 4; } .ms-grid-column-4 { -ms-grid-column: 4; }
+.ms-grid-row-5 { -ms-grid-row: 5; } .ms-grid-column-5 { -ms-grid-column: 5; }
+.ms-grid-row-6 { -ms-grid-row: 6; } .ms-grid-column-6 { -ms-grid-column: 6; }
+.ms-grid-row-7 { -ms-grid-row: 7; } .ms-grid-column-7 { -ms-grid-column: 7; }
+.ms-grid-row-8 { -ms-grid-row: 8; } .ms-grid-column-8 { -ms-grid-column: 8; }
+
+//End for IE 11
 
 .wrapper {
 	max-width: $global-content-width;
