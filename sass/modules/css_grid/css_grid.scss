@@ -21,10 +21,10 @@ Fallback Classes (Must be First)
 	.css-grid-three-fourths { @include safari-grid(75%); }
 	.css-grid-full          { @include safari-grid(100%); }
 	//If wrong grid type is used, stay semi-valid
-	.css-grid-sixth       { @include safari-grid(25%); }
-	.css-grid-two-thirds  { @include safari-grid(75%); }
-	.css-grid-third       { @include safari-grid(25%); }
-	.css-grid-five-sixths { @include safari-grid(75%); }
+	.css-grid-sixth       { @include safari-grid(25%); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-two-thirds  { @include safari-grid(75%); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-third       { @include safari-grid(25%); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-five-sixths { @include safari-grid(75%); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
 }
 
 .css-grid-6 {
@@ -35,8 +35,8 @@ Fallback Classes (Must be First)
 	.css-grid-five-sixths { @include safari-grid(83.3333%); }
 	.css-grid-full        { @include safari-grid(100%); }
 	//If wrong grid type is used, stay semi-valid
-	.css-grid-fourth        { @include safari-grid(16.6666%); }
-	.css-grid-three-fourths { @include safari-grid(83.3333%); }
+	.css-grid-fourth        { @include safari-grid(16.6666%); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-three-fourths { @include safari-grid(83.3333%); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
 }
 
 /* ----------------------
@@ -61,10 +61,10 @@ Actual CSS Grid Classes
 	.css-grid-three-fourths { @include css-grid-column(3); }
 	.css-grid-fourth        { @include css-grid-column(1); }
 	//If wrong grid type is used, stay semi-valid
-	.css-grid-two-thirds    { @include css-grid-column(3); }
-	.css-grid-five-sixths   { @include css-grid-column(3); }
-	.css-grid-third         { @include css-grid-column(1); }
-	.css-grid-sixth         { @include css-grid-column(1); }
+	.css-grid-two-thirds    { @include css-grid-column(3); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-five-sixths   { @include css-grid-column(3); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-third         { @include css-grid-column(1); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-sixth         { @include css-grid-column(1); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
 }
 
 .css-grid-6 {
@@ -75,8 +75,8 @@ Actual CSS Grid Classes
 	.css-grid-third         { @include css-grid-column(2); }
 	.css-grid-sixth         { @include css-grid-column(1); }
 	//If wrong grid type is used, stay semi-valid
-	.css-grid-three-fourths { @include css-grid-column(5); }
-	.css-grid-fourth        { @include css-grid-column(1); }
+	.css-grid-three-fourths { @include css-grid-column(5); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
+	.css-grid-fourth        { @include css-grid-column(1); background-color: rgba(218, 61, 48, 0.5); border-color: #DA3D30; }
 }
 
 /* ----------------------

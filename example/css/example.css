@@ -1126,22 +1126,34 @@ Fallback Classes (Must be First)
   .css-grid-4 .css-grid-full {
     width: calc(100% - 1rem);
     float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-sixth {
-    width: calc(25% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-two-thirds {
-    width: calc(75% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-third {
-    width: calc(25% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-five-sixths {
-    width: calc(75% - 1rem);
-    float: left; } }
+.css-grid-4 .css-grid-sixth {
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-sixth {
+      width: calc(25% - 1rem);
+      float: left; } }
+.css-grid-4 .css-grid-two-thirds {
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-two-thirds {
+      width: calc(75% - 1rem);
+      float: left; } }
+.css-grid-4 .css-grid-third {
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-third {
+      width: calc(25% - 1rem);
+      float: left; } }
+.css-grid-4 .css-grid-five-sixths {
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-five-sixths {
+      width: calc(75% - 1rem);
+      float: left; } }
 
 @media all and (min-width: 40em) {
   .css-grid-6 .css-grid-sixth {
@@ -1167,14 +1179,20 @@ Fallback Classes (Must be First)
   .css-grid-6 .css-grid-full {
     width: calc(100% - 1rem);
     float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-fourth {
-    width: calc(16.6666% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-three-fourths {
-    width: calc(83.3333% - 1rem);
-    float: left; } }
+.css-grid-6 .css-grid-fourth {
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-fourth {
+      width: calc(16.6666% - 1rem);
+      float: left; } }
+.css-grid-6 .css-grid-three-fourths {
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-three-fourths {
+      width: calc(83.3333% - 1rem);
+      float: left; } }
 
 /* ----------------------
 Actual CSS Grid Classes
@@ -1239,7 +1257,9 @@ Actual CSS Grid Classes
         .css-grid-4 .css-grid-fourth {
           width: auto; } } }
 .css-grid-4 .css-grid-two-thirds {
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
   @media all and (min-width: 40em) {
     .css-grid-4 .css-grid-two-thirds {
       grid-column: span 3; }
@@ -1247,7 +1267,9 @@ Actual CSS Grid Classes
         .css-grid-4 .css-grid-two-thirds {
           width: auto; } } }
 .css-grid-4 .css-grid-five-sixths {
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
   @media all and (min-width: 40em) {
     .css-grid-4 .css-grid-five-sixths {
       grid-column: span 3; }
@@ -1255,7 +1277,9 @@ Actual CSS Grid Classes
         .css-grid-4 .css-grid-five-sixths {
           width: auto; } } }
 .css-grid-4 .css-grid-third {
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
   @media all and (min-width: 40em) {
     .css-grid-4 .css-grid-third {
       grid-column: span 1; }
@@ -1263,7 +1287,9 @@ Actual CSS Grid Classes
         .css-grid-4 .css-grid-third {
           width: auto; } } }
 .css-grid-4 .css-grid-sixth {
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
   @media all and (min-width: 40em) {
     .css-grid-4 .css-grid-sixth {
       grid-column: span 1; }
@@ -1320,7 +1346,9 @@ Actual CSS Grid Classes
         .css-grid-6 .css-grid-sixth {
           width: auto; } } }
 .css-grid-6 .css-grid-three-fourths {
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
   @media all and (min-width: 40em) {
     .css-grid-6 .css-grid-three-fourths {
       grid-column: span 5; }
@@ -1328,7 +1356,9 @@ Actual CSS Grid Classes
         .css-grid-6 .css-grid-three-fourths {
           width: auto; } } }
 .css-grid-6 .css-grid-fourth {
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-color: rgba(218, 61, 48, 0.5);
+  border-color: #DA3D30; }
   @media all and (min-width: 40em) {
     .css-grid-6 .css-grid-fourth {
       grid-column: span 1; }
