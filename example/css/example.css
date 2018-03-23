@@ -1107,53 +1107,282 @@ html {
     flex: 1;
     margin: 1rem; }
 
-.css-grid-auto,
-.css-grid-halves,
-.css-grid-thirds {
+/* ----------------------
+Fallback Classes (Must be First)
+---------------------- */
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-fourth {
+    width: calc(25% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-half {
+    width: calc(50% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-three-fourths {
+    width: calc(75% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-full {
+    width: calc(100% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-sixth {
+    width: calc(25% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-two-thirds {
+    width: calc(75% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-third {
+    width: calc(25% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid-five-sixths {
+    width: calc(75% - 1rem);
+    float: left; } }
+
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-sixth {
+    width: calc(16.6666% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-two-thirds {
+    width: calc(66.6666% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-half {
+    width: calc(50% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-third {
+    width: calc(33.3333% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-five-sixths {
+    width: calc(83.3333% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-full {
+    width: calc(100% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-fourth {
+    width: calc(16.6666% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid-three-fourths {
+    width: calc(83.3333% - 1rem);
+    float: left; } }
+
+/* ----------------------
+Actual CSS Grid Classes
+---------------------- */
+.css-grid {
   display: block;
+  overflow: auto;
   grid-gap: 1rem; }
-  @media all and (min-width: 40em) {
-    .css-grid-auto,
-    .css-grid-halves,
-    .css-grid-thirds {
-      display: -ms-grid; } }
-  @supports (display: grid) {
-    .css-grid-auto,
-    .css-grid-halves,
-    .css-grid-thirds {
-      display: grid; } }
-  .css-grid-auto > div,
-  .css-grid-halves > div,
-  .css-grid-thirds > div {
-    margin: 1rem; }
+  .css-grid > div {
+    margin: 1rem 0; }
     @media all and (min-width: 40em) {
-      .css-grid-auto > div,
-      .css-grid-halves > div,
-      .css-grid-thirds > div {
+      .css-grid > div {
         margin: calc(1rem / 2); } }
   @supports (display: grid) {
-    .css-grid-auto > div,
-    .css-grid-halves > div,
-    .css-grid-thirds > div {
-      margin: 0; } }
+    .css-grid {
+      display: grid; }
+      .css-grid > div {
+        margin: 0; } }
 
-.css-grid-halves {
-  grid-template-columns: repeat(4, 1fr);
-  padding: 1rem; }
+.css-grid-4 {
+  grid-template-columns: repeat(4, 1fr); }
+  @media all and (min-width: 40em) {
+    .css-grid-4 {
+      padding: 1rem; } }
 
-.css-grid-halves {
-  -ms-grid-columns: 1fr 1fr 1fr 1fr; }
+.css-grid-6 {
+  grid-template-columns: repeat(6, 1fr); }
+  @media all and (min-width: 40em) {
+    .css-grid-6 {
+      padding: 1rem; } }
 
-.css-grid-thirds {
-  grid-template-columns: repeat(6, 1fr);
-  padding: 1rem; }
+.css-grid-4 .css-grid-full {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-full {
+      grid-column: span 4; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-full {
+          width: auto; } } }
+.css-grid-4 .css-grid-half {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-half {
+      grid-column: span 2; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-half {
+          width: auto; } } }
+.css-grid-4 .css-grid-three-fourths {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-three-fourths {
+      grid-column: span 3; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-three-fourths {
+          width: auto; } } }
+.css-grid-4 .css-grid-fourth {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-fourth {
+      grid-column: span 1; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-fourth {
+          width: auto; } } }
+.css-grid-4 .css-grid-two-thirds {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-two-thirds {
+      grid-column: span 3; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-two-thirds {
+          width: auto; } } }
+.css-grid-4 .css-grid-five-sixths {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-five-sixths {
+      grid-column: span 3; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-five-sixths {
+          width: auto; } } }
+.css-grid-4 .css-grid-third {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-third {
+      grid-column: span 1; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-third {
+          width: auto; } } }
+.css-grid-4 .css-grid-sixth {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid-sixth {
+      grid-column: span 1; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid-sixth {
+          width: auto; } } }
 
-.css-grid-thirds {
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+.css-grid-6 .css-grid-full {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-full {
+      grid-column: span 6; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-full {
+          width: auto; } } }
+.css-grid-6 .css-grid-half {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-half {
+      grid-column: span 3; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-half {
+          width: auto; } } }
+.css-grid-6 .css-grid-two-thirds {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-two-thirds {
+      grid-column: span 4; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-two-thirds {
+          width: auto; } } }
+.css-grid-6 .css-grid-five-sixths {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-five-sixths {
+      grid-column: span 5; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-five-sixths {
+          width: auto; } } }
+.css-grid-6 .css-grid-third {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-third {
+      grid-column: span 2; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-third {
+          width: auto; } } }
+.css-grid-6 .css-grid-sixth {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-sixth {
+      grid-column: span 1; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-sixth {
+          width: auto; } } }
+.css-grid-6 .css-grid-three-fourths {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-three-fourths {
+      grid-column: span 5; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-three-fourths {
+          width: auto; } } }
+.css-grid-6 .css-grid-fourth {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid-fourth {
+      grid-column: span 1; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid-fourth {
+          width: auto; } } }
+
+/* ----------------------
+Example App Mockups Below 
+---------------------- */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .css-grid-highlight {
-  background-color: rgba(157, 192, 255, 0.5);
-  border: 2px solid #6A8DD3; }
+  background-color: rgba(255, 161, 31, 0.5);
+  border: 2px solid #ffa11f;
+  border-radius: 5px; }
+
+.css-grid-highlight-blue, .css-grid-highlight-blue > div {
+  background-color: rgba(81, 116, 186, 0.5);
+  border: 2px solid #6A8DD3;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px; }
+
+.css-grid-highlight-red, .css-grid-highlight-red > div {
+  background-color: rgba(218, 61, 48, 0.5);
+  border: 2px solid #DA3D30;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px; }
+
+.css-grid-highlight-green, .css-grid-highlight-green > div {
+  background-color: rgba(9, 170, 102, 0.5);
+  border: 2px solid #09AA66;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px; }
+
+.mock-progress-bar {
+  height: 3rem;
+  background-color: #6A8DD3;
+  border-radius: 5px; }
+
+.mock-overview {
+  height: 7rem;
+  background-color: #09aa66;
+  border-radius: 5px; }
+
+.mock-parameters {
+  height: 5rem;
+  background-color: #9f65ae;
+  border-radius: 5px; }
 
 .is-flex {
   display: block; }
@@ -1194,221 +1423,6 @@ html {
   .is-flex .card {
     width: 100%;
     margin: 1rem auto; }
-
-.mock-progress-bar {
-  background-color: #6A8DD3;
-  border-radius: 5px;
-  min-height: 3rem; }
-
-.mock-overview {
-  height: 7rem;
-  background-color: #09aa66;
-  border-radius: 5px; }
-
-.mock-parameters {
-  height: 5rem;
-  background-color: #9f65ae;
-  border-radius: 5px; }
-
-.css-grid-span-1 {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-1 {
-      grid-column: span 1; } }
-
-.css-grid-span-2 {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-2 {
-      grid-column: span 2; } }
-
-.css-grid-span-3 {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-3 {
-      grid-column: span 3; } }
-
-.css-grid-span-4 {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-4 {
-      grid-column: span 4; } }
-
-.css-grid-span-5 {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-5 {
-      grid-column: span 5; } }
-
-.css-grid-span-6 {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-6 {
-      grid-column: span 6; } }
-
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-halves .css-grid-span-1 {
-      width: calc(25% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-halves .css-grid-span-2 {
-      width: calc(50% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-halves .css-grid-span-3 {
-      width: calc(75% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-halves .css-grid-span-4 {
-      width: calc(100% - 1rem);
-      float: left; } } }
-
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-thirds .css-grid-span-1 {
-      width: calc(16.6666% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-thirds .css-grid-span-2 {
-      width: calc(33.3333% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-thirds .css-grid-span-3 {
-      width: calc(50% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-thirds .css-grid-span-4 {
-      width: calc(66.6666% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-thirds .css-grid-span-5 {
-      width: calc(83.3333% - 1rem);
-      float: left; } } }
-@media all and (min-width: 40em) {
-  @supports not (display: grid) {
-    .css-grid-thirds .css-grid-span-6 {
-      width: calc(100% - 1rem);
-      float: left; } } }
-
-.css-grid-span-1 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-1 {
-      -ms-grid-column-span: 1; } }
-
-.css-grid-span-2 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-2 {
-      -ms-grid-column-span: 2; } }
-
-.css-grid-span-3 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-3 {
-      -ms-grid-column-span: 3; } }
-
-.css-grid-span-4 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-4 {
-      -ms-grid-column-span: 4; } }
-
-.css-grid-span-5 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-5 {
-      -ms-grid-column-span: 5; } }
-
-.css-grid-span-6 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-6 {
-      -ms-grid-column-span: 6; } }
-
-.css-grid-span-7 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-7 {
-      -ms-grid-column-span: 7; } }
-
-.css-grid-span-8 {
-  -ms-grid-column-span: 8; }
-  @media all and (min-width: 40em) {
-    .css-grid-span-8 {
-      -ms-grid-column-span: 8; } }
-
-.ms-grid-row-1 {
-  -ms-grid-row: 1; }
-
-.ms-grid-column-1 {
-  -ms-grid-column: 1; }
-
-.ms-grid-row-2 {
-  -ms-grid-row: 2; }
-
-.ms-grid-column-2 {
-  -ms-grid-column: 2; }
-
-.ms-grid-row-3 {
-  -ms-grid-row: 3; }
-
-.ms-grid-column-3 {
-  -ms-grid-column: 3; }
-
-.ms-grid-row-4 {
-  -ms-grid-row: 4; }
-
-.ms-grid-column-4 {
-  -ms-grid-column: 4; }
-
-.ms-grid-row-5 {
-  -ms-grid-row: 5; }
-
-.ms-grid-column-5 {
-  -ms-grid-column: 5; }
-
-.ms-grid-row-6 {
-  -ms-grid-row: 6; }
-
-.ms-grid-column-6 {
-  -ms-grid-column: 6; }
-
-.ms-grid-row-7 {
-  -ms-grid-row: 7; }
-
-.ms-grid-column-7 {
-  -ms-grid-column: 7; }
-
-.ms-grid-row-8 {
-  -ms-grid-row: 8; }
-
-.ms-grid-column-8 {
-  -ms-grid-column: 8; }
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.row {
-  background-color: rgba(45, 177, 108, 0.4);
-  border: 2px solid #09aa66;
-  border-radius: 5px; }
-
-.column {
-  background-color: #09aa66;
-  border-radius: 5px;
-  color: #fff;
-  padding: 0.25rem;
-  text-align: center; }
 
 fieldset {
   border: none;

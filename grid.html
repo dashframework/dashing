@@ -15,97 +15,94 @@
 	</nav>
 	<div class="app-content">
 		<div class="wrapper">
-			<h3>Grid By "Row"</h3>
-			<p>This is an auto grid. It takes however many items are within it and spaces them to fill the area available. This method requires setting a new grid for every visual row seen below. Benefits include: Less classes, more forgiveness of incorrect layouts or wrapping divs. The awesome thing about this method is it will automatically evenly space the amount of grid items within!</p>
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">full</div>
-			</div>
-
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">half</div>
-				<div class="css-grid-item">half</div>
-			</div>
-
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">third</div>
-				<div class="css-grid-item">third</div>
-				<div class="css-grid-item">third</div>
-			</div>
-
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">third</div>
-				<div class="css-grid-item css-grid-span-2">two-thirds</div>
-			</div>
-
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">fourth</div>
-				<div class="css-grid-item">fourth</div>
-				<div class="css-grid-item">fourth</div>
-				<div class="css-grid-item">fourth</div>
-			</div>
-
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">fourth</div>
-				<div class="css-grid-item css-grid-span-3">three-fourths</div>
-			</div>
-
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">sixth</div>
-				<div class="css-grid-item">sixth</div>
-				<div class="css-grid-item">sixth</div>
-				<div class="css-grid-item">sixth</div>
-				<div class="css-grid-item">sixth</div>
-				<div class="css-grid-item">sixth</div>
-			</div>
-
-			<div class="css-grid-auto css-grid-background">
-				<div class="css-grid-item">eighth</div>
-				<div class="css-grid-item">eighth</div>
-				<div class="css-grid-item">eighth</div>
-				<div class="css-grid-item">eighth</div>
-				<div class="css-grid-item">eighth</div>
-				<div class="css-grid-item">eighth</div>
-				<div class="css-grid-item">eighth</div>
-				<div class="css-grid-item">eighth</div>
+			<h3>.css-grid-4</h3>
+			<p>Grid with 4 columns, <strong>valid</strong> classes are .css-grid-full, .css-grid-half, .css-grid-three-fourths, and .css-grid-fourth.</p>
+			<div class="css-grid css-grid-4 css-grid-highlight-blue">
+				<div class="css-grid-full">.css-grid-full</div>
+				<div class="css-grid-half">.css-grid-half</div>
+				<div class="css-grid-half">.css-grid-half</div>
+				<div class="css-grid-three-fourths">.css-grid-three-fourths</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
 			</div>
 			<br>
-			<h3>Grid Halves</h3>
-			<p>This is a grid that is a simple parent followed by children. Nothing else. Super clean code. Unlike the above, it can't auto space all the children you throw at it. This grid is built to operate "halves", or more specifically it starts with a base amount of 8 units. Which allows any combination of whole unit arrangements in 8 pieces. This would be awesome for a very simple page layout! It does require an additional class be applied to every element telling it how far to span. Not applying a span class will result in a "eighth" element.</p>
-			<div class="css-grid-halves css-grid-background">
-				<div class="css-grid-item-2 css-grid-span-8">full</div>
-				<div class="css-grid-item-2 css-grid-span-4">half</div>
-				<div class="css-grid-item-2 css-grid-span-4">half</div>
-				<div class="css-grid-item-2 css-grid-span-2">fourth</div>
-				<div class="css-grid-item-2 css-grid-span-2">fourth</div>
-				<div class="css-grid-item-2 css-grid-span-2">fourth</div>
-				<div class="css-grid-item-2 css-grid-span-2">fourth</div>
-				<div class="css-grid-item-2 css-grid-span-2">fourth</div>
-				<div class="css-grid-item-2 css-grid-span-6">three-fourths</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
-				<div class="css-grid-item-2 css-grid-span-1">eighth</div>
+			<h3>.css-grid-4 (invalid)</h3>
+			<p>Grid with 4 columns, <strong>invalid</strong> classes are .css-grid-third, .css-grid-two-thirds, .css-grid-five-sixths, and .css-grid-sixth. (As these are used on the .css-grid-6 grid.) Note however that the grid will accept these classes and make them the closest possible to the 4 column equivalent.</p>
+			<div class="css-grid css-grid-4 css-grid-highlight-red">
+				<div class="css-grid-full css-grid-highlight-blue">.css-grid-full</div>
+				<div class="css-grid-half css-grid-highlight-blue">.css-grid-half</div>
+				<div class="css-grid-half css-grid-highlight-blue">.css-grid-half</div>
+				<div class="css-grid-two-thirds css-grid-highlight-blue">.css-grid-two-thirds</div>
+				<div class="css-grid-third css-grid-highlight-blue">.css-grid-third</div>
+				<div class="css-grid-five-sixths css-grid-highlight-blue">.css-grid-five-sixths</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
 			</div>
 			<br>
-			<h3>Grid Thirds</h3>
-			<p>This is a grid that is a simple parent followed by children. Nothing else. Super clean code. Unlike the above, it can't auto space all the children you throw at it. This grid is built to operate "thirds", or more specifically it starts with a base amount of 6 units. Which allows any combination of whole unit arrangements in 8 pieces. This would be awesome for a very simple page layout! It does require an additional class be applied to every element telling it how far to span. Not applying a span class will result in a "sixth" element.</p>
-			<div class="css-grid-thirds css-grid-background">
-				<div class="css-grid-item-3 css-grid-span-6">full</div>
-				<div class="css-grid-item-3 css-grid-span-2">third</div>
-				<div class="css-grid-item-3 css-grid-span-2">third</div>
-				<div class="css-grid-item-3 css-grid-span-2">third</div>
-				<div class="css-grid-item-3 css-grid-span-2">third</div>
-				<div class="css-grid-item-3 css-grid-span-4">two-thirds</div>
-				<div class="css-grid-item-3 css-grid-span-1">sixth</div>
-				<div class="css-grid-item-3 css-grid-span-1">sixth</div>
-				<div class="css-grid-item-3 css-grid-span-1">sixth</div>
-				<div class="css-grid-item-3 css-grid-span-1">sixth</div>
-				<div class="css-grid-item-3 css-grid-span-1">sixth</div>
-				<div class="css-grid-item-3 css-grid-span-1">sixth</div>
+			<h3>.css-grid-6</h3>
+			<p>Grid with 6 columns, <strong>valid</strong> classes are .css-grid-third, .css-grid-two-thirds, .css-grid-five-sixths, and .css-grid-sixth.</p>
+			<div class="css-grid css-grid-6 css-grid-highlight-green">
+				<div class="css-grid-full css-grid-highlight-blue">.css-grid-full</div>
+				<div class="css-grid-half css-grid-highlight-blue">.css-grid-half</div>
+				<div class="css-grid-half css-grid-highlight-blue">.css-grid-half</div>
+				<div class="css-grid-two-thirds css-grid-highlight-blue">.css-grid-two-thirds</div>
+				<div class="css-grid-third css-grid-highlight-blue">.css-grid-third</div>
+				<div class="css-grid-five-sixths css-grid-highlight-blue">.css-grid-five-sixths</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+			</div>
+			<br>
+			<h3>.css-grid-6 (invalid)</h3>
+			<p>Grid with 6 columns, <strong>invalid</strong> classes are .css-grid-full, .css-grid-half, .css-grid-three-fourths, and .css-grid-fourth. (As these are used on the .css-grid-4 grid.) Note however that the grid will accept these classes and make them the closest possible to the 4 column equivalent.</p>
+			<div class="css-grid css-grid-6 css-grid-highlight-red">
+				<div class="css-grid-full">.css-grid-full</div>
+				<div class="css-grid-half">.css-grid-half</div>
+				<div class="css-grid-half">.css-grid-half</div>
+				<div class="css-grid-three-fourths">.css-grid-three-fourths</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+				<div class="css-grid-fourth">.css-grid-fourth</div>
+			</div>
+			<br>
+			<h3>Nested Grid</h3>
+			<p>Example Nesting of Grid</p>
+			<div class="css-grid css-grid-4 css-grid-highlight-blue">
+				<div class="css-grid css-grid-6 css-grid-full css-grid-highlight-green">
+					<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+					<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+					<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+					<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+					<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+					<div class="css-grid-sixth css-grid-highlight-blue">.css-grid-sixth</div>
+				</div>
+				<div class="css-grid css-grid-4 css-grid-half css-grid-highlight-green">
+					<div class="css-grid-fourth">.css-grid-fourth</div>
+					<div class="css-grid-fourth">.css-grid-fourth</div>
+					<div class="css-grid-fourth">.css-grid-fourth</div>
+					<div class="css-grid-fourth">.css-grid-fourth</div>
+				</div>
+				<div class="css-grid-half">.css-grid-half</div>
+				<div class="css-grid-three-fourths">.css-grid-three-fourths</div>
+				<div class="css-grid css-grid-6 css-grid-fourth css-grid-highlight-green">
+					<div class="css-grid-third">.css-grid-third</div>
+					<div class="css-grid-third">.css-grid-third</div>
+					<div class="css-grid-third">.css-grid-third</div>
+				</div>
 			</div>
 			<br>
 		</div>
