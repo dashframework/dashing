@@ -2776,6 +2776,40 @@ fieldset .has-warning .message li {
       .app-menu .button--icon--main {
         right: calc(50% - (1200px/2) - 0.4rem); } }
 
+.app-menu.has-search .app-context {
+  padding: 0.5rem 1rem; }
+  @media all and (min-width: 40em) {
+    .app-menu.has-search .app-context {
+      display: flex; } }
+.app-menu.has-search .app-title {
+  display: inline-block; }
+  @media all and (min-width: 40em) {
+    .app-menu.has-search .app-title {
+      align-self: center;
+      justify-self: start; } }
+.app-menu.has-search .search-input {
+  padding-top: 0.5rem; }
+  @media all and (min-width: 40em) {
+    .app-menu.has-search .search-input {
+      align-self: center;
+      margin-left: auto;
+      padding-top: 0rem;
+      width: auto; } }
+.app-menu.has-search fieldset input[type="text"] {
+  border-color: transparent; }
+
+.app-menu.has-search ~ .app-content {
+  padding-top: 5.75rem; }
+  @media all and (min-width: 40em) {
+    .app-menu.has-search ~ .app-content {
+      padding-top: 3.75rem; } }
+
+.app-menu.expanded.has-search ~ .app-content {
+  padding-top: 8rem; }
+  @media all and (min-width: 40em) {
+    .app-menu.expanded.has-search ~ .app-content {
+      padding-top: 5.75rem; } }
+
 .app-menu ~ .app-content {
   padding-top: 4.6rem; }
 
