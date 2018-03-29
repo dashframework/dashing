@@ -1107,26 +1107,125 @@ html {
     flex: 1;
     margin: 1rem; }
 
-/* -----------------------------
-Display Compatibility Banner 
--------------------------------- */
-.grid-compatibility {
-  background-color: #DD4B39;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 1rem; }
-  @supports (display: grid) {
-    .grid-compatibility {
-      display: none; } }
-
-/* -----------------------------
-Mixins and Utilities
--------------------------------- */
-.css-grid-4 > .css-grid-sixth, .css-grid-4 > .css-grid-two-thirds, .css-grid-4 > .css-grid-third, .css-grid-4 > .css-grid-five-sixths, .css-grid-6 > .css-grid-fourth, .css-grid-6 > .css-grid-three-fourths {
+.css-grid-4 > .css-grid--sixth, .css-grid-4 > .css-grid--two-thirds, .css-grid-4 > .css-grid--third, .css-grid-4 > .css-grid--five-sixths, .css-grid-6 > .css-grid--fourth, .css-grid-6 > .css-grid--three-fourths {
   background-color: rgba(218, 61, 48, 0.5);
   border: 2px solid #DA3D30;
   border-radius: 0; }
 
+/* -----------------------------
+Fallback Classes (Must be First)
+-------------------------------- */
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid--fourth {
+    width: calc(25% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid--half {
+    width: calc(50% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid--three-fourths {
+    width: calc(75% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 .css-grid--full {
+    width: calc(100% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 > .css-grid--sixth {
+    width: calc(25% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 > .css-grid--two-thirds {
+    width: calc(75% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 > .css-grid--third {
+    width: calc(25% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-4 > .css-grid--five-sixths {
+    width: calc(75% - 1rem);
+    float: left; } }
+
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid--sixth {
+    width: calc(16.6666% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid--third {
+    width: calc(33.3333% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid--half {
+    width: calc(50% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid--two-thirds {
+    width: calc(66.6666% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid--five-sixths {
+    width: calc(83.3333% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 .css-grid--full {
+    width: calc(100% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 > .css-grid--fourth {
+    width: calc(33.3333% - 1rem);
+    float: left; } }
+@media all and (min-width: 40em) {
+  .css-grid-6 > .css-grid--three-fourths {
+    width: calc(83.3333% - 1rem);
+    float: left; } }
+
+/* -----------------------------
+Fake "grid-gap" for Old Browsers
+-------------------------------- */
+.css-grid-4 .css-grid--full, .css-grid-4 .css-grid--half, .css-grid-4 .css-grid--three-fourths, .css-grid-4 .css-grid--fourth,
+.css-grid-4 .css-grid--two-thirds, .css-grid-4 .css-grid--five-sixths, .css-grid-4 .css-grid--third, .css-grid-4 .css-grid--sixth, .css-grid-6 .css-grid--full, .css-grid-6 .css-grid--half, .css-grid-6 .css-grid--three-fourths, .css-grid-6 .css-grid--fourth,
+.css-grid-6 .css-grid--two-thirds, .css-grid-6 .css-grid--five-sixths, .css-grid-6 .css-grid--third, .css-grid-6 .css-grid--sixth {
+  margin: 1rem 0; }
+  .css-grid-4 .css-grid--full:first-of-type, .css-grid-4 .css-grid--half:first-of-type, .css-grid-4 .css-grid--three-fourths:first-of-type, .css-grid-4 .css-grid--fourth:first-of-type,
+  .css-grid-4 .css-grid--two-thirds:first-of-type, .css-grid-4 .css-grid--five-sixths:first-of-type, .css-grid-4 .css-grid--third:first-of-type, .css-grid-4 .css-grid--sixth:first-of-type, .css-grid-6 .css-grid--full:first-of-type, .css-grid-6 .css-grid--half:first-of-type, .css-grid-6 .css-grid--three-fourths:first-of-type, .css-grid-6 .css-grid--fourth:first-of-type,
+  .css-grid-6 .css-grid--two-thirds:first-of-type, .css-grid-6 .css-grid--five-sixths:first-of-type, .css-grid-6 .css-grid--third:first-of-type, .css-grid-6 .css-grid--sixth:first-of-type {
+    margin-top: 0; }
+  .css-grid-4 .css-grid--full:last-of-type, .css-grid-4 .css-grid--half:last-of-type, .css-grid-4 .css-grid--three-fourths:last-of-type, .css-grid-4 .css-grid--fourth:last-of-type,
+  .css-grid-4 .css-grid--two-thirds:last-of-type, .css-grid-4 .css-grid--five-sixths:last-of-type, .css-grid-4 .css-grid--third:last-of-type, .css-grid-4 .css-grid--sixth:last-of-type, .css-grid-6 .css-grid--full:last-of-type, .css-grid-6 .css-grid--half:last-of-type, .css-grid-6 .css-grid--three-fourths:last-of-type, .css-grid-6 .css-grid--fourth:last-of-type,
+  .css-grid-6 .css-grid--two-thirds:last-of-type, .css-grid-6 .css-grid--five-sixths:last-of-type, .css-grid-6 .css-grid--third:last-of-type, .css-grid-6 .css-grid--sixth:last-of-type {
+    margin-bottom: 0; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 .css-grid--full, .css-grid-4 .css-grid--half, .css-grid-4 .css-grid--three-fourths, .css-grid-4 .css-grid--fourth,
+    .css-grid-4 .css-grid--two-thirds, .css-grid-4 .css-grid--five-sixths, .css-grid-4 .css-grid--third, .css-grid-4 .css-grid--sixth, .css-grid-6 .css-grid--full, .css-grid-6 .css-grid--half, .css-grid-6 .css-grid--three-fourths, .css-grid-6 .css-grid--fourth,
+    .css-grid-6 .css-grid--two-thirds, .css-grid-6 .css-grid--five-sixths, .css-grid-6 .css-grid--third, .css-grid-6 .css-grid--sixth {
+      margin: calc(1rem / 2); }
+      .css-grid-4 .css-grid--full:first-of-type, .css-grid-4 .css-grid--half:first-of-type, .css-grid-4 .css-grid--three-fourths:first-of-type, .css-grid-4 .css-grid--fourth:first-of-type,
+      .css-grid-4 .css-grid--two-thirds:first-of-type, .css-grid-4 .css-grid--five-sixths:first-of-type, .css-grid-4 .css-grid--third:first-of-type, .css-grid-4 .css-grid--sixth:first-of-type, .css-grid-6 .css-grid--full:first-of-type, .css-grid-6 .css-grid--half:first-of-type, .css-grid-6 .css-grid--three-fourths:first-of-type, .css-grid-6 .css-grid--fourth:first-of-type,
+      .css-grid-6 .css-grid--two-thirds:first-of-type, .css-grid-6 .css-grid--five-sixths:first-of-type, .css-grid-6 .css-grid--third:first-of-type, .css-grid-6 .css-grid--sixth:first-of-type {
+        margin: calc(1rem / 2); }
+      .css-grid-4 .css-grid--full:last-of-type, .css-grid-4 .css-grid--half:last-of-type, .css-grid-4 .css-grid--three-fourths:last-of-type, .css-grid-4 .css-grid--fourth:last-of-type,
+      .css-grid-4 .css-grid--two-thirds:last-of-type, .css-grid-4 .css-grid--five-sixths:last-of-type, .css-grid-4 .css-grid--third:last-of-type, .css-grid-4 .css-grid--sixth:last-of-type, .css-grid-6 .css-grid--full:last-of-type, .css-grid-6 .css-grid--half:last-of-type, .css-grid-6 .css-grid--three-fourths:last-of-type, .css-grid-6 .css-grid--fourth:last-of-type,
+      .css-grid-6 .css-grid--two-thirds:last-of-type, .css-grid-6 .css-grid--five-sixths:last-of-type, .css-grid-6 .css-grid--third:last-of-type, .css-grid-6 .css-grid--sixth:last-of-type {
+        margin: calc(1rem / 2); } }
+  @supports (display: grid) {
+    .css-grid-4 .css-grid--full, .css-grid-4 .css-grid--half, .css-grid-4 .css-grid--three-fourths, .css-grid-4 .css-grid--fourth,
+    .css-grid-4 .css-grid--two-thirds, .css-grid-4 .css-grid--five-sixths, .css-grid-4 .css-grid--third, .css-grid-4 .css-grid--sixth, .css-grid-6 .css-grid--full, .css-grid-6 .css-grid--half, .css-grid-6 .css-grid--three-fourths, .css-grid-6 .css-grid--fourth,
+    .css-grid-6 .css-grid--two-thirds, .css-grid-6 .css-grid--five-sixths, .css-grid-6 .css-grid--third, .css-grid-6 .css-grid--sixth {
+      margin: 0; }
+      .css-grid-4 .css-grid--full:first-of-type, .css-grid-4 .css-grid--half:first-of-type, .css-grid-4 .css-grid--three-fourths:first-of-type, .css-grid-4 .css-grid--fourth:first-of-type,
+      .css-grid-4 .css-grid--two-thirds:first-of-type, .css-grid-4 .css-grid--five-sixths:first-of-type, .css-grid-4 .css-grid--third:first-of-type, .css-grid-4 .css-grid--sixth:first-of-type, .css-grid-6 .css-grid--full:first-of-type, .css-grid-6 .css-grid--half:first-of-type, .css-grid-6 .css-grid--three-fourths:first-of-type, .css-grid-6 .css-grid--fourth:first-of-type,
+      .css-grid-6 .css-grid--two-thirds:first-of-type, .css-grid-6 .css-grid--five-sixths:first-of-type, .css-grid-6 .css-grid--third:first-of-type, .css-grid-6 .css-grid--sixth:first-of-type {
+        margin: 0; }
+      .css-grid-4 .css-grid--full:last-of-type, .css-grid-4 .css-grid--half:last-of-type, .css-grid-4 .css-grid--three-fourths:last-of-type, .css-grid-4 .css-grid--fourth:last-of-type,
+      .css-grid-4 .css-grid--two-thirds:last-of-type, .css-grid-4 .css-grid--five-sixths:last-of-type, .css-grid-4 .css-grid--third:last-of-type, .css-grid-4 .css-grid--sixth:last-of-type, .css-grid-6 .css-grid--full:last-of-type, .css-grid-6 .css-grid--half:last-of-type, .css-grid-6 .css-grid--three-fourths:last-of-type, .css-grid-6 .css-grid--fourth:last-of-type,
+      .css-grid-6 .css-grid--two-thirds:last-of-type, .css-grid-6 .css-grid--five-sixths:last-of-type, .css-grid-6 .css-grid--third:last-of-type, .css-grid-6 .css-grid--sixth:last-of-type {
+        margin: 0; } }
+
+/* -----------------------------
+Utilities
+-------------------------------- */
 .css-grid-align-center {
   align-items: center; }
 
@@ -1146,348 +1245,159 @@ Mixins and Utilities
   justify-items: end; }
 
 /* -----------------------------
-Fallback Classes (Must be First)
--------------------------------- */
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-fourth {
-    width: calc(25% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-half {
-    width: calc(50% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-three-fourths {
-    width: calc(75% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 .css-grid-full {
-    width: calc(100% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 > .css-grid-sixth {
-    width: calc(25% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 > .css-grid-two-thirds {
-    width: calc(75% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 > .css-grid-third {
-    width: calc(25% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-4 > .css-grid-five-sixths {
-    width: calc(75% - 1rem);
-    float: left; } }
-
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-sixth {
-    width: calc(16.6666% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-two-thirds {
-    width: calc(66.6666% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-half {
-    width: calc(50% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-third {
-    width: calc(33.3333% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-five-sixths {
-    width: calc(83.3333% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 .css-grid-full {
-    width: calc(100% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 > .css-grid-fourth {
-    width: calc(16.6666% - 1rem);
-    float: left; } }
-@media all and (min-width: 40em) {
-  .css-grid-6 > .css-grid-three-fourths {
-    width: calc(83.3333% - 1rem);
-    float: left; } }
-
-/* -----------------------------
-Fake "grid-gap" for Old Browsers
--------------------------------- */
-.css-grid .css-grid-full, .css-grid .css-grid-half, .css-grid .css-grid-three-fourths, .css-grid .css-grid-fourth,
-.css-grid .css-grid-two-thirds, .css-grid .css-grid-five-sixths, .css-grid .css-grid-third, .css-grid .css-grid-sixth {
-  margin: 1rem 0; }
-  .css-grid .css-grid-full:first-of-type, .css-grid .css-grid-half:first-of-type, .css-grid .css-grid-three-fourths:first-of-type, .css-grid .css-grid-fourth:first-of-type,
-  .css-grid .css-grid-two-thirds:first-of-type, .css-grid .css-grid-five-sixths:first-of-type, .css-grid .css-grid-third:first-of-type, .css-grid .css-grid-sixth:first-of-type {
-    margin-top: 0; }
-  .css-grid .css-grid-full:last-of-type, .css-grid .css-grid-half:last-of-type, .css-grid .css-grid-three-fourths:last-of-type, .css-grid .css-grid-fourth:last-of-type,
-  .css-grid .css-grid-two-thirds:last-of-type, .css-grid .css-grid-five-sixths:last-of-type, .css-grid .css-grid-third:last-of-type, .css-grid .css-grid-sixth:last-of-type {
-    margin-bottom: 0; }
-  @media all and (min-width: 40em) {
-    .css-grid .css-grid-full, .css-grid .css-grid-half, .css-grid .css-grid-three-fourths, .css-grid .css-grid-fourth,
-    .css-grid .css-grid-two-thirds, .css-grid .css-grid-five-sixths, .css-grid .css-grid-third, .css-grid .css-grid-sixth {
-      margin: calc(1rem / 2); }
-      .css-grid .css-grid-full:first-of-type, .css-grid .css-grid-half:first-of-type, .css-grid .css-grid-three-fourths:first-of-type, .css-grid .css-grid-fourth:first-of-type,
-      .css-grid .css-grid-two-thirds:first-of-type, .css-grid .css-grid-five-sixths:first-of-type, .css-grid .css-grid-third:first-of-type, .css-grid .css-grid-sixth:first-of-type {
-        margin: calc(1rem / 2); }
-      .css-grid .css-grid-full:last-of-type, .css-grid .css-grid-half:last-of-type, .css-grid .css-grid-three-fourths:last-of-type, .css-grid .css-grid-fourth:last-of-type,
-      .css-grid .css-grid-two-thirds:last-of-type, .css-grid .css-grid-five-sixths:last-of-type, .css-grid .css-grid-third:last-of-type, .css-grid .css-grid-sixth:last-of-type {
-        margin: calc(1rem / 2); } }
-  @supports (display: grid) {
-    .css-grid .css-grid-full, .css-grid .css-grid-half, .css-grid .css-grid-three-fourths, .css-grid .css-grid-fourth,
-    .css-grid .css-grid-two-thirds, .css-grid .css-grid-five-sixths, .css-grid .css-grid-third, .css-grid .css-grid-sixth {
-      margin: 0; }
-      .css-grid .css-grid-full:first-of-type, .css-grid .css-grid-half:first-of-type, .css-grid .css-grid-three-fourths:first-of-type, .css-grid .css-grid-fourth:first-of-type,
-      .css-grid .css-grid-two-thirds:first-of-type, .css-grid .css-grid-five-sixths:first-of-type, .css-grid .css-grid-third:first-of-type, .css-grid .css-grid-sixth:first-of-type {
-        margin: 0; }
-      .css-grid .css-grid-full:last-of-type, .css-grid .css-grid-half:last-of-type, .css-grid .css-grid-three-fourths:last-of-type, .css-grid .css-grid-fourth:last-of-type,
-      .css-grid .css-grid-two-thirds:last-of-type, .css-grid .css-grid-five-sixths:last-of-type, .css-grid .css-grid-third:last-of-type, .css-grid .css-grid-sixth:last-of-type {
-        margin: 0; } }
-
-/* -----------------------------
 Actual CSS Grid Classes
 -------------------------------- */
-.css-grid {
-  display: block;
-  overflow: auto;
-  grid-gap: 1rem; }
-  @supports (display: grid) {
-    .css-grid {
-      display: grid; } }
-
-.css-grid-4 {
-  grid-template-columns: repeat(4, 1fr); }
-  .css-grid-4.css-grid-nested {
-    padding: 0; }
-
-.css-grid-6 {
-  grid-template-columns: repeat(6, 1fr); }
-  .css-grid-6.css-grid-nested {
-    padding: 0; }
+.css-grid-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%; }
 
 .css-grid-layout {
   padding: 1rem; }
 
-.css-grid-4 .css-grid-full {
+.css-grid-4, .css-grid-6 {
+  display: block;
+  overflow: auto;
+  grid-gap: 1rem; }
+  @supports (display: grid) {
+    .css-grid-4, .css-grid-6 {
+      display: grid; } }
+
+.css-grid-4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.css-grid-6 {
+  grid-template-columns: repeat(6, 1fr); }
+
+.css-grid-4 .css-grid--fourth {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-4 .css-grid-full {
-      grid-column: span 4; }
+    .css-grid-4 .css-grid--fourth {
+      grid-column: span 1; }
       @supports (display: grid) {
-        .css-grid-4 .css-grid-full {
+        .css-grid-4 .css-grid--fourth {
           width: auto; } } }
-.css-grid-4 .css-grid-half {
+.css-grid-4 .css-grid--half {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-4 .css-grid-half {
+    .css-grid-4 .css-grid--half {
       grid-column: span 2; }
       @supports (display: grid) {
-        .css-grid-4 .css-grid-half {
+        .css-grid-4 .css-grid--half {
           width: auto; } } }
-.css-grid-4 .css-grid-three-fourths {
+.css-grid-4 .css-grid--three-fourths {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-4 .css-grid-three-fourths {
+    .css-grid-4 .css-grid--three-fourths {
       grid-column: span 3; }
       @supports (display: grid) {
-        .css-grid-4 .css-grid-three-fourths {
+        .css-grid-4 .css-grid--three-fourths {
           width: auto; } } }
-.css-grid-4 .css-grid-fourth {
+.css-grid-4 .css-grid--full {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-4 .css-grid-fourth {
+    .css-grid-4 .css-grid--full {
+      grid-column: span 4; }
+      @supports (display: grid) {
+        .css-grid-4 .css-grid--full {
+          width: auto; } } }
+.css-grid-4 > .css-grid--sixth {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 > .css-grid--sixth {
       grid-column: span 1; }
       @supports (display: grid) {
-        .css-grid-4 .css-grid-fourth {
+        .css-grid-4 > .css-grid--sixth {
           width: auto; } } }
-.css-grid-4 > .css-grid-two-thirds {
+.css-grid-4 > .css-grid--two-thirds {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-4 > .css-grid-two-thirds {
+    .css-grid-4 > .css-grid--two-thirds {
       grid-column: span 3; }
       @supports (display: grid) {
-        .css-grid-4 > .css-grid-two-thirds {
+        .css-grid-4 > .css-grid--two-thirds {
           width: auto; } } }
-.css-grid-4 > .css-grid-five-sixths {
+.css-grid-4 > .css-grid--third {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-4 > .css-grid-five-sixths {
+    .css-grid-4 > .css-grid--third {
+      grid-column: span 1; }
+      @supports (display: grid) {
+        .css-grid-4 > .css-grid--third {
+          width: auto; } } }
+.css-grid-4 > .css-grid--five-sixths {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-4 > .css-grid--five-sixths {
       grid-column: span 3; }
       @supports (display: grid) {
-        .css-grid-4 > .css-grid-five-sixths {
-          width: auto; } } }
-.css-grid-4 > .css-grid-third {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-4 > .css-grid-third {
-      grid-column: span 1; }
-      @supports (display: grid) {
-        .css-grid-4 > .css-grid-third {
-          width: auto; } } }
-.css-grid-4 > .css-grid-sixth {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-4 > .css-grid-sixth {
-      grid-column: span 1; }
-      @supports (display: grid) {
-        .css-grid-4 > .css-grid-sixth {
+        .css-grid-4 > .css-grid--five-sixths {
           width: auto; } } }
 
-.css-grid-6 .css-grid-full {
+.css-grid-6 .css-grid--sixth {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-6 .css-grid-full {
+    .css-grid-6 .css-grid--sixth {
+      grid-column: span 1; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid--sixth {
+          width: auto; } } }
+.css-grid-6 .css-grid--third {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid--third {
+      grid-column: span 2; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid--third {
+          width: auto; } } }
+.css-grid-6 .css-grid--half {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid--half {
+      grid-column: span 3; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid--half {
+          width: auto; } } }
+.css-grid-6 .css-grid--two-thirds {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid--two-thirds {
+      grid-column: span 4; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid--two-thirds {
+          width: auto; } } }
+.css-grid-6 .css-grid--five-sixths {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid--five-sixths {
+      grid-column: span 5; }
+      @supports (display: grid) {
+        .css-grid-6 .css-grid--five-sixths {
+          width: auto; } } }
+.css-grid-6 .css-grid--full {
+  grid-column: 1 / -1; }
+  @media all and (min-width: 40em) {
+    .css-grid-6 .css-grid--full {
       grid-column: span 6; }
       @supports (display: grid) {
-        .css-grid-6 .css-grid-full {
+        .css-grid-6 .css-grid--full {
           width: auto; } } }
-.css-grid-6 .css-grid-half {
+.css-grid-6 > .css-grid--fourth {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-6 .css-grid-half {
-      grid-column: span 3; }
-      @supports (display: grid) {
-        .css-grid-6 .css-grid-half {
-          width: auto; } } }
-.css-grid-6 .css-grid-two-thirds {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-6 .css-grid-two-thirds {
-      grid-column: span 4; }
-      @supports (display: grid) {
-        .css-grid-6 .css-grid-two-thirds {
-          width: auto; } } }
-.css-grid-6 .css-grid-five-sixths {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-6 .css-grid-five-sixths {
-      grid-column: span 5; }
-      @supports (display: grid) {
-        .css-grid-6 .css-grid-five-sixths {
-          width: auto; } } }
-.css-grid-6 .css-grid-third {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-6 .css-grid-third {
+    .css-grid-6 > .css-grid--fourth {
       grid-column: span 2; }
       @supports (display: grid) {
-        .css-grid-6 .css-grid-third {
+        .css-grid-6 > .css-grid--fourth {
           width: auto; } } }
-.css-grid-6 .css-grid-sixth {
+.css-grid-6 > .css-grid--three-fourths {
   grid-column: 1 / -1; }
   @media all and (min-width: 40em) {
-    .css-grid-6 .css-grid-sixth {
-      grid-column: span 1; }
-      @supports (display: grid) {
-        .css-grid-6 .css-grid-sixth {
-          width: auto; } } }
-.css-grid-6 > .css-grid-three-fourths {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-6 > .css-grid-three-fourths {
+    .css-grid-6 > .css-grid--three-fourths {
       grid-column: span 5; }
       @supports (display: grid) {
-        .css-grid-6 > .css-grid-three-fourths {
+        .css-grid-6 > .css-grid--three-fourths {
           width: auto; } } }
-.css-grid-6 > .css-grid-fourth {
-  grid-column: 1 / -1; }
-  @media all and (min-width: 40em) {
-    .css-grid-6 > .css-grid-fourth {
-      grid-column: span 1; }
-      @supports (display: grid) {
-        .css-grid-6 > .css-grid-fourth {
-          width: auto; } } }
-
-/* -----------------------------
-Example App Mockups Below 
--------------------------------- */
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.css-grid-highlight, .css-grid-highlight > div {
-  background-color: rgba(221, 226, 230, 0.5);
-  border: 2px solid #DDE2E6;
-  border-radius: 5px; }
-
-.css-grid-highlight-blue, .css-grid-highlight-blue > div {
-  background-color: rgba(81, 116, 186, 0.5);
-  border: 2px solid #6A8DD3;
-  color: #FFFFFF;
-  text-align: center;
-  border-radius: 5px; }
-
-.css-grid-highlight-red, .css-grid-highlight-red > div {
-  background-color: rgba(218, 61, 48, 0.5);
-  border: 2px solid #DA3D30;
-  color: #FFFFFF;
-  text-align: center;
-  border-radius: 5px; }
-
-.css-grid-highlight-green, .css-grid-highlight-green > div {
-  background-color: rgba(9, 170, 102, 0.5);
-  border: 2px solid #09AA66;
-  color: #FFFFFF;
-  text-align: center;
-  border-radius: 5px; }
-
-.mock-progress-bar {
-  height: 3rem;
-  background-color: #6A8DD3;
-  border-radius: 5px; }
-
-.mock-overview {
-  height: 7rem;
-  background-color: #09aa66;
-  border-radius: 5px; }
-
-.mock-parameters {
-  height: 5rem;
-  background-color: #9f65ae;
-  border-radius: 5px; }
-
-.is-flex {
-  display: block; }
-  @media all and (min-width: 40em) {
-    .is-flex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-      @supports (justify-content: space-evenly) {
-        .is-flex {
-          justify-content: space-evenly; } } }
-  .is-flex.vertical {
-    display: block; }
-    @media all and (min-width: 40em) {
-      .is-flex.vertical {
-        display: block;
-        flex-direction: column;
-        justify-content: initial; }
-        @supports (align-content: space-evenly) {
-          .is-flex.vertical {
-            display: flex;
-            align-content: space-evenly; } } }
-    .is-flex.vertical .card:last-of-type {
-      margin-bottom: 0; }
-  .is-flex .mock-key {
-    height: 4rem;
-    width: 5rem;
-    text-align: center; }
-    @media all and (min-width: 40em) {
-      .is-flex .mock-key {
-        margin: auto; } }
-    .is-flex .mock-key div {
-      background-color: #6A8DD3;
-      margin: 0 auto;
-      border-radius: 50px;
-      height: 1rem;
-      width: 1rem; }
-  .is-flex .card {
-    width: 100%;
-    margin: 1rem auto; }
 
 fieldset {
   border: none;

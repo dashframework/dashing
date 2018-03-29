@@ -1,0 +1,53 @@
+/* -----------------------------
+Fallback Classes (Must be First)
+-------------------------------- */
+.css-grid-4 {
+	.css-grid--fourth          { @include fallback-grid(25%); }
+	.css-grid--half            { @include fallback-grid(50%); }
+	.css-grid--three-fourths   { @include fallback-grid(75%); }
+	.css-grid--full            { @include fallback-grid(100%); }
+	//If wrong grid type is used, notify
+	> .css-grid--sixth         { @include fallback-grid(25%); @extend %wrong-grid; }
+	> .css-grid--two-thirds    { @include fallback-grid(75%); @extend %wrong-grid; }
+	> .css-grid--third         { @include fallback-grid(25%); @extend %wrong-grid; }
+	> .css-grid--five-sixths   { @include fallback-grid(75%); @extend %wrong-grid; }
+}
+
+.css-grid-6 {
+	.css-grid--sixth           { @include fallback-grid(16.6666%); }
+	.css-grid--third           { @include fallback-grid(33.3333%); }
+	.css-grid--half            { @include fallback-grid(50%); }
+	.css-grid--two-thirds      { @include fallback-grid(66.6666%); }
+	.css-grid--five-sixths     { @include fallback-grid(83.3333%); }
+	.css-grid--full            { @include fallback-grid(100%); }
+	//If wrong grid type is used, notify
+	> .css-grid--fourth        { @include fallback-grid(33.3333%); @extend %wrong-grid; }
+	> .css-grid--three-fourths { @include fallback-grid(83.3333%); @extend %wrong-grid; }
+}
+
+/* -----------------------------
+Fake "grid-gap" for Old Browsers
+-------------------------------- */
+.css-grid-4, .css-grid-6 {
+	.css-grid--full, .css-grid--half, .css-grid--three-fourths, .css-grid--fourth,
+	.css-grid--two-thirds, .css-grid--five-sixths, .css-grid--third, .css-grid--sixth {
+		//Fake grid gap on grid elements
+		margin: $grid-gutter 0; 
+		&:first-of-type {
+			margin-top: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		@media #{$tablet} { 
+			margin: calc(#{$grid-gutter} / 2); 
+			&:first-of-type {
+				margin: calc(#{$grid-gutter} / 2); 
+			}
+			&:last-of-type {
+				margin: calc(#{$grid-gutter} / 2); 
+			}
+		}//IE11 and Safari 9
+		@supports(display: grid) { margin: 0; &:first-of-type { margin: 0; } &:last-of-type { margin: 0; } }//Reset for "the right" browsers ; )
+	}
+}

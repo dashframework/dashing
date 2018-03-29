@@ -1,0 +1,13 @@
+/* -----------------------------
+Utilities
+-------------------------------- */
+
+//Verticle Alignment
+.css-grid-align-center   { align-items: center; }
+.css-grid-align-top      { align-items: start; }
+.css-grid-align-bottom   { align-items: end; }
+
+//Horizontal Alignment
+.css-grid-justify-center { justify-items: center; }
+.css-grid-justify-left   { justify-items: start; }
+.css-grid-justify-right  { justify-items: end; }

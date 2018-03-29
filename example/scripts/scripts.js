@@ -1,4 +1,4 @@
-var rootFolder = "/";//leave as "/" for live version, add /dashing/ to edit locally
+var rootFolder = "/dashing/";//leave as "/" for live version, add /dashing/ to edit locally
 
 //Active Function
 $(function() {
@@ -15,7 +15,7 @@ $(function() {
         var id = this.id;
 
         //check if the id provided is in the url
-        if(url.indexOf(id) > 0) {//was -1, but index for home page will return 0
+        if(url.indexOf(id) > -1 && url.indexOf(id) !== 0) {//was -1, but index for home page will return 0
             //if there is a match, add the class of current to the matching link
             $(this).addClass('current');
             //if there is a match, remove the class of current from the home page

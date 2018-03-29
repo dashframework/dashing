@@ -1,0 +1,47 @@
+/* -----------------------------
+Actual CSS Grid Classes
+-------------------------------- */
+//mimics '.row' from first grid
+.css-grid-wrapper {
+	max-width: $global-content-width;
+	margin: auto;
+  	width: 100%;
+}
+
+//Pad the grid
+.css-grid-layout { padding: $grid-gutter; }
+
+//select one to start the grid
+.css-grid-4, .css-grid-6 {//IE and Safari
+	display: block;//For IE and Safari mobile
+	overflow: auto;//For IE and Safari display
+	grid-gap: $grid-gutter;
+	@supports(display: grid) { display: grid; }//Reset for "the right" browsers ; )
+}
+
+.css-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.css-grid-6 { grid-template-columns: repeat(6, 1fr); }
+
+.css-grid-4 {
+	.css-grid--fourth          { @include css-grid-column(1); }
+	.css-grid--half            { @include css-grid-column(2); }
+	.css-grid--three-fourths   { @include css-grid-column(3); }
+	.css-grid--full 		   { @include css-grid-column(4); }
+	//If wrong grid type is used, notify
+	> .css-grid--sixth         { @include css-grid-column(1); @extend %wrong-grid; }
+	> .css-grid--two-thirds    { @include css-grid-column(3); @extend %wrong-grid; }
+	> .css-grid--third         { @include css-grid-column(1); @extend %wrong-grid; }
+	> .css-grid--five-sixths   { @include css-grid-column(3); @extend %wrong-grid; }
+}
+
+.css-grid-6 {
+	.css-grid--sixth           { @include css-grid-column(1); }
+	.css-grid--third           { @include css-grid-column(2); }
+	.css-grid--half            { @include css-grid-column(3); }
+	.css-grid--two-thirds      { @include css-grid-column(4); }
+	.css-grid--five-sixths     { @include css-grid-column(5); }
+	.css-grid--full 		   { @include css-grid-column(6); }
+	//If wrong grid type is used, notify
+	> .css-grid--fourth        { @include css-grid-column(2); @extend %wrong-grid; }
+	> .css-grid--three-fourths { @include css-grid-column(5); @extend %wrong-grid; }
+}

@@ -1,0 +1,105 @@
+/* -----------------------------
+Display Compatibility Banner 
+-------------------------------- */
+.grid-compatibility {
+	background-color: $red-500;
+	color: $white;
+	text-align: center;
+	padding: 1rem;
+
+	@supports(display: grid) { display: none; }
+}
+
+/* -----------------------------
+Example App Mockups Below 
+-------------------------------- */
+
+.css-grid-highlight, .css-grid-highlight > div{ 
+	background-color: rgba(221, 226, 230, 0.5);
+	border: 2px solid $gray-150c; 
+	border-radius: 5px;
+}
+
+.css-grid-highlight-blue, .css-grid-highlight-blue > div {
+    background-color: rgba(81, 116, 186, 0.5); 
+    border: 2px solid #6A8DD3;
+    color: $white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.css-grid-highlight-red, .css-grid-highlight-red > div {
+    background-color: rgba(218, 61, 48, 0.5); 
+    border: 2px solid #DA3D30;
+    color: $white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.css-grid-highlight-green, .css-grid-highlight-green > div {
+    background-color: rgba(9, 170, 102, 0.5); 
+    border: 2px solid #09AA66;
+    color: $white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.mock-progress-bar  { height: 3rem; background-color: #6A8DD3;                  border-radius: 5px; }
+.mock-overview      { height: 7rem; background-color: #09aa66;                  border-radius: 5px; }
+.mock-parameters    { height: 5rem; background-color: #9f65ae;                  border-radius: 5px; }
+
+.is-flex {
+	display: block;
+
+	@media #{$tablet} {
+		display: flex;
+		flex-direction: row;//IE11
+		justify-content: space-around;//IE11
+		@supports(justify-content: space-evenly) { 
+			justify-content: space-evenly; 
+		}
+	}
+
+	&.vertical {
+		display: block;
+
+		@media #{$tablet} {
+			display: block;
+			flex-direction: column;
+			// align-content: space-around;//IE11
+			@supports(align-content: space-evenly) {
+				display: flex;
+				align-content: space-evenly; 
+			}
+			justify-content: initial;
+		}
+
+		.card:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.mock-key {
+		height: 4rem;
+		width: 5rem;
+		text-align: center;
+
+		@media #{$tablet} {
+			margin: auto;//Edge
+		}
+
+
+		div {
+			background-color: #6A8DD3;
+			margin: 0 auto;
+			border-radius: 50px;
+			height: 1rem;
+			width: 1rem;
+		}
+	}
+
+	.card {
+		width: 100%;
+		margin: 1rem auto;
+	}
+}
