@@ -31,11 +31,24 @@ $switch--off: $gray-250 !default; //Color of switch when off
     display: inline-block;
     margin-right: 1rem;
   }
+
+  label {
+    //borrows inline styles so you don't have to call it out manually
+    cursor: pointer;
+    font-size: $font-size-normal;
+    font-weight: normal;
+  }
 }
 
 .checkbox--custom {
+  display: flex;
+
   //Label Styles
   label {
+    align-items: center;
+    display: inline-flex !important;
+    margin: 0.3rem 0 0.4rem 0;
+
     &:before {
       @include user-select(none);
       content: '\e835';
@@ -46,7 +59,6 @@ $switch--off: $gray-250 !default; //Color of switch when off
       border: 2px solid $gray-200;
       border-radius: 5px;
       color: transparent;
-      display: block;
       float: left;
       font-family: 'dashing-icons';
       font-size: 12px;
@@ -56,8 +68,21 @@ $switch--off: $gray-250 !default; //Color of switch when off
       margin-right: 0.61rem;
       padding: 2px;
     }
-    &.inline {
-      margin: 0.3rem 0 0.3rem 2px;
+  }
+
+  @media #{$phone} {
+    margin: 0.2rem 0 0 0; //gives proper spacing for touch
+
+    label:not(.card) { //mobile-optimized large checkboxes if not inside a card-checkbox
+      margin: 0.4rem 0 0.25rem 0;
+      &:before {
+        border-radius: 8px;
+        font-size: 16px;
+        height: 32px; width: 32px;
+        margin-top: 2px;
+        margin-right: 0.5rem;
+        padding: 6px;
+      }
     }
   }
 
@@ -151,7 +176,7 @@ $switch--off: $gray-250 !default; //Color of switch when off
     line-height: 1.4rem;
     margin: 0.3rem 0 0.3rem 2px;
     position: relative;
-    text-indent: 1.8rem;
+    text-indent: 1.7rem;
     &:before { //Radio Button Styles
       content: '';
       border: 2px solid $gray-200;
@@ -166,12 +191,40 @@ $switch--off: $gray-250 !default; //Color of switch when off
     }
   }
 
-  &.inline label { text-indent: 1.5rem; }
+  @media #{$phone} {
+    margin-bottom: 0.2rem;
+
+    label:not(.card) { //mobile-optimized large checkboxes if not inside a card-checkbox
+      margin: 0.5rem 0 0.2rem; //gives proper spacing for touch
+      line-height: 2rem;
+      text-indent: 2.4rem;
+
+      &:before {
+        line-height: 20px;
+        font-size: 3rem;
+        height: 32px; width: 32px;
+      }
+    }
+  }
+
+  &.inline label {
+    text-indent: 1.5rem;
+    @media #{$phone} { text-indent: 2.3rem; }
+  }
 
   @-moz-document url-prefix() { //Target Firefox radio button
-    input:empty ~ label:before {
+    label:before {
       font-size: 1.6rem;
-      @media #{$desktop} { font-size: 1.5rem; }
+    }
+
+    @media #{$phone} {
+      label:not(.card) { //mobile-optimized large checkboxes if not inside a card-checkbox
+        &:before {
+          line-height: 20px;
+          font-size: 3rem;
+          height: 32px; width: 32px;
+        }
+      }
     }
   }
 
@@ -180,18 +233,28 @@ $switch--off: $gray-250 !default; //Color of switch when off
     color: rgba($black, .6);
     &:before { //Button Hover
       color: $gray-200;
-    	content:'•';
-    	text-indent: 4px;
     }
   }
 
   //Radio Active
-  input:checked ~ label:before {
-    background-color: $radio--active;
-    border-color: $radio--active;
-    color: $radio--icon;
-  	content:'•';
-  	text-indent: 4px;
+  input:hover:not(:checked) ~ label,
+  input:checked ~ label {
+    &:before {
+      content:'•';
+    	text-indent: 4px;
+    }
+
+    &:not(.card):before {
+      @media #{$phone} { text-indent: 7px; }
+    }
+  }
+
+  input:checked ~ label {
+    &:before {
+      background-color: $radio--active;
+      border-color: $radio--active;
+      color: $white;
+    }
   }
 
   //Radio Focus
