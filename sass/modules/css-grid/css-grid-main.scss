@@ -9,7 +9,8 @@ Actual CSS Grid Classes
 }
 
 //Pad the grid
-.css-grid-layout { padding: $grid-gutter; }
+.css-grid-layout,
+.css-grid-padding { padding: $grid-gutter; }
 
 //select one to start the grid
 .css-grid-4, .css-grid-6 {//IE and Safari
