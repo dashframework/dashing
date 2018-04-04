@@ -3,6 +3,8 @@ var rootFolder = "/dashing/";//leave as "/" for live version, add /dashing/ to e
 //Active Function
 $(function() {
   $("#sidebarNavigation").load(rootFolder +"example/templates/sidebar.html", function() {
+    //if current was already added or not
+    var applied = false;
     //get the url of the current page
     var url = window.location.href;
     //get the default active page (index)
@@ -15,11 +17,12 @@ $(function() {
         var id = this.id;
 
         //check if the id provided is in the url
-        if(url.indexOf(id) > -1 && url.indexOf(id) !== 0) {//was -1, but index for home page will return 0
+        if(url.indexOf(id) > -1 && url.indexOf(id) !== 0 && applied != true) {//was -1, but index for home page will return 0
           //if there is a match, add the class of current to the matching link
           $(this).addClass('current');
           //if there is a match, remove the class of current from the home page
           $(indexObject).removeClass('current');
+          applied = true;
         }
       });
   });
