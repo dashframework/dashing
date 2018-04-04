@@ -16,10 +16,10 @@ $(function() {
 
         //check if the id provided is in the url
         if(url.indexOf(id) > -1 && url.indexOf(id) !== 0) {//was -1, but index for home page will return 0
-            //if there is a match, add the class of current to the matching link
-            $(this).addClass('current');
-            //if there is a match, remove the class of current from the home page
-            $(indexObject).removeClass('current');
+          //if there is a match, add the class of current to the matching link
+          $(this).addClass('current');
+          //if there is a match, remove the class of current from the home page
+          $(indexObject).removeClass('current');
         }
       });
   });

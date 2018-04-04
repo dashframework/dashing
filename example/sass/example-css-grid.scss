@@ -14,13 +14,13 @@ Display Compatibility Banner
 Example App Mockups Below 
 -------------------------------- */
 
-.css-grid-highlight, .css-grid-highlight > div{ 
+.grid-highlight, .grid-highlight > div{ 
 	background-color: rgba(221, 226, 230, 0.5);
 	border: 2px solid $gray-150c; 
 	border-radius: 5px;
 }
 
-.css-grid-highlight-blue, .css-grid-highlight-blue > div {
+.grid-highlight-blue, .grid-highlight-blue > div {
     background-color: rgba(81, 116, 186, 0.5); 
     border: 2px solid #6A8DD3;
     color: $white;
@@ -28,7 +28,7 @@ Example App Mockups Below
     border-radius: 5px;
 }
 
-.css-grid-highlight-red, .css-grid-highlight-red > div {
+.grid-highlight-red, .grid-highlight-red > div {
     background-color: rgba(218, 61, 48, 0.5); 
     border: 2px solid #DA3D30;
     color: $white;
@@ -36,7 +36,7 @@ Example App Mockups Below
     border-radius: 5px;
 }
 
-.css-grid-highlight-green, .css-grid-highlight-green > div {
+.grid-highlight-green, .grid-highlight-green > div {
     background-color: rgba(9, 170, 102, 0.5); 
     border: 2px solid #09AA66;
     color: $white;
