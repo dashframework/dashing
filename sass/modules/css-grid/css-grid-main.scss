@@ -17,9 +17,13 @@ Actual CSS Grid Classes
 	display: block;//For IE and Safari mobile
 	overflow: auto;//For IE and Safari display
 	@supports(display: grid) { display: grid; grid-gap: $grid-gutter; }//For non-fallbacks use grid
-}
 
-.grid { grid-template-columns: repeat(12, 1fr); 
+	* {
+		@supports(display: grid) { @include grid-column(12); }//By default, content will span all 12 columns
+	}
+
+	grid-template-columns: repeat(12, 1fr); 
+	
 	.grid--full 		   { @include grid-column(12); }
 	.grid--five-sixths     { @include grid-column(10); }
 	.grid--three-fourths   { @include grid-column(9); }
