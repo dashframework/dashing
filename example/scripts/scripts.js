@@ -1,4 +1,4 @@
-var rootFolder = "/dashing/";//leave as "/" for live version, add /dashing/ to edit locally
+var rootFolder = "/";//leave as "/" for live version, add /dashing/ to edit locally
 
 //Active Function
 $(function() {
