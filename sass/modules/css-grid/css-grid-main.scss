@@ -33,3 +33,5 @@ Actual CSS Grid Classes
 	.grid--fourth          { @include grid-column(3); }
 	.grid--sixth           { @include grid-column(2); }
 }
+
+.grid { .card { margin: 0; } }
