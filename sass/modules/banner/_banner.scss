@@ -34,6 +34,17 @@
     padding: $grid-gutter/2 $grid-gutter;
   }
 
+  a {
+    border-bottom: solid 2px;
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+    opacity: 0.6;
+    transition: all 50ms ease-in-out;
+    }
+  }
+
   &.has-success,
   &.has-error {
     p { color: $white; }

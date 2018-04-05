@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.9.1 - April 05, 2018
+**Updated**
+* Updated banners to include styling for links
+  
+*****
+  
 ### 1.8.3 - April 03, 2018
 **Fixed**
 * Fixed min-height on Date, Time, and Month inputs
