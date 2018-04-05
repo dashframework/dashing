@@ -47,6 +47,12 @@ fieldset {
     }
   }
 
+  input[type="date"],
+  input[type="time"],
+  input[type="month"] {
+    min-height: 2.75rem;
+  }
+
   input[type=checkbox],
   input[type=radio] {
     float: left;

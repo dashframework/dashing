@@ -1,0 +1,37 @@
+/* -----------------------------
+Actual CSS Grid Classes
+-------------------------------- */
+//mimics '.row' from original grid
+.grid-wrapper {
+	max-width: $global-content-width;
+	margin: auto;
+  	width: 100%;
+}
+
+//Pad the grid
+.grid-layout,
+.grid-padding { @supports(display: grid) { padding: $grid-gutter; } }//Don't let fallbacks add padding, they have enough.
+
+//select one to start the grid
+.grid {//IE and Safari
+	display: block;//For IE and Safari mobile
+	overflow: auto;//For IE and Safari display
+	@supports(display: grid) { display: grid; grid-gap: $grid-gutter; }//For non-fallbacks use grid
+
+	* {
+		@supports(display: grid) { @include grid-column(12); }//By default, content will span all 12 columns
+	}
+
+	grid-template-columns: repeat(12, 1fr); 
+	
+	.grid--full 		   { @include grid-column(12); }
+	.grid--five-sixths     { @include grid-column(10); }
+	.grid--three-fourths   { @include grid-column(9); }
+	.grid--two-thirds      { @include grid-column(8); }
+	.grid--half            { @include grid-column(6); }
+	.grid--third           { @include grid-column(4); }
+	.grid--fourth          { @include grid-column(3); }
+	.grid--sixth           { @include grid-column(2); }
+}
+
+.grid { .card { margin: 0; } }

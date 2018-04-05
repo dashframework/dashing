@@ -2,6 +2,7 @@
 @import "example-color";
 @import "example-icons";
 @import "example-sidebar";
+@import "example-css-grid";
 @import "prism";
 
 .prevent-scrolling {
@@ -21,6 +22,10 @@
 }
 
 .row {
+  max-width: 800px;
+}
+
+.grid-wrapper {
   max-width: 800px;
 }
 

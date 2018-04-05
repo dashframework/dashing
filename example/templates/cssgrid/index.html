@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+    <title>CSS Grid</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+  </head>
+
+  <body class="example-body">
+		<div class="main-content">
+			<div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="sidebar--overlay is-hidden"></div>
+			<div class="main">
+				<div class="page-header">
+					<button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+					<h1>CSS Grid</h1>
+					<a href="http://design.samaritanministries.org/product/components/cssgrid/" target="_blank" class="button button--small button--smooth float-right">
+						View Guidelines
+					</a>
+				</div>
+
+        <div class="app-content">
+        
+        <h4 class="grid-compatibility"><i class="dashing-icon dashing-icon--white dashing-icon--alert-filled"></i> You are viewing a grid fallback. This page will mimic grid as closely as it can.</h4>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Grid with Padding <button class="button button--transparent button--copy-link" data-id="copyurl" id="Grid_with_Padding"></h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="grid grid-highlight-blue grid-padding">
+           <div class="grid--full">Padded Grid Content</div>
+        </div>
+      </div>
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Grid with Padding --&gt;
+&lt;div class="app-content grid-wrapper"&gt;
+&lt;div class="grid grid-padding"&gt;&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Grid Seperations <button class="button button--transparent button--copy-link" data-id="copyurl" id="Grid_Seperations"></h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="grid grid--full grid-highlight-blue">
+          <div class="grid--full">.grid--full</div>
+          <div class="grid--half">.grid--half</div>
+          <div class="grid--half">.grid--half</div>
+          <div class="grid--three-fourths">.grid--three-fourths</div>
+          <div class="grid--fourth">.grid--fourth</div>
+          <div class="grid--fourth">.grid--fourth</div>
+          <div class="grid--fourth">.grid--fourth</div>
+          <div class="grid--fourth">.grid--fourth</div>
+          <div class="grid--fourth">.grid--fourth</div>
+          <div class="grid--two-thirds">.grid--two-thirds</div>
+          <div class="grid--third">.grid--third</div>
+          <div class="grid--five-sixths">.grid--five-sixths</div>
+          <div class="grid--sixth">.grid--sixth</div>
+          <div class="grid--sixth">.grid--sixth</div>
+          <div class="grid--sixth">.grid--sixth</div>
+          <div class="grid--sixth">.grid--sixth</div>
+          <div class="grid--sixth">.grid--sixth</div>
+          <div class="grid--sixth">.grid--sixth</div>
+          <div class="grid--sixth">.grid--sixth</div>
+        </div>
+      </div>
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Grid Example --&gt;
+&lt;div class="grid"&gt;
+  &lt;div class="grid--full"&gt;.grid--full&lt;/div&gt;
+  &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+  &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+  &lt;div class="grid--three-fourths"&gt;.grid--three-fourths&lt;/div&gt;
+  &lt;div class="grid--fourth"&gt;.grid--fourth&lt;/div&gt;
+  &lt;div class="grid--fourth"&gt;.grid--fourth&lt;/div&gt;
+  &lt;div class="grid--fourth"&gt;.grid--fourth&lt;/div&gt;
+  &lt;div class="grid--fourth"&gt;.grid--fourth&lt;/div&gt;
+  &lt;div class="grid--fourth"&gt;.grid--fourth&lt;/div&gt;
+  &lt;div class="grid--two-thirds"&gt;.grid--two-thirds&lt;/div&gt;
+  &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+  &lt;div class="grid--five-sixth"&gt;.grid--five-sixth&lt;/div&gt;
+  &lt;div class="grid--sixth"&gt;.grid--sixth&lt;/div&gt;
+  &lt;div class="grid--sixth"&gt;.grid--sixth&lt;/div&gt;
+  &lt;div class="grid--sixth"&gt;.grid--sixth&lt;/div&gt;
+  &lt;div class="grid--sixth"&gt;.grid--sixth&lt;/div&gt;
+  &lt;div class="grid--sixth"&gt;.grid--sixth&lt;/div&gt;
+  &lt;div class="grid--sixth"&gt;.grid--sixth&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Nested Grids <button class="button button--transparent button--copy-link" data-id="copyurl" id="Nested_Grids"></h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="grid grid--full grid-highlight-blue">
+          <div class="grid--full">.grid--full</div>
+          <div class="grid--half">.grid--half</div>
+          <div class="grid--half">.grid--half</div>
+          <div class="grid--three-fourths grid grid-highlight-green">
+            <div class="grid--half">.grid--half</div>
+            <div class="grid--half">.grid--half</div>
+          </div>
+          <div class="grid--fourth">.grid--fourth</div>
+          <div class="grid--two-thirds">.grid--two-thirds</div>
+          <div class="grid--third">.grid--third</div>
+          <div class="grid--sixth">.grid--sixth</div>
+          <div class="grid--five-sixths grid grid-highlight-green">
+            <div class="grid--third">.grid--third</div>
+            <div class="grid--third">.grid--third</div>
+            <div class="grid--third">.grid--third</div>
+            <div class="grid--two-thirds">.grid--two-thirds</div>
+            <div class="grid--third">.grid--third</div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Nested Grid Example --&gt;
+&lt;div class="grid"&gt;
+  &lt;div class="grid--full"&gt;.grid--full&lt;/div&gt;
+  &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+  &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+  &lt;div class="grid grid--three-fourths"&gt;
+    &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+    &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid--fourth"&gt;.grid--fourth&lt;/div&gt;
+  &lt;div class="grid--two-thirds"&gt;.grid--two-thirds&lt;/div&gt;
+  &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+  &lt;div class="grid--sixth"&gt;.grid--sixth&lt;/div&gt;
+  &lt;div class="grid grid--five-sixths"&gt;
+    &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+    &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+    &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+    &lt;div class="grid--two-thirds"&gt;.grid--two-thirds&lt;/div&gt;
+    &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Grid in and with Cards <button class="button button--transparent button--copy-link" data-id="copyurl" id="Grid_in_and_with_Cards"></h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="grid grid--full grid-highlight">
+          <div class="grid--full">
+            <div class="card">
+              <div class="card--header"><h3>Card Header (.grid--full)</h3></div>
+              <div class="card--content">
+                <div class="grid grid-highlight-blue">
+                  <div class="grid--full">.grid--full</div>
+                  <div class="grid--half">.grid--half</div>
+                  <div class="grid--half">.grid--half</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid--half">
+            <div class="card">
+              <div class="card--header"><h3>Card Header (.grid--half)</h3></div>
+              <div class="card--content">
+                <div class="grid grid-highlight-green">
+                  <div class="grid--two-thirds">.grid--two-thirds</div>
+                  <div class="grid--third">.grid--third</div>
+                  <div class="grid--two-thirds">.grid--two-thirds</div>
+                  <div class="grid--third">.grid--third</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid--half">
+            <div class="card">
+              <div class="card--header"><h3>Card Header (.grid--half)</h3></div>
+              <div class="card--content">
+                <div class="grid">
+                  <div class="grid--two-thirds">Some Information</div>
+                  <div class="grid--third align-right"><a href="#">LINK</a></div>
+                  <div class="grid--two-thirds">More Information</div>
+                  <div class="grid--third align-right"><a href="#">LINK</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Grid in and with Cards Example --&gt;
+&lt;div class="grid"&gt;
+
+  &lt;div class="grid--full"&gt;
+    &lt;div class="card"&gt;
+      &lt;div class="card--header"&gt;&lt;h3&gt;Card Header (.grid--full)&lt;/h3&gt;&lt;/div&gt;
+      &lt;div class="card--content"&gt;
+        &lt;div class="grid"&gt;
+          &lt;div class="grid--full"&gt;.grid--full&lt;/div&gt;
+          &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+          &lt;div class="grid--half"&gt;.grid--half&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="grid--half"&gt;
+    &lt;div class="card"&gt;
+      &lt;div class="card--header"&gt;&lt;h3&gt;Card Header (.grid--half)&lt;/h3&gt;&lt;/div&gt;
+      &lt;div class="card--content"&gt;
+        &lt;div class="grid"&gt;
+          &lt;div class="grid--two-thirds"&gt;.grid--two-thirds&lt;/div&gt;
+          &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+          &lt;div class="grid--two-thirds"&gt;.grid--two-thirds&lt;/div&gt;
+          &lt;div class="grid--third"&gt;.grid--third&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="grid--half"&gt;
+    &lt;div class="card"&gt;
+      &lt;div class="card--header"&gt;&lt;h3&gt;Card Header (.grid--half)&lt;/h3&gt;&lt;/div&gt;
+      &lt;div class="card--content"&gt;
+        &lt;div class="grid"&gt;
+          &lt;div class="grid--two-thirds"&gt;Some Information&lt;/div&gt;
+          &lt;div class="grid--third align-right"&gt;&lt;a href="#"&gt;LINK&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="grid--two-thirds"&gt;More Information&lt;/div&gt;
+          &lt;div class="grid--third align-right"&gt;&lt;a href="#"&gt;LINK&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+  </body>
+</html>
