@@ -1,0 +1,13 @@
+@mixin fallback-grid($percent) {
+	@media #{$tablet} { 
+		width: calc(#{$percent} - #{$grid-gutter}); float: left;//SAFARI 9
+	} 
+}
+
+@mixin grid-column($span) {
+	grid-column: 1 / -1; 
+	@media #{$tablet} { 
+		grid-column: span $span; 
+		@supports(display: grid) { width: auto; }
+	}
+}

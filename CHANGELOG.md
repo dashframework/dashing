@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.9.0 - April 04, 2018
+**Added**
+* Added support for css grid. This comes with a new example page explaining the details.
+  
+*****
+  
 ### 1.8.3 - April 03, 2018
 **Fixed**
 * Fixed min-height on Date, Time, and Month inputs
