@@ -1,0 +1,40 @@
+/* -----------------------------
+Fallback Classes (Must be First)
+-------------------------------- */
+.grid { grid-template-columns: repeat(12, 1fr); 
+	.grid--full 		   { @include fallback-grid(100%); }
+	.grid--five-sixths     { @include fallback-grid(83.3333%); }
+	.grid--three-fourths   { @include fallback-grid(75%); }
+	.grid--two-thirds      { @include fallback-grid(66.6666%); }
+	.grid--half            { @include fallback-grid(50%); }
+	.grid--third           { @include fallback-grid(33.3333%); }
+	.grid--fourth          { @include fallback-grid(25%);  }
+	.grid--sixth           { @include fallback-grid(16.6666%); }
+}
+
+/* -----------------------------
+Fake "grid-gap" for Old Browsers
+-------------------------------- */
+.grid {
+	.grid--full, .grid--half, .grid--three-fourths, .grid--fourth,
+	.grid--two-thirds, .grid--five-sixths, .grid--third, .grid--sixth {
+		//Fake grid gap on grid elements
+		margin: $grid-gutter 0; 
+		&:first-of-type {
+			margin-top: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		@media #{$tablet} { 
+			margin: calc(#{$grid-gutter} / 2); 
+			&:first-of-type {
+				margin: calc(#{$grid-gutter} / 2); 
+			}
+			&:last-of-type {
+				margin: calc(#{$grid-gutter} / 2); 
+			}
+		}//IE11 and Safari 9
+		@supports(display: grid) { margin: 0; &:first-of-type { margin: 0; } &:last-of-type { margin: 0; } }//Reset for "the right" browsers ; )
+	}
+}
