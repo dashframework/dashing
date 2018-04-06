@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.9.1 - April 06, 2018
+**Updated**
+* Updated  styling for banner links
+  
+*****
+  
 ### 1.9.0 - April 04, 2018
 **Added**
 * Added support for css grid. This comes with a new example page explaining the details.
