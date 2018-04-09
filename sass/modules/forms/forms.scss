@@ -75,7 +75,10 @@ fieldset {
     .add-on--field,
     .add-on--before,
     .add-on--after {
-      width: auto;
+      width: 5rem; //set to fix forms escaping from headers on mobile
+      @media #{$tablet} { 
+        width: auto; 
+      }
       flex-grow: 1;
     }
 

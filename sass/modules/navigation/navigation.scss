@@ -202,10 +202,8 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
         fieldset input[type="text"] {
             border-color: transparent;
         }
-
     }
 }
-
 //This sets padding of your app content relative to the size of your app-menu
 .app-menu.has-search ~ .app-content {
     padding-top: 5.75rem;
