@@ -181,23 +181,18 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
             padding: 0.5rem 1rem;
             @media #{$tablet} {
                 display: flex;
+                align-items: center;
             }
         }
 
         .app-title {
             display: inline-block;
-
-            @media #{$tablet} {
-                align-self: center;
-                justify-self: start;
-            }
         }
 
         .search-input {
             padding-top: 0.5rem;
 
             @media #{$tablet} {
-                align-self: center;
                 margin-left: auto;
                 padding-top: 0rem;
                 width: auto;
