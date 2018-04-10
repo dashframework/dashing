@@ -22,50 +22,50 @@ $switch--off: $gray-250 !default; //Color of switch when off
   ================================================== */
 .checkbox--custom,
 .radio--custom {
+  display: flex;
+
   input { // Places the input behind the label so it doesn't overlay text
     opacity: 0;
     position: absolute;
     z-index: -1;
   }
+
+  label {
+    @include user-select(none);
+    align-items: baseline;
+    cursor: pointer;
+    display: flex;
+    font-size: $font-size-normal;
+    font-weight: normal;
+    margin: 0.2rem 0;
+
+    &:before {
+      border: 2px solid $gray-200;
+      color: transparent;
+      height: 20px; width: 20px;
+      margin-right: 0.5rem;
+    }
+  }
+
   &.inline {
     display: inline-block;
     margin-right: 1rem;
-  }
-
-  label {
-    //borrows inline styles so you don't have to call it out manually
-    cursor: pointer;
-    font-size: $font-size-normal;
-    font-weight: normal;
+    .label:before {
+      display: inline-block;
+    }
   }
 }
 
 .checkbox--custom {
-  display: flex;
 
   //Label Styles
   label {
-    align-items: center;
-    display: inline-flex !important;
-    margin: 0.3rem 0 0.4rem 0;
-
+    //Checkbox Styles
     &:before {
-      @include user-select(none);
       content: '\e835';
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 50% 50%;
-      background-color: $white;
-      border: 2px solid $gray-200;
       border-radius: 5px;
-      color: transparent;
-      float: left;
       font-family: 'dashing-icons';
       font-size: 12px;
-      font-weight: 600;
-      height: 20px; width: 20px;
-      margin-top: 2px;
-      margin-right: 0.61rem;
       padding: 2px;
     }
   }
@@ -167,49 +167,34 @@ $switch--off: $gray-250 !default; //Color of switch when off
   ================================================== */
 //Wrapper for Custom Radio Buttons
 .radio--custom  {
-	font-weight: normal;
 
   //Label Styles
   label { //Position Styles
-    @include user-select(none);
-    cursor: pointer;
-    line-height: 1.4rem;
-    margin: 0.3rem 0 0.3rem 2px;
-    position: relative;
-    text-indent: 1.7rem;
-    &:before { //Radio Button Styles
-      content: '';
-      border: 2px solid $gray-200;
+    // position: relative;
+
+    //Radio Button Styles
+    &:before {
+      content: '•';
       border-radius: 50px;
-      display: block;
       font-size: 1.7rem;
-      line-height: 11px;
-    	position: absolute;
-    	top: 2px; bottom: 0; left: 0;
-      height: 20px; width: 20px;
+      line-height: 12px;
+      padding: 0 4px;
+    	// position: absolute;
+    	// top: 2px; bottom: 0; left: 0;
+
       @media #{$desktop} { font-size: 1.5rem; }
     }
   }
 
   @media #{$phone} {
-    margin-bottom: 0.2rem;
-
-    label:not(.card) { //mobile-optimized large checkboxes if not inside a card-checkbox
-      margin: 0.5rem 0 0.2rem; //gives proper spacing for touch
-      line-height: 2rem;
-      text-indent: 2.4rem;
-
+    label:not(.card) { //mobile-optimized large radio buttons if not inside a card-radio
       &:before {
-        line-height: 20px;
         font-size: 3rem;
+        line-height: 20px;
+        padding: 0 7px;
         height: 32px; width: 32px;
       }
     }
-  }
-
-  &.inline label {
-    text-indent: 1.5rem;
-    @media #{$phone} { text-indent: 2.3rem; }
   }
 
   @-moz-document url-prefix() { //Target Firefox radio button
@@ -221,6 +206,7 @@ $switch--off: $gray-250 !default; //Color of switch when off
       label:not(.card) { //mobile-optimized large checkboxes if not inside a card-checkbox
         &:before {
           line-height: 20px;
+          padding: 0 7px;
           font-size: 3rem;
           height: 32px; width: 32px;
         }
@@ -240,12 +226,7 @@ $switch--off: $gray-250 !default; //Color of switch when off
   input:hover:not(:checked) ~ label,
   input:checked ~ label {
     &:before {
-      content:'•';
-    	text-indent: 4px;
-    }
-
-    &:not(.card):before {
-      @media #{$phone} { text-indent: 7px; }
+      color: $white;
     }
   }
 

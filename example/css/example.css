@@ -1309,9 +1309,7 @@ fieldset {
     font-weight: 600;
     margin-bottom: 0.3rem;
     text-align: left; }
-    fieldset label.inline, fieldset .checkbox-card label.card, .checkbox-card fieldset label.card,
-    fieldset .radio-card label.card,
-    .radio-card fieldset label.card {
+    fieldset label.inline {
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -1505,252 +1503,206 @@ fieldset .has-warning .message li {
   =========================================================================== */
 /* Custom Checkboxes
   ================================================== */
-.checkbox--custom input, .checkbox-card input,
-.radio--custom input,
-.radio-card input {
-  opacity: 0;
-  position: absolute;
-  z-index: -1; }
-.checkbox--custom.inline, .inline.checkbox-card, .checkbox-card .checkbox-card.card,
-.radio-card .checkbox-card.card, .checkbox-card .checkbox--custom.card,
-.radio-card .checkbox--custom.card,
-.radio--custom.inline,
-.inline.radio-card,
-.checkbox-card .radio-card.card,
-.radio-card .radio-card.card,
-.checkbox-card .radio--custom.card,
-.radio-card .radio--custom.card {
-  display: inline-block;
-  margin-right: 1rem; }
-.checkbox--custom label, .checkbox-card label,
-.radio--custom label,
-.radio-card label {
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: normal; }
-
-.checkbox--custom, .checkbox-card {
+.checkbox--custom, .checkbox-card,
+.radio--custom,
+.radio-card {
   display: flex; }
-  .checkbox--custom label, .checkbox-card label {
-    align-items: center;
-    display: inline-flex !important;
-    margin: 0.3rem 0 0.4rem 0; }
-    .checkbox--custom label:before, .checkbox-card label:before {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -o-user-select: none;
-      user-select: none;
-      content: '\e835';
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 50% 50%;
-      background-color: #FFFFFF;
-      border: 2px solid #D4D4D4;
-      border-radius: 5px;
-      color: transparent;
-      float: left;
-      font-family: 'dashing-icons';
-      font-size: 12px;
-      font-weight: 600;
-      height: 20px;
-      width: 20px;
-      margin-top: 2px;
-      margin-right: 0.61rem;
-      padding: 2px; }
-  @media all and (max-width: 40em) {
-    .checkbox--custom, .checkbox-card {
-      margin: 0.2rem 0 0 0; }
-      .checkbox--custom label:not(.card), .checkbox-card label:not(.card) {
-        margin: 0.4rem 0 0.25rem 0; }
-        .checkbox--custom label:not(.card):before, .checkbox-card label:not(.card):before {
-          border-radius: 8px;
-          font-size: 16px;
-          height: 32px;
-          width: 32px;
-          margin-top: 2px;
-          margin-right: 0.5rem;
-          padding: 6px; } }
-  .checkbox--custom.inline label:before, .inline.checkbox-card label:before, .checkbox-card .checkbox-card.card label:before,
-  .radio-card .checkbox-card.card label:before, .checkbox-card .checkbox--custom.card label:before,
-  .radio-card .checkbox--custom.card label:before {
-    margin-right: 0.3rem; }
-  .checkbox--custom input:hover ~ label, .checkbox-card input:hover ~ label {
-    color: rgba(0, 0, 0, 0.6); }
-    .checkbox--custom input:hover ~ label:before, .checkbox-card input:hover ~ label:before {
-      color: #D4D4D4; }
-  .checkbox--custom input:checked ~ label:before, .checkbox-card input:checked ~ label:before, .checkbox--custom input:active ~ label:before, .checkbox-card input:active ~ label:before {
-    color: #FFFFFF;
-    background-color: #3F70C9;
-    border: 2px solid #3F70C9; }
-  .checkbox--custom input:focus ~ label:before, .checkbox-card input:focus ~ label:before {
-    box-shadow: 0 0 0 2px #9DC0FF; }
-  .checkbox--custom input[disabled] ~ label, .checkbox-card input[disabled] ~ label,
-  .checkbox--custom input[disabled]:active ~ label,
-  .checkbox-card input[disabled]:active ~ label,
-  .checkbox--custom input[disabled]:checked ~ label,
-  .checkbox-card input[disabled]:checked ~ label {
-    cursor: default;
-    pointer-events: none; }
-    .checkbox--custom input[disabled] ~ label:before, .checkbox-card input[disabled] ~ label:before,
-    .checkbox--custom input[disabled]:active ~ label:before,
-    .checkbox-card input[disabled]:active ~ label:before,
-    .checkbox--custom input[disabled]:checked ~ label:before,
-    .checkbox-card input[disabled]:checked ~ label:before {
-      border-color: #E0E0E0;
-      background-color: #E0E0E0; }
-  .checkbox--custom input[disabled]:active ~ label:before, .checkbox-card input[disabled]:active ~ label:before,
-  .checkbox--custom input[disabled]:checked ~ label:before,
-  .checkbox-card input[disabled]:checked ~ label:before {
-    color: #878787; }
-  .checkbox--custom.has-error label:before, .has-error.checkbox-card label:before, .has-error .checkbox--custom label:before, .has-error .checkbox-card label:before {
-    border: 2px solid #F76553; }
-  .checkbox--custom.has-error input:hover ~ label, .has-error.checkbox-card input:hover ~ label, .has-error .checkbox--custom input:hover ~ label, .has-error .checkbox-card input:hover ~ label {
-    color: rgba(218, 61, 48, 0.6); }
-    .checkbox--custom.has-error input:hover ~ label:before, .has-error.checkbox-card input:hover ~ label:before, .has-error .checkbox--custom input:hover ~ label:before, .has-error .checkbox-card input:hover ~ label:before {
-      color: #FF9886; }
-  .checkbox--custom.has-error input:checked ~ label:before, .has-error.checkbox-card input:checked ~ label:before, .checkbox--custom.has-error input:active ~ label:before, .has-error.checkbox-card input:active ~ label:before, .has-error .checkbox--custom input:checked ~ label:before, .has-error .checkbox-card input:checked ~ label:before, .has-error .checkbox--custom input:active ~ label:before, .has-error .checkbox-card input:active ~ label:before {
-    color: #FFFFFF;
-    background-color: #DD4B39;
-    border: 2px solid #DD4B39; }
-  .checkbox--custom.has-error input:focus ~ label:before, .has-error.checkbox-card input:focus ~ label:before, .has-error .checkbox--custom input:focus ~ label:before, .has-error .checkbox-card input:focus ~ label:before {
-    box-shadow: 0 0 0 2px #FF9886; }
-  .checkbox--custom.has-warning label:before, .has-warning.checkbox-card label:before, .has-warning .checkbox--custom label:before, .has-warning .checkbox-card label:before {
-    border: 2px solid #F7AD4B; }
-  .checkbox--custom.has-warning input:hover ~ label, .has-warning.checkbox-card input:hover ~ label, .has-warning .checkbox--custom input:hover ~ label, .has-warning .checkbox-card input:hover ~ label {
-    color: rgba(255, 161, 31, 0.6); }
-    .checkbox--custom.has-warning input:hover ~ label:before, .has-warning.checkbox-card input:hover ~ label:before, .has-warning .checkbox--custom input:hover ~ label:before, .has-warning .checkbox-card input:hover ~ label:before {
-      color: #FFC664; }
-  .checkbox--custom.has-warning input:checked ~ label:before, .has-warning.checkbox-card input:checked ~ label:before, .checkbox--custom.has-warning input:active ~ label:before, .has-warning.checkbox-card input:active ~ label:before, .has-warning .checkbox--custom input:checked ~ label:before, .has-warning .checkbox-card input:checked ~ label:before, .has-warning .checkbox--custom input:active ~ label:before, .has-warning .checkbox-card input:active ~ label:before {
-    color: #FFFFFF;
-    background-color: #F7AD4B;
-    border: 2px solid #F7AD4B; }
-  .checkbox--custom.has-warning input:focus ~ label:before, .has-warning.checkbox-card input:focus ~ label:before, .has-warning .checkbox--custom input:focus ~ label:before, .has-warning .checkbox-card input:focus ~ label:before {
-    box-shadow: 0 0 0 2px #FFE07E; }
-
-/* Custom Radio Buttons
-  ================================================== */
-.radio--custom, .radio-card {
-  font-weight: normal; }
-  .radio--custom label, .radio-card label {
+  .checkbox--custom input, .checkbox-card input,
+  .radio--custom input,
+  .radio-card input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1; }
+  .checkbox--custom label, .checkbox-card label,
+  .radio--custom label,
+  .radio-card label {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    align-items: baseline;
     cursor: pointer;
-    line-height: 1.4rem;
-    margin: 0.3rem 0 0.3rem 2px;
-    position: relative;
-    text-indent: 1.7rem; }
-    .radio--custom label:before, .radio-card label:before {
-      content: '';
+    display: flex;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0.2rem 0; }
+    .checkbox--custom label:before, .checkbox-card label:before,
+    .radio--custom label:before,
+    .radio-card label:before {
       border: 2px solid #D4D4D4;
-      border-radius: 50px;
-      display: block;
-      font-size: 1.7rem;
-      line-height: 11px;
-      position: absolute;
-      top: 2px;
-      bottom: 0;
-      left: 0;
+      color: transparent;
       height: 20px;
-      width: 20px; }
-      @media all and (min-width: 64em) {
-        .radio--custom label:before, .radio-card label:before {
-          font-size: 1.5rem; } }
-  @media all and (max-width: 40em) {
-    .radio--custom, .radio-card {
-      margin-bottom: 0.2rem; }
-      .radio--custom label:not(.card), .radio-card label:not(.card) {
-        margin: 0.5rem 0 0.2rem;
-        line-height: 2rem;
-        text-indent: 2.4rem; }
-        .radio--custom label:not(.card):before, .radio-card label:not(.card):before {
-          line-height: 20px;
-          font-size: 3rem;
-          height: 32px;
-          width: 32px; } }
-  .radio--custom.inline label, .inline.radio-card label, .checkbox-card .radio-card.card label,
-  .radio-card .radio-card.card label, .checkbox-card .radio--custom.card label,
-  .radio-card .radio--custom.card label {
-    text-indent: 1.5rem; }
-    @media all and (max-width: 40em) {
-      .radio--custom.inline label, .inline.radio-card label, .checkbox-card .radio-card.card label,
-      .radio-card .radio-card.card label, .checkbox-card .radio--custom.card label,
-      .radio-card .radio--custom.card label {
-        text-indent: 2.3rem; } }
+      width: 20px;
+      margin-right: 0.5rem; }
+  .checkbox--custom.inline, .inline.checkbox-card,
+  .radio--custom.inline,
+  .inline.radio-card {
+    display: inline-block;
+    margin-right: 1rem; }
+    .checkbox--custom.inline .label:before, .inline.checkbox-card .label:before,
+    .radio--custom.inline .label:before,
+    .inline.radio-card .label:before {
+      display: inline-block; }
+
+.checkbox--custom label:before, .checkbox-card label:before {
+  content: '\e835';
+  border-radius: 5px;
+  font-family: 'dashing-icons';
+  font-size: 12px;
+  padding: 2px; }
+@media all and (max-width: 40em) {
+  .checkbox--custom, .checkbox-card {
+    margin: 0.2rem 0 0 0; }
+    .checkbox--custom label:not(.card), .checkbox-card label:not(.card) {
+      margin: 0.4rem 0 0.25rem 0; }
+      .checkbox--custom label:not(.card):before, .checkbox-card label:not(.card):before {
+        border-radius: 8px;
+        font-size: 16px;
+        height: 32px;
+        width: 32px;
+        margin-top: 2px;
+        margin-right: 0.5rem;
+        padding: 6px; } }
+.checkbox--custom.inline label:before, .inline.checkbox-card label:before {
+  margin-right: 0.3rem; }
+.checkbox--custom input:hover ~ label, .checkbox-card input:hover ~ label {
+  color: rgba(0, 0, 0, 0.6); }
+  .checkbox--custom input:hover ~ label:before, .checkbox-card input:hover ~ label:before {
+    color: #D4D4D4; }
+.checkbox--custom input:checked ~ label:before, .checkbox-card input:checked ~ label:before, .checkbox--custom input:active ~ label:before, .checkbox-card input:active ~ label:before {
+  color: #FFFFFF;
+  background-color: #3F70C9;
+  border: 2px solid #3F70C9; }
+.checkbox--custom input:focus ~ label:before, .checkbox-card input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #9DC0FF; }
+.checkbox--custom input[disabled] ~ label, .checkbox-card input[disabled] ~ label,
+.checkbox--custom input[disabled]:active ~ label,
+.checkbox-card input[disabled]:active ~ label,
+.checkbox--custom input[disabled]:checked ~ label,
+.checkbox-card input[disabled]:checked ~ label {
+  cursor: default;
+  pointer-events: none; }
+  .checkbox--custom input[disabled] ~ label:before, .checkbox-card input[disabled] ~ label:before,
+  .checkbox--custom input[disabled]:active ~ label:before,
+  .checkbox-card input[disabled]:active ~ label:before,
+  .checkbox--custom input[disabled]:checked ~ label:before,
+  .checkbox-card input[disabled]:checked ~ label:before {
+    border-color: #E0E0E0;
+    background-color: #E0E0E0; }
+.checkbox--custom input[disabled]:active ~ label:before, .checkbox-card input[disabled]:active ~ label:before,
+.checkbox--custom input[disabled]:checked ~ label:before,
+.checkbox-card input[disabled]:checked ~ label:before {
+  color: #878787; }
+.checkbox--custom.has-error label:before, .has-error.checkbox-card label:before, .has-error .checkbox--custom label:before, .has-error .checkbox-card label:before {
+  border: 2px solid #F76553; }
+.checkbox--custom.has-error input:hover ~ label, .has-error.checkbox-card input:hover ~ label, .has-error .checkbox--custom input:hover ~ label, .has-error .checkbox-card input:hover ~ label {
+  color: rgba(218, 61, 48, 0.6); }
+  .checkbox--custom.has-error input:hover ~ label:before, .has-error.checkbox-card input:hover ~ label:before, .has-error .checkbox--custom input:hover ~ label:before, .has-error .checkbox-card input:hover ~ label:before {
+    color: #FF9886; }
+.checkbox--custom.has-error input:checked ~ label:before, .has-error.checkbox-card input:checked ~ label:before, .checkbox--custom.has-error input:active ~ label:before, .has-error.checkbox-card input:active ~ label:before, .has-error .checkbox--custom input:checked ~ label:before, .has-error .checkbox-card input:checked ~ label:before, .has-error .checkbox--custom input:active ~ label:before, .has-error .checkbox-card input:active ~ label:before {
+  color: #FFFFFF;
+  background-color: #DD4B39;
+  border: 2px solid #DD4B39; }
+.checkbox--custom.has-error input:focus ~ label:before, .has-error.checkbox-card input:focus ~ label:before, .has-error .checkbox--custom input:focus ~ label:before, .has-error .checkbox-card input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #FF9886; }
+.checkbox--custom.has-warning label:before, .has-warning.checkbox-card label:before, .has-warning .checkbox--custom label:before, .has-warning .checkbox-card label:before {
+  border: 2px solid #F7AD4B; }
+.checkbox--custom.has-warning input:hover ~ label, .has-warning.checkbox-card input:hover ~ label, .has-warning .checkbox--custom input:hover ~ label, .has-warning .checkbox-card input:hover ~ label {
+  color: rgba(255, 161, 31, 0.6); }
+  .checkbox--custom.has-warning input:hover ~ label:before, .has-warning.checkbox-card input:hover ~ label:before, .has-warning .checkbox--custom input:hover ~ label:before, .has-warning .checkbox-card input:hover ~ label:before {
+    color: #FFC664; }
+.checkbox--custom.has-warning input:checked ~ label:before, .has-warning.checkbox-card input:checked ~ label:before, .checkbox--custom.has-warning input:active ~ label:before, .has-warning.checkbox-card input:active ~ label:before, .has-warning .checkbox--custom input:checked ~ label:before, .has-warning .checkbox-card input:checked ~ label:before, .has-warning .checkbox--custom input:active ~ label:before, .has-warning .checkbox-card input:active ~ label:before {
+  color: #FFFFFF;
+  background-color: #F7AD4B;
+  border: 2px solid #F7AD4B; }
+.checkbox--custom.has-warning input:focus ~ label:before, .has-warning.checkbox-card input:focus ~ label:before, .has-warning .checkbox--custom input:focus ~ label:before, .has-warning .checkbox-card input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #FFE07E; }
+
+/* Custom Radio Buttons
+  ================================================== */
+.radio--custom label:before, .radio-card label:before {
+  content: '•';
+  border-radius: 50px;
+  font-size: 1.7rem;
+  line-height: 12px;
+  padding: 0 4px; }
+  @media all and (min-width: 64em) {
+    .radio--custom label:before, .radio-card label:before {
+      font-size: 1.5rem; } }
+@media all and (max-width: 40em) {
+  .radio--custom label:not(.card):before, .radio-card label:not(.card):before {
+    font-size: 3rem;
+    line-height: 20px;
+    padding: 0 7px;
+    height: 32px;
+    width: 32px; } }
 @-moz-document url-prefix() {
   .radio--custom label:before, .radio-card label:before {
     font-size: 1.6rem; }
   @media all and (max-width: 40em) {
     .radio--custom label:not(.card):before, .radio-card label:not(.card):before {
       line-height: 20px;
+      padding: 0 7px;
       font-size: 3rem;
       height: 32px;
       width: 32px; } } }
-  .radio--custom input:hover:not(:checked) ~ label, .radio-card input:hover:not(:checked) ~ label {
-    color: rgba(0, 0, 0, 0.6); }
-    .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before {
-      color: #D4D4D4; }
-  .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before,
-  .radio--custom input:checked ~ label:before,
-  .radio-card input:checked ~ label:before {
-    content: '•';
-    text-indent: 4px; }
-  @media all and (max-width: 40em) {
-    .radio--custom input:hover:not(:checked) ~ label:not(.card):before, .radio-card input:hover:not(:checked) ~ label:not(.card):before,
-    .radio--custom input:checked ~ label:not(.card):before,
-    .radio-card input:checked ~ label:not(.card):before {
-      text-indent: 7px; } }
-  .radio--custom input:checked ~ label:before, .radio-card input:checked ~ label:before {
-    background-color: #3F70C9;
-    border-color: #3F70C9;
-    color: #FFFFFF; }
-  .radio--custom input:focus ~ label:before, .radio-card input:focus ~ label:before {
-    box-shadow: 0 0 0 2px #9DC0FF; }
-  .radio--custom input[disabled] ~ label, .radio-card input[disabled] ~ label,
-  .radio--custom input[disabled]:active ~ label,
-  .radio-card input[disabled]:active ~ label,
-  .radio--custom input[disabled]:checked ~ label,
-  .radio-card input[disabled]:checked ~ label {
-    cursor: default;
-    pointer-events: none; }
-    .radio--custom input[disabled] ~ label:before, .radio-card input[disabled] ~ label:before,
-    .radio--custom input[disabled]:active ~ label:before,
-    .radio-card input[disabled]:active ~ label:before,
-    .radio--custom input[disabled]:checked ~ label:before,
-    .radio-card input[disabled]:checked ~ label:before {
-      border-color: #E0E0E0;
-      background-color: #E0E0E0; }
-  .radio--custom input[disabled]:active ~ label:before, .radio-card input[disabled]:active ~ label:before,
+.radio--custom input:hover:not(:checked) ~ label, .radio-card input:hover:not(:checked) ~ label {
+  color: rgba(0, 0, 0, 0.6); }
+  .radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before {
+    color: #D4D4D4; }
+.radio--custom input:hover:not(:checked) ~ label:before, .radio-card input:hover:not(:checked) ~ label:before,
+.radio--custom input:checked ~ label:before,
+.radio-card input:checked ~ label:before {
+  color: #FFFFFF; }
+.radio--custom input:checked ~ label:before, .radio-card input:checked ~ label:before {
+  background-color: #3F70C9;
+  border-color: #3F70C9;
+  color: #FFFFFF; }
+.radio--custom input:focus ~ label:before, .radio-card input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #9DC0FF; }
+.radio--custom input[disabled] ~ label, .radio-card input[disabled] ~ label,
+.radio--custom input[disabled]:active ~ label,
+.radio-card input[disabled]:active ~ label,
+.radio--custom input[disabled]:checked ~ label,
+.radio-card input[disabled]:checked ~ label {
+  cursor: default;
+  pointer-events: none; }
+  .radio--custom input[disabled] ~ label:before, .radio-card input[disabled] ~ label:before,
+  .radio--custom input[disabled]:active ~ label:before,
+  .radio-card input[disabled]:active ~ label:before,
   .radio--custom input[disabled]:checked ~ label:before,
   .radio-card input[disabled]:checked ~ label:before {
-    color: #878787; }
-  .radio--custom.has-error label:before, .has-error.radio-card label:before, .has-error .radio--custom label:before, .has-error .radio-card label:before {
-    border: 2px solid #F76553; }
-  .radio--custom.has-error input:hover:not(:checked) ~ label, .has-error.radio-card input:hover:not(:checked) ~ label, .has-error .radio--custom input:hover:not(:checked) ~ label, .has-error .radio-card input:hover:not(:checked) ~ label {
-    color: rgba(218, 61, 48, 0.6); }
-    .radio--custom.has-error input:hover:not(:checked) ~ label:before, .has-error.radio-card input:hover:not(:checked) ~ label:before, .has-error .radio--custom input:hover:not(:checked) ~ label:before, .has-error .radio-card input:hover:not(:checked) ~ label:before {
-      color: #FF9886; }
-  .radio--custom.has-error input:checked ~ label:before, .has-error.radio-card input:checked ~ label:before, .has-error .radio--custom input:checked ~ label:before, .has-error .radio-card input:checked ~ label:before {
-    background-color: #DD4B39;
-    border-color: #DD4B39;
-    color: #FFFFFF; }
-  .radio--custom.has-error input:focus ~ label:before, .has-error.radio-card input:focus ~ label:before, .has-error .radio--custom input:focus ~ label:before, .has-error .radio-card input:focus ~ label:before {
-    box-shadow: 0 0 0 2px #FF9886; }
-  .radio--custom.has-warning label:before, .has-warning.radio-card label:before, .has-warning .radio--custom label:before, .has-warning .radio-card label:before {
-    border: 2px solid #F7AD4B; }
-  .radio--custom.has-warning input:hover:not(:checked) ~ label, .has-warning.radio-card input:hover:not(:checked) ~ label, .has-warning .radio--custom input:hover:not(:checked) ~ label, .has-warning .radio-card input:hover:not(:checked) ~ label {
-    color: rgba(255, 161, 31, 0.6); }
-    .radio--custom.has-warning input:hover:not(:checked) ~ label:before, .has-warning.radio-card input:hover:not(:checked) ~ label:before, .has-warning .radio--custom input:hover:not(:checked) ~ label:before, .has-warning .radio-card input:hover:not(:checked) ~ label:before {
-      color: #FFC664; }
-  .radio--custom.has-warning input:checked ~ label:before, .has-warning.radio-card input:checked ~ label:before, .has-warning .radio--custom input:checked ~ label:before, .has-warning .radio-card input:checked ~ label:before {
-    background-color: #F7AD4B;
-    border-color: #F7AD4B;
-    color: #FFFFFF; }
-  .radio--custom.has-warning input:focus ~ label:before, .has-warning.radio-card input:focus ~ label:before, .has-warning .radio--custom input:focus ~ label:before, .has-warning .radio-card input:focus ~ label:before {
-    box-shadow: 0 0 0 2px #FFE07E; }
+    border-color: #E0E0E0;
+    background-color: #E0E0E0; }
+.radio--custom input[disabled]:active ~ label:before, .radio-card input[disabled]:active ~ label:before,
+.radio--custom input[disabled]:checked ~ label:before,
+.radio-card input[disabled]:checked ~ label:before {
+  color: #878787; }
+.radio--custom.has-error label:before, .has-error.radio-card label:before, .has-error .radio--custom label:before, .has-error .radio-card label:before {
+  border: 2px solid #F76553; }
+.radio--custom.has-error input:hover:not(:checked) ~ label, .has-error.radio-card input:hover:not(:checked) ~ label, .has-error .radio--custom input:hover:not(:checked) ~ label, .has-error .radio-card input:hover:not(:checked) ~ label {
+  color: rgba(218, 61, 48, 0.6); }
+  .radio--custom.has-error input:hover:not(:checked) ~ label:before, .has-error.radio-card input:hover:not(:checked) ~ label:before, .has-error .radio--custom input:hover:not(:checked) ~ label:before, .has-error .radio-card input:hover:not(:checked) ~ label:before {
+    color: #FF9886; }
+.radio--custom.has-error input:checked ~ label:before, .has-error.radio-card input:checked ~ label:before, .has-error .radio--custom input:checked ~ label:before, .has-error .radio-card input:checked ~ label:before {
+  background-color: #DD4B39;
+  border-color: #DD4B39;
+  color: #FFFFFF; }
+.radio--custom.has-error input:focus ~ label:before, .has-error.radio-card input:focus ~ label:before, .has-error .radio--custom input:focus ~ label:before, .has-error .radio-card input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #FF9886; }
+.radio--custom.has-warning label:before, .has-warning.radio-card label:before, .has-warning .radio--custom label:before, .has-warning .radio-card label:before {
+  border: 2px solid #F7AD4B; }
+.radio--custom.has-warning input:hover:not(:checked) ~ label, .has-warning.radio-card input:hover:not(:checked) ~ label, .has-warning .radio--custom input:hover:not(:checked) ~ label, .has-warning .radio-card input:hover:not(:checked) ~ label {
+  color: rgba(255, 161, 31, 0.6); }
+  .radio--custom.has-warning input:hover:not(:checked) ~ label:before, .has-warning.radio-card input:hover:not(:checked) ~ label:before, .has-warning .radio--custom input:hover:not(:checked) ~ label:before, .has-warning .radio-card input:hover:not(:checked) ~ label:before {
+    color: #FFC664; }
+.radio--custom.has-warning input:checked ~ label:before, .has-warning.radio-card input:checked ~ label:before, .has-warning .radio--custom input:checked ~ label:before, .has-warning .radio-card input:checked ~ label:before {
+  background-color: #F7AD4B;
+  border-color: #F7AD4B;
+  color: #FFFFFF; }
+.radio--custom.has-warning input:focus ~ label:before, .has-warning.radio-card input:focus ~ label:before, .has-warning .radio--custom input:focus ~ label:before, .has-warning .radio-card input:focus ~ label:before {
+  box-shadow: 0 0 0 2px #FFE07E; }
 
 /* Custom Range Slider
   ================================================== */
@@ -1913,6 +1865,9 @@ fieldset .has-warning .message li {
     float: none;
     margin: 0;
     padding: 1rem; }
+    .checkbox-card .card:before,
+    .radio-card .card:before {
+      display: inline-block; }
     .checkbox-card .card.disabled,
     .radio-card .card.disabled {
       background-color: #D4D4D4;
@@ -1923,8 +1878,13 @@ fieldset .has-warning .message li {
     .checkbox-card .card.center-align, .checkbox-card .card.align-center,
     .radio-card .card.center-align,
     .radio-card .card.align-center {
-      display: inline-block;
       float: none; }
+  .checkbox-card.is-block, .checkbox-card.block,
+  .radio-card.is-block,
+  .radio-card.block {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%; }
   .checkbox-card input:focus ~ label:before,
   .radio-card input:focus ~ label:before {
     box-shadow: none; }
@@ -2981,36 +2941,6 @@ fieldset .has-warning .message li {
     @media screen and (min-width: 1200px) {
       .app-menu .button--icon--main {
         right: calc(50% - (1200px/2) - 0.4rem); } }
-
-.app-menu.has-search .app-context {
-  padding: 0.5rem 1rem; }
-  @media all and (min-width: 40em) {
-    .app-menu.has-search .app-context {
-      display: flex;
-      align-items: center; } }
-.app-menu.has-search .app-title {
-  display: inline-block; }
-.app-menu.has-search .search-input {
-  padding-top: 0.5rem; }
-  @media all and (min-width: 40em) {
-    .app-menu.has-search .search-input {
-      margin-left: auto;
-      padding-top: 0rem;
-      width: auto; } }
-.app-menu.has-search fieldset input[type="text"] {
-  border-color: transparent; }
-
-.app-menu.has-search ~ .app-content {
-  padding-top: 5.75rem; }
-  @media all and (min-width: 40em) {
-    .app-menu.has-search ~ .app-content {
-      padding-top: 3.75rem; } }
-
-.app-menu.expanded.has-search ~ .app-content {
-  padding-top: 8rem; }
-  @media all and (min-width: 40em) {
-    .app-menu.expanded.has-search ~ .app-content {
-      padding-top: 5.75rem; } }
 
 .app-menu ~ .app-content {
   padding-top: 4.6rem; }
@@ -4441,7 +4371,7 @@ fieldset .has-warning .message li {
   transform: rotate(180deg); }
 
 /* -----------------------------
-Display Compatibility Banner 
+Display Compatibility Banner
 -------------------------------- */
 .grid-compatibility {
   background-color: #DD4B39;
@@ -4453,7 +4383,7 @@ Display Compatibility Banner
       display: none; } }
 
 /* -----------------------------
-Example App Mockups Below 
+Example App Mockups Below
 -------------------------------- */
 .grid-highlight, .grid-highlight > div {
   background-color: rgba(221, 226, 230, 0.5);
