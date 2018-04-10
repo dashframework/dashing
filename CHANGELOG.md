@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.10.0 - April 09, 2018
+**Added**
+* Added support for search bars in header.
+  
+*****
+  
 ### 1.9.1 - April 06, 2018
 **Updated**
 * Updated  styling for banner links
