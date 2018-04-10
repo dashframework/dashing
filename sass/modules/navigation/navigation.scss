@@ -174,7 +174,51 @@ $menu-color: $gray-100 !default; //Override this variable to change the color of
   }
 }
 
+//Use .has-search to add a search bar to the navigation
+.app-menu {
+    &.has-search {
+        .app-context {
+            padding: 0.5rem 1rem;
+            @media #{$tablet} {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .app-title {
+            display: inline-block;
+        }
+
+        .search-input {
+            padding-top: 0.5rem;
+
+            @media #{$tablet} {
+                margin-left: auto;
+                padding-top: 0rem;
+                width: auto;
+            }
+        }
+
+        fieldset input[type="text"] {
+            border-color: transparent;
+        }
+    }
+}
 //This sets padding of your app content relative to the size of your app-menu
+.app-menu.has-search ~ .app-content {
+    padding-top: 5.75rem;
+    @media #{$tablet} {
+        padding-top: 3.75rem;
+    }
+}
+
+.app-menu.expanded.has-search ~ .app-content {
+    padding-top: 8rem;
+    @media #{$tablet} {
+        padding-top: 5.75rem;
+    }
+}
+
 .app-menu ~ .app-content {
   padding-top: $menu-height-condensed;
 }
