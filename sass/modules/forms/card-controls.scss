@@ -11,11 +11,13 @@ $card-checkbox--padding: 1rem !default; //Padding of checkbox
   margin-right: 0.5rem;
 
   .card {
-    @extend .inline;
     float: none;
     margin: 0;
     padding: $card-checkbox--padding;
 
+    &:before {
+      display: inline-block;
+    }
     //disabled card
     &.disabled {
       background-color: $gray-200;
@@ -28,9 +30,15 @@ $card-checkbox--padding: 1rem !default; //Padding of checkbox
     //centers checkbox and radio button to card
     &.center-align,
     &.align-center {
-      display: inline-block;
       float: none;
     }
+  }
+
+  &.is-block,
+  &.block {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
   }
 
   input:focus ~ label:before { box-shadow: none; }
