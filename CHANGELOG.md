@@ -2,24 +2,36 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.10.0 - April 09, 2018
+**Added**
+* Added support for search bars in header.
+  
+*****
+  
+### 1.9.1 - April 06, 2018
+**Updated**
+* Updated  styling for banner links
+
+*****
+
 ### 1.9.0 - April 04, 2018
 **Added**
 * Added support for css grid. This comes with a new example page explaining the details.
-  
+
 *****
-  
+
 ### 1.8.3 - April 03, 2018
 **Fixed**
 * Fixed min-height on Date, Time, and Month inputs
-  
+
 *****
-  
+
 ### 1.8.2 - March 22, 2018
 **Updated**
 * Updated mobile styles for checkboxes and radio buttons
-  
+
 *****
-  
+
 ### 1.8.1 - March 22, 2018
 **Fixed**
 * Fixed scrollbars showing up in tooltips on Firefox and Edge

@@ -185,5 +185,90 @@ $menu-color: $gray-100 !default;</code>
 </div>
 </div>
 
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Navigation with Search <button class="button button--transparent button--copy-link" data-id="copyurl" id="Navigation_with_Search"></h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <nav class="app-menu has-search expanded" style="position: relative;">
+          <div class="app-context">
+            <div class="app-title">
+              <span>App Title</span>
+            </div>
+            <fieldset class="search-input">
+              <div class="input--add-on">
+                <input type="text" class="add-on--field" id="dashing-input-action" placeholder="Search..." />
+                <input type="submit" class="button button--green add-on--button" value="Submit">
+              </div>
+            </fieldset>
+          </div>
+          <ul class="app-navigation">
+            <li><a href="#" class="active">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#" target="blank">
+              Link 3
+              <i class="dashing-icon dashing-icon--new-tab flow-opposite"></i>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="column column--full">
+        <nav class="app-menu has-search" style="position: relative;">
+          <div class="app-context">
+            <div class="app-title">
+              <span>App Title</span>
+            </div>
+            <fieldset class="search-input">
+              <div class="input--add-on">
+                <input type="text" class="add-on--field" id="dashing-input-action" placeholder="Search..." />
+                <input type="submit" class="button button--green add-on--button" value="Submit">
+              </div>
+            </fieldset>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;nav class="app-menu has-search expanded" style="position: relative;"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;span&gt;App Title&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;fieldset class="search-input"&gt;
+      &lt;div class="input--add-on"&gt;
+        &lt;input type="text" class="add-on--field" id="dashing-input-action" placeholder="Search..." /&gt;
+        &lt;input type="submit" class="button button--green add-on--button" value="Submit"&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+  &lt;/div&gt;
+  &lt;ul class="app-navigation"&gt;
+    &lt;li&gt;&lt;a href="#" class="active"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" target="blank"&gt;
+      Link 3
+      &lt;i class="dashing-icon dashing-icon--new-tab flow-opposite"&gt;&lt;/i&gt;
+    &lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+<pre><code class="language-html">&lt;nav class="app-menu has-search" style="position: relative;"&gt;
+  &lt;div class="app-context"&gt;
+    &lt;div class="app-title"&gt;
+      &lt;span&gt;App Title&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;fieldset class="search-input"&gt;
+      &lt;div class="input--add-on"&gt;
+        &lt;input type="text" class="add-on--field" id="dashing-input-action" placeholder="Search..." /&gt;
+        &lt;input type="submit" class="button button--green add-on--button" value="Submit"&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code>
+</pre>
+</div>
+</div>
+
   </body>
 </html>
