@@ -34,18 +34,22 @@ $switch--off: $gray-250 !default; //Color of switch when off
     @include user-select(none);
     align-items: baseline;
     cursor: pointer;
-    display: flex;
+    display: inline-block;
     font-size: $font-size-normal;
     font-weight: normal;
     margin: 0.2rem 0;
+    @supports(display: flex) { display: flex; }
 
     &:before {
       border: 2px solid $gray-200;
+      display: inline-block; //required for IE11
       color: transparent;
       height: 20px; width: 20px;
       margin-right: 0.5rem;
     }
   }
+
+
 
   &.inline {
     display: inline-block;
@@ -179,10 +183,8 @@ $switch--off: $gray-250 !default; //Color of switch when off
       font-size: 1.7rem;
       line-height: 12px;
       padding: 0 4px;
-    	// position: absolute;
-    	// top: 2px; bottom: 0; left: 0;
 
-      @media #{$desktop} { font-size: 1.5rem; }
+      @media #{$tablet} { font-size: 1.5rem; }
     }
   }
 
@@ -223,7 +225,6 @@ $switch--off: $gray-250 !default; //Color of switch when off
   }
 
   //Radio Active
-  input:hover:not(:checked) ~ label,
   input:checked ~ label {
     &:before {
       color: $white;
