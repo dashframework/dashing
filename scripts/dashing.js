@@ -18,16 +18,16 @@ $(document).ready(function() {
     // }
   });
 
-   $('.dashing-tooltip').tooltipster({
+  $('.dashing-tooltip').tooltipster({
      trigger: 'custom',
      triggerOpen: {
-         mouseenter: true,
-         touchstart: true
+       mouseenter: true,
+       tap: true
      },
      triggerClose: {
-         mouseleave: true,
-         originClick: true,
-         touchleave: true
-     }
+       mouseleave: true,
+       originClick: true,
+       tap: true
+     },
   });
 });
