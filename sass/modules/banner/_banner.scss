@@ -32,6 +32,9 @@
 
   &.has-button {
     padding: $grid-gutter/2 $grid-gutter;
+    align-items: center;
+    button { white-space: nowrap; }
+    p { margin-right: $grid-gutter; }
   }
 
   a {
