@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.10.2 - April 11, 2018
+**Fixed**
+* Fixed button wrap inside card banners
+  
+*****
+  
 ### 1.10.1 - April 10, 2018
 **Fixed**
 * Fixed custom checkbox and radio button styles to add support for older browsers
