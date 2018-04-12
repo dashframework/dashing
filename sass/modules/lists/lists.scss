@@ -1,0 +1,55 @@
+.ordered-list--custom {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: step-counter;  /* Sets a counter named 'step-counter' and sets value to 0 */
+  li {
+    counter-increment: step-counter;  /* Increments 'step-counter' variable */
+    margin-bottom: $grid-gutter;
+    display: flex;
+    align-items: baseline;
+    &::before {
+      content: counter(step-counter); /* Displays the value of 'step-counter' */
+      margin-right: $grid-gutter/2;
+      font-size: 1rem;
+      background-color: $gray-200;
+      color: $black;
+      font-weight: $font-weight-semibold;
+      padding: .3rem .7rem;
+      border-radius: 50%;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &.ordered-list--blue {
+    li::before {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+  &.ordered-list--green {
+    li::before {
+      background-color: $green;
+      color: $white;
+    }
+  }
+  &.ordered-list--orange {
+    li::before {
+      background-color: $orange;
+      color: $black;
+    }
+  }
+  &.ordered-list--purple {
+    li::before {
+      background-color: $purple;
+      color: $white;
+    }
+  }
+  &.ordered-list--red {
+    li::before {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
