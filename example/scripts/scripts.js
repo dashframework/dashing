@@ -49,35 +49,41 @@ $(document).ready(function(){
 });
 
 $(function(){
-  $('.example-sidebar').on('click', '.chevron-dark:not(.rotate)',
+  $('.example-sidebar').on('click', 'h3:not(.is-open)',
     function(event){
       $(event.target).closest('.example-sidebar').find('ul').addClass('hidden');
       $(event.target).closest('.example-sidebar').find('.chevron-dark').removeClass('rotate');
+      $(event.target).closest('.example-sidebar').find('h3').removeClass('is-open');
 
       $(event.target).closest('h3').next('ul').removeClass('hidden');
-      $(event.target).addClass('rotate');
+      $(event.target).closest('h3').addClass('is-open');
+      $(event.target).closest('h3').find('.chevron-dark').addClass('rotate');
     }
   );
-  $('.example-sidebar').on('click', '.chevron-dark.rotate',
+  $('.example-sidebar').on('click', 'h3.is-open',
     function(event){
       $(event.target).closest('h3').next('ul').addClass('hidden');
-      $(event.target).removeClass('rotate');
+      $(event.target).closest('h3').removeClass('is-open');
+      $(event.target).closest('h3').find('.chevron-dark').removeClass('rotate');
     }
   );
-  $('.sub-nav').on('click', '.chevron-dark:not(.rotate)',
+
+  $('.sub-nav').on('click', 'h3:not(.is-open)',
     function(event){
       window.blah = event
       $(event.target).closest('.sub-nav').find('ul ul').addClass('hidden');
       $(event.target).closest('.sub-nav').find('.chevron-dark').removeClass('rotate');
 
       $(event.target).closest('li').find('ul').removeClass('hidden');
-      $(event.target).addClass('rotate');
+      $(event.target).closest('h3').addClass('is-open');
+      $(event.target).closest('h3').find('.chevron-dark').addClass('rotate');
     }
   );
-  $('.sub-nav').on('click', '.chevron-dark.rotate',
+  $('.sub-nav').on('click', 'h3.is-open',
     function(event){
       $(event.target).closest('li').find('ul').addClass('hidden');
-      $(event.target).removeClass('rotate');
+      $(event.target).closest('h3').removeClass('is-open');
+      $(event.target).closest('h3').find('.chevron-dark').removeClass('rotate');
     }
   );
 
@@ -171,7 +177,7 @@ function copyUrlToClipboard(text) {
       console.log(event.clipboardData.getData("text"))
     }
   });
-  
+
   try {
     var successful = document.execCommand('copy');
     var msg = successful ? 'successful' : 'unsuccessful';
