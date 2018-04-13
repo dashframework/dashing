@@ -179,12 +179,17 @@ $sidebar-width: 12rem;
 .example-sidebar {
 
   h3 {
+    user-select: none;
     border-radius: 5px;
     margin-bottom: .5rem;
     font-size: 1rem;
     padding: 0.3rem 0.5rem;
 
-    &.current {
+    &:hover {
+      background-color: $gray-100;
+    }
+
+    &.is-open {
       background-color: $gray-150;
       a { color: $blue; }
     }
