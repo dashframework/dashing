@@ -2679,11 +2679,6 @@ fieldset .has-warning .message li {
     .card .card-header.has-border {
       border-bottom: 2px solid #D4D4D4;
       padding-bottom: 1rem; }
-      .card .card--header.has-border + .card--content .card-banner,
-      .card .card--header.has-border + .card-content .card-banner,
-      .card .card-header.has-border + .card--content .card-banner,
-      .card .card-header.has-border + .card-content .card-banner {
-        margin-top: -1rem; }
   .card .card--content,
   .card .card-content {
     overflow: auto;
@@ -3604,37 +3599,6 @@ fieldset .has-warning .message li {
       background-color: #09AA66;
       border-radius: 15px; }
 
-.ordered-list--custom {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  counter-reset: step-counter;
-  /* Sets a counter named 'step-counter' and sets value to 0 */ }
-  .ordered-list--custom li {
-    counter-increment: step-counter;
-    /* Increments 'step-counter' variable */
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: baseline; }
-    .ordered-list--custom li::before {
-      content: counter(step-counter);
-      /* Displays the value of 'step-counter' */
-      margin-right: 0.5rem;
-      font-size: 1rem;
-      background-color: #D4D4D4;
-      color: #000000;
-      font-weight: 600;
-      padding: .3rem .7rem;
-      border-radius: 50%; }
-    .ordered-list--custom li:last-of-type {
-      margin-bottom: 0; }
-  .ordered-list--custom > *:not(li) {
-    /* Indent all content within <ol> to line up with the <li> */
-    text-indent: 2.5rem; }
-  .ordered-list--custom.ordered-list--sharing-blue li::before {
-    background-color: #71B9E0;
-    color: #FFFFFF; }
-
 .example-flex {
   overflow: auto; }
   .example-flex .column-flex {
@@ -4384,15 +4348,19 @@ fieldset .has-warning .message li {
 
 .side-navigation h3,
 .example-sidebar h3 {
+  user-select: none;
   border-radius: 5px;
   margin-bottom: .5rem;
   font-size: 1rem;
   padding: 0.3rem 0.5rem; }
-  .side-navigation h3.current,
-  .example-sidebar h3.current {
+  .side-navigation h3:hover,
+  .example-sidebar h3:hover {
+    background-color: #EDEDED; }
+  .side-navigation h3.is-open,
+  .example-sidebar h3.is-open {
     background-color: #E0E0E0; }
-    .side-navigation h3.current a,
-    .example-sidebar h3.current a {
+    .side-navigation h3.is-open a,
+    .example-sidebar h3.is-open a {
       color: #3F70C9; }
   .side-navigation h3 a,
   .example-sidebar h3 a {

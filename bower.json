@@ -2,23 +2,25 @@
   "name": "dashing",
   "version": "1.11.1",
   "main": "sass/application.scss",
-
   "homepage": "http://dashing.samaritanministries.org/",
   "description": "Style framework for Dash",
-
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/samaritanministries/dashing"
   },
-
   "ignore": [
     "README.md",
     "example",
-    "guidelines"
+    "guidelines",
+    "dashupdate.sh",
+    "dashutility.sh",
+    "CNAME"
   ],
-
   "dependencies": {
     "normalize-scss": "3.0.3"
+  },
+  "devDependencies": {
+    "dash-modal.js": "^3.0.3"
   }
 }
