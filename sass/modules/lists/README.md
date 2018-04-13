@@ -1,5 +1,5 @@
 # Dashing Custom Lists
-An ordered list should imply a sequence or order needs to happen. They are commonly used when giving instructions. View an [example](http://dashing.samaritanministries.org/example/templates/lists/) of Dashing Lists.
+An ordered list should imply a sequence or a certain order needs to happen. They are commonly used when giving instructions. View an [example](http://dashing.samaritanministries.org/example/templates/lists/) of Dashing Lists.
 
 ## Custom List Configurations
 | Tag class               | Effect               | Notes               |
@@ -11,7 +11,7 @@ An ordered list should imply a sequence or order needs to happen. They are commo
 ## Customization
 
 ### Custom List Color
-To create a custom list color, just include the ``.ordered-list--custom` class and specify your new class immediately after. In your new class, use the mixin to generate the correct styles.
+To create a custom list color just include the `.ordered-list--custom` class and specify your new class immediately after. In declaring your new class, use the ordered-list mixin to generate the correct styles.
 ```scss
 @mixin ordered-list($circle-color, $text-color)
 ```
