@@ -119,3 +119,13 @@
     color: lighten($color, 10%);
   }
 }
+
+/* List Mixins
+  =========================================================================== */
+//Custom Ordered List
+@mixin ordered-list($circle-color, $text-color) {
+  li::before {
+    background-color: $circle-color;
+    color: $text-color;
+  }
+}

@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.11.0 - April 13, 2018
+**Added**
+* Added Custom Ordered Lists styling
+  
+*****
+  
 ### 1.10.2 - April 11, 2018
 **Fixed**
 * Fixed button wrap inside card banners
