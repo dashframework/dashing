@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../css/example.css" rel="stylesheet">
-    <title>Footer</title>
+    <title>Lists</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../scripts/scripts.js"></script>
@@ -24,7 +24,7 @@
         <div class="app-content">
           <div class="row">
             <div class="column column--full">
-            <h2 class="example-header no-margin--top">Custom Ordered Lists <button class="button button--transparent button--copy-link" data-id="copyurl" id="ordered-lists"></h2>
+            <h2 class="example-header no-margin--top">Ordered Lists <button class="button button--transparent button--copy-link" data-id="copyurl" id="ordered-lists"></h2>
             <div class="row example-container">
               <div class="column column--full" style="overflow: auto;">
                 <ol class="ordered-list--custom">
@@ -36,46 +36,34 @@
               </div>
             </div>
             <div class="code-toggle"><i class="icon--code"></i></div>
-<pre><code class="language-html">&lt;!-- Apply the fixed class to the app-footer element to fix it to the bottom --&gt;
-&lt;footer class="app-footer fixed"&gt;
-  &lt;div class="row no-padding"&gt;
-    &lt;button class="float-left"&gt;Save&lt;/button&gt;
-    &lt;button class="button--green float-right"&gt;Submit&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/footer&gt;</code>
+<pre><code class="language-html">&lt;ol class="ordered-list--custom"&gt;
+  &lt;li&gt;This is the first item&lt;/li&gt;
+  &lt;li&gt;This is the second item&lt;/li&gt;
+  &lt;li&gt;This is the third item&lt;/li&gt;
+  &lt;li&gt;This is the fourth item&lt;/li&gt;
+&lt;/ol&gt;</code>
 </pre>
 </div>
+
 <div class="column column--full">
-<h2 class="example-header no-margin--top">List Color Options <button class="button button--transparent button--copy-link" data-id="copyurl" id="ordered-lists"></h2>
+<h2 class="example-header no-margin--top">Custom Colored Lists <button class="button button--transparent button--copy-link" data-id="copyurl" id="ordered-lists"></h2>
 <div class="row example-container">
   <div class="column column--full" style="overflow: auto;">
-    <ol class="ordered-list--custom ordered-list--blue" style="margin-bottom:1rem;">
-      <li>This is a blue custom list</li>
-    </ol>
-    <ol class="ordered-list--custom ordered-list--green" style="margin-bottom:1rem;">
-      <li>This is a green custom list</li>
-    </ol>
-    <ol class="ordered-list--custom ordered-list--orange" style="margin-bottom:1rem;">
-      <li>This is a orange custom list</li>
-    </ol>
-    <ol class="ordered-list--custom ordered-list--purple" style="margin-bottom:1rem;">
-      <li>This is a purple custom list</li>
-    </ol>
-    <ol class="ordered-list--custom ordered-list--red">
-      <li>This is a red custom list</li>
+    <ol class="ordered-list--custom ordered-list--sharing-blue">
+      <li>This is a custom colored list item</li>
     </ol>
   </div>
 </div>
 <div class="code-toggle"><i class="icon--code"></i></div>
-<pre><code class="language-html">&lt;!-- Apply the fixed class to the app-footer element to fix it to the bottom --&gt;
-&lt;footer class="app-footer fixed"&gt;
-&lt;div class="row no-padding"&gt;
-&lt;button class="float-left"&gt;Save&lt;/button&gt;
-&lt;button class="button--green float-right"&gt;Submit&lt;/button&gt;
-&lt;/div&gt;
-&lt;/footer&gt;</code>
+<pre><code class="language-html">&lt;ol class="ordered-list--custom ordered-list--sharing-blue"&gt;
+  &lt;li&gt;This is a custom colored list item&lt;/li&gt;
+&lt;/ol&gt;</code>
 </pre>
-
+<pre><code class="language-scss">//Example: Custom Colored Lists
+.ordered-list--sharing-blue {
+  @include ordered-list($sharing-blue, $white);
+}</code>
+</pre>
 </div>
 </div>
 

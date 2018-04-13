@@ -22,34 +22,11 @@
       margin-bottom: 0;
     }
   }
-  &.ordered-list--blue {
-    li::before {
-      background-color: $blue;
-      color: $white;
-    }
+  & > *:not(li) { /* Indent all content within <ol> to line up with the <li> */
+    text-indent: 2.5rem;
   }
-  &.ordered-list--green {
-    li::before {
-      background-color: $green;
-      color: $white;
-    }
-  }
-  &.ordered-list--orange {
-    li::before {
-      background-color: $orange;
-      color: $black;
-    }
-  }
-  &.ordered-list--purple {
-    li::before {
-      background-color: $purple;
-      color: $white;
-    }
-  }
-  &.ordered-list--red {
-    li::before {
-      background-color: $red;
-      color: $white;
-    }
+  //Example: Custom Colored Lists
+  &.ordered-list--sharing-blue {
+    @include ordered-list($sharing-blue, $white);
   }
 }

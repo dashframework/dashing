@@ -786,6 +786,8 @@ span.dashing-tooltip {
   =========================================================================== */
 /* Tag Mixins
   =========================================================================== */
+/* List Mixins
+  =========================================================================== */
 /* Core Variables
   =========================================================================== */
 /* Core Utility Classes
@@ -3621,20 +3623,11 @@ fieldset .has-warning .message li {
       border-radius: 50%; }
     .ordered-list--custom li:last-of-type {
       margin-bottom: 0; }
-  .ordered-list--custom.ordered-list--blue li::before {
-    background-color: #3F70C9;
-    color: #FFFFFF; }
-  .ordered-list--custom.ordered-list--green li::before {
-    background-color: #09AA66;
-    color: #FFFFFF; }
-  .ordered-list--custom.ordered-list--orange li::before {
-    background-color: #FFA11F;
-    color: #000000; }
-  .ordered-list--custom.ordered-list--purple li::before {
-    background-color: #9F65AE;
-    color: #FFFFFF; }
-  .ordered-list--custom.ordered-list--red li::before {
-    background-color: #DA3D30;
+  .ordered-list--custom > *:not(li) {
+    /* Indent all content within <ol> to line up with the <li> */
+    text-indent: 2.5rem; }
+  .ordered-list--custom.ordered-list--sharing-blue li::before {
+    background-color: #71B9E0;
     color: #FFFFFF; }
 
 .example-flex {
