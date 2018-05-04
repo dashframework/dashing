@@ -6,8 +6,8 @@ const PROJECT_ROOT = path.resolve(__dirname);
 module.exports = {
     devtool: "source-map",
     entry: [
-        "./example/scripts/load_bower_components.js",
-        "./example/scripts/main.js"
+        "./scripts/load_bower_components.js",
+        "./scripts/main.js"
     ],
     module: {
         loaders: [
@@ -23,8 +23,7 @@ module.exports = {
                 test: /\.ejs$/,
                 include: [
                     path.join(PROJECT_ROOT, "example"),
-                    path.join(PROJECT_ROOT, "scripts"),
-                    path.join(PROJECT_ROOT, "templates")
+                    path.join(PROJECT_ROOT, "scripts")
                 ],
                 loader: "ejs-compiled"
             }

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --config webpack.config.js --progress -w --colors --show-details",
+    "webpack": "webpack --config webpack.config.js --progress --colors --show-details",
     "start:dev": "webpack-dev-server"
   },
   "repository": {
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/samaritanministries/dashing#readme",
   "dependencies": {
     "normalize-scss": "3.0.3",
-    "npm": "^6.0.1"
+    "npm": "^6.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
