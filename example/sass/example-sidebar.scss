@@ -135,6 +135,7 @@ $sidebar-width: 12rem;
 }
 
 .button--sidebar-icon {
+  @extend .button--gray;
   border-radius: 0 5px 5px 0;
   position: absolute;
   top: 1.2rem;
@@ -142,7 +143,7 @@ $sidebar-width: 12rem;
   transition: all 0.3s !important;
   z-index: 2;
 
-  .sidebar-icon--menu:not(.dashing-icon) {
+  .sidebar-icon--menu:not(.dashing-icon--close) {
     background-image: url("../images/menu.svg");
     background-size: 100%;
     background-position: center;

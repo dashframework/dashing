@@ -11,7 +11,7 @@ i.dashing-clippy {
   display: inline-block;
 
   @media #{$phone} {
-    margin-left: -0.4rem;
+    margin: -0.6rem -0.4rem !important;
     padding: 0.6rem;
     border-radius: 50px;
     &:hover { background-color: rgba(85, 85, 85, 0.1); }
