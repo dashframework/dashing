@@ -3,7 +3,7 @@ import ModalView from "./view.js";
 $(function () {
     function showCloseableModal(editNeedView) {
         let dashModal = new DashModal.View({
-            modalSize: 'dash-overlay',
+            modalSize: 'modal-small',
             hasXButton: true,
             shouldCloseOnEscape: true,
             shouldCloseOnOverlay: true,
@@ -14,6 +14,5 @@ $(function () {
     $("[data-id=show-modal]").click(function () {
         let modalContainer = document.querySelector("[data-id=modal-container]")
         showCloseableModal(new ModalView());
-    });   
+    });
 });
-
