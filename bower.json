@@ -18,7 +18,8 @@
     "CNAME"
   ],
   "dependencies": {
-    "normalize-scss": "3.0.3"
+    "normalize-scss": "3.0.3",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "dash-modal.js": "^3.0.3"
