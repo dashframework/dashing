@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --config webpack.config.js --progress --colors --show-details",
+    "webpack": "webpack --config webpack.config.js --progress -w --colors --show-details",
     "start:dev": "webpack-dev-server"
   },
   "repository": {
