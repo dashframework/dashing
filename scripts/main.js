@@ -1,1 +1,0 @@
-import Modal from "example/scripts/modal";
