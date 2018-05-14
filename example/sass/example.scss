@@ -29,29 +29,6 @@
   max-width: 800px;
 }
 
-.button--sidebar-icon {
-  @extend .button--gray;
-  border-radius: 0 5px 5px 0;
-  position: absolute;
-  top: 1.2rem;
-  left: 0;
-  transition: all 0.3s !important;
-  z-index: 2;
-
-  .sidebar-icon--menu:not(.dashing-icon) {
-    background-image: url("../images/menu.svg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    height: 27px;
-    width: 16px;
-  }
-
-  @media #{$tablet} { display: none; }
-  &.sidebar-open { position: fixed; left: 80%; }
-}
-
 .code-toggle {
   background-color: $gray-150;
   border-radius: 0 0 5px 5px;
@@ -128,10 +105,10 @@ h2 {
     }
   }
 
-  &:hover, 
+  &:hover,
   &:active {
       .button--copy-link {
-        &:active, 
+        &:active,
         &:focus {
           &:after {
             content: "Copied";
