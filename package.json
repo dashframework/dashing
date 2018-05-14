@@ -28,7 +28,7 @@
   "homepage": "https://github.com/samaritanministries/dashing#readme",
   "dependencies": {
     "normalize-scss": "3.0.3",
-    "npm": "^6.0.0"
+    "npm": "^6.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
