@@ -1,9 +1,9 @@
 import ViewOne from "./views/view_1.js";
 import ViewTwo from "./views/view_2.js";
 import ViewThree from "./views/view_3.js";
-import ViewFour from "./views/view_2.js"
-import ViewFive from './views/view_1.js';
-import ViewSix from './views/view_3.js';
+import ViewFour from "./views/view_4.js"
+import ViewFive from './views/view_5.js';
+import ViewSix from './views/view_6.js';
 
 $(function () {
     function showCloseableModal(editNeedView) {

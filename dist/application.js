@@ -147,17 +147,29 @@
 
 	"use strict";
 	
-	var _view_ = __webpack_require__(19);
+	var _view_ = __webpack_require__(11);
 	
 	var _view_2 = _interopRequireDefault(_view_);
 	
-	var _view_3 = __webpack_require__(20);
+	var _view_3 = __webpack_require__(13);
 	
 	var _view_4 = _interopRequireDefault(_view_3);
 	
-	var _view_5 = __webpack_require__(21);
+	var _view_5 = __webpack_require__(15);
 	
 	var _view_6 = _interopRequireDefault(_view_5);
+	
+	var _view_7 = __webpack_require__(17);
+	
+	var _view_8 = _interopRequireDefault(_view_7);
+	
+	var _view_9 = __webpack_require__(19);
+	
+	var _view_10 = _interopRequireDefault(_view_9);
+	
+	var _view_11 = __webpack_require__(21);
+	
+	var _view_12 = _interopRequireDefault(_view_11);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -189,23 +201,69 @@
 	            showCloseableModal(new _view_6.default());
 	        }
 	        if (event.target === modalFour) {
-	            showCloseableModal(new _view_4.default());
+	            showCloseableModal(new _view_8.default());
 	        }
 	        if (event.target === modalFive) {
-	            showCloseableModal(new _view_2.default());
+	            showCloseableModal(new _view_10.default());
 	        }
 	        if (event.target === modalSix) {
-	            showCloseableModal(new _view_6.default());
+	            showCloseableModal(new _view_12.default());
 	        }
 	    });
 	});
 
 /***/ },
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ModalTemplate = __webpack_require__(12);
+	
+	var _class = function (_Backbone$View) {
+	    _inherits(_class, _Backbone$View);
+	
+	    function _class() {
+	        _classCallCheck(this, _class);
+	
+	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+	    }
+	
+	    _createClass(_class, [{
+	        key: 'initialize',
+	        value: function initialize() {}
+	    }, {
+	        key: 'modalSize',
+	        value: function modalSize() {
+	            return 'modal';
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            this.$el.html(ModalTemplate());
+	            return this;
+	        }
+	    }]);
+	
+	    return _class;
+	}(Backbone.View);
+	
+	exports.default = _class;
+
+/***/ },
+/* 12 */
 /***/ function(module, exports) {
 
 	module.exports = function anonymous(locals, filters, escape, rethrow) {
@@ -241,45 +299,7 @@
 	}
 
 /***/ },
-/* 16 */
-/***/ function(module, exports) {
-
-	module.exports = function anonymous(locals, filters, escape, rethrow) {
-	    escape = escape || function(html) {
-	        return String(html).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
-	    };
-	    var __stack = {
-	        lineno: 1,
-	        input: '<div class="modal-header">\r\n  <h3>Modal Header</h3>\r\n</div>\r\n\r\n<div class="modal-content">\r\n  <p>This is a small default modal</p>\r\n</div>\r\n\r\n<div class="modal-footer align-left">\r\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\r\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\r\n</div>\r\n\r\n',
-	        filename: "."
-	    };
-	    function rethrow(err, str, filename, lineno) {
-	        var lines = str.split("\n"), start = Math.max(lineno - 3, 0), end = Math.min(lines.length, lineno + 3);
-	        var context = lines.slice(start, end).map(function(line, i) {
-	            var curr = i + start + 1;
-	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
-	        }).join("\n");
-	        err.path = filename;
-	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
-	        throw err;
-	    }
-	    try {
-	        var buf = [];
-	        with (locals || {}) {
-	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a small default modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n\n');
-	            })();
-	        }
-	        return buf.join("");
-	    } catch (err) {
-	        rethrow(err, __stack.input, __stack.filename, __stack.lineno);
-	    }
-	}
-
-/***/ },
-/* 17 */,
-/* 18 */,
-/* 19 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -296,7 +316,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var ModalTemplate = __webpack_require__(15);
+	var ModalTemplate = __webpack_require__(14);
 	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
@@ -309,13 +329,11 @@
 	
 	    _createClass(_class, [{
 	        key: 'initialize',
-	        value: function initialize() {
-	            this.listenTo(this.modal, 'click', this.render);
-	        }
+	        value: function initialize() {}
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
-	            return 'modal';
+	            return 'modal-small';
 	        }
 	    }, {
 	        key: 'render',
@@ -331,7 +349,43 @@
 	exports.default = _class;
 
 /***/ },
-/* 20 */
+/* 14 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, filters, escape, rethrow) {
+	    escape = escape || function(html) {
+	        return String(html).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+	    };
+	    var __stack = {
+	        lineno: 1,
+	        input: '<div class="modal-header">\r\n  <h3>Modal Header</h3>\r\n</div>\r\n\r\n<div class="modal-content">\r\n  <p>This is a small default modal</p>\r\n  <p>Small Modal</p>\r\n</div>\r\n\r\n<div class="modal-footer align-left">\r\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\r\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\r\n</div>\r\n\r\n',
+	        filename: "."
+	    };
+	    function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n"), start = Math.max(lineno - 3, 0), end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    }
+	    try {
+	        var buf = [];
+	        with (locals || {}) {
+	            (function() {
+	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a small default modal</p>\n  <p>Small Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n\n');
+	            })();
+	        }
+	        return buf.join("");
+	    } catch (err) {
+	        rethrow(err, __stack.input, __stack.filename, __stack.lineno);
+	    }
+	}
+
+/***/ },
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -361,9 +415,93 @@
 	
 	    _createClass(_class, [{
 	        key: 'initialize',
-	        value: function initialize() {
-	            this.listenTo(this.modal, 'click', this.render);
+	        value: function initialize() {}
+	    }, {
+	        key: 'modalSize',
+	        value: function modalSize() {
+	            return 'modal-large';
 	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            this.$el.html(ModalTemplate());
+	            return this;
+	        }
+	    }]);
+	
+	    return _class;
+	}(Backbone.View);
+	
+	exports.default = _class;
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, filters, escape, rethrow) {
+	    escape = escape || function(html) {
+	        return String(html).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+	    };
+	    var __stack = {
+	        lineno: 1,
+	        input: '<div class="modal-header">\r\n  <h3>Modal Header</h3>\r\n</div>\r\n\r\n<div class="modal-content">\r\n  <p>This is a large modal</p>\r\n  <p>Large Modal</p>\r\n</div>\r\n\r\n<div class="modal-footer align-left">\r\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\r\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\r\n</div>\r\n',
+	        filename: "."
+	    };
+	    function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n"), start = Math.max(lineno - 3, 0), end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    }
+	    try {
+	        var buf = [];
+	        with (locals || {}) {
+	            (function() {
+	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a large modal</p>\n  <p>Large Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
+	            })();
+	        }
+	        return buf.join("");
+	    } catch (err) {
+	        rethrow(err, __stack.input, __stack.filename, __stack.lineno);
+	    }
+	}
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ModalTemplate = __webpack_require__(18);
+	
+	var _class = function (_Backbone$View) {
+	    _inherits(_class, _Backbone$View);
+	
+	    function _class() {
+	        _classCallCheck(this, _class);
+	
+	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+	    }
+	
+	    _createClass(_class, [{
+	        key: 'initialize',
+	        value: function initialize() {}
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
@@ -381,6 +519,128 @@
 	}(Backbone.View);
 	
 	exports.default = _class;
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, filters, escape, rethrow) {
+	    escape = escape || function(html) {
+	        return String(html).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+	    };
+	    var __stack = {
+	        lineno: 1,
+	        input: '<div class="modal-header">\r\n  <h3>Modal Header</h3>\r\n</div>\r\n\r\n<div class="modal-content">\r\n  <p>This is a small modal</p>\r\n  <p>Small Modal</p>\r\n</div>\r\n\r\n<div class="modal-footer align-left">\r\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\r\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\r\n</div>\r\n',
+	        filename: "."
+	    };
+	    function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n"), start = Math.max(lineno - 3, 0), end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    }
+	    try {
+	        var buf = [];
+	        with (locals || {}) {
+	            (function() {
+	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a small modal</p>\n  <p>Small Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
+	            })();
+	        }
+	        return buf.join("");
+	    } catch (err) {
+	        rethrow(err, __stack.input, __stack.filename, __stack.lineno);
+	    }
+	}
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ModalTemplate = __webpack_require__(20);
+	
+	var _class = function (_Backbone$View) {
+	    _inherits(_class, _Backbone$View);
+	
+	    function _class() {
+	        _classCallCheck(this, _class);
+	
+	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+	    }
+	
+	    _createClass(_class, [{
+	        key: 'initialize',
+	        value: function initialize() {}
+	    }, {
+	        key: 'modalSize',
+	        value: function modalSize() {
+	            return 'modal';
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            this.$el.html(ModalTemplate());
+	            return this;
+	        }
+	    }]);
+	
+	    return _class;
+	}(Backbone.View);
+	
+	exports.default = _class;
+
+/***/ },
+/* 20 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, filters, escape, rethrow) {
+	    escape = escape || function(html) {
+	        return String(html).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+	    };
+	    var __stack = {
+	        lineno: 1,
+	        input: '<div class="modal-header">\r\n  <h3>Modal Header</h3>\r\n</div>\r\n\r\n<div class="modal-content">\r\n  <p>This is a default modal</p>\r\n</div>\r\n\r\n<div class="modal-footer align-left">\r\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\r\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\r\n</div>\r\n',
+	        filename: "."
+	    };
+	    function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n"), start = Math.max(lineno - 3, 0), end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    }
+	    try {
+	        var buf = [];
+	        with (locals || {}) {
+	            (function() {
+	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a default modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
+	            })();
+	        }
+	        return buf.join("");
+	    } catch (err) {
+	        rethrow(err, __stack.input, __stack.filename, __stack.lineno);
+	    }
+	}
 
 /***/ },
 /* 21 */
@@ -413,9 +673,7 @@
 	
 	    _createClass(_class, [{
 	        key: 'initialize',
-	        value: function initialize() {
-	            this.listenTo(this.modal, 'click', this.render);
-	        }
+	        value: function initialize() {}
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
@@ -444,7 +702,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-	        input: '<div class="modal-header">\r\n  <h3>Modal Header</h3>\r\n</div>\r\n\r\n<div class="modal-content">\r\n  <p>This is a large modal</p>\r\n</div>\r\n\r\n<div class="modal-footer align-left">\r\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\r\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\r\n</div>\r\n',
+	        input: '<div class="modal-header">\r\n  <h3>Modal Header</h3>\r\n</div>\r\n\r\n<div class="modal-content">\r\n  <p>This is a large modal</p>\r\n  <p>Large Modal</p>\r\n</div>\r\n\r\n<div class="modal-footer align-left">\r\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\r\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\r\n</div>\r\n',
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -461,7 +719,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a large modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
+	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a large modal</p>\n  <p>Large Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
 	            })();
 	        }
 	        return buf.join("");
