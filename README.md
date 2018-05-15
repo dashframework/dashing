@@ -134,6 +134,16 @@ Every module contains an example file that allows you to preview the look and fe
 git clone https://github.com/dashframework/dashing.git
 ```
 
+### Running the project
+
+```bash
+./dashutilitiy.sh
+```
+
+```bash
+npm run webpack
+```
+
 ### Releasing a new version
 
 1. Build the Sass and compress the CSS
