@@ -35,7 +35,6 @@
   &.modal-large { max-width: 45rem; }
 
   .modal-header, .modal-content, .modal-footer {
-    text-align: center;
     padding: $grid-gutter;
 
     hr {
@@ -56,15 +55,18 @@
     margin-left: -2rem;
   }
 
-  .modal-header { border-bottom: 2px solid $gray-150; }
+  .modal-header {
+    border-bottom: 2px solid $gray-150;
+    text-align: center;
+  }
 
   .modal-content {
     p {
-      font-size: $font-size-medium;
-      margin: 0.5rem;
-      line-height: 1.7rem;
-      color: $gray-500;
+      line-height: 1.4rem;
     }
+
+    p:first-of-type { margin-top: 0; }
+    p:last-of-type { margin-bottom: 0; }
   }
 
   .modal-footer { background-color: $gray-100; }

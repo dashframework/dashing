@@ -134,14 +134,6 @@ Every module contains an example file that allows you to preview the look and fe
 git clone https://github.com/dashframework/dashing.git
 ```
 
-```bash
-bower install
-```
-
-```bash
-npm install
-```
-
 ### Running the project
 
 ```bash
