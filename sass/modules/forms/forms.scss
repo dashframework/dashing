@@ -76,8 +76,8 @@ fieldset {
     .add-on--before,
     .add-on--after {
       width: 5rem; //set to fix forms escaping from headers on mobile
-      @media #{$tablet} { 
-        width: auto; 
+      @media #{$tablet} {
+        width: auto;
       }
       flex-grow: 1;
     }
@@ -126,7 +126,7 @@ fieldset {
       font-weight: 600;
       pointer-events: none;
       position: absolute;
-      right: 2rem; bottom: calc(#{$grid-gutter} * 2);
+      right: 2rem; top: calc(#{$grid-gutter} + 2.4rem)
     }
 
     &.has-error:after { color: $red-400; }
