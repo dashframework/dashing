@@ -272,7 +272,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a data modal. Typically, this will be set to the default size and will inlude a few inputs.</p>\n  <p>This is a data modal. Typically, this will be set to the default size and will inlude a few inputs.</p>\n\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n',
+	        input: '<div class="modal-header">\n  <h3>Default Modal</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n\n</div>\n',
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -289,7 +289,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a data modal. Typically, this will be set to the default size and will inlude a few inputs.</p>\n  <p>This is a data modal. Typically, this will be set to the default size and will inlude a few inputs.</p>\n\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
+	                buf.push('<div class="modal-header">\n  <h3>Default Modal</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n\n</div>\n');
 	            })();
 	        }
 	        return buf.join("");
@@ -358,7 +358,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a small default modal</p>\n  <p>Small Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n\n',
+	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n</div>\n',
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -375,7 +375,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a small default modal</p>\n  <p>Small Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n\n');
+	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n</div>\n');
 	            })();
 	        }
 	        return buf.join("");
