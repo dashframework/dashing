@@ -38,14 +38,19 @@
             </div>
             <div class="code-toggle"><i class="icon--code"></i></div>
 
-<pre><code class="language-html">&lt;nav class="app-menu"&gt;
-  &lt;div class="app-context"&gt;
-    &lt;div class="app-title"&gt;App Title&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Default Modal&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="column column--full"&gt;
+      &lt;h3&gt;What should I put inside a modal?&lt;/h3&gt;
+      &lt;p&gt;All modal content should be contained within a &lt;code class="example-text"&gt;modal-content&lt;/code&gt; element.&lt;/p&gt;
+      &lt;p&gt;If your modal is strictly informational and no action is required from your user, you do not need to include a &lt;code class="example-text"&gt;modal-footer&lt;/code&gt; element. The user can dismiss the modal by clicking the &lt;code class="example-text"&gt;×&lt;/code&gt;, hitting their &lt;code class="example-text"&gt;esc&lt;/code&gt; key or clicking ouside of the modal on the overlay.&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/nav&gt;</code>
-</pre>
-<pre><code class="language-scss">//Include this variable in your theme file to change the color of your header
-$menu-color: $gray-100 !default;</code>
+&lt;/div&gt;</code>
 </pre>
 </div>
 </div>
@@ -73,21 +78,48 @@ $menu-color: $gray-100 !default;</code>
 
 <div class="row">
   <div class="column column--full">
-  <h2 class="example-header">Large Modal <button class="button button--transparent button--copy-link" data-id="copyurl" id="Large_Modal"></h2>
+  <h2 class="example-header">Data Modal<button class="button button--transparent button--copy-link" data-id="copyurl" id="Data_Modal"></h2>
   <div class="row example-container">
     <div class="column column--full">
       <button data-id="show-modal-3">Open Modal</button>
     </div>
   </div>
   <div class="code-toggle"><i class="icon--code"></i></div>
-<pre><code class="language-html">&lt;nav class="app-menu"&gt;
-&lt;div class="app-context"&gt;
-&lt;div class="app-title"&gt;App Title&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Data Modal&lt;/h3&gt;
 &lt;/div&gt;
-&lt;/nav&gt;</code>
-</pre>
-<pre><code class="language-scss">//Include this variable in your theme file to change the color of your header
-$menu-color: $gray-100 !default;</code>
+
+&lt;div class="modal-content"&gt;
+  &lt;fieldset class="row row--nested"&gt;
+    &lt;div class="column column--half column--nested"&gt;
+      &lt;label for="firstName"&gt;First Name&lt;/label&gt;
+      &lt;input type="text" name="firstName" value=""&gt;
+    &lt;/div&gt;
+    &lt;div class="column column--half column--nested"&gt;
+      &lt;label for="lastName"&gt;Last Name&lt;/label&gt;
+      &lt;input type="text" name="lastName" value=""&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class="row row--nested"&gt;
+    &lt;div class="column column--half column--nested"&gt;
+      &lt;label for="dateOfBirth"&gt;Date of Birth&lt;/label&gt;
+      &lt;input type="date" name="dateOfBirth" value=""&gt;
+    &lt;/div&gt;
+    &lt;div class="column column--half column--nested select--has-icon"&gt;
+      &lt;label for="gender"&gt;Gender&lt;/label&gt;
+      &lt;select class="" name="gender"&gt;
+        &lt;option value="SelectOne" selected disabled&gt;Select One...&lt;/option&gt;
+        &lt;option value="male"&gt;Male&lt;/option&gt;
+        &lt;option value="female"&gt;Female&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-footer align-left"&gt;
+  &lt;button data-action="update-need-types" class="button button--smooth button--primary"&gt;Save &amp; Close&lt;/button&gt;
+  &lt;button data-id="close" class="button button--transparent button--grey"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;</code>
 </pre>
 </div>
 </div>

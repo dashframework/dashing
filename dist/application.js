@@ -387,7 +387,7 @@
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
-	            return 'modal-large';
+	            return 'modal';
 	        }
 	    }, {
 	        key: 'render',
@@ -412,7 +412,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a large modal</p>\n  <p>Large Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n',
+	        input: '<div class="modal-header">\n  <h3>Data Modal</h3>\n</div>\n\n<div class="modal-content">\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="firstName">First Name</label>\n      <input type="text" name="firstName" value="">\n    </div>\n    <div class="column column--half column--nested">\n      <label for="lastName">Last Name</label>\n      <input type="text" name="lastName" value="">\n    </div>\n  </fieldset>\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="dateOfBirth">Date of Birth</label>\n      <input type="date" name="dateOfBirth" value="">\n    </div>\n    <div class="column column--half column--nested select--has-icon">\n      <label for="gender">Gender</label>\n      <select class="" name="gender">\n        <option value="SelectOne" selected disabled>Select One...</option>\n        <option value="male">Male</option>\n        <option value="female">Female</option>\n      </select>\n    </div>\n  </fieldset>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n',
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -429,7 +429,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <p>This is a large modal</p>\n  <p>Large Modal</p>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
+	                buf.push('<div class="modal-header">\n  <h3>Data Modal</h3>\n</div>\n\n<div class="modal-content">\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="firstName">First Name</label>\n      <input type="text" name="firstName" value="">\n    </div>\n    <div class="column column--half column--nested">\n      <label for="lastName">Last Name</label>\n      <input type="text" name="lastName" value="">\n    </div>\n  </fieldset>\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="dateOfBirth">Date of Birth</label>\n      <input type="date" name="dateOfBirth" value="">\n    </div>\n    <div class="column column--half column--nested select--has-icon">\n      <label for="gender">Gender</label>\n      <select class="" name="gender">\n        <option value="SelectOne" selected disabled>Select One...</option>\n        <option value="male">Male</option>\n        <option value="female">Female</option>\n      </select>\n    </div>\n  </fieldset>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save &amp; Close</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
 	            })();
 	        }
 	        return buf.join("");
