@@ -44,8 +44,8 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./example/scripts/load_bower_components.js\""); }());
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./example/scripts/main.js\""); }());
+	__webpack_require__(1);
+	module.exports = __webpack_require__(9);
 
 
 /***/ }),
@@ -53,53 +53,21 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-
+	
 	__webpack_require__(2);
-
+	
 	__webpack_require__(5);
-
+	
 	__webpack_require__(7);
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(3)(__webpack_require__(4))
+	require("!!/Users/jrauh/_Workspaces/dashing/node_modules/script-loader/addScript.js")(require("!!/Users/jrauh/_Workspaces/dashing/node_modules/raw-loader/index.js!/Users/jrauh/_Workspaces/dashing/bower_components/underscore/underscore.js"))
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	module.exports = function(src) {
-		function log(error) {
-			(typeof console !== "undefined")
-			&& (console.error || console.log)("[Script Loader]", error);
-		}
-
-		// Check for IE =< 8
-		function isIE() {
-			return typeof attachEvent !== "undefined" && typeof addEventListener === "undefined";
-		}
-
-		try {
-			if (typeof execScript !== "undefined" && isIE()) {
-				execScript(src);
-			} else if (typeof eval !== "undefined") {
-				eval.call(null, src);
-			} else {
-				log("EvalError: No eval function available");
-			}
-		} catch (error) {
-			log(error);
-		}
-	}
-
-
-/***/ }),
+/* 3 */,
 /* 4 */
 /***/ (function(module, exports) {
 
@@ -109,7 +77,7 @@
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(3)(__webpack_require__(6))
+	require("!!/Users/jrauh/_Workspaces/dashing/node_modules/script-loader/addScript.js")(require("!!/Users/jrauh/_Workspaces/dashing/node_modules/raw-loader/index.js!/Users/jrauh/_Workspaces/dashing/bower_components/jquery/dist/jquery.js"))
 
 /***/ }),
 /* 6 */
@@ -121,7 +89,7 @@
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(3)(__webpack_require__(8))
+	require("!!/Users/jrauh/_Workspaces/dashing/node_modules/script-loader/addScript.js")(require("!!/Users/jrauh/_Workspaces/dashing/node_modules/raw-loader/index.js!/Users/jrauh/_Workspaces/dashing/bower_components/backbone/backbone.js"))
 
 /***/ }),
 /* 8 */
@@ -134,9 +102,9 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-
+	
 	var _modal = __webpack_require__(10);
-
+	
 	var _modal2 = _interopRequireDefault(_modal);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -146,33 +114,33 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-
+	
 	var _view_ = __webpack_require__(11);
-
+	
 	var _view_2 = _interopRequireDefault(_view_);
-
+	
 	var _view_3 = __webpack_require__(13);
-
+	
 	var _view_4 = _interopRequireDefault(_view_3);
-
+	
 	var _view_5 = __webpack_require__(15);
-
+	
 	var _view_6 = _interopRequireDefault(_view_5);
-
+	
 	var _view_7 = __webpack_require__(17);
-
+	
 	var _view_8 = _interopRequireDefault(_view_7);
-
+	
 	var _view_9 = __webpack_require__(19);
-
+	
 	var _view_10 = _interopRequireDefault(_view_9);
-
+	
 	var _view_11 = __webpack_require__(21);
-
+	
 	var _view_12 = _interopRequireDefault(_view_11);
-
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+	
 	$(function () {
 	    function showCloseableModal(editNeedView) {
 	        var dashModal = new DashModal.View({
@@ -217,30 +185,30 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
+	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
+	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
+	
 	var ModalTemplate = __webpack_require__(12);
-
+	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
-
+	
 	    function _class() {
 	        _classCallCheck(this, _class);
-
+	
 	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	    }
-
+	
 	    _createClass(_class, [{
 	        key: 'initialize',
 	        value: function initialize() {}
@@ -256,10 +224,10 @@
 	            return this;
 	        }
 	    }]);
-
+	
 	    return _class;
 	}(Backbone.View);
-
+	
 	exports.default = _class;
 
 /***/ }),
@@ -303,30 +271,30 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
+	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
+	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
+	
 	var ModalTemplate = __webpack_require__(14);
-
+	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
-
+	
 	    function _class() {
 	        _classCallCheck(this, _class);
-
+	
 	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	    }
-
+	
 	    _createClass(_class, [{
 	        key: 'initialize',
 	        value: function initialize() {}
@@ -342,10 +310,10 @@
 	            return this;
 	        }
 	    }]);
-
+	
 	    return _class;
 	}(Backbone.View);
-
+	
 	exports.default = _class;
 
 /***/ }),
@@ -358,7 +326,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n</div>\n',
+	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--green">Agree & Continue</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n',
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -375,7 +343,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n</div>\n');
+	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  <button data-action="update-need-types" class="button button--smooth button--green">Agree & Continue</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
 	            })();
 	        }
 	        return buf.join("");
@@ -389,30 +357,30 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
+	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
+	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
+	
 	var ModalTemplate = __webpack_require__(16);
-
+	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
-
+	
 	    function _class() {
 	        _classCallCheck(this, _class);
-
+	
 	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	    }
-
+	
 	    _createClass(_class, [{
 	        key: 'initialize',
 	        value: function initialize() {}
@@ -428,10 +396,10 @@
 	            return this;
 	        }
 	    }]);
-
+	
 	    return _class;
 	}(Backbone.View);
-
+	
 	exports.default = _class;
 
 /***/ }),
@@ -475,30 +443,30 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
+	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
+	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
+	
 	var ModalTemplate = __webpack_require__(18);
-
+	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
-
+	
 	    function _class() {
 	        _classCallCheck(this, _class);
-
+	
 	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	    }
-
+	
 	    _createClass(_class, [{
 	        key: 'initialize',
 	        value: function initialize() {}
@@ -514,10 +482,10 @@
 	            return this;
 	        }
 	    }]);
-
+	
 	    return _class;
 	}(Backbone.View);
-
+	
 	exports.default = _class;
 
 /***/ }),
@@ -561,30 +529,30 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
+	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
+	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
+	
 	var ModalTemplate = __webpack_require__(20);
-
+	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
-
+	
 	    function _class() {
 	        _classCallCheck(this, _class);
-
+	
 	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	    }
-
+	
 	    _createClass(_class, [{
 	        key: 'initialize',
 	        value: function initialize() {}
@@ -600,10 +568,10 @@
 	            return this;
 	        }
 	    }]);
-
+	
 	    return _class;
 	}(Backbone.View);
-
+	
 	exports.default = _class;
 
 /***/ }),
@@ -647,30 +615,30 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
+	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
+	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
+	
 	var ModalTemplate = __webpack_require__(22);
-
+	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
-
+	
 	    function _class() {
 	        _classCallCheck(this, _class);
-
+	
 	        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	    }
-
+	
 	    _createClass(_class, [{
 	        key: 'initialize',
 	        value: function initialize() {}
@@ -686,10 +654,10 @@
 	            return this;
 	        }
 	    }]);
-
+	
 	    return _class;
 	}(Backbone.View);
-
+	
 	exports.default = _class;
 
 /***/ }),
