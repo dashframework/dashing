@@ -4,7 +4,7 @@ export default class extends Backbone.View {
     initialize() {
     }
     modalSize(){
-        return 'modal-large'
+        return 'modal'
     }
     render() {
         this.$el.html(ModalTemplate());
