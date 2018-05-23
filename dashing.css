@@ -2763,10 +2763,6 @@ fieldset .has-warning .message li {
     text-align: center; }
   .dash-modal .modal-content p {
     line-height: 1.4rem; }
-  .dash-modal .modal-content p:first-of-type {
-    margin-top: 0; }
-  .dash-modal .modal-content p:last-of-type {
-    margin-bottom: 0; }
   .dash-modal .modal-footer {
     background-color: #EDEDED; }
   .dash-modal .dashing-icon--close:before {
