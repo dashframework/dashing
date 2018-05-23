@@ -1,0 +1,26 @@
+//STATE
+.has-tooltip { @include user-select(none); }
+
+//MODULE
+i.dashing-tooltip,
+i.dashing-clippy {
+	@extend .dashing-icon;
+	@extend .dashing-icon--question-filled;
+	@extend .dashing-icon--gray;
+	cursor: help;
+  display: inline-block;
+
+  @media #{$phone} {
+    margin: -0.6rem -0.4rem !important;
+    padding: 0.6rem;
+    border-radius: 50px;
+    &:hover { background-color: rgba(85, 85, 85, 0.1); }
+  }
+}
+
+span .dashing-tooltip,
+p .dashing-tooltip {
+  margin-left: 0.2rem;
+}
+
+span.dashing-tooltip { display: inline-block; }
