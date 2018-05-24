@@ -1,10 +1,10 @@
-let ModalTemplate = require('../templates/template_4.ejs')
+let ModalTemplate = require('../templates/modal_dialog.ejs')
 
 export default class extends Backbone.View {
     initialize() {
     }
     modalSize(){
-        return 'modal-small'
+        return 'modal'
     }
     render() {
         this.$el.html(ModalTemplate());
