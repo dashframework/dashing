@@ -2763,6 +2763,20 @@ fieldset .has-warning .message li {
     text-align: center; }
   .dash-modal .modal-content p {
     line-height: 1.4rem; }
+  .dash-modal .modal-content.has-video {
+    padding: 0;
+    position: relative;
+    padding-bottom: 56.3%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    transform: translateY(0); }
+    .dash-modal .modal-content.has-video iframe.video-modal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .dash-modal .modal-footer {
     background-color: #EDEDED; }
   .dash-modal .dashing-icon--close:before {
