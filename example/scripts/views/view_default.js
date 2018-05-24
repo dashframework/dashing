@@ -1,4 +1,4 @@
-let ModalTemplate = require('../templates/template_3.ejs')
+let ModalTemplate = require('../templates/modal_default.ejs')
 
 export default class extends Backbone.View {
     initialize() {
