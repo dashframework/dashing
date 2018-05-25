@@ -578,7 +578,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-	        input: '<div class="modal-header">\n  <h3>Learn about Samaritan Basic</h3>\n</div>\n\n<div class="modal-content has-video">\n  <iframe src="https://player.vimeo.com/video/232680932?title=0&amp;badge=0&amp;portrait=0&amp;byline=0&amp;color=754d85&amp;autoplay=true" class="video-modal" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>\n</div>\n\n<div class="modal-footer align-center">\n  <button data-id="close" class="button button--smooth button--blue">Finish watching video</button>\n</div>\n',
+	        input: '<div class="modal-header">\n  <h3>Learn about Samaritan Basic</h3>\n</div>\n\n<div class="modal-content has-video">\n  <iframe src="https://player.vimeo.com/video/232680932?title=0&amp;badge=0&amp;portrait=0&amp;byline=0&amp;color=754d85&amp;autoplay=true" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>\n</div>\n\n<div class="modal-footer align-center">\n  <button data-id="close" class="button button--smooth button--blue">Finish watching video</button>\n</div>\n',
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -595,7 +595,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Learn about Samaritan Basic</h3>\n</div>\n\n<div class="modal-content has-video">\n  <iframe src="https://player.vimeo.com/video/232680932?title=0&amp;badge=0&amp;portrait=0&amp;byline=0&amp;color=754d85&amp;autoplay=true" class="video-modal" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>\n</div>\n\n<div class="modal-footer align-center">\n  <button data-id="close" class="button button--smooth button--blue">Finish watching video</button>\n</div>\n');
+	                buf.push('<div class="modal-header">\n  <h3>Learn about Samaritan Basic</h3>\n</div>\n\n<div class="modal-content has-video">\n  <iframe src="https://player.vimeo.com/video/232680932?title=0&amp;badge=0&amp;portrait=0&amp;byline=0&amp;color=754d85&amp;autoplay=true" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>\n</div>\n\n<div class="modal-footer align-center">\n  <button data-id="close" class="button button--smooth button--blue">Finish watching video</button>\n</div>\n');
 	            })();
 	        }
 	        return buf.join("");
