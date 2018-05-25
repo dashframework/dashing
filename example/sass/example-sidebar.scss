@@ -142,7 +142,7 @@ $sidebar-width: 12rem;
   transition: all 0.3s !important;
   z-index: 2;
 
-  .sidebar-icon--menu:not(.dashing-icon) {
+  .sidebar-icon--menu:not(.dashing-icon--close) {
     background-image: url("../images/menu.svg");
     background-size: 100%;
     background-position: center;
