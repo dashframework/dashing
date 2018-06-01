@@ -147,7 +147,6 @@
 
 	"use strict";
 	
-<<<<<<< HEAD
 	var _view_default = __webpack_require__(11);
 	
 	var _view_default2 = _interopRequireDefault(_view_default);
@@ -169,29 +168,6 @@
 	var _view_dialog2 = _interopRequireDefault(_view_dialog);
 	
 	var _view_large = __webpack_require__(21);
-=======
-	var _view_default = __webpack_require__(27);
-	
-	var _view_default2 = _interopRequireDefault(_view_default);
-	
-	var _view_small = __webpack_require__(26);
-	
-	var _view_small2 = _interopRequireDefault(_view_small);
-	
-	var _view_data = __webpack_require__(33);
-	
-	var _view_data2 = _interopRequireDefault(_view_data);
-	
-	var _view_video = __webpack_require__(32);
-	
-	var _view_video2 = _interopRequireDefault(_view_video);
-	
-	var _view_dialog = __webpack_require__(29);
-	
-	var _view_dialog2 = _interopRequireDefault(_view_dialog);
-	
-	var _view_large = __webpack_require__(24);
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	
 	var _view_large2 = _interopRequireDefault(_view_large);
 	
@@ -237,59 +213,7 @@
 	});
 
 /***/ }),
-<<<<<<< HEAD
 /* 11 */
-=======
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */
-/***/ (function(module, exports) {
-
-	module.exports = function anonymous(locals, filters, escape, rethrow) {
-	    escape = escape || function(html) {
-	        return String(html).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
-	    };
-	    var __stack = {
-	        lineno: 1,
-	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <p>Modal content</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  Modal footer\n</div>\n',
-	        filename: "."
-	    };
-	    function rethrow(err, str, filename, lineno) {
-	        var lines = str.split("\n"), start = Math.max(lineno - 3, 0), end = Math.min(lines.length, lineno + 3);
-	        var context = lines.slice(start, end).map(function(line, i) {
-	            var curr = i + start + 1;
-	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
-	        }).join("\n");
-	        err.path = filename;
-	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
-	        throw err;
-	    }
-	    try {
-	        var buf = [];
-	        with (locals || {}) {
-	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <p>Modal content</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  Modal footer\n</div>\n');
-	            })();
-	        }
-	        return buf.join("");
-	    } catch (err) {
-	        rethrow(err, __stack.input, __stack.filename, __stack.lineno);
-	    }
-	}
-
-/***/ }),
-/* 24 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -306,11 +230,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-<<<<<<< HEAD
 	var ModalTemplate = __webpack_require__(12);
-=======
-	var ModalTemplate = __webpack_require__(23);
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
@@ -327,11 +247,7 @@
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
-<<<<<<< HEAD
 	            return 'modal';
-=======
-	            return 'modal-large';
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	        }
 	    }, {
 	        key: 'render',
@@ -347,11 +263,7 @@
 	exports.default = _class;
 
 /***/ }),
-<<<<<<< HEAD
 /* 12 */
-=======
-/* 25 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports) {
 
 	module.exports = function anonymous(locals, filters, escape, rethrow) {
@@ -387,11 +299,7 @@
 	}
 
 /***/ }),
-<<<<<<< HEAD
 /* 13 */
-=======
-/* 26 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -408,11 +316,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-<<<<<<< HEAD
 	var ModalTemplate = __webpack_require__(14);
-=======
-	var ModalTemplate = __webpack_require__(25);
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
@@ -445,7 +349,6 @@
 	exports.default = _class;
 
 /***/ }),
-<<<<<<< HEAD
 /* 14 */
 /***/ (function(module, exports) {
 
@@ -483,9 +386,6 @@
 
 /***/ }),
 /* 15 */
-=======
-/* 27 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -502,11 +402,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-<<<<<<< HEAD
 	var ModalTemplate = __webpack_require__(16);
-=======
-	var ModalTemplate = __webpack_require__(28);
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
@@ -539,11 +435,7 @@
 	exports.default = _class;
 
 /***/ }),
-<<<<<<< HEAD
 /* 16 */
-=======
-/* 28 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports) {
 
 	module.exports = function anonymous(locals, filters, escape, rethrow) {
@@ -552,11 +444,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-<<<<<<< HEAD
 	        input: '<div class="modal-header">\n  <h3>Edit Member</h3>\n</div>\n\n<div class="modal-content">\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="firstName">First Name</label>\n      <input type="text" name="firstName" value="Ryan">\n    </div>\n    <div class="column column--half column--nested">\n      <label for="lastName">Last Name</label>\n      <input type="text" name="lastName" value="Fitz">\n    </div>\n  </fieldset>\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="dateOfBirth">Date of Birth</label>\n      <input type="date" name="dateOfBirth" value="1986-01-18">\n    </div>\n    <div class="column column--half column--nested select--has-icon">\n      <label for="gender">Gender</label>\n      <select class="" name="gender">\n        <option value="male">Male</option>\n        <option value="female">Female</option>\n      </select>\n    </div>\n  </fieldset>\n</div>\n\n<div class="modal-footer">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n',
-=======
-	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <p>Modal content</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  Modal footer\n</div>\n',
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -573,11 +461,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-<<<<<<< HEAD
 	                buf.push('<div class="modal-header">\n  <h3>Edit Member</h3>\n</div>\n\n<div class="modal-content">\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="firstName">First Name</label>\n      <input type="text" name="firstName" value="Ryan">\n    </div>\n    <div class="column column--half column--nested">\n      <label for="lastName">Last Name</label>\n      <input type="text" name="lastName" value="Fitz">\n    </div>\n  </fieldset>\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="dateOfBirth">Date of Birth</label>\n      <input type="date" name="dateOfBirth" value="1986-01-18">\n    </div>\n    <div class="column column--half column--nested select--has-icon">\n      <label for="gender">Gender</label>\n      <select class="" name="gender">\n        <option value="male">Male</option>\n        <option value="female">Female</option>\n      </select>\n    </div>\n  </fieldset>\n</div>\n\n<div class="modal-footer">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
-=======
-	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <p>Modal content</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  Modal footer\n</div>\n');
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	            })();
 	        }
 	        return buf.join("");
@@ -587,11 +471,7 @@
 	}
 
 /***/ }),
-<<<<<<< HEAD
 /* 17 */
-=======
-/* 29 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -608,11 +488,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-<<<<<<< HEAD
 	var ModalTemplate = __webpack_require__(18);
-=======
-	var ModalTemplate = __webpack_require__(30);
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
@@ -629,11 +505,7 @@
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
-<<<<<<< HEAD
 	            return 'modal-large';
-=======
-	            return 'modal';
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	        }
 	    }, {
 	        key: 'render',
@@ -649,47 +521,7 @@
 	exports.default = _class;
 
 /***/ }),
-<<<<<<< HEAD
 /* 18 */
-=======
-/* 30 */
-/***/ (function(module, exports) {
-
-	module.exports = function anonymous(locals, filters, escape, rethrow) {
-	    escape = escape || function(html) {
-	        return String(html).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
-	    };
-	    var __stack = {
-	        lineno: 1,
-	        input: '<div class="modal-header">\n  <h3>Info Dialog</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n\n</div>\n',
-	        filename: "."
-	    };
-	    function rethrow(err, str, filename, lineno) {
-	        var lines = str.split("\n"), start = Math.max(lineno - 3, 0), end = Math.min(lines.length, lineno + 3);
-	        var context = lines.slice(start, end).map(function(line, i) {
-	            var curr = i + start + 1;
-	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
-	        }).join("\n");
-	        err.path = filename;
-	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
-	        throw err;
-	    }
-	    try {
-	        var buf = [];
-	        with (locals || {}) {
-	            (function() {
-	                buf.push('<div class="modal-header">\n  <h3>Info Dialog</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <h3>What should I put inside a modal?</h3>\n      <p>All modal content should be contained within a <code class="example-text">modal-content</code> element.</p>\n      <p>If your modal is strictly informational and no action is required from your user, you do not need to include a <code class="example-text">modal-footer</code> element. The user can dismiss the modal by clicking the <code class="example-text">×</code>, hitting their <code class="example-text">esc</code> key or clicking ouside of the modal on the overlay.</p>\n    </div>\n  </div>\n\n</div>\n');
-	            })();
-	        }
-	        return buf.join("");
-	    } catch (err) {
-	        rethrow(err, __stack.input, __stack.filename, __stack.lineno);
-	    }
-	}
-
-/***/ }),
-/* 31 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports) {
 
 	module.exports = function anonymous(locals, filters, escape, rethrow) {
@@ -725,11 +557,7 @@
 	}
 
 /***/ }),
-<<<<<<< HEAD
 /* 19 */
-=======
-/* 32 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -746,11 +574,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-<<<<<<< HEAD
 	var ModalTemplate = __webpack_require__(20);
-=======
-	var ModalTemplate = __webpack_require__(31);
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
@@ -767,11 +591,7 @@
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
-<<<<<<< HEAD
 	            return 'modal';
-=======
-	            return 'modal-large';
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	        }
 	    }, {
 	        key: 'render',
@@ -787,7 +607,6 @@
 	exports.default = _class;
 
 /***/ }),
-<<<<<<< HEAD
 /* 20 */
 /***/ (function(module, exports) {
 
@@ -825,9 +644,6 @@
 
 /***/ }),
 /* 21 */
-=======
-/* 33 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -844,11 +660,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-<<<<<<< HEAD
 	var ModalTemplate = __webpack_require__(22);
-=======
-	var ModalTemplate = __webpack_require__(34);
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	
 	var _class = function (_Backbone$View) {
 	    _inherits(_class, _Backbone$View);
@@ -865,11 +677,7 @@
 	    }, {
 	        key: 'modalSize',
 	        value: function modalSize() {
-<<<<<<< HEAD
 	            return 'modal-large';
-=======
-	            return 'modal';
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	        }
 	    }, {
 	        key: 'render',
@@ -885,11 +693,7 @@
 	exports.default = _class;
 
 /***/ }),
-<<<<<<< HEAD
 /* 22 */
-=======
-/* 34 */
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 /***/ (function(module, exports) {
 
 	module.exports = function anonymous(locals, filters, escape, rethrow) {
@@ -898,11 +702,7 @@
 	    };
 	    var __stack = {
 	        lineno: 1,
-<<<<<<< HEAD
 	        input: '<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <p>Modal content</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  Modal footer\n</div>\n',
-=======
-	        input: '<div class="modal-header">\n  <h3>Edit Member</h3>\n</div>\n\n<div class="modal-content">\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="firstName">First Name</label>\n      <input type="text" name="firstName" value="Ryan">\n    </div>\n    <div class="column column--half column--nested">\n      <label for="lastName">Last Name</label>\n      <input type="text" name="lastName" value="Fitz">\n    </div>\n  </fieldset>\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="dateOfBirth">Date of Birth</label>\n      <input type="date" name="dateOfBirth" value="1986-01-18">\n    </div>\n    <div class="column column--half column--nested select--has-icon">\n      <label for="gender">Gender</label>\n      <select class="" name="gender">\n        <option value="male">Male</option>\n        <option value="female">Female</option>\n      </select>\n    </div>\n  </fieldset>\n</div>\n\n<div class="modal-footer">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n',
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	        filename: "."
 	    };
 	    function rethrow(err, str, filename, lineno) {
@@ -919,11 +719,7 @@
 	        var buf = [];
 	        with (locals || {}) {
 	            (function() {
-<<<<<<< HEAD
 	                buf.push('<div class="modal-header">\n  <h3>Modal Header</h3>\n</div>\n\n<div class="modal-content">\n  <div class="row">\n    <div class="column column--full">\n      <p>Modal content</p>\n    </div>\n  </div>\n</div>\n\n<div class="modal-footer align-left">\n  Modal footer\n</div>\n');
-=======
-	                buf.push('<div class="modal-header">\n  <h3>Edit Member</h3>\n</div>\n\n<div class="modal-content">\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="firstName">First Name</label>\n      <input type="text" name="firstName" value="Ryan">\n    </div>\n    <div class="column column--half column--nested">\n      <label for="lastName">Last Name</label>\n      <input type="text" name="lastName" value="Fitz">\n    </div>\n  </fieldset>\n  <fieldset class="row row--nested">\n    <div class="column column--half column--nested">\n      <label for="dateOfBirth">Date of Birth</label>\n      <input type="date" name="dateOfBirth" value="1986-01-18">\n    </div>\n    <div class="column column--half column--nested select--has-icon">\n      <label for="gender">Gender</label>\n      <select class="" name="gender">\n        <option value="male">Male</option>\n        <option value="female">Female</option>\n      </select>\n    </div>\n  </fieldset>\n</div>\n\n<div class="modal-footer">\n  <button data-action="update-need-types" class="button button--smooth button--primary">Save</button>\n  <button data-id="close" class="button button--transparent button--grey">Cancel</button>\n</div>\n');
->>>>>>> 07403e2fad0cbb61f8509098128ac891410e402f
 	            })();
 	        }
 	        return buf.join("");
