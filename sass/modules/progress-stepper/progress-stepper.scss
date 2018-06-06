@@ -1,50 +1,60 @@
-.progress-stepper-container {
-  max-width: 750px;
+$progress-color: $green !default; //Override this variable to change the color of your progress-stepper
+
+//Centers the progress stepper and gives it more padding
+.progress-container {
   margin: auto;
-  overflow: auto;
+  max-width: 750px;
   padding: 2rem 1rem;
-
-  .progress-stepper-step {
-    padding: 0;
-    padding-top: 0.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-    color: $gray-600;
-    text-align: center;
-    display: none;
-
-    @media #{$tablet} {
-      display: block;
-      font-size: 0.9rem;
-    }
-
-    &.step-completed,
-    &.step-completed a {
-      color: $green;
-    }
-
-    &.current-step {
-      display: block;
-    }
-  }
 }
 
-.progress-stepper {
-  background-color: $gray-200;
-  border-radius: 5px;
-  height: 16px;
+//Styles the progress stepper
+.progress {
+  background-color: $gray-150;
+  border-radius: 15px;
+  height: 15px;
   width: 100%;
   overflow: hidden;
 
-  &.with-progress-steps {
+  .progress-bar {
     border-radius: 15px;
-    height: 15px;
-    background-color: $gray-150;
-
-    .progress {
-      height: 100%;
-      background-color: $green;
-      border-radius: 15px;
-    }
+    height: 100%;
+    background-color: $progress-color;
   }
 }
+
+//Styles the progress labels below the stepper
+.progress-labels { display: flex; }
+
+.progress-label,
+.progress-label a {
+  color: $gray-600;
+  display: flex;
+  padding: 0;
+  padding-top: 0.5rem;
+  flex-grow: 1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  // display: none;
+
+  @media #{$tablet} {
+    font-size: 0.9rem;
+  }
+
+  &.progress-label--completed,
+  &.progress-label--completed a {
+    color: $progress-color;
+  }
+}
+
+.progress-bar--1of2       { width: calc(1/4 * 100%); } //25%
+.progress-bar--2of2       { width: calc(3/4 * 100%); } //75%
+.progress-bar--1of3       { width: calc(1/6 * 100%); } //16.666%
+.progress-bar--2of3       { width: calc(3/6 * 100%); } //50%
+.progress-bar--3of3       { width: calc(5/6 * 100%); } //83.333%
+.progress-bar--1of4       { width: calc(1/8 * 100%); } //12.5%
+.progress-bar--2of4       { width: calc(3/8 * 100%); } //37.5%
+.progress-bar--3of4       { width: calc(5/8 * 100%); } //62.5%
+.progress-bar--4of4       { width: calc(7/8 * 100%); } //87.5%
+.progress-bar--completed  { width: 100%; }
