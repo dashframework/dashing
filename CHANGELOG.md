@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.12.0 - June 08, 2018
+**Added**
+* Added modals to example pages, Updated progress stepper to use flex
+  
+*****
+  
 ### 1.11.1 - May 25, 2018
 **Changed**
 * Changed the padding on mobile tooltips to increase touch area
