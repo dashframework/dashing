@@ -27,70 +27,149 @@
         <div class="app-content">
           <div class="row">
             <div class="column column--full">
-              <h2 class="example-header no-margin--top">Two Step Example <button class="button button--transparent button--copy-link" data-id="copyurl" id="Two_Step_Example"></h2>
-              <p>NOTE: The width on the progress stepper is determined by an inline style. ie. <code class="example-text">style="width: 25%;"</code></p>
+              <h2 class="example-header no-margin--top">Progress Stepper Theming <button class="button button--transparent button--copy-link" data-id="copyurl" id="Progress_Theme"></h2>
+              <p>You can customize the color of your progress stepper and completed labels by altering the variable <code class="example-text">$progress-color</code> in your theme file.</p>
               <div class="row example-container">
                 <div class="column column--full">
-                  <div class="progress-stepper-container">
-                    <div class="progress-stepper with-progress-steps">
-                      <div class="progress" data-id="progress-stepper" style="width: 25%;"></div>
-                    </div>
-                    <div class="progress-stepper-step current-step column column--half">Step 1</div>
-                    <div class="progress-stepper-step column column--half">Step 2</div>
+                  <div class="progress">
+                    <div class="progress-bar" data-id="progress-stepper" style="width: 75%;"></div>
                   </div>
-                </div>
-
-                <div class="column column--full">
-                  <div class="progress-stepper-container">
-                    <div class="progress-stepper with-progress-steps">
-                      <div class="progress" data-id="progress-stepper" style="width: 75%;"></div>
-                    </div>
-                    <div class="progress-stepper-step step-completed column column--half">Step 1</div>
-                    <div class="progress-stepper-step current-step column column--half">Step 2</div>
-                  </div>
-                </div>
-
-                <div class="column column--full">
-                  <div class="progress-stepper-container">
-                    <div class="progress-stepper with-progress-steps">
-                      <div class="progress" data-id="progress-stepper" style="width: 100%;"></div>
-                    </div>
-                    <div class="progress-stepper-step step-completed column column--half">Step 1</div>
-                    <div class="progress-stepper-step step-completed column column--half">Step 2</div>
+                  <div class="progress-labels">
+                    <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+                    <div class="progress-label"><a href="#">Step 2</a></div>
                   </div>
                 </div>
               </div>
 <div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-scss">//Include this variable in your theme file to customize the color
+$progress-color: $green;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Width Options<button class="button button--transparent button--copy-link" data-id="copyurl" id="Progress_Width"></h2>
+    <p>The width on this progress stepper can be set by an inline style or a class name.</p>
+    <ul>
+      <li>Inline width: <code class="example-text">style="width: 50%;"</code></li>
+      <li>Class width: <code class="example-text">class="progress-bar--2of3"</code></li>
+    </ul>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 50%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar progress-bar--2of3" data-id="progress-stepper"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
+        </div>
+      </div>
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- First Step --&gt;
+  &lt;div class="column column--full"&gt;
+    &lt;div class="progress"&gt;
+      &lt;div class="progress-bar" data-id="progress-stepper" style="width: 50%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-labels"&gt;
+      &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="column column--full"&gt;
+    &lt;div class="progress"&gt;
+      &lt;div class="progress-bar progress-bar--2of3" data-id="progress-stepper"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-labels"&gt;
+      &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Two Steps <button class="button button--transparent button--copy-link" data-id="copyurl" id="Two_Steps"></h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 25%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 75%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 100%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 2</a></div>
+        </div>
+      </div>
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
 <pre><code class="language-html">&lt;!-- First Step --&gt;
 &lt;div class="column column--full"&gt;
-  &lt;div class="progress-stepper-container"&gt;
-    &lt;div class="progress-stepper with-progress-steps"&gt;
-      &lt;div class="progress" data-id="progress-stepper" style="width: 25%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 1&lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 2&lt;/div&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 25%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--current"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-label"&gt;Step 2&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Second Step --&gt;
 &lt;div class="column column--full"&gt;
-  &lt;div class="progress-stepper-container"&gt;
-    &lt;div class="progress-stepper with-progress-steps"&gt;
-      &lt;div class="progress" data-id="progress-stepper" style="width: 75%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 2&lt;/div&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 75%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--current"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-label"&gt;Step 2&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!-- Completed --&gt;
+&lt;!-- Completed Step --&gt;
 &lt;div class="column column--full"&gt;
-  &lt;div class="progress-stepper-container"&gt;
-    &lt;div class="progress-stepper with-progress-steps"&gt;
-      &lt;div class="progress" data-id="progress-stepper" style="width: 100%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 2&lt;/div&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 25%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--current"&gt;Step 1&lt;/div&gt;
+    &lt;div class="progress-label"&gt;Step 2&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
@@ -99,100 +178,231 @@
 
 <div class="row">
   <div class="column column--full">
-    <h2 class="example-header no-margin--top">Three Step Example <button class="button button--transparent button--copy-link" data-id="copyurl" id="Three_Step_Example"></h2>
-    <p>NOTE: The width on the progress stepper is determined by an inline style. ie. <code class="example-text">style="width: 16.666%;"</code></p>
+    <h2 class="example-header">Three Steps <button class="button button--transparent button--copy-link" data-id="copyurl" id="Three_Steps"></h2>
     <div class="row example-container">
       <div class="column column--full">
-        <div class="progress-stepper-container">
-          <div class="progress-stepper with-progress-steps">
-            <div class="progress" data-id="progress-stepper" style="width: 16.666%;"></div>
-          </div>
-          <div class="progress-stepper-step current-step column column--third">Step 1</div>
-          <div class="progress-stepper-step column column--third">Step 2</div>
-          <div class="progress-stepper-step column column--third">Step 3</div>
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 16.666%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
         </div>
       </div>
 
       <div class="column column--full">
-        <div class="progress-stepper-container">
-          <div class="progress-stepper with-progress-steps">
-            <div class="progress" data-id="progress-stepper" style="width: 50%;"></div>
-          </div>
-          <div class="progress-stepper-step step-completed column column--third">Step 1</div>
-          <div class="progress-stepper-step current-step column column--third">Step 2</div>
-          <div class="progress-stepper-step column column--third">Step 3</div>
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 50%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
         </div>
       </div>
 
       <div class="column column--full">
-        <div class="progress-stepper-container">
-          <div class="progress-stepper with-progress-steps">
-            <div class="progress" data-id="progress-stepper" style="width: 83.333%;"></div>
-          </div>
-          <div class="progress-stepper-step step-completed column column--third">Step 1</div>
-          <div class="progress-stepper-step step-completed column column--third">Step 2</div>
-          <div class="progress-stepper-step current-step column column--third">Step 3</div>
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 83.333%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
         </div>
       </div>
 
       <div class="column column--full">
-        <div class="progress-stepper-container">
-          <div class="progress-stepper with-progress-steps">
-            <div class="progress" data-id="progress-stepper" style="width: 100%;"></div>
-          </div>
-          <div class="progress-stepper-step step-completed column column--third">Step 1</div>
-          <div class="progress-stepper-step step-completed column column--third">Step 2</div>
-          <div class="progress-stepper-step step-completed column column--third">Step 3</div>
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 100%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 2</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 3</a></div>
         </div>
       </div>
-
     </div>
 <div class="code-toggle"><i class="icon--code"></i></div>
 <pre><code class="language-html">&lt;!-- First Step --&gt;
 &lt;div class="column column--full"&gt;
-  &lt;div class="progress-stepper-container"&gt;
-    &lt;div class="progress-stepper with-progress-steps"&gt;
-      &lt;div class="progress" data-id="progress-stepper" style="width: 16.666%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 1&lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 2&lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 16.666%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Second Step --&gt;
 &lt;div class="column column--full"&gt;
-  &lt;div class="progress-stepper-container"&gt;
-    &lt;div class="progress-stepper with-progress-steps"&gt;
-      &lt;div class="progress" data-id="progress-stepper" style="width: 50%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 2&lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 50%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Third Step --&gt;
 &lt;div class="column column--full"&gt;
-  &lt;div class="progress-stepper-container"&gt;
-    &lt;div class="progress-stepper with-progress-steps"&gt;
-      &lt;div class="progress" data-id="progress-stepper" style="width: 83.333%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 2&lt;/div&gt;
-    &lt;div class="progress-stepper-step column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 83.333%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!-- Completed --&gt;
+&lt;!-- Completed Step --&gt;
 &lt;div class="column column--full"&gt;
-  &lt;div class="progress-stepper-container"&gt;
-    &lt;div class="progress-stepper with-progress-steps"&gt;
-      &lt;div class="progress" data-id="progress-stepper" style="width: 100%;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 1&lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 2&lt;/div&gt;
-    &lt;div class="progress-stepper-step step-completed column column--half"&gt;Step 3&lt;/div&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 100%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+    <h2 class="example-header">Four Steps <button class="button button--transparent button--copy-link" data-id="copyurl" id="Four_Steps"></h2>
+    <div class="row example-container">
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 12.5%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
+          <div class="progress-label"><a href="#">Step 4</a></div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 37.5%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
+          <div class="progress-label"><a href="#">Step 4</a></div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 62.5%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 2</a></div>
+          <div class="progress-label"><a href="#">Step 3</a></div>
+          <div class="progress-label"><a href="#">Step 4</a></div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 87.5%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 2</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 3</a></div>
+          <div class="progress-label"><a href="#">Step 4</a></div>
+        </div>
+      </div>
+
+      <div class="column column--full">
+        <div class="progress">
+          <div class="progress-bar" data-id="progress-stepper" style="width: 100%;"></div>
+        </div>
+        <div class="progress-labels">
+          <div class="progress-label progress-label--completed"><a href="#">Step 1</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 2</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 3</a></div>
+          <div class="progress-label progress-label--completed"><a href="#">Step 4</a></div>
+        </div>
+      </div>
+    </div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- First Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 12.5%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 4&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Second Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 37.5%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 4&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Third Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 62.5%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 4&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Fourth Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 87.5%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label"&gt;&lt;a href="#"&gt;Step 4&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Completed Step --&gt;
+&lt;div class="column column--full"&gt;
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar" data-id="progress-stepper" style="width: 100%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="progress-labels"&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 1&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 2&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 3&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="progress-label progress-label--completed"&gt;&lt;a href="#"&gt;Step 4&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>

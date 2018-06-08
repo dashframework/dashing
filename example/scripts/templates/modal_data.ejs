@@ -1,0 +1,34 @@
+<div class="modal-header">
+  <h3>Edit Member</h3>
+</div>
+
+<div class="modal-content">
+  <fieldset class="row row--nested">
+    <div class="column column--half column--nested">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" value="Ryan">
+    </div>
+    <div class="column column--half column--nested">
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" value="Fitz">
+    </div>
+  </fieldset>
+  <fieldset class="row row--nested">
+    <div class="column column--half column--nested">
+      <label for="dateOfBirth">Date of Birth</label>
+      <input type="date" name="dateOfBirth" value="1986-01-18">
+    </div>
+    <div class="column column--half column--nested select--has-icon">
+      <label for="gender">Gender</label>
+      <select class="" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </fieldset>
+</div>
+
+<div class="modal-footer">
+  <button data-action="update-need-types" class="button button--smooth button--primary">Save</button>
+  <button data-id="close" class="button button--transparent button--grey">Cancel</button>
+</div>
