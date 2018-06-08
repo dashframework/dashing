@@ -24,6 +24,10 @@
     &.has-border {
       border-bottom: 2px solid $gray-200;
       padding-bottom: $grid-gutter;
+      +.card--content .card-banner,
+      +.card-content .card-banner  {
+        margin-top: -$grid-gutter;
+      }
     }
   }
 

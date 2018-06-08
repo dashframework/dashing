@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/example.css" rel="stylesheet">
+    <title>Modal</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../../bower_components/dash-modal.js/dist/dash-modal.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/prism.js"></script>
+    <script src="../../../dist/application.js"></script>
+  </head>
+
+  <body class="example-body">
+    <div data-id="modal-container"></div>
+		<div class="main-content">
+			<div id="sidebarNavigation" class="example-sidebar"></div>
+      <div class="sidebar--overlay is-hidden"></div>
+			<div class="main" id="main-content">
+				<div class="page-header">
+					<button class="button--sidebar-icon float-left"><i class="sidebar-icon--menu"></i></button>
+					<h1>Modal</h1>
+					<a href="http://developers.samaritanministries.org/developers/dash-modal.js/" target="_blank" class="button button--small button--smooth float-right">
+						View Guidelines
+					</a>
+				</div>
+
+        <div class="app-content">
+
+          <div class="row">
+            <div class="column column--full">
+              <blockquote class="warning" style="margin-top: 2rem;">
+              <strong>Component Dependency</strong>
+              <p>Dashing uses the <a href="https://github.com/samaritanministries/dash-modal.js" target="_blank">dash-modal.js</a> component to deliver modals. To utilize these styles, you must install this component into your project.</p>
+            </blockquote>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column column--full">
+            <h2 class="example-header no-margin--top">Default Modal <button class="button button--transparent button--copy-link" data-id="copyurl" id="Default_Modal"></h2>
+            <div class="row example-container">
+              <div class="column column--full">
+                <button data-id="show-modal-default">Open Modal</button>
+              </div>
+            </div>
+            <div class="code-toggle"><i class="icon--code"></i></div>
+
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Modal Header&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="column column--full"&gt;
+      &lt;p&gt;Modal content&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-footer align-left"&gt;
+  Modal footer
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header">Small Modal <button class="button button--transparent button--copy-link" data-id="copyurl" id="Small_Modal"></h2>
+  <div class="row example-container">
+    <div class="column column--full">
+      <button data-id="show-modal-small">Open Modal</button>
+    </div>
+  </div>
+  <div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Modal Header&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="column column--full"&gt;
+      &lt;p&gt;Modal content&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-footer align-left"&gt;
+  Modal footer
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header">Large Modal <button class="button button--transparent button--copy-link" data-id="copyurl" id="Large_Modal"></h2>
+  <div class="row example-container">
+    <div class="column column--full">
+      <button data-id="show-modal-large">Open Modal</button>
+    </div>
+  </div>
+  <div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Modal Header&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="column column--full"&gt;
+      &lt;p&gt;Modal content&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-footer align-left"&gt;
+  Modal footer
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header">Data Modal Example <button class="button button--transparent button--copy-link" data-id="copyurl" id="Data_Modal"></h2>
+  <p>This is an example of a modal used to display and edit data.</p>
+  <div class="row example-container">
+    <div class="column column--full">
+      <button class="button button--transparent" data-id="show-modal-data">Edit Member</button>
+    </div>
+  </div>
+  <div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Edit Member&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content"&gt;
+  &lt;fieldset class="row row--nested"&gt;
+    &lt;div class="column column--half column--nested"&gt;
+      &lt;label for="firstName"&gt;First Name&lt;/label&gt;
+      &lt;input type="text" name="firstName" value="Ryan"&gt;
+    &lt;/div&gt;
+    &lt;div class="column column--half column--nested"&gt;
+      &lt;label for="lastName"&gt;Last Name&lt;/label&gt;
+      &lt;input type="text" name="lastName" value="Fitz"&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class="row row--nested"&gt;
+    &lt;div class="column column--half column--nested"&gt;
+      &lt;label for="dateOfBirth"&gt;Date of Birth&lt;/label&gt;
+      &lt;input type="date" name="dateOfBirth" value="1986-01-18"&gt;
+    &lt;/div&gt;
+    &lt;div class="column column--half column--nested select--has-icon"&gt;
+      &lt;label for="gender"&gt;Gender&lt;/label&gt;
+      &lt;select class="" name="gender"&gt;
+        &lt;option value="male"&gt;Male&lt;/option&gt;
+        &lt;option value="female"&gt;Female&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-footer"&gt;
+  &lt;button data-action="update-need-types" class="button button--smooth button--primary"&gt;Save&lt;/button&gt;
+  &lt;button data-id="close" class="button button--transparent button--grey"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header">Video Modal Example <button class="button button--transparent button--copy-link" data-id="copyurl" id="Video_Modal"></h2>
+  <p>Use the modal size <code class="example-text">modal-large</code> to display videos within a modal.</p>
+  <div class="row example-container">
+    <div class="column column--full">
+      <button class="button button--smooth" data-id="show-modal-video">
+        <i class="dashing-icon dashing-icon--play"></i>
+        Learn More
+      </button>
+    </div>
+  </div>
+  <div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Modal Header&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content has-video"&gt;
+  &lt;iframe src="https://player.vimeo.com/video/232680932?title=0&amp;badge=0&amp;portrait=0&amp;byline=0&amp;color=754d85&amp;autoplay=true" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-footer align-center"&gt;
+  &lt;button data-id="close" class="button button--smooth button--blue"&gt;Finish watching video&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+  <h2 class="example-header">Info Dialog Example <button class="button button--transparent button--copy-link" data-id="copyurl" id="Info_Modal"></h2>
+  <p>Use dialogs to display quick, informative content to your user.</p>
+  <div class="row example-container">
+    <div class="column column--full">
+      <button class="button button--transparent" data-id="show-modal-dialog">Learn More</button>
+    </div>
+  </div>
+  <div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;div class="modal-header"&gt;
+  &lt;h3&gt;Default Modal&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="column column--full"&gt;
+      &lt;h3&gt;What should I put inside a modal?&lt;/h3&gt;
+      &lt;p&gt;All modal content should be contained within a &lt;code class="example-text"&gt;modal-content&lt;/code&gt; element.&lt;/p&gt;
+      &lt;p&gt;If your modal is strictly informational and no action is required from your user, you do not need to include a &lt;code class="example-text"&gt;modal-footer&lt;/code&gt; element. The user can dismiss the modal by clicking the &lt;code class="example-text"&gt;×&lt;/code&gt;, hitting their &lt;code class="example-text"&gt;esc&lt;/code&gt; key or clicking ouside of the modal on the overlay.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
+</div>
+
+</body>
+</html>

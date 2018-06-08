@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../css/example.css" rel="stylesheet">
-    <title>Actions</title>
+    <title>Checkboxes</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../scripts/scripts.js"></script>
@@ -29,7 +29,7 @@
 		<h2 class="example-header no-margin--top">Custom Checkboxes <button class="button button--transparent button--copy-link" data-id="copyurl" id="Custom_Checkboxes"></button></h2>
 		<p>To use custom checkboxes, be sure to include your input <strong>before</strong> your label. Failing to do so will break styles.</p>
 		<div class="row example-container">
-		  <fieldset class="column column--full">
+		  <fieldset class="column column--third">
 		    <label>Checkboxes</label>
 		    <div class="checkbox--custom">
 		      <input type="checkbox" id="dashing-checkbox1--custom" checked/>
@@ -41,7 +41,7 @@
 		    </div>
 		    <div class="checkbox--custom">
 		      <input type="checkbox" id="dashing-checkbox3--custom"/>
-		      <label for="dashing-checkbox3--custom">Option 3</label>
+		      <label for="dashing-checkbox3--custom">Option 3 is much longer and indents when it goes beyond one line</label>
 		    </div>
 		  </fieldset>
 
@@ -199,81 +199,135 @@ $checkbox--icon-disabled: $gray-500 !default; //Color of check icon when checked
 
 <div class="row">
   <div class="column column--full">
-		<h2 class="example-header no-margin--top">Checkbox Cards <button class="button button--transparent button--copy-link" data-id="copyurl" id="Checkbox_Cards"></button></h2>
-		<p>To use custom checkboxes, be sure to include your input <strong>before</strong> your label. Failing to do so will break styles.</p>
-		<p class="no-margin--top">To use smaller checkbox cards apply the <code class="example-text">.checkbox-card--small</code> class to the parent <code class="example-text">div</code>.</p>
+		<h2 class="example-header">Default Checkbox Card <button class="button button--transparent button--copy-link" data-id="copyurl" id="Default_Checkbox_Card"></button></h2>
+		<p>To use smaller checkbox cards apply the <code class="example-text">.checkbox-card--small</code> class to the <code class="example-text">.checkbox-card</code>.</p>
 		<div class="row example-container">
-			<fieldset class="column column--full">
-				<label>Checkbox Card</label>
-				<div class="checkbox-card">
-					<input type="checkbox" name="checkbox-test" id="checkbox-test1" checked/>
-					<label for="checkbox-test1" class="card">Option 1</label>
-				</div>
-				<div class="checkbox-card">
-					<input type="checkbox" name="checkbox-test" id="checkbox-test2" />
-					<label for="checkbox-test2" class="card">Option 2</label>
-				</div>
-				<div class="checkbox-card">
-					<input type="checkbox" name="checkbox-test" id="checkbox-test3" disabled />
-					<label for="checkbox-test3" class="card disabled">Disabled</label>
-				</div>
-			</fieldset>
-			<fieldset class="column column--full">
-				<label>Small Checkbox Card</label>
-				<div class="checkbox-card checkbox-card--small">
-					<input type="checkbox" name="checkbox-test2" id="checkbox-test4" checked/>
-					<label for="checkbox-test4" class="card">Option 1</label>
-				</div>
-				<div class="checkbox-card checkbox-card--small">
-					<input type="checkbox" name="checkbox-test2" id="checkbox-test5" />
-					<label for="checkbox-test5" class="card">Option 2</label>
-				</div>
-				<div class="checkbox-card checkbox-card--small">
-					<input type="checkbox" name="checkbox-test2" id="checkbox-test6" disabled />
-					<label for="checkbox-test6" class="card disabled">Disabled</label>
-				</div>
-			</fieldset>
+		  <fieldset class="column column--full">
+		    <label>Checkbox Card</label>
+		    <div class="checkbox-card">
+		      <input type="checkbox" name="checkbox-inline" id="checkbox-inline1" checked/>
+		      <label for="checkbox-inline1" class="card">Option 1</label>
+		    </div>
+		    <div class="checkbox-card">
+		      <input type="checkbox" name="checkbox-inline" id="checkbox-inline2" />
+		      <label for="checkbox-inline2" class="card">Option 2</label>
+		    </div>
+		    <div class="checkbox-card">
+		      <input type="checkbox" name="checkbox-inline" id="checkbox-inline3" disabled />
+		      <label for="checkbox-inline3" class="card disabled">Disabled</label>
+		    </div>
+		  </fieldset>
 		</div>
-		<div class="code-toggle"><i class="icon--code"></i></div>
-<pre><code class="language-html">&lt;!-- Checkbox Cards --&gt;
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Checkbox Button Cards --&gt;
 &lt;fieldset class="column column--full"&gt;
-	&lt;label&gt;Checkbox Card&lt;/label&gt;
-	&lt;div class="checkbox-card"&gt;
-		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test1" checked/&gt;
-		&lt;label for="checkbox-test1" class="card"&gt;Option 1&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class="checkbox-card"&gt;
-		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test2" /&gt;
-		&lt;label for="checkbox-test2" class="card"&gt;Option 2&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class="checkbox-card"&gt;
-		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test3" disabled /&gt;
-		&lt;label for="checkbox-test3" class="card disabled"&gt;Disabled&lt;/label&gt;
-	&lt;/div&gt;
-&lt;/fieldset&gt;
-
-&lt;!-- Small Checkbox Cards --&gt;
-&lt;fieldset class="column column--full"&gt;
-	&lt;label&gt;Small Checkbox Card&lt;/label&gt;
-	&lt;div class="checkbox-card checkbox-card--small"&gt;
-		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test1" checked/&gt;
-		&lt;label for="checkbox-test1" class="card"&gt;Option 1&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class="checkbox-card checkbox-card--small"&gt;
-		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test2" /&gt;
-		&lt;label for="checkbox-test2" class="card"&gt;Option 2&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class="checkbox-card checkbox-card--small"&gt;
-		&lt;input type="checkbox" name="checkbox-test" id="checkbox-test3" disabled /&gt;
-		&lt;label for="checkbox-test3" class="card disabled"&gt;Disabled&lt;/label&gt;
-	&lt;/div&gt;
+  &lt;label&gt;Checkbox Card&lt;/label&gt;
+  &lt;div class="checkbox-card"&gt;
+    &lt;input type="checkbox" name="checkbox-inline" id="checkbox-inline1" checked/&gt;
+    &lt;label for="checkbox-inline1" class="card"&gt;Option 1&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox-card"&gt;
+    &lt;input type="checkbox" name="checkbox-inline" id="checkbox-inline2" /&gt;
+    &lt;label for="checkbox-inline2" class="card"&gt;Option 2&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox-card"&gt;
+    &lt;input type="checkbox" name="checkbox-inline" id="checkbox-inline3" disabled /&gt;
+    &lt;label for="checkbox-inline3" class="card disabled"&gt;Disabled&lt;/label&gt;
+  &lt;/div&gt;
 &lt;/fieldset&gt;</code>
 </pre>
-<pre><code class="language-scss">//Include these variables in your theme file to change the color or padding of your checkbox
+<pre><code class="language-scss">//Include these variables in your theme file to change the color or padding of your checkbox button cards
 $card-checkbox--active: $blue !default; //Color of checkbox and card when checked
 $card-checkbox--focus: $blue-300 !default; //Color of border around card-checkbox when focused
 $card-checkbox--padding: 1rem !default; //Padding of checkbox</code>
 </pre>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+		<h2 class="example-header">Small Checkbox Card <button class="button button--transparent button--copy-link" data-id="copyurl" id="Small_Checkbox_Card"></button></h2>
+		<p>To use smaller checkbox cards apply the <code class="example-text">.checkbox-card--small</code> class to the <code class="example-text">.checkbox-card</code>.</p>
+		<div class="row example-container">
+			<fieldset class="column column--full">
+				<label>Small Checkbox Card</label>
+				<div class="checkbox-card checkbox-card--small">
+					<input type="checkbox" name="checkbox-small" id="checkbox-small1" checked/>
+					<label for="checkbox-small1" class="card">Option 1</label>
+				</div>
+				<div class="checkbox-card checkbox-card--small">
+					<input type="checkbox" name="checkbox-small" id="checkbox-small2" />
+					<label for="checkbox-small2" class="card">Option 2</label>
+				</div>
+				<div class="checkbox-card checkbox-card--small">
+					<input type="checkbox" name="checkbox-small" id="checkbox-small3" disabled />
+					<label for="checkbox-small3" class="card disabled">Disabled</label>
+				</div>
+			</fieldset>
+		</div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Small Checkbox Cards --&gt;
+&lt;fieldset class="column column--full"&gt;
+  &lt;label&gt;Small Checkbox Card&lt;/label&gt;
+  &lt;div class="checkbox-card checkbox-card--small"&gt;
+    &lt;input type="checkbox" name="checkbox-small" id="checkbox-small1" checked/&gt;
+    &lt;label for="checkbox-small1" class="card"&gt;Option 1&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox-card checkbox-card--small"&gt;
+    &lt;input type="checkbox" name="checkbox-small" id="checkbox-small2" /&gt;
+    &lt;label for="checkbox-small2" class="card"&gt;Option 2&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox-card checkbox-card--small"&gt;
+    &lt;input type="checkbox" name="checkbox-small" id="checkbox-small3" disabled /&gt;
+    &lt;label for="checkbox-small3" class="card disabled"&gt;Disabled&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="column column--full">
+		<h2 class="example-header">Block Checkbox Card <button class="button button--transparent button--copy-link" data-id="copyurl" id="Block_Checkbox_Card"></button></h2>
+		<p>To use block style checkbox cards apply the <code class="example-text">.is-block</code> class to the <code class="example-text">.checkbox-card</code>.</p>
+		<div class="row example-container">
+		  <fieldset class="column column--half">
+		    <label>Block Checkbox Card</label>
+		    <div class="checkbox-card is-block">
+		      <input type="checkbox" name="checkbox-block" id="checkbox-block1" checked/>
+		      <label for="checkbox-block1" class="card">Option 1</label>
+		    </div>
+		    <div class="checkbox-card is-block">
+		      <input type="checkbox" name="checkbox-block" id="checkbox-block2" />
+		      <label for="checkbox-block2" class="card">Option 2</label>
+		    </div>
+		    <div class="checkbox-card is-block">
+		      <input type="checkbox" name="checkbox-block" id="checkbox-block3" disabled />
+		      <label for="checkbox-block3" class="card disabled">Disabled</label>
+		    </div>
+		  </fieldset>
+		</div>
+<div class="code-toggle"><i class="icon--code"></i></div>
+<pre><code class="language-html">&lt;!-- Block Style Checkbox Cards --&gt;
+&lt;fieldset class="column column--full"&gt;
+  &lt;label&gt;Block Checkbox Card&lt;/label&gt;
+  &lt;div class="checkbox-card is-block"&gt;
+    &lt;input type="checkbox" name="checkbox-block" id="checkbox-block1" checked/&gt;
+    &lt;label for="checkbox-block1" class="card"&gt;Option 1&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox-card is-block"&gt;
+    &lt;input type="checkbox" name="checkbox-block" id="checkbox-block2" /&gt;
+    &lt;label for="checkbox-block2" class="card"&gt;Option 2&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox-card is-block"&gt;
+    &lt;input type="checkbox" name="checkbox-block" id="checkbox-block3" disabled /&gt;
+    &lt;label for="checkbox-block3" class="card disabled"&gt;Disabled&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code>
+</pre>
+
 </div>
 </div>
 

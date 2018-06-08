@@ -1,0 +1,32 @@
+.ordered-list--custom {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: step-counter;  /* Sets a counter named 'step-counter' and sets value to 0 */
+  li {
+    counter-increment: step-counter;  /* Increments 'step-counter' variable */
+    margin-bottom: $grid-gutter;
+    display: flex;
+    align-items: baseline;
+    &::before {
+      content: counter(step-counter); /* Displays the value of 'step-counter' */
+      margin-right: $grid-gutter/2;
+      font-size: 1rem;
+      background-color: $gray-200;
+      color: $black;
+      font-weight: $font-weight-semibold;
+      padding: .3rem .7rem;
+      border-radius: 50%;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  & > *:not(li) { /* Indent all content within <ol> to line up with the <li> */
+    text-indent: 2.5rem;
+  }
+  //Example: Custom Colored Lists
+  &.ordered-list--sharing-blue {
+    @include ordered-list($sharing-blue, $white);
+  }
+}

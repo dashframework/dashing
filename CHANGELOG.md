@@ -2,12 +2,43 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
-### 1.10.0 - April 09, 2018
+### 1.12.0 - June 08, 2018
 **Added**
-* Added support for search bars in header.
+* Added modals to example pages, Updated progress stepper to use flex
   
 *****
   
+### 1.11.1 - May 25, 2018
+**Changed**
+* Changed the padding on mobile tooltips to increase touch area
+* Changed card-banner to remove padding if after has-border
+
+*****
+
+### 1.11.0 - April 13, 2018
+**Added**
+* Added Custom Ordered Lists styling
+
+*****
+
+### 1.10.2 - April 11, 2018
+**Fixed**
+* Fixed button wrap inside card banners
+
+*****
+
+### 1.10.1 - April 10, 2018
+**Fixed**
+* Fixed custom checkbox and radio button styles to add support for older browsers
+
+*****
+
+### 1.10.0 - April 09, 2018
+**Added**
+* Added support for search bars in header.
+
+*****
+
 ### 1.9.1 - April 06, 2018
 **Updated**
 * Updated  styling for banner links
