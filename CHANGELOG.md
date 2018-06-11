@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.12.1 - June 11, 2018
+**Fixed**
+* Fixed progress stepper styles by rebuilding CSS
+  
+*****
+  
 ### 1.12.0 - June 08, 2018
 **Added**
 * Added modals to example pages, Updated progress stepper to use flex
