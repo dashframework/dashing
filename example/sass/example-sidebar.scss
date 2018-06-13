@@ -118,6 +118,8 @@ $sidebar-width: 12rem;
 
   &.active { left: 0; }
 
+  .sidebar-header { cursor: pointer; }
+
   ul li {
     padding: 0rem 0.4rem;
     border-radius: 3px;

@@ -20,6 +20,10 @@ $(function() {
         if(url.indexOf(id) > -1 && url.indexOf(id) !== 0 && applied != true) {//was -1, but index for home page will return 0
           //if there is a match, add the class of current to the matching link
           $(this).addClass('current');
+          //keep sidebar open on link click
+          $(this).parent().prev().addClass('is-open');
+          $(this).parent().removeClass('hidden');
+          $(this).parent().prev().find(".chevron-dark").addClass('rotate');
           //if there is a match, remove the class of current from the home page
           $(indexObject).removeClass('current');
           applied = true;
