@@ -1,4 +1,3 @@
-import DashModal from "../../bower_components/dash-modal.js/dist/dash-modal"
 import ViewOne from "./views/view_default.js";
 import ViewTwo from "./views/view_small.js";
 import ViewThree from "./views/view_data.js";
