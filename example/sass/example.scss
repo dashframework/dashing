@@ -128,10 +128,10 @@ h2 {
     }
   }
 
-  &:hover, 
+  &:hover,
   &:active {
       .button--copy-link {
-        &:active, 
+        &:active,
         &:focus {
           &:after {
             content: "Copied";
@@ -144,4 +144,26 @@ h2 {
       opacity: 1;
     }
   }
+}
+
+blockquote {
+  border-left: 4px solid $gray;
+  margin: 0 0 2rem 0;
+  padding-left: 1rem;
+
+  strong {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #232323;
+  }
+
+  &.tips { border-left: 4px solid $green; }
+  .tips-list {
+    margin: -1.3rem 0 0 0;
+    padding-left: 2rem;
+  }
+  &.warning { border-left: 4px solid $orange; }
+  &.caution { border-left: 4px solid $red; }
+  &.related { border-left: 4px solid $blue; }
 }

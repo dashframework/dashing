@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import DashModal from "dash-modal.js/dist/dash-modal.js"
+=======
+>>>>>>> 133d54637dcf73f54b301ec5ceb75d3e90c2ab79
 import ViewOne from "./views/view_default.js";
 import ViewTwo from "./views/view_small.js";
 import ViewThree from "./views/view_data.js";

@@ -51,4 +51,8 @@ module.exports = {
             path.join(PROJECT_ROOT, "bower_components")
         ]
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 133d54637dcf73f54b301ec5ceb75d3e90c2ab79
