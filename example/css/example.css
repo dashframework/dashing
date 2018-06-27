@@ -4952,6 +4952,12 @@ i.dashing-clippy, .app-menu .app-context .app-title .button--navigation, .chevro
   .side-navigation.active,
   .example-sidebar.active {
     left: 0; }
+  .side-navigation .logo,
+  .example-sidebar .logo {
+    text-align: center; }
+    .side-navigation .logo img,
+    .example-sidebar .logo img {
+      width: 5rem; }
   .side-navigation .sidebar-header,
   .example-sidebar .sidebar-header {
     cursor: pointer; }
@@ -5019,31 +5025,26 @@ i.dashing-clippy, .app-menu .app-context .app-title .button--navigation, .chevro
 .sub-nav ul li.current > a {
   color: #3F70C9; }
 
-.side-navigation h3,
-.example-sidebar h3 {
+.side-navigation .sidebar-header,
+.example-sidebar .sidebar-header {
   user-select: none;
-  border-radius: 5px;
-  margin-bottom: .5rem;
   font-size: 1rem;
-  padding: 0.3rem 0.5rem; }
-  .side-navigation h3:hover,
-  .example-sidebar h3:hover {
-    background-color: #EDEDED; }
-  .side-navigation h3.is-open,
-  .example-sidebar h3.is-open {
-    background-color: #E0E0E0; }
-    .side-navigation h3.is-open a,
-    .example-sidebar h3.is-open a {
-      color: #3F70C9; }
-  .side-navigation h3 a,
-  .example-sidebar h3 a {
+  margin: 0 -1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #EDEDED; }
+  .side-navigation .sidebar-header.is-open a,
+  .example-sidebar .sidebar-header.is-open a {
+    color: #3F70C9; }
+  .side-navigation .sidebar-header a,
+  .example-sidebar .sidebar-header a {
     border: none;
     color: #000000;
     display: inline-block;
     margin-right: .4rem;
     vertical-align: middle; }
-    .side-navigation h3 a:hover,
-    .example-sidebar h3 a:hover {
+    .side-navigation .sidebar-header a:hover,
+    .example-sidebar .sidebar-header a:hover {
       text-decoration: none; }
 .side-navigation ul,
 .example-sidebar ul {
@@ -5171,11 +5172,11 @@ Example App Mockups Below
 
 .page-header {
   background-color: #3F70C9;
-  line-height: 1.7rem;
   text-align: center;
-  padding: 2.5rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
   margin-bottom: 1rem;
-  text-align: left; }
+  text-align: left;
+  box-shadow: 0 2px 6px #D4D4D4; }
   .page-header h1 {
     color: #FFFFFF;
     font-weight: 600;
@@ -5193,7 +5194,7 @@ Example App Mockups Below
     padding: 0 1rem;
     white-space: nowrap;
     position: relative;
-    top: 2.15rem; }
+    top: 2rem; }
     .page-header .app-navigation li, .page-header .app-navigation a {
       border-bottom: 4px solid transparent;
       padding-bottom: 0.5rem; }

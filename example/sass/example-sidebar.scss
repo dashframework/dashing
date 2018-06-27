@@ -118,6 +118,13 @@ $sidebar-width: 12rem;
 
   &.active { left: 0; }
 
+  .logo {
+    text-align: center;
+    img {
+      width: 5rem;
+    }
+  }
+
   .sidebar-header { cursor: pointer; }
 
   ul li {
@@ -180,19 +187,20 @@ $sidebar-width: 12rem;
 .side-navigation,
 .example-sidebar {
 
-  h3 {
+  .sidebar-header {
     user-select: none;
-    border-radius: 5px;
-    margin-bottom: .5rem;
     font-size: 1rem;
-    padding: 0.3rem 0.5rem;
+    margin: 0 -1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background-color: $gray-100;
 
     &:hover {
-      background-color: $gray-100;
+      //background-color: $gray-100;
     }
 
     &.is-open {
-      background-color: $gray-150;
+      //background-color: $gray-150;
       a { color: $blue; }
     }
     a {

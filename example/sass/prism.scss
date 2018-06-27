@@ -63,11 +63,11 @@ $example-page-content-width: 800px;
 
 .page-header { //TODO add to dashing
 	background-color: $blue;
-	line-height: 1.7rem;
   text-align: center;
-  padding: 2.5rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
   margin-bottom: 1rem;
 	text-align: left;
+	box-shadow: 0 2px 6px $gray-200;
   h1 {
 		color: $white;
     font-weight: 600;
@@ -89,7 +89,7 @@ $example-page-content-width: 800px;
     padding: 0 1rem;
     white-space: nowrap;
 		position: relative;
-    top: 2.15rem;
+    top: 2rem;
 
     li, a {
       border-bottom: 4px solid transparent;
