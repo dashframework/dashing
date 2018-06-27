@@ -908,10 +908,10 @@ corresponds to the arrow we want to display */
 
 /* Core Extendables
   =========================================================================== */
-.row, .app-menu .app-navigation {
+.row, .app-menu .app-navigation, .page-header .app-navigation {
   overflow: auto; }
 
-.app-menu .app-navigation {
+.app-menu .app-navigation, .page-header .app-navigation {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -1937,7 +1937,7 @@ fieldset .has-warning .message li {
   =========================================================================== */
 /* Actions Extendables
   =========================================================================== */
-.button, .file-custom .file-custom--button, button, input[type='submit'], input[type='reset'], .app-menu .app-navigation li a {
+.button, .file-custom .file-custom--button, button, input[type='submit'], input[type='reset'], .app-menu .app-navigation li a, .page-header .app-navigation li a {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1951,11 +1951,11 @@ fieldset .has-warning .message li {
   text-transform: uppercase;
   text-decoration: none;
   transition: all 50ms ease-in-out; }
-  .button:first-of-type, .file-custom .file-custom--button:first-of-type, button:first-of-type, input[type='submit']:first-of-type, input[type='reset']:first-of-type, .app-menu .app-navigation li a:first-of-type {
+  .button:first-of-type, .file-custom .file-custom--button:first-of-type, button:first-of-type, input[type='submit']:first-of-type, input[type='reset']:first-of-type, .app-menu .app-navigation li a:first-of-type, .page-header .app-navigation li a:first-of-type {
     margin-left: 0; }
-  .button:last-of-type, .file-custom .file-custom--button:last-of-type, button:last-of-type, input[type='submit']:last-of-type, input[type='reset']:last-of-type, .app-menu .app-navigation li a:last-of-type {
+  .button:last-of-type, .file-custom .file-custom--button:last-of-type, button:last-of-type, input[type='submit']:last-of-type, input[type='reset']:last-of-type, .app-menu .app-navigation li a:last-of-type, .page-header .app-navigation li a:last-of-type {
     margin-right: 0; }
-  .button:hover, .file-custom .file-custom--button:hover, button:hover, input[type='submit']:hover, input[type='reset']:hover, .app-menu .app-navigation li a:hover {
+  .button:hover, .file-custom .file-custom--button:hover, button:hover, input[type='submit']:hover, input[type='reset']:hover, .app-menu .app-navigation li a:hover, .page-header .app-navigation li a:hover {
     transition: all .1s ease-in-out; }
 
 /* Actions Styles
@@ -3589,23 +3589,25 @@ i.dashing-clippy, .app-menu .app-context .app-title .button--navigation, .chevro
     opacity: .9;
     font-variant: normal;
     text-transform: none; }
-  .button .dashing-icon, .file-custom .file-custom--button .dashing-icon, button .dashing-icon, input[type='submit'] .dashing-icon, input[type='reset'] .dashing-icon, .app-menu .app-navigation li a .dashing-icon, .button i.dashing-tooltip, .file-custom .file-custom--button i.dashing-tooltip, button i.dashing-tooltip, input[type='submit'] i.dashing-tooltip, input[type='reset'] i.dashing-tooltip, .app-menu .app-navigation li a i.dashing-tooltip,
+  .button .dashing-icon, .file-custom .file-custom--button .dashing-icon, button .dashing-icon, input[type='submit'] .dashing-icon, input[type='reset'] .dashing-icon, .app-menu .app-navigation li a .dashing-icon, .page-header .app-navigation li a .dashing-icon, .button i.dashing-tooltip, .file-custom .file-custom--button i.dashing-tooltip, button i.dashing-tooltip, input[type='submit'] i.dashing-tooltip, input[type='reset'] i.dashing-tooltip, .app-menu .app-navigation li a i.dashing-tooltip, .page-header .app-navigation li a i.dashing-tooltip,
   .button i.dashing-clippy,
   .file-custom .file-custom--button i.dashing-clippy,
   button i.dashing-clippy,
   input[type='submit'] i.dashing-clippy,
   input[type='reset'] i.dashing-clippy,
-  .app-menu .app-navigation li a i.dashing-clippy, .button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .button .button--navigation, .file-custom .file-custom--button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button .button--navigation, button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title button .button--navigation, input[type='submit'] .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title input[type='submit'] .button--navigation, input[type='reset'] .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title input[type='reset'] .button--navigation, .app-menu .app-navigation li a .app-context .app-title .button--navigation, .app-menu .app-context .app-title .app-navigation li a .button--navigation, .button .chevron-dark, .file-custom .file-custom--button .chevron-dark, button .chevron-dark, input[type='submit'] .chevron-dark, input[type='reset'] .chevron-dark, .app-menu .app-navigation li a .chevron-dark {
+  .app-menu .app-navigation li a i.dashing-clippy,
+  .page-header .app-navigation li a i.dashing-clippy, .button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .button .button--navigation, .file-custom .file-custom--button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button .button--navigation, button .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title button .button--navigation, input[type='submit'] .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title input[type='submit'] .button--navigation, input[type='reset'] .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title input[type='reset'] .button--navigation, .app-menu .app-navigation li a .app-context .app-title .button--navigation, .app-menu .app-context .app-title .app-navigation li a .button--navigation, .page-header .app-navigation li a .app-menu .app-context .app-title .button--navigation, .button .chevron-dark, .file-custom .file-custom--button .chevron-dark, button .chevron-dark, input[type='submit'] .chevron-dark, input[type='reset'] .chevron-dark, .app-menu .app-navigation li a .chevron-dark, .page-header .app-navigation li a .chevron-dark {
     display: inline-block;
     margin-right: 0.2rem;
     margin-left: -0.2rem; }
-  .button .dashing-icon.flow-opposite, .file-custom .file-custom--button .dashing-icon.flow-opposite, button .dashing-icon.flow-opposite, input[type='submit'] .dashing-icon.flow-opposite, input[type='reset'] .dashing-icon.flow-opposite, .app-menu .app-navigation li a .dashing-icon.flow-opposite, .button i.flow-opposite.dashing-tooltip, .file-custom .file-custom--button i.flow-opposite.dashing-tooltip, button i.flow-opposite.dashing-tooltip, input[type='submit'] i.flow-opposite.dashing-tooltip, input[type='reset'] i.flow-opposite.dashing-tooltip, .app-menu .app-navigation li a i.flow-opposite.dashing-tooltip,
+  .button .dashing-icon.flow-opposite, .file-custom .file-custom--button .dashing-icon.flow-opposite, button .dashing-icon.flow-opposite, input[type='submit'] .dashing-icon.flow-opposite, input[type='reset'] .dashing-icon.flow-opposite, .app-menu .app-navigation li a .dashing-icon.flow-opposite, .page-header .app-navigation li a .dashing-icon.flow-opposite, .button i.flow-opposite.dashing-tooltip, .file-custom .file-custom--button i.flow-opposite.dashing-tooltip, button i.flow-opposite.dashing-tooltip, input[type='submit'] i.flow-opposite.dashing-tooltip, input[type='reset'] i.flow-opposite.dashing-tooltip, .app-menu .app-navigation li a i.flow-opposite.dashing-tooltip, .page-header .app-navigation li a i.flow-opposite.dashing-tooltip,
   .button i.flow-opposite.dashing-clippy,
   .file-custom .file-custom--button i.flow-opposite.dashing-clippy,
   button i.flow-opposite.dashing-clippy,
   input[type='submit'] i.flow-opposite.dashing-clippy,
   input[type='reset'] i.flow-opposite.dashing-clippy,
-  .app-menu .app-navigation li a i.flow-opposite.dashing-clippy, .button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .button .flow-opposite.button--navigation, .file-custom .file-custom--button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button .flow-opposite.button--navigation, button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title button .flow-opposite.button--navigation, input[type='submit'] .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title input[type='submit'] .flow-opposite.button--navigation, input[type='reset'] .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title input[type='reset'] .flow-opposite.button--navigation, .app-menu .app-navigation li a .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .app-navigation li a .flow-opposite.button--navigation, .button .flow-opposite.chevron-dark, .file-custom .file-custom--button .flow-opposite.chevron-dark, button .flow-opposite.chevron-dark, input[type='submit'] .flow-opposite.chevron-dark, input[type='reset'] .flow-opposite.chevron-dark, .app-menu .app-navigation li a .flow-opposite.chevron-dark {
+  .app-menu .app-navigation li a i.flow-opposite.dashing-clippy,
+  .page-header .app-navigation li a i.flow-opposite.dashing-clippy, .button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .button .flow-opposite.button--navigation, .file-custom .file-custom--button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button .flow-opposite.button--navigation, button .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title button .flow-opposite.button--navigation, input[type='submit'] .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title input[type='submit'] .flow-opposite.button--navigation, input[type='reset'] .app-menu .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title input[type='reset'] .flow-opposite.button--navigation, .app-menu .app-navigation li a .app-context .app-title .flow-opposite.button--navigation, .app-menu .app-context .app-title .app-navigation li a .flow-opposite.button--navigation, .page-header .app-navigation li a .app-menu .app-context .app-title .flow-opposite.button--navigation, .button .flow-opposite.chevron-dark, .file-custom .file-custom--button .flow-opposite.chevron-dark, button .flow-opposite.chevron-dark, input[type='submit'] .flow-opposite.chevron-dark, input[type='reset'] .flow-opposite.chevron-dark, .app-menu .app-navigation li a .flow-opposite.chevron-dark, .page-header .app-navigation li a .flow-opposite.chevron-dark {
     margin-left: 0.2rem;
     margin-right: -0.2rem; }
   .button--icon .dashing-icon, .button--icon i.dashing-tooltip,
@@ -5168,18 +5170,57 @@ Example App Mockups Below
     margin: 0; }
 
 .page-header {
-  background-color: #393e41;
+  background-color: #3F70C9;
   line-height: 1.7rem;
   text-align: center;
-  padding: 2rem 1rem;
-  margin-bottom: 1rem; }
+  padding: 2.5rem 1rem 2rem 1rem;
+  margin-bottom: 1rem;
+  text-align: left; }
   .page-header h1 {
     color: #FFFFFF;
     font-weight: 600;
-    margin: 0; }
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 800px; }
   .page-header .button, .page-header .file-custom .file-custom--button, .file-custom .page-header .file-custom--button {
     position: relative;
     top: -2.1rem; }
+  .page-header .app-navigation {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 0 1rem;
+    white-space: nowrap;
+    position: relative;
+    top: 2.15rem; }
+    .page-header .app-navigation li, .page-header .app-navigation a {
+      border-bottom: 4px solid transparent;
+      padding-bottom: 0.5rem; }
+    .page-header .app-navigation li {
+      display: inline-block;
+      float: none; }
+      .page-header .app-navigation li.active a,
+      .page-header .app-navigation li a.active, .page-header .app-navigation li.is-active a,
+      .page-header .app-navigation li a.is-active {
+        color: #ffffff !important;
+        border-bottom: 4px solid !important; }
+      .page-header .app-navigation li a {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        line-height: 0.9rem;
+        margin: 0;
+        margin-right: 1.2rem !important;
+        transition: all 0.2s ease-in-out; }
+        .page-header .app-navigation li a:hover {
+          color: #ffffff; }
+          .page-header .app-navigation li a:hover .dashing-icon, .page-header .app-navigation li a:hover i.dashing-tooltip,
+          .page-header .app-navigation li a:hover i.dashing-clippy, .page-header .app-navigation li a:hover .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .page-header .app-navigation li a:hover .button--navigation, .page-header .app-navigation li a:hover .chevron-dark {
+            opacity: 1; }
+        .page-header .app-navigation li a .dashing-icon, .page-header .app-navigation li a i.dashing-tooltip,
+        .page-header .app-navigation li a i.dashing-clippy, .page-header .app-navigation li a .app-menu .app-context .app-title .button--navigation, .app-menu .app-context .app-title .page-header .app-navigation li a .button--navigation, .page-header .app-navigation li a .chevron-dark {
+          opacity: .6;
+          transition: all 0.2s ease-in-out; }
 
 code[class*="language-"],
 pre[class*="language-"] {

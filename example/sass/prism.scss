@@ -16,6 +16,7 @@ $gray-900c:     #24292C;
 $yellow-500:    #F2E670;
 
 $tablet:        "all and (min-width: 40em)" !default;
+$example-page-content-width: 800px;
 
 .example-body {
 	background-color: $white;
@@ -61,21 +62,75 @@ $tablet:        "all and (min-width: 40em)" !default;
 }
 
 .page-header { //TODO add to dashing
-  // background-color: $gray-200;
-	background-color: #393e41;
+	background-color: $blue;
 	line-height: 1.7rem;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem 2rem 1rem;
   margin-bottom: 1rem;
+	text-align: left;
   h1 {
 		color: $white;
     font-weight: 600;
-    margin: 0;
+    margin: 0 auto;
+		padding: 0 1rem;
+		max-width: $example-page-content-width;
   }
 	.button {
 		position: relative;
 		top: -2.1rem;
 	}
+	.app-navigation {
+    @extend %remove-list-style;
+    @extend %clearfix;
+    max-width: $example-page-content-width;
+    margin: auto;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 0 1rem;
+    white-space: nowrap;
+		position: relative;
+    top: 2.15rem;
+
+    li, a {
+      border-bottom: 4px solid transparent;
+      padding-bottom: 0.5rem;
+    }
+
+    li {
+      display: inline-block;
+      float: none;
+
+      &.active a,
+      a.active,
+      &.is-active a,
+      a.is-active {
+        color: #ffffff !important;
+        border-bottom: 4px solid !important;
+      }
+
+      a {
+        @extend %action;
+        color: rgba(#ffffff, .60);
+        font-size: $font-size-normal;
+        line-height: 0.9rem;
+        margin: 0;
+        margin-right: 1.2rem !important; //Ignores first-of-type and last-of-type margin default to %actions
+        transition: $global-transition;
+
+        &:hover {
+          color: #ffffff;
+          .dashing-icon {
+            opacity: 1;
+          }
+        }
+
+        .dashing-icon { //TODO add support to dashing
+          opacity: .6;
+          transition: $global-transition;
+        }
+      }
+    }
+  }
 }
 
 code[class*="language-"],

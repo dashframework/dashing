@@ -27,6 +27,8 @@ $(function() {
           //if there is a match, remove the class of current from the home page
           $(indexObject).removeClass('current');
           applied = true;
+          //Load code page by default
+          $("#app-content").load("code.html");
         }
       });
   });
@@ -190,6 +192,17 @@ function copyUrlToClipboard(text) {
     console.log('Oops, unable to copy');
   }
   document.body.removeChild(textArea);
+}
+
+function loadCodeContent() {
+  $("#app-content").load("code.html");
+  $("#code").addClass("active");
+  $("#guidelines").removeClass("active");
+}
+function loadGuidelinesContent() {
+  $("#app-content").load("guidelines.html");
+  $("#guidelines").addClass("active");
+  $("#code").removeClass("active");
 }
 
 // $('.code-toggle').click(function(e) {

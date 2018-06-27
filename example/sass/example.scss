@@ -22,11 +22,11 @@
 }
 
 .row {
-  max-width: 800px;
+  max-width: $example-page-content-width;
 }
 
 .grid-wrapper {
-  max-width: 800px;
+  max-width: $example-page-content-width;
 }
 
 .button--sidebar-icon {
