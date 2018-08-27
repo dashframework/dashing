@@ -3108,21 +3108,6 @@ span.dashing-tooltip {
     border-style: dashed; }
   .card .card--narrow {
     max-width: 750px; }
-  .card .card--list, .card .card-list {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .card .card--list li, .card .card-list li {
-      cursor: pointer;
-      padding: 0.75rem;
-      text-align: left;
-      -webkit-transition: all 0.15s ease-in-out;
-      -moz-transition: all 0.15s ease-in-out;
-      -o-transition: all 0.15s ease-in-out;
-      -ms-transition: all 0.15s ease-in-out;
-      transition: all 0.15s ease-in-out; }
-      .card .card--list li:hover, .card .card-list li:hover {
-        background-color: #EDEDED; }
 
 .prevent-scrolling {
   overflow: hidden; }
