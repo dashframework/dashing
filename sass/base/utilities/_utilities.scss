@@ -47,3 +47,11 @@
 .text-color--purple { color: $purple; }
 .text-color--red { color: $red; }
 .text-color--yellow { color: $yellow; }
+
+//Flex utilities
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
