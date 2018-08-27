@@ -91,8 +91,8 @@
 @mixin transparent--button($color) {
   background-color: transparentize(white, 1);
   color: $color;
-  &:hover, &:focus { opacity: .6; }
-  &:active { opacity: .9; }
+  &:hover, &:focus { background-color: rgba(85,85,85,.1) }
+  &:active { background-color: rgba(85,85,85,.2) }
   &:not(.button--icon) .dashing-icon:before { color: $color; }
 }
 

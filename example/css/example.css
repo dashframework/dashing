@@ -930,10 +930,10 @@ corresponds to the arrow we want to display */
 
 /* Action Extendables
   =========================================================================== */
-.button, .file-custom .file-custom--button, button, input[type='submit'], input[type='reset'], .button.button--round, button.button--round, input[type='submit'].button--round, input[type='reset'].button--round {
+.button.button--round, .file-custom .button--round.file-custom--button, button.button--round, input[type='submit'].button--round, input[type='reset'].button--round {
   border-radius: 50px; }
 
-.button.button--smooth, .file-custom .button--smooth.file-custom--button, .file-custom .app-menu .app-context .app-title .file-custom--button.button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button.button--navigation, .app-menu .app-context .app-title .button.button--navigation, button.button--smooth, .app-menu .app-context .app-title button.button--navigation, input[type='submit'].button--smooth, .app-menu .app-context .app-title input[type='submit'].button--navigation, input[type='reset'].button--smooth, .app-menu .app-context .app-title input[type='reset'].button--navigation, .page-banner .button--banner {
+.button, .file-custom .file-custom--button, button, input[type='submit'], input[type='reset'], .button.button--smooth, .file-custom .app-menu .app-context .app-title .file-custom--button.button--navigation, .app-menu .app-context .app-title .file-custom .file-custom--button.button--navigation, .app-menu .app-context .app-title .button.button--navigation, button.button--smooth, .app-menu .app-context .app-title button.button--navigation, input[type='submit'].button--smooth, .app-menu .app-context .app-title input[type='submit'].button--navigation, input[type='reset'].button--smooth, .app-menu .app-context .app-title input[type='reset'].button--navigation, .page-banner .button--banner {
   border-radius: 5px; }
 
 .button.button--square, .file-custom .button--square.file-custom--button, button.button--square, input[type='submit'].button--square, input[type='reset'].button--square {
@@ -2188,9 +2188,9 @@ fieldset .has-warning .message li {
     input[type='reset'].button--transparent:not(.button--transparent) i.dashing-clippy:before, input[type='reset'].button--transparent:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title input[type='reset'].button--transparent:not(.button--transparent) .button--navigation:before, input[type='reset'].button--transparent:not(.button--transparent) .chevron-dark:before {
       color: #FFFFFF; }
     .button.button--transparent:hover, .file-custom .button--transparent.file-custom--button:hover, .button.button--transparent:focus, .file-custom .button--transparent.file-custom--button:focus, button.button--transparent:hover, button.button--transparent:focus, input[type='submit'].button--transparent:hover, input[type='submit'].button--transparent:focus, input[type='reset'].button--transparent:hover, input[type='reset'].button--transparent:focus {
-      opacity: .6; }
+      background-color: rgba(85, 85, 85, 0.1); }
     .button.button--transparent:active, .file-custom .button--transparent.file-custom--button:active, button.button--transparent:active, input[type='submit'].button--transparent:active, input[type='reset'].button--transparent:active {
-      opacity: .9; }
+      background-color: rgba(85, 85, 85, 0.2); }
     .button.button--transparent:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
     .button.button--transparent:not(.button--icon) i.dashing-clippy:before,
     .file-custom .button--transparent.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent:not(.button--icon) .dashing-icon:before, button.button--transparent:not(.button--icon) i.dashing-tooltip:before,
@@ -2199,15 +2199,15 @@ fieldset .has-warning .message li {
     input[type='reset'].button--transparent:not(.button--icon) i.dashing-clippy:before, input[type='reset'].button--transparent:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title input[type='reset'].button--transparent:not(.button--icon) .button--navigation:before, input[type='reset'].button--transparent:not(.button--icon) .chevron-dark:before {
       color: #3F70C9; }
     .button.button--transparent:not(.button--icon), .file-custom .button--transparent.file-custom--button:not(.button--icon), button.button--transparent:not(.button--icon), input[type='submit'].button--transparent:not(.button--icon), input[type='reset'].button--transparent:not(.button--icon) {
-      padding-left: 0;
-      padding-right: 0; }
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
     .button.button--transparent.button--primary, .file-custom .button--transparent.button--primary.file-custom--button, button.button--transparent.button--primary, input[type='submit'].button--transparent.button--primary, input[type='reset'].button--transparent.button--primary {
       background-color: rgba(255, 255, 255, 0);
       color: #3F70C9; }
       .button.button--transparent.button--primary:hover, .file-custom .button--transparent.button--primary.file-custom--button:hover, .button.button--transparent.button--primary:focus, .file-custom .button--transparent.button--primary.file-custom--button:focus, button.button--transparent.button--primary:hover, button.button--transparent.button--primary:focus, input[type='submit'].button--transparent.button--primary:hover, input[type='submit'].button--transparent.button--primary:focus, input[type='reset'].button--transparent.button--primary:hover, input[type='reset'].button--transparent.button--primary:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--primary:active, .file-custom .button--transparent.button--primary.file-custom--button:active, button.button--transparent.button--primary:active, input[type='submit'].button--transparent.button--primary:active, input[type='reset'].button--transparent.button--primary:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--primary:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--primary.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--primary:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--primary.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--primary:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--primary.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--primary:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--primary:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--primary.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--primary.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--primary:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--primary.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--primary:not(.button--icon) .dashing-icon:before, button.button--transparent.button--primary:not(.button--icon) i.dashing-tooltip:before,
@@ -2219,9 +2219,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #6E6E6E; }
       .button.button--transparent.button--secondary:hover, .file-custom .button--transparent.button--secondary.file-custom--button:hover, .button.button--transparent.button--secondary:focus, .file-custom .button--transparent.button--secondary.file-custom--button:focus, button.button--transparent.button--secondary:hover, button.button--transparent.button--secondary:focus, input[type='submit'].button--transparent.button--secondary:hover, input[type='submit'].button--transparent.button--secondary:focus, input[type='reset'].button--transparent.button--secondary:hover, input[type='reset'].button--transparent.button--secondary:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--secondary:active, .file-custom .button--transparent.button--secondary.file-custom--button:active, button.button--transparent.button--secondary:active, input[type='submit'].button--transparent.button--secondary:active, input[type='reset'].button--transparent.button--secondary:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--secondary:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--secondary.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--secondary:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--secondary.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--secondary:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--secondary.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--secondary:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--secondary:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--secondary.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--secondary.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--secondary:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--secondary.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--secondary:not(.button--icon) .dashing-icon:before, button.button--transparent.button--secondary:not(.button--icon) i.dashing-tooltip:before,
@@ -2233,9 +2233,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #3F70C9; }
       .button.button--transparent.button--blue:hover, .file-custom .button--transparent.button--blue.file-custom--button:hover, .button.button--transparent.button--blue:focus, .file-custom .button--transparent.button--blue.file-custom--button:focus, button.button--transparent.button--blue:hover, button.button--transparent.button--blue:focus, input[type='submit'].button--transparent.button--blue:hover, input[type='submit'].button--transparent.button--blue:focus, input[type='reset'].button--transparent.button--blue:hover, input[type='reset'].button--transparent.button--blue:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--blue:active, .file-custom .button--transparent.button--blue.file-custom--button:active, button.button--transparent.button--blue:active, input[type='submit'].button--transparent.button--blue:active, input[type='reset'].button--transparent.button--blue:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--blue:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--blue.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--blue:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--blue.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--blue:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--blue.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--blue:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--blue:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--blue.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--blue.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--blue:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--blue.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--blue:not(.button--icon) .dashing-icon:before, button.button--transparent.button--blue:not(.button--icon) i.dashing-tooltip:before,
@@ -2247,9 +2247,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #6E6E6E; }
       .button.button--transparent.button--gray:hover, .file-custom .button--transparent.button--gray.file-custom--button:hover, .file-custom .button--transparent.file-custom--button.button--sidebar-icon:hover, .button.button--transparent.button--sidebar-icon:hover, .button.button--transparent.button--gray:focus, .file-custom .button--transparent.button--gray.file-custom--button:focus, .file-custom .button--transparent.file-custom--button.button--sidebar-icon:focus, .button.button--transparent.button--sidebar-icon:focus, .button.button--transparent.button--grey:hover, .file-custom .button--transparent.button--grey.file-custom--button:hover, .button.button--transparent.button--grey:focus, .file-custom .button--transparent.button--grey.file-custom--button:focus, button.button--transparent.button--gray:hover, button.button--transparent.button--sidebar-icon:hover, button.button--transparent.button--gray:focus, button.button--transparent.button--sidebar-icon:focus, button.button--transparent.button--grey:hover, button.button--transparent.button--grey:focus, input[type='submit'].button--transparent.button--gray:hover, input[type='submit'].button--transparent.button--sidebar-icon:hover, input[type='submit'].button--transparent.button--gray:focus, input[type='submit'].button--transparent.button--sidebar-icon:focus, input[type='submit'].button--transparent.button--grey:hover, input[type='submit'].button--transparent.button--grey:focus, input[type='reset'].button--transparent.button--gray:hover, input[type='reset'].button--transparent.button--sidebar-icon:hover, input[type='reset'].button--transparent.button--gray:focus, input[type='reset'].button--transparent.button--sidebar-icon:focus, input[type='reset'].button--transparent.button--grey:hover, input[type='reset'].button--transparent.button--grey:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--gray:active, .file-custom .button--transparent.button--gray.file-custom--button:active, .file-custom .button--transparent.file-custom--button.button--sidebar-icon:active, .button.button--transparent.button--sidebar-icon:active, .button.button--transparent.button--grey:active, .file-custom .button--transparent.button--grey.file-custom--button:active, button.button--transparent.button--gray:active, button.button--transparent.button--sidebar-icon:active, button.button--transparent.button--grey:active, input[type='submit'].button--transparent.button--gray:active, input[type='submit'].button--transparent.button--sidebar-icon:active, input[type='submit'].button--transparent.button--grey:active, input[type='reset'].button--transparent.button--gray:active, input[type='reset'].button--transparent.button--sidebar-icon:active, input[type='reset'].button--transparent.button--grey:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--gray:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--gray.file-custom--button:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.file-custom--button.button--sidebar-icon:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--sidebar-icon:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--gray:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--gray.file-custom--button:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.file-custom--button.button--sidebar-icon:not(.button--icon) i.dashing-tooltip:before, .button.button--transparent.button--sidebar-icon:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--gray:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--gray.file-custom--button:not(.button--icon) i.dashing-clippy:before,
@@ -2271,9 +2271,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #09AA66; }
       .button.button--transparent.button--green:hover, .file-custom .button--transparent.button--green.file-custom--button:hover, .button.button--transparent.button--green:focus, .file-custom .button--transparent.button--green.file-custom--button:focus, button.button--transparent.button--green:hover, button.button--transparent.button--green:focus, input[type='submit'].button--transparent.button--green:hover, input[type='submit'].button--transparent.button--green:focus, input[type='reset'].button--transparent.button--green:hover, input[type='reset'].button--transparent.button--green:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--green:active, .file-custom .button--transparent.button--green.file-custom--button:active, button.button--transparent.button--green:active, input[type='submit'].button--transparent.button--green:active, input[type='reset'].button--transparent.button--green:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--green:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--green.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--green:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--green.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--green:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--green.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--green:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--green:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--green.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--green.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--green:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--green.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--green:not(.button--icon) .dashing-icon:before, button.button--transparent.button--green:not(.button--icon) i.dashing-tooltip:before,
@@ -2285,9 +2285,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #DA3D30; }
       .button.button--transparent.button--red:hover, .file-custom .button--transparent.button--red.file-custom--button:hover, .button.button--transparent.button--red:focus, .file-custom .button--transparent.button--red.file-custom--button:focus, button.button--transparent.button--red:hover, button.button--transparent.button--red:focus, input[type='submit'].button--transparent.button--red:hover, input[type='submit'].button--transparent.button--red:focus, input[type='reset'].button--transparent.button--red:hover, input[type='reset'].button--transparent.button--red:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--red:active, .file-custom .button--transparent.button--red.file-custom--button:active, button.button--transparent.button--red:active, input[type='submit'].button--transparent.button--red:active, input[type='reset'].button--transparent.button--red:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--red:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--red.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--red:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--red.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--red:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--red.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--red:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--red:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--red.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--red.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--red:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--red.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--red:not(.button--icon) .dashing-icon:before, button.button--transparent.button--red:not(.button--icon) i.dashing-tooltip:before,
@@ -2299,9 +2299,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #FFA11F; }
       .button.button--transparent.button--orange:hover, .file-custom .button--transparent.button--orange.file-custom--button:hover, .button.button--transparent.button--orange:focus, .file-custom .button--transparent.button--orange.file-custom--button:focus, button.button--transparent.button--orange:hover, button.button--transparent.button--orange:focus, input[type='submit'].button--transparent.button--orange:hover, input[type='submit'].button--transparent.button--orange:focus, input[type='reset'].button--transparent.button--orange:hover, input[type='reset'].button--transparent.button--orange:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--orange:active, .file-custom .button--transparent.button--orange.file-custom--button:active, button.button--transparent.button--orange:active, input[type='submit'].button--transparent.button--orange:active, input[type='reset'].button--transparent.button--orange:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--orange:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--orange.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--orange:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--orange.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--orange:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--orange.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--orange:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--orange:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--orange.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--orange.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--orange:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--orange.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--orange:not(.button--icon) .dashing-icon:before, button.button--transparent.button--orange:not(.button--icon) i.dashing-tooltip:before,
@@ -2313,9 +2313,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #9F65AE; }
       .button.button--transparent.button--purple:hover, .file-custom .button--transparent.button--purple.file-custom--button:hover, .button.button--transparent.button--purple:focus, .file-custom .button--transparent.button--purple.file-custom--button:focus, button.button--transparent.button--purple:hover, button.button--transparent.button--purple:focus, input[type='submit'].button--transparent.button--purple:hover, input[type='submit'].button--transparent.button--purple:focus, input[type='reset'].button--transparent.button--purple:hover, input[type='reset'].button--transparent.button--purple:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--purple:active, .file-custom .button--transparent.button--purple.file-custom--button:active, button.button--transparent.button--purple:active, input[type='submit'].button--transparent.button--purple:active, input[type='reset'].button--transparent.button--purple:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--purple:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--purple.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--purple:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--purple.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--purple:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--purple.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--purple:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--purple:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--purple.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--purple.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--purple:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--purple.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--purple:not(.button--icon) .dashing-icon:before, button.button--transparent.button--purple:not(.button--icon) i.dashing-tooltip:before,
@@ -2327,9 +2327,9 @@ fieldset .has-warning .message li {
       background-color: rgba(255, 255, 255, 0);
       color: #FFFFFF; }
       .button.button--transparent.button--white:hover, .file-custom .button--transparent.button--white.file-custom--button:hover, .button.button--transparent.button--white:focus, .file-custom .button--transparent.button--white.file-custom--button:focus, button.button--transparent.button--white:hover, button.button--transparent.button--white:focus, input[type='submit'].button--transparent.button--white:hover, input[type='submit'].button--transparent.button--white:focus, input[type='reset'].button--transparent.button--white:hover, input[type='reset'].button--transparent.button--white:focus {
-        opacity: .6; }
+        background-color: rgba(85, 85, 85, 0.1); }
       .button.button--transparent.button--white:active, .file-custom .button--transparent.button--white.file-custom--button:active, button.button--transparent.button--white:active, input[type='submit'].button--transparent.button--white:active, input[type='reset'].button--transparent.button--white:active {
-        opacity: .9; }
+        background-color: rgba(85, 85, 85, 0.2); }
       .button.button--transparent.button--white:not(.button--icon) .dashing-icon:before, .file-custom .button--transparent.button--white.file-custom--button:not(.button--icon) .dashing-icon:before, .button.button--transparent.button--white:not(.button--icon) i.dashing-tooltip:before, .file-custom .button--transparent.button--white.file-custom--button:not(.button--icon) i.dashing-tooltip:before,
       .button.button--transparent.button--white:not(.button--icon) i.dashing-clippy:before,
       .file-custom .button--transparent.button--white.file-custom--button:not(.button--icon) i.dashing-clippy:before, .button.button--transparent.button--white:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button.button--transparent.button--white:not(.button--icon) .button--navigation:before, .file-custom .button--transparent.button--white.file-custom--button:not(.button--icon) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .button--transparent.button--white.file-custom--button:not(.button--icon) .button--navigation:before, .button.button--transparent.button--white:not(.button--icon) .chevron-dark:before, .file-custom .button--transparent.button--white.file-custom--button:not(.button--icon) .chevron-dark:before, button.button--transparent.button--white:not(.button--icon) .dashing-icon:before, button.button--transparent.button--white:not(.button--icon) i.dashing-tooltip:before,
@@ -3108,21 +3108,6 @@ span.dashing-tooltip {
     border-style: dashed; }
   .card .card--narrow {
     max-width: 750px; }
-  .card .card--list, .card .card-list {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .card .card--list li, .card .card-list li {
-      cursor: pointer;
-      padding: 0.75rem;
-      text-align: left;
-      -webkit-transition: all 0.15s ease-in-out;
-      -moz-transition: all 0.15s ease-in-out;
-      -o-transition: all 0.15s ease-in-out;
-      -ms-transition: all 0.15s ease-in-out;
-      transition: all 0.15s ease-in-out; }
-      .card .card--list li:hover, .card .card-list li:hover {
-        background-color: #EDEDED; }
 
 .prevent-scrolling {
   overflow: hidden; }
@@ -5441,7 +5426,7 @@ pre.line-numbers > code {
     display: block; }
 
 h2 .button--copy-link {
-  width: 100px;
+  width: auto;
   pointer-events: initial;
   transition: all 0.25s;
   opacity: 1;
@@ -5456,7 +5441,7 @@ h2 .button--copy-link {
       pointer-events: none;
       opacity: 0; } }
 h2:hover .button--copy-link, h2:active .button--copy-link {
-  width: 100px;
+  width: auto;
   pointer-events: initial;
   opacity: 1; }
   h2:hover .button--copy-link:active, h2:hover .button--copy-link:focus, h2:active .button--copy-link:active, h2:active .button--copy-link:focus {
