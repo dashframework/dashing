@@ -79,4 +79,27 @@
   .card--narrow{
     max-width: 750px;
   }
+<<<<<<< HEAD
+=======
+
+  .card--list, .card-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0.75rem;
+      transition: $global-transition;
+    }
+
+    &.is-selectable {
+      li {
+        cursor: pointer;
+        &:hover {
+          background-color: $gray-100;
+        }
+      }
+    }
+  }
+>>>>>>> added is-selectable class
 }
