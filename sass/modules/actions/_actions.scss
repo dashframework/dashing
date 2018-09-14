@@ -26,7 +26,7 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
   =========================================================================== */
 #{$buttons} {
   @extend %action;
-  @extend %button--round;
+  @extend %button--smooth;
   @include button($background-color: $blue, $color: $white);
 
   -webkit-font-smoothing: auto;
@@ -85,8 +85,8 @@ $button-disabled: "&[disabled], &.disabled, &.button--disabled";
     @include button($background-color: transparentize(white, 1), $color: $blue);
     @include transparent--button($color: $blue);
     &:not(.button--icon) { //Retains button--icon padding
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
 
     &.button--primary { @include transparent--button($color: $blue); }
