@@ -2,6 +2,12 @@
 
 This changelog was started using [these conventions](http://keepachangelog.com/).
 
+### 1.13.0 - September 14, 2018
+**Added**
+* Added card--list styles and updated transparent button hover style
+  
+*****
+  
 ### 1.12.1 - June 11, 2018
 **Fixed**
 * Fixed progress stepper styles by rebuilding CSS
