@@ -7,54 +7,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+	<!-- Mobile Menu -->
 	<section class="mobile-overlay" style="display: none;">
 		<aside class="mobile-sidebar">
 			<div class="mobile-profile">
-				<div class="menu-button"><i class="dashing-icon dashing-icon--close"></i></div>
+				<div class="mobile-sidebar--button" id="open-button" ><i class="dashing-icon dashing-icon--close"></i></div>
 			</div>
 			<ul class="mobile-sidebar-nav">
-				<li><a>Home</a></li>
-				<li><a>Wallet</a></li>
-				<li><a>My Needs</a></li>
-				<li><a>Sign Out</a></li>
+				<li><i class="dashing-icon dashing-icon--locked"></i><a>Home</a></li>
+				<li><i class="dashing-icon dashing-icon--locked"></i><a>Wallet</a></li>
+				<li><i class="dashing-icon dashing-icon--locked"></i><a>My Needs</a></li>
+				<li><i class="dashing-icon dashing-icon--locked"></i><a>Sign Out</a></li>
 			</ul>
 		</aside>
 	</section>
 
+	<!-- Dashboard Layout -->
   <div class="grid-phoenix">
+		<!-- Header -->
     <header class="header">
-			<div class="menu-button"><i class="dashing-icon dashing-icon--menu"></i></div>
-			<!-- <i class="dashing-icon dashing-icon--menu"></i> -->
+			<div class="mobile-sidebar--button" id="close-button"><i class="dashing-icon dashing-icon--menu"></i></div>
 			<div class="logo"><p class="text-color--white">LOGO<p></div>
-			<div class="alert"><p class="text-color--white">A<p></div>
-			<div class="profile"><p class="text-color--white">P<p></div>
+			<div class="alert"><i class="dashing-icon dashing-icon--notification"></i></div>
+			<div class="profile"><i class="dashing-icon dashing-icon--face-good"></i></div>
 		</header>
 
+		<!-- Sidebar -->
 		<aside class="sidebar">
       <ul class="sidebar-nav">
-        <li><a>Home</a></li>
-        <li><a>Wallet</a></li>
-        <li><a>My Needs</a></li>
-        <li><a>Sign Out</a></li>
+        <li><i class="dashing-icon dashing-icon--locked"></i><a>Home</a></li>
+        <li><i class="dashing-icon dashing-icon--locked"></i><a>Wallet</a></li>
+        <li><i class="dashing-icon dashing-icon--locked"></i><a>My Needs</a></li>
+        <li><i class="dashing-icon dashing-icon--locked"></i><a>Sign Out</a></li>
       </ul>
     </aside>
 
-    <section class="article">
+		<!-- App -->
+    <section class="app">
 			<div class="content">
-	      <h1>2 column, header and footer</h1>
-	      <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+	      <h1>H1 This is a Header</h1>
+	      <p>This example uses a perm fix majiger.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 
-				<h1>2 column, header and footer</h1>
-				<p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+				<h1>H1 This is a Header</h1>
+				<p>This example uses a perm fix majiger.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 
-				<h1>2 column, header and footer</h1>
-				<p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+				<h1>H1 This is a Header</h1>
+				<p>This example uses a perm fix majiger.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
 				<p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
