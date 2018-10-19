@@ -13,7 +13,7 @@ $sidebar-text-color: $white;
 
 //Structure
 .content {
-  max-width: 1200px;
+  max-width: $global-content-width;
   margin: auto;
 }
 
