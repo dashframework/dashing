@@ -5363,7 +5363,7 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   width: calc(100% - 12rem);
   /*fallback*/
   height: calc(100vh - 5rem);
-  overflow: scroll;
+  overflow: auto;
   /*for content*/
   padding: 1rem;
   -webkit-overflow-scrolling: touch;

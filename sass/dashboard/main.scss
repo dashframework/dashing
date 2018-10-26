@@ -32,7 +32,7 @@ $sidebar-text-color: $white;
   float: left;/*fallback*/
   width: calc(100% - 12rem);/*fallback*/
   height: calc(100vh - 5rem);
-  overflow: scroll;/*for content*/
+  overflow: auto;/*for content*/
   padding: 1rem;
   -webkit-overflow-scrolling: touch;
 }
@@ -73,6 +73,9 @@ $sidebar-text-color: $white;
   .app { grid-column: 1 / 3; width: 100%; }
 }
 
+//--------------------------------\\
+//---------- FULLSCREEN ----------\\
+//--------------------------------\\
 //Dashboard for fullscreen processes (add .fullscreen to .grid-phoenix)
 
 .fullscreen {
