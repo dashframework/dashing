@@ -5353,6 +5353,9 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   align-items: center;
   padding: 0.5rem;
 }
+.header .title, .header .action {
+  display: none;
+}
 
 .app {
   float: left;
@@ -5416,13 +5419,23 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   }
 }
 .fullscreen .header .title {
-  text-align: center;
+  display: initial;
+  text-align: left;
   width: 100%;
 }
+@media all and (min-width: 40em) {
+  .fullscreen .header .title {
+    text-align: center;
+  }
+}
 .fullscreen .header .action {
+  display: initial;
   position: fixed;
   right: 0.5rem;
   top: auto;
+}
+.fullscreen .logo, .fullscreen .alert, .fullscreen .profile, .fullscreen .mobile-sidebar--button {
+  display: none;
 }
 .fullscreen .sidebar {
   display: none;

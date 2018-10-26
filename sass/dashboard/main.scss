@@ -24,6 +24,8 @@ $sidebar-text-color: $white;
   display: flex;
   align-items: center;
   padding: 0.5rem;
+
+  .title, .action { display: none; }//hidden unless "fullscreen" is applied
 }
 
 .app {
@@ -76,15 +78,22 @@ $sidebar-text-color: $white;
 .fullscreen {
   .header {
     .title {
-      text-align: center;
+      display: initial;
+      text-align: left;
       width: 100%;
+
+      @media #{$tablet} {
+        text-align: center;
+      }
     }
     .action {
+      display: initial;
       position: fixed;
       right: 0.5rem;
       top: auto;
     }
   }
+  .logo, .alert, .profile, .mobile-sidebar--button { display: none; }
   .sidebar { display: none; }
   .app { grid-column: 1 / 3; width: 100%; }
 }
