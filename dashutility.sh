@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-#0, 1, or 2 0=failed 1="partially completed" 2="fully completed" 
-#help for colors and other http://tldp.org/LDP/abs/html/colorizing.html 
+#0, 1, or 2 0=failed 1="partially completed" 2="fully completed"
+#help for colors and other http://tldp.org/LDP/abs/html/colorizing.html
 #Script written for OSX
 textgreen='\033[0;32m'
 textred='\033[0;31m'
@@ -15,15 +15,15 @@ version="0"
 function sassWatch {
     echo -e "\n"
     echo -e "I'll watch your project for scss changes!"
-	echo -e "\n"
-    sass --w ./dashing.scss:./dashing.css ./example/sass/example.scss:./example/css/example.css
+	  echo -e "\n"
+    sass --watch ./dashing.scss:./dashing.css ./example/sass/example.scss:./example/css/example.css
     echo -e "\n"
 }
 
 function buildFiles {
     echo -e "\n"
     echo -e "Building your css files!"
-	echo -e "\n"
+	  echo -e "\n"
     echo -e "${textnormal}Building dashing.css...${textnormal}"
     sass -t compressed dashing.scss dashing.css
     echo -e "Done."
@@ -73,9 +73,9 @@ function commitChanges {
     echo -e "${textyellow}Note: Please review the above changes to be made!${textnormal}"
     echo -e "\n"
     echo -e "[2/2 Commit]"
-    
+
     echo -e "Active branch: ${textgreen}"$(git rev-parse --abbrev-ref HEAD)"${textnormal}"
-    
+
     read -p "Continue with commit? (y = Continue, any other = Cancel) " permissiongit
     if [ $permissiongit == 'y' ]
     then
@@ -87,7 +87,7 @@ function commitChanges {
 
         #TAG
         read -p "Add a version tag?(v$version) (y = Continue, any other = Don't Tag)" permissiontag
-        
+
         if [ $permissiontag == 'y' ]
         then
             git tag v$version
@@ -103,7 +103,7 @@ function commitChanges {
             git push
             # echo -e "git push"
             echo -e "Changes pushed to: ${textgreen}"$(git rev-parse --abbrev-ref HEAD)"${textnormal}"
-            
+
             if [ $permissiontag == 'y' ] #see if tag was applied
             then
                 git push --tags
@@ -111,7 +111,7 @@ function commitChanges {
                 echo -e "Tags pushed to: ${textgreen}"$(git rev-parse --abbrev-ref HEAD)"${textnormal}"
             fi
         fi
-    else 
+    else
         echo -e "${textyellow}Skipped automated git commit. ${textnormal}"
     fi
     echo -e "\n"
@@ -158,23 +158,23 @@ function changeFiles {
         timestamp=`date +%B\ %d,\ %Y`
 
         #Has to be inserted line by line... (Mac osx requires the literal line break...)
-        sed -i '' "5 i\\ 
+        sed -i '' "5 i\\
         ### $version - $timestamp
         " $changelogfile
-        sed -i '' "6 i\\ 
+        sed -i '' "6 i\\
         **$changelogtype**
         " $changelogfile
-        sed -i '' "7 i\\ 
+        sed -i '' "7 i\\
         * $changelog
         " $changelogfile
-        sed -i '' "8 i\\ 
-        \  
+        sed -i '' "8 i\\
+        \
         " $changelogfile
-        sed -i '' "9 i\\ 
+        sed -i '' "9 i\\
         *****
         " $changelogfile
-        sed -i '' "10 i\\ 
-        \  
+        sed -i '' "10 i\\
+        \
         " $changelogfile
 
         echo -e "${textgreen}Changed files. ${textnormal}"
@@ -201,17 +201,17 @@ echo -e "${textgreen}"
 
 cat << "textart"
 +--------------------------------------+
-  _____            _     _             
- |  __ \          | |   (_)            
- | |  | | __ _ ___| |__  _ _ __   __ _ 
+  _____            _     _
+ |  __ \          | |   (_)
+ | |  | | __ _ ___| |__  _ _ __   __ _
  | |  | |/ _` / __| '_ \| | '_ \ / _` |
  | |__| | (_| \__ \ | | | | | | | (_| |
  |_____/ \__,_|___/_| |_|_|_| |_|\__, |
                                   __/ |
-                                 |___/ 
+                                 |___/
 textart
 echo -e "${textpurple}©Samaritan Ministries International${textgreen}
-v0.1.0
+v0.2.0
 +--------------------------------------+"
 echo -e "${textnormal}"
 
