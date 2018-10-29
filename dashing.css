@@ -5276,6 +5276,21 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   border-radius: 50px;
   background-color: #413552;
   margin-left: 0.5rem;
+  position: relative;
+}
+.alert .count {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: #DD4B39;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .logo, .profile, .alert, .mobile-sidebar--button {
