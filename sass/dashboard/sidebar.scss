@@ -1,3 +1,6 @@
+//Variables
+$animation-time: 0.3s;
+
 //SIDEBAR
 .sidebar, .mobile-sidebar { background-color: $sidebar-background; }
 .sidebar-nav, .mobile-sidebar-nav {
@@ -29,6 +32,8 @@
 .mobile-sidebar-nav { width: 100%; }
 
 .mobile-overlay {
+  transition: width $animation-time;
+
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
@@ -36,6 +41,23 @@
   left: 0;
   right: 0;
   z-index: 2;
+  width: 100%;
+
+  *{
+    transition: opacity $animation-time;
+    opacity: 1.0;
+  }
+
+  &.is-collapsed {
+    transition: width $animation-time;
+    width: 0px;
+    overflow: hidden;
+
+    *{
+      transition: opacity $animation-time;
+      opacity: 0.0;
+    }
+  }
 
   .mobile-profile {
     width: 100%;

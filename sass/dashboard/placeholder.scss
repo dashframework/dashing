@@ -32,7 +32,6 @@
   align-items: center;
 }
 
-@media all and (max-width: 700px) {
-  .profile, .logo { display: none; }
-  .alert { margin-left: auto; }
-}
+.alert { margin-left: auto; @media #{$tablet} { margin-left: 0; } }
+.profile, .logo { display: none; @media #{$tablet} { display: flex; } }
+.mobile-sidebar--button { display: flex; @media #{$tablet} { display: none; } }
