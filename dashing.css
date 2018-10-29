@@ -5281,16 +5281,16 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
 .alert .count {
   position: absolute;
   bottom: 1rem;
-  left: 1rem;
+  right: 1rem;
   background-color: #DD4B39;
   height: 1rem;
-  width: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   color: #FFFFFF;
   font-weight: bold;
+  padding: 0.25rem;
 }
 
 .logo, .profile, .alert, .mobile-sidebar--button {
@@ -5336,6 +5336,7 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
 
 .header {
   background-color: #354052;
+  overflow: hidden;
 }
 @media all and (min-width: 40em) {
   .header {
@@ -5423,9 +5424,13 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   display: initial;
   text-align: left;
   width: 100%;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 @media all and (min-width: 40em) {
   .fullscreen .header .title {
+    color: #000000;
     text-align: center;
   }
 }
