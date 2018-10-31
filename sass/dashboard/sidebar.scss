@@ -8,7 +8,7 @@ $animation-time: 0.3s;
   padding: 0;
 
   li {
-    padding-left: 1rem;
+    padding-left: $half-padding;
     height: 2.5rem;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ $animation-time: 0.3s;
       color: $sidebar-text-color;
       width: 100%;
       height: 100%;
-      padding-left: 0.5rem;
+      padding-left: $half-padding;
       display: flex;
       align-items: center;
     }
@@ -61,7 +61,7 @@ $animation-time: 0.3s;
 
   .mobile-profile {
     width: 100%;
-    height: 13rem;
+    max-height: 15rem;
     background-color: #333333;
   }
 }
@@ -72,18 +72,73 @@ $animation-time: 0.3s;
   border-radius: 5px;
   background-color: #413552;
 
-  i:before {
-    color: $white;
-    font-size: 2rem;
-  }
+  @extend %icon-white;
+  i:before { font-size: 2rem; }
 }
 
 .mobile-profile .mobile-sidebar--button {
   background-color: transparent;
-  padding-top: 1rem;
+  padding-top: $full-padding;
 
   i:before {
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: $full-padding;
+    margin-left: $full-padding;
   }
+}
+
+.mobile-profile--account {
+	margin-top: 1.5rem;
+	padding: $full-padding;
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr auto auto;
+
+  .profile-image {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    background-color: $gray-150;
+    margin-right: auto;
+
+    float: left;//fallback
+  }
+
+  .profile-name {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    grid-column: 1 / 3;
+
+    clear: both;//fallback
+    padding: $half-padding 0rem;
+  }
+
+  .profile-email {
+    color: $white;
+    grid-column: 1 / 3;
+  }
+
+  .profile-edit {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+
+    i:before { color: $white; }
+
+    float: right;//fallback
+  }
+}
+
+//fallback
+@supports (display: grid) {
+  .mobile-profile--account > * { width: auto; }
+  .mobile-profile--account { display: grid; }
 }

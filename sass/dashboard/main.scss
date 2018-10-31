@@ -3,7 +3,10 @@ $sidebar-background: #354052;
 $app-background:     #e0e0e0;
 $sidebar-highlight:  #9D6CDE;
 $sidebar-text-color: $white;
+
 $header-padding: 0.5rem;
+$half-padding: 0.5rem;
+$full-padding: 1.0rem;
 
 //Extends
 %icon-white { i:before { color: $white; } }
@@ -32,6 +35,7 @@ $header-padding: 0.5rem;
   display: flex;
   align-items: center;
   padding: $header-padding;
+  position: relative;
 
   .title, .action { display: none; }//hidden unless "fullscreen" is applied
 }
@@ -95,7 +99,7 @@ $header-padding: 0.5rem;
 .fullscreen {
   .header {
     .title {
-      display: initial;
+      display: inline;
       text-align: left;
       width: 100%;
       color: $white;
@@ -108,10 +112,10 @@ $header-padding: 0.5rem;
       }
     }
     .action {
-      display: initial;
-      position: fixed;
-      right: $header-padding;
-      top: auto;
+      display: block;
+      position: absolute;
+      top: auto;//for everything but IE this works best with "auto" - need to figure this out
+      right: $half-padding;
     }
   }
   .logo, .alert, .profile, .mobile-sidebar--button { display: none; }

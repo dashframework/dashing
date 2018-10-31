@@ -31,14 +31,12 @@
   	bottom: 1rem;
   	right: 1rem;
   	background-color: $red-500;
-  	height: 1rem;
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	border-radius: 10px;
+  	border-radius: 50px;
   	color: $white;
     font-weight: bold;
-    padding: 0.25rem;
+    padding: 0rem 0.25rem;
+    text-align: center;
+    min-width: 1.25rem;
   }
 }
 
