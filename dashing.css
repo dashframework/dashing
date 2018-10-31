@@ -5256,10 +5256,23 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
 }
 
 .logo {
-  margin-right: auto;
   width: 10.75rem;
   height: 4rem;
   background-color: #413552;
+}
+
+.crumbs {
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 1rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+@media all and (min-width: 40em) {
+  .crumbs {
+    padding-left: 2rem;
+    color: #000000;
+  }
 }
 
 .profile {
@@ -5433,13 +5446,23 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
     text-align: center;
   }
 }
+.fullscreen .header .title .subtitle {
+  opacity: 0.6;
+  margin: 0;
+  color: #FFFFFF;
+}
+@media all and (min-width: 40em) {
+  .fullscreen .header .title .subtitle {
+    color: #000000;
+  }
+}
 .fullscreen .header .action {
   display: block;
   position: absolute;
   top: auto;
   right: 0.5rem;
 }
-.fullscreen .logo, .fullscreen .alert, .fullscreen .profile, .fullscreen .mobile-sidebar--button {
+.fullscreen .logo, .fullscreen .alert, .fullscreen .profile, .fullscreen .mobile-sidebar--button, .fullscreen .crumbs {
   display: none;
 }
 .fullscreen .sidebar {

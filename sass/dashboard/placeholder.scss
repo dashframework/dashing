@@ -1,9 +1,22 @@
 //Placeholder Header Elements
 .logo {
-  margin-right: auto;
+  // margin-right: auto;
   width: 10.75rem;
   height: 4rem;
   background-color: #413552;
+}
+
+.crumbs {
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 1rem;
+  color: $white;
+  font-weight: 600;
+
+  @media #{$tablet} {
+    padding-left: 2rem;
+    color: $black;
+  }
 }
 
 .profile {
