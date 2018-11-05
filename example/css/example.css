@@ -5376,13 +5376,10 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   color: #FFFFFF;
 }
 
-.app {
-  background-color: #e0e0e0;
-}
-
 .header {
   background-color: #354052;
   overflow: hidden;
+  z-index: 3;
 }
 @media all and (min-width: 40em) {
   .header {
@@ -5404,16 +5401,15 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   padding: 0.5rem;
   position: relative;
 }
-.header .title, .header .action {
+.header .title, .header .spacer {
   display: none;
 }
 
 .app {
-  float: left;
+  float: right;
   /*fallback*/
   height: calc(100vh - 5rem);
-  overflow: auto;
-  /*for content*/
+  margin-top: 5rem;
   padding: 1rem;
   -webkit-overflow-scrolling: touch;
   grid-column: 1/3;
@@ -5421,7 +5417,7 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
 }
 @media all and (min-width: 40em) {
   .app {
-    grid-column: auto;
+    grid-column: 2/3;
     width: calc(100% - 12rem);
     /*fallback*/
   }
@@ -5432,6 +5428,9 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   /*fallback*/
   min-height: calc(100vh - 5rem);
   min-width: 12rem;
+  position: fixed;
+  left: 0;
+  top: 5rem;
   display: none;
 }
 @media all and (min-width: 40em) {
@@ -5455,6 +5454,10 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
 
 .header {
   grid-column: 1/-1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   clear: both;
   /*fallback*/
   height: 5rem;
@@ -5469,15 +5472,18 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
 }
 .fullscreen .header .title {
   display: inline;
-  text-align: left;
   width: 100%;
   color: #FFFFFF;
   font-size: 1.25rem;
   font-weight: 600;
+  flex-direction: column;
+  text-align: left;
+  flex: 4;
 }
 @media all and (min-width: 40em) {
   .fullscreen .header .title {
     color: #000000;
+    flex: auto;
     text-align: center;
   }
 }
@@ -5491,11 +5497,25 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
     color: #000000;
   }
 }
-.fullscreen .header .action {
-  display: block;
-  position: absolute;
-  top: auto;
-  right: 0.5rem;
+.fullscreen .header .spacer {
+  display: flex;
+  width: auto;
+  padding-right: 0.5rem;
+}
+.fullscreen .header .spacer:last-of-type {
+  flex: 1;
+  justify-content: flex-end;
+}
+@media all and (min-width: 40em) {
+  .fullscreen .header .spacer {
+    width: 40rem;
+  }
+  .fullscreen .header .spacer:last-of-type {
+    flex: auto;
+  }
+}
+.fullscreen .header .spacer .action {
+  white-space: nowrap;
 }
 .fullscreen .logo, .fullscreen .alert, .fullscreen .profile, .fullscreen .mobile-sidebar--button, .fullscreen .crumbs {
   display: none;
@@ -5546,12 +5566,12 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
 .mobile-overlay {
   transition: width 0.3s;
   background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
 }
 .mobile-overlay * {
@@ -5578,9 +5598,6 @@ i.dashing-icon--pause.dashing-clippy:before, .app-menu .app-context .app-title .
   height: 3rem;
   border-radius: 5px;
   background-color: #413552;
-}
-.mobile-sidebar--button i:before {
-  font-size: 2rem;
 }
 
 .mobile-profile .mobile-sidebar--button {

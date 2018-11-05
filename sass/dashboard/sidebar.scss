@@ -35,12 +35,12 @@ $animation-time: 0.3s;
   transition: width $animation-time;
 
   background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
 
   *{
@@ -73,7 +73,6 @@ $animation-time: 0.3s;
   background-color: #413552;
 
   @extend %icon-white;
-  i:before { font-size: 2rem; }
 }
 
 .mobile-profile .mobile-sidebar--button {
